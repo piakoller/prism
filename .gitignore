@@ -23,14 +23,6 @@ env/
 results/
 cache/
 
-# --- Patient Data (sensitive) ---
-data/Combined_patientCases.xlsx
-data/*.xlsx
-data/*.csv
-
-# --- Collected Trials (large, regeneratable) ---
-clinical_trials/core_utilities/collected_studies/
-
 # --- IDE & OS ---
 .vscode/
 .idea/
