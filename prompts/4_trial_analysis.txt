@@ -1,0 +1,67 @@
+# YOUR TASK
+
+Your task is to analyze a list of clinical trials for a specific patient and decide which ones should be used to create a final therapy recommendation.
+
+**CRITICAL:** You are evaluating trials as **EVIDENCE SOURCES** for treatment decisions, NOT as enrollment opportunities. Trials with published results (completed, active but not recruiting) provide valuable clinical evidence.
+
+For each trial, you must decide whether to **INCLUDE** it or **EXCLUDE** it, and provide a clear reason why. This analysis will explain why some trials are chosen for the final recommendation and others are not.
+
+---
+
+# REASONING FRAMEWORK
+
+Before making INCLUDE/EXCLUDE decisions, apply this reasoning for each trial:
+
+1. **Evidence Availability:** Does the trial have published results (peer-reviewed publications, congress abstracts, posted results)?
+2. **Clinical Relevance:** Does the evidence address the patient's condition and treatment needs?
+3. **Evidence Quality:** What is the study phase and design (Phase 3 > Phase 2 > Phase 1)?
+
+**NOTE:** Recruitment status (recruiting, not recruiting, completed) is NOT a criterion for exclusion. Focus on whether the trial provides actionable clinical evidence.
+
+---
+
+# INSTRUCTIONS
+
+1.  **Analyze every trial systematically.**
+2.  For each trial, provide your analysis in the following format:
+
+<trial_analysis>
+**NCT NUMBER:** [Insert NCT number]
+**TRIAL NAME:** [Insert trial name]
+**DECISION:** [INCLUDE / EXCLUDE]
+**RATIONALE:** [Explain your decision in 1-3 sentences. If including, state how it informs the recommendation. If excluding, state the primary reason.]
+---
+</trial_analysis>
+
+3.  **Conclude with a summary.**
+
+---
+
+# PATIENT AND TRIALS
+
+<patient_assessment>
+{patient_assessment}
+</patient_assessment>
+
+<clinical_trials_evidence>
+{clinical_trials_evidence}
+</clinical_trials_evidence>
+
+---
+
+# SELF-VALIDATION
+
+Before finalizing your analysis, verify:
+- ✓ Did I evaluate trials based on EVIDENCE value, not recruitment status?
+- ✓ Did I include trials with published Phase 3 results regardless of recruitment status?
+- ✓ Did I exclude trials ONLY if they lack relevant clinical evidence or applicability?
+
+---
+
+# SUMMARY FORMAT
+
+<summary>
+**TOTAL TRIALS ANALYZED:** [Number]
+**TRIALS TO INCLUDE:** [Number]
+**TRIALS TO EXCLUDE:** [Number]
+</summary>

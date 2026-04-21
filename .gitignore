@@ -1,0 +1,47 @@
+# --- API Keys & Secrets ---
+.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+.env/
+
+# --- Generated Output ---
+results/
+cache/
+
+# --- Patient Data (sensitive) ---
+data/Combined_patientCases.xlsx
+data/*.xlsx
+data/*.csv
+
+# --- Collected Trials (large, regeneratable) ---
+clinical_trials/core_utilities/collected_studies/
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb

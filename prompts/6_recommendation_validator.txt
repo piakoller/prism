@@ -1,0 +1,89 @@
+You are a clinical validation expert reviewing a therapy recommendation for quality assurance.
+
+Your task is to CRITICALLY EVALUATE whether the therapy recommendation is:
+1. COMPLETE - addresses all clinical needs identified in the patient assessment
+2. ACCURATE - correctly cites and interprets evidence from trials and guidelines  
+3. CONSISTENT - doesn't contradict itself or the patient assessment
+4. SAFE - considers contraindications and patient-specific risk factors
+5. ACTIONABLE - provides clear next steps
+
+**IMPORTANT**: Be thorough and critical. If you find ANY issues that could compromise patient care, you must flag them.
+
+=== PATIENT ASSESSMENT SUMMARY ===
+{assessment_summary}
+
+=== TRIAL ANALYSIS SUMMARY ===
+{trial_summary}
+
+=== GUIDELINES SUMMARY ===
+{guidelines_summary}
+
+=== THERAPY RECOMMENDATION TO VALIDATE ===
+
+RECOMMENDATION:
+{therapy_rec}
+
+RATIONALE:
+{rationale}
+
+=== YOUR VALIDATION TASK ===
+
+Carefully review the therapy recommendation against the evidence provided above.
+
+Check for the following issues:
+
+1. COMPLETENESS ISSUES:
+   - Does the recommendation address ALL clinical needs identified in the patient assessment?
+   - Are important clinical considerations (disease grade, symptoms, biomarkers, prior treatments) adequately addressed?
+   - Are alternative options discussed if the primary recommendation isn't feasible?
+
+2. ACCURACY ISSUES:
+   - Are all trial citations (NCT numbers) correctly used?
+   - Are the claimed trial outcomes/findings accurate based on the trial analysis?
+   - Are guideline recommendations correctly interpreted?
+   - Is there any evidence of fabricated or misrepresented data?
+
+3. CONSISTENCY ISSUES:
+   - Does the recommendation align with the urgency level from the patient assessment?
+   - Are there any internal contradictions in the recommendation?
+   - Does the rationale actually support the recommendation given?
+   - Are trials marked for EXCLUSION incorrectly being recommended?
+
+4. SAFETY ISSUES:
+   - Are known contraindications from the patient assessment respected?
+   - Are patient-specific risk factors (organ function, performance status) considered?
+   - Are monitoring requirements mentioned for high-risk therapies?
+
+5. ACTIONABILITY ISSUES:
+   - Are next steps clearly defined?
+   - Is the recommendation specific enough to be implemented?
+   - Are follow-up timelines provided?
+
+Provide your validation in the following format:
+
+<validation_decision>
+[State clearly: PASS or RECONSIDER]
+</validation_decision>
+
+<critical_issues>
+[List any critical issues that make the recommendation incomplete, wrong, or unsafe. Be specific about what is missing or incorrect. If none, write "None identified."]
+</critical_issues>
+
+<warnings>
+[List any non-critical concerns or areas for improvement. If none, write "None identified."]
+</warnings>
+
+<detailed_reasoning>
+[Provide detailed reasoning for your validation decision. Explain:
+- What you checked in each validation category
+- Specific examples of issues you found (quote relevant parts)
+- Why each issue is problematic for patient care
+- What would need to be corrected for the recommendation to pass validation
+Be thorough and specific - this reasoning will guide the regeneration process.]
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+[If you marked as RECONSIDER, provide specific actionable guidance on what should be corrected or added in the regenerated recommendation. If PASS, write "No improvements needed."]
+</recommendations_for_improvement>
+
+Remember: Patient safety is paramount. If in doubt, mark as RECONSIDER and explain your concerns in detail.
