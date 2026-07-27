@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:19:56.264073
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This Phase 3 trial (CABINET) provides critical evidence for the patient's specific clinical scenario. The study population matches the patient's disease biology (advanced, progressive pancreatic NET, G2) and treatment history (progression on prior therapies including SSA, PRRT, and targeted agents). The published results demonstrate a substantial progression-free survival benefit for cabozantinib versus placebo in pNETs (13.8 vs. 4.4 months, HR 0.23), establishing it as a key late-line systemic option. While the patient has persistent Grade 1 thrombocytopenia and prior intolerance to sunitinib (another TKI), and the trial required platelets ≥100,000/mm³, the strong efficacy signal makes this evidence essential for the tumor board. The study's safety data (62-65% Grade 3+ adverse events) is equally relevant for weighing the risk-benefit ratio of attempting cabozantinib, potentially at a reduced dose, versus supportive care or re-challenge with cytotoxic agents."
+}
+```

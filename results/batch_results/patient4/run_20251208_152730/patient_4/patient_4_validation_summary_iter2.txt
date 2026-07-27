@@ -1,0 +1,48 @@
+=== VALIDATION ITERATION 2 ===
+
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 4
+Timestamp: 2025-12-08T16:20:51.401773
+Overall Status: PASSED
+Requires Regeneration: NO
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 4
+Trials available: 15
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: PASS
+Status: PASS
+Warnings:
+  ⚠️  **Therapeutic Sequencing (TKI vs. mTOR):** The patient has already progressed on two lines of Tyrosine Kinase Inhibitors (Surufatinib and Sunitinib). While Cabozantinib (a third TKI) is supported by the CABINET trial for patients with prior targeted therapy, standard clinical practice often favors switching the mechanism of action to an mTOR inhibitor (Everolimus) before initiating a third TKI, especially in an asymptomatic patient. The recommendation lists Everolimus as an alternative, which is acceptable, but the rationale for prioritizing a third TKI over a first-line mTOR inhibitor is aggressive.
+  ⚠️  **Regulatory Status:** Cabozantinib for neuroendocrine tumors is a recent development (CABINET trial). Depending on the specific jurisdiction and date, this may be an off-label use requiring special access, whereas Everolimus is a standard approved therapy.
+
+Detailed Reasoning:
+The therapy recommendation has been validated against the provided patient assessment, trial data, and guidelines. It meets the criteria for a PASS decision based on the following:
+
+1.  **Completeness:** The recommendation addresses all key aspects of the patient's complex history. It acknowledges the liver-only progression, the functional nature of the tumor (mandating SSA continuation), and the failure of prior lines (SSAs, PRRT, TKIs). It provides a primary recommendation and two distinct, viable alternatives.
+2.  **Accuracy:**
+    *   **CABINET Trial (NCT03375320):** The citation of the CABINET trial is accurate. The claimed PFS benefit (8.4 months vs 3.9 months in the extrapancreatic cohort) aligns with the reported trial results (e.g., NEJM 2024 data). The application of this evidence to a patient who has progressed on prior targeted therapy is correct.
+    *   **AlphaMedix (NCT05153772):** The citation of preliminary efficacy data (ORR ~55%) for this targeted alpha therapy is consistent with reported Phase 2 results.
+    *   **Avelumab (NCT03278379):** The exclusion of immunotherapy based on the lack of response in G2-3 NETs in this trial is accurate and evidence-based.
+3.  **Consistency:** The recommendation is internally consistent. It recognizes the patient is asymptomatic but correctly identifies that radiological progression (RECIST PD) warrants treatment change. It logically argues that Cabozantinib targets resistance mechanisms (MET/AXL) relevant after Sunitinib failure.
+4.  **Safety:**
+    *   **Functional Tumor:** The recommendation correctly identifies the critical safety need to continue SSAs to prevent hormonal crises (carcinoid crisis), despite the patient being currently asymptomatic.
+    *   **Contraindications:** It appropriately excludes chemotherapy (due to low Ki-67/G2 status) and immunotherapy, aligning with ESMO guidelines.
+    *   **Toxicity:** It includes appropriate monitoring for Cabozantinib-associated adverse events.
+5.  **Actionability:** The recommendation provides specific dosage (60 mg daily), clear next steps, and criteria for the alternative options (e.g., PET/CT requirements for PRRT).
+
+While the preference for a third TKI (Cabozantinib) over an unused mechanism of action (Everolimus) is debatable, it is supported by high-level Phase 3 evidence (CABINET) and is therefore a valid, expert-level recommendation.
+
+======================================================================
+✅ VALIDATION PASSED - NO REGENERATION NEEDED
+======================================================================

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:41:33.699004
+Trial: 69/86
+NCT ID: NCT01466036
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase II study is clinically relevant as it evaluates cabozantinib in patients with advanced, progressive pancreatic neuroendocrine tumors (pNETs), aligning perfectly with the patient's diagnosis (G2 PanNET, Ki-67 15%) and current status (progression on prior therapies). The patient has progressed on sunitinib (VEGFR-TKI) and belzutifan; cabozantinib, a multi-kinase inhibitor targeting MET and VEGFR, represents a biologically rational subsequent line of systemic therapy, particularly if liver transplantation is deemed unfeasible due to the Ki-67 index (>10%) or if PRRT is not an option (e.g., low SSTR uptake). Although the automated search noted no results, the provided citations explicitly list the published \"Phase II trial of cabozantinib in patients with carcinoid and pancreatic neuroendocrine tumors,\" which provides the necessary efficacy and safety evidence to support considering this agent in the tumor board discussion for a heavily pre-treated patient."
+}

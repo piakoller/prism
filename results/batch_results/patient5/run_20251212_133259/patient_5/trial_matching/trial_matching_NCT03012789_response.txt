@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:40:17.930987
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a Mixed Neuroendocrine-Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component (small-cell type, Ki-67 90%). The study specifically investigates the NETest biomarker in patients with *well-differentiated* neuroendocrine tumors (NETs G1-G3). The genomic and transcriptomic profiles of poorly differentiated NECs differ significantly from well-differentiated NETs, meaning the NETest (validated for NETs) is not an established or biologically plausible surveillance tool for this patient's high-grade NEC. Consequently, the study's evidence regarding the use of this biomarker to guide surgical intervention or monitor recurrence cannot be reasonably extrapolated to inform the surveillance strategy for this patient."
+}

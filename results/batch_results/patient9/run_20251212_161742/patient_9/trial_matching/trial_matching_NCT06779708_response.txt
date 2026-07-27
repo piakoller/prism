@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T16:27:24.274436
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context or Evidence Relevance. This study evaluates the diagnostic utility of intraoperative ultrasound (IOUS) specifically in patients with clinically localized (cM0) neuroendocrine tumors undergoing primary resection to detect occult liver metastases. The patient, however, has known, progressive metastatic disease (liver and lymph nodes) and is heavily pre-treated with significant renal impairment, making her ineligible for the specific surgical staging context of this study. Furthermore, she was previously excluded from surgery. Evidence regarding the sensitivity of IOUS for staging apparently localized disease does not provide actionable insights for selecting the next line of systemic therapy or palliative care for a fragile patient with established, refractory metastatic disease."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:05:21.090808
+Trial: 84/86
+NCT ID: NCT02259725
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or evidence availability. The patient has a Mixed Neuroendocrine-Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated Neuroendocrine Carcinoma (NEC) component (small-cell type, Ki-67 90%). In contrast, this study evaluates Regorafenib in patients with 'carcinoid or pancreatic islet cell cancers,' terminology referring to well-differentiated Neuroendocrine Tumors (NETs). High-grade NECs and well-differentiated NETs are biologically distinct entities with different therapeutic algorithms; tyrosine kinase inhibitors like Regorafenib are generally investigated in NETs, not small-cell NECs. Furthermore, the provided data indicates that although the study is completed, no published results or findings are available. Consequently, there is no evidence to inform treatment decisions for this patient's aggressive disease biology."
+}

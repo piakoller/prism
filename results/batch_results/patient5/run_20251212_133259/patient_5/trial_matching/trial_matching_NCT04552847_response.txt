@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:50:05.599143
+Trial: 39/86
+NCT ID: NCT04552847
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates the diagnostic performance of a novel SSTR-PET tracer (Al18F-NOTA-octreotide) compared to standard 68Ga-DOTA-SSA PET. This is not clinically relevant for this patient for two key reasons. First, the patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated small-cell NEC component with a Ki-67 of 90%. Such high-grade, poorly differentiated tumors typically lack significant somatostatin receptor (SSTR) expression, rendering SSTR-based imaging biologically inappropriate (FDG-PET is the standard). Second, the study focuses on technical diagnostic validation (lesion detection rates) rather than therapeutic efficacy or clinical management strategies. It provides no evidence to address the specific tumor board question regarding surveillance versus local treatment for a biopsy-negative residual lesion in a patient with high-grade NEC."
+}

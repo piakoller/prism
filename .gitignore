@@ -20,7 +20,6 @@ env/
 .env/
 
 # --- Generated Output ---
-results/
 cache/
 
 # --- IDE & OS ---

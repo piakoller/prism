@@ -1,0 +1,229 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2026-01-05T09:50:57.313683
+Trial: 78/86
+NCT ID: NCT01253161
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Brief Clinical History: 65-year-old woman with a well-differentiated metastatic (hepatic, 
+lymphatic) neuroendocrine tumor of the pancreas (G1, ki-67 2%, SSTR2 positive). The 
+diagnosis was made on the basis of investigations due to abdominal pain and intermittent 
+vomiting, with MRI of the abdomen showing a lesion of the pancreatic head (41x51x35 
+mm) with dilation of the distal pancreatic duct, as well as lesions of the liver in segment 
+VIII (10 mm) and segment VI (5 mm). An endosonography-guided fine needle biopsy 
+revealed evidence of a NET. The subsequent DOTATOC PET/CT showed intense 
+accumulation in the pancreatic lesions, several intense DOTATOC-avid liver lesions, and 
+suspected small lymph node metastasis retroperitoneally paraaortally on the left with 
+intense accumulation and suspicion of one further lymph node metastasis perihepatically 
+adjacent to liver segment III. 
+A CT scan 2 months after initial diagnosis showed a stable lesion in the pancreatic head 
+without infiltration of adjacent vessels. The arterial vessels were well contrasted. The 
+portal vein and superior mesenteric vein with close contact with the pancreatic lesion over 
+a length of 3 cm, without signs of stenosis or thrombosis.  
+Current Clinical Status: ECOG 0 
+Question for Tumorboard:
+Recommended therapy? 
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Profile and Tumor Biology**
+The patient is a 65-year-old woman with an ECOG performance status of 0, presenting with a metastatic neuroendocrine tumor (NET) of the pancreas.
+*   **Classification:** The tumor is well-differentiated and classified as Grade 1 (G1) based on a Ki-67 proliferation index of 2%.
+*   **Functionality:** There is no evidence of a hormonal syndrome provided in the history; thus, the clinical assessment aligns with a nonfunctioning pancreatic NET (NF-Pan-NET).
+*   **Receptor Status:** The tumor is SSTR2 positive, confirmed by immunohistochemistry and intense accumulation on DOTATOC PET/CT.
+
+**Anatomical Extent and Staging**
+*   **Primary Tumor:** A large lesion (41x51x35 mm) is located in the pancreatic head.
+*   **Local Complications:** The mass causes dilation of the distal pancreatic duct, which correlates with the patient's symptoms of abdominal pain and intermittent vomiting.
+*   **Vascular Involvement:** There is close contact with the portal vein and superior mesenteric vein over a length of 3 cm. However, arterial vessels are well contrasted, and there are no signs of venous stenosis or thrombosis. This presentation suggests a locally advanced or borderline resectable primary tumor.
+*   **Metastatic Disease:** The patient has oligometastatic liver disease with two small lesions (Segment VIII: 10 mm; Segment VI: 5 mm) and lymph node involvement (retroperitoneal paraaortic left and perihepatic adjacent to segment III).
+*   **Disease Stability:** A CT scan 2 months post-diagnosis indicates stable disease.
+
+**Guideline-Based Clinical Considerations**
+
+**1. Surgical Considerations:**
+*   **Primary Tumor:** According to ENETS guidelines, surgery is strongly recommended for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation. This patient meets both criteria. The vascular contact (3 cm) requires careful evaluation; however, ENETS guidelines note that radical local resection including portal-venous resection can be performed safely in expert centers.
+*   **Metastatic Context:** ESMO guidelines state that a surgical approach is indicated in selected stage IV patients with exclusive or predominant liver involvement. Given the small size of the liver metastases (10 mm and 5 mm), they may be amenable to resection or ablation. However, the presence of retroperitoneal lymph node metastasis requires evaluation regarding the feasibility of curative (R0) resection.
+
+**2. Systemic and Neoadjuvant Considerations:**
+*   **Somatostatin Analogues (SSAs):** For antiproliferative control, ESMO and ENETS guidelines recommend SSAs (e.g., lanreotide or octreotide) as first-line therapy for SSTR-positive, well-differentiated (G1/G2) NF-Pan-NETs with slow growth (Ki-67 <10%).
+*   **Neoadjuvant Approaches:** ENETS guidelines suggest that preoperative treatment with Peptide Receptor Radionuclide Therapy (PRRT) or chemotherapy may be considered in selected cases of locally advanced or oligometastatic SSTR-positive G1/G2 NF-Pan-NETs to facilitate R0 resection or downstaging.
+*   **Chemotherapy:** While chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is an option for bulky or progressive disease, the patient currently has stable disease on CT.
+
+**3. Functional Imaging and PRRT Eligibility:**
+*   The DOTATOC PET/CT shows "intense accumulation" in pancreatic lesions, liver lesions, and lymph nodes.
+*   **Assessment for PRRT:** While "intense" accumulation suggests high SSTR expression, strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed, this patient is a potential candidate for PRRT, either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.
+
+**Summary of Clinical Status:**
+The patient presents with a symptomatic, G1, SSTR-positive NF-Pan-NET with limited hepatic and nodal metastases. The primary tumor is locally advanced with venous contact but no occlusion. The clinical scenario requires a multidisciplinary decision regarding upfront resection (pancreaticoduodenectomy + liver management) versus neoadjuvant therapy (PRRT or systemic) to improve resectability, given the favorable tumor biology (G1) and high SSTR expression.
+
+Trial Search Recommendations:
+  - ** While "intense" accumulation suggests high SSTR expression
+  - strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed
+  - this patient is a potential candidate for PRRT
+  - either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.
+  - *Summary of Clinical Status:**
+	•	Question for Tumorboard: Recommended therapy? 
+
+### STUDY DATA
+	•	NCT-ID: NCT01253161
+	•	Title: Study of Pasireotide Long Acting Release (LAR) in Patients With Metastatic Neuroendocrine Tumors (NETs)
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Pasireotide Long Acting Release (LAR)
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Locally unresectable or metastatic carcinoid or pancreatic neuroendocrine tumors
+* Tumors must be considered well or moderately differentiated (or low to intermediate grade). Patients with poorly differentiated neuroendocrine carcinomas or small cell carcinomas are excluded from the study.
+* No prior systemic antineoplastic neuroendocrine tumor treatment (including prior somatostatin analogs). However patients who have received a short course of subcutaneous (SQ) octreotide (\<10 days) in the past are eligible if \> 1 week has elapsed from their last octreotide injection.
+* Minimum of four weeks since any major surgery
+* Measureable disease by Response Evaluation Criteria in Solid Tumors (RECIST)
+* Eastern Cooperative Oncology Group (ECOG) performance status ≤1
+* Life expectancy 12 weeks or more
+* Adequate bone marrow function as shown by: absolute neutrophil count (ANC) ≥ 1.0 x 10\^9/L, Platelets ≥ 75 x 10\^9/L, hemoglobin (Hgb) \> 8 g/dL
+* Adequate liver function as shown by: serum bilirubin ≤ 2.0 x upper limit of normal (ULN), and serum transaminases activity ≤ 2 x ULN, with the exception of serum transaminases (\< 3 x ULN) if the patient has liver metastases
+* Adequate renal function as shown by serum creatinine ≤ 2.0 x ULN
+* Fasting serum cholesterol ≤300 mg/dL OR ≤7.75 mmol/L AND fasting triglycerides ≤ 2.5 x ULN. Note: In case one or both of these thresholds are exceeded, the patient can only be included after initiation of appropriate lipid lowering medication.
+* Women of childbearing potential (WOCBP) must have a negative serum pregnancy test within 14 days of the administration of the first study treatment. Women must not be lactating. Both men and WOCBP must be advised of the importance of using effective birth control measures during the course of the study.
+* Signed informed consent to participate in the study must be obtained from patients after they have been fully informed of the nature and potential risks by the investigator (or his/her designee) with the aid of written information.
+
+Exclusion Criteria:
+
+* Uncontrolled brain or leptomeningeal metastases, including patients who continue to require glucocorticoids for brain or leptomeningeal metastases
+* Patients with prior or concurrent malignancy except for the following: adequately treated basal cell or squamous cell skin cancer, or other adequately treated in situ cancer, or any other cancer from which the patient has been disease free for 5 years
+* Patients with uncontrolled diabetes mellitus or a fasting plasma glucose \> 1.5 ULN or glycosylated hemoglobin (HbA1c) \>8%. Note: At the principle investigator's discretion, non-eligible patients can be re-screened after adequate medical therapy has been instituted.
+* Patients with symptomatic cholelithiasis
+* Patients who have congestive heart failure: New York Heart Association (NYHA) Class III or IV, unstable angina, or a history of acute myocardial infarction within the 6 months preceding enrollment
+* Patients who have any severe and/or uncontrolled medical conditions or other conditions that could affect their participation in the study such as:
+
+  * Severely impaired lung function
+  * Any active (acute or chronic) or uncontrolled infection/ disorders
+  * Nonmalignant medical illnesses that are uncontrolled or whose control may be jeopardized by the treatment with the study therapy
+* Known hypersensitivity to somatostatin analogues or any component of the pasireotide LAR formulation
+* Corrected QT interval (QTcF) of \>470 msec on screening Electrocardiogram (ECG)
+* Risk factors for Torsades de Pointes such as cardiac failure, clinically significant/symptomatic bradycardia
+* Clinically significant hypokalemia or hypomagnesemia that are not correctable
+* History of sustained ventricular tachycardia, ventricular fibrillation, advanced heart block, or idiopathic syncope thought to be related to ventricular arrhythmia
+* Concomitant medication(s) known to increase the QT interval
+* History of noncompliance to medical regimens or unwillingness to comply with the protocol *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The goal of this clinical research study is to learn if the study drug, Pasireotide LAR can shrink or slow the growth of Metastatic Neuroendocrine Carcinomas. The safety of this drug will also be studied. The patient's physical state, changes in the size of the tumor, and laboratory findings taken while on-study will help us decide if Pasireotide LAR is safe and effective.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/25376618/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Cives M, Kunz PL, Morse B, Coppola D, Schell MJ, Campos T, Nguyen PT, Nandoskar P, Khandelwal V, Strosberg JR. Phase II clinical trial of pasireotide long-acting repeatable in patients with metastatic neuroendocrine tumors. Endocr Relat Cancer. 2015 Feb;22(1):1-9. doi: 10.1530/ERC-14-0360. Epub 2014 Nov 6.
+• Phase II clinical trial of pasireotide long-acting repeatable in patients with metastatic neuroendocrine tumors. (PMID: 25376618)
+• Pasireotide for refractory hypoglycemia in malignant insulinoma-case report and review of the literature [Google Scholar]
+• Phase II clinicaltrialof pasireotide long-acting repeatable in patients with metastatic neuroendocrine tumors [Google Scholar]
+• Phase II clinical trial of pasireotide long-acting repeatable in patients with metastatic neuroendocrine tumors [Google Scholar]
+• Phase IIclinical trialof pasireotide long-acting repeatable in patients with metastatic neuroendocrine tumors [Google Scholar]
+• [PDF][PDF]Advances in the management of unresectable or metastatic pancreatic neuroendocrine tumors: chemotherapy, targeted therapy, hormonal treatment, and future … [Google Scholar]
+• Testingviolations of the exponential assumption in cancerclinical trialswith survival endpoints [Google Scholar]
+• Testing violations of the exponential assumption in cancer clinical trials with survival endpoints [Google Scholar]
+• Phase II clinicaltrialof pasireotide LAR in patients with metastatic neuroendocrine tumors. [Google Scholar]
+• [PDF][PDF]Antitumour Effects of Somatostatin Analogues in the Treatment of Neuroendocrine Tumours [Google Scholar]
+• Phase IIclinical trialof pasireotide LAR in patients with metastatic neuroendocrine tumors. [Google Scholar]
+• [HTML][HTML]Neuroendocrine tumors of the lung: current challenges and advances in the diagnosis and management of well-differentiated disease [Google Scholar]
+	•	Key findings from publications: PubMed Abstract: Pasireotide long-acting repeatable (LAR) is a novel somatostatin analog (SSA) with avid binding affinity to somatostatin receptor subtypes 1, 2, 3 (SSTR1,2,3) and 5 (SSTR5). Results from preclinical studies indicate that pasireotide can inhibit neuroendocrine tumor (NET) growth more robustly than octreotide in vitro. This open-label, phase II study assessed the clinical activity of pasireotide in ...
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Pasireotide long-acting repeatable (LAR) is a novel somatostatin analog (SSA) with avid binding affinity to somatostatin receptor subtypes 1, 2, 3 (SSTR1,2,3) and 5 (SSTR5). Results from preclinical studies indicate that pasireotide can inhibit neuroendocrine tumor (NET) growth more robustly than octreotide in vitro. This open-label, phase II study assessed the clinical activity of pasireotide in treatment-naïve patients with metastatic grade 1 or 2 NETs. Patients with metastatic pancreatic and extra-pancreatic NETs were treated with pasireotide LAR (60 mg every 4 weeks). Previous systemic therapy, including octreotide and lanreotide, was not permitted. Tumor assessments were performed every 3 months using Response Evaluation Criteria in Solid Tumors (RECIST) criteria. The primary endpoint was progression-free survival (PFS). The secondary endpoints included overall survival (OS), overall radiographic response rate (ORR), and safety. Twenty-nine patients were treated with pasireotide LAR (60 mg every 4 weeks) and 28 were evaluable for response. The median PFS was 11 months. The most favorable effect was observed in patients with low hepatic tumor burden, normal baseline chromogranin A, and high tumoral SSTR5 expression. Median OS has not been reached; the 30-month OS rate was 70%. The best radiographic response was partial response in one patient (4%), stable disease in 17 patients (60%), and progressive disease in ten patients (36%). Although grade 3/4 toxicities were rare, pasireotide LAR treatment was associated with a 79% rate of hyperglycemia including 14% grade 3 hyperglycemia. Although pasireotide appears to be an effective antiproliferative agent in the treatment of advanced NETs, the high incidence of hyperglycemia raises concerns regarding its suitability as a first-line systemic agent in unselected patients. SSTR5 expression is a potentially predictive biomarker for response. Trial registration: ClinicalTrials.gov NCT01253161 . Keywords: carcinoid; neuroendocrine tumors; pasireotide; somatostatin analogs; somatostatin receptors. © 2015 Society for Endocrinology. PubMed Disclaimer Figures Figure 1 Kaplan–Meier estimate of progression-free survival… Figure 1 Kaplan–Meier estimate of progression-free survival (PFS). (A) For all 29 patients, 6- and… Figure 1 Kaplan–Meier estimate of progression-free survival (PFS). (A) For all 29 patients, 6- and 12-month PFS rates were 66.9% (±9) and 41.9% (±9.9) respectively. (B) PFS by primary site, (C) PFS by tumor grade, and (D) PFS by hepatic tumor burden. Figure 2 Biochemical and radiological response following… Figure 2 Biochemical and radiological response following pasireotide treatment. (A) In patients with elevated baseline… Figure 2 Biochemical and radiological response following pasireotide treatment. (A) In patients with elevated baseline CgA, median CgA concentrations decreased from 189 to 73.5 ng/ml. The decrease was statistically significant ( P =0.02) according to the Wilcoxon-matched pairs signed rank test. Paired row values, median change, and interquartile range are represented. (B) Waterfall plot illustrating best radiographic response (percentage change) in each enrolled patient. *Decrease not confirmed at subsequent assessment, thus failing to match RECIST criteria for partial response. Figure 3 Examples of positive immunohistochemical staining… Figure 3 Examples of positive immunohistochemical staining for SSTR 1–5 subtypes (magnification: ×40). A full… Figure 3 Examples of positive immunohistochemical staining for SSTR 1–5 subtypes (magnification: ×40). A full colour version of this figure is available at http://dx.doi.org/10.1530/ERC-14-0360 . See this image and copyright information in PMC Similar articles Phase III study of pasireotide long-acting release in patients with metastatic neuroendocrine tumors and carcinoid symptoms refractory to available somatostatin analogues. Wolin EM, Jarzab B, Eriksson B, Walter T, Toumpanakis C, Morse MA, Tomassetti P, Weber MM, Fogelman DR, Ramage J, Poon D, Gadbaw B, Li J, Pasieka JL, Mahamat A, Swahn F, Newell-Price J, Mansoor W, Öberg K. Wolin EM, et al. Drug Des Devel Ther. 2015 Sep 3;9:5075-86. doi: 10.2147/DDDT.S84177. eCollection 2015. Drug Des Devel Ther. 2015. PMID: 26366058 Free PMC article. Clinical Trial. A randomized, open-label, phase 2 study of everolimus in combination with pasireotide LAR or everolimus alone in advanced, well-differentiated, progressive pancreatic neuroendocrine tumors: COOPERATE-2 trial. Kulke MH, Ruszniewski P, Van Cutsem E, Lombard-Bohas C, Valle JW, De Herder WW, Pavel M, Degtyarev E, Brase JC, Bubuteishvili-Pacaud L, Voi M, Salazar R, Borbath I, Fazio N, Smith D, Capdevila J, Riechelmann RP, Yao JC. Kulke MH, et al. Ann Oncol. 2017 Jun 1;28(6):1309-1315. doi: 10.1093/annonc/mdx078. Ann Oncol. 2017. PMID: 28327907 Free PMC article. Clinical Trial. Comparing Somatostatin Analogs in the Treatment of Advanced Gastroenteropancreatic Neuroendocrine Tumors. Allaw MB, Switchenko JM, Khalil L, Wu C, Alese OB, Akce M, Draper A, Jones AT, El-Rayes B, Shaib W. Allaw MB, et al. Oncology. 2022;100(3):131-139. doi: 10.1159/000519605. Epub 2022 Jan 25. Oncology. 2022. PMID: 35078191 Free PMC article. Pasireotide in the treatment of neuroendocrine tumors: a review of the literature. Vitale G, Dicitore A, Sciammarella C, Di Molfetta S, Rubino M, Faggiano A, Colao A. Vitale G, et al. Endocr Relat Cancer. 2018 Jun;25(6):R351-R364. doi: 10.1530/ERC-18-0010. Epub 2018 Apr 11. Endocr Relat Cancer. 2018. PMID: 29643113 Review. Update on the role of somatostatin analogs for the treatment of patients with gastroenteropancreatic neuroendocrine tumors. Toumpanakis C, Caplin ME. Toumpanakis C, et al. Semin Oncol. 2013 Feb;40(1):56-68. doi: 10.1053/j.seminoncol.2012.11.006. Semin Oncol. 2013. PMID: 23391113 Review. See all similar articles Cited by The functioning side of the pancreas: a review on insulinomas. Maggio I, Mollica V, Brighi N, Lamberti G, Manuzzi L, Ricci AD, Campana D. Maggio I, et al. J Endocrinol Invest. 2020 Feb;43(2):139-148. doi: 10.1007/s40618-019-01091-w. Epub 2019 Jul 31. J Endocrinol Invest. 2020. PMID: 31368049 Review. Role of Locoregional and Systemic Approaches for the Treatment of Patients with Metastatic Neuroendocrine Tumors. Grandhi MS, Lafaro KJ, Pawlik TM. Grandhi MS, et al. J Gastrointest Surg. 2015 Dec;19(12):2273-82. doi: 10.1007/s11605-015-2931-z. Epub 2015 Sep 4. J Gastrointest Surg. 2015. PMID: 26341823 Review. Managing Hypoglycaemia in Patients With Insulinoma-A Tertiary Centre Experience and Review of the Literature. Howarth S, Ho TW, Wimbury J, Casey R. Howarth S, et al. Clin Endocrinol (Oxf). 2025 Mar;102(3):344-354. doi: 10.1111/cen.15188. Epub 2024 Dec 30. Clin Endocrinol (Oxf). 2025. PMID: 39740208 Free PMC article. Review. Update on management of midgut neuroendocrine tumors. Mehrvarz Sarshekeh A, Halperin DM, Dasari A. Mehrvarz Sarshekeh A, et al. Int J Endocr Oncol. 2016 May;3(2):175-189. doi: 10.2217/ije-2015-0004. Epub 2016 Apr 8. Int J Endocr Oncol. 2016. PMID: 27347369 Free PMC article. Biological and Biochemical Basis of the Differential Efficacy of First and Second Generation Somatostatin Receptor Ligands in Neuroendocrine Neoplasms. Gatto F, Barbieri F, Arvigo M, Thellung S, Amarù J, Albertelli M, Ferone D, Florio T. Gatto F, et al. Int J Mol Sci. 2019 Aug 13;20(16):3940. doi: 10.3390/ijms20163940. Int J Mol Sci. 2019. PMID: 31412614 Free PMC article. Review. See all "Cited by" articles References Caplin ME, Pavel M, Ćwikła JB, Phan AT, Raderer M, Sedláčková E, Cadiot G, Wolin EM, Capdevila J, Wall L, et al. Lanreotide in metastatic enteropancreatic neuroendocrine tumors. New England Journal of Medicine. 2014;371:224–233. doi:10.1056/NEJMoa1316158. - PubMed Colao A, Petersenn S, Newell-Price J, Findling JW, Gu F, Maldonado M, Schoenherr U, Mills D, Salgado LR, Biller BM, et al. A 12-month phase 3 study of pasireotide in Cushing's disease. New England Journal of Medicine. 2012;366:914–924. doi:10.1056/NEJMoa1105743. - PubMed Colao A, Bronstein MD, Freda P, Gu F, Shen CC, Gadelha M, Fleseriu M, van der Lely AJ, Farrall AJ, Hermosillo Reséndiz K, et al. Pasireotide versus octreotide in acromegaly: a head-to-head superiority study. Journal of Clinical Endocrinology and Metabolism. 2014;99:791–799. - PMC - PubMed Dietrich H, Hu K, Ruffin M, Song D, Bouillaud E, Wang Y, Hasskarl J. Safety, tolerability, and pharmacokinetics of a single dose of pasireotide long-acting release in healthy volunteers: a single-center Phase I study. European Journal of Endocrinology. 2012;166:821–828. doi:10.1530/EJE-11-0773. - PubMed Faiss S, Pape UF, Böhmig M, Dörffel Y, Mansmann U, Golder W, Riecken EO, Wiedenmann B, International Lanreotide and Interferon Alfa Study Group Prospective, randomized, multicenter trial on the antiproliferative effect of lanreotide, interferon alfa, and their combination for therapy of metastatic neuroendocrine gastroenteropancreatic tumors – the International Lanreotide and Interferon Alfa Study Group. Journal of Clinical Oncology. 2003;21:2689–2696. doi:10.1200/JCO.2003.12.142. - PubMed Show all 24 references Publication types Clinical Trial, Phase II Actions Search in PubMed Search in MeSH Add to Search Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search MeSH terms Adult Actions Search in PubMed Search in MeSH Add to Search Aged Actions Search in PubMed Search in MeSH Add to Search Delayed-Action Preparations Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Neoplasm Metastasis Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / drug therapy* Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / metabolism Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / pathology Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms / drug therapy* Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms / metabolism Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms / pathology Actions Search in PubMed Search in MeSH Add to Search Prospective Studies Actions Search in PubMed Search in MeSH Add to Search Receptors, Somatostatin / metabolism Actions Search in PubMed Search in MeSH Add to Search Somatostatin / administration & dosage Actions Search in PubMed Search in MeSH Add to Search Somatostatin / analogs & derivatives* Actions Search in PubMed Search in MeSH Add to Search Substances Delayed-Action Preparations Actions Search in PubMed Search in MeSH Add to Search Receptors, Somatostatin Actions Search in PubMed Search in MeSH Add to Search Somatostatin Actions Search in PubMed Search in MeSH Add to Search pasireotide Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT01253161 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen PubChem Compound (MeSH Keyword) Grants and funding P30 CA076292/CA/NCI NIH HHS/United States R25 CA174664/CA/NCI NIH HHS/United States LinkOut - more resources Full Text Sources Europe PubMed Central PubMed Central Sheridan PubFactory Other Literature Sources scite Smart Citations Medical ClinicalTrials.gov MedlinePlus Health Information Research Materials NCI CPTC Antibody Characterization Program Miscellaneous NCI CPTAC Assay Portal
+
+Google Scholar Abstract (Pasireotide for refractory hypoglycemia in malignant insulinoma-case report and review of the literature): … A phase IIclinicaltrial(NCT01253161) assessed theclinicalactivity of pasireotide in … SSTR1-5 expression data was available for nearly all patients in thisstudy(12). Thus, furtherstudy…
+
+Google Scholar Abstract (Phase II clinicaltrialof pasireotide long-acting repeatable in patients with metastatic neuroendocrine tumors): …Resultsfrom preclinicalstudiesindicate that pasireotide can inhibit neuroendocrinetumor (NET) growth more robustly … Thestudywas registered with clinicaltrials.gov (NCT01253161). …
+
+Google Scholar Abstract (Phase II clinical trial of pasireotide long-acting repeatable in patients with metastatic neuroendocrine tumors): … The study was registered with clinicaltrials.gov (NCT01253161). … As a practical matter,assessing theefficacyof an antiproliferative agent in a single-arm phase II study is quite difficult, …
+
+Google Scholar Abstract (Phase IIclinical trialof pasireotide long-acting repeatable in patients with metastatic neuroendocrine tumors): … Thisstudywas an open-label, single-arm, phase II prospectiveclinicaltrial. The protocolwas approved by the Ethics … Thestudywas registered with clinicaltrials.gov (NCT01253161). …
+
+Google Scholar Abstract ([PDF][PDF]Advances in the management of unresectable or metastatic pancreatic neuroendocrine tumors: chemotherapy, targeted therapy, hormonal treatment, and future …): … Recruitment was terminated prematurely prior to the first preplanned interimefficacyanalysis,because the independent data andsafetymonitoring committee detected more serious …
+
+Google Scholar Abstract (Testingviolations of the exponential assumption in cancerclinical trialswith survival endpoints): … areclinicallyrelevant for cancer treatment and have been used widely inclinicaltrialsof all… distributions from single or multi-armclinicaltrialsinstead of multivariable analysis (eg, Cox …
+
+Google Scholar Abstract (Testing violations of the exponential assumption in cancer clinical trials with survival endpoints): …researchpractice due to uncertainty about whether or not the exponential assumption holds.We propose atest… We provide the empiricalresultsof this adjustment in Appendix B of the …
+
+Google Scholar Abstract (Phase II clinicaltrialof pasireotide LAR in patients with metastatic neuroendocrine tumors.): …studiedin patients who are refractory to SSAs, but has not yet been investigated in treatmentnaïve patients. Methods: We performed a phase IItrial…Results: 29 patients were enrolled of …
+
+Google Scholar Abstract ([PDF][PDF]Antitumour Effects of Somatostatin Analogues in the Treatment of Neuroendocrine Tumours): … and they have well documentedefficacyin controlling functioning tumour symptoms.… (CLARINET)trial has been designed to examine theefficacyof lanreotide (autogel 120 mg) in the …
+
+Google Scholar Abstract (Phase IIclinical trialof pasireotide LAR in patients with metastatic neuroendocrine tumors.): … Methods: We performed a phase IItrialof first-line pasireotide LAR 60mg q4 weeks inpatients with metastatic low and intermediate grade NETs. Prior systemic therapy, including …
+
+Google Scholar Abstract ([HTML][HTML]Neuroendocrine tumors of the lung: current challenges and advances in the diagnosis and management of well-differentiated disease): … RADIANT-4 is the first phase IIItrialinvolving a large subpopulation of patients with … Tofurther improve evidence-based care, additional randomizedcontrolledtrialsin patients …
+	•	Additional evidence from online sources: Primary outcome: Progression-free Survival (PFS) at One Year
+Secondary outcomes: Overall Radiographic Response Rate (ORR); Adverse Events Possibly Related to Study Treatment
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Phase II clinical trial of pasireotide long-acting repeatable in patients with metastatic neuroendocrine tumors.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/25376618/', 'pmid': '25376618', 'content_scraped': True, 'content_length': 11721}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/25376618/
+Analysis notes: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

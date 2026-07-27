@@ -1,0 +1,31 @@
+TRIAL ANALYSIS SUMMARY - PATIENT 12
+==================================================
+Analysis Status: success
+Analysis Complete: True
+Trials Analyzed: 10
+Trials to Include: 6
+Trials to Exclude: 4
+
+TRIALS TO INCLUDE IN RECOMMENDATION:
+  ✅ NCT03278379: Avelumab in G2-3 NET
+     Rationale: This trial provides evidence that single-agent PD-L1 blockade (Avelumab) has limited antitumor activity (0% ORR) in G2-3 NETs. This informs the recommendation to avoid immunotherapy monotherapy despite the patient's high tumor grade and FDG avidity.
+  ✅ NCT03074513: Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+     Rationale: Provides Phase 2 evidence for the combination of Atezolizumab and Bevacizumab in pNETs (ORR 20%). While likely less efficacious than cytotoxic chemotherapy for bulky disease, it represents a viable non-cytotoxic systemic option supported by clinical data.
+  ✅ NCT03728361: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+     Rationale: Evaluates a Temozolomide-based combination, which is central to the patient's potential chemotherapy plan. Although efficacy was driven by lung NETs, the data informs expectations regarding the addition of checkpoint inhibitors to alkylating agents in pNETs.
+  ✅ NCT03217097: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors
+     Rationale: This is a critical evidence source for a patient requiring chemotherapy. The trial results guide the selection between alkylating agents (e.g., Temozolomide) and Oxaliplatin based on MGMT methylation status, directly addressing the need for an optimal cytotoxic regimen for bulky disease.
+  ✅ NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+     Rationale: Provides high-quality Phase 3 evidence that Cabozantinib significantly improves PFS and achieves an ORR of 19% in pNETs. This establishes Cabozantinib as a robust therapeutic option for this patient's aggressive, bulky disease profile.
+  ✅ NCT03972488: Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET (NETTER-2)
+     Rationale: This Phase 3 trial establishes 177Lu-Dotatate as a standard first-line therapy for G2/G3 NETs. It is included to provide the evidence-based context for why this patient, despite fitting the grade criteria, must be explicitly excluded from this standard of care due to her discordant (SSTR-negative) peritoneal disease.
+
+TRIALS TO EXCLUDE FROM RECOMMENDATION:
+  ❌ NCT02568267: Basket Study of Entrectinib (STARTRK-2)
+     Rationale: This trial requires specific gene fusions (NTRK/ROS1/ALK). While genetic counseling is indicated for this patient, these somatic alterations are extremely rare in Pan-NETs (<1%), and without a confirmed target, this trial does not inform the immediate empiric treatment recommendation.
+  ❌ NCT01842165: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+     Rationale: This trial focuses on dosimetry and prediction in patients treated with PRRT. Since the patient is clinically ineligible for PRRT due to Ga68-negative peritoneal metastases (discordant imaging), optimization data for a therapy she should not receive is not relevant for the recommendation.
+  ❌ NCT01466036: Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+     Rationale: No published results are available to evaluate the efficacy or safety of this intervention.
+  ❌ NCT01253161: Study of Pasireotide Long Acting Release (LAR) in Patients With Metastatic Neuroendocrine Tumors (NETs)
+     Rationale: The trial investigates a somatostatin analog with significant toxicity (hyperglycemia) and limited tumor shrinkage capability. Given the patient's need for significant tumor reduction (bulky disease), this agent is less relevant than cytotoxic or targeted options.

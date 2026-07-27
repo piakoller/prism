@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:08:26.974239
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant for this patient primarily because the provided text describes a trial protocol (Ebbers 2020) without reporting the efficacy or clinical outcomes necessary to inform treatment decisions. Additionally, the patient's disease characteristics and history do not align with the study population: she has a Ki-67 index of 25% (NET G3), whereas the study is restricted to Grade 1-2 tumors (Ki-67 ≤20%), and she has previously received PRRT, which is an exclusion criterion. The study investigates intra-arterial delivery to optimize liver uptake in PRRT-naïve patients, which does not address the current clinical question of re-treatment or consolidation in a patient with systemic (bone, pituitary) metastases who previously demonstrated excellent tolerance and response to standard intravenous PRRT."
+}

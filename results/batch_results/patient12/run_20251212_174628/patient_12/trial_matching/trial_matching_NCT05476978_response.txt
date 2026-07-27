@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:02:27.546036
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for therapy recommendations because it focuses exclusively on a diagnostic intervention (Artificial Intelligence in Endoscopic Ultrasound to differentiate pancreatic lesions) rather than a therapeutic one. The patient has an established diagnosis of metastatic well-differentiated pancreatic NET G2 confirmed by biopsy and currently requires guidance on the best first-line systemic treatment. While the study population includes NETs to validate the diagnostic model, the published results regarding diagnostic accuracy do not offer any data on treatment efficacy, safety, or survival outcomes. Therefore, the study fails the criteria for treatment context and evidence relevance, as it cannot inform the therapeutic management of this patient's confirmed metastatic disease."
+}

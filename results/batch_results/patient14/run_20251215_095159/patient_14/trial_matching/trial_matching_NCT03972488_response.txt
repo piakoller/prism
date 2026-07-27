@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:19:42.401634
+Trial: 75/86
+NCT ID: NCT03972488
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study provides critical evidence supporting the use of PRRT in Grade 3 well-differentiated neuroendocrine tumors (NETs), directly aligning with the patient's specific biology (Ki-67 25%, well-differentiated, SSTR+). Although the patient has a bronchial primary and is being considered for re-treatment (whereas NETTER-2 enrolled newly diagnosed GEP-NETs), the study's findings are highly transferable: it establishes that high Ki-67 (>20%) does not preclude response to PRRT in well-differentiated tumors. This is clinically vital for this patient, who is intolerant to standard chemotherapy (the historical standard for G3) and has exhausted other options. The study validates the biological rationale for prioritizing PRRT over cytotoxic agents in G3 well-differentiated disease, supporting the tumor board's consideration of PRRT consolidation despite the high proliferation index."
+}

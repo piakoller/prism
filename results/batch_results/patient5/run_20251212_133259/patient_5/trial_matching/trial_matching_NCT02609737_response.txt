@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:00:48.098875
+Trial: 70/86
+NCT ID: NCT02609737
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because of a fundamental mismatch in disease biology. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90% (small-cell type). In contrast, this study evaluates radiolabeled somatostatin antagonists (PRRT) specifically in patients with *well-differentiated* neuroendocrine tumors (NETs). Poorly differentiated NECs are biologically distinct from well-differentiated NETs, typically lacking sufficient somatostatin receptor (SSTR) expression to justify PRRT and requiring cytotoxic chemotherapy due to their aggressive kinetics. Furthermore, the patient is currently in clinical remission (NED) after adjuvant therapy, whereas the study targets patients with progressive metastatic disease. Evidence from well-differentiated NETs cannot be reasonably extrapolated to guide treatment for a high-grade NEC."
+}

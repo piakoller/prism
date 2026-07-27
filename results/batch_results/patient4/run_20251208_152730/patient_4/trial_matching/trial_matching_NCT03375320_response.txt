@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T16:03:45.849391
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study (CABINET trial) provides highly relevant Level 1 evidence for the patient's current clinical scenario. Biologically, the patient's Grade 2 well-differentiated duodenal NET aligns perfectly with the trial's extra-pancreatic NET cohort. Clinically, the patient has progressed on multiple lines of therapy, including SSAs, PRRT, and tyrosine kinase inhibitors (surufatinib, sunitinib). The CABINET trial specifically enrolled patients with progressive disease after prior systemic therapies (including PRRT and sunitinib), making the study population directly representative of this patient's heavily pre-treated status. The published results (PMID 39282913) demonstrate a significant progression-free survival benefit with cabozantinib compared to placebo in extra-pancreatic NETs (median PFS 8.4 vs 3.9 months; HR 0.38). This offers a clear, evidence-based therapeutic option (cabozantinib) for a patient who has exhausted standard treatments, addressing the specific tumor board question regarding management after TKI failure."
+}

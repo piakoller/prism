@@ -1,0 +1,14 @@
+=== REGENERATION ITERATION 2 - THERAPY RECOMMENDATION ===
+Timestamp: 2025-12-12T15:43:55.544340
+Patient ID: 8
+================================================================================
+
+Based on the patient's partial response to Peptide Receptor Radionuclide Therapy (PRRT) and current good clinical condition, the recommended therapeutic strategy is to **proceed with the proposed cytoreductive surgery**. This should include resection of the ileal primary tumor, regional lymphadenectomy, and resection/debulking of liver and peritoneal metastases.
+
+**Specific Management Steps:**
+1.  **Surgical Resection:** Perform the planned surgery to address the primary tumor (pT2), regional nodes (pN1), and metastatic burden (pM1 peritoneum/liver), as the patient is a candidate for cytoreduction following the response to systemic therapy.
+2.  **Perioperative Safety:** Administer **intravenous (IV) Somatostatin Analogues (SSA)** (e.g., octreotide) perioperatively to prevent carcinoid crisis during anesthesia and tumor manipulation, particularly given the manipulation of liver metastases.
+3.  **Intraoperative Detection:** Consider the use of radioguided surgery techniques (e.g., **68Ga-DOTATOC probe**) if available, to improve the detection and resection of neuroendocrine tumor lesions, supported by the study design of **NCT05448157**.
+4.  **Post-Surgical Management:** Continue long-term follow-up with imaging (MRI/CT) and biomarkers (5-HIAA, CgA) to monitor for recurrence, as adjuvant therapy is generally not indicated for G2 NETs after resection.
+
+The prior decision to initiate PRRT (specifically **Lutathera/177Lu-DOTATATE** or similar) before surgery was appropriate given the progressive disease on SSA. The patient's response (PR) confirms the efficacy of this sequencing.

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T16:20:25.659099
+Trial: 49/86
+NCT ID: NCT03902951
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates antiandrogen therapy (abiraterone, apalutamide, leuprolide) combined with SBRT for recurrent, metastatic prostate cancer. This does not align with the patient's diagnosis of a well-differentiated pancreatic neuroendocrine tumor (Pan-NET). The biological drivers and therapeutic targets for prostate adenocarcinoma (androgen receptor signaling) are fundamentally different from those in Pan-NETs. Consequently, the study's interventions and endpoints (PSA response, testosterone recovery) provide no clinical applicability or transferable evidence for guiding second-line systemic treatment in this patient."
+}

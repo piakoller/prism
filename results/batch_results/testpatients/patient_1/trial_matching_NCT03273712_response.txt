@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:32:29.379797
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "While the study meets the first two criteria, it fails on the third, preventing it from providing meaningful evidence. The disease alignment is reasonable; assuming the patient's Grade 2 pancreatic NET is SSTR-positive, it aligns with the study's target population of SSTR-expressing tumors. The treatment context is also highly applicable, as PRRT with 90Y-DOTATOC could be a valid therapeutic option for this patient with large, locally advanced, high-risk disease, either as neoadjuvant therapy to improve resectability or as definitive treatment if the tumor is unresectable. However, the study fails the 'Evidence Quality and Relevance' criterion. The provided information explicitly states, \"No publications with results found.\" The abstracts only mention the trial's existence and design without presenting any efficacy or safety data. Without published outcomes such as response rates, survival data, or toxicity profiles, the study offers no actionable clinical evidence to guide a therapy recommendation. It is a trial protocol, not a source of evidence."
+}
+```

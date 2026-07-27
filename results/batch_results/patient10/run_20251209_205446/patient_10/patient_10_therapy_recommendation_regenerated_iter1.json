@@ -1,0 +1,62 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Recommendation: Cabozantinib (Tyrosine Kinase Inhibitor)**\n*   **Evidence Basis:** **NCT03375320 (CABINET Phase 3 Trial)**.\n*   **Dosing Strategy:** Initiate at a **reduced starting dose** (e.g., 40 mg or 20 mg daily) rather than the standard 60 mg.\n    *   *Justification:* The patient is fragile and demonstrated intolerance (asthenia, Grade 2 thrombocytopenia) to Sunitinib, a prior TKI. A reduced dose is essential to balance the significant efficacy benefit demonstrated in the CABINET trial against the risk of recurrent toxicity.\n*   **Efficacy Data:** In the Phase 3 CABINET trial (NCT03375320), patients with advanced pancreatic neuroendocrine tumors (pNETs) who had progressed after prior therapy treated with Cabozantinib achieved a **median progression-free survival (PFS) of 13.8 months** compared to 4.4 months with placebo (Stratified HR 0.23; 95% CI, 0.12 to 0.42; P<0.001). The confirmed objective response rate was **19%**.\n\n**Alternative Recommendation: Peptide Receptor Radionuclide Therapy (PRRT) Retreatment**\n*   **Evidence Basis:** **ENETS 2023 Guidance Paper (Section Q5)** and **ESMO Clinical Practice Guidelines**.\n*   **Regimen:** 177Lu-DOTATATE (2-4 cycles).\n*   **Prerequisites for Eligibility:**\n    1.  **Somatostatin Receptor Imaging (SRI):** A new **68Ga-DOTATATE/TOC PET/CT** must confirm high tracer uptake (SUVmax > liver background) in all metastatic liver lesions.\n    2.  **Bone Marrow Reserve:** Given the patient's persistent Grade 1 thrombocytopenia and prior Grade 2 toxicity, a thorough hematological assessment is required to rule out myelodysplasia or insufficient reserve, as guidelines warn of potential long-term bone marrow toxicity (3-4%).",
+  "rationale_text": "**Clinical Context and Evidence Integration:**\nThe patient presents with a progressive, metastatic Grade 2 NF-Pan-NET and has exhausted standard lines of therapy including somatostatin analogs, PRRT, chemotherapy (Streptozocin/5-FU, CAPOX), and targeted therapies (Everolimus, Belzutifan, Sunitinib).\n\n**1. Justification for Cabozantinib (Overruling Assessment Constraints):**\nWhile the clinical assessment initially advised against TKI re-challenge due to Sunitinib intolerance, the **Phase 3 CABINET trial (NCT03375320)** provides compelling, high-level evidence specifically for this late-line setting. The trial demonstrated a substantial PFS benefit (13.8 months vs. 4.4 months) in patients with pNETs who had progressed on prior therapies. Cabozantinib targets MET and AXL in addition to VEGFR, potentially overcoming resistance mechanisms to prior VEGFR-targeted agents like Sunitinib.\n*   **Safety Management:** To address the patient's fragility and history of Sunitinib-induced asthenia and thrombocytopenia, a reduced starting dose is recommended. This approach aims to leverage the superior efficacy demonstrated in CABINET while mitigating the risk of overlapping toxicities.\n\n**2. Rationale for PRRT Retreatment:**\nAccording to the **ENETS 2023 Guidance Paper (Section Q5)**, retreatment with PRRT is a validated option for patients who achieved a durable response (or stable disease) to the initial course, provided the progression-free interval exceeds one year. This patient completed PRRT in March 2021 with Stable Disease and did not progress until significantly later, meeting the interval criterion.\n*   **Contraindication Check:** The patient's persistent Grade 1 thrombocytopenia requires caution. As noted in the **ESMO Guidelines**, PRRT carries a risk of long-term bone marrow toxicity. Retreatment should only proceed if bone marrow function is deemed adequate and PET imaging confirms continued strong receptor expression.\n\n**3. Exclusion of Other Modalities:**\n*   **Immunotherapy:** Trials such as **NCT03278379 (Avelumab)** and **NCT02834013 (DART, Nivolumab/Ipilimumab)** have demonstrated limited to no efficacy in low/intermediate-grade neuroendocrine tumors (0% ORR in relevant cohorts). Therefore, immunotherapy is not recommended for this Grade 2 tumor.\n*   **Chemotherapy:** While Temozolomide-based regimens are supported by guidelines (ENETS Q7), the patient has already received alkylating agents (Streptozocin) and Capecitabine (in CAPOX). Further cytotoxic chemotherapy may be less favorable given the cumulative hematological toxicity (thrombocytopenia) and fragility compared to the targeted option of Cabozantinib or PRRT retreatment.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Recommendation: Cabozantinib (Tyrosine Kinase Inhibitor)**\n*   **Evidence Basis:** **NCT03375320 (CABINET Phase 3 Trial)**",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**Primary Recommendation: Cabozantinib (Tyrosine Kinase Inhibitor)**\n*   **Evidence Basis:** **NCT03375320 (CABINET Phase 3 Trial)**.\n*   **Dosing Strategy:** Initiate at a **reduced starting dose** (e.g., 40 mg or 20 mg daily) rather than the standard 60 mg.\n    *   *Justification:* The patient is fragile and demonstrated intolerance (asthenia, Grade 2 thrombocytopenia) to Sunitinib, a prior TKI. A reduced dose is essential to balance the significant efficacy benefit demonstrated in the CABINET trial against the risk of recurrent toxicity.\n*   **Efficacy Data:** In the Phase 3 CABINET trial (NCT03375320), patients with advanced pancreatic neuroendocrine tumors (pNETs) who had progressed after prior therapy treated with Cabozantinib achieved a **median progression-free survival (PFS) of 13.8 months** compared to 4.4 months with placebo (Stratified HR 0.23; 95% CI, 0.12 to 0.42; P<0.001). The confirmed objective response rate was **19%**.\n\n**Alternative Recommendation: Peptide Receptor Radionuclide Therapy (PRRT) Retreatment**\n*   **Evidence Basis:** **ENETS 2023 Guidance Paper (Section Q5)** and **ESMO Clinical Practice Guidelines**.\n*   **Regimen:** 177Lu-DOTATATE (2-4 cycles).\n*   **Prerequisites for Eligibility:**\n    1.  **Somatostatin Receptor Imaging (SRI):** A new **68Ga-DOTATATE/TOC PET/CT** must confirm high tracer uptake (SUVmax > liver background) in all metastatic liver lesions.\n    2.  **Bone Marrow Reserve:** Given the patient's persistent Grade 1 thrombocytopenia and prior Grade 2 toxicity, a thorough hematological assessment is required to rule out myelodysplasia or insufficient reserve, as guidelines warn of potential long-term bone marrow toxicity (3-4%).\n</therapy_recommendation>\n\n<rationale>\n**Clinical Context and Evidence Integration:**\nThe patient presents with a progressive, metastatic Grade 2 NF-Pan-NET and has exhausted standard lines of therapy including somatostatin analogs, PRRT, chemotherapy (Streptozocin/5-FU, CAPOX), and targeted therapies (Everolimus, Belzutifan, Sunitinib).\n\n**1. Justification for Cabozantinib (Overruling Assessment Constraints):**\nWhile the clinical assessment initially advised against TKI re-challenge due to Sunitinib intolerance, the **Phase 3 CABINET trial (NCT03375320)** provides compelling, high-level evidence specifically for this late-line setting. The trial demonstrated a substantial PFS benefit (13.8 months vs. 4.4 months) in patients with pNETs who had progressed on prior therapies. Cabozantinib targets MET and AXL in addition to VEGFR, potentially overcoming resistance mechanisms to prior VEGFR-targeted agents like Sunitinib.\n*   **Safety Management:** To address the patient's fragility and history of Sunitinib-induced asthenia and thrombocytopenia, a reduced starting dose is recommended. This approach aims to leverage the superior efficacy demonstrated in CABINET while mitigating the risk of overlapping toxicities.\n\n**2. Rationale for PRRT Retreatment:**\nAccording to the **ENETS 2023 Guidance Paper (Section Q5)**, retreatment with PRRT is a validated option for patients who achieved a durable response (or stable disease) to the initial course, provided the progression-free interval exceeds one year. This patient completed PRRT in March 2021 with Stable Disease and did not progress until significantly later, meeting the interval criterion.\n*   **Contraindication Check:** The patient's persistent Grade 1 thrombocytopenia requires caution. As noted in the **ESMO Guidelines**, PRRT carries a risk of long-term bone marrow toxicity. Retreatment should only proceed if bone marrow function is deemed adequate and PET imaging confirms continued strong receptor expression.\n\n**3. Exclusion of Other Modalities:**\n*   **Immunotherapy:** Trials such as **NCT03278379 (Avelumab)** and **NCT02834013 (DART, Nivolumab/Ipilimumab)** have demonstrated limited to no efficacy in low/intermediate-grade neuroendocrine tumors (0% ORR in relevant cohorts). Therefore, immunotherapy is not recommended for this Grade 2 tumor.\n*   **Chemotherapy:** While Temozolomide-based regimens are supported by guidelines (ENETS Q7), the patient has already received alkylating agents (Streptozocin) and Capecitabine (in CAPOX). Further cytotoxic chemotherapy may be less favorable given the cumulative hematological toxicity (thrombocytopenia) and fragility compared to the targeted option of Cabozantinib or PRRT retreatment.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-09T21:33:09.826081",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 10,
+    "trials_considered": 10,
+    "trials_included": 7,
+    "trials_excluded": 3,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_therapy_recommendation_reasoning.txt"
+  },
+  "regeneration_iteration": 1
+}

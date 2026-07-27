@@ -1,0 +1,38 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - PREVIOUS RECOMMENDATION HAD ISSUES
+================================================================================
+
+The previous therapy recommendation did not pass validation and requires regeneration.
+You MUST address ALL of the issues identified below.
+
+================================================================================
+VALIDATION ISSUES IDENTIFIED
+================================================================================
+
+### SAFETY ISSUES:
+  ❌ Semantic: **Safety - Unaddressed Comorbidity Risks (Diabetes):** The patient has a 10-year history of Type 2 Diabetes. The recommendation lists **Everolimus** as a standard alternative but fails to warn about its well-established side effect of **hyperglycemia**. In a diabetic patient, this is a critical safety consideration requiring specific monitoring instructions which are absent.
+  ❌ Semantic: **Safety - Unaddressed Comorbidity Risks (Hypertension/CKD):** The patient has Hypertension and significant Chronic Kidney Disease (Creatinine 2.24 mg/dL). The recommendation promotes **Cabozantinib** as "safer" due to hepatic metabolism. However, it fails to acknowledge that Cabozantinib (a VEGF inhibitor) frequently causes **hypertension and proteinuria**, both of which can precipitate further renal decline in a patient with existing renal compromise. Labeling it "safer" without mandating blood pressure and urine protein monitoring is clinically dangerous.
+
+================================================================================
+SPECIFIC GUIDANCE FOR REGENERATION
+================================================================================
+
+1. **Add Specific Safety Warnings:** Explicitly mention the risk of **hyperglycemia** with Everolimus (referencing the patient's Type 2 Diabetes) and the risk of **hypertension/proteinuria** with Cabozantinib (referencing the patient's HTN and CKD).
+2. **Define Monitoring Requirements:** Include mandatory monitoring for blood glucose (if Everolimus is chosen) and blood pressure/urine protein (if Cabozantinib is chosen).
+3. **Refine Selection Criteria:** Advise that the choice between Cabozantinib and Everolimus should be guided by which comorbidity (Diabetes vs. Hypertension) is currently better controlled.
+4. **Clarify Sunitinib Exclusion:** Briefly mention that Sunitinib is excluded due to its higher risk of renal toxicity/hypertension compared to the selected options.
+5. **Verify Data:** Ensure trial efficacy numbers are either removed if not in the source text, or explicitly attributed to general oncological knowledge if the prompt allows, rather than implying they came from the provided summary.
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above
+2. Be explicit about safety considerations and contraindications
+3. Provide clear rationale for any high-risk interventions
+4. Ensure all trial citations are accurate and from the evidence provided
+5. Maintain consistency with the patient assessment
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

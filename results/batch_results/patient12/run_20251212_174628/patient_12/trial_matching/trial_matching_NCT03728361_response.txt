@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:03:52.081957
+Trial: 34/86
+NCT ID: NCT03728361
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study meets all criteria for relevance. Biologically, the patient has a metastatic, well-differentiated G2 Pancreatic NET with aggressive features (Ki-67 20%, FDG-positive), aligning with the study's Cohort 2 which enrolled advanced neuroendocrine tumors of any grade and origin. Regarding clinical applicability, the patient requires first-line systemic therapy for bulky, symptomatic disease; the study permits treatment-naïve patients and investigates a Temozolomide-based regimen (Temozolomide + Nivolumab). Since Temozolomide is a standard backbone for Pan-NETs (e.g., CAPTEM), evaluating the addition of immunotherapy is a relevant clinical question for this high-risk profile. The published results (PMID: 36255391) provide meaningful evidence, reporting an overall response rate of 32.1%, but notably highlighting a significant difference between lung NENs (64% ORR) and other primary sites (significantly lower). This evidence is clinically actionable for the tumor board: it suggests that while the combination is active, the benefit is largely driven by lung primaries, potentially discouraging the off-label addition of Nivolumab to Temozolomide for this Pan-NET patient in favor of standard chemotherapy, or managing expectations if this regimen is considered."
+}

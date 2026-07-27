@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T16:07:42.663857
+Trial: 70/86
+NCT ID: NCT02609737
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful clinical evidence supporting the use of 177Lu-DOTA-JR11 (Satoreotide Tetraxetan), a somatostatin receptor antagonist, for progressive well-differentiated NETs. Biologically, the patient’s G2 duodenal NET aligns with the study population of metastatic, SSTR-positive NETs. Clinically, this is highly relevant for a patient who has progressed on standard therapies, including somatostatin analogs, TKIs, and prior agonist-based PRRT. Although the study excluded patients with prior radioisotope therapy, the published results demonstrating the safety, dosimetry, and preliminary efficacy (e.g., disease control rates) of SSTR antagonists offer a crucial therapeutic alternative. Antagonists like Satoreotide have shown potential for higher tumor uptake compared to agonists, making this evidence actionable for considering antagonist-based PRRT as a next-line strategy (via compassionate use or subsequent trials) in the context of the patient's liver-only progression and resistance to standard agents. It is assumed the patient remains SSTR-positive on updated imaging."
+}

@@ -1,0 +1,177 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-09-22T11:12:44.459508
+Trial: 43/86
+NCT ID: NCT05246319
+Model: google/gemini-2.5-pro
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 78-year-old patient with no active malignancy and medical history of:
+•	Type 2 diabetes mellitus (on oral antidiabetic drugs for 10 years)
+•	Hypertension and dyslipidemia
+•	Chronic kidney disease (baseline creatinine 1.6–1.8 mg/dL)
+•	Malignant external otitis with secondary osteomyelitis in January 2019 (malaritis); incidental finding of pituitary macroadenoma
+•	Benign prostatic hyperplasia (treated with prostatectomy in 2012)
+•	Glaucoma under ophthalmologic follow-up
+•	Jan–Mar 2021: Incidental elevation of GGT, with liver metastases detected on abdominal ultrasound.
+•	Thoracoabdominal CT: 8 cm mass in the pancreatic uncinate process with internal calcifications. Mesenteric vessels displaced but not infiltrated. Subcentimetric peripancreatic and retroperitoneal lymph nodes. Multiple liver metastases.
+•	Liver biopsy: Well-differentiated NET G1 with Ki67 2%. IHC: chromogranin A+, synaptophysin+, CD56+, CAM5.2+; CK20–, CK7–.
+•	The patient received first-line treatment with Lanreotide Autogel from April 2021 to July 2025.
+2.	Current Clinical Status
+•	Mild toxicity: grade 1 diarrhea
+•	No tumor-related symptoms
+•	ECOG performance status: 0–1
+•	Lab tests: Creatinine 2.24 mg/dL; other parameters unremarkable
+•	MRI (July 2025): Stable liver metastases (at least 25 lesions); largest increased from 55 mm to 58 mm in segment I, and from 65 mm to 68 mm in the right hepatic lobe. Mesenteric root mass increased from 82×40 mm to 90×49 mm.
+Question for Tumorboard:
+What would be the most appropriate second-line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+### Clinical Assessment for Tumor Board
+
+**Patient Summary:**
+This is a 78-year-old male with a well-differentiated, nonfunctioning pancreatic neuroendocrine tumor (NF-Pan-NET), grade 1 (Ki-67 2%), with a large primary mass in the pancreatic uncinate process (90x49 mm) and extensive liver metastases (at least 25 lesions). He has been treated with first-line lanreotide autogel for over four years and now demonstrates clear radiological evidence of disease progression. The patient's performance status is good (ECOG 0–1) and he is asymptomatic from a tumor perspective. Significant comorbidities include type 2 diabetes mellitus, hypertension, and chronic kidney disease, with recent worsening of renal function (creatinine 2.24 mg/dL from a baseline of 1.6–1.8 mg/dL).
+
+**Analysis of Disease Status:**
+- **Diagnosis:** The diagnosis of a well-differentiated G1 NF-Pan-NET is histologically confirmed (liver biopsy), consistent with the IHC profile (chromogranin A+, synaptophysin+). This is typically an indolent tumor, but the patient presents with a high tumor burden.
+- **Progression:** The patient meets the criteria for disease progression on a somatostatin analogue (SSA), as defined by an increase in the size of both the primary pancreatic mass and multiple liver metastases on the most recent MRI. According to both the ENETS 2023 and ESMO 2020 guidelines, this progression warrants consideration of second-line systemic therapy.
+
+**Evaluation of Second-Line Systemic Treatment Options based on Guidelines:**
+
+The primary clinical question is the selection of the most appropriate second-line systemic therapy. The main options for progressive, advanced NF-Pan-NETs, as outlined in the provided ENETS 2023 and ESMO 2020 guidelines, are peptide receptor radionuclide therapy (PRRT), molecular targeted therapies (everolimus, sunitinib), and systemic chemotherapy.
+
+1.  **Peptide Receptor Radionuclide Therapy (PRRT):**
+    - **Guideline Context:** PRRT is a recommended second-line treatment for progressive, SSTR-positive G1-G2 NF-Pan-NETs (ENETS 2023, Level 2b, Grade B; ESMO 2020, Level III, A).
+    - **Patient-Specific Considerations:**
+        - A critical piece of information is missing: there is no mention of a somatostatin receptor imaging (SRI) scan, such as a 68Ga-DOTATATE PET/CT. This imaging is mandatory to confirm sufficient and homogeneous SSTR expression, which is a prerequisite for PRRT eligibility.
+        - The patient's worsening renal function (creatinine 2.24 mg/dL) poses a significant relative contraindication. Both guidelines acknowledge the risk of iatrogenic adverse events, including renal dysfunction, with PRRT (ENETS 2023, Section 4.1; ESMO 2020, Section on PRRT). The existing chronic kidney disease significantly increases the risk of further, potentially irreversible, nephrotoxicity.
+
+2.  **Molecular Targeted Therapies (Everolimus and Sunitinib):**
+    - **Guideline Context:** Both everolimus and sunitinib are strongly recommended for progressive G1-G2 NF-Pan-NETs based on Level 1a evidence (ENETS 2023, Grade A; ESMO 2020, Level I, A).
+    - **Patient-Specific Considerations:**
+        - **Everolimus:** The RADIANT-3 trial demonstrated a significant PFS benefit. However, a known side effect is hyperglycemia (ESMO 2020). Given the patient's history of type 2 diabetes, initiating everolimus would require close glycemic monitoring and potential adjustment of his oral antidiabetic medications.
+        - **Sunitinib:** The pivotal phase 3 trial also showed a significant PFS improvement. A common adverse event is hypertension (ESMO 2020). The patient's pre-existing hypertension would need to be carefully managed. Sunitinib is also associated with diarrhea, which could exacerbate his current grade 1 toxicity.
+        - The primary goal of these agents is typically disease stabilization, as objective response rates are modest (<10%) (ESMO 2020).
+
+3.  **Systemic Chemotherapy:**
+    - **Guideline Context:** Chemotherapy is a key treatment modality for advanced Pan-NETs. The ENETS 2023 guidelines suggest temozolomide with capecitabine (CAPTEM) or streptozotocin (STZ) + 5-FU as options for progressive G1-G2 NF-Pan-NETs (Level 2b, Grade B). ESMO 2020 also recommends these regimens (Level II, A/B).
+    - **Patient-Specific Considerations:**
+        - **Streptozotocin (STZ)-based regimens:** STZ is known for its significant renal toxicity (ENETS 2023, Section 4.1). Given the patient's elevated creatinine of 2.24 mg/dL, STZ-based chemotherapy would carry a high risk of inducing or accelerating renal failure and should be avoided.
+        - **Temozolomide and Capecitabine (CAPTEM):** This regimen has a more favorable renal safety profile. The ECOG-ACRIN E2211 trial demonstrated a superior PFS for CAPTEM over temozolomide alone and a notable objective response rate (40% per ENETS 2023 summary). The ENETS guidelines note that chemotherapy is a consideration for patients with bulky disease or when tumor shrinkage is a goal (Section 3.4). Given this patient's high tumor burden, the potential for a volumetric response with CAPTEM is a significant clinical advantage over the primarily cytostatic effect of targeted agents.
+
+**Conclusion of Assessment:**
+The patient has high-burden, progressive metastatic G1 NF-Pan-NET requiring second-line therapy. His good performance status allows for various treatment options. However, his worsening renal impairment is a major limiting factor for certain therapies. PRRT is not currently a viable option due to the lack of required SSTR imaging and the high risk of nephrotoxicity. STZ-based chemotherapy is similarly contraindicated due to renal risk. The choice lies between targeted agents (everolimus/sunitinib) and the CAPTEM chemotherapy regimen. While targeted agents are well-supported by evidence, they would require careful management of the patient's comorbidities (diabetes and hypertension) and primarily offer disease stabilization. The CAPTEM regimen offers a higher probability of objective tumor response, which may be beneficial in the setting of high tumor burden, and has a more favorable safety profile with respect to the patient's key comorbidity of chronic kidney disease.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Monitor needed based on assessment
+	•	Question for Tumorboard: What would be the most appropriate second-line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT05246319
+	•	Title: Preoperative Imaging in Patients With Small Bowel Neuroendocrine Tumors
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: preoperative imaging
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Patients with neuroendocrine tumors who underwent a scheduled surgical procedure for small bowel resection
+
+Exclusion Criteria:
+
+* patients without preoperative CT scan
+* patients with abdominal resection performed in emergency *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: Digestive NETs are the second most common malignant digestive tumor after adenocarcinoma. The most common gastrointestinal NETs arise from the small intestine. These tumors have a high lymph node and distant metastatic potential (hepatic, pulmonary, etc.). Their management is essentially surgical and the extent of the resection essentially depends on preoperative data from conventional and isotopic imaging.
+
+The goal of surgical resection is to remove the portion of the small intestine carrying the tumour(s) with healthy margins (so-called R0 resection) and affected lymph nodes in the mesentery (lymph node dissection). The extent of lymph node dissection, sometimes significant, exposes you to the risk of short hail with its own complications (malnutrition, diarrhoea, etc.). Consequently, an analysis of the benefits and risks between the interest of an extensive and oncological resection (R0) and the risks of short bowel must be carried out for each patient.
+
+The reference examination to define lymph node involvement is determined by the histological examination of the resected surgical specimen (reference examination). The preoperative evaluation of lymph node extension is done by preoperative abdominal CT scan. However, the preoperative CT scan is not always consistent (sensitivity and specificity) with the pathology data (reference examination). For about 5 years, isotopic imaging (DOPA-PET and DOTATOC) has become feasible and could improve the quality of preoperative evaluation of lymph node extension. Consequently, the aim of this study is to determine the contribution of isotopic imaging (DOPA-PET and DOTATOC) in the preoperative evaluation of lymph node extension.
+	•	Publications: 5 publication(s) found; Analysis: Found 5 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Deguelte S, Hammoutene C, Poncet G, Brunaud L, Perrier M, Kianmanesh R, Cadiot G. Concept of reintervention with thorough lymphadenectomy after suboptimal resection of small-intestine neuroendocrine neoplasms: A multicentre preliminary study. J Neuroendocrinol. 2022 Jun;34(6):e13117. doi: 10.1111/jne.13117. Epub 2022 Apr 18.
+• Mocellin S, Nitti D. Gastrointestinal carcinoid: epidemiological and survival evidence from a large population-based study (n = 25 531). Ann Oncol. 2013 Dec;24(12):3040-4. doi: 10.1093/annonc/mdt377. Epub 2013 Sep 19.
+• Dasari A, Shen C, Halperin D, Zhao B, Zhou S, Xu Y, Shih T, Yao JC. Trends in the Incidence, Prevalence, and Survival Outcomes in Patients With Neuroendocrine Tumors in the United States. JAMA Oncol. 2017 Oct 1;3(10):1335-1342. doi: 10.1001/jamaoncol.2017.0589.
+• Keck KJ, Maxwell JE, Utria AF, Bellizzi AM, Dillon JS, O'Dorisio TM, Howe JR. The Distal Predilection of Small Bowel Neuroendocrine Tumors. Ann Surg Oncol. 2018 Oct;25(11):3207-3213. doi: 10.1245/s10434-018-6676-2. Epub 2018 Jul 27.
+• Moertel CG. Karnofsky memorial lecture. An odyssey in the land of small tumors. J Clin Oncol. 1987 Oct;5(10):1502-22. doi: 10.1200/JCO.1987.5.10.1502. No abstract available.
+	•	Key findings from publications: No detailed findings available
+	•	Additional evidence from online sources: Primary outcome: mesenteric lymph nodes
+Secondary outcomes: comparison
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Found 5 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

@@ -1,0 +1,168 @@
+=== RECOMMENDATION VALIDATION PROMPT ===
+Timestamp: 2026-01-05T11:24:34.067643
+Patient ID: 17
+Model: google/gemini-3-pro-preview
+==================================================
+
+You are a clinical validation expert reviewing a therapy recommendation for quality assurance.
+
+Your task is to CRITICALLY EVALUATE whether the therapy recommendation is:
+1. COMPLETE - addresses all clinical needs identified in the patient assessment
+2. ACCURATE - correctly cites and interprets evidence from trials and guidelines  
+3. CONSISTENT - doesn't contradict itself or the patient assessment
+4. SAFE - considers contraindications and patient-specific risk factors
+5. ACTIONABLE - provides clear next steps
+
+**IMPORTANT**: Be thorough and critical. If you find ANY issues that could compromise patient care, you must flag them.
+
+=== PATIENT ASSESSMENT SUMMARY ===
+=== DETAILED CLINICAL ASSESSMENT ===
+
+**Patient Summary and Clinical Status**
+The patient is a 34-year-old male with a well-differentiated neuroendocrine tumor (NET) of the duodenum, initially diagnosed in 2016 (pT2 pN1, Ki-67 2-3%). The clinical course is characterized by recurrent metastatic spread to the liver despite multiple surgical interventions (pylorus-preserving partial duodeno-pancreatectomy in 2016, central liver resection in 2018, and resection of liver metastases in 2023). The patient has a good performance status (ECOG 0).
+
+**Assessment of Disease Progression**
+Current imaging (Gallium DOTATATE-PET/CT, August 2025) demonstrates disease progression with the appearance of two new liver metastases and suspicion of two lymph node metastases in the upper abdomen. This progression has occurred while the patient was under treatment with a Somatostatin analogue (SSA), which was continued after the 2023 surgery.
+
+**Tumor Biology and Receptor Status**
+The tumor was initially characterized as well-differentiated with a low proliferation index (Ki-67 2-3%). The detection of new metastases via Gallium DOTATATE-PET/CT confirms the expression of somatostatin receptors (SSTR) in the new lesions.
+
+**Guideline-Based Clinical Assessment**
+
+1.  **Systemic Therapy Escalation:**
+    *   According to the **ESMO Clinical Practice Guidelines (2020)**, the goal of systemic therapy is to control tumor growth. Since the patient has shown radiological progression on SSA therapy, the guidelines suggest escalating treatment.
+    *   **Peptide Receptor Radionuclide Therapy (PRRT):** Both **ENETS (2023)** and **ESMO (2020)** guidelines identify PRRT as a valid therapeutic option for progressive, SSTR-positive NETs. ESMO specifically notes that PRRT is recommended in patients with disease progression on SSAs. The patient's positive Gallium DOTATATE-PET/CT suggests potential eligibility. However, it must be clinically verified that the uptake in all tumor lesions (both liver and lymph nodes) exceeds the uptake of normal liver parenchyma (liver SUVmax is typically ~6–7) to confirm suitability for PRRT.
+    *   **Targeted Molecular Therapy:** **ESMO (2020)** guidelines recommend Everolimus for patients with clearly progressive gastrointestinal NETs (based on the RADIANT-4 trial). **ENETS (2023)** also lists Everolimus as a therapeutic option for widespread metastatic gastroduodenal NETs, though it notes the evidence is limited compared to other sites.
+    *   **Chemotherapy:** Systemic chemotherapy is generally not recommended for well-differentiated, slowly growing GI-NETs (Ki-67 <10%) according to **ESMO (2020)**, unless the tumor is rapidly progressive or the grade has increased.
+
+2.  **Surgical Considerations:**
+    *   **ENETS (2023)** guidelines state that surgery with curative intent for metastatic gastroduodenal NETs should be performed if a complete tumor resection (R0) seems feasible.
+    *   **ESMO (2020)** recommends that a surgical approach for stage IV disease be considered in selected patients with exclusive or predominant liver involvement.
+    *   Given the patient's history of two prior liver resections (2018, 2023) and the recurrence of disease within two years of the last surgery, along with new suspected extra-hepatic nodal involvement, the feasibility and benefit of a third liver resection must be weighed against the high likelihood of further systemic recurrence.
+
+3.  **Re-evaluation of Tumor Grade:**
+    *   While the initial Ki-67 was 2-3%, **ESMO (2020)** guidelines suggest that a re-biopsy may be considered in the follow-up of metastatic disease to exclude dedifferentiation (progression to higher grade), although the current slow progression over 9 years is consistent with a well-differentiated phenotype.
+
+**Conclusion**
+The patient presents with progressive, SSTR-positive metastatic disease while on maintenance SSA therapy. The clinical picture aligns with guideline criteria for escalating systemic therapy (switching to PRRT or Everolimus) or considering further surgical resection if technically feasible and oncologically sound.
+
+Urgency Level: medium
+Assessment Confidence: medium
+
+=== TRIAL ANALYSIS SUMMARY ===
+Total Trials Analyzed: 13
+Trials Marked for INCLUSION: 6
+Trials Marked for EXCLUSION: 7
+
+INCLUDED TRIALS:
+  - NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE) (Relevance: N/A)
+  - NCT05153772: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (Relevance: N/A)
+  - NCT02236910: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours (Relevance: N/A)
+  - NCT02754297: Personalized PRRT of Neuroendocrine Tumors (Relevance: N/A)
+  - NCT01842165: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs (Relevance: N/A)
+  - NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET) (Relevance: N/A)
+
+=== GUIDELINES SUMMARY ===
+Matched Guidelines: 2
+
+  - Gastroduodenal NETs G1-G3 (Relevance: 1.0)
+  - Gastroenteropancreatic neuroendocrine neoplasms: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up [y] (Relevance: 1.0)
+
+=== THERAPY RECOMMENDATION TO VALIDATE ===
+
+RECOMMENDATION:
+**Primary Recommendation: Escalation to Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE combined with continued Somatostatin Analogue (SSA)**
+
+Given the radiological progression of the SSTR-positive duodenal neuroendocrine tumor, the recommended course is to escalate systemic therapy to **177Lu-DOTATATE PRRT**. Standard clinical practice and guideline recommendations support **continuing the Somatostatin Analogue (SSA)** maintenance therapy during and after PRRT to maintain symptom control (if functional) and for potential synergistic anti-proliferative effects.
+
+*   **Pre-treatment Verification:** Confirm that uptake in all new liver and lymph node metastases exceeds normal liver parenchyma uptake on the Gallium DOTATATE-PET/CT (liver SUVmax typically ~6–7) to ensure eligibility.
+*   **Supporting Evidence:**
+    *   **NCT02754297 (Phase 2, Personalized PRRT):** Demonstrated an **Objective Response Rate (ORR) of 23.1%** and stable disease in 33.3% of assessable patients with progressive NETs, supporting the efficacy of 177Lu-octreotate in this setting.
+    *   **NCT02236910 (Registry Study):** Provided real-world evidence for 177Lu-DOTATATE in progressive well-differentiated NETs, reporting a median **Progression-Free Survival (PFS) of 34.1 months**. While retrospective, this supports the potential for durable disease control.
+    *   **NCT03049189 (COMPETE Phase 3 Trial):** This ongoing trial directly compares PRRT against Everolimus in GEP-NETs, underscoring PRRT as a primary standard-of-care consideration for patients progressing on first-line therapy.
+
+**Alternative Systemic Options (Targeted Therapy)**
+If PRRT is not feasible (e.g., due to renal/bone marrow compromise) or is declined, the following targeted therapies are recommended:
+
+1.  **Cabozantinib:**
+    *   **Evidence:** **NCT03375320 (CABINET Phase 3 Trial):** In patients with advanced extra-pancreatic NETs (epNETs) progressing on prior therapy, Cabozantinib significantly improved median PFS to **8.4 months** compared to 3.9 months with placebo (HR 0.38; 95% CI, 0.25 to 0.59). This trial provides high-level evidence specifically relevant to the patient's duodenal (extra-pancreatic) primary.
+2.  **Everolimus:**
+    *   **Evidence:** Supported by the **RADIANT-4** trial (referenced in ESMO guidelines), Everolimus is recommended for progressive non-functional GI-NETs.
+
+**Surgical Recommendation**
+A third liver resection is **not recommended** at this time. The rapid recurrence (within 2 years of the 2023 resection) and the appearance of new extra-hepatic disease (lymph node metastases) indicate that the disease is systemically driven, making local control insufficient.
+
+RATIONALE:
+**Clinical Justification:**
+The patient presents with a well-differentiated (Ki-67 2-3%), SSTR-positive duodenal NET that has progressed radiologically (new liver and lymph node metastases) despite maintenance SSA therapy and multiple prior liver resections. This clinical picture necessitates systemic therapy escalation rather than further local surgical intervention.
+
+**Guideline Alignment:**
+*   **ESMO (2020) & ENETS (2023):** Both guidelines identify PRRT as a valid therapeutic option for progressive, SSTR-positive NETs. ESMO specifically notes PRRT is recommended for patients with disease progression on SSAs. The guidelines also support the use of targeted therapies like Everolimus (RADIANT-4) or Cabozantinib (based on recent data like CABINET) in this setting.
+*   **SSA Continuation:** Discontinuing SSA is not recommended. Guidelines and standard practice (e.g., NETTER-1 paradigm) support continuing SSA alongside PRRT, particularly for functional tumors or to prevent hormonal crises, and potentially for additive tumor control.
+
+**Evidence Synthesis:**
+*   **PRRT:** The recommendation for PRRT is supported by prospective Phase 2 data (**NCT02754297**) showing objective responses and retrospective registry data (**NCT02236910**) suggesting favorable long-term survival outcomes. The ongoing **COMPETE trial (NCT03049189)** further validates PRRT as a key therapeutic modality to consider against targeted agents.
+*   **Cabozantinib:** The **CABINET trial (NCT03375320)** provides robust Phase 3 evidence for Cabozantinib in extra-pancreatic NETs, making it a strong alternative if PRRT is unsuitable.
+*   **Surgery:** Given the history of two prior liver resections (2018, 2023) and rapid recurrence with new extra-hepatic involvement, the likelihood of achieving durable disease control with surgery alone is low. Systemic therapy is required to address the multifocal nature of the progression.
+
+=== YOUR VALIDATION TASK ===
+
+Carefully review the therapy recommendation against the evidence provided above.
+
+Check for the following issues:
+
+1. COMPLETENESS ISSUES:
+   - Does the recommendation address ALL clinical needs identified in the patient assessment?
+   - Are important clinical considerations (disease grade, symptoms, biomarkers, prior treatments) adequately addressed?
+   - Are alternative options discussed if the primary recommendation isn't feasible?
+
+2. ACCURACY ISSUES:
+   - Are all trial citations (NCT numbers) correctly used?
+   - Are the claimed trial outcomes/findings accurate based on the trial analysis?
+   - Are guideline recommendations correctly interpreted?
+   - Is there any evidence of fabricated or misrepresented data?
+
+3. CONSISTENCY ISSUES:
+   - Does the recommendation align with the urgency level from the patient assessment?
+   - Are there any internal contradictions in the recommendation?
+   - Does the rationale actually support the recommendation given?
+   - Are trials marked for EXCLUSION incorrectly being recommended?
+
+4. SAFETY ISSUES:
+   - Are known contraindications from the patient assessment respected?
+   - Are patient-specific risk factors (organ function, performance status) considered?
+   - Are monitoring requirements mentioned for high-risk therapies?
+
+5. ACTIONABILITY ISSUES:
+   - Are next steps clearly defined?
+   - Is the recommendation specific enough to be implemented?
+   - Are follow-up timelines provided?
+
+Provide your validation in the following format:
+
+<validation_decision>
+[State clearly: PASS or RECONSIDER]
+</validation_decision>
+
+<critical_issues>
+[List any critical issues that make the recommendation incomplete, wrong, or unsafe. Be specific about what is missing or incorrect. If none, write "None identified."]
+</critical_issues>
+
+<warnings>
+[List any non-critical concerns or areas for improvement. If none, write "None identified."]
+</warnings>
+
+<detailed_reasoning>
+[Provide detailed reasoning for your validation decision. Explain:
+- What you checked in each validation category
+- Specific examples of issues you found (quote relevant parts)
+- Why each issue is problematic for patient care
+- What would need to be corrected for the recommendation to pass validation
+Be thorough and specific - this reasoning will guide the regeneration process.]
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+[If you marked as RECONSIDER, provide specific actionable guidance on what should be corrected or added in the regenerated recommendation. If PASS, write "No improvements needed."]
+</recommendations_for_improvement>
+
+Remember: Patient safety is paramount. If in doubt, mark as RECONSIDER and explain your concerns in detail.

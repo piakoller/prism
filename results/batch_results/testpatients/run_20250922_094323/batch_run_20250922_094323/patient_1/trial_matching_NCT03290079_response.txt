@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:02:23.532823
+Trial: 51/86
+NCT ID: NCT03290079
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient, failing all three core criteria. Firstly, there is a critical lack of disease alignment, as the study's inclusion criteria are for non-pancreatic NETs and explicitly exclude patients with pancreatic neuroendocrine tumors, which is this patient's diagnosis. Secondly, the treatment context is inapplicable; the patient's recent severe gastrointestinal bleeding is an explicit exclusion criterion and a major contraindication for lenvatinib, which has a known risk of hemorrhage. This makes the intervention unsafe in the patient's current clinical scenario. Thirdly, and most decisively, the study fails on evidence quality and relevance because there are no published results. The provided data explicitly states, \"No publications with results found.\" Without any efficacy or safety data (e.g., ORR, PFS), the study offers no actionable insights and cannot be used to guide any therapeutic decisions, regardless of the clinical scenario considered."
+}
+```

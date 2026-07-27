@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:03:47.002781
+Trial: 80/86
+NCT ID: NCT04711135
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a poorly differentiated neuroendocrine carcinoma (NEC) with a Ki-67 of 90%, whereas the NETTER-P study evaluates Lutathera in well-differentiated, low-grade (G1/G2, Ki-67 ≤20%) neuroendocrine tumors. Biologically, these are distinct entities; high-grade NECs typically lack sufficient SSTR expression for PRRT and require cytotoxic chemotherapy, unlike the indolent tumors studied here. Furthermore, the study population is restricted to adolescents (12–18 years) to assess pediatric safety and dosimetry, which offers no clinical value for a 65-year-old adult patient for whom adult safety profiles are already established. Consequently, the study provides no transferable evidence for managing an adult with a high-grade NEC."
+}

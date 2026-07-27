@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T10:38:51.965330
+Trial: 24/86
+NCT ID: NCT03110978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "Criteria 1 (Disease Alignment) and 2 (Treatment Context) are not met. The patient has a metastatic well-differentiated Pancreatic NET G1 with extensive liver burden (>25 lesions), requiring systemic therapy. The study investigates Stereotactic Body Radiation Therapy (SBRT) with Nivolumab for early-stage (Stage I-IIA) or isolated recurrent Non-Small Cell Lung Cancer (NSCLC). The disease biology (NSCLC/lung carcinoid vs. PanNET), stage (localized vs. metastatic), and treatment intent (local control vs. systemic management) are fundamentally different. SBRT is not a viable strategy for diffuse metastatic disease, and evidence regarding immunotherapy in early-stage lung cancer cannot be extrapolated to guide second-line systemic treatment for a G1 PanNET."
+}

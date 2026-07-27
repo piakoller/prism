@@ -1,0 +1,35 @@
+=== RAW LLM RESPONSE ===
+Timestamp: 2025-12-08T15:32:12.816655
+Patient ID: 4
+Model: google/gemini-3-pro-preview
+==================================================
+
+<assessment>
+**Patient Clinical Profile and Disease Status**
+The patient is a 68-year-old female with a well-differentiated, Grade 2 (Ki-67 3–5%) functional duodenal neuroendocrine tumor (NET), initially diagnosed in 2013. The disease course is characterized by synchronous liver metastases and a long natural history (12 years). The patient presents with liver-only disease progression (confirmed by RECIST PD in October 2025) following a sequence of extensive multimodal treatments.
+
+**Treatment History and Resistance Profile**
+The patient is heavily pre-treated and has demonstrated disease progression on multiple therapeutic lines:
+1.  **Somatostatin Analogues (SSA):** Progressed after initial control (started 2013).
+2.  **Locoregional and Surgical Therapy:** Underwent TAE, resection of the primary duodenal neoplasm, and liver resection (2013–2014), followed by multiple subsequent locoregional therapies.
+3.  **Peptide Receptor Radionuclide Therapy (PRRT):** Administered in 2017–2018 due to liver progression.
+4.  **Tyrosine Kinase Inhibitors (TKIs):**
+    *   **Surufatinib:** Achieved long-term control (>40 cycles) within a phase II trial but eventually progressed.
+    *   **Sunitinib:** Initiated in June 2025 for mild hepatic progression; resulted in stable disease initially but failed by October 2025 (RECIST PD).
+
+**Current Clinical Assessment**
+Despite radiological progression, the patient maintains an excellent performance status (ECOG PS 0) and is currently asymptomatic ("no relevant clinical symptoms"), suggesting a dissociation between tumor growth and clinical deterioration. The tumor remains well-differentiated with a relatively low proliferative index (Ki-67 3–5%).
+
+**Guideline-Based Assessment of Management Options**
+Based on the *ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up*, the following factors are relevant for the tumor board's assessment:
+
+*   **Systemic Therapy (mTOR Inhibitors):** The patient has progressed on TKIs (Surufatinib and Sunitinib). The guidelines recommend Everolimus for the treatment of advanced, non-functional neuroendocrine tumors of the gastrointestinal tract (RADIANT-4 trial). While the patient's tumor was originally functional, she is currently asymptomatic. The guidelines note that Everolimus should be used in patients with clearly progressive GI NETs.
+*   **Chemotherapy:** The guidelines state that results with systemic chemotherapy for advanced well-differentiated G1/G2 GI NETs are poor (ORR 11.5%) and generally "cannot be recommended." Chemotherapy is typically reserved for rapidly progressive tumors or those with higher Ki-67 (e.g., 15–20%). Given this patient's Ki-67 of 3–5% and long disease history, chemotherapy may have limited utility.
+*   **Locoregional Therapy:** As the patient presents with liver-only progression, the guidelines suggest that vascular and ablative locoregional modalities (e.g., embolization, ablation) can be considered as an alternative or adjunct to systemic therapy in patients with liver-limited disease.
+*   **PRRT Re-treatment Consideration:** The patient received PRRT 7–8 years ago. While the guidelines primarily discuss PRRT as a second-line therapy after SSA failure, they acknowledge it as a therapeutic option in progressive SSTR-positive NETs. Re-evaluation of Somatostatin Receptor (SSTR) status is essential.
+    *   *Crucial Constraint:* Eligibility for any further PRRT consideration requires confirmation via [68]Ga/[64]Cu-SSTR-PET-CT that uptake in all metastatic lesions is significantly higher than the liver background. If lesions show low or heterogeneous uptake, PRRT is generally not indicated.
+*   **Surufatinib Context:** The guidelines acknowledge recent data (SANET-ep) indicating activity of Surufatinib in extra-pancreatic NETs, consistent with the patient's prior response, though she has now developed resistance to this class.
+
+**Diagnostic Requirements**
+To finalize the management plan, updated staging and molecular imaging are necessary to characterize the metabolic activity and receptor status of the progressing hepatic lesions, specifically to distinguish between slow progression suitable for locoregional control versus systemic progression requiring a switch in drug class (e.g., to an mTOR inhibitor).
+</assessment>

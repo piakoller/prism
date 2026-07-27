@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:05:09.560224
+Trial: 27/86
+NCT ID: NCT03074513
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "While the study aligns with the patient's tumor biology (Grade 2 pNET), it fails the clinical applicability criterion due to significant safety contraindications. The patient presents with massive, life-threatening upper gastrointestinal bleeding caused by direct tumor infiltration into the stomach. The study intervention combines Atezolizumab with Bevacizumab; Bevacizumab is a VEGF inhibitor with a well-established high risk for hemorrhage and gastrointestinal perforation, and the study explicitly excluded patients with active ulcers or bleeding diatheses. Administering this regimen would pose an unacceptable risk of catastrophic hemorrhage given the patient's active gastric invasion and recent shock. Consequently, the study evidence does not provide a viable or safe therapeutic recommendation for this specific patient's clinical context."
+}

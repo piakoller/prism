@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:26:20.200988
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criterion for evidence quality and relevance because no published results are available. While the disease biology (SSTR-positive neuroendocrine tumor) aligns with the patient's diagnosis, and the intervention (90Y-DOTATOC PRRT) is a relevant therapeutic class, the provided data indicates that no efficacy or safety outcomes have been published. The citations listed are general reviews that merely mention the trial's existence or design without reporting data. Without actionable clinical findings (e.g., response rates, progression-free survival, or toxicity profiles), this study cannot inform therapy recommendations or guide decision-making regarding PRRT sequencing or surgery for this patient."
+}

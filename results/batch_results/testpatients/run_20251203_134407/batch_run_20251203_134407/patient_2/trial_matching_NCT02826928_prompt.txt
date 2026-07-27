@@ -1,0 +1,162 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-03T15:10:55.106414
+Trial: 35/86
+NCT ID: NCT02826928
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 70-year-old patient with a history of cataracts, ischemic heart disease (angina in 2004 with stent placement), and hiatal hernia.
+o	May 2025: Presented with progressive weight loss over 3 months (–5 kg).
+o	CT scan (May 30, 2025): 18×15 mm mass in the lower left lung lobe (LLL), multiple hepatic metastases, and an 11×10 mm pancreatic nodule in the head of the pancreas.
+o	Liver biopsy: Grade 2 neuroendocrine tumor (NET) with Ki67 15%, 1.6 mitoses/2 mm². Immunohistochemistry: TTF1–, CDX2–, chromogranin A+, synaptophysin+, progesterone+. Suggestive of pancreatic origin.
+o	Lung biopsy: NET with 1 mitosis/2 mm², TTF1–.
+The patient was referred to our center, and a Ga-68 PET/CT scan was requested for staging.
+2.	Current Clinical Status
+The patient reports moderate asthenia and hyporexia. Weight: 63 kg (7 kg below baseline). Height: 164 cm.
+•	Ga-68 PET/CT (July 30, 2025): LLL lung nodule (SUV 6, 17 mm); pancreatic head lesion (SUV 3); hepatic metastases in segments VIII (SUV 9), V (SUV 9), and perivesicular region (SUV 8); multiple bone metastases (SUV 12).
+Question for Tumorboard:
+What would be the most appropriate first-line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Diagnostic and Pathological Assessment**
+The patient presents with a metastatic Grade 2 neuroendocrine tumor (NET). The histopathological analysis of the liver biopsy confirms a Grade 2 classification with a Ki-67 index of 15% and 1.6 mitoses/2 mm², falling within the WHO classification for well-differentiated NET G2 (Ki-67 3–20%). The immunohistochemical profile (TTF1–, CDX2–, chromogranin A+, synaptophysin+, progesterone+) strongly supports a pancreatic origin (NF-Pan-NET), as noted in the ENETS 2023 guidelines which state that Islet-1 or progesterone positivity can help define the organ of origin in the absence of TTF-1 or CDX-2. The lung biopsy (TTF1–) is consistent with a metastasis from the pancreatic primary rather than a lung primary.
+
+**Clinical Status and Disease Burden**
+The patient exhibits significant tumor burden with metastases involving the liver (segments VIII, V, perivesicular), lung (LLL), and bones. Clinically, the patient is symptomatic with progressive weight loss (–5 kg over 3 months; current weight 7 kg below baseline), moderate asthenia, and hyporexia. According to ENETS guidelines (Q7), symptomatic disease due to high volume or significant tumor growth are factors favoring treatments with higher response rates, such as chemotherapy, over agents primarily aiming for stabilization.
+
+**Functional Imaging and SSTR Heterogeneity**
+The Ga-68 PET/CT (July 30, 2025) reveals significant intra-patient heterogeneity regarding somatostatin receptor (SSTR) expression:
+*   **High Uptake:** Bone metastases (SUV 12) and hepatic metastases (SUV 9) show high avidity.
+*   **Intermediate Uptake:** The LLL lung nodule has an SUV of 6.
+*   **Low Uptake:** The primary pancreatic head lesion has an SUV of 3.
+
+According to ESMO Clinical Practice Guidelines, PRRT is a therapeutic option for SSTR-positive NETs with **homogenous** SSTR expression where all lesions are positive. PRRT eligibility typically requires uptake higher than the liver background (which is generally SUV ~6–7). In this case, the primary pancreatic lesion (SUV 3) shows uptake significantly lower than the expected liver background and the metastatic sites. This mismatch and lack of homogeneity suggest that the primary tumor might not be effectively targeted by Peptide Receptor Radionuclide Therapy (PRRT), raising concerns about the suitability of PRRT as a first-line systemic treatment in this specific setting.
+
+**Therapeutic Considerations based on Guidelines**
+1.  **Somatostatin Analogs (SSA):** While SSAs (lanreotide/octreotide) are the recommended upfront treatment for slow-growing, SSTR-positive G1 and G2 NF-Pan-NETs (ENETS Q6), the CLARINET study primarily demonstrated efficacy in patients with Ki-67 <10%. This patient has a Ki-67 of 15% and is symptomatic with weight loss, suggesting a more aggressive clinical course that may require more active cytoreduction than SSA monotherapy typically provides.
+2.  **Systemic Chemotherapy:** ENETS guidelines (Q7) and ESMO guidelines indicate that chemotherapy (e.g., temozolomide/capecitabine or streptozotocin/5-FU) is a suitable consideration for metastatic NF-Pan-NET G2, particularly in the presence of bulky, symptomatic, or progressive disease where tumor shrinkage is the objective. The patient's symptomatic presentation and Ki-67 of 15% align with criteria where chemotherapy is often favored.
+3.  **Targeted Therapies:** Sunitinib and everolimus are approved options for advanced Pan-NETs (ENETS Q6). However, these are often utilized for disease stabilization.
+4.  **Comorbidities:** The patient's history of ischemic heart disease (stent in 2004) should be considered when selecting systemic agents, particularly regarding the potential cardiotoxicity of specific chemotherapy regimens (e.g., if anthracyclines were considered, though less common now) or targeted therapies (sunitinib).
+
+**Summary**
+The patient has a symptomatic, metastatic Grade 2 NF-Pan-NET (Ki-67 15%) with significant weight loss. While metastatic lesions are SSTR-avid, the primary tumor shows low SSTR expression (SUV 3), creating a mismatch that complicates the use of PRRT as a first-line strategy due to the requirement for homogenous uptake. The clinical need for tumor shrinkage to alleviate symptoms and the Ki-67 level suggest the need for an antiproliferative therapy with a higher objective response rate.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+	•	Question for Tumorboard: What would be the most appropriate first-line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT02826928
+	•	Title: Diagnostic Performances of Urine and Plasma 5-hydroxyindolacetic Acid (5HIAA) Values in Patients With Small-intestine Neuroendocrine Tumors
+	•	Phase: NA, Status: COMPLETED
+	•	Intervention: blood sample withdrawn
+	•	Inclusion/exclusion criteria: Inclusion criteria:
+
+* Histologically proven small-intestine neuroendocrine tumors, at initial diagnosis or during the follow-up
+* Irritable bowel syndrome, diagnosed following Rome III criteria, who had an ileo-colonoscopy and an abdominal CT-scan within the 12 last months
+* Age \> 18 years
+* No antitumor treatment within the last three months excepted somatostatin analogs
+* Ability of understanding and approving the study protocol and of providing written consent
+* Affiliation to the French Health Social System
+
+Exclusion criteria
+
+* Small-intestine neuroendocrine tumor in remission (no detectable disease)
+* Other malignancies than small-intestine neuroendocrine tumors (excepted if in remission for more than 2 years)
+* Kidney insufficiency (MDRD \< 60/min)
+* Urinary incontinency or inability to collect urines
+* Any antitumor treatment within the last three months excepted somatostatin analogs
+* Inability to interrupt treatments interfering with 5HIAA dosage
+* Pregnancy
+* Patients under law protection *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: Urinary measure of 5-hydroxyindolacetic acid (5HIAA) is an important marker for the diagnosis and follow-up of patients with small-intestine neuroendocrine tumors. Although this marker has good specificity, its sensitivity is moderate and its dosage is constraining, since it requires urine collection over 2-3 days and specific diet. Preliminary data suggested that overnight 5HIAA value may be representative of 24-hour 5HIAA value, and that plasma 5HIAA dosage could be a valuable alternative to urine 5HIAA dosage. The main objective of this study is to compare sensitivity and specificity of overnight 5HIAA value, 24-hour 5HIAA value and plasma 5HIAA value, in patients with small-intestine neuroendocrine tumors.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/33382891/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • de Mestier L, Savagner F, Brixi H, Do Cao C, Dominguez-Tinajero S, Roquin G, Goichot B, Hentic O, Dubreuil O, Hautefeuille V, Walter T, Cadiot G. Plasmatic and Urinary 5-Hydroxyindolacetic Acid Measurements in Patients With Midgut Neuroendocrine Tumors: A GTE Study. J Clin Endocrinol Metab. 2021 Mar 25;106(4):e1673-e1682. doi: 10.1210/clinem/dgaa924.
+• Plasmatic and Urinary 5-Hydroxyindolacetic Acid Measurements in Patients With Midgut Neuroendocrine Tumors: A GTE Study. (PMID: 33382891)
+	•	Key findings from publications: PubMed Abstract: Although 24-hour urinary 5-hydroxyindolacetic acid (24u5HIAA) is a key biomarker in midgut neuroendocrine tumors (NETs), it may be inaccurate and inconvenient.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Context: Although 24-hour urinary 5-hydroxyindolacetic acid (24u5HIAA) is a key biomarker in midgut neuroendocrine tumors (NETs), it may be inaccurate and inconvenient. Objective: We compared the diagnostic performances of 24u5HIAA, overnight urinary 5HIAA (Ou5HIAA), and plasmatic 5HIAA (p5HIAA) in midgut NETs. Methods: This prospective, multicenter study included 80 patients with metastatic midgut NETs and 17 control patients with irritable bowel syndrome. 24u5HIAA, Ou5HIAA, and p5HIAA were measured in urine and plasma collected on 2 consecutive days following a specific recommended diet. Reproducibility of the biomarkers was evaluated by the Spearman test. Diagnostic performance was assessed by the area under the receiver operating characteristic curve (AUROC). Correlations with the main clinical features and declared observance to the specific diet were assessed using AUROC and logistic regression models. Results: The reproducibility of 24u5HIAA, Ou5HIAA, and p5HIAA were excellent (ρ = 0.916; 0.897; 0.978, respectively, P < .001) with significant discrimination between patients and controls (AUROC = 0.795, P < .001; 0.757, P = .001; 0.717, P = .005, respectively). All 3 markers were correlated with the presence of carcinoid syndrome (AUROC = 0.702, P = .006; 0.701, P = .006; 0.697, P = .007, respectively), carcinoid heart disease (AUROC = 0.896; 0.887; 0.923, P < .001, respectively, P < .001), and liver metastatic involvement greater than 30% (AUROC = 0.827; 0.807; 0.849, P < .001, respectively, P < .001), independent from other traditional prognostic factors. Biomarker levels were similar between patients with optimal or suboptimal diet observance. Conclusion: Ou5HIAA and p5HIAA could be used as more convenient alternatives to 24u5HIAA in patients with metastatic midgut NETs. Prospective long-term studies with repeated dosages are needed. Trial registration: ClinicalTrials.gov NCT02826928 . Keywords: 5-hydroxyindolacetic acid; biomarker; carcinoid syndrome; diagnosis; neuroendocrine tumors. © The Author(s) 2020. Published by Oxford University Press on behalf of the Endocrine Society. All rights reserved. For permissions, please e-mail: journals.permissions@oup.com. PubMed Disclaimer Similar articles Serum and urinary 5-hydroxyindolacetic acid, serotonin, chromogranin A, and NT-proBNP for the detection of carcinoid heart disease. Lecoeur A, Sfeir RM, Gerard L, Souifi M, Damour J, Lombard-Bohas C, Francois L, Fort J, Delsart D, Forestier J, Walter T, Durand A, Chardon L. Lecoeur A, et al. Eur J Endocrinol. 2024 Nov 27;191(6):570-578. doi: 10.1093/ejendo/lvae150. Eur J Endocrinol. 2024. PMID: 39602485 Effect of Lanreotide Depot/Autogel on Urinary 5-Hydroxyindoleacetic Acid and Plasma Chromogranin A Biomarkers in Nonfunctional Metastatic Enteropancreatic Neuroendocrine Tumors. Pavel ME, Phan AT, Wolin EM, Mirakhur B, Liyanage N, Pitman Lowenthal S, Fisher GA Jr, Vinik AI; CLARINET Study Investigators. Pavel ME, et al. Oncologist. 2019 Apr;24(4):463-474. doi: 10.1634/theoncologist.2018-0217. Epub 2018 Oct 24. Oncologist. 2019. PMID: 30355775 Free PMC article. Clinical Trial. Urinary 5-Hydroxyindolacetic Acid Measurements in Patients with Neuroendocrine Tumor-Related Carcinoid Syndrome: State of the Art. Rossi RE, Lavezzi E, Jaafar S, Cristofolini G, Laffi A, Nappo G, Carrara S, Bertuzzi AF, Uccella S, Repici A, Zerbi A, Lania AGA. Rossi RE, et al. Cancers (Basel). 2023 Aug 11;15(16):4065. doi: 10.3390/cancers15164065. Cancers (Basel). 2023. PMID: 37627093 Free PMC article. Review. A single fasting plasma 5-HIAA value correlates with 24-hour urinary 5-HIAA values and other biomarkers in midgut neuroendocrine tumors (NETs). Tellez MR, Mamikunian G, O'Dorisio TM, Vinik AI, Woltering EA. Tellez MR, et al. Pancreas. 2013 Apr;42(3):405-10. doi: 10.1097/MPA.0b013e318271c0d5. Pancreas. 2013. PMID: 23160483 [Gastrointestinal carcinoid tumors: a multi-technique diagnostic approach]. Mathonnet M. Mathonnet M. J Chir (Paris). 2007 Jul-Aug;144(4):287-92. doi: 10.1016/s0021-7697(07)91954-7. J Chir (Paris). 2007. PMID: 17925731 Review. French. See all similar articles Cited by Carcinoid heart disease in patients with advanced small-intestinal neuroendocrine tumors and carcinoid syndrome: a retrospective experience from two European referral centers. Algeri L, Falkman L, Spada F, Frassoni S, Bagnardi V, Boselli S, Cardinale D, Zanobini M, Crona J, Benini L, Tamayo D, Mazzon C, Gervaso L, Cella CA, Zampino MG, Ciardiello D, Russo A, Badalamenti G, Welin S, Fazio N. Algeri L, et al. ESMO Open. 2024 Nov;9(11):103959. doi: 10.1016/j.esmoop.2024.103959. Epub 2024 Oct 22. ESMO Open. 2024. PMID: 39442478 Free PMC article. European Neuroendocrine Tumor Society (ENETS) 2022 Guidance Paper for Carcinoid Syndrome and Carcinoid Heart Disease. Grozinsky-Glasberg S, Davar J, Hofland J, Dobson R, Prasad V, Pascher A, Denecke T, Tesselaar MET, Panzuto F, Albåge A, Connolly HM, Obadia JF, Riechelmann R, Toumpanakis C. Grozinsky-Glasberg S, et al. J Neuroendocrinol. 2022 Jul;34(7):e13146. doi: 10.1111/jne.13146. Epub 2022 May 25. J Neuroendocrinol. 2022. PMID: 35613326 Free PMC article. No abstract available. Multiomic sequencing of paired primary and metastatic small bowel carcinoids. Postel MD, Darabi S, Howe JR, Liang WS, Craig DW, Demeure MJ. Postel MD, et al. F1000Res. 2023 Oct 4;12:417. doi: 10.12688/f1000research.130251.2. eCollection 2023. F1000Res. 2023. PMID: 37954063 Free PMC article. Role of Somatostatin Signalling in Neuroendocrine Tumours. Rogoza O, Megnis K, Kudrjavceva M, Gerina-Berzina A, Rovite V. Rogoza O, et al. Int J Mol Sci. 2022 Jan 27;23(3):1447. doi: 10.3390/ijms23031447. Int J Mol Sci. 2022. PMID: 35163374 Free PMC article. Review. The Value of Repeat 5-HIAA Measurements as a Predictor of Carcinoid Heart Disease: A Prospective 5-Year Follow-Up Study in Patients with Small Intestinal Neuroendocrine Tumors. Kostiainen I, Simonen P, Aaltonen K, Lindén R, Karppinen N, Gordin D, Rapola J, Schalin-Jäntti C, Matikainen N. Kostiainen I, et al. Cancers (Basel). 2024 Nov 21;16(23):3896. doi: 10.3390/cancers16233896. Cancers (Basel). 2024. PMID: 39682084 Free PMC article. See all "Cited by" articles Publication types Multicenter Study Actions Search in PubMed Search in MeSH Add to Search Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search MeSH terms Aged Actions Search in PubMed Search in MeSH Add to Search Biomarkers, Tumor / blood Actions Search in PubMed Search in MeSH Add to Search Biomarkers, Tumor / urine Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Gastrointestinal Neoplasms / blood* Actions Search in PubMed Search in MeSH Add to Search Gastrointestinal Neoplasms / diagnosis* Actions Search in PubMed Search in MeSH Add to Search Gastrointestinal Neoplasms / urine* Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Hydroxyindoleacetic Acid / blood* Actions Search in PubMed Search in MeSH Add to Search Hydroxyindoleacetic Acid / urine* Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / blood* Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / diagnosis* Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / urine* Actions Search in PubMed Search in MeSH Add to Search Prospective Studies Actions Search in PubMed Search in MeSH Add to Search Sensitivity and Specificity Actions Search in PubMed Search in MeSH Add to Search Substances Biomarkers, Tumor Actions Search in PubMed Search in MeSH Add to Search Hydroxyindoleacetic Acid Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT02826928 Actions Search in PubMed Search in ClinicalTrials.gov Related information Cited in Books MedGen PubChem Compound (MeSH Keyword) LinkOut - more resources Full Text Sources Ovid Technologies, Inc. Silverchair Information Systems Medical ClinicalTrials.gov
+	•	Additional evidence from online sources: Primary outcome: urine 5HIAA value
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Plasmatic and Urinary 5-Hydroxyindolacetic Acid Measurements in Patients With Midgut Neuroendocrine Tumors: A GTE Study.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/33382891/', 'pmid': '33382891', 'content_scraped': True, 'content_length': 8268}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/33382891/
+Analysis notes: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:36:51.740398
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because it fails the treatment context and evidence relevance criteria. While the disease biology (metastatic WDNET) aligns, the study evaluates patient preference and pain scores between two first-line Somatostatin Analogs (Octreotide LAR vs. Lanreotide) in patients initiating therapy. This patient has already progressed on SSA therapy and has subsequently completed PRRT. The study provides no evidence regarding the efficacy of PRRT, the role of cytoreductive surgery, or the sequencing of these modalities (the primary clinical question). Evidence concerning the choice of first-line SSA is not actionable for a patient who is SSA-refractory and currently evaluating surgical intervention following PRRT response."
+}

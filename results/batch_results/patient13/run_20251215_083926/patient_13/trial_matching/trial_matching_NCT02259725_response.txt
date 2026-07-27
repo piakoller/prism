@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:12:14.550143
+Trial: 84/86
+NCT ID: NCT02259725
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for therapy recommendations primarily because there are no published results or findings available to evaluate the efficacy or safety of regorafenib in this setting. Without outcome data, the study cannot guide clinical decision-making. Additionally, regarding clinical applicability, the patient has recently progressed on sunitinib (a multi-kinase inhibitor similar to regorafenib), while the study explicitly excluded patients with prior targeted or anti-angiogenic therapy. Therefore, even if results were available, the evidence would likely not be transferable to a TKI-refractory population, and there is no data to suggest non-cross-resistance."
+}

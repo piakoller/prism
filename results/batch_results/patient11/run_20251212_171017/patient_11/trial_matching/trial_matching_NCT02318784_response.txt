@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:30:53.653041
+Trial: 52/86
+NCT ID: NCT02318784
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or evidence availability. Biologically, the patient has a high-grade Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, whereas the study specifically recruits patients with well-to-moderately differentiated (low grade) neuroendocrine tumors and explicitly excludes high-grade NEC and poorly differentiated carcinomas. Consequently, the treatment insights for indolent, well-differentiated tumors are not transferable to this patient's aggressive disease biology. Furthermore, the provided data indicates that while the study is completed, no specific efficacy or safety results were found in the provided snippets, preventing any assessment of clinical utility. Therefore, the study offers no actionable evidence for this patient's consolidation strategy."
+}

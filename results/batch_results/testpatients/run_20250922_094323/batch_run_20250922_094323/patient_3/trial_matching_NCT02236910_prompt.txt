@@ -1,0 +1,206 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-09-22T11:04:50.369934
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-2.5-pro
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 78-year-old patient with no active malignancy and medical history of:
+•	Type 2 diabetes mellitus (on oral antidiabetic drugs for 10 years)
+•	Hypertension and dyslipidemia
+•	Chronic kidney disease (baseline creatinine 1.6–1.8 mg/dL)
+•	Malignant external otitis with secondary osteomyelitis in January 2019 (malaritis); incidental finding of pituitary macroadenoma
+•	Benign prostatic hyperplasia (treated with prostatectomy in 2012)
+•	Glaucoma under ophthalmologic follow-up
+•	Jan–Mar 2021: Incidental elevation of GGT, with liver metastases detected on abdominal ultrasound.
+•	Thoracoabdominal CT: 8 cm mass in the pancreatic uncinate process with internal calcifications. Mesenteric vessels displaced but not infiltrated. Subcentimetric peripancreatic and retroperitoneal lymph nodes. Multiple liver metastases.
+•	Liver biopsy: Well-differentiated NET G1 with Ki67 2%. IHC: chromogranin A+, synaptophysin+, CD56+, CAM5.2+; CK20–, CK7–.
+•	The patient received first-line treatment with Lanreotide Autogel from April 2021 to July 2025.
+2.	Current Clinical Status
+•	Mild toxicity: grade 1 diarrhea
+•	No tumor-related symptoms
+•	ECOG performance status: 0–1
+•	Lab tests: Creatinine 2.24 mg/dL; other parameters unremarkable
+•	MRI (July 2025): Stable liver metastases (at least 25 lesions); largest increased from 55 mm to 58 mm in segment I, and from 65 mm to 68 mm in the right hepatic lobe. Mesenteric root mass increased from 82×40 mm to 90×49 mm.
+Question for Tumorboard:
+What would be the most appropriate second-line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+### Clinical Assessment for Tumor Board
+
+**Patient Summary:**
+This is a 78-year-old male with a well-differentiated, nonfunctioning pancreatic neuroendocrine tumor (NF-Pan-NET), grade 1 (Ki-67 2%), with a large primary mass in the pancreatic uncinate process (90x49 mm) and extensive liver metastases (at least 25 lesions). He has been treated with first-line lanreotide autogel for over four years and now demonstrates clear radiological evidence of disease progression. The patient's performance status is good (ECOG 0–1) and he is asymptomatic from a tumor perspective. Significant comorbidities include type 2 diabetes mellitus, hypertension, and chronic kidney disease, with recent worsening of renal function (creatinine 2.24 mg/dL from a baseline of 1.6–1.8 mg/dL).
+
+**Analysis of Disease Status:**
+- **Diagnosis:** The diagnosis of a well-differentiated G1 NF-Pan-NET is histologically confirmed (liver biopsy), consistent with the IHC profile (chromogranin A+, synaptophysin+). This is typically an indolent tumor, but the patient presents with a high tumor burden.
+- **Progression:** The patient meets the criteria for disease progression on a somatostatin analogue (SSA), as defined by an increase in the size of both the primary pancreatic mass and multiple liver metastases on the most recent MRI. According to both the ENETS 2023 and ESMO 2020 guidelines, this progression warrants consideration of second-line systemic therapy.
+
+**Evaluation of Second-Line Systemic Treatment Options based on Guidelines:**
+
+The primary clinical question is the selection of the most appropriate second-line systemic therapy. The main options for progressive, advanced NF-Pan-NETs, as outlined in the provided ENETS 2023 and ESMO 2020 guidelines, are peptide receptor radionuclide therapy (PRRT), molecular targeted therapies (everolimus, sunitinib), and systemic chemotherapy.
+
+1.  **Peptide Receptor Radionuclide Therapy (PRRT):**
+    - **Guideline Context:** PRRT is a recommended second-line treatment for progressive, SSTR-positive G1-G2 NF-Pan-NETs (ENETS 2023, Level 2b, Grade B; ESMO 2020, Level III, A).
+    - **Patient-Specific Considerations:**
+        - A critical piece of information is missing: there is no mention of a somatostatin receptor imaging (SRI) scan, such as a 68Ga-DOTATATE PET/CT. This imaging is mandatory to confirm sufficient and homogeneous SSTR expression, which is a prerequisite for PRRT eligibility.
+        - The patient's worsening renal function (creatinine 2.24 mg/dL) poses a significant relative contraindication. Both guidelines acknowledge the risk of iatrogenic adverse events, including renal dysfunction, with PRRT (ENETS 2023, Section 4.1; ESMO 2020, Section on PRRT). The existing chronic kidney disease significantly increases the risk of further, potentially irreversible, nephrotoxicity.
+
+2.  **Molecular Targeted Therapies (Everolimus and Sunitinib):**
+    - **Guideline Context:** Both everolimus and sunitinib are strongly recommended for progressive G1-G2 NF-Pan-NETs based on Level 1a evidence (ENETS 2023, Grade A; ESMO 2020, Level I, A).
+    - **Patient-Specific Considerations:**
+        - **Everolimus:** The RADIANT-3 trial demonstrated a significant PFS benefit. However, a known side effect is hyperglycemia (ESMO 2020). Given the patient's history of type 2 diabetes, initiating everolimus would require close glycemic monitoring and potential adjustment of his oral antidiabetic medications.
+        - **Sunitinib:** The pivotal phase 3 trial also showed a significant PFS improvement. A common adverse event is hypertension (ESMO 2020). The patient's pre-existing hypertension would need to be carefully managed. Sunitinib is also associated with diarrhea, which could exacerbate his current grade 1 toxicity.
+        - The primary goal of these agents is typically disease stabilization, as objective response rates are modest (<10%) (ESMO 2020).
+
+3.  **Systemic Chemotherapy:**
+    - **Guideline Context:** Chemotherapy is a key treatment modality for advanced Pan-NETs. The ENETS 2023 guidelines suggest temozolomide with capecitabine (CAPTEM) or streptozotocin (STZ) + 5-FU as options for progressive G1-G2 NF-Pan-NETs (Level 2b, Grade B). ESMO 2020 also recommends these regimens (Level II, A/B).
+    - **Patient-Specific Considerations:**
+        - **Streptozotocin (STZ)-based regimens:** STZ is known for its significant renal toxicity (ENETS 2023, Section 4.1). Given the patient's elevated creatinine of 2.24 mg/dL, STZ-based chemotherapy would carry a high risk of inducing or accelerating renal failure and should be avoided.
+        - **Temozolomide and Capecitabine (CAPTEM):** This regimen has a more favorable renal safety profile. The ECOG-ACRIN E2211 trial demonstrated a superior PFS for CAPTEM over temozolomide alone and a notable objective response rate (40% per ENETS 2023 summary). The ENETS guidelines note that chemotherapy is a consideration for patients with bulky disease or when tumor shrinkage is a goal (Section 3.4). Given this patient's high tumor burden, the potential for a volumetric response with CAPTEM is a significant clinical advantage over the primarily cytostatic effect of targeted agents.
+
+**Conclusion of Assessment:**
+The patient has high-burden, progressive metastatic G1 NF-Pan-NET requiring second-line therapy. His good performance status allows for various treatment options. However, his worsening renal impairment is a major limiting factor for certain therapies. PRRT is not currently a viable option due to the lack of required SSTR imaging and the high risk of nephrotoxicity. STZ-based chemotherapy is similarly contraindicated due to renal risk. The choice lies between targeted agents (everolimus/sunitinib) and the CAPTEM chemotherapy regimen. While targeted agents are well-supported by evidence, they would require careful management of the patient's comorbidities (diabetes and hypertension) and primarily offer disease stabilization. The CAPTEM regimen offers a higher probability of objective tumor response, which may be beneficial in the setting of high tumor burden, and has a more favorable safety profile with respect to the patient's key comorbidity of chronic kidney disease.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Monitor needed based on assessment
+	•	Question for Tumorboard: What would be the most appropriate second-line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT02236910
+	•	Title: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+	•	Phase: PHASE2, Status: ACTIVE_NOT_RECRUITING
+	•	Intervention: Lu-DOTA-TATE
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+Group A: Primary therapy subjects will be included in the study if they meet all of the following general criteria:
+
+1. Male or female ≥ 14 - 90 years of age. If female of child-bearing potential and outside of the window of 10 days since the first day of the last menstrual period, a negative pregnancy test is required.
+2. Presence of somatostatin receptor positive tumour(s) (either histologically or Octreoscan image proven), with at least 1 tumour site reliably evaluable by CT or MRI of at least 1.5 cm (smallest dimension) with respect to RECIST criteria (the target lesion).
+3. Presence of somatostatin receptors on (at least) the target lesion demonstrated by uptake of OctreoScan® at least equal to liver uptake within 12 weeks of enrollment.
+4. Life expectancy greater than 26 weeks from enrollment.
+5. Serum creatinine ≤ 130 μmol/L, and a measured glomerular filtration rate (GFR) using plasma clearance of ≥50 mL/min measured within 2 weeks of enrollment.
+6. Haemoglobin concentration ≥ 90 g/L; white blood cell count (WBC) ≥ 3 x 109/L; platelets ≥ 100 x 109/L measured within 2 weeks of enrollment.
+7. Liver function tests (serum albumin, total bilirubin, alanine amniotransferase (ALT),aspartate aminotransferase (AST) and alkaline phosphatase) ≤ 3 X the limit of normal.
+8. Eastern Cooperative Oncology Group (ECOG) Performance Scale Score ≤ 2 measured within 2 weeks of enrollment.
+9. Provide written informed consent prior to enrollment.
+10. Ki 67 \< 20%, unless patients has been treated with chemotherapy and lesions are stable (Ki 67 \< 30%)
+
+Group B: Secondary therapy subjects will be included in the study if they meet all of the following general criteria:
+
+1. Male or female ≥ 14 - 90 years of age. If female of child-bearing potential and outside of the window of 10 days since the first day of the last menstrual period, a negative pregnancy test is required.
+2. Have received Lu-DOTA-TATE treatment at the London Health Sciences Centre under the Special Access Programed or other radionuclide therapy for neuroendocrine tumor.
+3. Provide written informed consent prior to enrollment.
+
+Exclusion Criteria:
+
+Group A: Primary therapy subjects will be excluded from the study if they meet any of the following criteria:
+
+1. Potential for surgery with curative intent. Local surgery for symptomatic relief permitted as long as target lesion unaffected.
+2. Surgery, radiation therapy, radioisotope therapy, change in Sandostatin LAR therapy dosage, cytotoxic chemotherapy, embolization or other investigative therapy \[interferons, mammalian target of rapamycin (mTOR) inhibitors\] within 12 weeks of enrollment. Localized external beam irradiation permitted as long as target lesion unaffected.
+3. Known brain metastases unless these metastases have been treated or stable (confirmed by CT) for ≥ 6 months prior to enrollment
+4. Uncontrolled diabetes mellitus defined as fasting glucose ≥ 3 X the upper limit of normal within 12 weeks of enrollment.
+5. Another significant medical, psychiatric or surgical condition uncontrolled by treatment, which may interfere with completion or conduct of the study (such as urinary incontinence, co-existing malignancies).
+6. Pregnancy.
+7. Breast feeding.
+8. Prior radiation therapy to more than 25% of the bone marrow.
+
+Group B: Secondary therapy subjects will be excluded from the study if they meet any of the following criteria:
+
+1. Another significant medical, psychiatric or surgical condition uncontrolled by treatment, which may interfere with completion or conduct of the study (such as urinary incontinence, co-existing malignancies).
+2. Pregnancy.
+3. Breast feeding. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: Lu-DOTA-TATE (Lutetium-177 octreotate) is a radiopharmaceutical that has been reported as being effective in controlling symptoms and increase quality of life; induce stable disease and extend progression free survival; induce a (good) partial remission and induce a complete remission in patients with a somatostatin receptor positive tumour.
+
+The purpose of this study is to assess the efficacy of Lu-DOTA-TATE by measuring progression free survival and overall survival. This study will also asses the safety of Lu-DOTA-TATE, and the quality of life of the patients treated with Lu-DOTA-TATE.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Listed publications appear to contain results; Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/34110489/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Swiha MM, Sutherland DEK, Sistani G, Khatami A, Abazid RM, Mujoomdar A, Wiseman DP, Romsa JG, Reid RH, Laidley DT. Survival predictors of 177Lu-Dotatate peptide receptor radionuclide therapy (PRRT) in patients with progressive well-differentiated neuroendocrine tumors (NETS). J Cancer Res Clin Oncol. 2022 Jan;148(1):225-236. doi: 10.1007/s00432-021-03672-w. Epub 2021 Jun 10.
+• Survival predictors of177Lu-Dotatate peptide receptor radionuclide therapy (PRRT) in patients with progressive well-differentiated neuroendocrine tumors (NETS). (PMID: 34110489)
+	•	Key findings from publications: PubMed Abstract: 177 Lu-Dotatate is an emerging treatment modality for patients with unresectable or metastatic well-differentiated NETs. This study examines survival predictors in patients who received 177 Lu-Dotatate.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Purpose: 177 Lu-Dotatate is an emerging treatment modality for patients with unresectable or metastatic well-differentiated NETs. This study examines survival predictors in patients who received 177 Lu-Dotatate. Methods: A retrospective single-center review was conducted, examining 47 individuals with progressive well-differentiated NETs treated with 177 Lu-Dotatate (four induction cycles of 5.5 GBq at 10-week intervals followed by eight maintenance cycles of 3.7 GBq at 6-month intervals). Results: Median follow-up was 63.1 months with a median progression-free survival (PFS) of 34.1 months. However, median overall survival (OS) was not reached at the time of analysis. The presence of ≥ 5 bone metastases (hazard ratio HR 4.33; p = 0.015), non-gastroenteropancreatic (non-GEP) NETs (HR 3.22; p = 0.025) and development of interim ascites (HR 3.15; p = 0.047) independently predicted a worse OS. Patients with chromogranin A of ≥ 4 × upper limit of normal (ULN) had shorter OS (p < 0.001) and PFS (p = 0.004). Similarly, those with pre-existing ascites demonstrated a worse OS (p = 0.009) and PFS (p = 0.026). Liver metastases involving greater than 50% liver volume and the existence of unusual metastatic locations had a negative impact on OS (p = 0.033) and PFS (p = 0.026), respectively. Conclusion: High burden of skeletal and hepatic metastases, non-GEP-NETs, chromogranin A of ≥ 4 × ULN, unusual metastatic sites, pre-existing and interim ascites are predictors of poor outcomes in patients treated with 177 Lu-Dotatate. These common indicators can be used for the risk stratification and identification of patients most likely to benefit from PRRT. Trial registration: ClinicalTrials.gov identifier: NCT02236910 , Retrospectively registered on September, 2014. Keywords: Lu-Dotatate; Neuroendocrine; PRRT; Prognostic factors; Survival predictors. © 2021. The Author(s). PubMed Disclaimer Conflict of interest statement The authors declare that they have no conflict of interest. Figures Fig. 1 Kaplan–Meier curves for OS: a… Fig. 1 Kaplan–Meier curves for OS: a the median OS for the study group had… Fig. 1 Kaplan–Meier curves for OS: a the median OS for the study group had not been reached. b OS by chromogranin A; there was a significant difference in the OS between patients with chromogranin A of ≥ 4 × ULN and those with chromogranin A of < 4 × ULN ( p < 0.001). c OS survival by burden of liver metastases; there was a significant difference in the OS between patients with liver metastases of > 50% liver volume compared to those with ≤ 50% liver volume ( p = 0.033). d OS by pre-existing ascites; patients with pre-existing ascites prior PRRT initiation had a shorter OS compared to those without pre-existing ascites ( p = 0.009) Fig. 2 Kaplan–Meier curves for OS: a… Fig. 2 Kaplan–Meier curves for OS: a OS by number of bone metastases; there was… Fig. 2 Kaplan–Meier curves for OS: a OS by number of bone metastases; there was a significantly shorter OS in patients with (≥ 5) bone deposits compared to patients with (0–4) bone deposits ( p = 0.028). b OS by primary tumor site; a longer OS was observed in patients with GEP-NETs vs non-GEP-NETs ( p = 0.011). c OS by interim ascites; patients who developed ascites during the period of treatment with 177 Lu-Dotatate or after its cessation had a shorter OS ( p = 0.026) Fig. 3 Kaplan–Meier curves for PFS: a… Fig. 3 Kaplan–Meier curves for PFS: a the median PFS of the study group was… Fig. 3 Kaplan–Meier curves for PFS: a the median PFS of the study group was 34.1 months; b PFS by Chromogranin A; there was a significant difference in the PFS between patients with chromogranin A of ≥ 4 × ULN compared to those with chromogranin A of < 4 × ULN ( p = 0.004); c PFS by presence of uncommon sites of metastases; patients with uncommon/unusual metastatic sites had a poor PFS ( p = 0.026); d PFS by pre-existing ascites; patients with pre-existing ascites prior PRRT initiation had a shorter PFS compared to those without pre-existing ascites ( p = 0.026) See this image and copyright information in PMC Similar articles Clinical Outcomes of 177 Lu-DOTATATE Peptide Receptor Radionuclide Therapy in Patients with Skeletal Metastases from Neuroendocrine Tumors: Insights from Real-World Experience. Chandekar KR, Satapathy S, Ballal S, Yadav MP, Ravindra SG, Rastogi S, Sahoo RK, Bal C. Chandekar KR, et al. J Nucl Med. 2025 Jul 1;66(7):1046-1053. doi: 10.2967/jnumed.125.269456. J Nucl Med. 2025. PMID: 40404399 Surgical Feasibility, Determinants, and Overall Efficacy of Neoadjuvant 177 Lu-DOTATATE PRRT for Locally Advanced Unresectable Gastroenteropancreatic Neuroendocrine Tumors. Parghane RV, Bhandare M, Chaudhari V, Ostwal V, Ramaswamy A, Talole S, Shrikhande SV, Basu S. Parghane RV, et al. J Nucl Med. 2021 Nov;62(11):1558-1563. doi: 10.2967/jnumed.120.258772. Epub 2021 Feb 26. J Nucl Med. 2021. PMID: 33637590 Free PMC article. Feasibility and utility of re-treatment with (177)Lu-DOTATATE in GEP-NENs relapsed after treatment with (90)Y-DOTATOC. Severi S, Sansovini M, Ianniello A, Bodei L, Nicolini S, Ibrahim T, Di Iorio V, D'Errico V, Caroli P, Monti M, Paganelli G. Severi S, et al. Eur J Nucl Med Mol Imaging. 2015 Dec;42(13):1955-63. doi: 10.1007/s00259-015-3105-7. Epub 2015 Jun 26. Eur J Nucl Med Mol Imaging. 2015. PMID: 26112388 177 Lu-DOTATATE for the treatment of gastroenteropancreatic neuroendocrine tumors. Das S, Al-Toubah T, El-Haddad G, Strosberg J. Das S, et al. Expert Rev Gastroenterol Hepatol. 2019 Nov;13(11):1023-1031. doi: 10.1080/17474124.2019.1685381. Epub 2019 Oct 30. Expert Rev Gastroenterol Hepatol. 2019. PMID: 31652074 Free PMC article. Review. Everolimus, lutetium-177 DOTATATE and sunitinib for advanced, unresectable or metastatic neuroendocrine tumours with disease progression: a systematic review and cost-effectiveness analysis. Mujica-Mota R, Varley-Campbell J, Tikhonova I, Cooper C, Griffin E, Haasova M, Peters J, Lucherini S, Talens-Bou J, Long L, Sherriff D, Napier M, Ramage J, Hoyle M. Mujica-Mota R, et al. Health Technol Assess. 2018 Sep;22(49):1-326. doi: 10.3310/hta22490. Health Technol Assess. 2018. PMID: 30209002 Free PMC article. See all similar articles Cited by Targeted radionuclide therapy in endocrine-related cancers: advances in the last decade. Al-Toubah T, Strosberg J, Hallanger-Johnson J, El-Haddad G. Al-Toubah T, et al. Front Endocrinol (Lausanne). 2023 Nov 20;14:1187870. doi: 10.3389/fendo.2023.1187870. eCollection 2023. Front Endocrinol (Lausanne). 2023. PMID: 38053729 Free PMC article. Review. Clinical Management of Neuroendocrine Neoplasms in Clinical Practice: A Formal Consensus Exercise. Bartolomei M, Berruti A, Falconi M, Fazio N, Ferone D, Lastoria S, Pappagallo G, Seregni E, Versari A. Bartolomei M, et al. Cancers (Basel). 2022 May 19;14(10):2501. doi: 10.3390/cancers14102501. Cancers (Basel). 2022. PMID: 35626105 Free PMC article. Predicting the survival probability of functional neuroendocrine tumors treated with peptide receptor radionuclide therapy: Serbian experience. Vukomanovic V, Nedic KV, Radojevic MZ, Dagovic A, Milosavljevic N, Markovic M, Ignjatovic V, Simic Vukomanovic I, Djukic S, Sreckovic M, Backovic M, Vuleta M, Djukic A, Vukicevic V, Ignjatovic V. Vukomanovic V, et al. Front Endocrinol (Lausanne). 2024 Jan 4;14:1270421. doi: 10.3389/fendo.2023.1270421. eCollection 2023. Front Endocrinol (Lausanne). 2024. PMID: 38317712 Free PMC article. Role of Bone Metastases in Lung Neuroendocrine Neoplasms: Clinical Presentation, Treatment and Impact on Prognosis. Modica R, Benevento E, Altieri B, Minotta R, Liccardi A, Cannavale G, Di Iasi G, Colao A. Modica R, et al. Int J Mol Sci. 2024 Aug 17;25(16):8957. doi: 10.3390/ijms25168957. Int J Mol Sci. 2024. PMID: 39201642 Free PMC article. Predictive Factors for Resistant Disease with Medical/Radiologic/Liver-Directed Anti-Tumor Treatments in Patients with Advanced Pancreatic Neuroendocrine Neoplasms: Recent Advances and Controversies. Lee L, Ramos-Alvarez I, Jensen RT. Lee L, et al. Cancers (Basel). 2022 Feb 28;14(5):1250. doi: 10.3390/cancers14051250. Cancers (Basel). 2022. PMID: 35267558 Free PMC article. Review. See all "Cited by" articles References Abou Jokh Casas E, Pubul Núñez V, Anido-Herranz U et al (2020) Evaluation of 177 Lu-Dotatate treatment in patients with metastatic neuroendocrine tumors and prognostic factors. World J Gastroenterol 26(13):1513–1524. 10.3748/wjg.v26.i13.1513 - PMC - PubMed Bergestuen DS, Aabakken L, Holm K et al (2009) Small intestinal neuroendocrine tumors: prognostic factors and survival. Scand J Gastroenterol 44(9):1084–1091. 10.1080/00365520903082432 - PubMed Bodei L, Schöder H, Baum RP et al (2020) Molecular profiling of neuroendocrine tumours to predict response and toxicity to peptide receptor radionuclide therapy. Lancet Oncol 21(9):e431–e443. 10.1016/S1470-2045(20)30323-5 - PMC - PubMed Caplin ME, Pavel M, Ćwikła JB et al (2016) Anti-tumour effects of lanreotide for pancreatic and intestinal neuroendocrine tumours: the CLARINET open-label extension study. Endocr Relat Cancer 23(3):191–199. 10.1530/ERC-15-0490 - PMC - PubMed Dasari A, Shen C, Halperin D et al (2017) Trends in the incidence, prevalence, and survival outcomes in patients with neuroendocrine tumors in the United States. JAMA Oncol 3(10):1335–1342. 10.1001/jamaoncol.2017.0589 - PMC - PubMed Show all 30 references Publication types Clinical Trial, Phase II Actions Search in PubMed Search in MeSH Add to Search MeSH terms Adult Actions Search in PubMed Search in MeSH Add to Search Aged Actions Search in PubMed Search in MeSH Add to Search Aged, 80 and over Actions Search in PubMed Search in MeSH Add to Search Antiemetics / therapeutic use Actions Search in PubMed Search in MeSH Add to Search Ascites / mortality Actions Search in PubMed Search in MeSH Add to Search Ascites / pathology Actions Search in PubMed Search in MeSH Add to Search Biomarkers, Tumor / analysis Actions Search in PubMed Search in MeSH Add to Search Bone Neoplasms / mortality Actions Search in PubMed Search in MeSH Add to Search Bone Neoplasms / secondary* Actions Search in PubMed Search in MeSH Add to Search Chromogranin A / analysis Actions Search in PubMed Search in MeSH Add to Search Endoderm / pathology Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Liver Neoplasms / mortality Actions Search in PubMed Search in MeSH Add to Search Liver Neoplasms / secondary* Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Neural Crest / pathology Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / mortality* Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / pathology Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / radiotherapy* Actions Search in PubMed Search in MeSH Add to Search Octreotide / adverse effects Actions Search in PubMed Search in MeSH Add to Search Octreotide / analogs & derivatives* Actions Search in PubMed Search in MeSH Add to Search Octreotide / therapeutic use Actions Search in PubMed Search in MeSH Add to Search Organometallic Compounds / adverse effects Actions Search in PubMed Search in MeSH Add to Search Organometallic Compounds / therapeutic use* Actions Search in PubMed Search in MeSH Add to Search Progression-Free Survival Actions Search in PubMed Search in MeSH Add to Search Radiopharmaceuticals / adverse effects Actions Search in PubMed Search in MeSH Add to Search Radiopharmaceuticals / therapeutic use Actions Search in PubMed Search in MeSH Add to Search Retrospective Studies Actions Search in PubMed Search in MeSH Add to Search Substances Antiemetics Actions Search in PubMed Search in MeSH Add to Search Biomarkers, Tumor Actions Search in PubMed Search in MeSH Add to Search Chromogranin A Actions Search in PubMed Search in MeSH Add to Search Organometallic Compounds Actions Search in PubMed Search in MeSH Add to Search Radiopharmaceuticals Actions Search in PubMed Search in MeSH Add to Search lutetium Lu 177 dotatate Actions Search in PubMed Search in MeSH Add to Search Octreotide Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT02236910 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen PubChem Compound (MeSH Keyword) LinkOut - more resources Full Text Sources Europe PubMed Central PubMed Central Springer Medical ClinicalTrials.gov MedlinePlus Health Information Research Materials NCI CPTC Antibody Characterization Program Miscellaneous NCI CPTAC Assay Portal
+	•	Additional evidence from online sources: Primary outcome: Tumour response measured by RECIST criteria
+Secondary outcomes: Progression Free Survival; Quality of Life Response Changes
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Survival predictors of177Lu-Dotatate peptide receptor radionuclide therapy (PRRT) in patients with progressive well-differentiated neuroendocrine tumors (NETS).', 'url': 'https://pubmed.ncbi.nlm.nih.gov/34110489/', 'pmid': '34110489', 'content_scraped': True, 'content_length': 12894}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/34110489/
+Analysis notes: Found 1 listed publication(s); Listed publications appear to contain results; Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

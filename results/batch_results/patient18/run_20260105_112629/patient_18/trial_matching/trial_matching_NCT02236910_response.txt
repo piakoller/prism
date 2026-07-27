@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:35:09.497614
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study aligns with the patient's diagnosis of a progressive, metastatic, SSTR-positive well-differentiated NET. While the patient has a lung primary (non-GEP), the study explicitly analyzes non-GEP NETs and bone metastases as specific subgroups, providing directly applicable prognostic evidence. The published results identify that non-GEP origin and a high burden of bone metastases—both present in this patient—are independent predictors of worse overall survival with Lu-177 DOTATATE. This evidence is clinically actionable for the tumor board when weighing the potential benefit of PRRT retreatment or maintenance (the study protocol describes up to 8 maintenance cycles) versus switching to alternative systemic therapies like everolimus. The study provides crucial data to risk-stratify the patient for further PRRT interventions."
+}

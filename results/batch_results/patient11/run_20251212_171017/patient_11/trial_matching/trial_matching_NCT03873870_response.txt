@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:23:35.535012
+Trial: 29/86
+NCT ID: NCT03873870
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because the published results specifically analyze the diagnostic yield of 68Ga-DOTATATE PET in patients with suspected but unconfirmed neuroendocrine tumors (initial diagnosis setting), whereas this patient has a histologically confirmed, treated, metastatic Neuroendocrine Carcinoma (NEC). Furthermore, the biological alignment is poor; the patient has a high-grade NEC (Ki-67 95%) which typically lacks significant SSTR expression and is FDG-avid, while the study focuses on detecting standard NETs where SSTR expression is high. Consequently, evidence regarding diagnostic yield in undiagnosed patients does not provide actionable insights for the specific clinical question of consolidation strategies (surgery vs. maintenance) for a known high-grade NEC."
+}

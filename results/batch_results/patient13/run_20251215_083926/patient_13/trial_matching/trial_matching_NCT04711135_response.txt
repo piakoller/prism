@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:10:49.723655
+Trial: 80/86
+NCT ID: NCT04711135
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for clinical applicability or evidence relevance for this patient. The patient is a 53-year-old adult, whereas the NETTER-P study (NCT04711135) is a Phase II trial exclusively evaluating the safety and dosimetry of 177Lu-DOTATATE in adolescents (12–17 years). Safety and dosimetry data derived from a small pediatric cohort (n=11) provide no actionable insights for an adult patient, for whom extensive adult-specific evidence (e.g., NETTER-1, NETTER-2) already exists. Additionally, the study is restricted to G1-G2 tumors, while the patient has a Grade 3 NET (Ki-67 25%), further limiting biological alignment. Consequently, this study offers no meaningful evidence to guide therapeutic decision-making for this specific patient scenario."
+}

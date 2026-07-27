@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:45:27.634499
+Trial: 66/86
+NCT ID: NCT04452292
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient because it fails on all three core criteria. First, there is a fundamental mismatch in disease biology. The patient has a well-differentiated Grade 2 neuroendocrine tumor (NET) with a Ki-67 of 15%, whereas the study (NCT04452292) exclusively enrolls patients with high-grade neuroendocrine carcinoma (HG-NEC), a distinct and more aggressive disease. Second, the treatment context is not applicable. The study evaluates stratifying HG-NEC treatment based on molecular profiles to guide SCLC-like versus NSCLC-like chemotherapy, which is irrelevant to the standard first-line treatment options for a G2 Pan-NET (e.g., CAPTEM, PRRT, targeted agents) being considered for this patient. Finally, the study lacks relevant evidence; the provided publication is a systematic review that discusses the rationale for the trial but presents no efficacy or safety results from the interventional study itself. Without published outcomes, there is no evidence to guide therapy recommendations."
+}
+```

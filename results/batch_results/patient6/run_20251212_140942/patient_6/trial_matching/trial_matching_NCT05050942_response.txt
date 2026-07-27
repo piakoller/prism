@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:25:43.355062
+Trial: 28/86
+NCT ID: NCT05050942
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful clinical evidence to guide therapy for this patient because the provided publication is a methodology paper describing the trial design (SORENTO) without reporting any efficacy or safety results. Furthermore, the clinical applicability is low; the patient has heavily pre-treated, progressing G2 Pan-NET (post-SSA, post-TKI, post-HIF-2α), whereas this trial evaluates a high-exposure somatostatin analog (CAM2029) versus standard-of-care SSAs, explicitly excluding patients with documented progression on SSAs. Since the patient has already progressed on lanreotide and requires a subsequent line of therapy for active progression (e.g., PRRT or chemotherapy), a trial design for an SSA-based intervention without outcome data offers no actionable evidence for her current management."
+}

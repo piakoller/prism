@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:38:40.151879
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has metastatic, well-differentiated G3 PanNET (Ki-67 70%) with diffuse liver progression, whereas this study evaluates EUS-guided radiofrequency ablation (RFA) specifically for localized, low-grade (G1/G2 ≤5%) pancreatic primaries without distant metastases. The biological alignment is poor as the study explicitly excludes G3 tumors and patients with liver metastases. Clinically, the patient requires systemic therapy or liver-directed management for diffuse metastases, while the study intervention targets local control of small pancreatic lesions, which does not address the patient's life-limiting hepatic burden. Additionally, the patient is assessed as not suitable for local therapies due to the diffuse nature of the liver disease. Therefore, evidence regarding local ablation of early-stage primaries provides no actionable insights for this advanced, high-grade metastatic case."
+}

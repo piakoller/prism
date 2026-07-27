@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T10:37:32.858338
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for clinical relevance. While the tumor biology (G1 PanNET) aligns, the disease stage and tumor burden are fundamentally discordant (Criterion 1). The patient has extensive metastatic disease with a bulky 8cm primary tumor and >25 liver metastases, whereas the study evaluates EUS-guided radiofrequency ablation specifically for small (15-25mm), localized, non-metastatic tumors. Consequently, the treatment context is inapplicable (Criterion 2); EUS-RFA is a local therapy for small lesions and cannot address an 8cm mass or systemic disease. Therefore, the evidence regarding the safety of ablating small pancreatic nodules provides no actionable insights for selecting a second-line systemic therapy for this patient's progressive, high-burden metastatic disease (Criterion 3)."
+}

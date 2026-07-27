@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:31:29.339415
+Trial: 1/86
+NCT ID: NCT03278379
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study aligns well with the patient's disease biology, specifically evaluating patients with well-differentiated G2-3 neuroendocrine tumors (NETs), including those with high Ki-67 indices (study range up to 100%). While the patient is heavily pre-treated (exceeding the study's 0-2 prior lines limit), the negative results from this Phase II trial—demonstrating a 0% objective response rate and limited progression-free survival (median 3.3 months) with single-agent avelumab—provide crucial clinical evidence. In the context of a refractory patient with high-grade features (Ki-67 70%, FDG-positive) where immunotherapy might be theoretically considered, this evidence is highly relevant for decision-making. It informs the tumor board to likely avoid single-agent PD-L1 blockade as a next step, preventing the use of an ineffective therapy despite the aggressive tumor profile."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T11:01:43.530361
+Trial: 85/86
+NCT ID: NCT02842749
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient. First, regarding treatment context, the patient has already received and progressed on everolimus, making him refractory to the study intervention; the study explicitly excludes patients with prior mTOR inhibitor therapy. Second, the disease biology is discordant: the patient has a high-grade G3 NET (Ki-67 70%), while the study is restricted to G1 and G2 tumors. Finally, no published results are available from this completed Phase IV study to guide decision-making. Consequently, the study offers no actionable insights for an everolimus-refractory patient with high-grade disease."
+}

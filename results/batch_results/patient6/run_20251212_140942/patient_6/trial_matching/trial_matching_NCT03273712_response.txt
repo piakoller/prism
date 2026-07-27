@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:36:22.906623
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "While the study aligns biologically (SSTR-positive neuroendocrine neoplasms) and the intervention (90Y-DOTATOC PRRT) is a clinically relevant alternative for a patient with a G2 PanNET progressing on prior systemic therapies (sunitinib, belzutifan), the study fails to meet the criterion for Evidence Quality and Relevance. The provided input explicitly states that no publications with results were found, and the listed citations are review articles that only mention the trial's design or existence without reporting efficacy or safety outcomes. Without published data on tumor response or toxicity, this study does not provide actionable evidence to inform treatment decision-making for this patient."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:34:44.733214
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is clinically relevant as it evaluates 212Pb-DOTAMTATE (Targeted Alpha Therapy) specifically in patients with SSTR-positive NETs who have progressed after prior peptide receptor radionuclide therapy (PRRT), matching the patient's exact clinical scenario (progression of SSTR+ Lung NET after 4 cycles of PRRT). While the provided results highlight efficacy primarily in PRRT-naive patients (ORR ~56%), the study includes a dedicated cohort for post-PRRT progression, and the reported safety profile—notably low severe renal and hematologic toxicity—is crucial evidence for considering re-treatment with alpha-emitters in a patient with prior radiation exposure. Although the study text references GEP-NETs, the shared biological target (SSTR positivity confirmed by PET) and the lack of standard high-efficacy options in the post-PRRT setting make this evidence highly transferable and actionable for guiding therapeutic decisions or trial referral for this patient."
+}

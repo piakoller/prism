@@ -1,0 +1,102 @@
+{
+  "status": "success",
+  "analysis_complete": true,
+  "trials_analyzed": 11,
+  "trials_included": 10,
+  "trials_excluded": 1,
+  "expected_trial_count": 11,
+  "trial_analyses": [
+    {
+      "nct_number": "NCT04727723",
+      "trial_name": "Italian Prospective Observational Study Assessing the Effectiveness and Outcomes Associated With Lutathera Treatment in GEP-NETs",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This observational study provides real-world evidence on the effectiveness of Lutathera in GEP-NETs, specifically noting a high proportion of Grade 2 patients similar to this patient. It serves as retrospective validation for the efficacy of the PRRT the patient has already received."
+    },
+    {
+      "nct_number": "NCT03049189",
+      "trial_name": "Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 3 trial (COMPETE) demonstrates superior progression-free survival of PRRT (177Lu-edotreotide) compared to Everolimus. This high-level evidence supports the clinical decision to have prioritized PRRT over targeted therapy in the second-line setting."
+    },
+    {
+      "nct_number": "NCT05153772",
+      "trial_name": "Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial provides evidence for the efficacy of Targeted Alpha Therapy (212Pb-DOTAMTATE) in patients who have previously received PRRT. This is a critical evidence source for potential future salvage therapies should the patient progress after the planned surgery."
+    },
+    {
+      "nct_number": "NCT02236910",
+      "trial_name": "An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This registry study identifies key survival predictors for PRRT-treated patients, including the impact of specific metastatic sites. This evidence is valuable for prognostication given the patient's specific metastatic burden (liver and peritoneum)."
+    },
+    {
+      "nct_number": "NCT03074513",
+      "trial_name": "Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial demonstrates clinical activity of the Atezolizumab/Bevacizumab combination in extrapancreatic NETs. It provides evidence for a novel immunotherapy/anti-angiogenic regimen that could serve as a future treatment line."
+    },
+    {
+      "nct_number": "NCT02754297",
+      "trial_name": "Personalized PRRT of Neuroendocrine Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial investigates personalized dosimetry for PRRT. While the patient has completed standard PRRT, this evidence supports the safety and efficacy of the modality and could inform future retreatment strategies if personalized dosimetry is considered."
+    },
+    {
+      "nct_number": "NCT05448157",
+      "trial_name": "68Ga-DOTATOC Radio-Guided Surgery With β-Probe in GEP-NET",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial evaluates the use of a 68Ga-DOTATOC probe for intraoperative detection of NET lesions. As the patient is scheduled for surgery to address primary and metastatic disease, this is highly relevant evidence for a surgical technique that could improve resection outcomes."
+    },
+    {
+      "nct_number": "NCT01842165",
+      "trial_name": "177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This study provides evidence linking imaging and dosimetry parameters to PRRT outcomes. It is relevant for assessing the patient's prognosis based on her response to the recently completed PRRT cycles."
+    },
+    {
+      "nct_number": "NCT03375320",
+      "trial_name": "Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 3 trial (CABINET) provides definitive evidence of progression-free survival benefit with Cabozantinib in advanced extrapancreatic NETs. It represents the strongest evidence for a standard-of-care systemic therapy option upon future disease progression."
+    },
+    {
+      "nct_number": "NCT02795858",
+      "trial_name": "A Phase II Study of Ramucirumab With Somatostatin Analog Therapy in Patients With Advanced, Progressive Carcinoid Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial demonstrates efficacy of the anti-angiogenic agent Ramucirumab in carcinoid tumors. It provides evidence for an alternative therapeutic mechanism that could be considered in later lines of therapy."
+    },
+    {
+      "nct_number": "NCT01466036",
+      "trial_name": "Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This Phase 2 trial is excluded because it is superseded by the Phase 3 CABINET trial (NCT03375320), which provides higher-level, definitive evidence for the efficacy of Cabozantinib in the same patient population."
+    }
+  ],
+  "summary": {},
+  "validation_warnings": [],
+  "raw_response": "Based on the patient's clinical profile (G2 Ileal NET, post-PRRT, considering surgery) and the provided trial data, here is the analysis of the clinical trials as evidence sources.\n\n<trial_analysis>\n**NCT NUMBER:** NCT04727723\n**TRIAL NAME:** Italian Prospective Observational Study Assessing the Effectiveness and Outcomes Associated With Lutathera Treatment in GEP-NETs\n**DECISION:** INCLUDE\n**RATIONALE:** This observational study provides real-world evidence on the effectiveness of Lutathera in GEP-NETs, specifically noting a high proportion of Grade 2 patients similar to this patient. It serves as retrospective validation for the efficacy of the PRRT the patient has already received.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03049189\n**TRIAL NAME:** Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 3 trial (COMPETE) demonstrates superior progression-free survival of PRRT (177Lu-edotreotide) compared to Everolimus. This high-level evidence supports the clinical decision to have prioritized PRRT over targeted therapy in the second-line setting.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT05153772\n**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial provides evidence for the efficacy of Targeted Alpha Therapy (212Pb-DOTAMTATE) in patients who have previously received PRRT. This is a critical evidence source for potential future salvage therapies should the patient progress after the planned surgery.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02236910\n**TRIAL NAME:** An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours\n**DECISION:** INCLUDE\n**RATIONALE:** This registry study identifies key survival predictors for PRRT-treated patients, including the impact of specific metastatic sites. This evidence is valuable for prognostication given the patient's specific metastatic burden (liver and peritoneum).\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03074513\n**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial demonstrates clinical activity of the Atezolizumab/Bevacizumab combination in extrapancreatic NETs. It provides evidence for a novel immunotherapy/anti-angiogenic regimen that could serve as a future treatment line.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02754297\n**TRIAL NAME:** Personalized PRRT of Neuroendocrine Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial investigates personalized dosimetry for PRRT. While the patient has completed standard PRRT, this evidence supports the safety and efficacy of the modality and could inform future retreatment strategies if personalized dosimetry is considered.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT05448157\n**TRIAL NAME:** 68Ga-DOTATOC Radio-Guided Surgery With β-Probe in GEP-NET\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial evaluates the use of a 68Ga-DOTATOC probe for intraoperative detection of NET lesions. As the patient is scheduled for surgery to address primary and metastatic disease, this is highly relevant evidence for a surgical technique that could improve resection outcomes.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01842165\n**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs\n**DECISION:** INCLUDE\n**RATIONALE:** This study provides evidence linking imaging and dosimetry parameters to PRRT outcomes. It is relevant for assessing the patient's prognosis based on her response to the recently completed PRRT cycles.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03375320\n**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 3 trial (CABINET) provides definitive evidence of progression-free survival benefit with Cabozantinib in advanced extrapancreatic NETs. It represents the strongest evidence for a standard-of-care systemic therapy option upon future disease progression.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02795858\n**TRIAL NAME:** A Phase II Study of Ramucirumab With Somatostatin Analog Therapy in Patients With Advanced, Progressive Carcinoid Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial demonstrates efficacy of the anti-angiogenic agent Ramucirumab in carcinoid tumors. It provides evidence for an alternative therapeutic mechanism that could be considered in later lines of therapy.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01466036\n**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** This Phase 2 trial is excluded because it is superseded by the Phase 3 CABINET trial (NCT03375320), which provides higher-level, definitive evidence for the efficacy of Cabozantinib in the same patient population.\n---\n</trial_analysis>\n\n<summary>\n**TOTAL TRIALS ANALYZED:** 11\n**TRIALS TO INCLUDE:** 10\n**TRIALS TO EXCLUDE:** 1\n</summary>",
+  "metadata": {
+    "timestamp": "2025-12-12T15:39:27.398790",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 8,
+    "input_trial_count": 11,
+    "cache_reused": false,
+    "cached_at": null,
+    "prompt_file": "batch_results/run_20251212_150140\\patient_8\\patient_8_trial_analysis_prompt.txt",
+    "results_file": "batch_results/run_20251212_150140\\patient_8\\patient_8_trial_analysis.json",
+    "response_file": "batch_results/run_20251212_150140\\patient_8\\patient_8_trial_analysis_raw_response.txt",
+    "summary_file": "batch_results/run_20251212_150140\\patient_8\\patient_8_trial_analysis_summary.txt"
+  }
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:52:50.776794
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or evidence relevance. Although this basket trial included a cohort for rare neuroendocrine tumors, the provided published results (PMID 37429302) exclusively report outcomes for the **sarcoma** cohort (e.g., chordoma, alveolar soft part sarcoma). Evidence regarding pembrolizumab efficacy in sarcomas cannot be biologically extrapolated to inform treatment for a well-differentiated pancreatic neuroendocrine tumor (Pan-NET). Furthermore, the study's NET cohort required patients to be refractory to multiple lines of therapy (4 lines for well-differentiated tumors), whereas this patient requires first-line systemic treatment. Without published results specific to the neuroendocrine cohort, this study provides no actionable evidence to guide therapeutic decision-making for this patient."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:38:56.562217
+Trial: 69/86
+NCT ID: NCT01466036
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study aligns with the patient's diagnosis of metastatic, well-differentiated Grade 2 Pancreatic NET. Although the patient is currently treatment-naïve and the study typically targets progressive disease, the clinical evidence from this Phase II trial (NCT01466036) establishing Cabozantinib's efficacy in PanNETs is highly relevant for treatment planning. Given the patient's SSTR heterogeneity (mismatch between primary and metastases) which complicates the use of PRRT, and the need for tumor shrinkage in a symptomatic patient, identifying active systemic agents beyond standard somatostatin analogs is crucial. The study provides data on the activity of Cabozantinib, a TKI, which informs the therapeutic sequence and offers an alternative option if chemotherapy or standard targeted therapies (sunitinib/everolimus) fail or are contraindicated. Additionally, the study's safety data is relevant given the patient's history of ischemic heart disease, as TKIs carry cardiovascular risks."
+}

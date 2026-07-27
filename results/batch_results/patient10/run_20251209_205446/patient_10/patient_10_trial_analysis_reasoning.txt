@@ -1,0 +1,197 @@
+=== TRIAL ANALYSIS REASONING REPORT ===
+Timestamp: 2025-12-09T21:34:43.368379
+Patient ID: 10
+Analysis Status: success
+============================================================
+
+ANALYSIS SUMMARY:
+- Trials analyzed: 10
+- Trials included: 7
+- Trials excluded: 3
+- Analysis complete: True
+
+DETAILED TRIAL ANALYSES:
+==================================================
+
+TRIAL 1: NCT03278379
+Name: Avelumab in G2-3 NET
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 2: NCT02568267
+Name: Basket Study of Entrectinib (STARTRK-2)
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 3: NCT05153772
+Name: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (AlphaMedix)
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 4: NCT03870399
+Name: Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 5: NCT03074513
+Name: Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 6: NCT03728361
+Name: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 7: NCT03217097
+Name: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 8: NCT02834013
+Name: Nivolumab and Ipilimumab in Treating Patients With Rare Tumors (DART)
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 9: NCT03375320
+Name: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 10: NCT01466036
+Name: Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+RAW ANALYSIS RESPONSE:
+==================================================
+Based on the patient's history of metastatic, well-differentiated (Grade 2) NF-Pan-NET, heavy pretreatment (7 lines), and current fragility with thrombocytopenia, here is the analysis of the clinical trials to inform the final therapy recommendation.
+
+<trial_analysis>
+**NCT NUMBER:** NCT03278379
+**TRIAL NAME:** Avelumab in G2-3 NET
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial provides critical negative evidence regarding immunotherapy in Grade 2-3 NETs. The results (0% ORR, 21% DCR) indicate limited antitumor activity of single-agent PD-L1 blockade in this population, supporting the decision to avoid immunotherapy for this patient.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02568267
+**TRIAL NAME:** Basket Study of Entrectinib (STARTRK-2)
+**DECISION:** EXCLUDE
+**RATIONALE:** While Entrectinib is effective for NTRK/ROS1 fusion-positive tumors, these alterations are extremely rare in Pan-NETs (<1%). Without genomic profiling confirming such a fusion, this trial does not provide actionable evidence for this patient's general treatment recommendation.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT05153772
+**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (AlphaMedix)
+**DECISION:** INCLUDE
+**RATIONALE:** This trial includes a cohort of patients with prior PRRT exposure and demonstrates a high objective response rate (55.6%) with 212Pb-DOTAMTATE. This provides strong supporting evidence for the efficacy of peptide receptor radionuclide therapy (PRRT) retreatment strategies, which is a key consideration for this patient.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03870399
+**TRIAL NAME:** Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression
+**DECISION:** EXCLUDE
+**RATIONALE:** The trial requires ER/PR expression (status unknown for this patient) and demonstrated only modest disease control (56.5% SD) with no objective responses. Given the patient's significant tumor burden and progressive liver metastases, more potent cytotoxic or targeted options are required.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03074513
+**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** This trial demonstrated a 20% ORR and ~15 months PFS in Pan-NETs using a VEGF/PD-L1 inhibitor combination. This serves as a relevant evidence source for a non-cytotoxic alternative, particularly given the patient's prior failure of Sunitinib (VEGF TKI) due to toxicity, though cross-resistance is a potential concern.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03728361
+**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+**DECISION:** INCLUDE
+**RATIONALE:** This trial evaluates Temozolomide (a key component of the potential CAPTEM regimen) in combination with Nivolumab. While responses were driven by lung NENs, the data supports the activity of Temozolomide-based regimens in NENs, informing the consideration of alkylating agents for this patient who has not yet received Temozolomide.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03217097
+**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** This randomized Phase 2 trial compares alkylating agents (like Streptozocin/Temozolomide) vs. Oxaliplatin based on MGMT status. Since the patient has received both Streptozocin and Oxaliplatin with stable disease, this evidence helps contextualize the potential utility of a Temozolomide rechallenge (CAPTEM) and the importance of MGMT status in predicting response.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02834013
+**TRIAL NAME:** Nivolumab and Ipilimumab in Treating Patients With Rare Tumors (DART)
+**DECISION:** INCLUDE
+**RATIONALE:** The non-pancreatic NET cohort of this trial showed a 44% ORR in high-grade tumors but a 0% ORR in low/intermediate grade tumors. This provides further evidence (alongside NCT03278379) arguing against the use of checkpoint inhibitors for this patient's Grade 2 disease.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03375320
+**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 3 trial provides high-quality evidence that Cabozantinib significantly improves PFS compared to placebo in patients with progressive Pan-NETs after prior therapy. Given the patient's progression on Everolimus and Sunitinib, this trial supports Cabozantinib as a strong, evidence-based next-line option.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01466036
+**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** This Phase 2 trial evaluates the same intervention (Cabozantinib) in the same population as the Phase 3 CABINET trial (NCT03375320). The Phase 3 trial provides superior, confirmatory evidence, rendering this Phase 2 trial redundant for the final recommendation.
+---
+</trial_analysis>
+
+### Summary
+
+**TOTAL TRIALS ANALYZED:** 10
+**TRIALS TO INCLUDE:** 7
+**TRIALS TO EXCLUDE:** 3
+
+**Conclusion:**
+The included trials provide a robust evidence base for determining the next line of therapy. **NCT03375320 (CABINET)** offers Level 1 evidence for **Cabozantinib** as a viable option for this heavily pre-treated patient. **NCT05153772 (AlphaMedix)** supports the efficacy of **PRRT retreatment** strategies. **NCT03217097 (MGMT-NET)** and **NCT03728361** provide context for **Temozolomide-based chemotherapy (CAPTEM)**, validating alkylator activity. Conversely, **NCT03278379** and **NCT02834013 (DART)** provide crucial negative predictive evidence, suggesting that immunotherapy (PD-1/PD-L1 blockade) is unlikely to be effective for this Grade 2 tumor and should be avoided.

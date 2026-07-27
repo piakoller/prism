@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:10:55.099356
+Trial: 34/86
+NCT ID: NCT03728361
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase II study provides meaningful clinical evidence for a patient with a metastatic Grade 2 Pancreatic NET requiring first-line systemic therapy. The trial evaluates Nivolumab combined with Temozolomide in advanced neuroendocrine neoplasms of any grade or origin, explicitly including treatment-naïve patients, which aligns with the patient's current clinical scenario. Published results (PMID: 36255391) demonstrate an overall objective response rate (ORR) of 32.1%, addressing the patient's specific need for a regimen capable of cytoreduction given their symptomatic burden and heterogeneous SSTR expression (which complicates PRRT eligibility). Although the study found significantly higher response rates in lung primaries compared to others, this evidence is crucial for the Tumorboard to weigh the potential benefit of this immunotherapy-chemotherapy combination against standard Temozolomide-based regimens (e.g., CAPTEM) for a pancreatic primary."
+}

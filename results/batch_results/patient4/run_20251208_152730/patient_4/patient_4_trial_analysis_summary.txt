@@ -1,0 +1,41 @@
+TRIAL ANALYSIS SUMMARY - PATIENT 4
+==================================================
+Analysis Status: success
+Analysis Complete: True
+Trials Analyzed: 15
+Trials to Include: 7
+Trials to Exclude: 8
+
+TRIALS TO INCLUDE IN RECOMMENDATION:
+  ✅ NCT03278379: Avelumab in G2-3 NET
+     Rationale: This Phase 2 trial provides critical negative evidence regarding single-agent immunotherapy in G2-3 NETs, showing an ORR of 0% and limited antitumor activity. This informs the treatment decision by supporting the exclusion of single-agent PD-L1 inhibitors for this patient.
+  ✅ NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)
+     Rationale: This Phase 3 trial compares PRRT (177Lu-edotreotide) against Everolimus (a guideline-recommended option for this patient). The results provide a benchmark for Everolimus efficacy (median PFS 14.1 months) and demonstrate the superiority of PRRT in the study population, informing the choice between switching to an mTOR inhibitor or considering PRRT re-treatment.
+  ✅ NCT05153772: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (AlphaMedix)
+     Rationale: This Phase 2 trial specifically enrolls patients who are refractory to prior PRRT (Cohort 2), matching this patient's history. The reported efficacy (ORR ~55%) of 212Pb-DOTAMTATE (Targeted Alpha Therapy) provides strong evidence for a novel PRRT modality in the re-treatment setting.
+  ✅ NCT03074513: Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+     Rationale: This Phase 2 trial demonstrates clinical activity (ORR 15%, PFS ~14 months) of the combination of Atezolizumab and Bevacizumab in extrapancreatic NETs. This provides evidence for a combination strategy (VEGF + PD-L1 inhibition) as a potential alternative to standard single-agent therapies.
+  ✅ NCT01842165: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs (LUMEN)
+     Rationale: This prospective Phase 2 trial provides high-quality data on the efficacy (PFS 28 months) and dosimetry of 177Lu-DOTATATE. This evidence supports the feasibility and potential benefit of PRRT, which is crucial for considering a re-challenge strategy.
+  ✅ NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+     Rationale: This Phase 3 trial provides high-level evidence for Cabozantinib in patients with progressive extrapancreatic NETs who have received prior targeted therapy (like this patient). The significant PFS benefit (8.4 vs 3.9 months) makes this a primary candidate for the next line of therapy.
+  ✅ NCT02795858: A Phase II Study of Ramucirumab With Somatostatin Analog Therapy in Patients With Advanced, Progressive Carcinoid Tumors
+     Rationale: This Phase 2 trial demonstrates efficacy (PFS 14.2 months) of Ramucirumab (VEGFR2 antibody) in advanced NETs. It serves as supportive evidence for continued VEGF inhibition using a different mechanism (antibody vs. TKI) after progression on Sunitinib/Surufatinib.
+
+TRIALS TO EXCLUDE FROM RECOMMENDATION:
+  ❌ NCT02568267: Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+     Rationale: The patient's clinical profile does not indicate the presence of NTRK, ROS1, or ALK gene fusions, which are rare in NETs. Without molecular profiling confirming these targets, this targeted therapy is not applicable.
+  ❌ NCT02236910: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+     Rationale: While relevant, this is a retrospective registry study. The prospective Phase 2 LUMEN trial (NCT01842165) provides higher-quality prospective evidence regarding 177Lu-DOTATATE efficacy and dosimetry for informing re-treatment decisions.
+  ❌ NCT03870399: Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression
+     Rationale: The trial showed only modest antitumor effects (stable disease) and requires ER/PR expression, which is not established in this patient. Given the patient's extensive progression history, therapies with higher proven efficacy (e.g., Cabozantinib) are prioritized.
+  ❌ NCT03728361: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+     Rationale: The trial results indicate that significant responses were primarily driven by lung NETs, with poor responses in other sites. Additionally, guidelines generally recommend against chemotherapy for G2 GI NETs with low Ki-67 (3-5%), making this regimen unsuitable.
+  ❌ NCT03217097: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents
+     Rationale: This trial evaluates chemotherapy regimens (alkylating agents vs. oxaliplatin). As systemic chemotherapy is generally not recommended for well-differentiated G2 GI NETs due to poor response rates, this evidence does not support a viable therapeutic option for this patient.
+  ❌ NCT04552847: Al18F-NOTA-octreotide PET Imaging in Neuroendocrine Tumors
+     Rationale: This is a diagnostic imaging trial comparing PET tracers. While relevant for staging, it does not provide evidence for a therapeutic intervention to treat the patient's progressive disease.
+  ❌ NCT01466036: Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+     Rationale: This Phase 2 trial has been superseded by the completed Phase 3 CABINET trial (NCT03375320), which provides more robust and recent evidence for the same intervention in the same patient population.
+  ❌ NCT02609737: Theranostics of Radiolabeled Somatostatin Antagonists 68Ga-DOTA-JR11 and 177Lu-DOTA-JR11 in Patients With Neuroendocrine Tumors
+     Rationale: While the trial has posted results, the provided evidence summary contains no interpretable data or publications to evaluate efficacy or safety. Therefore, it cannot be used as an evidence source.

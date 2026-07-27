@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T10:38:37.752409
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful clinical evidence for the patient's treatment planning. Biologically, the patient's well-differentiated, SSTR-positive, progressive duodenal NET aligns perfectly with the study population (progressive well-differentiated NETs). Clinically, the patient is experiencing disease progression on somatostatin analogues, and the tumor board is weighing therapy escalation (PRRT) against further surgery. The study's published results (Swiha et al., 2022) report a median progression-free survival of 34.1 months for PRRT in this setting and identify prognostic factors—such as GEP origin (favorable) and liver tumor burden—that are directly applicable to this patient. Although the study excludes patients eligible for curative surgery, the patient's history of multiple recurrences and new extra-hepatic disease makes the curative potential of surgery uncertain; thus, evidence quantifying the benefit of the systemic alternative (PRRT) is critical for the multidisciplinary decision between surgical re-intervention and systemic escalation."
+}

@@ -1,0 +1,75 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Immediate Action: Molecular Profiling**\nBefore initiating further systemic therapy or consolidation, the following biomarker testing must be performed on the available tumor tissue (liver biopsy or primary resection specimen):\n*   **Microsatellite Instability (MSI) / Mismatch Repair (MMR) status**\n*   **Tumor Mutational Burden (TMB)**\n*   **Rationale:** According to ENETS 2023 guidelines (Q2, Q8), these are critical predictive biomarkers for immunotherapy. While rare in pancreatic NEC (~5%), the presence of MSI-High or TMB-High status would strongly support the use of immune checkpoint inhibitors in later lines of therapy.\n\n**Primary Recommendation: Local Consolidation of Oligometastatic Disease**\nGiven the patient's **Partial Response (PR)** to first-line platinum-etoposide and current **oligometastatic status** (single 20 × 12 mm hepatic lesion in segment VII), the recommended strategy is local consolidation to achieve a disease-free state.\n*   **Preferred Modality:** **Radiofrequency Ablation (RFA)** or **Stereotactic Body Radiation Therapy (SBRT)**.\n    *   **Reasoning:** While surgical resection is an option for highly selected responders (ENETS 2023 Q7), this patient's history of **valvular heart disease** (aortic, mitral, and tricuspid regurgitation) and ventricular extrasystoles presents elevated perioperative risk. A minimally invasive ablative approach offers local control with a safer profile for a single 2 cm lesion.\n*   **Surgical Consideration:** If ablation is technically not feasible, surgical metastasectomy may be considered only after rigorous **cardiology clearance**.\n\n**Secondary Recommendation: Second-Line Systemic Therapy (Upon Progression)**\nWhen the patient experiences disease progression, the recommended evidence-based regimen is **Liposomal Irinotecan (nal-IRI) plus 5-Fluorouracil (5-FU) and Folinic Acid**.\n*   **Evidence:** The **NET-02 Phase II trial (NCT03837977)** demonstrated that nal-IRI/5-FU/folinic acid met the primary endpoint for 6-month progression-free survival (PFS) rate (29.6% vs. 13.8% with Docetaxel) in patients with progressive poorly differentiated extra-pulmonary neuroendocrine carcinoma.\n*   **Alternative:** Standard **FOLFIRI** (Irinotecan + 5-FU) is also a validated option supported by the control arm of the **PRODIGE 41-BEVANEC trial (NCT02820857)**, which showed no survival benefit to adding Bevacizumab.\n\n**Alternative Systemic Options (Immunotherapy)**\n*   **Dual Immunotherapy (Nivolumab + Ipilimumab):** Recommended specifically if the patient is found to be **MSI-High/TMB-High**, or within a clinical trial setting for unselected patients.\n    *   **Evidence:** The **DART trial (SWOG S1609, NCT02834013)** reported an Objective Response Rate (ORR) of **26%** in the dedicated high-grade neuroendocrine neoplasm cohort (PMID: 33882143) and **44%** in the non-pancreatic high-grade cohort (PMID: 31969335). This suggests potential for durable response in refractory high-grade disease, though efficacy in microsatellite-stable pancreatic NEC remains variable.\n*   **Nivolumab + Temozolomide:** This combination showed an ORR of **32%** in neuroendocrine neoplasms in trial **NCT03728361** and serves as another viable option for immune-sensitized tumors.\n*   **Contraindication:** Single-agent PD-1/PD-L1 inhibitors (e.g., Pembrolizumab, Avelumab) are **not recommended** for microsatellite-stable disease due to lack of efficacy (ORR <10%) demonstrated in trials **NCT03278379** and **NCT03136055**.",
+  "rationale_text": "**Clinical Context and Consolidation Strategy**\nThe patient presents with a pancreatic Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, indicating extremely aggressive biology. However, she has achieved a Partial Response to first-line Carboplatin-Etoposide and currently has limited disease (one liver lesion). ENETS 2023 guidelines (Q7) generally discourage surgery for metastatic NEC but allow for it in \"highly selected patients with limited disease and no rapid progression.\" This patient fits that narrow criteria. However, her significant cardiac comorbidities (valvular disease) necessitate a cautious approach, favoring local ablation (RFA/SBRT) over major hepatic resection to minimize operative mortality risk while still achieving local control.\n\n**Biomarker Necessity**\nThe recommendation to perform MSI/MMR and TMB testing is derived directly from ENETS 2023 (Q8) and the need to stratify patients for immunotherapy. While most digestive NECs are microsatellite stable (MSS), the 5% that are MSI-High have a distinct therapeutic pathway. Identifying this early allows for rapid decision-making upon progression.\n\n**Evidence for Second-Line Therapy**\nThe recommendation for Liposomal Irinotecan + 5-FU is based on the **NET-02 trial (NCT03837977)**, which provides high-level evidence specifically for second-line treatment of extra-pulmonary NEC, showing superior 6-month PFS compared to Docetaxel. The **PRODIGE 41 trial (NCT02820857)** further supports FOLFIRI as a standard backbone, establishing that anti-angiogenics (Bevacizumab) do not add value in this setting.\n\n**Immunotherapy Nuance**\nThe **DART trial (NCT02834013)** provides the basis for considering dual checkpoint inhibition (Nivolumab + Ipilimumab). The distinction between the high-grade cohort (26% ORR) and the non-pancreatic cohort (44% ORR) is important; pancreatic NECs are often less responsive to immunotherapy than other high-grade NENs unless they harbor specific mutations (MSI-H). Therefore, this option is prioritized for biomarker-positive patients or those eligible for trials, distinguishing it from single-agent approaches (Pembrolizumab/Avelumab) which failed to show meaningful efficacy in trials **NCT03136055** and **NCT03278379**.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Immediate Action: Molecular Profiling**\nBefore initiating further systemic therapy or consolidation, the following biomarker testing must be performed on the available tumor tissue (liver biopsy or ...",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03837977",
+      "nct_id": "NCT03837977",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02820857",
+      "nct_id": "NCT02820857",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02834013",
+      "nct_id": "NCT02834013",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03837977",
+        "trial_name": "Trial NCT03837977",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02820857",
+        "trial_name": "Trial NCT02820857",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02834013",
+        "trial_name": "Trial NCT02834013",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**Immediate Action: Molecular Profiling**\nBefore initiating further systemic therapy or consolidation, the following biomarker testing must be performed on the available tumor tissue (liver biopsy or primary resection specimen):\n*   **Microsatellite Instability (MSI) / Mismatch Repair (MMR) status**\n*   **Tumor Mutational Burden (TMB)**\n*   **Rationale:** According to ENETS 2023 guidelines (Q2, Q8), these are critical predictive biomarkers for immunotherapy. While rare in pancreatic NEC (~5%), the presence of MSI-High or TMB-High status would strongly support the use of immune checkpoint inhibitors in later lines of therapy.\n\n**Primary Recommendation: Local Consolidation of Oligometastatic Disease**\nGiven the patient's **Partial Response (PR)** to first-line platinum-etoposide and current **oligometastatic status** (single 20 × 12 mm hepatic lesion in segment VII), the recommended strategy is local consolidation to achieve a disease-free state.\n*   **Preferred Modality:** **Radiofrequency Ablation (RFA)** or **Stereotactic Body Radiation Therapy (SBRT)**.\n    *   **Reasoning:** While surgical resection is an option for highly selected responders (ENETS 2023 Q7), this patient's history of **valvular heart disease** (aortic, mitral, and tricuspid regurgitation) and ventricular extrasystoles presents elevated perioperative risk. A minimally invasive ablative approach offers local control with a safer profile for a single 2 cm lesion.\n*   **Surgical Consideration:** If ablation is technically not feasible, surgical metastasectomy may be considered only after rigorous **cardiology clearance**.\n\n**Secondary Recommendation: Second-Line Systemic Therapy (Upon Progression)**\nWhen the patient experiences disease progression, the recommended evidence-based regimen is **Liposomal Irinotecan (nal-IRI) plus 5-Fluorouracil (5-FU) and Folinic Acid**.\n*   **Evidence:** The **NET-02 Phase II trial (NCT03837977)** demonstrated that nal-IRI/5-FU/folinic acid met the primary endpoint for 6-month progression-free survival (PFS) rate (29.6% vs. 13.8% with Docetaxel) in patients with progressive poorly differentiated extra-pulmonary neuroendocrine carcinoma.\n*   **Alternative:** Standard **FOLFIRI** (Irinotecan + 5-FU) is also a validated option supported by the control arm of the **PRODIGE 41-BEVANEC trial (NCT02820857)**, which showed no survival benefit to adding Bevacizumab.\n\n**Alternative Systemic Options (Immunotherapy)**\n*   **Dual Immunotherapy (Nivolumab + Ipilimumab):** Recommended specifically if the patient is found to be **MSI-High/TMB-High**, or within a clinical trial setting for unselected patients.\n    *   **Evidence:** The **DART trial (SWOG S1609, NCT02834013)** reported an Objective Response Rate (ORR) of **26%** in the dedicated high-grade neuroendocrine neoplasm cohort (PMID: 33882143) and **44%** in the non-pancreatic high-grade cohort (PMID: 31969335). This suggests potential for durable response in refractory high-grade disease, though efficacy in microsatellite-stable pancreatic NEC remains variable.\n*   **Nivolumab + Temozolomide:** This combination showed an ORR of **32%** in neuroendocrine neoplasms in trial **NCT03728361** and serves as another viable option for immune-sensitized tumors.\n*   **Contraindication:** Single-agent PD-1/PD-L1 inhibitors (e.g., Pembrolizumab, Avelumab) are **not recommended** for microsatellite-stable disease due to lack of efficacy (ORR <10%) demonstrated in trials **NCT03278379** and **NCT03136055**.\n</therapy_recommendation>\n\n<rationale>\n**Clinical Context and Consolidation Strategy**\nThe patient presents with a pancreatic Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, indicating extremely aggressive biology. However, she has achieved a Partial Response to first-line Carboplatin-Etoposide and currently has limited disease (one liver lesion). ENETS 2023 guidelines (Q7) generally discourage surgery for metastatic NEC but allow for it in \"highly selected patients with limited disease and no rapid progression.\" This patient fits that narrow criteria. However, her significant cardiac comorbidities (valvular disease) necessitate a cautious approach, favoring local ablation (RFA/SBRT) over major hepatic resection to minimize operative mortality risk while still achieving local control.\n\n**Biomarker Necessity**\nThe recommendation to perform MSI/MMR and TMB testing is derived directly from ENETS 2023 (Q8) and the need to stratify patients for immunotherapy. While most digestive NECs are microsatellite stable (MSS), the 5% that are MSI-High have a distinct therapeutic pathway. Identifying this early allows for rapid decision-making upon progression.\n\n**Evidence for Second-Line Therapy**\nThe recommendation for Liposomal Irinotecan + 5-FU is based on the **NET-02 trial (NCT03837977)**, which provides high-level evidence specifically for second-line treatment of extra-pulmonary NEC, showing superior 6-month PFS compared to Docetaxel. The **PRODIGE 41 trial (NCT02820857)** further supports FOLFIRI as a standard backbone, establishing that anti-angiogenics (Bevacizumab) do not add value in this setting.\n\n**Immunotherapy Nuance**\nThe **DART trial (NCT02834013)** provides the basis for considering dual checkpoint inhibition (Nivolumab + Ipilimumab). The distinction between the high-grade cohort (26% ORR) and the non-pancreatic cohort (44% ORR) is important; pancreatic NECs are often less responsive to immunotherapy than other high-grade NENs unless they harbor specific mutations (MSI-H). Therefore, this option is prioritized for biomarker-positive patients or those eligible for trials, distinguishing it from single-agent approaches (Pembrolizumab/Avelumab) which failed to show meaningful efficacy in trials **NCT03136055** and **NCT03278379**.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-12T19:00:12.330473",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 11,
+    "trials_considered": 8,
+    "trials_included": 6,
+    "trials_excluded": 2,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251212_185610\\patient_11\\patient_11_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251212_185610\\patient_11\\patient_11_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251212_185610\\patient_11\\patient_11_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251212_185610\\patient_11\\patient_11_therapy_recommendation_reasoning.txt"
+  },
+  "regeneration_iteration": 1
+}

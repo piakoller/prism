@@ -1,0 +1,177 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-09-22T10:43:01.501664
+Trial: 60/86
+NCT ID: NCT03453489
+Model: google/gemini-2.5-pro
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 70-year-old patient with a history of cataracts, ischemic heart disease (angina in 2004 with stent placement), and hiatal hernia.
+o	May 2025: Presented with progressive weight loss over 3 months (–5 kg).
+o	CT scan (May 30, 2025): 18×15 mm mass in the lower left lung lobe (LLL), multiple hepatic metastases, and an 11×10 mm pancreatic nodule in the head of the pancreas.
+o	Liver biopsy: Grade 2 neuroendocrine tumor (NET) with Ki67 15%, 1.6 mitoses/2 mm². Immunohistochemistry: TTF1–, CDX2–, chromogranin A+, synaptophysin+, progesterone+. Suggestive of pancreatic origin.
+o	Lung biopsy: NET with 1 mitosis/2 mm², TTF1–.
+The patient was referred to our center, and a Ga-68 PET/CT scan was requested for staging.
+2.	Current Clinical Status
+The patient reports moderate asthenia and hyporexia. Weight: 63 kg (7 kg below baseline). Height: 164 cm.
+•	Ga-68 PET/CT (July 30, 2025): LLL lung nodule (SUV 6, 17 mm); pancreatic head lesion (SUV 3); hepatic metastases in segments VIII (SUV 9), V (SUV 9), and perivesicular region (SUV 8); multiple bone metastases (SUV 12).
+Question for Tumorboard:
+What would be the most appropriate first-line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+### **Clinical Assessment for Tumor Board**
+
+**Patient:** 70-year-old male (ID: 2)
+**Diagnosis:** Metastatic, well-differentiated, non-functioning Grade 2 neuroendocrine tumor (NET) of probable pancreatic origin.
+
+**1. Summary of Clinical Presentation**
+This is a 70-year-old male with a history of ischemic heart disease who presented with constitutional symptoms, including significant weight loss (7 kg), asthenia, and hyporexia. The diagnostic workup has confirmed a newly diagnosed, widely metastatic, well-differentiated Grade 2 neuroendocrine tumor. The primary is presumed to be in the head of the pancreas based on imaging and immunohistochemistry (IHC) findings from a liver biopsy (TTF1-negative, CDX2-negative).
+
+**2. Histopathological and Staging Details**
+*   **Histology:** The liver biopsy confirms a Grade 2 NET with a Ki-67 of 15% and 1.6 mitoses/2 mm². This proliferation index is in the upper range for G2 tumors, which can be associated with more active disease, as noted in the ESMO guidelines.
+*   **Staging:** The patient has advanced, Stage IV disease with a high tumor burden. The Ga-68 PET/CT on July 30, 2025, demonstrated widespread disease involving:
+    *   **Pancreas:** A 11×10 mm lesion in the pancreatic head.
+    *   **Liver:** Multiple hepatic metastases.
+    *   **Lung:** A 17 mm nodule in the lower left lobe (LLL).
+    *   **Bone:** Multiple bone metastases.
+*   **Clinical Status:** The patient is symptomatic from his disease, which is a critical factor in determining the urgency and type of first-line therapy.
+
+**3. Analysis of Somatostatin Receptor (SSTR) Imaging**
+The Ga-68 PET/CT confirms SSTR expression in all known tumor sites. However, the uptake is heterogeneous:
+*   **High Avidity:** Bone metastases (SUV 12) and hepatic metastases (SUV 8-9) show high SSTR avidity.
+*   **Moderate Avidity:** The LLL lung nodule shows moderate uptake (SUV 6).
+*   **Low Avidity:** The presumed primary lesion in the pancreatic head demonstrates low SSTR avidity (SUV 3). This uptake is significantly lower than in the metastatic sites and is likely below the background uptake of normal liver tissue. This finding has important implications for therapies targeting SSTR, such as PRRT. The ESMO and ENETS guidelines emphasize that PRRT is most effective in tumors with homogenous and high SSTR expression.
+
+**4. Guideline-Based Therapeutic Considerations**
+The primary question is the most appropriate first-line systemic therapy for this symptomatic patient with high-burden, metastatic G2 Pan-NET.
+
+*   **Chemotherapy:** The ENETS 2023 guidelines (Section 3.4, Q7) state that patient selection for chemotherapy relies on features such as bulky, symptomatic disease due to high volume, or significant tumor growth. They recommend temozolomide with capecitabine for metastatic progressive and/or symptomatic G1-G2 NF-Pan-NETs (Level of evidence 2b). Similarly, the ESMO 2020 guidelines (Figure 4) recommend chemotherapy (e.g., CAPTEM) as a primary option for Pan-NETs with rapid growth, high tumor burden, and symptoms. This patient's clinical profile aligns directly with these indications.
+
+*   **Peptide Receptor Radionuclide Therapy (PRRT):** While the ENETS guidelines (Figure 1) list PRRT as a potential first-line option for high-burden disease, they also recommend it as a second-line treatment (Level of evidence 2b). The ESMO guidelines position PRRT as a later-line option for Pan-NETs, to be used after failure of other approved therapies [III, A]. A critical limiting factor for upfront PRRT in this case is the low SSTR uptake (SUV 3) in the primary pancreatic tumor, which suggests that this lesion may not respond adequately to PRRT and raises concerns about treatment efficacy.
+
+*   **Somatostatin Analogues (SSAs):** According to both ENETS (Section 3.3.1, Q6) and ESMO guidelines, SSA monotherapy is the recommended upfront treatment for *slow-growing*, SSTR-positive, advanced G1 and G2 NF-Pan-NETs, preferably with a Ki-67 <10%. Given this patient's high tumor burden, significant symptoms, and Ki-67 of 15%, SSAs as a single agent are unlikely to provide sufficient initial antiproliferative effect or symptom control related to tumor mass.
+
+*   **Targeted Therapies (Everolimus/Sunitinib):** The ENETS and ESMO guidelines recommend everolimus and sunitinib for *progressive* G1 and G2 Pan-NETs [Level of evidence 1a]. While this patient has newly diagnosed disease, the high burden and symptoms imply it is active and progressive. These agents are a valid consideration. However, the ENETS guidelines (Section 3.4, Q7) note that chemotherapy may be favored when the goal is tumor debulking to reduce the volume of disease, which is a relevant goal in this symptomatic, high-burden patient.
+
+**5. Patient-Specific Factors**
+The patient's age (70) and history of ischemic heart disease with stent placement are important considerations. The potential toxicities of any systemic therapy, including chemotherapy (myelosuppression), targeted agents (stomatitis, metabolic effects, cardiac events), and PRRT (renal and hematologic toxicity), must be carefully weighed against his comorbidities and performance status.
+
+**Conclusion of Assessment**
+This patient presents with a symptomatic, high-volume, metastatic Grade 2 Pan-NET with a Ki-67 of 15%. The clinical scenario calls for a first-line systemic therapy capable of inducing a response to control tumor growth and alleviate symptoms. Based on the provided ENETS and ESMO guidelines, the patient's presentation (high tumor burden, symptoms, Ki-67 15%) strongly aligns with the indications for upfront chemotherapy. The low SSTR-avidity of the primary pancreatic lesion makes PRRT a less suitable first-line choice. SSA monotherapy is likely insufficient for initial disease control in this context.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+	•	Question for Tumorboard: What would be the most appropriate first-line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT03453489
+	•	Title: AMT-PET in Monitoring Telotristat Etiprate Treatment in Participants With MetastaticNeuroendocrine Neoplasm
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Carbon C 11 Alpha-methyltryptophan; Laboratory Biomarker Analysis; Positron Emission Tomography; Telotristat Etiprate
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Histopathologically confirmed, well-differentiated metastatic NETs
+* Receiving stable-dose somatostatin analog (long-acting release \[LAR\], depot) for \> 3 months before enrollment.
+* Patients with 5-HIAA levels above or below the upper limit of normal range and those with unknown values at baseline are allowed to participate.
+* Able to lie within the PET scanner for at least 70 minutes while undergoing scanning.
+* ECOG performance status of 2 or better.
+* Physical exam, CBC and Multiphasic (including electrolytes, BUN, creatinine, total bilirubin, AST, and ALT) must be done within 28 days of PET imaging and demonstrate adequate renal and liver function. Creatinine ≤ 2.5, total bilirubin ≤ 1.5 x upper limit of normal (ULN). AST and ALT ≤ 2.5 ULN.
+* Patient must have a least one lesion greater than 2 cm on standard imaging (CT, MR, octreotide, or dotatate imaging within 8 weeks of the start of the study) that is judged amenable to AMT-PET.
+* Women of child bearing potential must not be pregnant or breastfeeding. A negative urine or blood pregnancy test must be obtained in women with child bearing potential. Men and women with reproductive potential must agree to use adequate contraception (hormonal or barrier method of birth control; abstinence) on study entry and for the duration of study participation.
+* Eligible and consent signed for imaging with AMT PET under protocol 2011-053.
+
+Exclusion Criteria:
+
+* Patients experiencing more than 12 watery bowel movements per day associated with volume contraction, dehydration, or hypotension, or showing evidence of enteric infection are excluded
+* Patients are excluded if they had undergone tumor-directed therapy within 3 months
+* Patients cannot be on a targeted agent (e.g., sunitinib or everolimus) or receiving cytotoxic chemotherapy (e.g., capecitabine or temozolomide); they cannnot be on telotristat ethyl; previous use is acceptable if the patient has been off for over one month *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This pilot trial studies how well telotristat etiprate works in treating participants with well differentiated neuroendocrine neoplasm that has spread to other places in the body and monitored by carbon C 11 alpha-methyltryptophan (AMT)-emission tomography (PET). Telotristat etiprate may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. Studying the changes within the tumor cells via AMT-PET may help doctors better understand how tumors respond to treatment with telotristat etiprate.
+	•	Publications: Analysis: Online search performed; Web search details: No additional publications found; No publications with results found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • New insights into tryptophan metabolism in cancer [Google Scholar]
+• Exploring neurotransmitters and their receptors for breast cancer prevention and treatment [Google Scholar]
+	•	Key findings from publications: Google Scholar Abstract (New insights into tryptophan metabolism in cancer): … culminating inclinicaltrialstargeting these …studywas registered to examine the effectof telotristat ethyl in the TME in patients with advanced neuroendocrine tumors (NCT03453489…
+
+Google Scholar Abstract (Exploring neurotransmitters and their receptors for breast cancer prevention and treatment): …clinicalapplication or are being evaluated inclinicaltrials9 - … is being investigated inclinicaltrialsfor the treatment of ER-… be determined in rigorously implementedclinicalstudies14 . …
+	•	Additional evidence from online sources: Primary outcome: The Proportion of Patients Who Achieved SUVmax Reduction of 20% or More Between Baseline and Follow up Scan
+Secondary outcomes: Change in Mean Standardized Uptake Value (SUVmean); Neuroendocrine Tumors Visibility; Difference in SUVmax of AMT Uptake Between the Tumor Mass and Background at Baseline
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Online search performed; Web search details: No additional publications found; No publications with results found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

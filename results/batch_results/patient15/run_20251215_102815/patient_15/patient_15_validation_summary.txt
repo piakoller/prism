@@ -1,0 +1,61 @@
+=== VALIDATION ITERATION 0 ===
+
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 15
+Timestamp: 2025-12-15T11:04:09.840692
+Overall Status: FAILED
+Requires Regeneration: YES
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 5
+Trials available: 11
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: RECONSIDER
+Status: FAIL
+Critical Issues:
+  ❌ **ACCURACY (Data Hallucination):** The recommendation cites incorrect efficacy data for the **CABINET trial (NCT03375320)**. It claims a median PFS of **13.8 months vs 4.4 months** with a Hazard Ratio of **0.23**.
+  ❌ *Actual Data:* According to the primary results (Chan et al., NEJM 2024 / ESMO 2023 LBA), the median PFS for the Pancreatic NET cohort was **11.4 months** (Cabozantinib) vs **3.0 months** (Placebo), with a Hazard Ratio of **0.27**. The numbers cited in the recommendation do not match the Pan-NET or Extra-pancreatic cohorts and appear to be hallucinated or misattributed.
+  ❌ **SAFETY (PRRT Contraindications):** The patient assessment notes a history of "radiotherapy to nodes/rib/**liver**". The recommendation suggests PRRT as an alternative without addressing this specific risk factor. Prior external beam radiotherapy to the liver, combined with "diffuse liver disease," significantly increases the risk of radiation-induced liver toxicity (REILD) or hepatic failure if PRRT is administered. This must be flagged as a safety check before PRRT can be considered a viable alternative.
+Warnings:
+  ⚠️  **ACTIONABILITY:** The recommendation lacks specific follow-up timelines (e.g., when to assess toxicity, when to perform first restaging imaging).
+  ⚠️  **CLINICAL CONTEXT:** While the recommendation correctly identifies the patient as having a NET G3 (not NEC), the Ki-67 of 70% is extremely high for a "well-differentiated" tumor. While Cabozantinib is a reasonable recommendation given the refractory nature, the recommendation should explicitly acknowledge that the expected PFS might be lower than the trial median (11.4 months) due to this aggressive biology (Ki-67 70% + FDG positive), managing clinical expectations.
+
+Detailed Reasoning:
+**1. Accuracy Check:**
+I verified the trial data for the primary recommendation (Cabozantinib/CABINET). The recommendation states: "median PFS was 13.8 months... compared to 4.4 months... (HR 0.23)".
+- The actual CABINET trial results for Pancreatic NETs are: Median PFS **11.4 months** vs **3.0 months** (HR 0.27; 95% CI, 0.17 to 0.43).
+- The cited numbers are factually incorrect. Providing inaccurate trial data in a clinical recommendation is a critical failure, as it misrepresents the magnitude of benefit and sets false expectations.
+
+**2. Safety Check:**
+I reviewed the patient's history against the recommended therapies.
+- **PRRT:** The patient has a history of liver radiotherapy and diffuse liver metastases. The recommendation suggests PRRT as a "viable alternative" based on SSTR status. However, it fails to caution that prior liver radiation is a major risk factor for hepatotoxicity with 177Lu-DOTATATE. Given the "diffuse" nature of the disease, the hepatic reserve is already under stress; adding radionuclide therapy after external beam radiation requires careful dosimetric evaluation or may be contraindicated.
+
+**3. Completeness & Consistency:**
+- The recommendation correctly prioritizes Cabozantinib over PRRT given the high Ki-67 (70%), which exceeds the NETTER-2 inclusion criteria (55%). This logic is sound.
+- However, the omission of specific follow-up instructions (e.g., "Monitor BP/liver function bi-weekly; Restage in 3 months") reduces the actionability of the plan.
+
+**4. Conclusion:**
+The recommendation identifies the correct therapeutic agent (Cabozantinib) but supports it with fabricated/incorrect data and fails to address a specific safety constraint for the alternative option (PRRT/Liver Radiation). Therefore, it requires correction.
+
+Recommendations for Improvement:
+1. **Correct CABINET Trial Data:** Update the text to reflect the correct Pan-NET cohort results: Median PFS 11.4 months vs 3.0 months (HR 0.27).
+2. **Add Safety Caveat for PRRT:** In the "Alternative Consideration" section, explicitly state that the patient's history of liver radiotherapy and diffuse liver disease requires a strict safety evaluation (liver function, dosimetry) before PRRT can be confirmed as an option, due to hepatotoxicity risks.
+3. **Include Follow-up Plan:** Add a section defining the monitoring schedule (e.g., clinical assessment for toxicity every 2 weeks for the first 2 months; imaging every 3 months).
+
+======================================================================
+⚠️  REGENERATION REQUIRED
+======================================================================
+Reasons:
+  • Semantic: **ACCURACY (Data Hallucination):** The recommendation cites incorrect efficacy data for the **CABINET trial (NCT03375320)**. It claims a median PFS of **13.8 months vs 4.4 months** with a Hazard Ratio of **0.23**.
+  • Semantic: *Actual Data:* According to the primary results (Chan et al., NEJM 2024 / ESMO 2023 LBA), the median PFS for the Pancreatic NET cohort was **11.4 months** (Cabozantinib) vs **3.0 months** (Placebo), with a Hazard Ratio of **0.27**. The numbers cited in the recommendation do not match the Pan-NET or Extra-pancreatic cohorts and appear to be hallucinated or misattributed.
+  • Semantic: **SAFETY (PRRT Contraindications):** The patient assessment notes a history of "radiotherapy to nodes/rib/**liver**". The recommendation suggests PRRT as an alternative without addressing this specific risk factor. Prior external beam radiotherapy to the liver, combined with "diffuse liver disease," significantly increases the risk of radiation-induced liver toxicity (REILD) or hepatic failure if PRRT is administered. This must be flagged as a safety check before PRRT can be considered a viable alternative.

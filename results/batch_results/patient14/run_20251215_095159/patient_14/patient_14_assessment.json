@@ -1,0 +1,48 @@
+{
+  "assessment_text": "**Patient Clinical Profile and Disease Biology**\nThe patient is an 82-year-old woman with an ECOG performance status of 1 and no cognitive impairment, presenting with a metastatic bronchial neuroendocrine tumor (atypical carcinoid). The disease course is characterized by metastatic spread to the liver, bone, lymph nodes, and pituitary since 2020.\n\nBiologically, the tumor demonstrates heterogeneity and grade progression over time, with Ki-67 increasing from 11% (2019) to 25% (2020). According to the *ESMO Clinical Practice Guidelines for GEP-NENs*, a Ki-67 >20% classifies the tumor within the G3 category. However, the functional imaging profile—DOTATOC +++ and low FDG uptake with no mismatch—indicates a well-differentiated phenotype (NET G3) rather than a poorly differentiated neuroendocrine carcinoma (NEC), as high SSTR expression is generally inversely related to glucose metabolism in low-grade tumors. The strong SSTR expression (DOTATOC +++) confirms the target presence required for peptide receptor radionuclide therapy (PRRT).\n\n**Treatment History and Tolerance Analysis**\nThe patient has exhausted multiple lines of standard systemic therapy, significantly limited by intolerance and toxicity:\n*   **mTOR Inhibitors:** Everolimus (approved for lung NETs per RADIANT-4 trial data referenced in the guidelines) resulted in poor tolerance.\n*   **Chemotherapy:** Temozolomide yielded a partial hepatic response but was discontinued due to Grade 3 thrombocytopenia. FOLFOX was discontinued due to very poor tolerance.\n*   **Radiotherapy:** Prior clavicle and lumbar radiotherapy (Jan 2021).\n*   **PRRT:** Treatment with PRRT via CPC (Apr–Oct 2023) resulted in a prolonged partial hepatic response with excellent tolerance, distinguishing it as the most favorable modality in terms of the therapeutic index for this specific patient.\n\n**Current Clinical Status**\nThe patient currently exhibits hepatic RECIST progression as of October 2025 while on Somatostatin analogs. There are no options for local therapy.\n\n**Assessment per Guidelines**\nBased on the *ESMO Clinical Practice Guidelines*, the following factors are relevant for the tumor board's consideration:\n1.  **PRRT Eligibility:** The guidelines recommend PRRT for progressive SSTR-positive NETs. While the guidelines primarily discuss midgut and pancreatic NETs, they reference efficacy in bronchial neuroendocrine tumors (Ref 97). The patient's imaging (DOTATOC +++) satisfies the requirement for homogenous SSTR expression.\n2.  **High-Grade (G3) Consideration:** The guidelines acknowledge that PRRT may be considered in patients with NET G3 (Ki-67 >20%), citing disease control rates between 30% and 80% in retrospective studies, particularly for patients with Ki-67 <55%. This patient (Ki-67 25%) falls within this range.\n3.  **Therapeutic Options:**\n    *   **Chemotherapy:** While systemic chemotherapy (e.g., Temozolomide or platinum-based regimens) is recommended for NEN G3, this patient has demonstrated severe intolerance (FOLFOX) and Grade 3 hematological toxicity (Temozolomide), making re-challenge high risk.\n    *   **Targeted Therapy:** Re-introduction of Everolimus is likely not feasible due to prior poor tolerance.\n    *   **PRRT Re-treatment/Consolidation:** Given the \"excellent tolerance\" and \"prolonged partial hepatic response\" to the previous PRRT course, and the persistence of high SSTR uptake (DOTATOC +++), the clinical assessment points toward the potential utility of further PRRT.\n\n**Conclusion**\nThe patient presents with a progressive, SSTR-avid (DOTATOC +++) metastatic bronchial NET G3 (Ki-67 25%). She is refractory or intolerant to standard chemotherapy and mTOR inhibitors. The assessment highlights that PRRT has been the only modality providing disease control with acceptable tolerability. Consequently, evaluating the feasibility of consolidating the response with further PRRT is the most clinically supported consideration, provided bone marrow reserve is adequate given the history of Grade 3 thrombocytopenia.",
+  "clinical_summary": {
+    "disease_status": "Not specified",
+    "stage": "Not specified",
+    "key_features": []
+  },
+  "clinical_needs": {
+    "primary_needs": [
+      "Treatment needed based on assessment",
+      "Therapy needed based on assessment",
+      "Assessment needed based on assessment"
+    ],
+    "urgency_level": "medium"
+  },
+  "evidence_priorities": {
+    "high_priority": [],
+    "trial_types_needed": [
+      "clinical trials addressing current management gaps"
+    ]
+  },
+  "trial_eligibility": {
+    "favorable_factors": [],
+    "potential_barriers": []
+  },
+  "recommendations_for_trial_search": [
+    "Consider needed based on assessment",
+    "Assess needed based on assessment",
+    "Follow needed based on assessment"
+  ],
+  "assessment_confidence": "medium",
+  "raw_response": "<assessment>\n**Patient Clinical Profile and Disease Biology**\nThe patient is an 82-year-old woman with an ECOG performance status of 1 and no cognitive impairment, presenting with a metastatic bronchial neuroendocrine tumor (atypical carcinoid). The disease course is characterized by metastatic spread to the liver, bone, lymph nodes, and pituitary since 2020.\n\nBiologically, the tumor demonstrates heterogeneity and grade progression over time, with Ki-67 increasing from 11% (2019) to 25% (2020). According to the *ESMO Clinical Practice Guidelines for GEP-NENs*, a Ki-67 >20% classifies the tumor within the G3 category. However, the functional imaging profile—DOTATOC +++ and low FDG uptake with no mismatch—indicates a well-differentiated phenotype (NET G3) rather than a poorly differentiated neuroendocrine carcinoma (NEC), as high SSTR expression is generally inversely related to glucose metabolism in low-grade tumors. The strong SSTR expression (DOTATOC +++) confirms the target presence required for peptide receptor radionuclide therapy (PRRT).\n\n**Treatment History and Tolerance Analysis**\nThe patient has exhausted multiple lines of standard systemic therapy, significantly limited by intolerance and toxicity:\n*   **mTOR Inhibitors:** Everolimus (approved for lung NETs per RADIANT-4 trial data referenced in the guidelines) resulted in poor tolerance.\n*   **Chemotherapy:** Temozolomide yielded a partial hepatic response but was discontinued due to Grade 3 thrombocytopenia. FOLFOX was discontinued due to very poor tolerance.\n*   **Radiotherapy:** Prior clavicle and lumbar radiotherapy (Jan 2021).\n*   **PRRT:** Treatment with PRRT via CPC (Apr–Oct 2023) resulted in a prolonged partial hepatic response with excellent tolerance, distinguishing it as the most favorable modality in terms of the therapeutic index for this specific patient.\n\n**Current Clinical Status**\nThe patient currently exhibits hepatic RECIST progression as of October 2025 while on Somatostatin analogs. There are no options for local therapy.\n\n**Assessment per Guidelines**\nBased on the *ESMO Clinical Practice Guidelines*, the following factors are relevant for the tumor board's consideration:\n1.  **PRRT Eligibility:** The guidelines recommend PRRT for progressive SSTR-positive NETs. While the guidelines primarily discuss midgut and pancreatic NETs, they reference efficacy in bronchial neuroendocrine tumors (Ref 97). The patient's imaging (DOTATOC +++) satisfies the requirement for homogenous SSTR expression.\n2.  **High-Grade (G3) Consideration:** The guidelines acknowledge that PRRT may be considered in patients with NET G3 (Ki-67 >20%), citing disease control rates between 30% and 80% in retrospective studies, particularly for patients with Ki-67 <55%. This patient (Ki-67 25%) falls within this range.\n3.  **Therapeutic Options:**\n    *   **Chemotherapy:** While systemic chemotherapy (e.g., Temozolomide or platinum-based regimens) is recommended for NEN G3, this patient has demonstrated severe intolerance (FOLFOX) and Grade 3 hematological toxicity (Temozolomide), making re-challenge high risk.\n    *   **Targeted Therapy:** Re-introduction of Everolimus is likely not feasible due to prior poor tolerance.\n    *   **PRRT Re-treatment/Consolidation:** Given the \"excellent tolerance\" and \"prolonged partial hepatic response\" to the previous PRRT course, and the persistence of high SSTR uptake (DOTATOC +++), the clinical assessment points toward the potential utility of further PRRT.\n\n**Conclusion**\nThe patient presents with a progressive, SSTR-avid (DOTATOC +++) metastatic bronchial NET G3 (Ki-67 25%). She is refractory or intolerant to standard chemotherapy and mTOR inhibitors. The assessment highlights that PRRT has been the only modality providing disease control with acceptable tolerability. Consequently, evaluating the feasibility of consolidating the response with further PRRT is the most clinically supported consideration, provided bone marrow reserve is adequate given the history of Grade 3 thrombocytopenia.\n</assessment>",
+  "parsing_method": "XML",
+  "metadata": {
+    "timestamp": "2025-12-15T09:54:06.837673",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 14,
+    "guidelines_provided": true,
+    "matched_guidelines_used": true,
+    "matched_guidelines_count": 1,
+    "matched_trials_used": false,
+    "matched_trials_count": 0,
+    "prompt_file": "batch_results/run_20251215_095159\\patient_14\\patient_14_assessment_prompt.txt",
+    "response_file": "batch_results/run_20251215_095159\\patient_14\\patient_14_assessment_raw_response.txt",
+    "cache_reused": false,
+    "cached_at": null
+  }
+}

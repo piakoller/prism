@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:54:56.039786
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context or Evidence Relevance for this specific patient. While the disease biology (well-differentiated NET) aligns, the clinical scenario is mismatched. The patient has progressive disease after prior Somatostatin Analogue (SSA) therapy and Peptide Receptor Radionuclide Therapy (PRRT), requiring a subsequent line of antiproliferative treatment (e.g., targeted therapy or chemotherapy). This Phase 4 study evaluates patient preference and injection pain between Octreotide LAR and Lanreotide in patients initiating SSA therapy for the first time. Evidence regarding patient experience with first-line maintenance agents does not provide actionable insights for selecting a salvage therapy for a patient with systemic progression post-PRRT."
+}

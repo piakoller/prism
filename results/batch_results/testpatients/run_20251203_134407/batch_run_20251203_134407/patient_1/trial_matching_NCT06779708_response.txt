@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:49:41.746245
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "While the study focuses on Pancreatic NETs and addresses a relevant surgical context (intraoperative staging), it fails to meet the evidence quality criterion required to inform treatment decisions for this patient. The provided data lists the study status as completed but includes only background literature and guidelines (published 2010–2019) rather than actual results from the prospective 2020–2023 cohort. Without specific findings regarding the diagnostic yield or clinical impact of intraoperative ultrasound from this trial, there is no actionable evidence to guide the tumor board's decision. Additionally, the study addresses a technical aspect of surgery (staging accuracy) rather than the primary therapeutic dilemma for this patient: managing a locally advanced, high-FDG-avid, bleeding tumor where the choice between surgical resection and systemic therapy (or PRRT) is the critical next step."
+}

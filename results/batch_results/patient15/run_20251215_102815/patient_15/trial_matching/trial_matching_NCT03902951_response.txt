@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:48:08.349384
+Trial: 49/86
+NCT ID: NCT03902951
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Disease/Biology Alignment and Treatment Context criteria. The patient has a metastatic pancreatic neuroendocrine tumor (Pan-NET G3), whereas the study (SATURN, NCT03902951) evaluates antiandrogen therapy (leuprolide, abiraterone, apalutamide) combined with SBRT in patients with recurrent prostate cancer. The biological drivers and therapeutic targets (androgen receptor signaling) are specific to prostate cancer and irrelevant to Pan-NETs. Furthermore, the patient has diffuse liver metastases and is explicitly noted as not suitable for local therapies, whereas the study targets oligometastatic disease amenable to SBRT. The study's endpoints (PSA response, testosterone recovery) offer no clinical insights for managing a neuroendocrine neoplasm."
+}

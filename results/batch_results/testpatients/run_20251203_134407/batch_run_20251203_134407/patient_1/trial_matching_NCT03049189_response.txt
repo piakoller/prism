@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:53:21.288796
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 3 COMPETE trial provides critical evidence for determining the next therapeutic step for this patient with a Grade 2 Pancreatic NET (Ki-67 19%). Assuming SSTR-positivity as per the provided instructions for well-differentiated NETs, the study's comparison of 177Lu-edotreotide (PRRT) versus Everolimus is directly applicable to the decision between these two standard modalities. Although the patient is currently stable on FOLFIRINOX, the need to transition to a NET-specific strategy makes the study's finding—that 177Lu-edotreotide significantly prolongs PFS (23.9 vs 14.1 months) compared to Everolimus in G1-G2 GEP-NETs—highly relevant. While the patient's high FDG uptake (SUV 16) suggests aggressive biology, the study population (G2 NETs) covers this Ki-67 range. The evidence helps prioritize PRRT over mTOR inhibitors in the treatment sequence, provided the SSTR-PET confirms expression, offering a clear data-driven basis for the tumor board's therapeutic planning."
+}

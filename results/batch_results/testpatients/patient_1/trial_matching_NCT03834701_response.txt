@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:21:34.683538
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient's therapy recommendations because it fails on all three core criteria. First, there is a significant disease and biology mismatch. The patient has a large (10 cm), high-end Grade 2 (Ki-67 19%), highly symptomatic (life-threatening bleeding), and locally advanced tumor. In contrast, the study (NCT03834701) specifically enrolled patients with small (15-25 mm), low-grade (Ki-67 ≤5%), asymptomatic NF-PanNENs. Second, the treatment context is completely inapplicable. The study evaluates EUS-guided RFA, a local ablative technique for small, contained lesions. This intervention is not technically feasible or clinically appropriate for the patient's 10 cm mass that is infiltrating multiple organs and causing major hemorrhage. The patient's clinical scenario requires management of a large, aggressive tumor, for which RFA is not a suitable modality. Third, the evidence is not relevant. The study's objective was to assess the safety of RFA in a population with indolent tumors, which provides no actionable insights for managing this patient's aggressive, life-threatening disease. Therefore, the study's evidence cannot inform any therapeutic decisions in this case."
+}
+```

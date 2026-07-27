@@ -1,0 +1,110 @@
+{
+  "status": "success",
+  "analysis_complete": true,
+  "trials_analyzed": 12,
+  "trials_included": 0,
+  "trials_excluded": 12,
+  "expected_trial_count": 12,
+  "trial_analyses": [
+    {
+      "nct_number": "NCT03049189",
+      "trial_name": "Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is not recruiting (Active, not recruiting). Furthermore, the patient's significant renal impairment (Creatinine 2.24 mg/dL) is a major safety concern for Peptide Receptor Radionuclide Therapy (PRRT) and would likely contraindicate enrollment due to the risk of nephrotoxicity."
+    },
+    {
+      "nct_number": "NCT02568267",
+      "trial_name": "Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is not recruiting. Additionally, there is no clinical evidence provided that the patient's tumor harbors the specific NTRK, ROS1, or ALK gene fusions required for eligibility, which are extremely rare in pancreatic neuroendocrine tumors."
+    },
+    {
+      "nct_number": "NCT05153772",
+      "trial_name": "Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is not recruiting. Moreover, the patient's worsening renal function (Creatinine 2.24 mg/dL) poses a significant risk for radionuclide therapy, making him a poor candidate for this investigational alpha-emitter PRRT."
+    },
+    {
+      "nct_number": "NCT02236910",
+      "trial_name": "An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is not recruiting. The patient's renal insufficiency (Creatinine 2.24 mg/dL) is a relative contraindication for 177Lu-DOTATATE due to the potential for renal retention and further toxicity."
+    },
+    {
+      "nct_number": "NCT03870399",
+      "trial_name": "Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is completed and not available for enrollment."
+    },
+    {
+      "nct_number": "NCT03074513",
+      "trial_name": "Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is not recruiting (Active, not recruiting)."
+    },
+    {
+      "nct_number": "NCT02754297",
+      "trial_name": "Personalized PRRT of Neuroendocrine Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is not recruiting. Additionally, the patient's renal impairment (Creatinine 2.24 mg/dL) would likely exclude him from a study focused on optimizing PRRT dosimetry, as renal function is the dose-limiting factor."
+    },
+    {
+      "nct_number": "NCT03728361",
+      "trial_name": "Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is not recruiting. Clinically, this immunotherapy/chemotherapy combination is typically targeted at high-grade neuroendocrine carcinomas or small-cell lung cancer, which does not align with this patient's Grade 1 well-differentiated tumor biology."
+    },
+    {
+      "nct_number": "NCT03217097",
+      "trial_name": "MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is completed and not available for enrollment."
+    },
+    {
+      "nct_number": "NCT01842165",
+      "trial_name": "177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is completed and not available for enrollment."
+    },
+    {
+      "nct_number": "NCT03375320",
+      "trial_name": "Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is not recruiting (Active, not recruiting). While the trial results (CABINET) demonstrate efficacy for Cabozantinib in this population and could inform an off-label treatment recommendation, the patient cannot enroll in the trial itself."
+    },
+    {
+      "nct_number": "NCT01466036",
+      "trial_name": "Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial is completed and not available for enrollment."
+    }
+  ],
+  "summary": {},
+  "validation_warnings": [],
+  "raw_response": "<trial_analysis>\n**NCT NUMBER:** NCT03049189\n**TRIAL NAME:** Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is not recruiting (Active, not recruiting). Furthermore, the patient's significant renal impairment (Creatinine 2.24 mg/dL) is a major safety concern for Peptide Receptor Radionuclide Therapy (PRRT) and would likely contraindicate enrollment due to the risk of nephrotoxicity.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02568267\n**TRIAL NAME:** Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is not recruiting. Additionally, there is no clinical evidence provided that the patient's tumor harbors the specific NTRK, ROS1, or ALK gene fusions required for eligibility, which are extremely rare in pancreatic neuroendocrine tumors.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT05153772\n**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is not recruiting. Moreover, the patient's worsening renal function (Creatinine 2.24 mg/dL) poses a significant risk for radionuclide therapy, making him a poor candidate for this investigational alpha-emitter PRRT.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02236910\n**TRIAL NAME:** An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is not recruiting. The patient's renal insufficiency (Creatinine 2.24 mg/dL) is a relative contraindication for 177Lu-DOTATATE due to the potential for renal retention and further toxicity.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03870399\n**TRIAL NAME:** Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is completed and not available for enrollment.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03074513\n**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is not recruiting (Active, not recruiting).\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02754297\n**TRIAL NAME:** Personalized PRRT of Neuroendocrine Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is not recruiting. Additionally, the patient's renal impairment (Creatinine 2.24 mg/dL) would likely exclude him from a study focused on optimizing PRRT dosimetry, as renal function is the dose-limiting factor.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03728361\n**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is not recruiting. Clinically, this immunotherapy/chemotherapy combination is typically targeted at high-grade neuroendocrine carcinomas or small-cell lung cancer, which does not align with this patient's Grade 1 well-differentiated tumor biology.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03217097\n**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is completed and not available for enrollment.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01842165\n**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is completed and not available for enrollment.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03375320\n**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is not recruiting (Active, not recruiting). While the trial results (CABINET) demonstrate efficacy for Cabozantinib in this population and could inform an off-label treatment recommendation, the patient cannot enroll in the trial itself.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01466036\n**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial is completed and not available for enrollment.\n---\n</trial_analysis>\n\n<summary>\n**TOTAL TRIALS ANALYZED:** 12\n**TRIALS TO INCLUDE:** 0\n**TRIALS TO EXCLUDE:** 12\n</summary>",
+  "metadata": {
+    "timestamp": "2025-12-08T11:01:56.866074",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 3,
+    "input_trial_count": 12,
+    "test_mode": false,
+    "cache_reused": false,
+    "cached_at": null,
+    "prompt_file": "batch_results/run_20251208_102940\\patient_3\\patient_3_trial_analysis_prompt.txt",
+    "results_file": "batch_results/run_20251208_102940\\patient_3\\patient_3_trial_analysis.json",
+    "response_file": "batch_results/run_20251208_102940\\patient_3\\patient_3_trial_analysis_raw_response.txt",
+    "summary_file": "batch_results/run_20251208_102940\\patient_3\\patient_3_trial_analysis_summary.txt"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "status": "success",
+  "analysis_complete": true,
+  "trials_analyzed": 15,
+  "trials_included": 11,
+  "trials_excluded": 4,
+  "expected_trial_count": 15,
+  "trial_analyses": [
+    {
+      "nct_number": "NCT03278379",
+      "trial_name": "Avelumab in G2-3 NET",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial provides published evidence that single-agent PD-L1 blockade with avelumab has limited antitumor activity (0% ORR) in G2-3 NETs. This negative result is crucial for informing the recommendation to avoid avelumab monotherapy in this patient's Grade 3 disease."
+    },
+    {
+      "nct_number": "NCT03049189",
+      "trial_name": "Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 3 trial provides topline results demonstrating a statistically significant improvement in progression-free survival with 177Lu-edotreotide compared to everolimus in SSTR+ GEP-NETs. This directly supports the prioritization of PRRT over mTOR inhibitors for this SSTR+ patient."
+    },
+    {
+      "nct_number": "NCT02568267",
+      "trial_name": "Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This basket trial targets specific genomic fusions (NTRK/ROS1/ALK). Without evidence that the patient harbors these rare alterations, the trial data is not directly applicable to the current treatment decision making."
+    },
+    {
+      "nct_number": "NCT05153772",
+      "trial_name": "Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial provides emerging evidence (presented at ASCO) for 212Pb-DOTAMTATE, showing a high objective response rate (~56%) in SSTR+ NETs. This identifies targeted alpha therapy as a promising investigational option for high-burden disease."
+    },
+    {
+      "nct_number": "NCT02236910",
+      "trial_name": "An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This registry study provides published real-world evidence identifying high hepatic tumor burden as a predictor of outcomes with 177Lu-DOTATATE. This is clinically relevant for risk-stratifying this patient who presents with a high liver burden."
+    },
+    {
+      "nct_number": "NCT02923934",
+      "trial_name": "A Phase II Trial of Ipilimumab and Nivolumab for the Treatment of Rare Cancers",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "While this trial included neuroendocrine tumors, the specific results provided in the text focus on biliary tract cancers. Relevant evidence for this combination in NETs is better represented by the DART trial (NCT02834013) which has specific NET cohort results listed."
+    },
+    {
+      "nct_number": "NCT02754297",
+      "trial_name": "Personalized PRRT of Neuroendocrine Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial provides published evidence that personalized 177Lu-octreotate PRRT is safe and effective, with a particularly high response rate (84.6%) observed in pancreatic NETs, supporting PRRT utility in this specific subtype."
+    },
+    {
+      "nct_number": "NCT05255133",
+      "trial_name": "A Study to Evaluate the Value of Circulating Tumour DNA in Follow-up of Patients with an Advanced Gastroenteropancreatic or Lung Neuroendocrine Tumour Under Everolimus +- SSA Treatment",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This is an observational study evaluating circulating tumor DNA as a biomarker for treatment monitoring. It does not provide clinical evidence regarding the efficacy of a therapeutic intervention to guide the next line of treatment."
+    },
+    {
+      "nct_number": "NCT01842165",
+      "trial_name": "177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This prospective Phase 2 study provides published safety and efficacy data (median PFS 28 months) for 177Lu-DOTATATE in GEP-NETs, reinforcing the evidence base for PRRT as a standard of care option."
+    },
+    {
+      "nct_number": "NCT03728361",
+      "trial_name": "Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial provides published evidence for the combination of nivolumab and temozolomide in advanced neuroendocrine neoplasms. It offers data on a potential chemotherapy-immunotherapy combination for refractory disease, though efficacy varied by primary site."
+    },
+    {
+      "nct_number": "NCT02834013",
+      "trial_name": "Nivolumab and Ipilimumab in Treating Patients With Rare Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 basket trial (DART) provides published results specifically for the high-grade neuroendocrine neoplasm cohort, showing a 26% ORR. This is directly relevant evidence for using dual checkpoint inhibition in this patient's Grade 3 disease."
+    },
+    {
+      "nct_number": "NCT03375320",
+      "trial_name": "Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 3 trial (CABINET) provides high-quality published evidence that cabozantinib significantly improves progression-free survival in advanced pancreatic neuroendocrine tumors, establishing it as a key therapeutic option after prior progression."
+    },
+    {
+      "nct_number": "NCT01466036",
+      "trial_name": "Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This completed Phase 2 trial has no published results or data provided in the text to evaluate its clinical utility or outcomes."
+    },
+    {
+      "nct_number": "NCT03972488",
+      "trial_name": "Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 3 trial (NETTER-2) provides critical published evidence that 177Lu-DOTATATE is superior to high-dose octreotide in Grade 2 and 3 GEP-NETs. This directly supports the use of PRRT for this patient's Grade 3 tumor biology."
+    },
+    {
+      "nct_number": "NCT03070301",
+      "trial_name": "A Study of LEE011 With Everolimus in Patients With Advanced Neuroendocrine Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial provides published evidence that the combination of ribociclib and everolimus had insufficient activity (0% ORR) in foregut NETs. This negative result informs the recommendation to avoid this specific combination."
+    }
+  ],
+  "summary": {},
+  "validation_warnings": [],
+  "raw_response": "<trial_analysis>\n**NCT NUMBER:** NCT03278379\n**TRIAL NAME:** Avelumab in G2-3 NET\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial provides published evidence that single-agent PD-L1 blockade with avelumab has limited antitumor activity (0% ORR) in G2-3 NETs. This negative result is crucial for informing the recommendation to avoid avelumab monotherapy in this patient's Grade 3 disease.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03049189\n**TRIAL NAME:** Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 3 trial provides topline results demonstrating a statistically significant improvement in progression-free survival with 177Lu-edotreotide compared to everolimus in SSTR+ GEP-NETs. This directly supports the prioritization of PRRT over mTOR inhibitors for this SSTR+ patient.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02568267\n**TRIAL NAME:** Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)\n**DECISION:** EXCLUDE\n**RATIONALE:** This basket trial targets specific genomic fusions (NTRK/ROS1/ALK). Without evidence that the patient harbors these rare alterations, the trial data is not directly applicable to the current treatment decision making.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT05153772\n**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial provides emerging evidence (presented at ASCO) for 212Pb-DOTAMTATE, showing a high objective response rate (~56%) in SSTR+ NETs. This identifies targeted alpha therapy as a promising investigational option for high-burden disease.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02236910\n**TRIAL NAME:** An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours\n**DECISION:** INCLUDE\n**RATIONALE:** This registry study provides published real-world evidence identifying high hepatic tumor burden as a predictor of outcomes with 177Lu-DOTATATE. This is clinically relevant for risk-stratifying this patient who presents with a high liver burden.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02923934\n**TRIAL NAME:** A Phase II Trial of Ipilimumab and Nivolumab for the Treatment of Rare Cancers\n**DECISION:** EXCLUDE\n**RATIONALE:** While this trial included neuroendocrine tumors, the specific results provided in the text focus on biliary tract cancers. Relevant evidence for this combination in NETs is better represented by the DART trial (NCT02834013) which has specific NET cohort results listed.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02754297\n**TRIAL NAME:** Personalized PRRT of Neuroendocrine Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial provides published evidence that personalized 177Lu-octreotate PRRT is safe and effective, with a particularly high response rate (84.6%) observed in pancreatic NETs, supporting PRRT utility in this specific subtype.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT05255133\n**TRIAL NAME:** A Study to Evaluate the Value of Circulating Tumour DNA in Follow-up of Patients with an Advanced Gastroenteropancreatic or Lung Neuroendocrine Tumour Under Everolimus +- SSA Treatment\n**DECISION:** EXCLUDE\n**RATIONALE:** This is an observational study evaluating circulating tumor DNA as a biomarker for treatment monitoring. It does not provide clinical evidence regarding the efficacy of a therapeutic intervention to guide the next line of treatment.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01842165\n**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs\n**DECISION:** INCLUDE\n**RATIONALE:** This prospective Phase 2 study provides published safety and efficacy data (median PFS 28 months) for 177Lu-DOTATATE in GEP-NETs, reinforcing the evidence base for PRRT as a standard of care option.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03728361\n**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial provides published evidence for the combination of nivolumab and temozolomide in advanced neuroendocrine neoplasms. It offers data on a potential chemotherapy-immunotherapy combination for refractory disease, though efficacy varied by primary site.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02834013\n**TRIAL NAME:** Nivolumab and Ipilimumab in Treating Patients With Rare Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 basket trial (DART) provides published results specifically for the high-grade neuroendocrine neoplasm cohort, showing a 26% ORR. This is directly relevant evidence for using dual checkpoint inhibition in this patient's Grade 3 disease.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03375320\n**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 3 trial (CABINET) provides high-quality published evidence that cabozantinib significantly improves progression-free survival in advanced pancreatic neuroendocrine tumors, establishing it as a key therapeutic option after prior progression.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01466036\n**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** This completed Phase 2 trial has no published results or data provided in the text to evaluate its clinical utility or outcomes.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03972488\n**TRIAL NAME:** Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 3 trial (NETTER-2) provides critical published evidence that 177Lu-DOTATATE is superior to high-dose octreotide in Grade 2 and 3 GEP-NETs. This directly supports the use of PRRT for this patient's Grade 3 tumor biology.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03070301\n**TRIAL NAME:** A Study of LEE011 With Everolimus in Patients With Advanced Neuroendocrine Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial provides published evidence that the combination of ribociclib and everolimus had insufficient activity (0% ORR) in foregut NETs. This negative result informs the recommendation to avoid this specific combination.\n---\n</trial_analysis>\n\n<summary>\n**TOTAL TRIALS ANALYZED:** 15\n**TRIALS TO INCLUDE:** 11\n**TRIALS TO EXCLUDE:** 4\n</summary>",
+  "metadata": {
+    "timestamp": "2025-12-15T09:14:43.304510",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 13,
+    "input_trial_count": 15,
+    "cache_reused": false,
+    "cached_at": null,
+    "prompt_file": "batch_results/run_20251215_083926\\patient_13\\patient_13_trial_analysis_prompt.txt",
+    "results_file": "batch_results/run_20251215_083926\\patient_13\\patient_13_trial_analysis.json",
+    "response_file": "batch_results/run_20251215_083926\\patient_13\\patient_13_trial_analysis_raw_response.txt",
+    "summary_file": "batch_results/run_20251215_083926\\patient_13\\patient_13_trial_analysis_summary.txt"
+  }
+}

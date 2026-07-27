@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:28:59.868502
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for therapy recommendations. The criteria are met: 1) **Disease/Biology Alignment:** The study focuses on unresectable/metastatic SSTR-positive GEP-NETs, which aligns well with the patient's diagnosis of a metastatic Grade 2 pancreatic NET. 2) **Treatment Context/Clinical Applicability:** The evidence is highly applicable to this patient's clinical scenario. He is symptomatic with a high tumor burden, requiring a therapy with a high probability of response. The study's PRRT-naive cohort demonstrates a very high overall response rate (ORR) of 56.8%. This presents a compelling alternative to chemotherapy, which is a primary consideration for this patient. While the study required prior SSA progression for enrollment, this high ORR is directly relevant to the first-line decision-making process where tumor shrinkage is a key goal. It also provides a strong option for a second-line setting. 3) **Evidence Quality and Relevance:** The Phase 2 data, showing a high ORR and a manageable safety profile (notably low hematologic/renal toxicity), provides actionable clinical insights. Although the patient's primary pancreatic lesion has low SSTR-avidity (SUV 3), which might have excluded him from the trial, the high avidity in his widespread metastatic disease makes this evidence highly relevant for discussion. The potential for a significant response in the metastatic sites could provide substantial clinical benefit, making this alpha-PRRT a critical option to weigh against standard chemotherapy."
+}
+```

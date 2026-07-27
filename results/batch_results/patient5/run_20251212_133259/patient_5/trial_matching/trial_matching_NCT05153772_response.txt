@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:44:08.414122
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease biology alignment or clinical applicability. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90% and small-cell morphology. In contrast, the study evaluates 212Pb-DOTAMTATE (Targeted Alpha Therapy) specifically in patients with neuroendocrine tumors (NETs), which are biologically distinct from high-grade NECs. High-grade NECs (especially small-cell type) typically lack sufficient SSTR expression for PRRT and are treated with platinum-based chemotherapy, whereas PRRT is standard for well-differentiated SSTR-positive NETs. Furthermore, the patient is currently in remission (NED) following surgery and chemotherapy, while the study requires measurable, progressive, unresectable, or metastatic disease. Consequently, evidence regarding alpha-emitter therapy in NETs cannot guide surveillance or treatment decisions for a patient with a resected high-grade NEC."
+}

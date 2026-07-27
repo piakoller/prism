@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:51:34.771029
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "The COMPETE trial provides critical Phase 3 evidence comparing 177Lu-edotreotide (PRRT) to Everolimus in patients with progressive, SSTR-positive GEP-NETs, directly aligning with this patient's diagnosis of a progressive, metastatic Grade 2 Pancreatic NET. The study demonstrated a significant progression-free survival benefit for 177Lu-edotreotide (23.9 vs 14.1 months), offering actionable data for selecting between PRRT and targeted therapy. While the patient exhibits SSTR heterogeneity (low uptake in the primary lesion, high uptake in metastases), the strong SSTR avidity in the metastatic burden (liver, bone) makes the study's evidence on PRRT efficacy highly relevant for addressing the dominant disease volume. Furthermore, the study stratified patients by line of therapy (including 1st line), making the results applicable to this patient's current need for a first-line systemic treatment decision. The evidence helps weigh the potential benefits of PRRT against Everolimus or other options like chemotherapy."
+}
+```

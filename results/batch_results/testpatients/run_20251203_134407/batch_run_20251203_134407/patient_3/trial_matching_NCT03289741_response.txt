@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T16:38:25.971793
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Treatment Context/Clinical Applicability criterion. While the disease biology (WDNET) aligns, the patient has already progressed on first-line Lanreotide and requires a second-line systemic therapy for tumor control (e.g., PRRT, targeted therapy, or chemotherapy). This Phase 4 study compares patient experience and preference (pain scores) between Octreotide LAR and Lanreotide in patients initiating SSA therapy. It does not provide evidence regarding anti-tumor efficacy in the second-line setting or support switching between somatostatin analogs as a strategy to overcome disease progression. Consequently, the study results offer no actionable insights for selecting the next line of therapy for this patient with progressive disease."
+}

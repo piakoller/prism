@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:59:19.975690
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient presents with a massive (10–12 cm), locally advanced, and symptomatic (bleeding) Grade 2 Pan-NET with aggressive features (FDG-avid, necrosis). In contrast, the study evaluates EUS-guided radiofrequency ablation (RFA) specifically for small (1.5–2.5 cm), asymptomatic, non-functional PanNENs or small insulinomas (<2 cm). The intervention is technically and clinically unsuitable for a bulky, infiltrating tumor of this size, where RFA cannot achieve meaningful cytoreduction or hemostasis and may exacerbate complications. Consequently, evidence regarding the safety and efficacy of ablating small, indolent nodules provides no actionable insights for managing this patient's large, aggressive, and hemorrhagic disease."
+}

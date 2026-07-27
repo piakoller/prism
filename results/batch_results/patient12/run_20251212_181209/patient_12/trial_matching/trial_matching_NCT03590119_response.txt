@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:30:40.001735
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient for two key reasons. First, the provided text describes a study protocol (Ebbers 2020) and lists outcome measures but does not report actual efficacy or safety results; without published outcomes, the study cannot inform treatment decisions. Second, regarding biological alignment, the patient has SSTR-negative (Ga68-negative) peritoneal carcinomatosis and FDG-positive disease, indicating tumor heterogeneity and dedifferentiation. The study intervention (177Lu-DOTATATE) relies on SSTR expression. Since the patient has significant SSTR-negative extra-hepatic disease, PRRT (whether intra-arterial or intravenous) would not address the peritoneal component, making it an unsuitable first-line systemic strategy compared to options like chemotherapy that can target SSTR-negative clones."
+}

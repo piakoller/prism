@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:04:09.586501
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment or Treatment Context criteria. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90%, whereas the study evaluates Somatostatin Analogs (SSAs)—Octreotide and Lanreotide—specifically in patients with well-differentiated neuroendocrine tumors (WDNETs). Biologically, high-grade NECs are treated with cytotoxic chemotherapy (platinum/etoposide) rather than SSAs, which are indicated for indolent, well-differentiated disease. Furthermore, the study focuses on patient preference and experience rather than oncologic outcomes relevant to the patient's current dilemma regarding surveillance versus local treatment for a residual mass. Consequently, evidence regarding SSA formulation preference in WDNETs provides no actionable clinical insights for the management of a high-grade NEC."
+}

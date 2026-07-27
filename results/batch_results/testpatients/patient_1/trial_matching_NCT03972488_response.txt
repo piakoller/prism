@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:40:16.670305
+Trial: 75/86
+NCT ID: NCT03972488
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides highly meaningful evidence for this patient. (1) Disease/Biology Alignment: The patient's Grade 2 pancreatic NET with a Ki-67 of 19% aligns perfectly with the NETTER-2 study population, which enrolled patients with advanced G2/G3 GEP-NETs and a Ki-67 ≥10%. Assuming the patient's SSTR-PET scan is positive, a reasonable clinical assumption for a G2 NET, his biological profile is an ideal match. (2) Treatment Context/Applicability: The evidence is directly applicable to the central clinical question. For the scenario where the tumor is borderline or unresectable, the study's results provide strong support for using Lutathera as a neoadjuvant/conversion therapy to shrink the tumor, control the life-threatening bleeding, and potentially enable surgery. If the tumor is definitively unresectable, NETTER-2 establishes Lutathera as the standard-of-care first-line systemic therapy. (3) Evidence Quality/Relevance: The Phase 3 trial demonstrated a profound and clinically meaningful improvement in progression-free survival (22.8 vs. 8.5 months), providing Level 1 evidence to guide treatment. This data allows for a clear recommendation for PRRT in this high-risk patient over other options."
+}
+```

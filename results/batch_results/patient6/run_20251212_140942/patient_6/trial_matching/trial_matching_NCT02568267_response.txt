@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:20:55.517734
+Trial: 15/86
+NCT ID: NCT02568267
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not currently relevant for informing therapy recommendations for this patient. While the study demonstrates the efficacy of entrectinib in *NTRK/ROS1/ALK* fusion-positive solid tumors and includes specific evidence of activity in neuroendocrine neoplasms (Sigal et al.), these genomic alterations are extremely rare in pancreatic NETs (<1%). Unlike SSTR expression, which is highly probable (>90%) and assumed positive for well-differentiated NETs, it is not clinically reasonable to assume this patient harbors an *NTRK* fusion without specific molecular profiling results. Consequently, the study population (fusion-driven malignancy) is not biologically concordant with the patient's current known status (unselected Pan-NET). Given the patient's progression on belzutifan and ineligibility for liver transplantation (due to Ki-67 >10% and active progression), the evidence does not support recommending entrectinib over standard, high-probability alternatives such as PRRT or chemotherapy (e.g., CAPTEM). The study would only become relevant if subsequent genomic testing confirmed a fusion."
+}

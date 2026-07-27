@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:28:32.010165
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a high-grade pancreatic Neuroendocrine Carcinoma (NEC) / MiNEN with a Ki-67 of 95%, representing aggressive, poorly differentiated biology that is typically SSTR-negative and FDG-avid. In contrast, the LUTIA trial specifically investigates intra-arterial Lutetium-177-dotatate in patients with well-differentiated Neuroendocrine Tumors (NETs) G1-G2 with Ki-67 ≤20% and confirmed SSTR expression. Evidence regarding the optimization of PRRT delivery (intra-arterial vs. intravenous) in indolent, well-differentiated tumors cannot be extrapolated to a patient with high-grade carcinoma, where PRRT is generally not indicated due to lack of target expression and rapid proliferation. Furthermore, the study focuses on patients with bulky liver metastases (>25% tumor load), whereas the patient currently has oligometastatic disease responding to chemotherapy."
+}

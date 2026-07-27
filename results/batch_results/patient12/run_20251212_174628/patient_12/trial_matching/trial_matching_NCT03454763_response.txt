@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:06:10.834925
+Trial: 42/86
+NCT ID: NCT03454763
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient's treatment. First, the provided published results specifically focus on Olfactory Neuroblastoma (ONB), a rare sinonasal malignancy biologically distinct from the patient's Pancreatic Neuroendocrine Tumor (PanNET); insights from ONB are not transferable to PanNET management. Second, the patient presents with significant tumor heterogeneity, specifically FDG-positive/Ga68-negative peritoneal carcinomatosis. This lack of somatostatin receptor expression in a major metastatic compartment typically precludes Peptide Receptor Radionuclide Therapy (PRRT), as the study intervention targets SSTR-positive disease. While the trial aims to optimize PRRT intervals, the lack of relevant results for PanNETs and the patient's unsuitability for PRRT due to SSTR-negative lesions render the evidence inapplicable."
+}

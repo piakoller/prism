@@ -1,0 +1,165 @@
+=== RECOMMENDATION VALIDATION PROMPT ===
+Timestamp: 2025-12-09T15:12:28.679716
+Patient ID: 7
+Model: google/gemini-3-pro-preview
+==================================================
+
+You are a clinical validation expert reviewing a therapy recommendation for quality assurance.
+
+Your task is to CRITICALLY EVALUATE whether the therapy recommendation is:
+1. COMPLETE - addresses all clinical needs identified in the patient assessment
+2. ACCURATE - correctly cites and interprets evidence from trials and guidelines  
+3. CONSISTENT - doesn't contradict itself or the patient assessment
+4. SAFE - considers contraindications and patient-specific risk factors
+5. ACTIONABLE - provides clear next steps
+
+**IMPORTANT**: Be thorough and critical. If you find ANY issues that could compromise patient care, you must flag them.
+
+=== PATIENT ASSESSMENT SUMMARY ===
+=== DETAILED CLINICAL ASSESSMENT ===
+
+**1. Diagnostic and Pathological Classification**
+The patient presents with a well-differentiated neuroendocrine tumor (NET) of the ileum. Pathological evaluation reveals heterogeneity in grading: the initial liver biopsy (2019) indicated G1 (Ki-67 1%), while the surgical specimen (2020) resulted in reclassification to G2 (Ki-67 3%, pT3m pN1). The disease is functional, characterized by Carcinoid Syndrome (CS) manifesting as flushing, diarrhea, and a hypotensive episode in 2019.
+
+**2. Clinical Course and Treatment Response**
+The patient has demonstrated Refractory Carcinoid Syndrome (RCS). Despite treatment with Lanreotide (120 mg/28 days), the syndrome was not well controlled initially, necessitating Trans-Arterial Embolization (TAE) in 2021. While TAE initially reduced 5-HIAA levels (from 24.2 mg/24h to 11.2 mg/24h), the patient experienced radiological progressive disease (PD) and biochemical progression (5-HIAA increase to 36 mg/24h) in 2024.
+
+Following 4 cycles of PRRT (Lu-177-DOTApeptides), the patient achieved disease stabilization and a complete biochemical response (5-HIAA normalized to 8 mg/24h) with resolution of flushing and diarrhea. The increase in flushing observed after the 1st and 2nd PRRT cycles suggests a release of vasoactive hormones during therapy.
+
+**3. Assessment Regarding Tumor Board Questions**
+
+*   **Perioperative/Periprocedural Management (Biopsy and TAE):**
+    Based on the *ENETS 2022 Guidance Paper for Carcinoid Syndrome*, the patient's history of a hypotensive episode (2019) and active CS places them at risk for carcinoid crisis during invasive procedures. The guidelines assess that carcinoid crisis can be precipitated by tumor biopsy or cytolytic therapies like hepatic embolization. Therefore, prophylactic short-acting octreotide is recommended prior to and during these procedures (s.c. 100–500 µg q 6–8 h or i.v. infusion starting 12h pre-operatively) to maintain hemodynamic stability.
+
+*   **Management During PRRT:**
+    The patient...
+[Assessment text truncated for validation prompt]
+
+Urgency Level: medium
+Assessment Confidence: medium
+
+=== TRIAL ANALYSIS SUMMARY ===
+Total Trials Analyzed: 15
+Trials Marked for INCLUSION: 11
+Trials Marked for EXCLUSION: 4
+
+INCLUDED TRIALS:
+  - NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE) (Relevance: N/A)
+  - NCT05153772: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (Relevance: N/A)
+  - NCT02236910: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours (Relevance: N/A)
+  - NCT03074513: Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors (Relevance: N/A)
+  - NCT02754297: Personalized PRRT of Neuroendocrine Tumors (Relevance: N/A)
+  - NCT03728361: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer (Relevance: N/A)
+  - NCT02826928: Diagnostic Performances of Urine and Plasma 5-hydroxyindolacetic Acid (5HIAA) Values in Patients With Small-intestine Neuroendocrine Tumors (Relevance: N/A)
+  - NCT01842165: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs (Relevance: N/A)
+  - NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET) (Relevance: N/A)
+  - NCT02795858: A Phase II Study of Ramucirumab With Somatostatin Analog Therapy in Patients With Advanced, Progressive Carcinoid Tumors (Relevance: N/A)
+
+=== GUIDELINES SUMMARY ===
+Matched Guidelines: 3
+
+  - Carcinoid syndrome and carcinoid heart disease (Relevance: 1.0)
+  - Management of well-differentiated small intestine neuroendocrine tumours (Relevance: 1.0)
+  - Gastroenteropancreatic neuroendocrine neoplasms: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up [y] (Relevance: 1.0)
+
+=== THERAPY RECOMMENDATION TO VALIDATE ===
+
+RECOMMENDATION:
+**1. Current Management and Maintenance**
+*   **Continue Somatostatin Analog (SSA) Therapy:** Despite the completion of 4 cycles of PRRT and current disease stabilization, the patient should continue maintenance therapy with **Lanreotide (120 mg/28 days)**.
+    *   *Evidence:* ENETS 2024 Guidelines recommend continuing SSA in patients with functioning tumors (Carcinoid Syndrome) to maintain symptom control and prevent hormonal crises, as full resolution of syndrome-related symptoms is rarely sustained solely by PRRT without concurrent SSA.
+
+**2. Response to Tumor Board Question: Indication for PRRT in Refractory Syndrome without Radiological PD**
+*   **Recommendation:** **Yes, PRRT is indicated.**
+    *   *Evidence:* According to the **ENETS 2022 Guidance Paper for Carcinoid Syndrome** and **ENETS 2024 Guidelines**, PRRT is a valid therapeutic option for Refractory Carcinoid Syndrome (RCS) even in the absence of radiological progression. It is documented to significantly decrease diarrhea, flushing, and 5-HIAA levels (as observed in this patient).
+    *   *Condition:* Eligibility requires confirmation of sufficient somatostatin receptor expression on imaging (e.g., Ga-68-DOTATOC PET/CT) with uptake exceeding liver background (Krenning score 3-4).
+
+**3. Future Therapeutic Options upon Progression**
+*   **Cabozantinib:** If the patient experiences radiological progression in the future, **Cabozantinib** is a recommended subsequent line of therapy.
+    *   *Evidence:* The Phase 3 **CABINET trial (NCT03375320)** demonstrated a statistically significant improvement in progression-free survival (PFS) for Cabozantinib versus placebo in patients with advanced extrapancreatic NETs (median PFS 8.4 vs 3.9 months; HR 0.38).
+*   **Telotristat Ethyl:** If the patient develops recurrent refractory diarrhea despite SSA, **Telotristat Ethyl** should be added.
+    *   *Evidence:* **NCT03223428** (Real-world evidence) and Phase 3 data referenced in ENETS guidelines support its use for reducing bowel movement frequency in RCS.
+*   **Everolimus:** An alternative systemic option for progressive disease.
+    *   *Evidence:* Validated by the **RADIANT-4** trial (referenced in ENETS 2024 and implied by **NCT03049189 COMPETE** trial design) for non-functional GI-NETs, though efficacy in controlling specific carcinoid symptoms is less robust than PRRT.
+
+**4. Safety and Monitoring Recommendations**
+*   **Carcinoid Heart Disease (CHD) Screening:** Perform **Echocardiography** and measure **NT-proBNP** every 6–12 months.
+    *   *Evidence:* **ENETS 2022 Guidance** notes that CHD can progress rapidly; elevated 5-HIAA (peak 36 mg/24h in this patient) is a major risk factor.
+*   **Crisis Prevention:** For any future invasive procedures (biopsy, TAE) or PRRT cycles, administer prophylactic **short-acting octreotide** (s.c. 100–500 µg q 6–8 h or i.v. infusion) starting 12 hours pre-procedure.
+
+RATIONALE:
+**Clinical Context and Guideline Alignment:**
+The patient has a G2 ileal NET with a history of Refractory Carcinoid Syndrome (RCS), characterized by flushing, diarrhea, and hemodynamic instability. Although currently stable following 4 cycles of Lu-177-PRRT, the management must address both tumor control and hormonal secretion.
+
+**Justification for PRRT in RCS without Radiological PD:**
+The tumor board specifically asked if PRRT is indicated for uncontrolled syndrome without radiological progression. The **ENETS 2022 Guidance Paper for Carcinoid Syndrome** explicitly supports this, stating that PRRT leads to a >30% reduction in 5-HIAA in 56% of patients and significant symptom relief. This patient's dramatic biochemical response (5-HIAA drop from 36 to 8 mg/24h) and symptom resolution confirms the efficacy of this approach.
+
+**Maintenance and Future Lines:**
+*   **SSA Maintenance:** Discontinuation of SSA is not recommended for functional tumors due to the risk of symptom recurrence and carcinoid crisis.
+*   **Cabozantinib (NCT03375320):** The CABINET trial provides high-level Phase 3 evidence for Cabozantinib in patients who have progressed after prior therapies (including PRRT), making it a strong candidate for the next line of systemic therapy.
+*   **Telotristat Ethyl (NCT03223428):** While the patient is currently symptom-free, Telotristat is the standard-of-care addition for refractory diarrhea should it recur, supported by real-world registry data and guidelines.
+
+**Safety Considerations:**
+The patient's history of a hypotensive episode (2019) and flushing flares during PRRT induction indicates high sensitivity to hormonal release. Strict adherence to **ENETS 2022** peri-procedural prophylaxis protocols with short-acting octreotide is essential to prevent life-threatening carcinoid crises. Additionally, despite the current absence of carcinoid heart disease, the history of elevated 5-HIAA mandates rigorous cardiac surveillance using NT-proBNP, which is a sensitive marker for early CHD detection.
+
+=== YOUR VALIDATION TASK ===
+
+Carefully review the therapy recommendation against the evidence provided above.
+
+Check for the following issues:
+
+1. COMPLETENESS ISSUES:
+   - Does the recommendation address ALL clinical needs identified in the patient assessment?
+   - Are important clinical considerations (disease grade, symptoms, biomarkers, prior treatments) adequately addressed?
+   - Are alternative options discussed if the primary recommendation isn't feasible?
+
+2. ACCURACY ISSUES:
+   - Are all trial citations (NCT numbers) correctly used?
+   - Are the claimed trial outcomes/findings accurate based on the trial analysis?
+   - Are guideline recommendations correctly interpreted?
+   - Is there any evidence of fabricated or misrepresented data?
+
+3. CONSISTENCY ISSUES:
+   - Does the recommendation align with the urgency level from the patient assessment?
+   - Are there any internal contradictions in the recommendation?
+   - Does the rationale actually support the recommendation given?
+   - Are trials marked for EXCLUSION incorrectly being recommended?
+
+4. SAFETY ISSUES:
+   - Are known contraindications from the patient assessment respected?
+   - Are patient-specific risk factors (organ function, performance status) considered?
+   - Are monitoring requirements mentioned for high-risk therapies?
+
+5. ACTIONABILITY ISSUES:
+   - Are next steps clearly defined?
+   - Is the recommendation specific enough to be implemented?
+   - Are follow-up timelines provided?
+
+Provide your validation in the following format:
+
+<validation_decision>
+[State clearly: PASS or RECONSIDER]
+</validation_decision>
+
+<critical_issues>
+[List any critical issues that make the recommendation incomplete, wrong, or unsafe. Be specific about what is missing or incorrect. If none, write "None identified."]
+</critical_issues>
+
+<warnings>
+[List any non-critical concerns or areas for improvement. If none, write "None identified."]
+</warnings>
+
+<detailed_reasoning>
+[Provide detailed reasoning for your validation decision. Explain:
+- What you checked in each validation category
+- Specific examples of issues you found (quote relevant parts)
+- Why each issue is problematic for patient care
+- What would need to be corrected for the recommendation to pass validation
+Be thorough and specific - this reasoning will guide the regeneration process.]
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+[If you marked as RECONSIDER, provide specific actionable guidance on what should be corrected or added in the regenerated recommendation. If PASS, write "No improvements needed."]
+</recommendations_for_improvement>
+
+Remember: Patient safety is paramount. If in doubt, mark as RECONSIDER and explain your concerns in detail.

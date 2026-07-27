@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:00:15.627985
+Trial: 82/86
+NCT ID: NCT02893930
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful clinical evidence for this patient. The Disease/Biology Alignment is excellent, as both the patient and the study population have metastatic, well-differentiated, G2 pancreatic neuroendocrine tumors (PNETs). While the study is not for the immediate first-line treatment question, it addresses a highly relevant future clinical scenario under the Treatment Context/Clinical Applicability criterion. The patient's clinical assessment identifies everolimus (an mTOR inhibitor) as a potential first-line therapy. This study on sapanisertib, a next-generation mTORC1/2 inhibitor, was specifically designed for patients who progressed on a prior mTOR inhibitor like everolimus. The Evidence Quality and Relevance is high, albeit negative; the study was terminated for futility due to a lack of objective responses. This is a crucial, actionable finding. It provides strong evidence to *avoid* using sapanisertib in this patient should he be treated with and subsequently progress on everolimus, thereby preventing exposure to an ineffective and toxic therapy (61% Grade 3 adverse events) and guiding the selection of more promising subsequent-line treatments."
+}
+```

@@ -1,0 +1,50 @@
+=== THERAPY RECOMMENDATION RAW RESPONSE ===
+Timestamp: 2025-12-12T14:52:43.292100
+Patient ID: 6
+Model: google/gemini-3-pro-preview
+==================================================
+
+<therapy_recommendation>
+Based on the patient's clinical status (progressive G2 Pan-NET, Ki-67 15%) and the analyzed trial evidence, the following management strategy is recommended:
+
+**1. Diagnostic Work-up (Urgent)**
+*   **Action:** Perform a **Somatostatin Receptor (SSTR) PET/CT** (e.g., 68Ga-DOTATATE or 68Ga-DOTATOC) immediately.
+*   **Purpose:** To evaluate the reported "migratory bone pain" for bone metastases (which are poorly detected by CT) and to confirm SSTR expression levels for PRRT eligibility.
+
+**2. Liver Transplantation (LT) Feasibility**
+*   **Recommendation:** **Liver transplantation is NOT recommended** for this patient.
+*   **Reasoning:** The patient does not meet the strict ESMO Clinical Practice Guidelines criteria for LT:
+    *   **Tumor Biology:** Her Ki-67 index is **15%**, which exceeds the absolute threshold of **<10%** required for LT eligibility.
+    *   **Disease Stability:** She has active hepatic progression; guidelines require stable disease for at least 6 months prior to transplant consideration.
+    *   **Extrahepatic Risk:** The uninvestigated bone pain presents a high risk of extrahepatic disease, which is an absolute contraindication for LT.
+
+**3. Systemic Therapy Recommendation (Primary)**
+*   **Recommendation:** Initiate **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-Dotatate**.
+*   **Condition:** This therapy is indicated upon confirmation of SSTR-positive disease, defined as uptake in tumor lesions significantly higher than the liver background (Krenning score 3 or 4).
+*   **Evidence (NETTER-2, NCT03972488):** This Phase 3 trial specifically evaluated 177Lu-Dotatate in patients with G2 (Ki-67 10–55%) and G3 GEP-NETs. The trial demonstrated a statistically significant improvement in **median Progression-Free Survival (PFS) to 22.8 months** compared to 8.5 months with high-dose octreotide (HR 0.276; p<0.0001).
+*   **Relevance:** This patient’s specific tumor proliferation index (Ki-67 15%) places her directly within the population that derived substantial benefit in this trial. PRRT is the recommended systemic treatment regardless of whether the disease is liver-limited or involves the bones, provided SSTR expression is sufficient.
+
+**4. Alternative Therapy (if SSTR-negative)**
+*   **Recommendation:** Initiate **Cabozantinib** (60 mg daily).
+*   **Evidence (CABINET, NCT03375320):** This Phase 3 trial demonstrated that Cabozantinib significantly improved **median PFS to 13.8 months** versus 4.4 months with placebo (HR 0.23) in patients with progressive pancreatic NETs, including those who had received prior targeted therapy. This serves as a strong evidence-based alternative if PRRT is not feasible.
+
+**5. Therapies to Exclude**
+*   **Immunotherapy (PD-L1 blockade):** Based on trial **NCT03278379** (Avelumab), single-agent PD-L1 blockade showed limited antitumor activity (ORR 0%) in G2-3 NETs and is not recommended.
+</therapy_recommendation>
+
+<rationale>
+**Diagnostic Urgency:**
+The patient reports "migratory bone pain," but her surveillance has relied on CT scans, which have poor sensitivity (approx. 61%) for bone metastases. The ESMO guidelines highlight this limitation. An SSTR-PET/CT is mandatory to rule out extrahepatic bone disease (which would definitively exclude liver transplantation) and to confirm eligibility for PRRT.
+
+**Liver Transplantation Contraindication:**
+While the patient meets the age (<60) and primary resection criteria, she fails two critical ESMO selection criteria for liver transplantation:
+1.  **Tumor Grade:** Her Ki-67 is 15%. Guidelines strictly limit LT to well-differentiated NETs with Ki-67 <10%.
+2.  **Progression:** LT requires at least 6 months of stable disease pre-transplant. This patient is currently progressing on belzutifan.
+Therefore, LT is not a feasible option, and the focus must shift to systemic disease control.
+
+**Therapy Selection:**
+*   **PRRT (177Lu-Dotatate):** The **NETTER-2 trial (NCT03972488)** provides high-level Phase 3 evidence specifically for patients with higher Ki-67 G2 NETs (10–55%). With a Ki-67 of 15%, this patient is the ideal candidate for this therapy, which offered a median PFS of 22.8 months in the trial. This is superior to the historical performance of other available agents in this setting. PRRT is indicated for metastatic disease, making it appropriate whether the patient has liver-only disease or confirmed bone metastases.
+*   **Cabozantinib:** If the patient's tumor does not express SSTRs (making PRRT impossible), **Cabozantinib** is the best alternative based on the **CABINET trial (NCT03375320)**, which showed a robust PFS benefit in pre-treated pNETs.
+*   **Chemotherapy:** While alkylating chemotherapy (e.g., Temozolomide) is an option for G2 Pan-NETs (supported by **NCT03217097** and guidelines), the specific Phase 3 evidence for PRRT in the Ki-67 10-55% population (NETTER-2) and Cabozantinib in progressive pNETs (CABINET) provides a stronger evidence basis for sequencing these therapies first in this patient, unless rapid debulking is required.
+*   **Immunotherapy:** Excluded due to lack of efficacy in G2-3 NETs (NCT03278379).
+</rationale>

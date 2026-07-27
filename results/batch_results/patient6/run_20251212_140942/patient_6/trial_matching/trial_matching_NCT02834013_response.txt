@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:34:48.649955
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The patient has a Grade 2 (Ki-67 15%) well-differentiated Pancreatic NET. The provided study results specifically cover \"Non-pancreatic\" NETs (Patel 2020) and \"High-grade\" Neuroendocrine Neoplasms (Patel 2021). The Non-pancreatic cohort showed 0% efficacy in low/intermediate grade tumors but explicitly excluded pancreatic primaries, which are biologically distinct and often have different treatment sensitivities. The High-grade cohort showed efficacy (ORR 26-44%) but is restricted to high-grade disease (median Ki-67 80%), whereas this patient has G2 disease. While a specific Pancreatic NET cohort (Cohort 22) is cited (Patel 2025), its results are not included in the provided text. Therefore, the available evidence from the other cohorts cannot be reliably extrapolated to inform treatment for this patient's specific subtype and grade."
+}

@@ -1,0 +1,74 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "Based on the patient's clinical presentation and the most current, high-level clinical trial evidence, the primary recommendation for first-line systemic treatment is **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-Dotatate in combination with a long-acting somatostatin analogue (SSA)**.\n\nThis recommendation is based on the following key points:\n1.  **Direct Evidence from a Practice-Changing Phase 3 Trial:** The **NETTER-2 trial (NCT03972488)** provides definitive, first-line evidence for this specific patient population. This randomized, phase 3 study enrolled patients with newly diagnosed, advanced, SSTR-positive, Grade 2 (Ki-67 ≥10%) and Grade 3 GEP-NETs. The patient, with a newly diagnosed, metastatic, G2 pNET with a Ki-67 of 15%, fits the inclusion criteria perfectly. The trial demonstrated a profound and statistically significant improvement in progression-free survival (PFS) for patients receiving 177Lu-Dotatate plus octreotide compared to high-dose octreotide alone (median PFS: 22.8 months vs. 8.5 months; HR 0.276; p<0.0001). The publication concludes that 177Lu-Dotatate should be considered a new standard of care in this setting.\n\n2.  **Patient Eligibility for PRRT:** The patient's Ga-68 PET/CT confirms widespread, highly SSTR-avid disease. The SUVmax values in the extensive liver (SUV 8-9) and bone (SUV 12) metastases are well above the liver background, making him an excellent candidate for SSTR-targeted radionuclide therapy.\n\n3.  **Therapeutic Goal Alignment:** The patient is symptomatic with a high tumor burden, requiring a therapy with a high probability of inducing a tumor response to alleviate symptoms and control the disease. The **COMPETE trial (NCT03049189)**, another Phase 3 study, demonstrated the superiority of PRRT over everolimus in G1/G2 GEP-NETs, including in the first-line setting. Furthermore, evidence from the Phase 2 trial of a novel alpha-emitter PRRT (**NCT05153772**) showed a high objective response rate of 56.8%, underscoring the potential of PRRT to achieve the necessary cytoreduction.\n\n**Contingency Plan:**\nIf PRRT is not feasible or is declined by the patient, the recommended alternative is **combination chemotherapy with capecitabine and temozolomide (CAPTEM)**. This would be contingent upon testing for **O6-methylguanine-DNA methyltransferase (MGMT) promoter methylation status**. The randomized **MGMT-NET trial (NCT03217097)** demonstrated that MGMT status is a strong predictor of response to alkylating agents, with a significantly higher best objective response rate (52.9% vs 11.5%) in patients with deficient MGMT.",
+  "rationale_text": "The choice of first-line systemic therapy for this 70-year-old patient with a symptomatic, high-burden, metastatic Grade 2 (Ki-67 15%) pancreatic neuroendocrine tumor (pNET) is driven by the need for a rapid and effective response. While traditional guidelines have often reserved PRRT for later lines of therapy in pNETs, recent high-level evidence has shifted this paradigm.\n\nThe primary recommendation for **177Lu-Dotatate PRRT** is based on the landmark **NETTER-2 trial (NCT03972488)**. This Phase 3 randomized trial provides the most direct and compelling evidence for this specific patient. The trial's population (newly diagnosed, advanced G2/G3 GEP-NETs, Ki-67 ≥10%) is a precise match for our patient. The results, showing a nearly tripling of median PFS (22.8 vs 8.5 months), establish first-line 177Lu-Dotatate as a superior option to high-dose SSAs and a new standard of care. This is further supported by the Phase 3 **COMPETE trial (NCT03049189)**, which confirmed the superiority of PRRT over everolimus. The patient's high SSTR avidity on the Ga-68 PET/CT confirms his suitability for this targeted approach.\n\nWhile the patient's high hepatic and skeletal tumor burden are noted as potential negative prognostic factors for PRRT in some observational data (**NCT02236910**), the robust, positive results from the large, randomized NETTER-2 trial in a similar high-risk population should be given greater weight. Furthermore, studies like **NCT02754297** show that personalized dosimetry can optimize PRRT delivery and efficacy, which could be considered to mitigate risks associated with high tumor burden.\n\n**Chemotherapy with CAPTEM** remains a strong and guideline-supported alternative. Both the ENETS 2023 and ESMO 2020 guidelines recommend chemotherapy as a first-line option for patients with high tumor burden and symptomatic disease, which accurately describes this patient. The ECOG-ACRIN E2211 trial, cited in the ENETS guideline, demonstrated a 40% response rate with CAPTEM in pNETs. However, this recommendation is now secondary to PRRT due to the strength and specificity of the NETTER-2 data. Should this path be chosen, it is critical to first assess the tumor's MGMT status, as the **MGMT-NET trial (NCT03217097)** provides Level 2b evidence that this biomarker predicts response to temozolomide.\n\nOther options such as SSAs alone are inappropriate given the high tumor burden and symptomatic progression, as they are primarily cytostatic and best suited for slow-growing disease (ENETS 2023, Section 3.3.1). Targeted agents like everolimus or sunitinib are valid options but typically yield lower response rates than PRRT or chemotherapy, making them less ideal when cytoreduction is a primary goal.\n\nIn conclusion, the recommendation for first-line 177Lu-Dotatate is based on the highest level of available evidence from a trial that is directly applicable to this patient, offering the best-demonstrated chance for prolonged disease control.",
+  "recommendation_summary": {
+    "primary_recommendation": "Based on the patient's clinical presentation and the most current, high-level clinical trial evidence, the primary recommendation for first-line systemic treatment is **Peptide Receptor Radionuclide T...",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03972488",
+      "nct_id": "NCT03972488",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03049189",
+      "nct_id": "NCT03049189",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT05153772",
+      "nct_id": "NCT05153772",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03972488",
+        "trial_name": "Trial NCT03972488",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03049189",
+        "trial_name": "Trial NCT03049189",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT05153772",
+        "trial_name": "Trial NCT05153772",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\nBased on the patient's clinical presentation and the most current, high-level clinical trial evidence, the primary recommendation for first-line systemic treatment is **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-Dotatate in combination with a long-acting somatostatin analogue (SSA)**.\n\nThis recommendation is based on the following key points:\n1.  **Direct Evidence from a Practice-Changing Phase 3 Trial:** The **NETTER-2 trial (NCT03972488)** provides definitive, first-line evidence for this specific patient population. This randomized, phase 3 study enrolled patients with newly diagnosed, advanced, SSTR-positive, Grade 2 (Ki-67 ≥10%) and Grade 3 GEP-NETs. The patient, with a newly diagnosed, metastatic, G2 pNET with a Ki-67 of 15%, fits the inclusion criteria perfectly. The trial demonstrated a profound and statistically significant improvement in progression-free survival (PFS) for patients receiving 177Lu-Dotatate plus octreotide compared to high-dose octreotide alone (median PFS: 22.8 months vs. 8.5 months; HR 0.276; p<0.0001). The publication concludes that 177Lu-Dotatate should be considered a new standard of care in this setting.\n\n2.  **Patient Eligibility for PRRT:** The patient's Ga-68 PET/CT confirms widespread, highly SSTR-avid disease. The SUVmax values in the extensive liver (SUV 8-9) and bone (SUV 12) metastases are well above the liver background, making him an excellent candidate for SSTR-targeted radionuclide therapy.\n\n3.  **Therapeutic Goal Alignment:** The patient is symptomatic with a high tumor burden, requiring a therapy with a high probability of inducing a tumor response to alleviate symptoms and control the disease. The **COMPETE trial (NCT03049189)**, another Phase 3 study, demonstrated the superiority of PRRT over everolimus in G1/G2 GEP-NETs, including in the first-line setting. Furthermore, evidence from the Phase 2 trial of a novel alpha-emitter PRRT (**NCT05153772**) showed a high objective response rate of 56.8%, underscoring the potential of PRRT to achieve the necessary cytoreduction.\n\n**Contingency Plan:**\nIf PRRT is not feasible or is declined by the patient, the recommended alternative is **combination chemotherapy with capecitabine and temozolomide (CAPTEM)**. This would be contingent upon testing for **O6-methylguanine-DNA methyltransferase (MGMT) promoter methylation status**. The randomized **MGMT-NET trial (NCT03217097)** demonstrated that MGMT status is a strong predictor of response to alkylating agents, with a significantly higher best objective response rate (52.9% vs 11.5%) in patients with deficient MGMT.\n</therapy_recommendation>\n\n<rationale>\nThe choice of first-line systemic therapy for this 70-year-old patient with a symptomatic, high-burden, metastatic Grade 2 (Ki-67 15%) pancreatic neuroendocrine tumor (pNET) is driven by the need for a rapid and effective response. While traditional guidelines have often reserved PRRT for later lines of therapy in pNETs, recent high-level evidence has shifted this paradigm.\n\nThe primary recommendation for **177Lu-Dotatate PRRT** is based on the landmark **NETTER-2 trial (NCT03972488)**. This Phase 3 randomized trial provides the most direct and compelling evidence for this specific patient. The trial's population (newly diagnosed, advanced G2/G3 GEP-NETs, Ki-67 ≥10%) is a precise match for our patient. The results, showing a nearly tripling of median PFS (22.8 vs 8.5 months), establish first-line 177Lu-Dotatate as a superior option to high-dose SSAs and a new standard of care. This is further supported by the Phase 3 **COMPETE trial (NCT03049189)**, which confirmed the superiority of PRRT over everolimus. The patient's high SSTR avidity on the Ga-68 PET/CT confirms his suitability for this targeted approach.\n\nWhile the patient's high hepatic and skeletal tumor burden are noted as potential negative prognostic factors for PRRT in some observational data (**NCT02236910**), the robust, positive results from the large, randomized NETTER-2 trial in a similar high-risk population should be given greater weight. Furthermore, studies like **NCT02754297** show that personalized dosimetry can optimize PRRT delivery and efficacy, which could be considered to mitigate risks associated with high tumor burden.\n\n**Chemotherapy with CAPTEM** remains a strong and guideline-supported alternative. Both the ENETS 2023 and ESMO 2020 guidelines recommend chemotherapy as a first-line option for patients with high tumor burden and symptomatic disease, which accurately describes this patient. The ECOG-ACRIN E2211 trial, cited in the ENETS guideline, demonstrated a 40% response rate with CAPTEM in pNETs. However, this recommendation is now secondary to PRRT due to the strength and specificity of the NETTER-2 data. Should this path be chosen, it is critical to first assess the tumor's MGMT status, as the **MGMT-NET trial (NCT03217097)** provides Level 2b evidence that this biomarker predicts response to temozolomide.\n\nOther options such as SSAs alone are inappropriate given the high tumor burden and symptomatic progression, as they are primarily cytostatic and best suited for slow-growing disease (ENETS 2023, Section 3.3.1). Targeted agents like everolimus or sunitinib are valid options but typically yield lower response rates than PRRT or chemotherapy, making them less ideal when cytoreduction is a primary goal.\n\nIn conclusion, the recommendation for first-line 177Lu-Dotatate is based on the highest level of available evidence from a trial that is directly applicable to this patient, offering the best-demonstrated chance for prolonged disease control.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-09-18T17:20:29.059889",
+    "model_used": "google/gemini-2.5-pro",
+    "patient_id": 2,
+    "trials_considered": 19,
+    "trials_included": 10,
+    "trials_excluded": 9,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20250918_171759\\patient_2\\patient_2_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20250918_171759\\patient_2\\patient_2_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20250918_171759\\patient_2\\patient_2_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20250918_171759\\patient_2\\patient_2_therapy_recommendation_reasoning.txt"
+  }
+}

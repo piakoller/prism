@@ -1,0 +1,12 @@
+=== TRIAL ANALYSIS REASONING REPORT ===
+Timestamp: 2025-09-29T17:27:59.674835
+Patient ID: 1
+Analysis Status: error
+============================================================
+
+ANALYSIS SUMMARY:
+- Trials analyzed: 0
+- Trials included: 0
+- Trials excluded: 0
+- Analysis complete: False
+

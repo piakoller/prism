@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:16:12.384504
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study design includes relevant cohorts for this patient (Cohort 1 for Lung NETs or Cohort 6 for G3 NENs), and the treatment context (refractory metastatic disease) aligns with the patient's clinical scenario. However, the provided published results are limited to the Adrenocortical Carcinoma cohort or general trial descriptions. There are no specific efficacy or safety data (ORR, PFS) provided for the bronchial/lung NET or G3 NET cohorts in the input. Without outcome data specific to the patient's tumor type, the study does not currently provide actionable evidence to guide therapeutic recommendations, despite the biological alignment of the trial design."
+}

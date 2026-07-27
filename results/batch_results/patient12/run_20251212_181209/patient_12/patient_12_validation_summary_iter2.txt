@@ -1,0 +1,54 @@
+=== VALIDATION ITERATION 2 ===
+
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 12
+Timestamp: 2025-12-12T18:53:27.808383
+Overall Status: PASSED
+Requires Regeneration: NO
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 5
+Trials available: 10
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: PASS
+Status: PASS
+
+Detailed Reasoning:
+The therapy recommendation is comprehensive, accurate, and demonstrates a high level of clinical reasoning appropriate for a complex case.
+
+1.  **Completeness**: The recommendation addresses all key aspects of the patient's presentation:
+    -   **Tumor Biology**: It correctly identifies the aggressive nature of the G2 tumor (Ki-67 20%, FDG-avidity) and selects a cytotoxic regimen (CAPTEM) capable of inducing response in bulky disease, aligning with ENETS/ESMO guidelines.
+    -   **Discordant Imaging**: It correctly identifies the critical contraindication for PRRT (Ga68-negative peritoneal disease), preventing the patient from receiving a therapy that would likely fail to control the peritoneal compartment.
+    -   **Safety/Patient Factors**: It appropriately addresses the postpartum status (breastfeeding contraindication), fertility preservation, and genetic risk factors (MEN1/VHL) given the young age.
+
+2.  **Accuracy**:
+    -   **Trial Evidence**: The citations of **NCT03375320 (CABINET)** for Cabozantinib and **NCT03972488 (NETTER-2)** for PRRT context are accurate. The reference to **NCT03217097 (MGMT-NET)** correctly reflects the emerging data regarding alkylating agent efficacy in NETs.
+    -   **Guidelines**: The interpretation of ENETS and ESMO guidelines regarding the use of chemotherapy for bulky/symptomatic Pan-NETs and the requirements for PRRT eligibility (homogenous SSTR expression) is correct.
+
+3.  **Consistency**:
+    -   The rationale logically supports the primary recommendation. It explains why standard G2 therapies (like SSAs or PRRT) are insufficient or contraindicated based on the specific imaging features (FDG+/Ga68- mismatch) and tumor burden.
+    -   The urgency of the recommendation matches the "bulky" and "symptomatic" clinical picture.
+
+4.  **Safety**:
+    -   **Streptozotocin Warning**: The recommendation shows excellent clinical nuance by flagging the risk of Streptozotocin in a patient with a history of gestational diabetes, as STZ is toxic to beta cells.
+    -   **Breastfeeding**: The explicit instruction to discontinue breastfeeding is a critical safety measure for a postpartum patient starting chemotherapy.
+
+5.  **Actionability**:
+    -   The recommendation provides clear first-line steps, alternative options, specific follow-up intervals (3 months), and necessary concurrent workups (thyroid US, genetics).
+
+The recommendation is safe, evidence-based, and highly tailored to the specific nuances of the patient's imaging and history.
+  ✅ No issues found
+
+======================================================================
+✅ VALIDATION PASSED - NO REGENERATION NEEDED
+======================================================================

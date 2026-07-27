@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:25:05.739716
+Trial: 27/86
+NCT ID: NCT03074513
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful clinical evidence for this patient's scenario. Biologically, the patient has a well-differentiated pancreatic NET G2, which aligns directly with the study's pancreatic NET cohort (G1-G2). Clinically, the patient requires first-line systemic therapy for bulky, symptomatic, and unresectable disease with aggressive features (FDG-avidity, Ki-67 20%). The study evaluated atezolizumab plus bevacizumab in this specific population (allowing 0 prior therapies), reporting an objective response rate of 20% and a median PFS of 14.9 months. Given the patient's heterogeneous SSTR expression (Ga68-negative peritoneal disease) which limits PRRT suitability, and the need to weigh options against standard chemotherapy (e.g., CAPTEM), this published Phase II evidence offers a defined efficacy benchmark for an alternative immunotherapy/anti-angiogenic approach that could be considered in the treatment strategy."
+}

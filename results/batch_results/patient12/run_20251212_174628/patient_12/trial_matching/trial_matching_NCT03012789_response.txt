@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:53:35.878028
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for treatment context or evidence relevance regarding the patient's specific need for systemic therapy recommendations. While the disease biology (GEP-NET) aligns, the study evaluates the clinical utility of a blood-based biomarker (NETest) to assess surgical completeness and predict recurrence in patients undergoing resection. The patient currently has unresectable, bulky, metastatic disease with peritoneal carcinomatosis and requires a decision regarding first-line systemic treatment (e.g., chemotherapy vs. SSAs). As the study focuses on a diagnostic/prognostic monitoring tool in a surgical context rather than the efficacy or safety of systemic therapeutic interventions, it does not provide actionable evidence to inform the choice of systemic therapy for this patient."
+}

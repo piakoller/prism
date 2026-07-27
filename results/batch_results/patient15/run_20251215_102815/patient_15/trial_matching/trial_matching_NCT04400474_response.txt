@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:53:52.964743
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study meets the disease alignment and treatment context criteria, as Cohort 6 specifically targets Grade 3 neuroendocrine neoplasms (NET/NEC G3) in patients refractory to standard therapies, matching this patient's profile (Pancreatic NET G3, Ki-67 70%, refractory to chemo/targeted agents). However, the criterion for evidence quality and relevance is not met because the provided published results are exclusively for the Adrenocortical Carcinoma cohort. No efficacy or clinical outcomes data for the relevant NET/NEC cohorts are presented in the input. Without specific results for neuroendocrine neoplasms, the evidence cannot currently inform therapeutic recommendations for this patient, despite the trial's appropriate design and eligibility."
+}

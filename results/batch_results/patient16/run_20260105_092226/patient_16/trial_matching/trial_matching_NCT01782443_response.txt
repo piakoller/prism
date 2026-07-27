@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:44:00.323693
+Trial: 57/86
+NCT ID: NCT01782443
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a pancreatic neuroendocrine tumor (PanNET), whereas this Phase II trial (NCT01782443) specifically investigated ziv-aflibercept in *extrapancreatic* NETs and explicitly excluded patients with pancreatic neuroendocrine tumors. While both are neuroendocrine neoplasms, PanNETs and extrapancreatic NETs are biologically distinct subtypes often requiring different therapeutic approaches. Furthermore, the study results indicated that while there was some activity, significant toxicity (Grade 3-4 hypertension in 63% of patients) may preclude further investigation of this agent in this setting. Consequently, evidence from a toxic, non-PanNET cohort does not provide actionable insights for a patient with a stable, well-differentiated PanNET who has established standard-of-care options (e.g., somatostatin analogs, PRRT, or approved tyrosine kinase inhibitors) available."
+}

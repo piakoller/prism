@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:43:59.805576
+Trial: 75/86
+NCT ID: NCT03972488
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The NETTER-2 study provides highly relevant evidence for this patient with a Grade 2 (Ki-67 15%) pancreatic NET. Biologically, the patient fits perfectly into the study's specific cohort of 'higher Grade 2' (Ki-67 10-20%) and Grade 3 well-differentiated GEP-NETs, a population where PRRT efficacy was previously less defined. Although the patient is heavily pre-treated (sunitinib, lanreotide, belzutifan) and the study focused on the first-line setting, the robust outcomes (median PFS 22.8 months, HR 0.276) confirm that tumors with this specific proliferation index are highly sensitive to 177Lu-Dotatate. Assuming the patient demonstrates SSTR uptake on the recommended PET scan, this evidence directly supports the clinical assessment's consideration of PRRT as a viable alternative to liver transplantation (which is likely unfeasible due to Ki-67 >10%) or systemic chemotherapy. The study validates the biological rationale for using PRRT in this specific Ki-67 range."
+}

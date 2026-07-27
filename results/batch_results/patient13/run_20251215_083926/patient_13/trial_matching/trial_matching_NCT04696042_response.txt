@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:51:01.478977
+Trial: 25/86
+NCT ID: NCT04696042
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant for this patient. First, the disease biology does not align: the patient has a Grade 3 NET (Ki-67 25%), whereas the study is strictly limited to Grade 1 and 2 well-differentiated tumors. Second, the treatment context is inapplicable; the patient has already received and progressed on somatostatin analogs (SSAs) as maintenance, as well as multiple lines of systemic therapy (chemotherapy, sunitinib). This study investigates Lanreotide autogel (an SSA) in a population typically receiving it as early-line therapy, which offers no actionable evidence for a patient with refractory, progressive G3 disease who has already failed this drug class. The study's focus on validating standard-of-care SSA efficacy in Asian populations does not inform the decision regarding next-line salvage therapies (e.g., PRRT, everolimus) required for this patient."
+}

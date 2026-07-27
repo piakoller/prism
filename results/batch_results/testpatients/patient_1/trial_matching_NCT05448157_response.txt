@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:29:45.859514
+Trial: 45/86
+NCT ID: NCT05448157
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for this patient's care. The decision is based on considering a key clinical scenario: surgical resection for this locally advanced, symptomatic pancreatic NET (pNET). \n\n1. **Disease/Biology Alignment:** This criterion is met. The patient has a Grade 2 pNET. While the main publication (PMID: 38652200) focuses on small intestinal NETs (SI-NETs), the trial protocol (NCT05448157) is for GEP-NETs, and the biological principle of targeting SSTR-positive tissue is identical. Assuming the patient's G2 NET is SSTR-positive (a reasonable clinical assumption), the disease biology is sufficiently aligned for the study's technique to be applicable.\n\n2. **Treatment Context/Clinical Applicability:** This is met. The patient has a large, locally advanced tumor causing life-threatening bleeding, making surgical resection for definitive local control a primary therapeutic consideration. The study evaluates radio-guided surgery (RGS), a technique designed to improve the completeness of resection by helping surgeons identify tumor tissue and metastatic lymph nodes intraoperatively. This is directly applicable to the surgical scenario for this patient, where achieving a complete (R0) resection would be challenging but critical.\n\n3. **Evidence Quality and Relevance:** This is met. The prospective phase II data (PMID: 38652200) demonstrates that the RGS technique is feasible, safe, and has high accuracy (89.3% sensitivity, 86.4% specificity) for detecting NET lesions. This is actionable evidence that could inform a recommendation for surgery, as it provides a tool to potentially increase the likelihood of achieving an R0 resection, which is a major prognostic factor. The evidence supports the use of this specific surgical adjunct to optimize a potential treatment course."
+}
+```

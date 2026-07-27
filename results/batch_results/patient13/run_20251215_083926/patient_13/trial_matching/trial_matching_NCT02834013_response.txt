@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:59:51.190962
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful clinical evidence for this patient with a refractory Grade 3 pancreatic neuroendocrine tumor (Pan-NET). The DART trial (SWOG S1609) is a prospective Phase II basket trial evaluating ipilimumab plus nivolumab in rare tumors, including specific cohorts for high-grade neuroendocrine neoplasms and Pan-NETs. Published results from the high-grade neuroendocrine neoplasm cohort (Patel et al., 2021) reported an objective response rate (ORR) of 26% and a clinical benefit rate of 32%, with pancreatic primary sites comprising 11% of the population. However, the study noted a median Ki-67 of 80% in this cohort, which is significantly higher than this patient's 25%. Additionally, results from the non-pancreatic cohort (Patel et al., 2020) demonstrated that responses were exclusive to high-grade carcinomas (44% ORR), with 0% ORR in low/intermediate-grade tumors. This evidence is directly applicable to the patient's current scenario of consolidating response or managing progression after exhausting standard therapies (chemotherapy, sunitinib). It informs the treatment decision by highlighting that while dual checkpoint inhibition has activity in high-grade NENs, the patient's well-differentiated histology and lower Ki-67 (25%) place them in a borderline efficacy group, potentially tempering expectations compared to the higher-grade population studied."
+}
+```

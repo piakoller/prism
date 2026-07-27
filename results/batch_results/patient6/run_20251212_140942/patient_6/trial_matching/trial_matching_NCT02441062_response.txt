@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:38:36.358733
+Trial: 61/86
+NCT ID: NCT02441062
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant because it evaluates the clinical impact of 68Ga-DOTATOC PET/CT on management decisions in neuroendocrine tumor patients, directly addressing the patient's critical need for accurate staging. Biologically, the patient's Grade 2 Pan-NET aligns with the study population of SSTR-positive NETs. Clinically, the patient is at a pivotal decision point: determining feasibility for liver transplantation versus systemic therapy (e.g., PRRT). The patient reports bone pain, and the provided assessment explicitly recommends SSTR-PET/CT to rule out extrahepatic disease (a contraindication for transplant) and assess SSTR expression for potential PRRT. The study provides evidence that this specific imaging modality significantly alters management plans, supporting its use to resolve the patient's \"liver-only\" status and guide the choice between transplant, PRRT, or chemotherapy. Assuming typical SSTR expression for a G2 NET, the study's findings on the utility of DOTATOC-PET are directly transferable and actionable for this patient's care planning."
+}

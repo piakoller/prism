@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T10:58:39.004272
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant for this patient's current clinical decision. While the disease biology (well-differentiated NET) aligns, the treatment context is inapplicable. The patient has progressive disease (PD) after 4 years of first-line Lanreotide and requires a second-line systemic therapy with anti-tumor efficacy (e.g., targeted therapy, PRRT, or chemotherapy). This Phase 4 study evaluates patient preference and injection pain between Octreotide LAR and Lanreotide in patients initiating SSA therapy. It does not provide evidence regarding the efficacy of switching between SSAs after progression, nor does it evaluate second-line agents suitable for PD. Therefore, the study offers no actionable evidence to guide the selection of a subsequent therapeutic regimen for tumor control."
+}

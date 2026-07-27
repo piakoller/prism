@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T10:38:18.233050
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 2 study of 212Pb-DOTAMTATE (AlphaMedix) is highly relevant as it specifically targets the patient's current clinical scenario: a PRRT-naïve patient with an SSTR-positive gastroenteropancreatic neuroendocrine tumor (GEP-NET) who has progressed on somatostatin analogues (SSA). Biologically, the patient's well-differentiated, SSTR-positive duodenal NET aligns perfectly with the study population. Clinically, the patient meets the key inclusion criteria for Cohort 1 (PRRT-naïve, progressed on SSA). The published results presented at ASCO 2024 demonstrate an objective response rate (ORR) of 56.8% in PRRT-naïve patients, which is notably higher than historical response rates for standard beta-emitting PRRT (177Lu-DOTATATE). Given the patient's young age (34) and recurrent liver metastases, this evidence provides a compelling alternative therapeutic option for escalation beyond standard care, offering potentially higher efficacy with a manageable safety profile (low hematologic toxicity, though alopecia and dysphagia are noted)."
+}

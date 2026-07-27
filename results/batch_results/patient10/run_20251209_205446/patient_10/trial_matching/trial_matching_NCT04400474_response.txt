@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:21:05.044384
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study includes a relevant cohort for well-differentiated digestive NETs (Cohort 5), which aligns with the patient's diagnosis of Grade 2 Pancreatic NET. However, the provided published results are exclusively for the Adrenocortical Carcinoma cohort. No efficacy or safety data for the Pancreatic NET cohort is available in the provided input. Without specific outcomes for the relevant tumor type, the study does not provide actionable evidence to inform treatment decisions for this patient, particularly given the need to weigh potential benefits against the patient's fragility and prior TKI intolerance."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:26:04.330953
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not meet the criteria for Treatment Context or Evidence Relevance. The patient is heavily pre-treated (7 prior lines) with progressive metastatic disease and has already received and progressed on Lanreotide (1st line). The study evaluates patient preference and injection experience between Octreotide LAR and Lanreotide in patients initiating Somatostatin Analog (SSA) therapy for the first time. It does not provide evidence regarding antiproliferative efficacy in a late-line, refractory setting, nor does it support switching between SSAs for tumor control after progression. Consequently, the study results regarding patient convenience and pain scores for first-line agents offer no actionable clinical insights for guiding salvage therapy in this patient."
+}

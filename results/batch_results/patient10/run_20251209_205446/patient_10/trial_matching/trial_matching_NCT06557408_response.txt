@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T20:58:51.402067
+Trial: 7/86
+NCT ID: NCT06557408
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criteria for Treatment Context and Evidence Relevance. The patient has metastatic pancreatic NET with a previously resected primary tumor (2016) and is currently seeking late-line systemic therapy options. The study focuses exclusively on surgical outcomes (specifically postoperative pancreatic fistula) following minimally invasive enucleation of localized pancreatic tumors. Since the patient has already undergone resection of the primary tumor and presents with unresectable, progressive metastatic disease requiring systemic management, data regarding surgical complications of enucleation are clinically irrelevant to his current care. The study provides no evidence regarding systemic therapies, PRRT, or management of metastatic disease."
+}

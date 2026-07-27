@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:58:14.660469
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90% (small-cell type). The CABINET trial (NCT03375320) specifically evaluates cabozantinib in patients with well-differentiated neuroendocrine tumors (NETs) and explicitly excludes patients with poorly differentiated NEC. The biological drivers, clinical behavior, and treatment algorithms for high-grade NEC (typically treated with platinum-based chemotherapy) are fundamentally different from those of well-differentiated NETs. Therefore, efficacy data regarding cabozantinib in well-differentiated NETs cannot be reasonably extrapolated to inform treatment for this patient's aggressive NEC histology."
+}

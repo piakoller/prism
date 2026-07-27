@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:16:26.318822
+Trial: 6/86
+NCT ID: NCT04727723
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful evidence for this patient because it evaluates the real-world effectiveness and safety of Lutathera (177Lu-DOTATATE) in patients with progressive, well-differentiated (G1-G2) GEP-NETs, directly aligning with the patient's diagnosis of a progressive G2 Pan-NET (Ki-67 15%). Clinically, the patient is progressing on belzutifan and is likely ineligible for liver transplantation due to her Ki-67 index (>10%) and active progression; thus, she requires a new line of systemic therapy. Assuming the patient demonstrates SSTR uptake on the recommended PET scan, PRRT is a standard-of-care consideration. The study is particularly relevant as it includes a high proportion of G2 patients (71%), offering specific insights into outcomes for this subgroup that may differ from the G1-predominant populations in earlier pivotal trials. This prospective real-world evidence supports the clinical decision to transition the patient to PRRT."
+}

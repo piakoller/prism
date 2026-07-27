@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:14:44.661595
+Trial: 83/86
+NCT ID: NCT03980925
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for the unresectable disease scenario. The first criterion, Disease/Biology Alignment, is reasonably met. Although the patient has a G2 NET (Ki-67 19%), his tumor's aggressive features—high-end Ki-67, high FDG uptake (SUV 16), and extensive local invasion—make it biologically similar to the low-end G3 NEN population (Ki-67 >20%) studied in the trial. The second criterion, Treatment Context/Clinical Applicability, is met by considering the likely scenario where the patient's tumor is deemed unresectable. In this case, systemic therapy would be required, and this study evaluates a relevant platinum-based regimen. While the patient is not treatment-naive, the evidence is still transferable for second-line consideration. The third criterion, Evidence Quality and Relevance, is also met. The study provides clear Phase 2 efficacy data, including a high objective response rate (ORR) of 56.8% and a signal of long-term survival in over a third of patients. For a patient with a large, symptomatic tumor causing life-threatening bleeding, this evidence for a high-response regimen is a critical, actionable insight that can inform discussions about systemic therapy options if surgery is not feasible."
+}
+```

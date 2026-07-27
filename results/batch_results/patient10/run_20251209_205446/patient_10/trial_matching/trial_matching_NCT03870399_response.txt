@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:07:51.329641
+Trial: 26/86
+NCT ID: NCT03870399
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study aligns well with the patient's disease biology (metastatic Pan-NET G2) and clinical context (heavily pre-treated, fragile, thrombocytopenia limiting cytotoxic options). The HORMONET trial demonstrated that Tamoxifen is safe and can induce disease stabilization (56.5% SD at 24 weeks, mPFS 7.9 months) in ER/PR-positive well-differentiated NETs. Given the patient's intolerance to Sunitinib and bone marrow risks with chemotherapy or re-PRRT, this evidence provides a meaningful, low-toxicity therapeutic alternative. Although the patient's ER/PR status is currently unknown, the study provides actionable evidence to justify requesting immunohistochemical testing for ER/PR on archived tissue; if positive (≥1%), Tamoxifen could be a viable late-line option to maintain disease control with minimal toxicity."
+}

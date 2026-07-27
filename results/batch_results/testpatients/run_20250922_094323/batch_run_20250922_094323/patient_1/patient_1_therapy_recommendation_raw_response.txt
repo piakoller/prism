@@ -1,0 +1,33 @@
+=== THERAPY RECOMMENDATION RAW RESPONSE ===
+Timestamp: 2025-09-22T10:20:49.371482
+Patient ID: 1
+Model: google/gemini-2.5-pro
+==================================================
+
+<therapy_recommendation>
+**Primary Recommendation: Complete Staging and Assess for Surgical Resection**
+
+1.  **Immediate Diagnostic Workup:** After clinical stabilization from the current gastrointestinal bleeding episode, the patient requires urgent and complete staging. This is essential to determine the optimal therapeutic path.
+    *   **Somatostatin Receptor Imaging (SRI):** Perform a ⁶⁸Ga-DOTATATE (or equivalent, e.g., ⁶⁴Cu-DOTATATE or ¹⁸F-AlF-NOTA-octreotide as per NCT04552847) PET/CT. This is the highest priority as it is critical for:
+        *   Confirming somatostatin receptor (SSTR) expression, which is a prerequisite for considering Peptide Receptor Radionuclide Therapy (PRRT).
+        *   Providing definitive whole-body staging to rule out distant metastases not detected on prior imaging, as recommended by both ENETS 2023 (Sec 2.5.2) and ESMO 2020 (Staging section) guidelines.
+        *   Prognostication, as SSTR avidity is a key biological feature.
+    *   **FDG-PET/CT:** The initial FDG-PET/CT from January 2025 should be used as a baseline. The high SUV of 16 is a poor prognostic marker (ENETS 2023, Sec 2.5.1). The combination of SRI and FDG-PET will clarify if the tumor is SSTR-positive/FDG-positive ("mixed"), which has important prognostic and therapeutic implications.
+
+2.  **Multidisciplinary Surgical Evaluation:** Concurrently, the patient must be evaluated by an experienced hepatopancreatobiliary (HPB) surgical team at a high-volume center.
+    *   The primary goal is to assess the technical feasibility of a curative-intent (R0) multivisceral resection, which would likely involve a distal pancreatectomy, splenectomy, partial gastrectomy, and left adrenalectomy, potentially with vascular reconstruction.
+    *   This approach is supported by ENETS 2023 guidelines (Sec 3.1.4), which state that radical resection (R0) for locally advanced (T4) NF-Pan-NET, including venous resection, can be considered in expert centers (Level of evidence 3, Grade of recommendation A). The ESMO 2020 guidelines (Management of Local/Locoregional Disease section) also support this.
+    *   If surgery is deemed feasible, innovative techniques such as intraoperative radio-guided surgery (as explored in NCT05448157) could be considered to maximize the chances of a complete R0 resection.
+
+**Contingent Recommendations (Based on Staging and Surgical Assessment):**
+
+*   **Scenario A: Resectable Disease:** If the tumor is deemed resectable with no evidence of distant metastases on SRI, the recommendation is to proceed with **curative-intent surgical resection**. This offers the best chance for long-term disease control and definitively addresses the life-threatening GI bleeding.
+
+*   **Scenario B: Unresectable Disease & SSTR-Positive:** If the tumor is unresectable and the ⁶⁸Ga-DOTATATE PET/CT confirms avid SSTR expression (uptake greater than normal liver parenchyma), the recommended treatment is **first-line Peptide Receptor Radionuclide Therapy (PRRT) with ¹⁷⁷Lu-DOTATATE plus a somatostatin analog (SSA)**.
+    *   This recommendation is based on the landmark Phase 3 **NETTER-2 trial (NCT03972488)**, which demonstrated a significant improvement in progression-free survival (PFS) for patients with newly diagnosed, advanced G2/G3 GEP-NETs. In this trial, ¹⁷⁷Lu-DOTATATE plus octreotide resulted in a median PFS of 22.8 months versus 8.5 months for high-dose octreotide alone (HR 0.276; p<0.0001).
+    *   The efficacy of PRRT is further supported by the Phase 3 **COMPETE trial (NCT03049189)**, which showed a significant PFS benefit for PRRT over everolimus in G1/G2 GEP-NETs.
+
+*   **Scenario C: Unresectable Disease & SSTR-Negative (or mixed FDG-avid/SSTR-low):** If the tumor is unresectable and shows poor or no SSTR expression on SRI, PRRT is not an option. Given the patient's high-end G2 (Ki-67 19%) status and high FDG avidity, a chemotherapy-based regimen is the most appropriate choice.
+    *   The recommended regimen is **Capecitabine and Temozolomide (CAPTEM)**. The ESMO 2020 guidelines (Figure 4, Sec. on Systemic ChT) recommend TEM-based chemotherapy for G1/G2 Pan-NETs, particularly for bulky or rapidly progressive disease, citing a PFS of 22.7 months for the combination in the E2211 trial (NCT01824000, not in provided evidence but cited in guidelines).
+    *   To further refine this choice, tumor tissue should be tested for **O⁶-methylguanine-DNA methyltransferase (MGMT) status**, as per the findings of the **MGMT-NET trial (NCT03217097)**. This trial showed that MGMT status is a predictive biomarker for response to alkylating agents like temozolomide.
+    *   Alternative systemic options in this setting, supported by Phase 3 data, include **cabozantinib**, which in the **CABINET trial (NCT03375320)** showed a median PFS of 13.8 months vs 4.4 months for placebo in previously treated pNETs. The combination of **atezolizumab and bevacizumab** (NCT

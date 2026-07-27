@@ -1,0 +1,60 @@
+=== VALIDATION ITERATION 2 ===
+
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 16
+Timestamp: 2026-01-05T09:59:24.512669
+Overall Status: FAILED
+Requires Regeneration: YES
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 3
+Trials available: 10
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: RECONSIDER
+Status: FAIL
+Critical Issues:
+  ❌ **Hallucination of Trial Evidence:** The recommendation cites specific statistical outcomes (e.g., "24-month PFS rate of 73.7%", "partial or minor response in 84.6%", "median PFS of 34.1 months") and author names (Paulson et al., Del Prete et al., Swiha et al.) for trials NCT02730104, NCT02754297, and NCT02236910. This information is **not present** in the provided "TRIAL ANALYSIS SUMMARY" or "PATIENT ASSESSMENT". The provided summary only lists the trial titles and marks them as "Relevance: N/A". The recommendation is fabricating data or utilizing external knowledge not grounded in the provided source text.
+  ❌ **Reliance on Irrelevant Sources:** The recommendation bases its evidence on trials explicitly marked as "Relevance: N/A" in the provided Trial Analysis Summary.
+Warnings:
+  ⚠️  **Symptom Management:** The patient presents with "intermittent vomiting" and "dilation of the distal pancreatic duct" due to the mass. While the recommendation suggests a surgical consult, it prioritizes SSAs (antiproliferative) and PRRT evaluation. It does not explicitly address immediate management for the mechanical symptoms (e.g., need for decompression, stenting, or dietary modification) while waiting for systemic therapy or surgical planning.
+  ⚠️  **Renal Safety for PRRT:** While the recommendation mentions checking uptake for PRRT eligibility, it fails to explicitly mention the mandatory assessment of renal function, which is critical for PRRT safety, especially in a patient with potential abdominal mass effects.
+
+Detailed Reasoning:
+**1. Accuracy & Evidence Grounding (FAIL):**
+The most critical failure is the citation of detailed trial results that do not exist in the provided input.
+- The recommendation claims **NCT02730104** showed a "24-month PFS rate of 73.7%". The provided text only lists the title and "(Relevance: N/A)".
+- The recommendation claims **NCT02754297** showed an "84.6%" response rate. The provided text only lists the title and "(Relevance: N/A)".
+- The recommendation claims **NCT02236910** showed a "median PFS of 34.1 months". The provided text only lists the title and "(Relevance: N/A)".
+In a clinical validation context, the recommendation must be supported by the provided evidence. Inventing or retrieving outside data that contradicts the "N/A" relevance marker is a major accuracy and process violation.
+
+**2. Completeness (Partial Fail):**
+The patient's symptoms (vomiting) suggest a mechanical issue (duct dilation/compression). The recommendation focuses heavily on oncologic control (SSAs, PRRT). While a surgical consult is included, the immediate plan lacks specific supportive care or interventions for the symptomatic obstruction, which is a key part of the "Clinical Needs" identified in the assessment.
+
+**3. Consistency (Fail):**
+The recommendation is inconsistent with the provided "TRIAL ANALYSIS SUMMARY". It treats trials marked "N/A" (Not Applicable/Available) as the primary source of evidence, assigning them high confidence and specific results.
+
+**4. Safety (Pass with Warning):**
+The clinical logic (SSAs -> PRRT/Surgery) aligns with the "Guideline-Based Clinical Considerations" section of the patient assessment. However, the lack of specific attention to the vomiting/obstruction risks immediate patient safety if the surgical consult is delayed.
+
+Recommendations for Improvement:
+1. **Remove Hallucinated Data:** Delete all specific statistical claims (percentages, PFS months) and author citations for NCT02730104, NCT02754297, and NCT02236910 unless this data is explicitly added to the source text.
+2. **Ground Evidence in Assessment:** Base the rationale on the "Guideline-Based Clinical Considerations" section provided in the Patient Assessment (e.g., "ENETS guidelines recommend SSAs...", "ENETS guidelines suggest preoperative PRRT...").
+3. **Address Mechanical Symptoms:** Add a specific recommendation to evaluate and manage the intermittent vomiting and pancreatic duct dilation (e.g., "Assess need for biliary/pancreatic stenting or urgent decompression if vomiting persists").
+4. **Clarify PRRT Safety:** When recommending PRRT evaluation, explicitly mention the need to assess renal function in addition to uptake.
+
+======================================================================
+⚠️  REGENERATION REQUIRED
+======================================================================
+Reasons:
+  • Semantic: **Hallucination of Trial Evidence:** The recommendation cites specific statistical outcomes (e.g., "24-month PFS rate of 73.7%", "partial or minor response in 84.6%", "median PFS of 34.1 months") and author names (Paulson et al., Del Prete et al., Swiha et al.) for trials NCT02730104, NCT02754297, and NCT02236910. This information is **not present** in the provided "TRIAL ANALYSIS SUMMARY" or "PATIENT ASSESSMENT". The provided summary only lists the trial titles and marks them as "Relevance: N/A". The recommendation is fabricating data or utilizing external knowledge not grounded in the provided source text.
+  • Semantic: **Reliance on Irrelevant Sources:** The recommendation bases its evidence on trials explicitly marked as "Relevance: N/A" in the provided Trial Analysis Summary.

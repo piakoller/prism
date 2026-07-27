@@ -1,0 +1,18 @@
+=== RAW LLM RESPONSE ===
+Timestamp: 2025-12-03T13:04:20.094740
+Patient ID: 1
+Model: google/gemini-3-pro-preview
+==================================================
+
+<assessment>
+**Patient Clinical Status and Diagnosis**
+The patient is a 52-year-old male with a final diagnosis of a locally advanced, non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET), Grade 2. The disease presentation was clinically aggressive, characterized by massive upper gastrointestinal bleeding, hemorrhagic shock, and tumor thrombus with splenic vein occlusion.
+
+**Pathological and Molecular Characteristics**
+*   **Histology:** Confirmed NET G2. There is a noted variation in the Ki67 proliferation index between the pre-operative pathology review (19%) and the final surgical specimen (10%). Both values fall within the Grade 2 definition (Ki67 3–20%) according to ENETS and WHO classifications.
+*   **Staging:** The final pathological stage is pT4N0, indicating local invasion (stomach, adrenal, spleen) but no lymph node metastasis.
+*   **Metabolic Profile:** The baseline FDG-PET (Jan 2025) demonstrated a hypermetabolic mass with an SUV of 16 and central necrosis. According to ENETS guidelines, high FDG uptake correlates with a higher grade and is a strong poor prognostic factor.
+
+**Treatment History and Response**
+*   **Neoadjuvant Therapy:** The patient received first-line FOLFIRINOX (7 cycles). While FOLFIRINOX is not a standard regimen described in the provided ENETS guidelines for G2 NETs (which discuss streptozotocin-based or temozolomide-based regimens), the choice was likely driven by the initial aggressive presentation, high FDG uptake (SUV 16), and massive size (up to 12 cm). The response was stable disease (heterogeneous mass, 10–12 cm) rather than significant regression, but it prevented distant progression.
+*   **Surgical Management:** The patient underwent a curative-intent R0 resection (distal pancreatectomy, distal gastrectomy,

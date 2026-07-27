@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:53:22.350703
+Trial: 30/86
+NCT ID: NCT02113800
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "Although the study addresses a highly relevant clinical scenario—evaluating everolimus in Grade 3 NETs after platinum-based chemotherapy failure, which matches the patient's history (progression on FOLFOX) and biology (Pan-NET G3)—the provided structured data does not include the study's actual results. The listed publication is a review article that cites the trial as ongoing/registered but does not report efficacy or safety outcomes (e.g., PFS, ORR). Without specific published findings in the provided inputs to assess the benefit of everolimus in this specific population, the study fails to meet the criterion for evidence quality and relevance necessary to inform treatment decisions."
+}

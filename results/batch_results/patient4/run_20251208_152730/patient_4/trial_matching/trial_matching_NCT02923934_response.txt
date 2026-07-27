@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:42:19.207773
+Trial: 23/86
+NCT ID: NCT02923934
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The provided published results are from the Biliary Tract Cancer (BTC) subgroup analysis of the CA209-538 trial, specifically evaluating patients with cholangiocarcinoma and gallbladder carcinoma. Although the overall trial protocol included a neuroendocrine tumor (NET) cohort, the specific evidence provided here is restricted to BTC, which is biologically distinct from the patient's well-differentiated (G2) Duodenal NET (adenocarcinoma vs. neuroendocrine). Immunotherapy efficacy and safety profiles in BTC cannot be extrapolated to well-differentiated NETs due to fundamental differences in tumor biology and immune microenvironment. Therefore, the provided results do not offer actionable evidence to guide treatment decisions for this patient's neuroendocrine neoplasm."
+}

@@ -1,0 +1,124 @@
+{
+  "status": "success",
+  "analysis_complete": true,
+  "trials_analyzed": 14,
+  "trials_included": 2,
+  "trials_excluded": 12,
+  "expected_trial_count": 14,
+  "trial_analyses": [
+    {
+      "nct_number": "NCT03278379",
+      "trial_name": "Avelumab in G2-3 NET",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial demonstrated limited antitumor activity with a 0% objective response rate in patients with G2-3 NETs. Given the patient's need for tumor shrinkage to alleviate symptoms, this agent does not offer the required efficacy."
+    },
+    {
+      "nct_number": "NCT02730104",
+      "trial_name": "Community-based Neuroendocrine Tumor (NET) Research Study",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This is an observational study of Lanreotide, a standard-of-care somatostatin analog primarily used for disease stabilization. The patient has symptomatic, bulky disease with a Ki-67 of 15% and requires a therapy capable of inducing cytoreduction (shrinkage), which is not the primary outcome of this agent."
+    },
+    {
+      "nct_number": "NCT03049189",
+      "trial_name": "Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The patient exhibits significant intra-patient SSTR heterogeneity, with the primary tumor showing uptake (SUV 3) lower than the liver background. This lack of homogenous SSTR expression makes the patient a poor candidate for PRRT (177Lu-edotreotide) as the primary lesion may not be effectively targeted."
+    },
+    {
+      "nct_number": "NCT02568267",
+      "trial_name": "Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This targeted therapy requires specific gene fusions (NTRK, ROS1, ALK). There is no evidence in the patient's diagnostic assessment that the tumor harbors these specific genomic alterations."
+    },
+    {
+      "nct_number": "NCT02236910",
+      "trial_name": "An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "Similar to other PRRT trials, the patient's heterogeneous SSTR uptake and \"cold\" primary tumor (SUV 3) contraindicate PRRT as a first-line systemic treatment due to the risk of ineffective targeting of the primary lesion."
+    },
+    {
+      "nct_number": "NCT03870399",
+      "trial_name": "Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "Although the patient is progesterone receptor positive, the trial results indicate that Tamoxifen offers only modest antitumor effects (primarily stable disease). This is insufficient for a symptomatic patient with significant tumor burden who requires objective tumor shrinkage."
+    },
+    {
+      "nct_number": "NCT03074513",
+      "trial_name": "Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "While the combination shows activity in pNETs (20% ORR), the patient has a history of ischemic heart disease, and Bevacizumab carries cardiovascular risks. Furthermore, Phase 3 evidence for other agents (like Cabozantinib) or chemotherapy offers a more established efficacy profile for this setting."
+    },
+    {
+      "nct_number": "NCT02754297",
+      "trial_name": "Personalized PRRT of Neuroendocrine Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "Personalized dosimetry does not overcome the fundamental issue of the primary tumor's low SSTR expression (SUV 3). The lack of uptake in the primary lesion remains a barrier to effective treatment with 177Lu-Octreotate in this specific case."
+    },
+    {
+      "nct_number": "NCT03728361",
+      "trial_name": "Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial results indicated a significant difference in response based on tumor location, with lung NETs responding well (64%) but non-lung NETs showing poor response rates. As the patient has a pancreatic NET, this specific combination is less likely to be effective compared to other chemotherapy regimens."
+    },
+    {
+      "nct_number": "NCT03217097",
+      "trial_name": "MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This trial evaluates chemotherapy (Alkylating agents vs. Oxaliplatin), which aligns with the assessment's recommendation for symptomatic, bulky disease. It demonstrates high objective response rates (up to 52.9%) in MGMT-deficient tumors, providing a strong evidence basis for selecting a cytoreductive regimen."
+    },
+    {
+      "nct_number": "NCT01842165",
+      "trial_name": "177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This is another PRRT trial. The patient's specific imaging profile (heterogeneous uptake with a low-avidity primary) suggests they are not an optimal candidate for PRRT, regardless of the predictive imaging protocols used in this study."
+    },
+    {
+      "nct_number": "NCT03375320",
+      "trial_name": "Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 3 trial demonstrates significant progression-free survival benefit and a 19% objective response rate in pancreatic NETs. It provides high-level evidence for a systemic therapy option that can achieve tumor regression, serving as a viable alternative or subsequent line to chemotherapy."
+    },
+    {
+      "nct_number": "NCT01466036",
+      "trial_name": "Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This is an older Phase 2 trial for the same intervention (Cabozantinib) as the Phase 3 CABINET trial (NCT03375320). The Phase 3 trial provides more robust and recent evidence for the recommendation."
+    },
+    {
+      "nct_number": "NCT02609737",
+      "trial_name": "Theranostics of Radiolabeled Somatostatin Antagonists 68Ga-DOTA-JR11 and 177Lu-DOTA-JR11 in Patients With Neuroendocrine Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This trial involves experimental antagonist PRRT. Given the patient's heterogeneity on agonist imaging and the availability of Phase 3 evidence for other systemic therapies (Cabozantinib) or established chemotherapy efficacy (MGMT-NET), this experimental approach is not the primary recommendation."
+    }
+  ],
+  "summary": {},
+  "validation_warnings": [],
+  "raw_response": "<trial_analysis>\n**NCT NUMBER:** NCT03278379\n**TRIAL NAME:** Avelumab in G2-3 NET\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial demonstrated limited antitumor activity with a 0% objective response rate in patients with G2-3 NETs. Given the patient's need for tumor shrinkage to alleviate symptoms, this agent does not offer the required efficacy.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02730104\n**TRIAL NAME:** Community-based Neuroendocrine Tumor (NET) Research Study\n**DECISION:** EXCLUDE\n**RATIONALE:** This is an observational study of Lanreotide, a standard-of-care somatostatin analog primarily used for disease stabilization. The patient has symptomatic, bulky disease with a Ki-67 of 15% and requires a therapy capable of inducing cytoreduction (shrinkage), which is not the primary outcome of this agent.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03049189\n**TRIAL NAME:** Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients\n**DECISION:** EXCLUDE\n**RATIONALE:** The patient exhibits significant intra-patient SSTR heterogeneity, with the primary tumor showing uptake (SUV 3) lower than the liver background. This lack of homogenous SSTR expression makes the patient a poor candidate for PRRT (177Lu-edotreotide) as the primary lesion may not be effectively targeted.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02568267\n**TRIAL NAME:** Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)\n**DECISION:** EXCLUDE\n**RATIONALE:** This targeted therapy requires specific gene fusions (NTRK, ROS1, ALK). There is no evidence in the patient's diagnostic assessment that the tumor harbors these specific genomic alterations.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02236910\n**TRIAL NAME:** An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours\n**DECISION:** EXCLUDE\n**RATIONALE:** Similar to other PRRT trials, the patient's heterogeneous SSTR uptake and \"cold\" primary tumor (SUV 3) contraindicate PRRT as a first-line systemic treatment due to the risk of ineffective targeting of the primary lesion.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03870399\n**TRIAL NAME:** Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression\n**DECISION:** EXCLUDE\n**RATIONALE:** Although the patient is progesterone receptor positive, the trial results indicate that Tamoxifen offers only modest antitumor effects (primarily stable disease). This is insufficient for a symptomatic patient with significant tumor burden who requires objective tumor shrinkage.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03074513\n**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** While the combination shows activity in pNETs (20% ORR), the patient has a history of ischemic heart disease, and Bevacizumab carries cardiovascular risks. Furthermore, Phase 3 evidence for other agents (like Cabozantinib) or chemotherapy offers a more established efficacy profile for this setting.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02754297\n**TRIAL NAME:** Personalized PRRT of Neuroendocrine Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** Personalized dosimetry does not overcome the fundamental issue of the primary tumor's low SSTR expression (SUV 3). The lack of uptake in the primary lesion remains a barrier to effective treatment with 177Lu-Octreotate in this specific case.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03728361\n**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial results indicated a significant difference in response based on tumor location, with lung NETs responding well (64%) but non-lung NETs showing poor response rates. As the patient has a pancreatic NET, this specific combination is less likely to be effective compared to other chemotherapy regimens.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03217097\n**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents\n**DECISION:** INCLUDE\n**RATIONALE:** This trial evaluates chemotherapy (Alkylating agents vs. Oxaliplatin), which aligns with the assessment's recommendation for symptomatic, bulky disease. It demonstrates high objective response rates (up to 52.9%) in MGMT-deficient tumors, providing a strong evidence basis for selecting a cytoreductive regimen.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01842165\n**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs\n**DECISION:** EXCLUDE\n**RATIONALE:** This is another PRRT trial. The patient's specific imaging profile (heterogeneous uptake with a low-avidity primary) suggests they are not an optimal candidate for PRRT, regardless of the predictive imaging protocols used in this study.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03375320\n**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 3 trial demonstrates significant progression-free survival benefit and a 19% objective response rate in pancreatic NETs. It provides high-level evidence for a systemic therapy option that can achieve tumor regression, serving as a viable alternative or subsequent line to chemotherapy.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01466036\n**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** This is an older Phase 2 trial for the same intervention (Cabozantinib) as the Phase 3 CABINET trial (NCT03375320). The Phase 3 trial provides more robust and recent evidence for the recommendation.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02609737\n**TRIAL NAME:** Theranostics of Radiolabeled Somatostatin Antagonists 68Ga-DOTA-JR11 and 177Lu-DOTA-JR11 in Patients With Neuroendocrine Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** This trial involves experimental antagonist PRRT. Given the patient's heterogeneity on agonist imaging and the availability of Phase 3 evidence for other systemic therapies (Cabozantinib) or established chemotherapy efficacy (MGMT-NET), this experimental approach is not the primary recommendation.\n---\n</trial_analysis>\n\n<summary>\n**TOTAL TRIALS ANALYZED:** 14\n**TRIALS TO INCLUDE:** 2\n**TRIALS TO EXCLUDE:** 12\n</summary>",
+  "metadata": {
+    "timestamp": "2025-12-03T16:51:19.559206",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 2,
+    "input_trial_count": 14,
+    "test_mode": false,
+    "cache_reused": false,
+    "cached_at": null,
+    "prompt_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_2\\patient_2_trial_analysis_prompt.txt",
+    "results_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_2\\patient_2_trial_analysis.json",
+    "response_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_2\\patient_2_trial_analysis_raw_response.txt",
+    "summary_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_2\\patient_2_trial_analysis_summary.txt"
+  }
+}

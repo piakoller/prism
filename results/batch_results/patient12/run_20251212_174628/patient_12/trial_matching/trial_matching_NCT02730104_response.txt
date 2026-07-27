@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:50:37.254133
+Trial: 3/86
+NCT ID: NCT02730104
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this specific patient due to critical mismatches in disease biology and treatment context. While the patient has a G2 PanNET, her disease is characterized by significant heterogeneity, specifically Ga68-negative (SSTR-negative) peritoneal carcinomatosis, alongside aggressive features (Ki-67 20%, bulky tumor burden, FDG-avidity). Lanreotide is a somatostatin analog that requires SSTR expression for efficacy; therefore, outcome data from this observational study—which reflects routine use in likely SSTR-positive, indolent populations—cannot be extrapolated to predict control of this patient's SSTR-negative disease components. Additionally, the clinical assessment prioritizes cytotoxic chemotherapy over SSA monotherapy due to the high tumor burden and aggressive biology, rendering real-world evidence of Lanreotide monotherapy insufficient to inform the primary therapeutic decision for this high-risk scenario."
+}

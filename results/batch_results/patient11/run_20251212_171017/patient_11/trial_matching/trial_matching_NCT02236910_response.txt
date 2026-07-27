@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:20:50.023183
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a high-grade Neuroendocrine Carcinoma (NEC) / Mixed Neuroendocrine-Non-Neuroendocrine Neoplasm (MiNEN) with a Ki-67 index of 95%, indicating aggressive, poorly differentiated biology. In contrast, the study (NCT02236910/Swiha et al.) specifically evaluates Lutetium-177 DOTATATE in patients with well-differentiated Neuroendocrine Tumors (NETs) and explicitly excludes patients with Ki-67 > 30%. Evidence regarding survival predictors for PRRT in well-differentiated, indolent tumors cannot be clinically extrapolated to guide treatment for a high-grade NEC, where SSTR expression is typically low or absent and platinum-based chemotherapy is the standard of care. Consequently, the study provides no actionable evidence for this patient's specific disease subtype."
+}

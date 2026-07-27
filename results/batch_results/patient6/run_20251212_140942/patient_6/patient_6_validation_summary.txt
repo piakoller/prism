@@ -1,0 +1,63 @@
+=== VALIDATION ITERATION 0 ===
+
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 6
+Timestamp: 2025-12-12T14:51:06.025449
+Overall Status: FAILED
+Requires Regeneration: YES
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 5
+Trials available: 18
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: RECONSIDER
+Status: FAIL
+Critical Issues:
+  ❌ **Incorrect Clinical Logic / Safety Risk (PRRT Indication):** The recommendation states: "Upon confirmation of SSTR-positive disease and **absence of extrahepatic spread**, the recommended therapy is Peptide Receptor Radionuclide Therapy (PRRT)..."
+  ❌ **Why this is critical:** This condition is clinically incorrect and potentially harmful. "Absence of extrahepatic spread" is a criterion for *Liver Transplantation*, not PRRT. PRRT is a systemic therapy specifically indicated for metastatic (including extrahepatic) disease. If the urgent PET/CT confirms the suspected bone metastases (extrahepatic spread), the current wording implies PRRT should *not* be given, effectively withholding the standard of care for a patient with metastatic progression.
+  ❌ **Hallucination of Evidence (NCT03049189):** The recommendation cites trial NCT03049189 (COMPETE) as supporting evidence, claiming it "supports the superiority of PRRT... over everolimus regarding PFS."
+  ❌ **Why this is critical:** The "Trial Analysis Summary" provided in the input lists this trial with **"(Relevance: N/A)"** and does not contain any results or data summaries for it. The recommendation has fabricated or hallucinated results that were not present in the provided source text. Validation must rely strictly on the provided evidence.
+Warnings:
+  ⚠️  **Renal Function:** While PRRT is recommended, the recommendation does not explicitly mention checking renal function (e.g., GFR), which is a standard safety prerequisite for 177Lu-Dotatate therapy, especially in a patient heavily pre-treated with potential nephrotoxic agents or prior therapies.
+
+Detailed Reasoning:
+**1. Safety & Consistency (The PRRT Condition):**
+I checked the logic connecting the diagnostic work-up to the therapy selection.
+- The patient has "migratory bone pain," raising suspicion of extrahepatic disease.
+- The recommendation correctly advises a PET/CT to investigate this.
+- However, in Section 3, it conditions the use of PRRT on the **"absence of extrahepatic spread."**
+- This conflates the exclusion criteria for Liver Transplantation (where extrahepatic disease is a contraindication) with the inclusion criteria for Systemic Therapy. If the patient has bone metastases, she is *ineligible* for transplant but *eligible* for PRRT (assuming SSTR uptake). The current phrasing suggests that finding bone metastases would disqualify her from PRRT, which is the opposite of clinical guidelines.
+
+**2. Accuracy (Trial Evidence):**
+I checked the citations against the "Trial Analysis Summary."
+- The recommendation cites **NCT03049189** and asserts specific comparative outcomes ("superiority... regarding PFS").
+- Looking at the input text, NCT03049189 is listed under "INCLUDED TRIALS" but marked **"(Relevance: N/A)"**, and no description of the trial results is provided in the text.
+- Therefore, the claim about the trial's outcome is not supported by the provided source material. The system likely used external training data rather than the provided context, which violates the accuracy constraint of the validation task.
+
+**3. Completeness:**
+- The recommendation for Cabozantinib (NCT03375320) and the exclusion of Avelumab (NCT03278379) are accurate based on the provided text and clinical context.
+- The exclusion of Liver Transplantation is well-reasoned and consistent with the provided ESMO criteria.
+
+Recommendations for Improvement:
+1. **Correct the PRRT Indication:** Remove the phrase "and absence of extrahepatic spread" from the PRRT recommendation. The condition for PRRT should be "Upon confirmation of SSTR-positive disease (uptake > liver background)." Explicitly state that PRRT is the recommended systemic therapy regardless of whether the disease is liver-only or extrahepatic, provided SSTR expression is sufficient.
+2. **Remove Unsupported Evidence:** Delete the bullet point regarding **NCT03049189** (COMPETE trial) unless the specific results are added to the input text. Rely primarily on **NETTER-2 (NCT03972488)** which is well-supported by the provided details and directly relevant to the patient's Ki-67 (15%).
+3. **Clarify Next Steps:** In the "Actionable" section or rationale, clarify that if bone metastases are found (extrahepatic disease), the patient shifts definitively to the Systemic Therapy pathway (PRRT), whereas if disease remains liver-limited, PRRT is still preferred over LT due to the high Ki-67.
+
+======================================================================
+⚠️  REGENERATION REQUIRED
+======================================================================
+Reasons:
+  • Semantic: **Incorrect Clinical Logic / Safety Risk (PRRT Indication):** The recommendation states: "Upon confirmation of SSTR-positive disease and **absence of extrahepatic spread**, the recommended therapy is Peptide Receptor Radionuclide Therapy (PRRT)..."
+  • Semantic: **Why this is critical:** This condition is clinically incorrect and potentially harmful. "Absence of extrahepatic spread" is a criterion for *Liver Transplantation*, not PRRT. PRRT is a systemic therapy specifically indicated for metastatic (including extrahepatic) disease. If the urgent PET/CT confirms the suspected bone metastases (extrahepatic spread), the current wording implies PRRT should *not* be given, effectively withholding the standard of care for a patient with metastatic progression.
+  • Semantic: **Hallucination of Evidence (NCT03049189):** The recommendation cites trial NCT03049189 (COMPETE) as supporting evidence, claiming it "supports the superiority of PRRT... over everolimus regarding PFS."
+  • Semantic: **Why this is critical:** The "Trial Analysis Summary" provided in the input lists this trial with **"(Relevance: N/A)"** and does not contain any results or data summaries for it. The recommendation has fabricated or hallucinated results that were not present in the provided source text. Validation must rely strictly on the provided evidence.

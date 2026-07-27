@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:49:36.814419
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criteria for Disease/Biology Alignment and Treatment Context. The patient has metastatic (Stage IV), Grade 3 (Ki-67 25%) disease with a high hepatic burden and extrahepatic metastases (bone, lung), requiring systemic therapy or liver-directed treatments for metastatic control. In contrast, this study evaluates EUS-guided radiofrequency ablation specifically for small (15–25 mm), localized, low-grade (G1–G2, Ki-67 ≤5%) tumors with no distant metastases. The intervention targets local control of early-stage, indolent disease, which is not clinically applicable to a patient with widespread, aggressive metastatic disease where the primary tumor is not the driver of prognosis. Therefore, the evidence provides no actionable insights for this patient's treatment planning."
+}

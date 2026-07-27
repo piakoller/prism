@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:04:23.186169
+Trial: 33/86
+NCT ID: NCT02754297
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study is clinically relevant because it evaluates personalized 177Lu-Octreotate PRRT based on dosimetry, a critical approach for optimizing treatment in patients who have received prior PRRT or require consolidation. The patient has a metastatic SSTR-positive bronchial NET (atypical carcinoid) with a Ki-67 of 25% (NET G3) and has previously responded well to PRRT. The study's inclusion criteria cover NETs of any site with SSTR overexpression, aligning with the patient's biology (DOTATOC +++). Crucially, the published results (Del Prete et al., 2019) discuss the administration of consolidation or maintenance cycles for responders and the use of dosimetry to safely maximize tumor dose while sparing critical organs (kidneys). This directly addresses the Tumorboard's question regarding the next steps to consolidate response, especially given the patient's intolerance to standard systemic therapies (chemotherapy, mTOR inhibitors) and the need to ensure cumulative renal safety during further PRRT."
+}

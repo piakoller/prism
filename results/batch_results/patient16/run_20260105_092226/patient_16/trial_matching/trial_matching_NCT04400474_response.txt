@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:46:35.762387
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "While the CABATEN study includes a cohort for well-differentiated digestive neuroendocrine tumors (Cohort 5) which aligns with this patient's diagnosis (G1 PanNET), the provided published results are limited to the Adrenocortical Carcinoma cohort or general trial descriptions. No specific efficacy or safety data for the neuroendocrine tumor cohort are available in the input to evaluate the benefit of the cabozantinib plus atezolizumab combination for this patient. Additionally, the patient is currently treatment-naive or stable, whereas the study targets patients who have progressed on prior therapies (SSAs, targeted agents, PRRT), making the treatment context less immediately applicable without supporting evidence of efficacy in this specific population."
+}

@@ -1,0 +1,251 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-15T10:51:29.395920
+Trial: 59/86
+NCT ID: NCT03136055
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Patient: 61-year-old man, ECOG 0, asymptomatic
+Initial diagnosis: Pancreatic NET grade 2, Ki-67 12% (2009)
+Became metastatic in 2023: liver-only disease, grade 3, Ki-67 70%
+Low hepatic tumor burden; no extrahepatic disease
+DOTATOC +++, FDG positive, no mismatch
+Sporadic
+
+Extensive previous treatments (2009–2024): surgery, RFA, multiple chemoembolizations, sunitinib, 5-FU/dacarbazine, radiotherapy (hilar nodes, rib, liver), somatostatin analogs, everolimus, RFA, capecitabine–temozolomide, GEMOX, temozolomide monotherapy, long-term Somatuline since June 2024
+
+Sept 2025: hepatic progression over 6 months; lesions 28 mm and 13 mm; diffuse liver disease; not suitable for local therapy
+Question for Tumorboard:
+What would be next step to consolidate the response?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Tumor Biology**
+The patient is a 61-year-old male with an ECOG performance status of 0, currently asymptomatic. He presents with a sporadic Pancreatic Neuroendocrine Tumor (Pan-NET) that has evolved from an initial Grade 2 diagnosis (Ki-67 12%) in 2009 to a metastatic Grade 3 disease (Ki-67 70%) in 2023. The disease is currently limited to the liver but is diffuse, with progressing lesions measuring 28 mm and 13 mm.
+
+**Histopathological and Molecular Classification**
+According to the provided **ESMO** and **ENETS** guidelines, the patient's tumor profile—specifically the history of a lower-grade precursor and the strong somatostatin receptor positivity (DOTATOC +++)—indicates a **well-differentiated NET G3** rather than a poorly differentiated neuroendocrine carcinoma (NEC), despite the high Ki-67 index of 70%. The patient demonstrates a "double-positive" status on functional imaging (DOTATOC +++ and FDG positive) with no mismatch. **ESMO guidelines** note that high FDG uptake correlates with higher grade and is a strong poor prognostic factor, yet the retention of SSTR expression is a key biological feature for therapeutic decision-making.
+
+**Treatment History and Refractoriness**
+The patient is heavily pre-treated and considered refractory to multiple standard lines of systemic therapy recommended for Pan-NETs:
+*   **Somatostatin Analogs (SSAs):** Progression on Somatuline.
+*   **Targeted Therapies:** Progression on both sunitinib and everolimus (standard options for progressive Pan-NETs per **ENETS Recommendation 3.3.1**).
+*   **Chemotherapy:** The patient has progressed on multiple regimens including alkylating agents (temozolomide monotherapy, capecitabine-temozolomide) and oxaliplatin-based regimens (GEMOX), as well as 5-FU/dacarbazine.
+*   **Local Therapies:** The patient is currently not suitable for local therapies (RFA, embolization) due to diffuse liver disease.
+
+**Clinical Assessment for Next Steps**
+1.  **Chemotherapy Assessment:** The patient has exhausted the standard chemotherapy options for Pan-NET (TEM/CAPTEM, STZ/5-FU). While **ESMO guidelines** recommend cisplatin/etoposide for NEC G3, they explicitly state that for **NET G3**, response rates to cisplatin/etoposide are low and the use of this combination is **not recommended**.
+2.  **Peptide Receptor Radionuclide Therapy (PRRT) Assessment:**
+    *   **Eligibility:** The patient shows strong SSTR expression (DOTATOC +++), fulfilling the primary requirement for PRRT.
+    *   **Guideline Evidence for G3:** **ENETS guidelines** (Section 3.2) and **ESMO guidelines** indicate that PRRT may be considered in patients with NET G3. However, **ENETS** cites studies (Zhang et al., Thang et al.) noting that while promising response rates exist, efficacy is generally lower in patients with a Ki-67 > 55% (median PFS approx. 4–6 months) compared to those with lower proliferation indices.
+    *   **Current Status:** As the patient has not received PRRT (history lists "radiotherapy" to nodes/rib/liver, likely external beam, but not peptide receptor radionuclide therapy), this modality represents a potential remaining line of systemic therapy supported by guidelines for SSTR-positive disease.
+3.  **Prognostic Considerations:** The combination of Ki-67 70% and FDG positivity suggests aggressive biological behavior. While the patient is currently asymptomatic and ECOG 0, the hepatic progression over 6 months indicates a need for disease control to prevent symptomatic deterioration.
+
+**Summary**
+The patient presents with progressive, liver-dominant, well-differentiated Pan-NET G3 (Ki-67 70%) that is refractory to standard chemotherapy and targeted agents. Based on **ESMO** and **ENETS guidelines**, the strong DOTATOC uptake makes the patient a candidate for evaluation for PRRT, although the high Ki-67 (>55%) and FDG positivity are negative prognostic markers that may limit the duration of response compared to lower-grade tumors.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+	•	Question for Tumorboard: What would be next step to consolidate the response?
+
+### STUDY DATA
+	•	NCT-ID: NCT03136055
+	•	Title: Pembrolizumab-based Therapy in Previously Treated High Grade Neuroendocrine Carcinomas
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Pembrolizumab; Irinotecan; Paclitaxel
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+1. Be willing and able to provide written informed consent for the trial.
+2. Be at least 18 years of age on day of signing informed consent.
+3. Have a histologically proven locally advanced or metastatic high grade (G3) poorly differentiated neuroendocrine carcinoma (NEC).
+
+   1. Includes small cell and large cell neuroendocrine carcinoma of unknown primary or any extrapulmonary site (and poorly differentiated NEC, not otherwise specified)
+   2. Includes neuroendocrine prostate cancer (de novo or treatment-emergent) of prostate if small cell or large cell histology (histologic evidence of both adenocarcinoma and neuroendocrine carcinoma may be present in same patient).
+   3. Other mixed tumors, e.g. mixed neuroendocrine neoplasms (MINENs) with NEC plus adenocarcinoma, squamous or acinar cell component are allowed if the high grade (small or large cell) NEC component comprises \>50% of the original sample or subsequent biopsy.
+4. Have progressed during or after completion of first line systemic chemotherapy.
+
+   1. No limit to the number of prior chemotherapy regimens.
+   2. Early progression on/after adjuvant chemotherapy counts as firstline therapy.
+5. Have at least one measurable disease based on RECIST 1.1.
+6. Patients must agree to have a biopsy of primary tumor or metastatic tissue at baseline, and there must be a lesion that can be biopsied with acceptable clinical risk (as judged by the investigator).
+
+   1. Patients with unsuccessful baseline biopsies may undergo an additional biopsy attempt (at the same or a different site, determined by the investigator).
+   2. For patients with an intact primary and no metastatic site that can be safely biopsied, biopsy of the primary is acceptable, but must be approved by the principal investigator.
+   3. Baseline tumor biopsy may be omitted if the tumor is inaccessible and/or a biopsy is not thought to post exceptionally high procedural risk due to location or other factors
+7. Have a performance status of 0 or 1 on the Eastern Cooperative Oncology Group (ECOG) Performance Scale.
+8. Have a life expectancy of greater than 3 months.
+9. Demonstrate adequate organ function, all screening labs should be performed within 14 days of treatment initiation.
+
+   * Absolute neutrophil count (ANC) \>=1,500 /microliter (mcL)
+   * Platelets \>=100,000 / mcL
+   * Hemoglobin \>= 9 g/dL or \>=5.6 mmol/L without transfusion or erythropoietin (EPO) dependency (within 7 days of assessment)
+   * Serum creatinine OR Measured or calculated creatinine clearance (CrCl) (Creatinine clearance should be calculated per institutional standard. Glomerular filtration rate (GFR) can also be used in place of creatinine or CrCl \<=1.5 X upper limit of normal (ULN) OR \>=60 mL/min for subject with creatinine levels \> 1.5 X institutional ULN
+   * Serum total bilirubin \<= 1.5 X ULN OR Direct bilirubin \<= ULN for subjects with total bilirubin levels \> 1.5 ULN
+   * aspartate aminotransferase (AST) / serum glutamic-oxaloacetic transaminase (SGOT) and alanine aminotransferase (ALT)/ serum glutamic-pyruvic transaminase (SGPT) \<=2.5 X ULN OR ≤ 5 X ULN for subjects with liver metastases
+   * Albumin \>2.5 g/dL
+   * International Normalized Ratio (INR) or Prothrombin Time (PT) Activated Partial Thromboplastin Time (aPTT) \<=1.5 X ULN unless subject is receiving anticoagulant therapy as long as PT or PTT is within therapeutic range of intended use of anticoagulants.
+10. Female subject of childbearing potential should have a negative urine or serum pregnancy within 72 hours prior to receiving the first dose of study medication. If the urine test is positive or cannot be confirmed as negative, a serum pregnancy test will be required.
+11. Female subjects of childbearing potential should be willing to use 2 methods of birth control or be surgically sterile, or abstain from heterosexual activity for the course of the study through 120 days after the last dose of study medication. Subjects of childbearing potential are those who have not been surgically sterilized or have not been free from menses for \> 1 year.
+
+    * Male subjects should agree to use an adequate method of contraception starting with the first dose of study therapy through 120 days after the last dose of study therapy.
+    * Note: Abstinence is acceptable if this is the usual lifestyle and preferred contraception for the subject.
+
+Exclusion Criteria:
+
+1. Has Merkel cell carcinoma, small cell lung carcinoma, or large cell NEC of lung
+
+   * Intermediate grade neuroendocrine tumors are excluded
+   * Well differentiated Grade 3 neuroendocrine tumors are excluded
+   * Metastatic high-grade prostate carcinoma with evidence of focal neuroendocrine differentiation on prostate biopsy (e.g., positive chromogranin staining by immunohistochemistry) without small cell or large cell NEC morphology are excluded, as are neuroendocrine prostate cancers with phenotype intermediate between adenocarcinoma and small cell
+   * Atypical and typical bronchial carcinoids and well differentiated G1 and G2 gastroenteropancreatic (GEP) neuroendocrine tumors (NET) (GEP NETs) are excluded.
+2. Is currently participating and receiving study therapy or has participated in a study of an investigational agent and received study therapy or used an investigational device within 4 weeks of the first dose of treatment.
+3. Has a diagnosis of immunodeficiency
+4. Is receiving systemic steroid therapy or any other form of immunosuppressive therapy within 7 days prior to the first dose of trial treatment.
+
+   - Physiologic doses of steroids (e.g. =\< 10 mg prednisone/day or equivalent) are allowed
+5. Has a known history of active Bacillus Tuberculosis (TB).
+6. History of or high suspicion of Gilbert's disease (safety run-in, Part B only)
+7. Hypersensitivity to pembrolizumab or any of its excipients.
+8. Has had a prior anti-cancer monoclonal antibody (mAb) within 4 weeks prior to study Day 1 or who has not recovered (i.e., ≤ Grade 1 or at baseline) from adverse events due to agents administered more than 4 weeks earlier.
+9. Documented progression on and/or intolerance/hypersensitivity to both paclitaxel and irinotecan (Part B only)
+10. Has had prior chemotherapy, targeted small molecule therapy, or radiation therapy within 2 weeks prior to study Day 1 or who has not recovered (i.e., \<= Grade 1 or at baseline) from adverse events due to a previously administered agent.
+
+    * Note: Subjects with ≤ Grade 2 neuropathy are an exception to this criterion and may qualify for the study.
+    * Note: If subject received major surgery, they must have recovered adequately from the toxicity and/or complications from the intervention prior to starting therapy.
+    * Concurrent somatostatin analog therapy is allowed (for control of hormone excess) provided patient has been on stable dose for at least two months and tumor progression has been documented
+    * Continuation of androgen deprivation therapy (ADT) allowed for patients with neuroendocrine prostate cancer (in the setting of castration-resistant prostate cancer, CRPC)
+11. Has a known additional malignancy that is progressing or requires active treatment. Exceptions include basal cell carcinoma of the skin or squamous cell carcinoma of the skin that has undergone potentially curative therapy or in situ cervical cancer.
+12. Has known active central nervous system (CNS) metastases and/or carcinomatous meningitis. Patients with asymptomatic suspected brain metastases (or small lesions of uncertain significance) \<1 cm that do not require focal therapy are eligible. (Follow up imaging will be allowed on study, and focal radiation with continuation of protocol therapy allowed if there is progressive disease in the brain and systemic imaging shows stable disease/response).
+
+    - Subjects with previously treated brain metastases may participate provided they are stable (without evidence of progression by imaging for at least four weeks and any neurologic symptoms have returned to baseline), they have no evidence of new or enlarging brain metastases (confirmed by imaging within 28 d of the first dose of trial treatment), and they are not using steroids for at least 7 days prior to trial treatment. This exception does not include carcinomatous meningitis, which is excluded regardless of clinical stability.
+13. Has active autoimmune disease that has required systemic treatment in the past 2 years (i.e. with use of disease modifying agents, corticosteroids or immunosuppressive drugs).
+
+    - Replacement therapy (e.g., thyroxine, insulin, or physiologic corticosteroid replacement therapy for adrenal or pituitary insufficiency, etc.) is not considered a form of systemic treatment.
+14. Has a history of (non-infectious) pneumonitis/ interstitial lung disease that required steroids or has current pneumonitis/interstitial lung disease.
+15. Has an active infection requiring systemic therapy.
+16. Has a history or current evidence of any condition, therapy, or laboratory abnormality that might confound the results of the trial, interfere with the subject's participation for the full duration of the trial, or is not in the best interest of the subject to participate, in the opinion of the treating investigator.
+17. Has known psychiatric or substance abuse disorders that would interfere with cooperation with the requirements of the trial.
+18. Is pregnant or breastfeeding, or expecting to conceive or father children within the projected duration of the trial, starting with the pre-screening or screening visit through 120 days after the last dose of trial treatment.
+19. Has received prior therapy with an anti-Programmed Death 1 (PD-1), anti-Programmed Death Ligand 1 (PD-L1), or anti-PD-L2 agent.
+20. Has a known history of Human Immunodeficiency Virus (HIV) (HIV 1/2 antibodies).
+21. Has known active Hepatitis B virus (e.g., HBsAg reactive) or Hepatitis C virus (HCV)(e.g., HCV RNA \[qualitative\] is detected).
+22. Has received a live vaccine or live-attenuated vaccine within 30 days prior to the first dose of study drug. Administration of killed vaccines is allowed. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This is a pilot study of pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinoma
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/37208512/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Pembrolizumab alone and pembrolizumab plus chemotherapy in previously treated, extrapulmonary poorly differentiated neuroendocrine carcinomas. (PMID: 37208512)
+• Future therapeutic strategies in the treatment of extrapulmonary neuroendocrine carcinoma: a review [Google Scholar]
+• Phase II study of pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas: Results of Part A … [Google Scholar]
+• Phase II study of pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas: Results of Part B … [Google Scholar]
+• Efficacyandsafetyof pembrolizumab in previously treated advanced neuroendocrine tumors: results from the phase II KEYNOTE-158 study [Google Scholar]
+• Phase IIstudyof pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas: Results of Part B … [Google Scholar]
+• Phase IIstudyof pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas:Resultsof Part A … [Google Scholar]
+• Phase IIstudyof pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas: Results of Part A … [Google Scholar]
+• Pembrolizumab-based therapy in previously treated high grade extrapulmonary neuroendocrine carcinomas. [Google Scholar]
+• Pembrolizumab alone and pembrolizumab plus chemotherapy in previously treated, extrapulmonary poorly differentiated neuroendocrine carcinomas [Google Scholar]
+• Phase IIstudyof pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas:Resultsof Part B … [Google Scholar]
+	•	Key findings from publications: PubMed Abstract: To date, single-agent immune checkpoint inhibitor (CPI) therapy has proven to be ineffective against biomarker-unselected extrapulmonary poorly differentiated neuroendocrine carcinomas (EP-PDNECs). The efficacy of CPI in combination with chemotherapy remains under investigation.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: To date, single-agent immune checkpoint inhibitor (CPI) therapy has proven to be ineffective against biomarker-unselected extrapulmonary poorly differentiated neuroendocrine carcinomas (EP-PDNECs). The efficacy of CPI in combination with chemotherapy remains under investigation. Methods: Patients with advanced, progressive EP-PDNECs were enrolled in a two-part study of pembrolizumab-based therapy. In Part A, patients received pembrolizumab alone. In Part B, patients received pembrolizumab plus chemotherapy. Primary endpoint: objective response rate (ORR). Secondary endpoints: safety, progression-free survival (PFS) and overall survival (OS). Tumours were profiled for programmed death-ligand 1 expression, microsatellite-high/mismatch repair deficient status, mutational burden (TMB), genomic correlates. Tumour growth rate was evaluated. Results: Part A (N = 14): ORR (pembrolizumab alone) 7% (95% CI, 0.2-33.9%), median PFS 1.8 months (95% CI, 1.7-21.4), median OS 7.8 months (95% CI, 3.1-not reached); 14% of patients (N = 2) had grade 3/4 treatment-related adverse events (TRAEs). Part B (N = 22): ORR (pembrolizumab plus chemotherapy) 5% (95% CI, 0-22.8%), median PFS 2.0 months (95% CI, 1.9-3.4), median OS 4.8 months (95% CI, 4.1-8.2); 45% of patients (N = 10) had grade 3/4 TRAEs. The two patients with objective response had high-TMB tumours. Discussion: Treatment with pembrolizumab alone and pembrolizumab plus chemotherapy was ineffective in advanced, progressive EP-PDNECs. Clinical trial registration: ClinicalTrials.gov NCT03136055 . © 2023. The Author(s), under exclusive licence to Springer Nature Limited. PubMed Disclaimer Conflict of interest statement Dr. Nitya Raj: research funding (ITM, Corcept Therapeutics), consulting/advisory boards (Ipsen Pharma, HRA Pharma, Progenics Pharmaceuticals, AAA). Dr. Jennifer Chan: consulting/advisory boards (TerSera, AAA, Curium), honorarium (Ipsen), stock ownership (Merck). Dr. Rahul Aggarwal: research funding (Merck). Dr. Lawrence Fong: research funding (Roche/Genentech, Abbvie, Bavarian Nordic, Bristol Myers Squibb, Dendreon, Janssen, Merck, Partner Therapeutics), advisory boards (Actym, Allector, Astra Zeneca, Atreca, Bioalta, Bolt, Bristol Myer Squibb, Daiichi Sankyo, Immunogenesis, Innovent, Merck, Merck KGA, Nutcracker, RAPT, Scribe, Senti, Soteria, Sutro, Roche/Genentech). Dr. Thomas Hope: research funding (Clovis Oncology, GE Healthcare, Philips, AAA), consulting (Bayer, Curium, ITM, RayzeBio), advisory boards (Blue Earth Diagnostics, Ipsen), stock ownership (RayzeBio). Dr. Claire Mulvey: research funding (Genentech). Dr. Pamela Munster: research funding (Merck). Dr. Kimberly Perez: consulting/scientific advisory boards (Lantheus, Helsinn/QED). Dr. Diane Reidy-Lagunes: research funding (Merck, Ipsen, Novartis). The remaining authors declare no competing interests. Figures Fig. 1. Study schema. Patients were enrolled… Fig. 1. Study schema. Patients were enrolled to an open-label, adaptive, two-stage study (which included… Fig. 1. Study schema. Patients were enrolled to an open-label, adaptive, two-stage study (which included a safety lead-in for Part B). Pembro pembrolizumab, CT computed tomography scan, MRI magnetic resonance imaging, PD NEC poorly differentiated neuroendocrine carcinoma, Q every, W weeks, mg milligram, N number of patients. Fig. 2. Tumour responses and clinical outcomes. Fig. 2. Tumour responses and clinical outcomes. a Maximum decrease from baseline in the size… Fig. 2. Tumour responses and clinical outcomes. a Maximum decrease from baseline in the size of tumours in patients treated with pembrolizumab alone (Part A, N = 12) who underwent blinded radiologic evaluation after initiation of treatment. b Maximum decrease from baseline in the size of tumours in patients treated with pembrolizumab plus chemotherapy (Part B, N = 16) who underwent blinded radiologic evaluation after initiation of treatment. c Kaplan–Meier curve showing progression-free survival among the 36 patients with EP-PDNECs who received pembrolizumab alone (Part A, N = 14) or pembrolizumab plus chemotherapy (Part B, N = 22). Progression-free survival was measured from the start of treatment with alone (Part A) or pembrolizumab plus chemotherapy (Part B) until the progression of disease or death due to any cause, whichever occurred first. Median progression-free survival in Part A was 1.8 months (95% CI, 1.7–21.4) and in Part B was 2 months (95% CI, 1.9–3.4). d Kaplan–Meier curve showing overall survival among the 36 patients with EP-PDNECs who received pembrolizumab alone (Part A, N = 14) or pembrolizumab plus chemotherapy (Part B, N = 22). Overall survival was measured as the time from the start of treatment with pembrolizumab until death. Median overall survival in Part A was 7.8 months (95% CI, 3.1 to not reached) and in Part B was 4.8 months (95% CI, 4.1–8.2). Fig. 3. Pre- and on-treatment tumour growth… Fig. 3. Pre- and on-treatment tumour growth rate. a Percent (%) change in sum of… Fig. 3. Pre- and on-treatment tumour growth rate. a Percent (%) change in sum of longest diameters (SLD) of RECIST-defined target lesions over time, for patients treated with (left) pembrolizumab alone or (right) pembrolizumab plus chemotherapy. b Pre-treatment tumour growth rate (TGR pre ) compared to on-treatment tumour growth rate (TGR on ) with (left) pembrolizumab alone, or (right) pembrolizumab plus chemotherapy. For Part A and Part B separately, each colour corresponds to an individual patient. TGR pre and TGR on evaluation demonstrated no acceleration of tumour growth during treatment with pembrolizumab alone ( P = 0.08), or pembrolizumab plus chemotherapy ( P = 0.15). See this image and copyright information in PMC Similar articles Efficacy and Safety of Pembrolizumab Plus Docetaxel vs Docetaxel Alone in Patients With Previously Treated Advanced Non-Small Cell Lung Cancer: The PROLUNG Phase 2 Randomized Clinical Trial. Arrieta O, Barrón F, Ramírez-Tirado LA, Zatarain-Barrón ZL, Cardona AF, Díaz-García D, Yamamoto Ramos M, Mota-Vega B, Carmona A, Peralta Álvarez MP, Bautista Y, Aldaco F, Gerson R, Rolfo C, Rosell R. Arrieta O, et al. JAMA Oncol. 2020 Jun 1;6(6):856-864. doi: 10.1001/jamaoncol.2020.0409. JAMA Oncol. 2020. PMID: 32271354 Free PMC article. Clinical Trial. Pembrolizumab alone or combined with chemotherapy versus chemotherapy as first-line therapy for advanced urothelial carcinoma (KEYNOTE-361): a randomised, open-label, phase 3 trial. Powles T, Csőszi T, Özgüroğlu M, Matsubara N, Géczi L, Cheng SY, Fradet Y, Oudard S, Vulsteke C, Morales Barrera R, Fléchon A, Gunduz S, Loriot Y, Rodriguez-Vida A, Mamtani R, Yu EY, Nam K, Imai K, Homet Moreno B, Alva A; KEYNOTE-361 Investigators. Powles T, et al. Lancet Oncol. 2021 Jul;22(7):931-945. doi: 10.1016/S1470-2045(21)00152-2. Epub 2021 May 26. Lancet Oncol. 2021. PMID: 34051178 Clinical Trial. Safety and efficacy of pembrolizumab in combination with S-1 plus oxaliplatin as a first-line treatment in patients with advanced gastric/gastroesophageal junction cancer: Cohort 1 data from the KEYNOTE-659 phase IIb study. Kawazoe A, Yamaguchi K, Yasui H, Negoro Y, Azuma M, Amagai K, Hara H, Baba H, Tsuda M, Hosaka H, Kawakami H, Oshima T, Omuro Y, Machida N, Esaki T, Yoshida K, Nishina T, Komatsu Y, Han SR, Shiratori S, Shitara K. Kawazoe A, et al. Eur J Cancer. 2020 Apr;129:97-106. doi: 10.1016/j.ejca.2020.02.002. Epub 2020 Mar 4. Eur J Cancer. 2020. PMID: 32145474 Clinical Trial. Efficacy and Safety of Pembrolizumab or Pembrolizumab Plus Chemotherapy vs Chemotherapy Alone for Patients With First-line, Advanced Gastric Cancer: The KEYNOTE-062 Phase 3 Randomized Clinical Trial. Shitara K, Van Cutsem E, Bang YJ, Fuchs C, Wyrwicz L, Lee KW, Kudaba I, Garrido M, Chung HC, Lee J, Castro HR, Mansoor W, Braghiroli MI, Karaseva N, Caglevic C, Villanueva L, Goekkurt E, Satake H, Enzinger P, Alsina M, Benson A, Chao J, Ko AH, Wainberg ZA, Kher U, Shah S, Kang SP, Tabernero J. Shitara K, et al. JAMA Oncol. 2020 Oct 1;6(10):1571-1580. doi: 10.1001/jamaoncol.2020.3370. JAMA Oncol. 2020. PMID: 32880601 Free PMC article. Clinical Trial. Immune checkpoint inhibitors for first-line treatment of advanced non-small-cell lung cancer: A systematic review and network meta-analysis. Peng TR, Lin HH, Tsai FP, Wu TW. Peng TR, et al. Thorac Cancer. 2021 Nov;12(21):2873-2885. doi: 10.1111/1759-7714.14148. Epub 2021 Sep 20. Thorac Cancer. 2021. PMID: 34545685 Free PMC article. See all similar articles Cited by Narrative Review of Immunotherapy in Gastroentero-Pancreatic Neuroendocrine Neoplasms. Kaur J, Vijayvergia N. Kaur J, et al. Curr Oncol. 2023 Sep 21;30(9):8653-8664. doi: 10.3390/curroncol30090627. Curr Oncol. 2023. PMID: 37754542 Free PMC article. Review. Selection of Chemotherapy in Advanced Poorly Differentiated Extra-Pulmonary Neuroendocrine Carcinoma. Weaver JMJ, Hubner RA, Valle JW, McNamara MG. Weaver JMJ, et al. Cancers (Basel). 2023 Oct 11;15(20):4951. doi: 10.3390/cancers15204951. Cancers (Basel). 2023. PMID: 37894318 Free PMC article. Review. Of Context, Quality, and Complexity: Fine-Combing Tumor Mutational Burden in Immunotherapy-Treated Cancers. Niknafs N, Najjar M, Dennehy C, Stouras I, Anagnostou V. Niknafs N, et al. Clin Cancer Res. 2025 Jul 15;31(14):2850-2863. doi: 10.1158/1078-0432.CCR-23-0824. Clin Cancer Res. 2025. PMID: 40353818 Review. Liver Transplantation for Non-hepatocellular Carcinoma: The Role of Immune Checkpoint Inhibitors. Bahrami P, Al Zein M, Eid AH, Sahebkar A. Bahrami P, et al. J Clin Exp Hepatol. 2025 Sep-Oct;15(5):102558. doi: 10.1016/j.jceh.2025.102558. Epub 2025 Mar 27. J Clin Exp Hepatol. 2025. PMID: 40303874 Review. Combining anti-PD-1 antibodies with surufatinib for gastrointestinal neuroendocrine carcinoma: Two cases report and review of literature. Gao LL, Gao DN, Yuan HT, Chen WQ, Yang J, Peng JQ. Gao LL, et al. World J Clin Oncol. 2025 Apr 24;16(4):102297. doi: 10.5306/wjco.v16.i4.102297. World J Clin Oncol. 2025. PMID: 40290678 Free PMC article. See all "Cited by" articles References Dasari A, Mehta K, Byers LA, Sorbye H, Yao JC. Comparative study of lung and extrapulmonary poorly differentiated neuroendocrine carcinomas: a SEER database analysis of 162,983 cases. Cancer. 2018;124:807–15. doi: 10.1002/cncr.31124. - DOI - PMC - PubMed Shia J, Tang LH, Weiser MR, Brenner B, Adsay NV, Stelow EB, et al. Is nonsmall cell type high-grade neuroendocrine carcinoma of the tubular gastrointestinal tract a distinct disease entity? Am J Surg Pathol. 2008;32:719–31. doi: 10.1097/PAS.0b013e318159371c. - DOI - PubMed Volante M, Birocco N, Gatti G, Duregon E, Lorizzo K, Fazio N, et al. Extrapulmonary neuroendocrine small and large cell carcinomas: a review of controversial diagnostic and therapeutic issues. Hum Pathol. 2014;45:665–73. doi: 10.1016/j.humpath.2013.03.016. - DOI - PubMed Klimstra DS, Modlin IR, Coppola D, Lloyd RV, Suster S. The pathologic classification of neuroendocrine tumors: a review of nomenclature, grading, and staging systems. Pancreas. 2010;39:707–12. doi: 10.1097/MPA.0b013e3181ec124e. - DOI - PubMed Smith J, Reidy-Lagunes D. The management of extrapulmonary poorly differentiated (high-grade) neuroendocrine carcinomas. Semin Oncol. 2013;40:100–8. doi: 10.1053/j.seminoncol.2012.11.011. - DOI - PubMed Show all 65 references Publication types Clinical Trial Actions Search in PubMed Search in MeSH Add to Search Research Support, N.I.H., Extramural Actions Search in PubMed Search in MeSH Add to Search Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search MeSH terms Antibodies, Monoclonal, Humanized / adverse effects Actions Search in PubMed Search in MeSH Add to Search Antineoplastic Combined Chemotherapy Protocols / adverse effects Actions Search in PubMed Search in MeSH Add to Search Carcinoma, Neuroendocrine* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Carcinoma, Neuroendocrine* / genetics Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Progression-Free Survival Actions Search in PubMed Search in MeSH Add to Search Substances Antibodies, Monoclonal, Humanized Actions Search in PubMed Search in MeSH Add to Search pembrolizumab Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT03136055 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen PubChem Compound (MeSH Keyword) Grants and funding P30 CA006516/CA/NCI NIH HHS/United States P30 CA008748/CA/NCI NIH HHS/United States P30 CA082103/CA/NCI NIH HHS/United States LinkOut - more resources Full Text Sources Europe PubMed Central Nature Publishing Group PubMed Central eScholarship, University of California - Access Free Full Text Medical ClinicalTrials.gov Research Materials NCI CPTC Antibody Characterization Program
+
+Google Scholar Abstract (Future therapeutic strategies in the treatment of extrapulmonary neuroendocrine carcinoma: a review): … in retrospectivestudies, there is an absence of randomisedcontrolledtrialsinvestigating …in combination with chemotherapy (NCT03136055, NCT05058651 and NCT03728361, Table 5)…
+
+Google Scholar Abstract (Phase II study of pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas: Results of Part A …): … We investigated theefficacyandsafetyof pembrolizumab (PEM)-based therapy inbiomarker-unselected EP-PDNECs. Methods: Open label, multicenter, phase 2 study of PEM-based …
+
+Google Scholar Abstract (Phase II study of pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas: Results of Part B …): … We investigated theefficacyandsafetyof pembrolizumab (PEM)-based therapy inbiomarker-unselected patients (pts) with EP-PDNECs. PEM alone (Part A, N=14) was inactive (ASCO …
+
+Google Scholar Abstract (Efficacyandsafetyof pembrolizumab in previously treated advanced neuroendocrine tumors: results from the phase II KEYNOTE-158 study): Purpose: KEYNOTE-158 (ClinicalTrials.gov identifier: NCT02628067) investigated theefficacyandsafetyof pembrolizumab across multiple cancers. We present results from patients …
+
+Google Scholar Abstract (Phase IIstudyof pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas: Results of Part B …): 4148 Background: The efficacy of immune checkpoint inhibitor (CPI) therapy has not beenestablished in extrapulmonary poorly differentiated neuroendocrine carcinomas (EP-PDNECs)…
+
+Google Scholar Abstract (Phase IIstudyof pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas:Resultsof Part A …): … required in all pts for future biomarkerstudies.Results: Preliminary data from Part A Stage 1… Six (43%) pts went offstudyfor early PD or clinical deterioration before first scheduled scan …
+
+Google Scholar Abstract (Phase IIstudyof pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas: Results of Part A …): … Six (43%) pts went offstudyfor early PD orclinicaldeterioration before first scheduled scanat 9 weeks. PEM was well tolerated with no grade 3-5 AEs attributed to therapy. At last follow …
+
+Google Scholar Abstract (Pembrolizumab-based therapy in previously treated high grade extrapulmonary neuroendocrine carcinomas.): TPS4147 Background: The efficacy of immune checkpoint inhibitors (CPI) has not beenestablished in extrapulmonary high grade neuroendocrine carcinomas (EP-HGNECs), a disease …
+
+Google Scholar Abstract (Pembrolizumab alone and pembrolizumab plus chemotherapy in previously treated, extrapulmonary poorly differentiated neuroendocrine carcinomas): … In terms of PDNECs specifically, beyond ourclinicaltrial, there are anecdotal reports ofresponse to CPIs in high-TMB and/or MSI-H EP-PDNECs [47,48,49,50,51,52]. A subset of treated …
+
+Google Scholar Abstract (Phase IIstudyof pembrolizumab-based therapy in previously treated extrapulmonary poorly differentiated neuroendocrine carcinomas:Resultsof Part B …): … theresultsof Part B (PEM plus chemotherapy). Methods: We conducted an open label,multicenter, phase 2study… In Part B of thistrial, patients were treated with PEM 200 mg IV every 3 …
+	•	Additional evidence from online sources: Primary outcome: Overall Response Rate (ORR)
+Secondary outcomes: Overall Survival (OS); Duration of Response (DOR); Progression Free Survival (PFS)
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Pembrolizumab alone and pembrolizumab plus chemotherapy in previously treated, extrapulmonary poorly differentiated neuroendocrine carcinomas.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/37208512/', 'pmid': '37208512', 'content_scraped': True, 'content_length': 13092}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/37208512/
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

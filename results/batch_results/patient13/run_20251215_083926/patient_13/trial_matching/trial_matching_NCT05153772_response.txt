@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:48:58.427742
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful evidence for this patient's treatment planning. Biologically, the patient has an SSTR-positive, well-differentiated PanNET, which aligns with the study's inclusion of SSTR-positive GEP-NETs. Although the patient is Grade 3 (Ki-67 25%), the preserved SSTR expression makes her a candidate for peptide receptor radionuclide therapy (PRRT), and the study does not explicitly exclude well-differentiated G3 tumors. Clinically, the patient is PRRT-naive and has progressed on multiple standard therapies (chemotherapy, SSA, sunitinib); the study specifically reports outcomes for a PRRT-naive cohort (Cohort 1). The published Phase 2 results showing an objective response rate (ORR) of ~56% are particularly relevant given the patient's high tumor burden and FDG-positivity, suggesting this targeted alpha therapy (212Pb-DOTAMTATE) could offer superior efficacy compared to standard options. This evidence supports considering enrollment in this trial or seeking alpha-emitter therapy as a potent alternative to standard beta-PRRT."
+}

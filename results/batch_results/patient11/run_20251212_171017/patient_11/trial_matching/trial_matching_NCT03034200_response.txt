@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:37:02.432631
+Trial: 72/86
+NCT ID: NCT03034200
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease biology alignment or evidence relevance for this patient. The patient has a high-grade Pancreatic Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%. The study investigated ONC201 primarily in Pheochromocytoma-Paraganglioma (PC-PG) and Desmoplastic Small Round Cell Tumor (DSRCT), based on specific DRD2 overexpression in these subtypes. While the study included a cohort for \"other neuroendocrine tumors,\" the published results (Clin Cancer Res 2022) demonstrated that clinical benefit was concentrated in PC-PG and DSRCT, whereas the \"other\" cohort had a median duration of therapy of only 3 months with limited efficacy. Given the distinct biology of high-grade NEC compared to PC-PG/DSRCT and the lack of efficacy signals in the broader neuroendocrine cohort, this study does not provide actionable evidence to support ONC201 as a consolidation strategy for this patient."
+}

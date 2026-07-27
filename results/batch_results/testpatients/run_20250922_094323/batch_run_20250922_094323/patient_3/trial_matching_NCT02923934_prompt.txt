@@ -1,0 +1,229 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-09-22T11:05:36.825677
+Trial: 23/86
+NCT ID: NCT02923934
+Model: google/gemini-2.5-pro
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 78-year-old patient with no active malignancy and medical history of:
+•	Type 2 diabetes mellitus (on oral antidiabetic drugs for 10 years)
+•	Hypertension and dyslipidemia
+•	Chronic kidney disease (baseline creatinine 1.6–1.8 mg/dL)
+•	Malignant external otitis with secondary osteomyelitis in January 2019 (malaritis); incidental finding of pituitary macroadenoma
+•	Benign prostatic hyperplasia (treated with prostatectomy in 2012)
+•	Glaucoma under ophthalmologic follow-up
+•	Jan–Mar 2021: Incidental elevation of GGT, with liver metastases detected on abdominal ultrasound.
+•	Thoracoabdominal CT: 8 cm mass in the pancreatic uncinate process with internal calcifications. Mesenteric vessels displaced but not infiltrated. Subcentimetric peripancreatic and retroperitoneal lymph nodes. Multiple liver metastases.
+•	Liver biopsy: Well-differentiated NET G1 with Ki67 2%. IHC: chromogranin A+, synaptophysin+, CD56+, CAM5.2+; CK20–, CK7–.
+•	The patient received first-line treatment with Lanreotide Autogel from April 2021 to July 2025.
+2.	Current Clinical Status
+•	Mild toxicity: grade 1 diarrhea
+•	No tumor-related symptoms
+•	ECOG performance status: 0–1
+•	Lab tests: Creatinine 2.24 mg/dL; other parameters unremarkable
+•	MRI (July 2025): Stable liver metastases (at least 25 lesions); largest increased from 55 mm to 58 mm in segment I, and from 65 mm to 68 mm in the right hepatic lobe. Mesenteric root mass increased from 82×40 mm to 90×49 mm.
+Question for Tumorboard:
+What would be the most appropriate second-line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+### Clinical Assessment for Tumor Board
+
+**Patient Summary:**
+This is a 78-year-old male with a well-differentiated, nonfunctioning pancreatic neuroendocrine tumor (NF-Pan-NET), grade 1 (Ki-67 2%), with a large primary mass in the pancreatic uncinate process (90x49 mm) and extensive liver metastases (at least 25 lesions). He has been treated with first-line lanreotide autogel for over four years and now demonstrates clear radiological evidence of disease progression. The patient's performance status is good (ECOG 0–1) and he is asymptomatic from a tumor perspective. Significant comorbidities include type 2 diabetes mellitus, hypertension, and chronic kidney disease, with recent worsening of renal function (creatinine 2.24 mg/dL from a baseline of 1.6–1.8 mg/dL).
+
+**Analysis of Disease Status:**
+- **Diagnosis:** The diagnosis of a well-differentiated G1 NF-Pan-NET is histologically confirmed (liver biopsy), consistent with the IHC profile (chromogranin A+, synaptophysin+). This is typically an indolent tumor, but the patient presents with a high tumor burden.
+- **Progression:** The patient meets the criteria for disease progression on a somatostatin analogue (SSA), as defined by an increase in the size of both the primary pancreatic mass and multiple liver metastases on the most recent MRI. According to both the ENETS 2023 and ESMO 2020 guidelines, this progression warrants consideration of second-line systemic therapy.
+
+**Evaluation of Second-Line Systemic Treatment Options based on Guidelines:**
+
+The primary clinical question is the selection of the most appropriate second-line systemic therapy. The main options for progressive, advanced NF-Pan-NETs, as outlined in the provided ENETS 2023 and ESMO 2020 guidelines, are peptide receptor radionuclide therapy (PRRT), molecular targeted therapies (everolimus, sunitinib), and systemic chemotherapy.
+
+1.  **Peptide Receptor Radionuclide Therapy (PRRT):**
+    - **Guideline Context:** PRRT is a recommended second-line treatment for progressive, SSTR-positive G1-G2 NF-Pan-NETs (ENETS 2023, Level 2b, Grade B; ESMO 2020, Level III, A).
+    - **Patient-Specific Considerations:**
+        - A critical piece of information is missing: there is no mention of a somatostatin receptor imaging (SRI) scan, such as a 68Ga-DOTATATE PET/CT. This imaging is mandatory to confirm sufficient and homogeneous SSTR expression, which is a prerequisite for PRRT eligibility.
+        - The patient's worsening renal function (creatinine 2.24 mg/dL) poses a significant relative contraindication. Both guidelines acknowledge the risk of iatrogenic adverse events, including renal dysfunction, with PRRT (ENETS 2023, Section 4.1; ESMO 2020, Section on PRRT). The existing chronic kidney disease significantly increases the risk of further, potentially irreversible, nephrotoxicity.
+
+2.  **Molecular Targeted Therapies (Everolimus and Sunitinib):**
+    - **Guideline Context:** Both everolimus and sunitinib are strongly recommended for progressive G1-G2 NF-Pan-NETs based on Level 1a evidence (ENETS 2023, Grade A; ESMO 2020, Level I, A).
+    - **Patient-Specific Considerations:**
+        - **Everolimus:** The RADIANT-3 trial demonstrated a significant PFS benefit. However, a known side effect is hyperglycemia (ESMO 2020). Given the patient's history of type 2 diabetes, initiating everolimus would require close glycemic monitoring and potential adjustment of his oral antidiabetic medications.
+        - **Sunitinib:** The pivotal phase 3 trial also showed a significant PFS improvement. A common adverse event is hypertension (ESMO 2020). The patient's pre-existing hypertension would need to be carefully managed. Sunitinib is also associated with diarrhea, which could exacerbate his current grade 1 toxicity.
+        - The primary goal of these agents is typically disease stabilization, as objective response rates are modest (<10%) (ESMO 2020).
+
+3.  **Systemic Chemotherapy:**
+    - **Guideline Context:** Chemotherapy is a key treatment modality for advanced Pan-NETs. The ENETS 2023 guidelines suggest temozolomide with capecitabine (CAPTEM) or streptozotocin (STZ) + 5-FU as options for progressive G1-G2 NF-Pan-NETs (Level 2b, Grade B). ESMO 2020 also recommends these regimens (Level II, A/B).
+    - **Patient-Specific Considerations:**
+        - **Streptozotocin (STZ)-based regimens:** STZ is known for its significant renal toxicity (ENETS 2023, Section 4.1). Given the patient's elevated creatinine of 2.24 mg/dL, STZ-based chemotherapy would carry a high risk of inducing or accelerating renal failure and should be avoided.
+        - **Temozolomide and Capecitabine (CAPTEM):** This regimen has a more favorable renal safety profile. The ECOG-ACRIN E2211 trial demonstrated a superior PFS for CAPTEM over temozolomide alone and a notable objective response rate (40% per ENETS 2023 summary). The ENETS guidelines note that chemotherapy is a consideration for patients with bulky disease or when tumor shrinkage is a goal (Section 3.4). Given this patient's high tumor burden, the potential for a volumetric response with CAPTEM is a significant clinical advantage over the primarily cytostatic effect of targeted agents.
+
+**Conclusion of Assessment:**
+The patient has high-burden, progressive metastatic G1 NF-Pan-NET requiring second-line therapy. His good performance status allows for various treatment options. However, his worsening renal impairment is a major limiting factor for certain therapies. PRRT is not currently a viable option due to the lack of required SSTR imaging and the high risk of nephrotoxicity. STZ-based chemotherapy is similarly contraindicated due to renal risk. The choice lies between targeted agents (everolimus/sunitinib) and the CAPTEM chemotherapy regimen. While targeted agents are well-supported by evidence, they would require careful management of the patient's comorbidities (diabetes and hypertension) and primarily offer disease stabilization. The CAPTEM regimen offers a higher probability of objective tumor response, which may be beneficial in the setting of high tumor burden, and has a more favorable safety profile with respect to the patient's key comorbidity of chronic kidney disease.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Monitor needed based on assessment
+	•	Question for Tumorboard: What would be the most appropriate second-line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT02923934
+	•	Title: A Phase II Trial of Ipilimumab and Nivolumab for the Treatment of Rare Cancers
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Ipilimumab; Nivolumab
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+1. Signed Written Informed Consent
+
+   * Subjects must be willing and able to comply with scheduled visits, treatment schedule, laboratory testing, and other requirements of the study
+2. Target Population
+
+   * Histologically confirmed Upper GI malignancies (Cholangiocarcinoma/ duodenal carcinoma - collect MSI (microsatellite instability) status); Neuroendocrine tumours (inc. pancreatic, bronchial and intestinal carcinoid tumours) and Rare Gynaecological tumours (including but will not be limited to: vaginal or vulval carcinomas, clear cell carcinoma of the ovary, low grade serous ovarian cancer, mixed Mullarian tumours (carcinosarcoma), sarcomas of the female genital tract and granulosa cell tumours).
+   * Eastern Cooperative Oncology Group (ECOG) performance status of 1
+   * Prior systemic therapy is permitted if it was completed at least 4 weeks prior to enrolment, and all related adverse events have either returned to baseline or stabilized or subjects are not suitable for, or if declining established standard therapies.
+   * Prior radiotherapy must have been completed at least 2 weeks prior to study drug administration.
+   * Measurable disease by CT or MRI per RECIST 1.1 criteria
+   * Tumour tissue from an unresectable or metastatic site of disease must be provided for biomarker analyses. If an insufficient amount of tumour tissue from an unresectable or metastatic site is available prior to the start of the screening phase, subjects must consent to allow the acquisition of additional tumour tissue for performance of biomarker analyses.
+   * Screening laboratory values must meet the following criteria and should be obtained within 14 days prior to randomization:
+
+     * WBC (white blood cells) \> or = to 2000/μL
+     * Neutrophils \> or = to 1500/μL
+     * Platelets \> or = to 100 x103/μL
+     * Hemoglobin \> 9.0 g/dL
+     * Serum creatinine \< or = to 1.5 x ULN or creatinine clearance (CrCl) 40 mL/min (using the Cockcroft-Gault formula)
+     * AST/ALT (aspartate transaminase/alanine transaminase) \< or = to 3 x ULN
+     * Total Bilirubin \< or = to 1.5 x ULN (Upper limit of normal) (except subjects with Gilbert Syndrome, who can have total bilirubin \< 3.0 mg/dL).
+   * Subject Re-enrolment: This study permits the re-enrolment of a subject that has discontinued the study as a pre-treatment failure (i.e. subject has not been treated) after obtaining agreement from the medical monitor prior to re enrolling a subject. If re-enrolled, the subject must be re-consented.
+3. Age and Reproductive Status
+
+   * Men and women, \> or = to 18 years of age
+   * Women of childbearing potential (WOCBP) must use method(s) of contraception. WOCBP should therefore use an adequate method to avoid pregnancy for 23 weeks (30 days plus the time required for Nivolumab to undergo five half lives) after the last dose of investigational drug.
+   * Women must have a negative serum or urine pregnancy test (minimum sensitivity 25 IU/L or equivalent units of HCG) within 24 hours prior to the start of investigational product.
+   * Women must not be breastfeeding
+   * Men who are sexually active with WOCBP must use any contraceptive method with a failure rate of less than 1 percent per year. Men that are sexually active with WOCBP must follow instructions for birth control when the half life of the investigational drug is greater than 24 hours, contraception should be continued for a period of 90 days plus the time required for the investigational drug to undergo five half lives. The half life of nivolumab and ipilimumab is up to 25 days and 18 days, respectively. Given the blinded nature of the study, men who are sexually active with WOCBP must continue contraception for 31 weeks (90 days plus the time required for nivolumab to undergo five half lives) after the last dose of investigational drug.
+   * Women who are not of childbearing potential (i.e. who are postmenopausal or surgically sterile and azoospermic men do not require contraception.
+
+Exclusion Criteria:
+
+1. Target Disease Exceptions
+
+   * Active brain metastases or leptomeningeal metastases. Subjects with brain metastases are eligible if these have been treated and there is no magnetic resonance imaging (MRI except where contraindicated in which CT scan is acceptable) evidence of progression for at least 8 weeks after treatment is complete and within 28 days prior to first dose of study drug administration. Cases should be discussed with the medical monitor. There must also be no requirement for immunosuppressive doses of systemic corticosteroids (\> 10 mg/day prednisone equivalents) for at least 2 weeks prior to study drug administration.
+2. Medical History and Concurrent Diseases
+
+   * Prior combination treatment directed against the PD-1/PDL1 (Programmed Death Ligand 1) axis (anti PD 1, anti PD-L1, anti PD L2), and anti CTLA 4 antibody. Prior monotherapy with these agents or other immune-stimulating/regulating agents is permitted.
+   * Any serious or uncontrolled medical disorder that, in the opinion of the investigator, may increase the risk associated with study participation or study drug administration, impair the ability of the subject to receive protocol therapy, or interfere with the interpretation of study results.
+   * Prior malignancy active within the previous 3 years except for locally curable cancers that have been apparently cured, such as basal or squamous cell skin cancer, superficial bladder cancer, or carcinoma in situ of the prostate, cervix, or breast.
+   * Subjects with active, known or suspected autoimmune disease. Subjects with vitiligo, type I diabetes mellitus, residual hypothyroidism due to autoimmune condition only requiring hormone replacement, psoriasis not requiring systemic treatment, or conditions not expected to recur in the absence of an external trigger are permitted to enroll.
+   * Subjects with a condition requiring systemic treatment with either corticosteroids (\> 10 mg daily prednisone equivalents) or other immunosuppressive medications within 14 days of study drug administration. Inhaled or topical steroids, and adrenal replacement doses \> 10 mg daily prednisone equivalents are permitted in the absence of active autoimmune disease.
+3. Physical and Laboratory Test Findings
+
+   * Any positive test result for hepatitis B virus or hepatitis C virus indicating acute or chronic infection
+   * Known history of testing positive for human immunodeficiency virus (HIV) or known acquired immunodeficiency syndrome (AIDS).
+4. Allergies and Adverse Drug Reaction
+
+   * History of allergy to study drug components.
+   * History of severe hypersensitivity reaction to any monoclonal antibody.
+5. Sex and Reproductive Status
+
+   * WOCBP who are pregnant or breastfeeding
+   * Women with a positive pregnancy test at enrolment or prior to administration of study medication.
+6. Other Exclusion Criteria
+
+   * Prisoners or subjects who are involuntarily incarcerated
+   * Subjects who are compulsorily detained for treatment of either a psychiatric or physical (e.g. infectious disease) illness. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The three tumour streams that will be studied in this protocol are: (i) upper GI malignancies (comprising intra-hepatic/extra-hepatic cholangiocarcinomas,gall bladder cancers and duodenal cancers).); (ii) neuroendocrine tumours (inc. Pancreatic, bronchial and intestinal carcinoid tumours) and (iii) rare gynaecological tumours (including but will not be limited to: vaginal or vulval carcinomas, clear cell carcinoma of the ovary, low grade serous ovarian cancer, mixed mullarian tumours (carcinosarcoma), sarcomas of the female genital tract and granulosa cell tumours).
+
+The role of immunotherapy is being defined in more common cancer types, however because of their rarity, the efficacy of immunotherapy for these cancers is poorly defined.
+
+This protocol provides an important opportunity to establish whether the combination of nivolumab \& ipilimumab has efficacy in these cancers.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Listed publications appear to contain results; Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/32729929/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Klein O, Kee D, Nagrial A, Markman B, Underhill C, Michael M, Jackett L, Lum C, Behren A, Palmer J, Tebbutt NC, Carlino MS, Cebon J. Evaluation of Combination Nivolumab and Ipilimumab Immunotherapy in Patients With Advanced Biliary Tract Cancers: Subgroup Analysis of a Phase 2 Nonrandomized Clinical Trial. JAMA Oncol. 2020 Sep 1;6(9):1405-1409. doi: 10.1001/jamaoncol.2020.2814.
+• Evaluation of Combination Nivolumab and Ipilimumab Immunotherapy in Patients With Advanced Biliary Tract Cancers: Subgroup Analysis of a Phase 2 Nonrandomized Clinical Trial. (PMID: 32729929)
+	•	Key findings from publications: PubMed Abstract: Biliary tract cancers represent a rare group of malignant conditions with very limited treatment options. Patients with advanced disease have a poor outcome with current therapies.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Importance: Biliary tract cancers represent a rare group of malignant conditions with very limited treatment options. Patients with advanced disease have a poor outcome with current therapies. Objective: To evaluate the efficacy and safety of combination immunotherapy with nivolumab and ipilimumab in patients with advanced biliary tract cancers. Design, setting, and participants: The CA209-538 prospective multicenter phase 2 nonrandomized clinical trial included patients with advanced rare cancers including patients with biliary tract cancers. This subgroup analysis evaluated 39 patients from CA209-538 with biliary tract cancers who were enrolled from December 2017 to December 2019. Most of the patients (n = 33) had experienced disease progression after 1 or more lines of therapy and had tumor tissue available for biomarker research. Interventions: Patients received treatment with nivolumab at a dose of 3 mg/kg and ipilimumab at 1 mg/kg every 3 weeks for 4 doses, followed by nivolumab 3 mg/kg every 2 weeks and continued for up to 96 weeks until disease progression or the development of unacceptable toxic events. Main outcomes and measures: The primary end point was disease control rate (complete remission, partial remission, or stable disease) as assessed by RECIST 1.1. Results: Among the 39 patients included in this subgroup analysis of a phase 2 clinical trial (20 men, 19 women; mean [range] age, 65 [37-81] years), the objective response rate was 23% (n = 9) with a disease control rate of 44% (n = 17); all responders had received prior chemotherapy, and none had a microsatellite unstable tumor. Responses were exclusively observed in patients with intrahepatic cholangiocarcinoma and gallbladder carcinoma. The median duration of response was not reached (range, 2.5 to ≥23 months). The median progression-free survival was 2.9 months (95% CI, 2.2-4.6 months), and overall survival was 5.7 months (95% CI, 2.7-11.9 months). Immune-related toxic events were reported in 49% of patients (n = 19), with 15% (n = 6) experiencing grade 3 or 4 events. Conclusions and relevance: This subgroup analysis of a phase 2 clinical trial found that combination immunotherapy with nivolumab and ipilimumab was associated with substantial positive outcomes patients with advanced biliary tract cancers. This treatment compares favorably to single-agent anti-programmed cell death protein 1 (anti-PD-1) therapy and warrants further investigation. Ongoing translational research is focused on identifying biomarkers that can predict treatment response. Trial registration: ClinicalTrials.gov Identifier: NCT02923934 . PubMed Disclaimer Conflict of interest statement Conflict of Interest Disclosures : Dr Klein reports speaker fees from Bristol-Myers Squibb and MSD, travel support and personal fees from Bristol-Myers Squibb, personal fees from MSD Australia outside the submitted work, and grants from the Federal Department of Health Australia during the conduct of the study; Dr Kee reports honoraria/advisory board fees and personal fees from Novartis and travel and other support from Bristol-Myers Squibb outside the submitted work; Dr Nagrial reports personal fees from Bristol-Myers Squibb, MSD, Roche, and AstraZeneca outside the submitted work. Dr Markman reports honoraria/advisory board fees from Novartis and Amgen and nonfinancial support from Akesobio outside the submitted work; Dr Underhill reports grants from Border Medical Oncology Research Unit during the conduct of the study; Dr Palmer reports support from the Olivia Newton-John Cancer Research Institute during the conduct of the study; Dr Tebbutt reports personal fees from Bristol-Myers Squibb outside the submitted work; Dr Carlino reports personal fees from Bristol-Myers Squibb, MSD, personal Novartis, Amgen, Pierre Fabre, Merck Serono, Sanofi, Ideaya, Nektar, and Eisai and honoraria/advisory board fees from Bristol-Myers Squibb, Amgen, Novartis, MSD, Roche, Pierre Fabre, Ideaya, Sanofi, Merck, and Nektar outside the submitted work. Dr Cebon reported grants from Bristol-Myers Squibb during the conduct of the study and honoraria/advisory board fees from Bristol-Myers Squibb, Amgen, Novartis, and MSD outside the submitted work. No other disclosures are reported. Figures Figure.. Kaplan-Meier Curve of Overall Survival and… Figure.. Kaplan-Meier Curve of Overall Survival and Progression Free Survival for the Entire Cohort (A,… Figure.. Kaplan-Meier Curve of Overall Survival and Progression Free Survival for the Entire Cohort (A, B) and Previously Treated Patients (C, D) See this image and copyright information in PMC Similar articles Immunotherapy of Ipilimumab and Nivolumab in Patients with Advanced Neuroendocrine Tumors: A Subgroup Analysis of the CA209-538 Clinical Trial for Rare Cancers. Klein O, Kee D, Markman B, Michael M, Underhill C, Carlino MS, Jackett L, Lum C, Scott C, Nagrial A, Behren A, So JY, Palmer J, Cebon J. Klein O, et al. Clin Cancer Res. 2020 Sep 1;26(17):4454-4459. doi: 10.1158/1078-0432.CCR-20-0621. Epub 2020 Jun 12. Clin Cancer Res. 2020. PMID: 32532787 Clinical Trial. A Phase 2 Multi-institutional Study of Nivolumab for Patients With Advanced Refractory Biliary Tract Cancer. Kim RD, Chung V, Alese OB, El-Rayes BF, Li D, Al-Toubah TE, Schell MJ, Zhou JM, Mahipal A, Kim BH, Kim DW. Kim RD, et al. JAMA Oncol. 2020 Jun 1;6(6):888-894. doi: 10.1001/jamaoncol.2020.0930. JAMA Oncol. 2020. PMID: 32352498 Free PMC article. Clinical Trial. First-Line Nivolumab Plus Low-Dose Ipilimumab for Microsatellite Instability-High/Mismatch Repair-Deficient Metastatic Colorectal Cancer: The Phase II CheckMate 142 Study. Lenz HJ, Van Cutsem E, Luisa Limon M, Wong KYM, Hendlisz A, Aglietta M, García-Alfonso P, Neyns B, Luppi G, Cardin DB, Dragovich T, Shah U, Abdullaev S, Gricar J, Ledeine JM, Overman MJ, Lonardi S. Lenz HJ, et al. J Clin Oncol. 2022 Jan 10;40(2):161-170. doi: 10.1200/JCO.21.01015. Epub 2021 Oct 12. J Clin Oncol. 2022. PMID: 34637336 Clinical Trial. Experience With Anti-PD-1 Antibody, Camrelizumab, Monotherapy for Biliary Tract Cancer Patients and Literature Review. Shen T, Zheng S, Geng L, Liu Z, Xu J, Lin B, Qian J, Zheng S. Shen T, et al. Technol Cancer Res Treat. 2020 Jan-Dec;19:1533033820979703. doi: 10.1177/1533033820979703. Technol Cancer Res Treat. 2020. PMID: 33308041 Free PMC article. Review. Efficacy and safety of nivolumab plus ipilimumab in gastrointestinal cancers: a systematic review and meta-analysis. Dai B, Jiang J, Yu X, Zhan H, Hu Z. Dai B, et al. Front Oncol. 2025 Jan 7;14:1515992. doi: 10.3389/fonc.2024.1515992. eCollection 2024. Front Oncol. 2025. PMID: 39839773 Free PMC article. See all similar articles Cited by Immunotherapy in Biliary Tract Cancers: Current Standard-of-Care and Emerging Strategies. Lo JH, Agarwal R, Goff LW, Heumann TR. Lo JH, et al. Cancers (Basel). 2023 Jun 23;15(13):3312. doi: 10.3390/cancers15133312. Cancers (Basel). 2023. PMID: 37444422 Free PMC article. Review. Effective treatment of gallbladder neuroendocrine carcinoma with nivolumab. Kanda S, Hiyama K, Kirino I, Fukui Y, Terashima H. Kanda S, et al. Clin Case Rep. 2023 Oct 11;11(10):e8040. doi: 10.1002/ccr3.8040. eCollection 2023 Oct. Clin Case Rep. 2023. PMID: 37841882 Free PMC article. Cholangiocarcinoma in the Era of Immunotherapy. Manthopoulou E, Ramai D, Dhar J, Samanta J, Ioannou A, Lusina E, Sacco R, Facciorusso A. Manthopoulou E, et al. Vaccines (Basel). 2023 Jun 5;11(6):1062. doi: 10.3390/vaccines11061062. Vaccines (Basel). 2023. PMID: 37376451 Free PMC article. Review. Gallbladder cancer. Roa JC, García P, Kapoor VK, Maithel SK, Javle M, Koshiol J. Roa JC, et al. Nat Rev Dis Primers. 2022 Oct 27;8(1):69. doi: 10.1038/s41572-022-00398-y. Nat Rev Dis Primers. 2022. PMID: 36302789 Free PMC article. Review. A prospective multicenter phase II study of FOLFIRINOX as a first-line treatment for patients with advanced and recurrent biliary tract cancer. Takahara N, Nakai Y, Isayama H, Sasaki T, Morine Y, Watanabe K, Ueno M, Ioka T, Kanai M, Kondo S, Okano N, Koike K. Takahara N, et al. Invest New Drugs. 2023 Feb;41(1):76-85. doi: 10.1007/s10637-022-01322-7. Epub 2022 Dec 2. Invest New Drugs. 2023. PMID: 36459291 Free PMC article. Clinical Trial. See all "Cited by" articles References Valle JW, Lamarca A, Goyal L, Barriuso J, Zhu AX. New Horizons for Precision Medicine in Biliary Tract Cancers. Cancer Discov. 2017;7(9):943-962. doi:10.1158/ 2159-8290.CD -17-0245 - DOI - PMC - PubMed Nakamura H, Arai Y, Totoki Y, et al. . Genomic spectra of biliary tract cancer. Nat Genet. 2015;47(9):1003-1010. doi:10.1038/ng.3375 - DOI - PubMed Jusakul A, Cutcutache I, Yong CH, et al. . Whole-Genome and Epigenomic Landscapes of Etiologically Distinct Subtypes of Cholangiocarcinoma. Cancer Discov. 2017;7(10):1116-1135. doi:10.1158/ 2159-8290.CD -17-0368 - DOI - PMC - PubMed Valle J, Wasan H, Palmer DH, et al. ; ABC-02 Trial Investigators . Cisplatin plus gemcitabine versus gemcitabine for biliary tract cancer. N Engl J Med. 2010;362(14):1273-1281. doi:10.1056/NEJMoa0908721 - DOI - PubMed Lamarca A, Palmer DH, Wasan HS, et al. . ABC-06 vertical bar A randomised phase III, multi-centre, open-label study of active symptom control (ASC) alone or ASC with oxaliplatin / 5-FU chemotherapy (ASC plus mFOLFOX) for patients (pts) with locally advanced / metastatic biliary tract cancers (ABC) previously-treated with cisplatin/gemcitabine (CisGem) chemotherapy. J Clin Oncol. 2019;37(15).doi:10.1200/JCO.2019.37.15_suppl.4003 - DOI Show all 16 references Publication types Clinical Trial, Phase II Actions Search in PubMed Search in MeSH Add to Search Multicenter Study Actions Search in PubMed Search in MeSH Add to Search MeSH terms Adult Actions Search in PubMed Search in MeSH Add to Search Aged Actions Search in PubMed Search in MeSH Add to Search Aged, 80 and over Actions Search in PubMed Search in MeSH Add to Search Antibodies, Monoclonal / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Antibodies, Monoclonal / adverse effects Actions Search in PubMed Search in MeSH Add to Search Biliary Tract Neoplasms / drug therapy* Actions Search in PubMed Search in MeSH Add to Search Biliary Tract Neoplasms / pathology Actions Search in PubMed Search in MeSH Add to Search Disease Progression Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Immunotherapy / adverse effects Actions Search in PubMed Search in MeSH Add to Search Ipilimumab / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Ipilimumab / adverse effects Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Microsatellite Instability / drug effects Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Nivolumab / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Nivolumab / adverse effects Actions Search in PubMed Search in MeSH Add to Search Programmed Cell Death 1 Receptor / antagonists & inhibitors Actions Search in PubMed Search in MeSH Add to Search Programmed Cell Death 1 Receptor / immunology Actions Search in PubMed Search in MeSH Add to Search Progression-Free Survival Actions Search in PubMed Search in MeSH Add to Search Substances Antibodies, Monoclonal Actions Search in PubMed Search in MeSH Add to Search Ipilimumab Actions Search in PubMed Search in MeSH Add to Search Programmed Cell Death 1 Receptor Actions Search in PubMed Search in MeSH Add to Search Nivolumab Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT02923934 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen LinkOut - more resources Full Text Sources Europe PubMed Central Ovid Technologies, Inc. PubMed Central Silverchair Information Systems Medical ClinicalTrials.gov Research Materials NCI CPTC Antibody Characterization Program
+	•	Additional evidence from online sources: Primary outcome: To determine the clinical efficacy of the combination treatment of ipilimumab with nivolumab in rare cancers.
+Secondary outcomes: To identify whether a common predictive biomarker or immune signature can be identified in responding patients that can occur irrespective of tumour type.
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Evaluation of Combination Nivolumab and Ipilimumab Immunotherapy in Patients With Advanced Biliary Tract Cancers: Subgroup Analysis of a Phase 2 Nonrandomized Clinical Trial.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/32729929/', 'pmid': '32729929', 'content_scraped': True, 'content_length': 12185}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/32729929/
+Analysis notes: Found 1 listed publication(s); Listed publications appear to contain results; Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

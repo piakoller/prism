@@ -1,0 +1,56 @@
+=== LLM THERAPY RECOMMENDATION REASONING ===
+Timestamp: 2025-09-29T17:27:59.691928
+Patient ID: 1
+Model: google/gemini-2.5-pro
+============================================================
+
+PURPOSE: This file captures the LLM's reasoning about therapy recommendations
+based on the pre-analyzed trial data.
+
+LLM'S THERAPY RECOMMENDATION:
+==================================================
+After clinical stabilization of the current gastrointestinal bleeding episode, we recommend the following staged management plan:
+
+1.  **Essential Staging and Assessment:**
+    *   The immediate next step is to perform a **68Ga-DOTATATE PET/CT**. This is critical to definitively assess for distant metastatic disease and to determine the tumor's somatostatin receptor (SSTR) expression status.
+    *   Concurrently, the patient must be evaluated by a multidisciplinary team at a high-volume center, including an experienced hepatopancreatobiliary (HPB) surgeon, to assess the technical feasibility and risks of a complex, curative-intent multivisceral resection.
+
+2.  **Definitive Therapeutic Strategy (Contingent on Staging and Surgical Assessment):**
+
+    *   **Scenario A: If the tumor is deemed technically resectable and the 68Ga-DOTATATE PET/CT shows no distant metastases:**
+        *   We recommend proceeding with **upfront multivisceral resection** (including distal pancreatectomy, splenectomy, partial gastrectomy, and left adrenalectomy). This is the most direct approach to achieve definitive local control of the life-threatening bleeding and offers the only potential for cure.
+
+    *   **Scenario B: If the tumor is deemed borderline resectable, or resectable but with prohibitive operative risk:**
+        *   We recommend **neoadjuvant (conversion) therapy** to downstage the tumor, followed by surgical re-evaluation. The preferred regimen is **chemotherapy with capecitabine and temozolomide (CAPTEM)**.
+        *   If the 68Ga-DOTATATE PET/CT demonstrates high and homogenous SSTR expression (uptake in all tumor lesions significantly higher than liver background), **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE** can be considered as an alternative neoadjuvant approach.
+
+    *   **Scenario C: If the 68Ga-DOTATATE PET/CT reveals unresectable distant metastases:**
+        *   The goal of therapy becomes palliative. We recommend initiating systemic therapy with **CAPTEM**.
+        *   Local palliative measures for bleeding, such as targeted radiation therapy or further arterial embolization, should be considered in parallel.
+
+❌ NO EXPLICIT TRIAL SELECTION REASONING PROVIDED
+The LLM did not provide explicit reasoning about trial selection.
+This may indicate the prompt needs to be updated to enforce this requirement.
+
+FULL THERAPY RECOMMENDATION CONTEXT:
+==================================================
+THERAPY RECOMMENDATION:
+After clinical stabilization of the current gastrointestinal bleeding episode, we recommend the following staged management plan:
+
+1.  **Essential Staging and Assessment:**
+    *   The immediate next step is to perform a **68Ga-DOTATATE PET/CT**. This is critical to definitively assess for distant metastatic disease and to determine the tumor's somatostatin receptor (SSTR) expression status.
+    *   Concurrently, the patient must be evaluated by a multidisciplinary team at a high-volume center, including an experienced hepatopancreatobiliary (HPB) surgeon, to assess the technical feasibility and risks of a complex, curative-intent multivisceral resection.
+
+2.  **Definitive Therapeutic Strategy (Contingent on Staging and Surgical Assessment):**
+
+    *   **Scenario A: If the tumor is deemed technically resectable and the 68Ga-DOTATATE PET/CT shows no distant metastases:**
+        *   We recommend proceeding with **upfront multivisceral resection** (including distal pancreatectomy, splenectomy, partial gastrectomy, and left adrenalectomy). This is the most direct approach to achieve definitive local control of the life-threatening bleeding and offers the only potential for cure.
+
+    *   **Scenario B: If the tumor is deemed borderline resectable, or resectable but with prohibitive operative risk:**
+        *   We recommend **neoadjuvant (conversion) therapy** to downstage the tumor, followed by surgical re-evaluation. The preferred regimen is **chemotherapy with capecitabine and temozolomide (CAPTEM)**.
+        *   If the 68Ga-DOTATATE PET/CT demonstrates high and homogenous SSTR expression (uptake in all tumor lesions significantly higher than liver background), **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE** can be considered as an alternative neoadjuvant approach.
+
+    *   **Scenario C: If the 68Ga-DOTATATE PET/CT reveals unresectable distant metastases:**
+        *   The goal of therapy becomes palliative. We recommend initiating systemic therapy with **CAPTEM**.
+        *   Local palliative measures for bleeding, such as targeted radiation therapy or further arterial embolization, should be considered in parallel.
+

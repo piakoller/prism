@@ -1,0 +1,10 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:59:45.801604
+Trial: 17/86
+NCT ID: NCT03079440
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a Grade 1 well-differentiated NET with a Ki-67 of 2%, whereas this trial (NCT03079440) specifically investigates the efficacy of Temozolomide and Capecitabine (TEMCAP) in patients with Grade 3 NETs (Ki-

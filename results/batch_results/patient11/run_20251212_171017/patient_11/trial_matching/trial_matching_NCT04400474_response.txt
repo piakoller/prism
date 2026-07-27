@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:35:07.046174
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study meets the biological alignment criterion as it includes a specific cohort for G3 NEC (Cohort 6), which matches the patient's diagnosis of pancreatic NEC G3 (Ki-67 95%). Clinically, the combination of cabozantinib and atezolizumab represents a potential future therapeutic option upon progression (second-line), which is relevant given the aggressive nature of the patient's disease. However, the criterion for evidence quality and relevance is not met because the provided published results are explicitly limited to the Adrenocortical Carcinoma cohort (Cohort 3). There are no efficacy or safety data provided for the NEC G3 cohort in the input. Without specific outcomes for the relevant tumor type, the study does not currently provide actionable evidence to inform treatment recommendations for this patient."
+}

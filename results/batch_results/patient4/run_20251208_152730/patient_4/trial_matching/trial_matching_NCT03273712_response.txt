@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:59:42.696848
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence to guide treatment for this patient primarily because no published results (efficacy or safety data) are available; the provided sources only cite review articles mentioning the trial's existence. Furthermore, the patient has previously received PRRT (2017–2018), whereas this study explicitly excludes patients with prior PRRT (90Y-DOTATOC or 177Lu-DOTATOC). Consequently, even if results were available, they would reflect a PRRT-naive population, making the evidence difficult to transfer to a re-treatment scenario where cumulative toxicity and resistance mechanisms differ. While the disease biology (SSTR-positive NET) aligns, the lack of data and the specific exclusion of the patient's clinical context (prior PRRT) prevent this study from offering actionable insights."
+}

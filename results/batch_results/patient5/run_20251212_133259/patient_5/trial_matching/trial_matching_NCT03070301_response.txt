@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:59:02.940225
+Trial: 64/86
+NCT ID: NCT03070301
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90% (small-cell type). In contrast, the study (NCT03070301) enrolled patients with well-differentiated (WD) neuroendocrine tumors (NETs) of foregut origin with a Ki-67 ≤ 30%. The biological behavior and therapeutic sensitivity of high-grade NECs differ fundamentally from well-differentiated NETs; NECs are typically treated with platinum-based chemotherapy, whereas mTOR inhibitors like everolimus are reserved for well-differentiated disease. Furthermore, the study results indicated insufficient activity and significant toxicity for the combination of ribociclib and everolimus in the WDNET population, offering no transferable evidence to support its use in an aggressive NEC setting."
+}

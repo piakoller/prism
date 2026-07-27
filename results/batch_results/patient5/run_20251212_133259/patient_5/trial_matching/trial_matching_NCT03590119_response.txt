@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:51:39.132137
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant due to a fundamental mismatch in disease biology and treatment indication. The patient has a Mixed Neuroendocrine–Non-neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90%. In contrast, the LUTIA trial specifically recruits patients with well-differentiated neuroendocrine tumors (NETs) with a Ki-67 index ≤20% and confirmed somatostatin receptor expression. While PRRT (Lutetium-177-DOTATATE) is a standard therapy for well-differentiated NETs, it is generally not indicated for poorly differentiated, high-grade NECs, which are typically treated with platinum-based chemotherapy (as this patient received). Furthermore, the study investigates intra-arterial delivery for liver-dominant metastases, whereas this patient currently has no evidence of active disease (biopsy-negative residual pararenal lesion) and does not fit the profile of liver-dominant, PRRT-eligible disease. Consequently, the study's evidence regarding PRRT optimization cannot inform treatment decisions for this high-grade NEC case."
+}

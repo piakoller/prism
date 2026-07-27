@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:28:18.610378
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The COMPETE trial provides critical Phase 3 evidence relevant to this patient's care. Biologically, the patient matches the study population perfectly (G1, SSTR-positive PanNET). Although the patient currently has stable disease and the trial enrolled patients with progressive disease, the results demonstrating superior progression-free survival (23.9 vs 14.1 months) with 177Lu-edotreotide PRRT compared to Everolimus are highly applicable. This evidence informs the choice of systemic therapy should the patient be deemed unresectable or progress in the future. Furthermore, given the clinical consideration of neoadjuvant PRRT to facilitate R0 resection for this locally advanced/oligometastatic case, the study's confirmation of PRRT's robust efficacy supports its biological rationale in this setting. The evidence helps prioritize PRRT over mTOR inhibitors in the treatment algorithm for SSTR-positive GEP-NETs."
+}

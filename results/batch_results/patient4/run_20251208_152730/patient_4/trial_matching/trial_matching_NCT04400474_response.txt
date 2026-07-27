@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T16:05:40.786321
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "While the study design is biologically aligned (Cohort 5 includes well-differentiated digestive NETs) and the treatment context is applicable (salvage therapy after PRRT and TKI failure), the study fails the evidence quality and relevance criterion. The provided published results are specific to the Adrenocortical Carcinoma cohort, with no efficacy or safety data reported for the digestive NET cohort. Without outcomes data specific to neuroendocrine tumors, the results from a biologically distinct malignancy (adrenocortical carcinoma) cannot be extrapolated to guide therapy for this patient's G2 duodenal NET."
+}

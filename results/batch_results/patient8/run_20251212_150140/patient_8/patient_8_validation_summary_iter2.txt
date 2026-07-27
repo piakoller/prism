@@ -1,0 +1,52 @@
+=== VALIDATION ITERATION 2 ===
+
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 8
+Timestamp: 2025-12-12T15:43:55.571573
+Overall Status: PASSED
+Requires Regeneration: NO
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 3
+Trials available: 11
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: PASS
+Status: PASS
+
+Detailed Reasoning:
+The therapy recommendation is comprehensive, accurate, and safe, effectively addressing the complex clinical scenario of a patient with Stage IV Si-NET who has achieved a partial response to second-line PRRT.
+
+**1. Completeness:**
+The recommendation addresses all aspects of the patient's current status. It validates the sequencing of therapy (PRRT first, then surgery), which is the core clinical question. It covers the surgical plan (primary, nodes, metastases), perioperative safety (carcinoid crisis prophylaxis), and post-operative follow-up. It also acknowledges the Ki-67 discrepancy noted in the assessment, correctly interpreting that the tumor remains well-differentiated (G1/G2) regardless of the specific value (2% vs 6%).
+
+**2. Accuracy:**
+*   **Guideline Interpretation:** The recommendation correctly applies ENETS 2024 guidelines regarding the "combination strategy" (PRRT + Surgery) for diffuse disease and the timing of surgery (delayed >6 months). It accurately reflects the consensus that cytoreductive surgery is indicated when feasible, especially after a response to systemic therapy.
+*   **Trial Citations:**
+    *   **NCT05448157:** The suggestion to consider radioguided surgery (if available) is appropriately supported by this trial citation, framed as an adjunctive tool rather than a mandatory standard.
+    *   **NCT04727723:** This observational study is correctly used to validate the efficacy of the PRRT already administered.
+    *   **NCT03049189 (COMPETE):** Correctly referenced to contextualize the choice of radionuclide therapy over other options like Everolimus.
+
+**3. Consistency:**
+The recommendation is consistent with the patient's "Partial Response" status and "good clinical condition." It logically connects the positive response to PRRT with the decision to proceed to cytoreduction, aligning with the assessment's conclusion that surgery is now a valid consideration.
+
+**4. Safety:**
+*   **Carcinoid Crisis:** The inclusion of perioperative IV Somatostatin Analogues is a critical safety measure for a patient with functional potential undergoing liver manipulation.
+*   **Patient Selection:** The recommendation respects the patient's young age (39) and good performance status, which supports the decision for aggressive surgical management.
+
+**5. Actionability:**
+The steps are clear and specific: proceed with surgery, ensure perioperative SSA coverage, consider intraoperative detection tools, and plan for long-term monitoring without adjuvant therapy. This provides a clear roadmap for the clinical team.
+  ✅ No issues found
+
+======================================================================
+✅ VALIDATION PASSED - NO REGENERATION NEEDED
+======================================================================

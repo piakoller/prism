@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:33:18.408319
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for clinical applicability or disease alignment. The patient has diffuse, unresectable metastatic PanNET G3 (Ki-67 70%) and requires recommendations for the next line of systemic therapy (e.g., PRRT vs. chemotherapy). In contrast, this study evaluates the diagnostic utility of intraoperative ultrasound (IOUS) specifically in patients classified as cM0 (no distant metastases) who are undergoing curative surgery for the primary tumor. Because the patient is not a candidate for surgery due to diffuse liver disease and already has known metastatic burden, data regarding the detection of occult metastases during surgery is irrelevant to his current management. Furthermore, the study is diagnostic/observational and provides no evidence regarding the efficacy or safety of therapeutic interventions needed for this refractory patient."
+}

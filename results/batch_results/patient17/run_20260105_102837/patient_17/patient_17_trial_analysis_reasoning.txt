@@ -1,0 +1,243 @@
+=== TRIAL ANALYSIS REASONING REPORT ===
+Timestamp: 2026-01-05T11:24:33.966040
+Patient ID: 17
+Analysis Status: success
+============================================================
+
+ANALYSIS SUMMARY:
+- Trials analyzed: 13
+- Trials included: 6
+- Trials excluded: 7
+- Analysis complete: True
+
+DETAILED TRIAL ANALYSES:
+==================================================
+
+TRIAL 1: NCT03049189
+Name: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 2: NCT02568267
+Name: Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 3: NCT05153772
+Name: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 4: NCT02236910
+Name: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 5: NCT03074513
+Name: Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 6: NCT02754297
+Name: Personalized PRRT of Neuroendocrine Tumors
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 7: NCT03728361
+Name: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 8: NCT03217097
+Name: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 9: NCT05448157
+Name: 68Ga-DOTATOC Radio-Guided Surgery With β-Probe in GEP-NET
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 10: NCT01842165
+Name: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 11: NCT03375320
+Name: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 12: NCT02795858
+Name: A Phase II Study of Ramucirumab With Somatostatin Analog Therapy in Patients With Advanced, Progressive Carcinoid Tumors
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 13: NCT01466036
+Name: Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+RAW ANALYSIS RESPONSE:
+==================================================
+<trial_analysis>
+**NCT NUMBER:** NCT03049189
+**TRIAL NAME:** Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 3 trial directly compares Peptide Receptor Radionuclide Therapy (PRRT) against Everolimus (targeted therapy) in GEP-NET patients. As the patient is deciding between these exact two guideline-recommended modalities for disease progression, the trial's results demonstrating a significant progression-free survival benefit for PRRT are critically relevant for the treatment recommendation.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02568267
+**TRIAL NAME:** Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+**DECISION:** EXCLUDE
+**RATIONALE:** This trial targets specific gene fusions (NTRK/ROS1/ALK) which are extremely rare in neuroendocrine tumors. There is no evidence in the patient's profile suggesting these alterations are present, making this targeted therapy irrelevant to his current clinical management.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT05153772
+**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial provides evidence for the efficacy of Alpha-emitter PRRT (212Pb-DOTAMTATE) in PRRT-naive patients with SSTR-positive tumors. The reported high objective response rate supports the utility of SSTR-targeting therapies for this patient, who is SSTR-positive and PRRT-naive.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02236910
+**TRIAL NAME:** An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+**DECISION:** INCLUDE
+**RATIONALE:** This registry study provides real-world evidence on survival predictors and efficacy for 177Lu-DOTATATE, the standard-of-care PRRT. This data helps inform the expected outcomes and risk stratification for the patient if he proceeds with the recommended PRRT.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03074513
+**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** Immunotherapy combinations are not standard-of-care for well-differentiated, low-grade (Ki-67 2-3%) neuroendocrine tumors. The patient's disease characteristics align better with PRRT or targeted therapies (Everolimus/Cabozantinib) rather than immune checkpoint inhibitors, which typically show limited efficacy in this setting.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02754297
+**TRIAL NAME:** Personalized PRRT of Neuroendocrine Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** This trial investigates personalized dosimetry for 177Lu-octreotate PRRT. It provides supporting evidence for the safety and efficacy of the PRRT modality, which is a primary consideration for this patient's next line of therapy.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03728361
+**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+**DECISION:** EXCLUDE
+**RATIONALE:** This regimen (Chemotherapy + Immunotherapy) is typically reserved for high-grade or poorly differentiated neuroendocrine carcinomas. It is not an appropriate recommendation for a patient with a well-differentiated, slow-growing (G1/G2) duodenal NET.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03217097
+**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents
+**DECISION:** EXCLUDE
+**RATIONALE:** This trial evaluates chemotherapy selection (alkylating agents vs. oxaliplatin). Systemic chemotherapy is generally not recommended for well-differentiated, low-proliferation (Ki-67 <10%) GI-NETs, making this evidence less relevant than trials for PRRT or targeted therapies.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT05448157
+**TRIAL NAME:** 68Ga-DOTATOC Radio-Guided Surgery With β-Probe in GEP-NET
+**DECISION:** EXCLUDE
+**RATIONALE:** This study validates a surgical tool (beta-probe) rather than a therapeutic intervention. While surgery is a consideration, this trial does not provide evidence to guide the choice between systemic therapy options or the decision to operate.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01842165
+**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+**DECISION:** INCLUDE
+**RATIONALE:** This prospective study provides data on dosimetry and response prediction for 177Lu-octreotate. It reinforces the evidence base for PRRT, helping to validate it as a robust therapeutic option for GEP-NETs.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03375320
+**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 3 trial demonstrates a significant progression-free survival benefit for Cabozantinib in extra-pancreatic NETs (which includes duodenal NETs). It provides high-quality evidence for a potent targeted therapy option, serving as a viable alternative or subsequent line to Everolimus or PRRT.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02795858
+**TRIAL NAME:** A Phase II Study of Ramucirumab With Somatostatin Analog Therapy in Patients With Advanced, Progressive Carcinoid Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** This is a Phase 2 single-arm study. The Phase 3 CABINET trial (NCT03375320) provides stronger, randomized evidence for the efficacy of tyrosine kinase inhibitors/angiogenesis inhibitors in this patient population, making Ramucirumab a lower-priority consideration.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01466036
+**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** This Phase 2 trial has been superseded by the Phase 3 CABINET trial (NCT03375320), which investigated the same drug in the same population and provided definitive efficacy results.
+---
+</trial_analysis>
+
+<summary>
+**TOTAL TRIALS ANALYZED:** 13
+**TRIALS TO INCLUDE:** 6
+**TRIALS TO EXCLUDE:** 7
+</summary>

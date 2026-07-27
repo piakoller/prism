@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:32:03.289286
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant because it evaluates 177Lu-DOTATATE (PRRT) in patients with SSTR-positive, well-differentiated neuroendocrine tumors, aligning perfectly with the patient's diagnosis (G1 PanNET, SSTR2-positive). Although the patient currently has stable disease and is being evaluated for potential curative surgery (which was an exclusion criterion for the primary therapy group in the study), the published results provide critical prognostic evidence relevant to treatment planning. Specifically, the study identifies that patients with low liver tumor burden (<50%) and absence of bone metastases or ascites—characteristics matching this patient—have significantly better overall survival and progression-free survival with PRRT. This evidence supports the consideration of PRRT as a highly effective therapeutic option, potentially in the neoadjuvant setting to facilitate R0 resection or as a systemic alternative if surgery is deemed not feasible, helping the tumor board weigh the expected benefit of PRRT against other modalities."
+}

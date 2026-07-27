@@ -1,0 +1,219 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-08T16:07:10.345745
+Trial: 70/86
+NCT ID: NCT02609737
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+A 68-year-old woman with a well-differentiated (G2, Ki-67 3–5%) functional duodenal neuroendocrine tumor diagnosed in 2013 with synchronous liver metastases. In October 2013 she started octreotide LAR therapy. From December 17, 2013, to March 5, 2014, three TAE sessions and resection of duodenal neoplasm and segmentectomy of S1, S3, and wedge of 6-7 in November 17, 2014. Due to liver progression of the disease, subsequent treatments included PRRT (2017–2018) and multiple loco-regional therapies. In 2022 she started surufatinib within a phase II trial, achieving long-term disease control (>40 cycles), later continued on compassionate use with dose reductions due to diarrhea and hypertension.
+In June 2025, CT showed mild progression of hepatic lesions. Sunitinib was initiated, achieving stable disease for several months. In October 2025, imaging revealed further hepatic progression (RECIST PD confirmed).
+
+Current Clinical Status: ECOG PS 0, good treatment tolerance, and no relevant clinical symptoms.
+Question for Tumorboard:
+Management of disease progression after long-term surufatinib and ongoing sunitinib treatment in a patient with liver-only G2 NET.
+Source: AD
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Disease Status**
+The patient is a 68-year-old female with a well-differentiated, Grade 2 (Ki-67 3–5%) functional duodenal neuroendocrine tumor (NET), initially diagnosed in 2013. The disease course is characterized by synchronous liver metastases and a long natural history (12 years). The patient presents with liver-only disease progression (confirmed by RECIST PD in October 2025) following a sequence of extensive multimodal treatments.
+
+**Treatment History and Resistance Profile**
+The patient is heavily pre-treated and has demonstrated disease progression on multiple therapeutic lines:
+1.  **Somatostatin Analogues (SSA):** Progressed after initial control (started 2013).
+2.  **Locoregional and Surgical Therapy:** Underwent TAE, resection of the primary duodenal neoplasm, and liver resection (2013–2014), followed by multiple subsequent locoregional therapies.
+3.  **Peptide Receptor Radionuclide Therapy (PRRT):** Administered in 2017–2018 due to liver progression.
+4.  **Tyrosine Kinase Inhibitors (TKIs):**
+    *   **Surufatinib:** Achieved long-term control (>40 cycles) within a phase II trial but eventually progressed.
+    *   **Sunitinib:** Initiated in June 2025 for mild hepatic progression; resulted in stable disease initially but failed by October 2025 (RECIST PD).
+
+**Current Clinical Assessment**
+Despite radiological progression, the patient maintains an excellent performance status (ECOG PS 0) and is currently asymptomatic ("no relevant clinical symptoms"), suggesting a dissociation between tumor growth and clinical deterioration. The tumor remains well-differentiated with a relatively low proliferative index (Ki-67 3–5%).
+
+**Guideline-Based Assessment of Management Options**
+Based on the *ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up*, the following factors are relevant for the tumor board's assessment:
+
+*   **Systemic Therapy (mTOR Inhibitors):** The patient has progressed on TKIs (Surufatinib and Sunitinib). The guidelines recommend Everolimus for the treatment of advanced, non-functional neuroendocrine tumors of the gastrointestinal tract (RADIANT-4 trial). While the patient's tumor was originally functional, she is currently asymptomatic. The guidelines note that Everolimus should be used in patients with clearly progressive GI NETs.
+*   **Chemotherapy:** The guidelines state that results with systemic chemotherapy for advanced well-differentiated G1/G2 GI NETs are poor (ORR 11.5%) and generally "cannot be recommended." Chemotherapy is typically reserved for rapidly progressive tumors or those with higher Ki-67 (e.g., 15–20%). Given this patient's Ki-67 of 3–5% and long disease history, chemotherapy may have limited utility.
+*   **Locoregional Therapy:** As the patient presents with liver-only progression, the guidelines suggest that vascular and ablative locoregional modalities (e.g., embolization, ablation) can be considered as an alternative or adjunct to systemic therapy in patients with liver-limited disease.
+*   **PRRT Re-treatment Consideration:** The patient received PRRT 7–8 years ago. While the guidelines primarily discuss PRRT as a second-line therapy after SSA failure, they acknowledge it as a therapeutic option in progressive SSTR-positive NETs. Re-evaluation of Somatostatin Receptor (SSTR) status is essential.
+    *   *Crucial Constraint:* Eligibility for any further PRRT consideration requires confirmation via [68]Ga/[64]Cu-SSTR-PET-CT that uptake in all metastatic lesions is significantly higher than the liver background. If lesions show low or heterogeneous uptake, PRRT is generally not indicated.
+*   **Surufatinib Context:** The guidelines acknowledge recent data (SANET-ep) indicating activity of Surufatinib in extra-pancreatic NETs, consistent with the patient's prior response, though she has now developed resistance to this class.
+
+**Diagnostic Requirements**
+To finalize the management plan, updated staging and molecular imaging are necessary to characterize the metabolic activity and receptor status of the progressing hepatic lesions, specifically to distinguish between slow progression suitable for locoregional control versus systemic progression requiring a switch in drug class (e.g., to an mTOR inhibitor).
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: Management of disease progression after long-term surufatinib and ongoing sunitinib treatment in a patient with liver-only G2 NET.
+
+### STUDY DATA
+	•	NCT-ID: NCT02609737
+	•	Title: Theranostics of Radiolabeled Somatostatin Antagonists 68Ga-DOTA-JR11 and 177Lu-DOTA-JR11 in Patients With Neuroendocrine Tumors
+	•	Phase: NA, Status: COMPLETED
+	•	Intervention: PET/CT Imaging; 68Ga-DOTA-JR11; 177Lu-DOTA-JR11
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Ability to understand and the willingness to sign a written informed consent document
+* Adults ≥ 18 years old
+* Histologically or cytologically confirmed metastatic and/or unresectable progressive, well differentiated carcinoid or pancreatic NET carcinoids
+* Progressive metastatic disease defined by one of the following, occurring within 6 months of study entry:
+
+  * At least a 20% increase in radiologically or clinically measurable disease
+  * Appearance of any new lesion
+  * Symptomatic disease (including worsening hormonal symptoms or symptoms related to tumor burden)
+* Measurable disease as defined by RECIST 1.1.
+* At least one metastasis must show uptake of 111In-DTPA-octreotide on SPECT that is higher than the physiologic radiotracer uptake by the liver
+* ECOG performance status ≤ 2 (Karnofsky ≥ 60%)
+* Patients must have normal organ and marrow function as defined below:
+
+  * Leukocytes ≥ 3.0 x 109/L
+  * Absolute neutrophil count (ANC) ≥ 1.5 x 10\^9/L
+  * Hemoglobin ≥ 9.0 g/dL
+  * Platelets ≥ 200 x 10\^9/L
+  * Total bilirubin ≤ 1.25 x Upper Limit Normal (ULN)
+  * AST (SGOT)/ ALT(SGPT) ≤ 2.5 x ULN with liver metastases
+  * Alkaline phosphatase \< 2 x ULN (if known liver or bone disease)
+  * Serum albumin \> 30 g/L, or serum albumin = 30 g/L but normal prothrombin time
+  * Creatinine ≤ 1.5 x ULN or creatinine clearance (CrCl) calculated CrCl ≥ 60 mL/min/1.73m\^2
+* Women of childbearing potential and men must agree to use adequate contraception prior to study entry and for the duration of study participation
+* Previous local therapy (e.g., chemoembolization or bland embolization) is allowed if completed \> 6 weeks prior to study entry. For such patients, there must be either progression of measurable disease documented within the treatment field, or measurable progressive disease outside the treatment field prior to study entry.
+* Previous chemotherapy and/or investigational agents are allowed if completed \> 4 weeks prior to study entry (\> 6 weeks if last regimen contained bis-chloroethyl nitrosourea (BCNU) or mitomycin C). For patients who received systemic therapy prior to study entry, there must be documented progression of measurable disease since receiving systemic therapy prior to study entry.
+* Patients must not have disease that is currently amenable to surgery. Prior surgery is allowed no less than 6 weeks prior to study entry.
+
+Exclusion Criteria:
+
+* History of allergic reactions attributed to compounds of similar chemical or biologic composition to 177Lu-DOTA-JR11 as assessed from medical records
+* Life expectancy \< 6 months as assessed by the treating physician.
+* Treatment with short-acting somatostatin analogs less than 3 days and Sandostatin® depot injection less than 5 weeks before scanning and treatment
+* Uncontrolled, intercurrent illness including, but not limited to, ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements
+* Women who are pregnant or breastfeeding
+* Toxicities from prior therapies that have not resolved to grade 1 or grade 0
+* Known CNS metastases and/or carcinomatous meningitis
+* Active malignancy of metastatic potential other than the known carcinoid or pancreatic NET within the past three years
+* \>20% bone marrow external beam radiotherapy and/or previous radioisotope therapy *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This study has 3 steps and not everyone will have all 3 steps done. The overall goals are to see if a new experimental drug is safe to image (step 1) and treat neuroendocrine tumors (step 2 and 3).
+	•	Publications: Analysis: Online search performed; Web search details: No additional publications found; No publications with results found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Theranostictrialof well differentiated neuroendocrine tumors (NETs) with somatostatin antagonists68Ga-OPS202 and177Lu-OPS201. [Google Scholar]
+• Theranostic trial of well differentiated neuroendocrine tumors (NETs) with somatostatin antagonists68Ga-OPS202 and177Lu-OPS201. [Google Scholar]
+• Strategies towards improving clinical outcomes of peptide receptor radionuclide therapy [Google Scholar]
+• Peptide receptor radionuclide therapy after NETTER-1clinical trial: what should not be left behind [Google Scholar]
+• Peptide receptor radionuclide therapy after NETTER-1 clinicaltrial: what should not be left behind [Google Scholar]
+• New developments in peptide receptor radionuclide therapy [Google Scholar]
+• Design and development of the theranostic pair177Lu‐OPS201/68Ga‐OPS202 for targeting somatostatin receptor expressing tumors [Google Scholar]
+• [HTML][HTML]Novel Approaches Optimize Peptide Receptor Radionuclide Therapy for Neuroendocrine Tumors [Google Scholar]
+• Comparison of68Ga-DOTA-JR11 PET/CT with dosimetric177Lu-satoreotide tetraxetan (177Lu-DOTA-JR11) SPECT/CT in patients with metastatic neuroendocrine … [Google Scholar]
+• Phase ITrialof Well-Differentiated Neuroendocrine Tumors (NETs) with Radiolabeled Somatostatin Antagonist177Lu-Satoreotide Tetraxetan [Google Scholar]
+• Impact of antagonist peptides and chelators on the diagnostic performance of PET/CT using gallium-68–labeled somatostatin receptor antagonists [Google Scholar]
+• Peptide receptor radionuclide therapy [Google Scholar]
+• [HTML][HTML]Peptide Receptor Radionuclide Therapy with [177Lu]Lu-DOTA-TATE in Patients with Advanced GEP NENS: Present and Future Directions [Google Scholar]
+• Phase I Trial of Well-Differentiated Neuroendocrine Tumors (NETs) with Radiolabeled Somatostatin Antagonist177Lu-Satoreotide Tetraxetan [Google Scholar]
+	•	Key findings from publications: Google Scholar Abstract (Theranostictrialof well differentiated neuroendocrine tumors (NETs) with somatostatin antagonists68Ga-OPS202 and177Lu-OPS201.): … We performed a phase Istudyto evaluate the safety and radiation dosimetry of the sstr2 …patients (pts) with metastatic well differentiated NETs (NCT02609737). Efficacy data after 177 Lu-…
+
+Google Scholar Abstract (Theranostic trial of well differentiated neuroendocrine tumors (NETs) with somatostatin antagonists68Ga-OPS202 and177Lu-OPS201.): … We performed a phase I study to evaluate thesafetyand radiation dosimetry of the sstr2 …patients (pts) with metastatic well differentiated NETs (NCT02609737).Efficacydata after 177 Lu-…
+
+Google Scholar Abstract (Strategies towards improving clinical outcomes of peptide receptor radionuclide therapy): … of PRRT and on new approaches which could further improve its treatmentefficacyandsafety.… Ongoing trials (NCT02592707,NCT02609737) are further investigating theefficacyand …
+
+Google Scholar Abstract (Peptide receptor radionuclide therapy after NETTER-1clinical trial: what should not be left behind): …clinicaltrialnr.NCT02609737). These procedures are being currently studied in severalclinicaltrials, but data are still very preliminary and go beyond the purposes of this dissertation. …
+
+Google Scholar Abstract (Peptide receptor radionuclide therapy after NETTER-1 clinicaltrial: what should not be left behind): … that PRRT has promising treatmentresults; PRRT has beenstudiedin numerous single-arm …NCT02609737). These procedures are being currentlystudiedin several clinical trials, but …
+
+Google Scholar Abstract (New developments in peptide receptor radionuclide therapy): … (NCT02592707) and in a single-center theranosticstudy(NCT02609737). Also, 68 Ga-…Initialresultswith 90 Y and 177 Lu indicated clinical potential (31,32); however, recentstudies…
+
+Google Scholar Abstract (Design and development of the theranostic pair177Lu‐OPS201/68Ga‐OPS202 for targeting somatostatin receptor expressing tumors): … editor47 commending on the twostudieswith contradictoryfindingsand concluded on the …-center theranosticstudyin 20 NET patients (NCT02609737). Thisstudycomprises three steps…
+
+Google Scholar Abstract ([HTML][HTML]Novel Approaches Optimize Peptide Receptor Radionuclide Therapy for Neuroendocrine Tumors): … The ongoing phase 2studyis looking at the use of … Preliminaryresultsfrom thetrialshowedthat 65% of patients … A phase 1 dosimetrystudy(NCT02609737) of one of the candidates, 17 …
+
+Google Scholar Abstract (Comparison of68Ga-DOTA-JR11 PET/CT with dosimetric177Lu-satoreotide tetraxetan (177Lu-DOTA-JR11) SPECT/CT in patients with metastatic neuroendocrine …): … As part of a prospectiveclinicaltrial, 20 patients with metastatic NETs underwent … (trialregistration IDNCT02609737) and conducted under the auspices of an Investigational NewDrug…
+
+Google Scholar Abstract (Phase ITrialof Well-Differentiated Neuroendocrine Tumors (NETs) with Radiolabeled Somatostatin Antagonist177Lu-Satoreotide Tetraxetan): … .govNCT02609737) and conducted under the auspices of an Investigational New … toconsider whentestingfuture radiolabeled therapies. In particular, phase Iclinicaltrialswith novel …
+
+Google Scholar Abstract (Impact of antagonist peptides and chelators on the diagnostic performance of PET/CT using gallium-68–labeled somatostatin receptor antagonists): … tracer optimization inclinicaltrials. For now, there have been nostudycomparing these …pair of 177 Lu-DOTA-JR11 in theirclinicaltrial(NCT02609737). In the phase I/II imaging …
+
+Google Scholar Abstract (Peptide receptor radionuclide therapy): … tetraxetan) in patients with advanced SST 2 -positive well-differentiated NETs, whoreceived 2 cycles of this investigational agent with an activity of 7.4 GBq per 3 months (NCT02609737…
+
+Google Scholar Abstract ([HTML][HTML]Peptide Receptor Radionuclide Therapy with [177Lu]Lu-DOTA-TATE in Patients with Advanced GEP NENS: Present and Future Directions): … Despite the lack of data from specific phase III clinical trials, there is positive evidence ofefficacyandsafetyin advanced pancreatic NET patients in which PRRT could surpass on …
+
+Google Scholar Abstract (Phase I Trial of Well-Differentiated Neuroendocrine Tumors (NETs) with Radiolabeled Somatostatin Antagonist177Lu-Satoreotide Tetraxetan): … We performed a phase I study to evaluate thesafetyandefficacyof SSTR2 antagonist 177 …Herein, we performed a phase I study to evaluate thesafetyandefficacyof SSTR2 antagonist …
+	•	Additional evidence from online sources: Primary outcome: Overall Response Rate (ORR)
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Online search performed; Web search details: No additional publications found; No publications with results found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

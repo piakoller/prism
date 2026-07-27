@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:59:30.154750
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant at this time. While the CABATEN trial includes a cohort (Cohort 6) for Grade 3 neuroendocrine neoplasms that aligns biologically with the patient's high-grade NEC component (Ki-67 90%), the provided published results are exclusively derived from the Adrenocortical Carcinoma cohort. No efficacy or safety data are reported for the NEC G3 population in the provided inputs. Clinical insights from adrenocortical carcinoma cannot be reasonably extrapolated to colorectal neuroendocrine carcinoma due to distinct biological drivers and chemosensitivity profiles. Consequently, while the study addresses a relevant potential future treatment scenario (second-line therapy for recurrence), the lack of cohort-specific results means there is currently no evidence to support the use of Cabozantinib plus Atezolizumab for this patient. Criterion 3 (Evidence Quality and Relevance) is not met."
+}

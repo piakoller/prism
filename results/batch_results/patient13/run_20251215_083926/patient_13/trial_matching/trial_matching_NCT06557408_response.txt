@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:43:50.728757
+Trial: 7/86
+NCT ID: NCT06557408
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a metastatic Grade 3 pancreatic NET with high tumor burden requiring systemic therapy (e.g., PRRT, everolimus, or chemotherapy). In contrast, the study focuses on surgical complications (pancreatic fistula) following minimally invasive enucleation, a procedure reserved for benign or low-grade, localized tumors. Enucleation is not a treatment option for metastatic Grade 3 disease, which would require formal oncological resection if surgery were even indicated. Consequently, evidence regarding fistula risk prediction after enucleation provides no actionable insights for managing this patient's progressive, metastatic malignancy."
+}

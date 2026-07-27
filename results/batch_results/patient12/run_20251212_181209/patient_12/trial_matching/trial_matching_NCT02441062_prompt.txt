@@ -1,0 +1,195 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-12T18:36:58.405410
+Trial: 61/86
+NCT ID: NCT02441062
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+35-year-old woman, born in Georgia, living in Catalonia for 9 years.
+No significant past medical history except gestational diabetes.
+
+Initial Presentation
+During her second pregnancy, the patient presented to the emergency department with abdominal pain of one year of evolution, progressively worsening. An external abdominal ultrasound demonstrated hepatomegaly with multiple focal lesions suggesting metastases. She was admitted for full work-up.
+
+Diagnostic Workup
+-MRI Abdomen: 75 mm pancreatic tail mass. Infiltration of splenic hilum. Loss of fat plane with left adrenal gland and upper pole of left kidney. Implants in hepatoduodenal ligament and ligamentum venosum fissure. Multiple bilobar hepatic metastases, up to 150 mm (right hepatic lobe)
+
+-Liver Core Biopsy: Well-differentiated neuroendocrine tumor (NET) G2
+Chromogranin A+, Synaptophysin+ Ki-67: 20%, CK7–, CK20–
+
+-Obstetric Care: Received lung maturation therapy; Cesarean section on 12/08/2022
+
+-Functional Imaging (Aug 2022): PET-FDG & PET-Ga68
+Primary pancreatic tumor: FDG+ / Ga68+
+Right adrenal nodule: FDG– / Ga68+
+Liver metastases: FDG+ / Ga68+
+Hepatic hilum adenopathy: FDG+ / Ga68+
+Peritoneal carcinomatosis: FDG+ / Ga68–
+Thyroid nodules: FDG+ / Ga68+
+
+
+2.	Current Clinical Status
+Epigastric abdominal pain for ≥1 year
+Postcesarean recovery
+Good glycemic control after recent gestational diabetes
+ECOG 1
+
+Diagnosis
+Metastatic well-differentiated pancreatic NET G2 (Ki-67 20%), with bulky hepatic metastases and peritoneal involvement.
+Question for Tumorboard:
+What should be the best first line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Tumor Biology**
+The patient is a 35-year-old female, recently postpartum, presenting with a metastatic, well-differentiated non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET). The tumor is classified as G2 based on a Ki-67 index of 20%. This proliferation index is at the upper limit for G2 tumors (cutoffs of 3% and 20% for NET G2 and G3, respectively, per ENETS 2023). The patient has a significant tumor burden, characterized as "bulky," with a 75 mm primary pancreatic tail mass and multiple bilobar hepatic metastases measuring up to 150 mm.
+
+**Functional Imaging and Heterogeneity**
+The dual-tracer PET imaging (FDG and Ga68) reveals significant tumor heterogeneity, which is a critical factor for prognostic stratification and treatment planning:
+1.  **FDG-Avidity:** The primary tumor, liver metastases, hepatic hilum adenopathy, peritoneal carcinomatosis, and thyroid nodules are FDG-positive. According to ENETS guidelines (Section 2.5.1), high FDG uptake correlates with a higher grade and is a strong poor prognostic factor.
+2.  **Somatostatin Receptor (SSTR) Status:** While the primary tumor and liver metastases are Ga68-positive, the peritoneal carcinomatosis is notably **Ga68-negative** (FDG+ / Ga68–). Additionally, the right adrenal nodule shows a reverse pattern (FDG– / Ga68+).
+3.  **PRRT Eligibility Assessment:** Per ESMO guidelines, PRRT requires homogenous SSTR expression where all NET lesions are positive. The presence of Ga68-negative peritoneal carcinomatosis indicates a lack of SSTR expression in this compartment. Consequently, these lesions would likely not respond to Peptide Receptor Radionuclide Therapy (PRRT), as eligibility requires uptake higher than liver background in all metastatic sites.
+
+**Staging and Resectability**
+The disease is advanced and metastatic. The primary tumor shows local invasion (splenic hilum, left adrenal gland, upper pole of left kidney). The presence of extensive bilobar liver metastases (up to 150 mm) and peritoneal carcinomatosis renders the patient unresectable for curative intent. Per ESMO guidelines, upfront surgery is generally excluded in the presence of extra-abdominal metastases (peritoneal involvement is extra-hepatic) or high-grade features, and debulking is controversial for non-functioning tumors with high Ki-67 (>10%).
+
+**Genetic Considerations**
+Given the patient's young age (35 years) and the diagnosis of Pan-NET, genetic counseling is indicated to rule out hereditary syndromes such as Multiple Endocrine Neoplasia type 1 (MEN1) or Von Hippel-Lindau (VHL) disease (ENETS 2.1). The presence of thyroid nodules (FDG+/Ga68+) warrants further investigation to exclude a synchronous malignancy or manifestations of a syndromic complex (e.g., MEN1).
+
+**Therapeutic Assessment**
+The clinical picture is dominated by bulky, symptomatic disease (abdominal pain for $\ge$1 year) with aggressive features (FDG positivity, Ki-67 20%).
+*   **Systemic Therapy:** According to ENETS (Q7) and ESMO guidelines, chemotherapy is a suitable consideration for patients with bulky, symptomatic, or significant tumor growth, particularly when Ki-67 is high (G2/G3) or FDG uptake is present. Regimens such as Temozolomide/Capecitabine or Streptozotocin/5-FU are referenced for such scenarios.
+*   **Somatostatin Analogues (SSAs):** While SSAs are the standard first-line for slow-growing, SSTR-positive G1/G2 tumors (ENETS Q6), this patient's high tumor burden, symptoms, and FDG positivity suggest a more aggressive biology that may require a more active antiproliferative approach than SSA monotherapy.
+*   **Targeted Therapies:** Sunitinib and Everolimus are options for progressive disease but are generally cytostatic rather than cytotoxic (tumor shrinkage is less common compared to chemotherapy).
+
+**Conclusion**
+The patient presents with a high-risk, bulky, metastatic G2 Pan-NET with discordant imaging features (FDG-positive/Ga68-negative peritoneal disease). The imaging mismatch suggests dedifferentiation in the peritoneal compartment, limiting the utility of SSTR-targeted therapies (PRRT) for those specific lesions. The clinical priority is systemic control of a bulky, symptomatic, and biologically aggressive tumor.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+	•	Question for Tumorboard: What should be the best first line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT02441062
+	•	Title: Impact of Ga-68 DOTATOC PET-CT Imaging in Management of Neuroendocrine Tumors
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: 68Ga-DOTATOC PET/CT
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+1. Signed informed consent
+2. Age ≥ 6 months
+3. Histologically diagnosed neuroendocrine tumor or other tumor with probable somatostatin receptors subtype 2
+4. Karnofsky performance status or Lansky Play Scale status of ≥ 60 (or ECOG/WHO equivalent)
+5. Subject is male; or is a female who is either surgically sterile (has had a documented bilateral oophorectomy and/or documented hysterectomy), postmenopausal (\> 1 years without menses), ≥60 years old,or of childbearing potential for whom a pregnancy test (with the results known prior to investigational product administration) is negative. A negative pregnancy test will be required for all female subjects with child bearing potential. If a false pregnancy test is suspected, e.g., perimenopausal condition, an obstetrician will be consulted to determine if she is/is not capable of becoming pregnant. Female must also be non-lactating.
+
+Exclusion Criteria:
+
+1. Subject weighs more than 450 pounds. (Subjects who weigh more than 450 pounds will not be able to fit inside the imaging machines) or otherwise cannot be safely fit into the imaging system.
+2. Inability to lie still for the entire imaging time (due to cough, severe arthritis, etc.)
+3. Inability to complete the needed investigational and standard-of-care imaging examinations due to other reasons (severe claustrophobia, radiation phobia, etc.)
+4. Any additional medical condition, serious intercurrent illness, or other extenuating circumstance that, in the opinion of the investigator, may significantly interfere with study compliance.
+5. Peptide receptor radionuclide therapy (PRRT) within 4 weeks of Ga-68 DOTATOC PET/CT scan.
+6. Treatment with Sandostatin LAR within 4 weeks, SQ Octreotide within 12 hours, or Lanreotide injection within 8 weeks of Ga-68 DOTATOC PET/CT (+/-5%). *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: Participants in this study have been diagnosed with a tumor such as a carcinoid, neuroendocrine tumor, neuroblastoma, Ewing's sarcoma, or brain tumor that has cells which carry somatostatin receptors.
+
+The purpose of this research study is to see if the tumor can be identified using a special procedure called a positron emission tomography (PET) scan and how the results of this imaging procedure will change the management of the tumor.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Online search performed; Web search details: No additional publications found; No publications with results found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Menda Y, Ponto LL, Schultz MK, Zamba GK, Watkins GL, Bushnell DL, Madsen MT, Sunderland JJ, Graham MM, O'Dorisio TM, O'Dorisio MS. Repeatability of gallium-68 DOTATOC positron emission tomographic imaging in neuroendocrine tumors. Pancreas. 2013 Aug;42(6):937-43. doi: 10.1097/MPA.0b013e318287ce21.
+• Safetyand accuracy of 68Ga-DOTATOC PET/CT in children and young adults with solid tumors [Google Scholar]
+• Safety and accuracy of 68Ga-DOTATOC PET/CT in children and young adults with solid tumors [Google Scholar]
+• The role of radiolabeled DOTA-conjugated peptides for imaging and treatment of childhood neuroblastoma [Google Scholar]
+• Prospective analysis of the impact of 68Ga-DOTATOC positron emission tomography–computerized axial tomography on management of pancreatic and small bowel … [Google Scholar]
+• The academic NDA: justification, process, and lessons learned [Google Scholar]
+• [HTML][HTML]Radiometals in imaging and therapy: highlighting two decades ofresearch [Google Scholar]
+	•	Key findings from publications: Google Scholar Abstract (Safetyand accuracy of 68Ga-DOTATOC PET/CT in children and young adults with solid tumors): … Ga-DOTATOC PET-CT imaging in management of neuroendocrine tumorsNCT02441062. …To our knowledge, the present report represents the firstsafetyandefficacyanalysis of 68 Ga-…
+
+Google Scholar Abstract (Safety and accuracy of 68Ga-DOTATOC PET/CT in children and young adults with solid tumors): …clinicaltrialsbetween 11/15/2012 and 6/11/2016. Although these threeclinicaltrialshad …Ga-DOTATOC PET-CT imaging in management of neuroendocrine tumorsNCT02441062. …
+
+Google Scholar Abstract (The role of radiolabeled DOTA-conjugated peptides for imaging and treatment of childhood neuroblastoma): … Currently,clinicaltrialsare underway to further investigate … brain tumors in children (NCT02441062,NCT02194452, and …Clinicalstudieson pediatric neuroblastoma have used 68Ga…
+
+Google Scholar Abstract (Prospective analysis of the impact of 68Ga-DOTATOC positron emission tomography–computerized axial tomography on management of pancreatic and small bowel …): … A prospectiveclinicaltrialevaluated the effect of 68 Ga-DOTATOC positron emissiontomography–computerized axial tomography (PET-CT) on change in management of patients with …
+
+Google Scholar Abstract (The academic NDA: justification, process, and lessons learned): … throughclinicalresearchfor …clinicaltrial, “Safety of 68 Ga-DOTA-tyr 3 -Octreotide PET inDiagnosis of Solid Tumors (GA-68)” in 2012. Thistrialwas the first of 3 registeredclinicaltrialsat …
+
+Google Scholar Abstract ([HTML][HTML]Radiometals in imaging and therapy: highlighting two decades ofresearch): … diagnostic and radionuclide therapy are considered, including humanstudiesunderclinicaltrials; their current stages ofclinicaltranslations and findings are summarized. Because the …
+	•	Additional evidence from online sources: Primary outcome: Number of Participants With a Change in Treatment Management Based on Findings of the Gallium Ga 68-edotreotide PET/CT Scan
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Found 1 listed publication(s); Online search performed; Web search details: No additional publications found; No publications with results found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

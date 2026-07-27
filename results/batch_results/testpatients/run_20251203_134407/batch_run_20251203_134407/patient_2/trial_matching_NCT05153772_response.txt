@@ -1,0 +1,10 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:57:53.675026
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful clinical evidence for this patient's treatment planning. Biologically, the patient has a metastatic Grade 2 pancreatic NET, which aligns with the study population (SSTR-positive GEP-NETs). Clinically, the patient has bulky, symptomatic metastatic disease (liver, bone) requiring tumor shrinkage (cytoreduction), a need often cited for preferring chemotherapy over standard PRRT (which has lower response rates). The study results demonstrate a 56.8% Overall Response Rate (ORR) with 212Pb-DOTAMTATE in PRRT-naive patients, offering a

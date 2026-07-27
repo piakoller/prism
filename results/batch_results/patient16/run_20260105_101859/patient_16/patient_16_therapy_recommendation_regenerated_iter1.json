@@ -1,0 +1,75 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "Based on the patient's diagnosis of a locally advanced, Grade 1 (Ki-67 2%), SSTR2-positive nonfunctioning pancreatic neuroendocrine tumor (NF-Pan-NET) with oligometastatic liver and lymph node involvement, the recommended therapy is a **neoadjuvant approach using Peptide Receptor Radionuclide Therapy (PRRT)** with **177Lu-DOTATATE/Edotreotide**, followed by re-evaluation for **curative-intent surgical resection**.\n\nConcurrently, the patient should initiate **Somatostatin Analogue (SSA)** therapy (e.g., **Lanreotide** or **Octreotide**) for immediate antiproliferative control and symptom management.\n\n**Key Clinical Trial Evidence Supporting This Recommendation:**\n*   **NCT02754297 (Personalized PRRT of Neuroendocrine Tumors):** This Phase 2 trial provides the primary evidence for the neoadjuvant strategy in this specific patient population. The study demonstrated that personalized PRRT dosimetry resulted in high response rates, specifically reporting that **84.6% (11 of 13) of patients with pancreatic NETs achieved a partial or minor response**. This high rate of tumor shrinkage is critical for this patient to facilitate downstaging of the pancreatic head lesion (currently contacting the portal vein) and to address the oligometastatic disease prior to surgery.\n*   **NCT01842165 (Prediction Using Multimodality Imaging):** This completed study validates that high uptake on SSTR-PET/CT—which this patient exhibits with \"intense accumulation\"—is a reliable predictor of favorable treatment outcome with 177Lu-octreotate, confirming her suitability for this modality.\n*   **NCT03049189 (COMPETE Trial):** This Phase 3 trial supports the therapeutic positioning of **177Lu-edotreotide PRRT** as a superior consideration over targeted agents (such as everolimus) for SSTR-positive GEP-NETs, reinforcing the selection of PRRT in the treatment sequence.\n*   **NCT02730104 (Lanreotide Real-World Study):** This observational study confirms the real-world effectiveness and safety of Lanreotide in GEP-NETs, supporting its use as a standard first-line option for antiproliferative control and symptom management alongside PRRT.\n\n**Surgical Re-evaluation Plan:**\nFollowing the induction course of PRRT (typically evaluated after 2-4 cycles), the patient should undergo full restaging. If sufficient downstaging is achieved to allow for an R0 resection (clear margins) of the primary tumor and the retroperitoneal lymph nodes, a **pancreaticoduodenectomy** combined with **resection or ablation of the liver metastases** is recommended.",
+  "rationale_text": "**Clinical Context and Treatment Strategy:**\nThe patient presents with a Grade 1 NF-Pan-NET that is biologically favorable (Ki-67 2%) but anatomically challenging due to its size (41x51x35 mm) and close contact (3 cm) with the portal vein and superior mesenteric vein. While the ENETS guidelines note that radical resection with vascular reconstruction is feasible in expert centers, the presence of oligometastatic liver disease and retroperitoneal lymph node involvement suggests that a neoadjuvant approach may offer better long-term outcomes by treating micrometastases and improving resectability (downstaging).\n\n**Evidence for Neoadjuvant PRRT:**\nThe decision to prioritize PRRT over upfront surgery or chemotherapy is driven by the patient's \"intense\" SSTR2 expression and the specific responsiveness of pancreatic NETs to this modality. **NCT02754297** is particularly relevant, as it demonstrated that 84.6% of Pan-NET patients achieved objective tumor regression (partial or minor response) with 177Lu-octreotate. This addresses the specific need to shrink the primary tumor away from the vascular interface to facilitate a curative (R0) resection, as supported by ENETS guidelines which state that preoperative PRRT may be considered in locally advanced/oligometastatic cases. **NCT01842165** confirms that the patient's imaging characteristics (intense uptake) strongly predict a benefit from this therapy.\n\n**Role of Somatostatin Analogues:**\n**NCT02730104** and **NCT03289741** support the use of SSAs (Lanreotide or Octreotide) as the standard of care for antiproliferative control in SSTR-positive GEP-NETs. Given the patient's symptoms (abdominal pain, vomiting) likely related to the mass effect and duct dilation, SSAs provide a low-toxicity background therapy to stabilize the disease while PRRT induces shrinkage.\n\n**Surgical Considerations:**\nAlthough the patient has oligometastatic liver disease (lesions 10 mm and 5 mm), which ESMO guidelines suggest may be amenable to resection, the concurrent nodal and vascular involvement makes upfront surgery high-risk for incomplete resection (R1/R2). A \"test-of-time\" approach with neoadjuvant PRRT allows for the assessment of tumor biology and response. If the disease remains stable or regresses (as predicted by **NCT02754297**), the patient can proceed to surgery with a higher likelihood of curative success.",
+  "recommendation_summary": {
+    "primary_recommendation": "Based on the patient's diagnosis of a locally advanced, Grade 1 (Ki-67 2%), SSTR2-positive nonfunctioning pancreatic neuroendocrine tumor (NF-Pan-NET) with oligometastatic liver and lymph node involve...",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02754297",
+      "nct_id": "NCT02754297",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT01842165",
+      "nct_id": "NCT01842165",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03049189",
+      "nct_id": "NCT03049189",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT02754297",
+        "trial_name": "Trial NCT02754297",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT01842165",
+        "trial_name": "Trial NCT01842165",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03049189",
+        "trial_name": "Trial NCT03049189",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\nBased on the patient's diagnosis of a locally advanced, Grade 1 (Ki-67 2%), SSTR2-positive nonfunctioning pancreatic neuroendocrine tumor (NF-Pan-NET) with oligometastatic liver and lymph node involvement, the recommended therapy is a **neoadjuvant approach using Peptide Receptor Radionuclide Therapy (PRRT)** with **177Lu-DOTATATE/Edotreotide**, followed by re-evaluation for **curative-intent surgical resection**.\n\nConcurrently, the patient should initiate **Somatostatin Analogue (SSA)** therapy (e.g., **Lanreotide** or **Octreotide**) for immediate antiproliferative control and symptom management.\n\n**Key Clinical Trial Evidence Supporting This Recommendation:**\n*   **NCT02754297 (Personalized PRRT of Neuroendocrine Tumors):** This Phase 2 trial provides the primary evidence for the neoadjuvant strategy in this specific patient population. The study demonstrated that personalized PRRT dosimetry resulted in high response rates, specifically reporting that **84.6% (11 of 13) of patients with pancreatic NETs achieved a partial or minor response**. This high rate of tumor shrinkage is critical for this patient to facilitate downstaging of the pancreatic head lesion (currently contacting the portal vein) and to address the oligometastatic disease prior to surgery.\n*   **NCT01842165 (Prediction Using Multimodality Imaging):** This completed study validates that high uptake on SSTR-PET/CT—which this patient exhibits with \"intense accumulation\"—is a reliable predictor of favorable treatment outcome with 177Lu-octreotate, confirming her suitability for this modality.\n*   **NCT03049189 (COMPETE Trial):** This Phase 3 trial supports the therapeutic positioning of **177Lu-edotreotide PRRT** as a superior consideration over targeted agents (such as everolimus) for SSTR-positive GEP-NETs, reinforcing the selection of PRRT in the treatment sequence.\n*   **NCT02730104 (Lanreotide Real-World Study):** This observational study confirms the real-world effectiveness and safety of Lanreotide in GEP-NETs, supporting its use as a standard first-line option for antiproliferative control and symptom management alongside PRRT.\n\n**Surgical Re-evaluation Plan:**\nFollowing the induction course of PRRT (typically evaluated after 2-4 cycles), the patient should undergo full restaging. If sufficient downstaging is achieved to allow for an R0 resection (clear margins) of the primary tumor and the retroperitoneal lymph nodes, a **pancreaticoduodenectomy** combined with **resection or ablation of the liver metastases** is recommended.\n</therapy_recommendation>\n\n<rationale>\n**Clinical Context and Treatment Strategy:**\nThe patient presents with a Grade 1 NF-Pan-NET that is biologically favorable (Ki-67 2%) but anatomically challenging due to its size (41x51x35 mm) and close contact (3 cm) with the portal vein and superior mesenteric vein. While the ENETS guidelines note that radical resection with vascular reconstruction is feasible in expert centers, the presence of oligometastatic liver disease and retroperitoneal lymph node involvement suggests that a neoadjuvant approach may offer better long-term outcomes by treating micrometastases and improving resectability (downstaging).\n\n**Evidence for Neoadjuvant PRRT:**\nThe decision to prioritize PRRT over upfront surgery or chemotherapy is driven by the patient's \"intense\" SSTR2 expression and the specific responsiveness of pancreatic NETs to this modality. **NCT02754297** is particularly relevant, as it demonstrated that 84.6% of Pan-NET patients achieved objective tumor regression (partial or minor response) with 177Lu-octreotate. This addresses the specific need to shrink the primary tumor away from the vascular interface to facilitate a curative (R0) resection, as supported by ENETS guidelines which state that preoperative PRRT may be considered in locally advanced/oligometastatic cases. **NCT01842165** confirms that the patient's imaging characteristics (intense uptake) strongly predict a benefit from this therapy.\n\n**Role of Somatostatin Analogues:**\n**NCT02730104** and **NCT03289741** support the use of SSAs (Lanreotide or Octreotide) as the standard of care for antiproliferative control in SSTR-positive GEP-NETs. Given the patient's symptoms (abdominal pain, vomiting) likely related to the mass effect and duct dilation, SSAs provide a low-toxicity background therapy to stabilize the disease while PRRT induces shrinkage.\n\n**Surgical Considerations:**\nAlthough the patient has oligometastatic liver disease (lesions 10 mm and 5 mm), which ESMO guidelines suggest may be amenable to resection, the concurrent nodal and vascular involvement makes upfront surgery high-risk for incomplete resection (R1/R2). A \"test-of-time\" approach with neoadjuvant PRRT allows for the assessment of tumor biology and response. If the disease remains stable or regresses (as predicted by **NCT02754297**), the patient can proceed to surgery with a higher likelihood of curative success.\n</rationale>",
+  "metadata": {
+    "timestamp": "2026-01-05T10:21:38.697328",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 16,
+    "trials_considered": 10,
+    "trials_included": 7,
+    "trials_excluded": 3,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20260105_101859\\patient_16\\patient_16_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20260105_101859\\patient_16\\patient_16_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20260105_101859\\patient_16\\patient_16_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20260105_101859\\patient_16\\patient_16_therapy_recommendation_reasoning.txt"
+  },
+  "regeneration_iteration": 1
+}

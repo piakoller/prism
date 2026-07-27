@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:01:28.645870
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "While the study aligns with the patient's disease biology (SSTR-positive NET) and treatment context (PRRT is a guideline-recommended consideration for refractory G3 NETs), it fails the evidence quality and relevance criterion because no published results are provided in the input. The provided citations are generic review articles or discuss unrelated conditions (meningioma) without reporting specific efficacy or safety outcomes (e.g., response rates, PFS) for this trial. Without actionable data from the study, it is impossible to evaluate the benefit-risk profile or apply findings to the patient's care, even though the intervention itself (90Y-DOTATOC) is clinically appropriate to consider."
+}

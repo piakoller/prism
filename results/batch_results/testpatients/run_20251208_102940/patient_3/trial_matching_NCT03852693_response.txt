@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T10:41:24.026485
+Trial: 32/86
+NCT ID: NCT03852693
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Disease/Biology Alignment and Treatment Context criteria. It evaluates the surgical extent (appendectomy vs. right hemicolectomy) for localized appendiceal neuroendocrine tumors (1-2 cm), whereas the patient has a metastatic, progressive pancreatic neuroendocrine tumor (Pan-NET) requiring second-line systemic therapy. The biological behavior and treatment algorithms for localized appendiceal NETs differ significantly from advanced pancreatic NETs. Furthermore, the study provides no data on systemic therapies (such as targeted agents or PRRT) relevant to the patient's current clinical need for disease control in the setting of liver metastases and renal impairment."
+}

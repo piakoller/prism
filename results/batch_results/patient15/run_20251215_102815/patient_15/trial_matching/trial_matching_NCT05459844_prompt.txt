@@ -1,0 +1,184 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-15T10:33:18.415524
+Trial: 9/86
+NCT ID: NCT05459844
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Patient: 61-year-old man, ECOG 0, asymptomatic
+Initial diagnosis: Pancreatic NET grade 2, Ki-67 12% (2009)
+Became metastatic in 2023: liver-only disease, grade 3, Ki-67 70%
+Low hepatic tumor burden; no extrahepatic disease
+DOTATOC +++, FDG positive, no mismatch
+Sporadic
+
+Extensive previous treatments (2009–2024): surgery, RFA, multiple chemoembolizations, sunitinib, 5-FU/dacarbazine, radiotherapy (hilar nodes, rib, liver), somatostatin analogs, everolimus, RFA, capecitabine–temozolomide, GEMOX, temozolomide monotherapy, long-term Somatuline since June 2024
+
+Sept 2025: hepatic progression over 6 months; lesions 28 mm and 13 mm; diffuse liver disease; not suitable for local therapy
+Question for Tumorboard:
+What would be next step to consolidate the response?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Tumor Biology**
+The patient is a 61-year-old male with an ECOG performance status of 0, currently asymptomatic. He presents with a sporadic Pancreatic Neuroendocrine Tumor (Pan-NET) that has evolved from an initial Grade 2 diagnosis (Ki-67 12%) in 2009 to a metastatic Grade 3 disease (Ki-67 70%) in 2023. The disease is currently limited to the liver but is diffuse, with progressing lesions measuring 28 mm and 13 mm.
+
+**Histopathological and Molecular Classification**
+According to the provided **ESMO** and **ENETS** guidelines, the patient's tumor profile—specifically the history of a lower-grade precursor and the strong somatostatin receptor positivity (DOTATOC +++)—indicates a **well-differentiated NET G3** rather than a poorly differentiated neuroendocrine carcinoma (NEC), despite the high Ki-67 index of 70%. The patient demonstrates a "double-positive" status on functional imaging (DOTATOC +++ and FDG positive) with no mismatch. **ESMO guidelines** note that high FDG uptake correlates with higher grade and is a strong poor prognostic factor, yet the retention of SSTR expression is a key biological feature for therapeutic decision-making.
+
+**Treatment History and Refractoriness**
+The patient is heavily pre-treated and considered refractory to multiple standard lines of systemic therapy recommended for Pan-NETs:
+*   **Somatostatin Analogs (SSAs):** Progression on Somatuline.
+*   **Targeted Therapies:** Progression on both sunitinib and everolimus (standard options for progressive Pan-NETs per **ENETS Recommendation 3.3.1**).
+*   **Chemotherapy:** The patient has progressed on multiple regimens including alkylating agents (temozolomide monotherapy, capecitabine-temozolomide) and oxaliplatin-based regimens (GEMOX), as well as 5-FU/dacarbazine.
+*   **Local Therapies:** The patient is currently not suitable for local therapies (RFA, embolization) due to diffuse liver disease.
+
+**Clinical Assessment for Next Steps**
+1.  **Chemotherapy Assessment:** The patient has exhausted the standard chemotherapy options for Pan-NET (TEM/CAPTEM, STZ/5-FU). While **ESMO guidelines** recommend cisplatin/etoposide for NEC G3, they explicitly state that for **NET G3**, response rates to cisplatin/etoposide are low and the use of this combination is **not recommended**.
+2.  **Peptide Receptor Radionuclide Therapy (PRRT) Assessment:**
+    *   **Eligibility:** The patient shows strong SSTR expression (DOTATOC +++), fulfilling the primary requirement for PRRT.
+    *   **Guideline Evidence for G3:** **ENETS guidelines** (Section 3.2) and **ESMO guidelines** indicate that PRRT may be considered in patients with NET G3. However, **ENETS** cites studies (Zhang et al., Thang et al.) noting that while promising response rates exist, efficacy is generally lower in patients with a Ki-67 > 55% (median PFS approx. 4–6 months) compared to those with lower proliferation indices.
+    *   **Current Status:** As the patient has not received PRRT (history lists "radiotherapy" to nodes/rib/liver, likely external beam, but not peptide receptor radionuclide therapy), this modality represents a potential remaining line of systemic therapy supported by guidelines for SSTR-positive disease.
+3.  **Prognostic Considerations:** The combination of Ki-67 70% and FDG positivity suggests aggressive biological behavior. While the patient is currently asymptomatic and ECOG 0, the hepatic progression over 6 months indicates a need for disease control to prevent symptomatic deterioration.
+
+**Summary**
+The patient presents with progressive, liver-dominant, well-differentiated Pan-NET G3 (Ki-67 70%) that is refractory to standard chemotherapy and targeted agents. Based on **ESMO** and **ENETS guidelines**, the strong DOTATOC uptake makes the patient a candidate for evaluation for PRRT, although the high Ki-67 (>55%) and FDG positivity are negative prognostic markers that may limit the duration of response compared to lower-grade tumors.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+	•	Question for Tumorboard: What would be next step to consolidate the response?
+
+### STUDY DATA
+	•	NCT-ID: NCT05459844
+	•	Title: A Study Comparing Treatment With Lutetium[177Lu] Oxodotreotide Injection to Octreotide LAR in Patients With GEP-NETs
+	•	Phase: PHASE3, Status: ACTIVE_NOT_RECRUITING
+	•	Intervention: Lutetium[177Lu] Oxodotreotide Injection; Octreotide LAR
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+1. Ability to understand and willingness to sign a written informed consent document.
+2. Aged 18 years or older.
+3. Histopathologically confirmed low and moderate grade (G1 or G2) unresectable locally advanced or metastatic GEP-NET (based on the fifth edition of the WHO classification and grading criteria for neuroendocrine tumors of the digestive system in 2019, to be centrally confirmed).
+4. Previously received fixed-dose Octreotide LAR (20-30 mg/3-4 weeks) for at least 12 weeks of continuous treatment with disease progression.
+5. Presence of disease progression prior to randomization (time point of disease progression limited to 1 year prior to randomization and no other antitumor therapy received after progression).
+6. Presence of at least 1 measurable site of disease (based on RECIST 1.1).
+7. All target lesions (based on RECIST 1.1) at baseline must be confirmed as somatostatin receptor positive by 68Ga-Dotatate PET/CT .
+8. ECOG score of 0 or 1.
+9. Subjects of childbearing potential voluntarily use an effective method of contraception, such as condoms, oral or injectable contraceptives, IUDs, etc., during treatment and within 4 months (men) or 7 months (women) of the last use of the trial drug.
+
+Exclusion Criteria:
+
+1. Serum creatinine \>150 μmol/L (1.7 mg/dL) or creatinine clearance \<50 ml/min (Cockcroft Gault formula).
+2. Hemoglobin \<80g/L, or white blood cell count \<2.0×10\^9/L, or platelets \<75×10\^9/L.
+3. Serum total bilirubin \> 3 × upper limit of normal (ULN).
+4. Serum albumin \<30g/L.
+5. alanine aminotransferase (ALT) or aspartate aminotransferase (AST) \> 2.5×ULN.
+6. international normalized ratio (INR) \> 1.5 or partially activated prothrombin time (APTT) \> 1.5 x ULN.
+7. Positive human immunodeficiency virus (HIV) antibody.
+8. Positive for hepatitis B virus (HBV) surface antigen (HBsAg) and positive for HBV DNA (≥1×10\^4 copies/ml or judged positive by research center criteria), or positive for hepatitis C virus (HCV) antibodies.
+9. Pregnant or lactating females.
+10. Received peptide receptor radionuclide therapy(PRRT) prior to randomization.
+11. Received Octreotide LAR at a dose strength \>30 mg/3-4 weeks (increasing dose or frequency) within 12 weeks prior to randomization.
+12. Any patient receiving treatment with short-acting Octreotide, which cannot be interrupted for 24 h before and 24 h after the administration of Lutetium\[177Lu\] Oxodotreotide Injection, or any patient receiving treatment with Octreotide LAR, which cannot be interrupted for at least 6 weeks before the administration of Lutetium\[177Lu\] Oxodotreotide Injection.
+13. Received systemic antitumor therapy such as targeted therapy, immunotherapy, antitumor herbal therapy, chemotherapy within 4 weeks prior to randomization.
+14. Participated in other drug clinical trials within 4 weeks prior to randomization and received treatment with the corresponding trial drug.
+15. Received the following treatments within 12 weeks prior to randomization, including but not limited to surgery (except biopsy), radical radiotherapy, hepatic artery interventional embolization, cryoablation of liver metastases, or radiofrequency ablation.
+16. Received external beam radiation therapy for bone metastases within 2 weeks prior to randomization
+17. Toxicity of prior antitumor therapy has not returned to ≤ grade 1 levels (except for alopecia)
+18. Known brain metastases, unless these metastases have been treated and stabilized for at least 24 weeks, prior to enrollment in the study.
+19. Uncontrolled congestive heart failure, including baseline left ventricular ejection fraction (LVEF) \<50%.
+20. uncontrolled diabetes mellitus, including baseline fasting glucose \> 2 x ULN.
+21. Any clinically significant active infection.
+22. Known other malignancies (except for those without recurrence within 5 years after adequate treatment)
+23. Known hypersensitivity to Lutetium\[177Lu\] Oxodotreotide Injection or oxytetracycline acetate microsphere components and their excipients.
+24. Known to be unsuitable for enhanced CT or MRI contrast imaging due to allergic reaction or renal insufficiency.
+25. Any other disease, mental status or surgical condition that is uncontrolled, may interfere with study completion (including poor compliance) or is inappropriate for the use of the investigational drug.
+26. Other treatment options (e.g., chemotherapy, targeted therapy) that, in the opinion of the investigator, are more appropriate for the patient than the treatment provided in the study based on the patient's disease characteristics, i.e., the investigational drug is not the best therapeutic agent for clinical practice. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This was a multicenter, stratified, open, randomized, comparator-controlled, parallel-group phase III study comparing treatment with Lutetium\[177Lu\] Oxodotreotide Injection to high dose (60 mg) Octreotide LAR in patients with unresectable or metastatic, progressive, well differentiated (G1 and G2), somatostatin receptor positive gastroenteropancreatic neuroendocrine tumours.
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/39607652/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Radiation exposure and protection advice after [177Lu]Lu-DOTA-TATE therapy in China. (PMID: 39607652)
+	•	Key findings from publications: PubMed Abstract: We conducted a study on radiation exposure in patients with gastroenteropancreatic neuroendocrine neoplasms (GEP-NENs) treated with [ 177 Lu]Lu-DOTA-TATE in China for the first time, aiming to provide guidance and reference for radiation protection in this regard. A total of 30 GEP-NENs patients who received [ 177 Lu]Lu-DOTA-TATE therapy were recruited in the study. We measured the external dose r...
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: We conducted a study on radiation exposure in patients with gastroenteropancreatic neuroendocrine neoplasms (GEP-NENs) treated with [ 177 Lu]Lu-DOTA-TATE in China for the first time, aiming to provide guidance and reference for radiation protection in this regard. A total of 30 GEP-NENs patients who received [ 177 Lu]Lu-DOTA-TATE therapy were recruited in the study. We measured the external dose rate (EDR) values of each patient during the injection and 0-6 h post-administration period, as well as the radiation dose (RD) values to healthcare nurses and the surrounding environment. We performed a double exponential curve fitting and estimated the RD to the public from patients discharged at different times after [ 177 Lu]Lu-DOTA-TATE therapy. Results: Among the 30 patients, 27 patients completed 4 cycles of [ 177 Lu]Lu-DOTA-TATE treatments, the estimated RD to the public indicated that for adult family members, children above 10 years old, children aged 3-10 and coworkers of the patients, patients could begin daily contact at least 24 h, 48 h, 144 h and 192 h after injection to ensure that the total RD values after four treatments not exceed the limit. During the hospitalization of patients receiving [ 177 Lu]Lu-DOTA-TATE, the cumulative dose received by the administering nurses and to the ward environment were both well below the national RD limits. Conclusions: This study conducted a fitting analysis of the decay pattern of EDR values in GEP-NENs patients undergoing [ 177 Lu]Lu-DOTA-TATE therapy, in order to establish guidelines for patient discharge timing and provide recommendations for radiation protection for the general public after patient discharge. Trial registration A Study Comparing Treatment With Lutetium[177Lu] Oxodotreotide Injection to Octreotide LAR in Patients With GEP-NETs, NCT05459844 . https://clinicaltrials.gov/study/NCT05459844?cond=NCT05459844&rank=1 . Registered 5 July 2022. Keywords: Dosimetry; GEP-NENs; Patient discharge; Radiation exposure; [177Lu]Lu-DOTA-TATE. © 2024. The Author(s). PubMed Disclaimer Conflict of interest statement Declarations. Ethics approval and consent to participate: The study was approved by the Ethics Committee of FUSCC (Approval No. 2210262-2). All patients provided written informed consent to participate in the study. The study was performed in accordance with the ethical standards as laid down in the 1964 Declaration of Helsinki and its later amendments or comparable ethical standards. Consent for publication: Written informed consent for publication was obtained from all study participant. Competing interests: The authors declare that they have no competing interests. Figures Fig. 1 The SPECT images of the… Fig. 1 The SPECT images of the patient at A 4 h, B 24 h,… Fig. 1 The SPECT images of the patient at A 4 h, B 24 h, C 96 h and D 144 h after the first treatment Fig. 2 The SPECT images at 4… Fig. 2 The SPECT images at 4 h after four treatment cycles of the patient.… Fig. 2 The SPECT images at 4 h after four treatment cycles of the patient. A First treatment cycle, B second treatment cycle, C third treatment cycle and D fourth treatment cycle Fig. 3 The double exponential curve fitting… Fig. 3 The double exponential curve fitting results of EDR-1 m after [ 177 Lu]Lu-DOTA-TATE… Fig. 3 The double exponential curve fitting results of EDR-1 m after [ 177 Lu]Lu-DOTA-TATE treatments for the patients. A–D The double exponential curve fitting results of overall EDR-1 m at various time points from the first to fourth treatment cycle for patients. E The double exponential curve fitting results of overall EDR-1 m values of four cycles. F The double exponential curve fitting results of the mean EDR-1 m value at the same time points for each patient Fig. 4 The Two-way ANOVA analysis of… Fig. 4 The Two-way ANOVA analysis of EDR-1 m at different time points among patients… Fig. 4 The Two-way ANOVA analysis of EDR-1 m at different time points among patients receiving different cycles of treatments Fig. 5 The double exponential curve fitting… Fig. 5 The double exponential curve fitting results for EDR during drug administration for patients.… Fig. 5 The double exponential curve fitting results for EDR during drug administration for patients. A–D The overall EDR double exponential curve fitting results at various time points from the first to fourth treatment cycle for patients. E The overall EDR double exponential curve fitting results at various time points of four cycles. F The double exponential curve fitting results for the mean EDR value at the same time points during drug administration for each patient See this image and copyright information in PMC Similar articles Lutetium [ 177 Lu]-DOTA-TATE in gastroenteropancreatic-neuroendocrine tumours: rationale, design and baseline characteristics of the Italian prospective observational (REAL-LU) study. Lastoria S, Rodari M, Sansovini M, Baldari S, D'Agostini A, Cervino AR, Filice A, Salgarello M, Perotti G, Nieri A, Campana D, Pellerito RE, Pomposelli E, Gaudieri V, Storto G, Grana CM, Signore A, Boni G, Dondi F, Simontacchi G, Seregni E. Lastoria S, et al. Eur J Nucl Med Mol Imaging. 2024 Sep;51(11):3417-3427. doi: 10.1007/s00259-024-06725-7. Epub 2024 May 22. Eur J Nucl Med Mol Imaging. 2024. PMID: 38772998 Free PMC article. Real-world comparison of healthcare resource utilization and costs of [ 177 Lu]Lu-DOTA-TATE in patients with progressive neuroendocrine tumors in England: a matched cohort analysis using data from the hospital episode statistics dataset. Cox T, O'Connell M, Leeuwenkamp O, Palimaka S, Reed N. Cox T, et al. Curr Med Res Opin. 2022 Aug;38(8):1305-1317. doi: 10.1080/03007995.2022.2065146. Epub 2022 Apr 26. Curr Med Res Opin. 2022. PMID: 35418254 Radioligand Therapy with [ 177 Lu]Lu-DOTA-TATE or [ 177 Lu]Lu-DOTA-TATE and [ 90 Y]Y-DOTA-TATE in Patients with Neuroendocrine Neoplasms of Unknown Locations, or Locations Other Than the Midgut and Pancreas as Primaries in a G1, G2 and G3 Grade. Durma AD, Saracyn M, Kołodziej M, Jóźwik-Plebanek K, Dmochowska B, Mróz A, Żmudzki W, Kamiński G. Durma AD, et al. Pharmaceuticals (Basel). 2023 Aug 24;16(9):1205. doi: 10.3390/ph16091205. Pharmaceuticals (Basel). 2023. PMID: 37765013 Free PMC article. Overcoming nephrotoxicity in peptide receptor radionuclide therapy using [ 177 Lu]Lu-DOTA-TATE for the treatment of neuroendocrine tumours. Geenen L, Nonnekens J, Konijnenberg M, Baatout S, De Jong M, Aerts A. Geenen L, et al. Nucl Med Biol. 2021 Nov-Dec;102-103:1-11. doi: 10.1016/j.nucmedbio.2021.06.006. Epub 2021 Jul 1. Nucl Med Biol. 2021. PMID: 34242948 Review. Peptide Receptor Radionuclide Therapy with [ 177 Lu]Lu-DOTA-TATE in Patients with Advanced GEP NENS: Present and Future Directions. Del Olmo-García MI, Prado-Wohlwend S, Bello P, Segura A, Merino-Torres JF. Del Olmo-García MI, et al. Cancers (Basel). 2022 Jan 24;14(3):584. doi: 10.3390/cancers14030584. Cancers (Basel). 2022. PMID: 35158852 Free PMC article. Review. See all similar articles References Chauhan A, Kohn E, Rivero JD. Neuroendocrine tumors-less well known, often misunderstood, and rapidly growing in incidence. JAMA Oncol. 2020;6(1):21–2. - PMC - PubMed Gillette AA, Babiarz CP, VanDommelen AR, et al. Autofluorescence imaging of treatment response in neuroendocrine tumor organoids. Cancers (Basel). 2021;13(8):1873. - PMC - PubMed Dasari A, Shen C, Halperin D, et al. Trends in the Incidence, prevalence, and survival outcomes in patients with neuroendocrine tumors in the United States. JAMA Oncol. 2017;3(10):1335–42. - PMC - PubMed Bremer SCB, Bittner G, Elakad O, et al. Enhancer of zeste homolog 2 (EZH2) is a marker of high-grade neuroendocrine neoplasia in gastroenteropancreatic and pulmonary tract and predicts poor prognosis. Cancers (Basel). 2022;14(12):2828. - PMC - PubMed Haeger A, Soza-Ried C, Kramer V, et al. Al[(18)F]F-NOTA-octreotide is comparable to [(68)Ga]Ga-DOTA-TATE for PET/CT imaging of neuroendocrine tumours in the Latin-American population. Cancers (Basel). 2023;15(2):439. - PMC - PubMed Show all 27 references Associated data ClinicalTrials.gov/NCT05459844 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen Grants and funding 82102097/National Natural Science Foundation of China U23A20465/National Natural Science Foundation of China 23DZ2291400/Science and Technology Commission of Shanghai Municipality 23TS1400800/Science and Technology Commission of Shanghai Municipality LinkOut - more resources Full Text Sources PubMed Central Springer Medical ClinicalTrials.gov Miscellaneous NCI CPTAC Assay Portal
+	•	Additional evidence from online sources: Primary outcome: Progression Free Survival (PFS) assessed by BIRC
+Secondary outcomes: Progression Free Survival (PFS) assessed by investigator; Objective Response Rate (ORR) assessed by investigator; Objective Response Rate (ORR) assessed by BIRC; Duration of Response (DoR) assessed by investigator; Duration of Response (DoR) assessed by BIRC; Time to Tumour Progression (TTP) assessed by investigator; Time to Tumour Progression (TTP) assessed by BIRC; Disease Control Rate (DCR) assessed by investigator; Disease Control Rate (DCR) assessed by BIRC; 20-month Progression-Free Survival rate assessed by BIRC; 20-month Progression-Free Survival rate assessed by investigator; Overall Survival (OS); Change From Baseline in the EORTC QLQ-C30 Questionnaire; Change From Baseline in the EORTC Quality of Life Questionnaire - Neuroendocrine Carcinoid Module (EORTC QLQ-GINET21); Number of Participants With Adverse Events
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Radiation exposure and protection advice after [177Lu]Lu-DOTA-TATE therapy in China.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/39607652/', 'pmid': '39607652', 'content_scraped': True, 'content_length': 8719}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/39607652/
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

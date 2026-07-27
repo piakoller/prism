@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:10:02.894751
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This Phase II basket trial (DART, SWOG S1609) provides meaningful clinical evidence for an 82-year-old patient with a metastatic bronchial neuroendocrine tumor (Ki-67 25%) who has progressed on standard therapies. The study specifically evaluated Ipilimumab plus Nivolumab in non-pancreatic neuroendocrine neoplasms and stratified outcomes by tumor grade. Published results (Patel et al., 2020, 2021) demonstrated a significant divergence in efficacy: an objective response rate (ORR) of 44% in high-grade neuroendocrine carcinomas compared to 0% in low/intermediate-grade tumors. Given the patient's Ki-67 of 25% places her at the borderline of intermediate (atypical carcinoid) and high-grade classifications, and her well-differentiated imaging profile (SSTR+, FDG low) suggests lower-grade biology, this evidence is critical for decision-making. It suggests that unless the tumor is behaving as a high-grade carcinoma, dual checkpoint inhibition may offer no benefit, thereby informing the risk-benefit assessment for this salvage therapy option."
+}
+```

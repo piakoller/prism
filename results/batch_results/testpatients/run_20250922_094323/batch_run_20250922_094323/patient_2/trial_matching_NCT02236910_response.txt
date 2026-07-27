@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:29:22.592402
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for therapy recommendations. The criteria are met: 1) **Disease/Biology Alignment:** The patient's metastatic, well-differentiated Grade 2 (Ki-67 15%) pancreatic NET aligns perfectly with the study's population of progressive, well-differentiated NETs (Ki-67 < 20%), specifically the gastroenteropancreatic (GEP-NET) subgroup. 2) **Treatment Context/Clinical Applicability:** The study evaluates Lu-DOTA-TATE (PRRT), which is a primary treatment option being considered for this patient's current unresectable, metastatic disease. The evidence is directly applicable to the first-line systemic therapy decision. 3) **Evidence Quality and Relevance:** The published results are highly relevant as they identify key prognostic factors for PRRT outcomes. The finding that ≥ 5 bone metastases is a strong negative predictor for overall survival (HR 4.33) is a critical, actionable insight, as this patient has multiple bone metastases. This evidence directly informs the risk-benefit discussion, helping the tumor board weigh PRRT against other options like chemotherapy, especially given the patient's high tumor burden and symptomatic presentation. Although the patient's primary tumor has low SSTR uptake (SUV 3), potentially not meeting the study's inclusion criterion of uptake ≥ liver, the prognostic data regarding high-burden bone disease is still transferable and essential for making an informed recommendation."
+}
+```

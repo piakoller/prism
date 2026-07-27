@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T16:05:16.673207
+Trial: 24/86
+NCT ID: NCT03110978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Disease/Biology Alignment and Treatment Context criteria. The patient has a metastatic, well-differentiated Grade 1 pancreatic neuroendocrine tumor (Pan-NET) with extensive hepatic involvement (>25 lesions). The study investigates Stereotactic Body Radiation Therapy (SABR) with or without Nivolumab in patients with early-stage (Stage I-IIA) or isolated recurrent non-small cell lung cancer (NSCLC). There is no biological concordance between early-stage NSCLC and metastatic G1 Pan-NET. Clinically, the patient requires systemic therapy for widespread metastatic disease, whereas the study evaluates a local control modality (SABR) for localized lung lesions. Consequently, the evidence regarding event-free survival in localized lung cancer is not transferable or relevant to guiding second-line systemic treatment for this patient."
+}

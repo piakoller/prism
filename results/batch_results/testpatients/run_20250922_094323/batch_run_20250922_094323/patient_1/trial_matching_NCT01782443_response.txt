@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:04:31.291163
+Trial: 57/86
+NCT ID: NCT01782443
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient. The first criterion, Disease/Biology Alignment, is not met because the study explicitly excluded patients with pancreatic neuroendocrine tumors (Pan-NETs), which is this patient's diagnosis. The publication confirms the trial enrolled patients with \"advanced extrapancreatic NET.\" The second criterion, Treatment Context/Clinical Applicability, is also not met. The patient's presentation with recurrent, severe upper GI bleeding is a major contraindication for anti-angiogenic agents like ziv-aflibercept, which carry a known risk of hemorrhage. The study's exclusion of patients with uncontrolled GI bleeding within 6 months underscores this inapplicability. Finally, the Evidence Quality and Relevance is poor for this case; the study in a different population (extrapancreatic NETs) reported prohibitive toxicity (63% grade 3-4 hypertension) with modest efficacy (mPFS 11.8 months). Given that established, approved, and better-studied therapies exist for unresectable Pan-NETs (e.g., sunitinib, everolimus, CAPTEM), this study's data on a highly toxic agent in a different tumor type does not provide any actionable insight for this patient's treatment plan."
+}
+```

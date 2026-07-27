@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:46:13.406892
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criterion for Treatment Context/Clinical Applicability. While the disease biology (well-differentiated NET) aligns, the study evaluates patient preference and experience between Octreotide LAR and Lanreotide in patients initiating Somatostatin Analog (SSA) therapy who have not yet begun treatment. This patient is heavily pre-treated, having already received and progressed on Lanreotide, Sunitinib, TAE, and Belzutifan. Evidence regarding patient preference between first-line SSAs is not clinically actionable for a patient with progressive disease requiring salvage therapy (e.g., PRRT, chemotherapy) or evaluation for liver transplantation. The study offers no insights into efficacy for refractory disease or transplant feasibility."
+}

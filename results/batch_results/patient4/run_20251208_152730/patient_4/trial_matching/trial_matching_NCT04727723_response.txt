@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:34:51.460712
+Trial: 6/86
+NCT ID: NCT04727723
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because it evaluates the real-world effectiveness of *initial* Lutathera (177Lu-DOTATATE) treatment in patients who are naïve to the drug, whereas this patient received PRRT in 2017–2018 and is now considering options for disease progression after multiple subsequent lines (including TKIs). While the disease biology (G2 GEP-NET) aligns, the study's inclusion criteria explicitly require patients to be naïve to Lutathera, rendering the evidence inapplicable to the patient's current clinical scenario which involves potential *re-treatment* or alternative salvage therapies. Evidence derived from PRRT-naïve populations cannot be reasonably extrapolated to predict safety (e.g., cumulative marrow toxicity) or efficacy in a re-challenge setting, which is the specific question for this heavily pre-treated patient."
+}

@@ -1,0 +1,41 @@
+TRIAL ANALYSIS SUMMARY - PATIENT 7
+==================================================
+Analysis Status: success
+Analysis Complete: True
+Trials Analyzed: 15
+Trials to Include: 11
+Trials to Exclude: 4
+
+TRIALS TO INCLUDE IN RECOMMENDATION:
+  ✅ NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)
+     Rationale: This Phase 3 trial provides high-quality evidence comparing PRRT (177Lu-edotreotide) to Everolimus in GEP-NETs, demonstrating a significant progression-free survival benefit for PRRT. As the patient has recently stabilized on PRRT, this trial validates the efficacy of the chosen treatment and informs comparisons against potential alternative therapies like Everolimus.
+  ✅ NCT05153772: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients
+     Rationale: This Phase 2 trial evaluates Alpha-emitter PRRT (212Pb-DOTAMTATE) in patients who have previously received standard PRRT. Since the patient has completed 4 cycles of Lu-177 PRRT, this evidence is highly relevant for future treatment planning should the disease progress, offering a potential next-line radiopharmaceutical option.
+  ✅ NCT02236910: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+     Rationale: This registry study provides published data on survival predictors for patients treated with Lu-DOTA-TATE, such as tumor burden and ascites. This is directly relevant for prognostication and risk stratification for this patient who has just completed a course of this specific therapy.
+  ✅ NCT03074513: Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+     Rationale: This Phase 2 trial demonstrates clinical activity (15% response rate in extrapancreatic NETs) for the combination of immunotherapy and VEGF inhibition. This provides evidence for a potential systemic therapy option if the patient progresses on standard lines of treatment.
+  ✅ NCT02754297: Personalized PRRT of Neuroendocrine Tumors
+     Rationale: This trial investigates personalized dosimetry for 177Lu-Octreotate PRRT. As the patient has received PRRT, this evidence regarding safety, tolerability, and response rates based on dosimetry is relevant for evaluating the patient's recent treatment course and considering potential future retreatment strategies.
+  ✅ NCT03728361: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+     Rationale: This Phase 2 trial showed promising activity for the combination of Nivolumab and Temozolomide in neuroendocrine neoplasms. This serves as an evidence source for alternative systemic regimens should the patient develop refractory disease in the future.
+  ✅ NCT02826928: Diagnostic Performances of Urine and Plasma 5-hydroxyindolacetic Acid (5HIAA) Values in Patients With Small-intestine Neuroendocrine Tumors
+     Rationale: This diagnostic study validates the use of plasma or overnight urinary 5-HIAA versus 24-hour collection. Given the patient's functional tumor and need for lifelong biomarker monitoring, this evidence directly supports optimizing the convenience and accuracy of their follow-up protocol.
+  ✅ NCT01842165: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+     Rationale: This study evaluates imaging and dosimetry parameters to predict PRRT outcomes. This is relevant for the patient's post-PRRT follow-up, helping to interpret imaging results and assess the likelihood of long-term progression-free survival.
+  ✅ NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+     Rationale: This Phase 3 trial demonstrated a significant progression-free survival benefit for Cabozantinib in patients with progressive extrapancreatic NETs. This provides strong Level 1 evidence for Cabozantinib as a viable subsequent line of therapy for this patient upon progression.
+  ✅ NCT02795858: A Phase II Study of Ramucirumab With Somatostatin Analog Therapy in Patients With Advanced, Progressive Carcinoid Tumors
+     Rationale: This trial showed efficacy (median PFS 14.2 months) for Ramucirumab in advanced extrapancreatic NETs. It provides evidence for an anti-angiogenic therapeutic option that could be considered in the sequence of treatments for this patient.
+  ✅ NCT03223428: Real-world Evidence Study EvaLuating PAtient-Reported Outcomes With XERMELO
+     Rationale: This study provides real-world evidence on Telotristat ethyl (Xermelo) for carcinoid syndrome. Given the patient's history of Refractory Carcinoid Syndrome (RCS), this evidence is highly relevant for symptom management strategies if the syndrome becomes uncontrolled again.
+
+TRIALS TO EXCLUDE FROM RECOMMENDATION:
+  ❌ NCT02568267: Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+     Rationale: This trial targets specific gene fusions (NTRK, ROS1, ALK) which are rare in neuroendocrine tumors and not documented in this patient's pathology. Without evidence of these specific molecular alterations, the trial data is not applicable to the patient's current treatment plan.
+  ❌ NCT03870399: Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression
+     Rationale: This trial requires Estrogen/Progesterone receptor expression, which is not routinely tested or documented for this patient. Furthermore, the results indicated only modest antitumor effects, making it a lower priority compared to other available evidence for stable disease.
+  ❌ NCT01466036: Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+     Rationale: No results or publications are provided for this Phase 2 trial in the evidence list. Furthermore, the efficacy of Cabozantinib is more robustly established by the Phase 3 CABINET trial (NCT03375320), which is already included.
+  ❌ NCT02609737: Theranostics of Radiolabeled Somatostatin Antagonists 68Ga-DOTA-JR11 and 177Lu-DOTA-JR11 in Patients With Neuroendocrine Tumors
+     Rationale: There are no published results or evidence provided for this trial to evaluate its clinical utility for the patient.

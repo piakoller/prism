@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T11:00:03.959418
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient's treatment. While the patient has a well-differentiated NET, he has a high-grade (G3, Ki-67 70%) tumor that is refractory to Somatostatin Analogs (SSAs), having explicitly progressed on Lanreotide (Somatuline). This Phase 4 study evaluates patient preference and injection pain between Octreotide and Lanreotide in patients initiating SSA therapy. Evidence regarding patient experience or preference between two agents the patient has already failed (or is refractory to the class) offers no actionable insight for managing progressive, aggressive metastatic disease. The patient requires a new line of systemic therapy (e.g., PRRT given the SSTR positivity) rather than a lateral switch between SSAs based on injection preference. Consequently, the study fails the criteria for treatment context and evidence relevance."
+}

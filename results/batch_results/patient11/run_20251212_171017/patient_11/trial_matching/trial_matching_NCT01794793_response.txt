@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:37:58.977517
+Trial: 76/86
+NCT ID: NCT01794793
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails all criteria for relevance. Biologically, the study focuses exclusively on patients with Cushing's Disease and Acromegaly (pituitary disorders), which are distinct from the patient's high-grade pancreatic neuroendocrine carcinoma (NEC) with a Ki-67 of 95%. Clinically, the study is a rollover trial designed solely for patients already receiving and benefiting from Pasireotide in prior Novartis-sponsored trials for these pituitary conditions; it does not recruit new patients with neuroendocrine neoplasms for de novo treatment. Furthermore, Somatostatin Analogs (SSAs) like Pasireotide are generally ineffective for antiproliferative control in poorly differentiated NECs with such high proliferation indices (Ki-67 >55%), where cytotoxic chemotherapy is the standard. Consequently, the published results regarding long-term safety in pituitary disease offer no actionable evidence for managing this patient's aggressive pancreatic malignancy."
+}

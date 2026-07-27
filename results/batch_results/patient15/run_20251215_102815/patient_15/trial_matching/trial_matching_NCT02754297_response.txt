@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:43:01.371547
+Trial: 33/86
+NCT ID: NCT02754297
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study aligns well with the patient's diagnosis of a progressive, SSTR-positive pancreatic neuroendocrine tumor (PanNET). Although the patient has a high Ki-67 (70%), the tumor is well-differentiated (NET G3) and retains strong SSTR expression (DOTATOC +++), matching the study's primary inclusion criterion of SSTR overexpression. The study investigates personalized 177Lu-octreotate PRRT, a modality the patient has not yet received but is a candidate for given his refractory status to chemotherapy and targeted agents. Published results (Del Prete et al., 2019) demonstrate a favorable safety profile and notably high response rates in the PanNET subgroup (84.6% partial or minor response), providing meaningful evidence to support PRRT as a viable salvage therapy. The personalized dosimetry approach, allowing for potentially higher tumor doses, is particularly relevant for aggressive disease where standard fixed dosing might be insufficient."
+}

@@ -1,0 +1,172 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-08T10:40:01.068860
+Trial: 28/86
+NCT ID: NCT05050942
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 78-year-old patient with no active malignancy and medical history of:
+•	Type 2 diabetes mellitus (on oral antidiabetic drugs for 10 years)
+•	Hypertension and dyslipidemia
+•	Chronic kidney disease (baseline creatinine 1.6–1.8 mg/dL)
+•	Malignant external otitis with secondary osteomyelitis in January 2019 (malaritis); incidental finding of pituitary macroadenoma
+•	Benign prostatic hyperplasia (treated with prostatectomy in 2012)
+•	Glaucoma under ophthalmologic follow-up
+•	Jan–Mar 2021: Incidental elevation of GGT, with liver metastases detected on abdominal ultrasound.
+•	Thoracoabdominal CT: 8 cm mass in the pancreatic uncinate process with internal calcifications. Mesenteric vessels displaced but not infiltrated. Subcentimetric peripancreatic and retroperitoneal lymph nodes. Multiple liver metastases.
+•	Liver biopsy: Well-differentiated NET G1 with Ki67 2%. IHC: chromogranin A+, synaptophysin+, CD56+, CAM5.2+; CK20–, CK7–.
+•	The patient received first-line treatment with Lanreotide Autogel from April 2021 to July 2025.
+2.	Current Clinical Status
+•	Mild toxicity: grade 1 diarrhea
+•	No tumor-related symptoms
+•	ECOG performance status: 0–1
+•	Lab tests: Creatinine 2.24 mg/dL; other parameters unremarkable
+•	MRI (July 2025): Stable liver metastases (at least 25 lesions); largest increased from 55 mm to 58 mm in segment I, and from 65 mm to 68 mm in the right hepatic lobe. Mesenteric root mass increased from 82×40 mm to 90×49 mm.
+Question for Tumorboard:
+What would be the most appropriate second-line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Summary and Oncological Status**
+The patient is a 78-year-old male with a well-differentiated, non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET), Grade 1 (Ki67 2%). He presents with extensive metastatic disease involving the liver (at least 25 lesions), a large primary mass in the pancreatic uncinate process (8 cm), and a mesenteric root mass. Following first-line treatment with Lanreotide Autogel (April 2021 to July 2025), the patient exhibits radiological evidence of progressive disease (PD) based on the MRI from July 2025. Specifically, the largest liver lesions have increased (segment I: 55 mm to 58 mm; right hepatic lobe: 65 mm to 68 mm), and the mesenteric root mass has enlarged from 82×40 mm to 90×49 mm. The patient remains asymptomatic regarding the tumor, with an ECOG performance status of 0–1.
+
+**Comorbidities and Safety Considerations**
+A critical factor in the clinical assessment is the patient's renal function. He has a history of chronic kidney disease with a baseline creatinine of 1.6–1.8 mg/dL, which has deteriorated to a current level of 2.24 mg/dL. Additional comorbidities include Type 2 diabetes mellitus (10-year duration), hypertension, dyslipidemia, and a history of malignant external otitis. The worsening renal function (Creatinine 2.24 mg/dL) necessitates careful evaluation of potential nephrotoxicity associated with second-line systemic therapies.
+
+**Guideline-Based Assessment of Second-Line Options**
+According to the ENETS 2023 and ESMO 2020 guidelines, the following considerations apply to the selection of second-line treatment for a patient with progressive NF-Pan-NET G1:
+
+1.  **Targeted Therapies (Everolimus/Sunitinib):**
+    *   The ENETS guidelines (Section 3.3, Q6) and ESMO guidelines recommend Everolimus and Sunitinib for patients with progressive advanced Pan-NETs.
+    *   These agents are established options for G1/G2 tumors after the failure of somatostatin analogs.
+    *   Given the patient's renal impairment, the metabolic clearance profiles of these drugs make them relevant considerations, though careful monitoring of comorbidities (e.g., diabetes with Everolimus) is required.
+
+2.  **Peptide Receptor Radionuclide Therapy (PRRT):**
+    *   ENETS (Section 3.2, Q5) and ESMO guidelines list PRRT (specifically 177Lu-DOTATATE) as a valid therapeutic option for progressive Pan-NETs.
+    *   **Prerequisites:** Eligibility strictly requires confirmation of strong somatostatin receptor expression via SSTR-PET/CT (e.g., 68Ga-DOTATATE). Uptake must be higher than liver background in all primary tumor lesions and metastases. The patient information does not currently provide SSTR-PET/CT results; this imaging is mandatory before PRRT can be considered.
+    *   **Renal Contraindication:** The patient's current creatinine of 2.24 mg/dL poses a significant safety concern. Guidelines warn that renal dysfunction is a potential adverse event of PRRT. The ESMO guidelines note that mild renal toxicity can occur, and ENETS highlights the need to screen for renal dysfunction. This level of renal impairment may contraindicate PRRT or require specific dosimetry and nephrological clearance.
+
+3.  **Chemotherapy:**
+    *   ENETS (Section 3.4, Q7) and ESMO guidelines mention chemotherapy (Temozolomide/Capecitabine or Streptozotocin/5-FU) for progressive Pan-NETs, particularly when tumor burden is high.
+    *   While the patient has a high tumor burden (bulky primary and >25 liver metastases), the indolent biology (G1, Ki67 2%) and significant renal impairment (Cr 2.24 mg/dL) complicate the use of regimens containing renal-cleared agents like Streptozotocin or Capecitabine.
+
+**Conclusion**
+The patient has progressive, high-burden, well-differentiated G1 NF-Pan-NET. While guidelines support Targeted Therapies, PRRT, or Chemotherapy as second-line options, the clinical assessment is heavily influenced by the patient's renal insufficiency (Creatinine 2.24 mg/dL). SSTR-PET/CT imaging is required to determine receptor status; however, even if SSTR-positive, the renal function may limit PRRT eligibility.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Monitor needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: What would be the most appropriate second-line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT05050942
+	•	Title: A Trial to Assess Efficacy and Safety of Octreotide Subcutaneous Depot in Patients with GEP-NET
+	•	Phase: PHASE3, Status: ACTIVE_NOT_RECRUITING
+	•	Intervention: CAM2029; Octreotide LAR; Lanreotide ATG
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Male or female patient ≥18 years old
+* Histologically confirmed, advanced (unresectable and/or metastatic), and well-differentiated NET of GEP or presumed GEP origin
+* At least 1 measurable, somatostatin receptor-positive lesion according to RECIST 1.1 determined by multiphasic CT or MRI (performed within 28 days before randomization)
+* ECOG performance status of 0 to 2
+
+Exclusion Criteria:
+
+* Documented evidence of disease progression while on treatment (including SSAs) for locally advanced unresectable or metastatic disease
+* Known central nervous system metastases
+* Consecutive treatment with long-acting SSAs for more than 6 months before randomization
+* Carcinoid symptoms that are refractory to treatment (according to the Investigator's judgement) with conventional doses of octreotide LAR or lanreotide ATG and/or to treatment with daily doses of ≤600 µg of octreotide IR
+* Previous treatment with more than 1 cycle of targeted therapies such as mTOR inhibitors or vascular endothelial growth factor inhibitors, or more than 1 cycle of chemotherapy or interferon for GEP-NET
+* Treatment of GEP-NET with trans-arterial chemoembolization or trans-arterial embolization within 12 months before screening
+* Previously received radioligand therapy (PRRT) at any time *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The purpose of this study is to compare the effectiveness and safety of CAM2029 to octreotide LAR or lanreotide ATG in patients with advanced, well-differentiated GEP-NET. Patients who experience progressive disease in the randomized part of the study may proceed to an open-label extension part with intensified treatment with CAM2029.
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/38229199/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Methodology of the SORENTO clinical trial: a prospective, randomised, active-controlled phase 3 trial assessing the efficacy and safety of high exposure octreotide subcutaneous depot (CAM2029) in patients with GEP-NET. (PMID: 38229199)
+	•	Key findings from publications: PubMed Abstract: The current standard of care (SoC) for the initial treatment of unresectable or metastatic well-differentiated gastroenteropancreatic neuroendocrine tumours (GEP-NET) requires initiation of first-generation somatostatin receptor ligand (SRL) therapy, octreotide and lanreotide, which provide safe and efficacious tumour/symptom control in most patients. However, disease progression can occur with So...
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Erratum in Correction: Methodology of the SORENTO clinical trial: a prospective, randomised, active-controlled phase 3 trial assessing the efficacy and safety of high exposure octreotide subcutaneous depot (CAM2029) in patients with GEP-NET. Singh S, Ferone D, Capdevila J, Chan JA, de Herder WW, Halperin D, Mailman J, Hellström L, Liedman H, Svedberg A, Tiberg F. Singh S, et al. Trials. 2024 May 2;25(1):297. doi: 10.1186/s13063-024-08146-1. Trials. 2024. PMID: 38698434 Free PMC article. No abstract available. Abstract Background: The current standard of care (SoC) for the initial treatment of unresectable or metastatic well-differentiated gastroenteropancreatic neuroendocrine tumours (GEP-NET) requires initiation of first-generation somatostatin receptor ligand (SRL) therapy, octreotide and lanreotide, which provide safe and efficacious tumour/symptom control in most patients. However, disease progression can occur with SoC SRL treatment and the optimal dose response of SRL remains unknown. Octreotide subcutaneous depot (CAM2029) is a novel, long-acting, high-exposure formulation that has shown greater bioavailability and improved administration than octreotide long-acting release (LAR) with a well-tolerated safety profile. Retrospective data have highlighted a potential benefit of high-exposure SRL for improved disease control in patients who did not adequately respond to the current SoC SRL treatment. This trial will investigate the efficacy and tolerability of CAM2029 compared to the current SoC, including octreotide LAR and lanreotide autogel (ATG). Methods: SORENTO is a prospective, multicentre, randomised, active-controlled, open-label phase 3 trial aiming to demonstrate superiority of treatment with 20 mg octreotide subcutaneous depot (CAM2029) every 2 weeks (Q2W) compared to treatment with the Investigator's choice of SRL therapy at standard doses for tumour control (octreotide LAR 30 mg or lanreotide ATG 120 mg every 4 weeks [Q4W]) as assessed by progression-free survival (PFS) in approximately 300 patients with unresectable/metastatic and well-differentiated GEP-NET. Upon confirmation of disease progression (determined by a Blinded Independent Review Committee [BIRC] and defined as per RECIST 1.1), patients may enter an open-label extension treatment period with once weekly dosing, to investigate the effects of higher frequency dosing. Overall survival follow-up will end a maximum of 2 years after primary analysis. The primary endpoint will be analysed after 194 confirmed PFS events. Discussion: This is the first trial investigating the efficacy of CAM2029 versus SoC SRL therapy using a head-to-head, superiority trial design. It is expected to be the first trial to investigate the efficacy of increased dosing frequency of a high-exposure SRL. A BIRC will limit bias and measurement variability and ensure high-quality efficacy data. Additionally, inclusion of patients with well-differentiated Grade 3 NET may elucidate treatment strategies for this rarely investigated patient population. Trial registration: ClinicalTrials.gov NCT05050942 . Registered on 21st September 2021. Keywords: CAM2029; GEP-NET; High bioavailability; High plasma exposure; Octreotide; Randomised active-controlled; SORENTO; Somatostatin receptor ligands. © 2024. The Author(s). PubMed Disclaimer Conflict of interest statement SS: Honorarium/consultancy (Camurus AB, Ipsen, Novartis-AAA); trial steering committee (Camurus AB and Novartis-AAA); institutional funding (Ipsen, Novartis-AAA). DF: Participation at advisory board/steering committees (Camurus AB, Novartis-AAA, Recordati, Sandoz); recipient of lecture fee or research grants (BMS, Camurus AB, Ipsen, Novartis-AAA, Recordati); trial steering committee (Camurus AB, Novartis-AAA). JC: Consulting or advisory role (AAA, Bayer, Eisai, Eli Lilly, Esteve, Exelixis, Ipsen, ITM, Merck Serono, Novartis, Pfizer, Roche/Genentech, Sanofi); Speakers’ Bureau (Bayer, Eisai, Eli Lilly, Esteve, Hutchison MediPharma, Ipsen, ITM, Merck Serono, Novartis, Pfizer, Sanofi); travel, accommodations, expenses (Eisai, Ipsen, Pfizer); institutional research funding (AAA, AstraZeneca, Bayer, Eisai, Ipsen, Novartis, Pfizer); trial steering committee (Camurus AB). JAC: Speaker fees (Ipsen); consulting/advisory board participation (Novartis-AAA, TerSera); trial steering committee (Camurus AB). WWdH: Speaker fees (Ipsen, Novartis-AAA); research support (Novartis-AAA); trial steering committee (Camurus AB, Novartis-AAA). DH: Consulting (Alphamedix, Amryt, Camurus AB, Crinetics, Ipsen, ITM, Novartis-AAA, TerSera); research funding (Genentech, ITM, Novartis-AAA, Tarveda, Thermo Fisher Scientific); trial steering committee (Camurus AB). JM: Consultancy/advisory board (Camurus AB, Crinetics, Ipsen, ITM AG, Novartis-AAA, Novartis, Rayze Bio); trial steering committee (Camurus AB). LH: Employee of Camurus AB. HL: Employee of Camurus AB. AS: Employee of Camurus AB (leadership role); stock and other ownership interests (Camurus AB; Cantargia AB; Genmab A/S; Zealand Pharma A/S); patients, royalties or other intellectual property (Cantargia AB). FT: Employee of Camurus AB (leadership role); stock and other ownership interests (Camurus AB); research funding (Camurus AB); patients, royalties or other intellectual property (Camurus AB) Figures Fig. 1 SORENTO trial design. Abbreviations: ATG… Fig. 1 SORENTO trial design. Abbreviations: ATG Autogel, BIRC Blinded Independent Review Committee, IM intramuscular,… Fig. 1 SORENTO trial design. Abbreviations: ATG Autogel, BIRC Blinded Independent Review Committee, IM intramuscular, LAR long-acting release, mg milligram, OLE open-label extension, OLR open-label randomised PFS progression-free survival QW once weekly Q2W every 2 weeks Q4W every 4 weeks SC subcutaneous See this image and copyright information in PMC Similar articles Correction: Methodology of the SORENTO clinical trial: a prospective, randomised, active-controlled phase 3 trial assessing the efficacy and safety of high exposure octreotide subcutaneous depot (CAM2029) in patients with GEP-NET. Singh S, Ferone D, Capdevila J, Chan JA, de Herder WW, Halperin D, Mailman J, Hellström L, Liedman H, Svedberg A, Tiberg F. Singh S, et al. Trials. 2024 May 2;25(1):297. doi: 10.1186/s13063-024-08146-1. Trials. 2024. PMID: 38698434 Free PMC article. No abstract available. Octreotide Subcutaneous Depot for Acromegaly: A Randomized, Double-blind, Placebo-controlled Phase 3 Trial, ACROINNOVA 1. Ferone D, Freda P, Katznelson L, Gatto F, Kadioğlu P, Maffei P, Seufert J, Silverstein JM, Spencer-Segal JL, Isaeva E, Dreval A, Harrie M, Svedberg A, Tiberg F. Ferone D, et al. J Clin Endocrinol Metab. 2025 May 19;110(6):1729-1739. doi: 10.1210/clinem/dgae707. J Clin Endocrinol Metab. 2025. PMID: 39378125 Free PMC article. Clinical Trial. Comparing Somatostatin Analogs in the Treatment of Advanced Gastroenteropancreatic Neuroendocrine Tumors. Allaw MB, Switchenko JM, Khalil L, Wu C, Alese OB, Akce M, Draper A, Jones AT, El-Rayes B, Shaib W. Allaw MB, et al. Oncology. 2022;100(3):131-139. doi: 10.1159/000519605. Epub 2022 Jan 25. Oncology. 2022. PMID: 35078191 Free PMC article. Somatostatin analogues in acromegaly and gastroenteropancreatic neuroendocrine tumours: past, present and future. Öberg K, Lamberts SW. Öberg K, et al. Endocr Relat Cancer. 2016 Dec;23(12):R551-R566. doi: 10.1530/ERC-16-0151. Epub 2016 Oct 3. Endocr Relat Cancer. 2016. PMID: 27697899 Review. Opportunities to Improve Symptom Control with Somatostatin Congeners in GEP-NETs: A Review of Key Issues. Anthony LB, O'Dorisio TM. Anthony LB, et al. Oncologist. 2021 Jul;26(7):e1171-e1178. doi: 10.1002/onco.13847. Epub 2021 Jun 18. Oncologist. 2021. PMID: 34097784 Free PMC article. Review. See all similar articles Cited by "Cold" Somatostatin Analogs in Neuroendocrine Neoplasms: Decoding Mechanisms, Overcoming Resistance, and Shaping the Future of Therapy. Massironi S, Albertelli M, Hasballa I, Paravani P, Ferone D, Faggiano A, Danese S. Massironi S, et al. Cells. 2025 Feb 9;14(4):245. doi: 10.3390/cells14040245. Cells. 2025. PMID: 39996718 Free PMC article. Review. Correction: Methodology of the SORENTO clinical trial: a prospective, randomised, active-controlled phase 3 trial assessing the efficacy and safety of high exposure octreotide subcutaneous depot (CAM2029) in patients with GEP-NET. Singh S, Ferone D, Capdevila J, Chan JA, de Herder WW, Halperin D, Mailman J, Hellström L, Liedman H, Svedberg A, Tiberg F. Singh S, et al. Trials. 2024 May 2;25(1):297. doi: 10.1186/s13063-024-08146-1. Trials. 2024. PMID: 38698434 Free PMC article. No abstract available. References Hallet J, Law CH, Cukier M, Saskin R, Liu N, Singh S. Exploring the rising incidence of neuroendocrine tumors: a population-based analysis of epidemiology, metastatic presentation, and outcomes. Cancer. 2015;121(4):589–597. doi: 10.1002/cncr.29099. - DOI - PubMed Hofland J, Kaltsas G, de Herder WW. Advances in the diagnosis and management of well-differentiated neuroendocrine neoplasms. Endocr Rev. 2020;41(2):372–403. doi: 10.1210/endrev/bnz004. - DOI - PMC - PubMed Das S, Dasari A. Epidemiology, incidence, and prevalence of neuroendocrine neoplasms: Are there global differences? Curr Oncol Rep. 2021;23(4):43. doi: 10.1007/s11912-021-01029-7. - DOI - PMC - PubMed Halperin DM, Shen C, Dasari A, Xu Y, Chu Y, Zhou S, et al. Frequency of carcinoid syndrome at neuroendocrine tumour diagnosis: a population-based study. Lancet Oncol. 2017;18(4):525–534. doi: 10.1016/S1470-2045(17)30110-9. - DOI - PMC - PubMed Dasari A, Shen C, Halperin D, Zhao B, Zhou S, Xu Y, et al. Trends in the incidence, prevalence, and survival outcomes in patients with neuroendocrine tumors in the United States. JAMA Oncol. 2017;3(10):1335–1342. doi: 10.1001/jamaoncol.2017.0589. - DOI - PMC - PubMed Show all 39 references Publication types Randomized Controlled Trial Actions Search in PubMed Search in MeSH Add to Search Multicenter Study Actions Search in PubMed Search in MeSH Add to Search Clinical Trial, Phase III Actions Search in PubMed Search in MeSH Add to Search MeSH terms Disease Progression Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Octreotide* / adverse effects Actions Search in PubMed Search in MeSH Add to Search Prospective Studies Actions Search in PubMed Search in MeSH Add to Search Retrospective Studies Actions Search in PubMed Search in MeSH Add to Search Substances Octreotide Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT05050942 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen PubChem Compound (MeSH Keyword) LinkOut - more resources Full Text Sources BioMed Central Europe PubMed Central PubMed Central Medical ClinicalTrials.gov Miscellaneous NCI CPTAC Assay Portal
+	•	Additional evidence from online sources: Primary outcome: Progression-free survival (PFS) as assessed by a Blinded Independent Review Committee (BIRC)
+Secondary outcomes: Overall survival; PFS as assessed by local Investigators; Overall response rate; Disease control rate; Time to tumor response; Duration of response; Incidence of treatment-emergent adverse events
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Methodology of the SORENTO clinical trial: a prospective, randomised, active-controlled phase 3 trial assessing the efficacy and safety of high exposure octreotide subcutaneous depot (CAM2029) in patients with GEP-NET.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/38229199/', 'pmid': '38229199', 'content_scraped': True, 'content_length': 11069}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/38229199/
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

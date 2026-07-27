@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:45:33.159347
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is clinically relevant as it provides Phase 3 evidence comparing 177Lu-edotreotide (PRRT) versus Everolimus, which are the two primary guideline-based options for this patient's next line of therapy. Although the COMPETE trial enrolled Grade 1-2 GEP-NETs and the patient has a Grade 3 (Ki-67 25%) Pan-NET, the disease biology is reasonably concordant (well-differentiated, SSTR-positive), allowing for clinical extrapolation, particularly given the patient's \"low\" G3 index close to the G2 border. The study met its primary endpoint, demonstrating significantly longer PFS with PRRT (23.9 months) compared to Everolimus (14.1 months). This evidence directly addresses the tumor board's question regarding the choice between PRRT and switching to an mTOR inhibitor (Everolimus) after Sunitinib failure. The results support the efficacy of PRRT in SSTR-positive disease and provide crucial data to prioritize PRRT over Everolimus in the treatment sequence, assuming the patient's liver function permits."
+}

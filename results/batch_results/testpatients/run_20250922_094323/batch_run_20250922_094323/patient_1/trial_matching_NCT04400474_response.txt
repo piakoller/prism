@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:07:39.748296
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient because the critical criterion of Evidence Quality and Relevance is not met. While the Disease/Biology Alignment is excellent, as the patient's G2 pancreatic NET fits into the study's Cohort 5 for digestive system NETs, there are no published efficacy or safety results for this specific cohort. The provided publication data only contains results for the adrenocortical carcinoma cohort, which are not clinically transferable to a pancreatic NET. Furthermore, while the treatment could be considered in a future unresectable/progressive disease scenario (meeting Treatment Context/Applicability), the patient would currently be ineligible due to the active GI bleeding and recent thromboembolic event, which are explicit exclusion criteria. Without any published outcomes (e.g., ORR, PFS, safety) for the relevant GEP-NET population, this study offers no actionable evidence to guide the immediate or future therapeutic decisions for this patient."
+}
+```

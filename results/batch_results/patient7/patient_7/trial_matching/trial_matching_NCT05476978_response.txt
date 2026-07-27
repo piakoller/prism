@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T10:23:15.963021
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Disease/Biology Alignment or Treatment Context. The patient has a confirmed well-differentiated neuroendocrine tumor of the ileum (midgut NET), whereas the study evaluates an Artificial Intelligence model for Endoscopic Ultrasound (EUS) specifically to diagnose solid lesions in the pancreas. There is no anatomical or clinical overlap, as the patient does not require diagnostic evaluation of a pancreatic mass. Furthermore, the study focuses on diagnostic accuracy rather than therapeutic outcomes, offering no evidence to guide decisions regarding the patient's current questions on PRRT, SSA, or cardiac monitoring for carcinoid syndrome."
+}

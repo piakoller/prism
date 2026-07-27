@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T16:29:31.840014
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Treatment Context and Evidence Relevance criteria. While the disease biology (GEP-NET) aligns, the study focuses on validating the NETest biomarker specifically in the context of surgical intervention to predict recurrence or assess resection completeness. The patient is explicitly noted as having surgery excluded due to metastatic burden and fragility. As the patient requires a recommendation for a new line of systemic therapy (e.g., targeted therapy) rather than surgical evaluation, evidence regarding a post-surgical biomarker does not provide actionable insights for her current management. The study does not test a therapeutic intervention suitable for a fragile, non-surgical patient with renal impairment."
+}

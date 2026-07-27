@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:13:31.771851
+Trial: 80/86
+NCT ID: NCT04711135
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence to inform therapy for this patient. Although there is alignment in disease biology (well-differentiated G2 NET, Ki-67 19%) and the treatment (Lutathera) is a relevant option in an unresectable scenario (Criterion 1 & 2 met), the study's evidence is not applicable (Criterion 3 not met). The NETTER-P study exclusively enrolled adolescent patients (12-<18 years) and the published results focus entirely on safety and dosimetry, with no efficacy data such as response rates or progression-free survival. While the findings suggest a safety profile comparable to adults, the foundational evidence for using Lutathera in a 52-year-old adult comes from other landmark trials (e.g., NETTER-1, NETTER-2) that demonstrated clinical benefit in an adult population. This pediatric bridging study provides no new, actionable information on efficacy that would influence the decision to recommend PRRT for this adult patient. The choice to use Lutathera would be based on evidence from other, more relevant clinical trials."
+}
+```

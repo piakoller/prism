@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:39:50.816252
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful clinical evidence for this patient because the provided published results (PMID: 37429302) are exclusively restricted to the rare sarcoma cohort (e.g., chordoma, alveolar soft part sarcoma). Although the trial protocol (NCT03012620) theoretically included a cohort for refractory poorly differentiated neuroendocrine tumors, no efficacy or safety data for neuroendocrine neoplasms or MiNENs are presented in the provided input. Without results for the relevant disease cohort, the study offers no actionable insights to guide therapy for a patient with a colonic MiNEN (high-grade NEC component), regardless of whether the patient is in the current surveillance scenario or a future refractory setting."
+}

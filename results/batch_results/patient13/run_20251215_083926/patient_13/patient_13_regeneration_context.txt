@@ -1,0 +1,73 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - CUMULATIVE VALIDATION ISSUES
+================================================================================
+
+⚠️  ATTENTION: This is a REGENERATION with cumulative feedback from ALL previous attempts.
+The issues below include BOTH new issues AND unresolved issues from prior iterations.
+You MUST address EVERY issue listed - not just the newest ones.
+
+================================================================================
+PREVIOUS RECOMMENDATION THAT FAILED VALIDATION
+================================================================================
+
+Based on the patient's diagnosis of a progressive, DOTATOC-positive, Grade 3 (Ki-67 25%) well-differentiated pancreatic neuroendocrine tumor (NF-Pan-NET), the recommended therapy is **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE**.
+
+**Key Clinical Trial Evidence Supporting PRRT:**
+*   **NETTER-2 (NCT03972488):** This Phase 3 trial provides high-level evidence for patients with Grade 2 and Grade 3 (Ki-67 10–55%) GEP-NETs. The trial demonstrated that 177Lu-DOTATATE plus long-acting octreotide significantly extended median progression-free survival (PFS) to **22.8 months** compared to **8.5 months** with high-dose octreotide (stratified hazard ratio **0.276**; p<0.0001). This directly supports the efficacy of PRRT in this patient's specific tumor grade and biology.
+*   **COMPETE (NCT03049189):** Emerging topline results from this Phase 3 trial indicate a statistically significant improvement in PFS with 177Lu-edotreotide compared to everolimus in SSTR-positive GEP-NETs, supporting the prioritization of PRRT over mTOR inhibitors in the treatment sequence.
+*   **P-PRRT (NCT02754297):** This Phase 2 trial reported a high objective response rate in pancreatic NETs (84.6% partial or minor response) treated with personalized 177Lu-octreotate, reinforcing the utility of PRRT for pancreatic primaries.
+
+**Safety Prerequisites:**
+*   **Liver Function:** Given the patient's "high hepatic tumor burden," it is critical to **confirm preserved liver function (bilirubin/albumin) prior to initiation** due to the risk of hepatotoxicity. Trial NCT02236910 identifies high hepatic burden as a predictor of outcomes and toxicity risks.
+*   **Uptake:** Eligibility requires confirmation that DOTATOC PET uptake is higher than liver background in all target lesions.
+
+**Alternative Therapy:**
+If PRRT is not feasible, **Cabozantinib** is a recommended alternative based on the **CABINET trial (NCT03375320)**, which demonstrated a statistically significant improvement in progression-free survival compared to placebo in patients with progressive pancreatic neuroendocrine tumors who had received prior therapy. **Everolimus** is another guideline-supported option (ENETS/ESMO), though COMPETE results suggest PRRT may offer superior PFS.
+
+⚠️  The above recommendation had validation issues. Review it carefully and
+correct the specific problems identified below while preserving correct sections.
+
+================================================================================
+ALL VALIDATION ISSUES (CUMULATIVE)
+================================================================================
+
+📊 Total issues to address: 2
+
+### ACCURACY ISSUES:
+  ❌ [Persisting from iter 0] Semantic: **Inaccurate Clinical Trial Data (CABINET - NCT03375320):** The recommendation cites the Progression-Free Survival (PFS) for Cabozantinib as "13.8 months vs. 4.4 months." This is factually incorrect for the Pancreatic NET cohort in the CABINET trial. The correct results (presented at ESMO 2023/published NEJM 2024) for the Pan-NET cohort are a median PFS of **11.4 months** (Cabozantinib) vs. **3.0 months** (Placebo). The Extra-pancreatic cohort was 8.3 vs 3.2 months. The numbers cited (13.8 vs 4.4) do not match the trial outcomes.
+  ❌ [Persisting from iter 0] Semantic: **Lack of Evidence Grounding (Hallucination):** The recommendation cites specific statistical outcomes (Hazard Ratios, median PFS months) for NETTER-2, COMPETE, and CABINET. However, the **Trial Analysis Summary** provided in the input contains **NO** results data (all trials are listed with "Relevance: N/A" or just titles). The recommendation is hallucinating specific numbers that are not present in the provided source text. While the NETTER-2 numbers happen to be correct based on external knowledge, the recommendation claims to be supported by the "evidence provided above," which is false.
+
+================================================================================
+SPECIFIC GUIDANCE FOR REGENERATION (FROM ALL ITERATIONS)
+================================================================================
+
+--- From Iteration 0 ---
+1. **Correct CABINET Trial Data:** Change the Cabozantinib efficacy statement to reflect the correct Pan-NET cohort results: "Median PFS 11.4 months vs. 3.0 months (HR 0.27)" (or remove specific numbers if not available in your source).
+2. **Align with Provided Evidence:** If the provided "Trial Analysis Summary" does not contain the specific PFS numbers and Hazard Ratios, do not invent them. State qualitatively that the trials demonstrated benefit, OR ensure the source text actually contains these numbers before citing them.
+3. **Refine Safety Statement:** Strengthen the safety section regarding liver burden. Instead of just "careful monitoring," add: "Confirm preserved liver function (bilirubin/albumin) prior to initiation due to risk of hepatotoxicity in the setting of high tumor burden."
+4. **Clarify COMPETE Citation:** Soften the language regarding COMPETE if the data is not in the provided text, or frame it as "emerging evidence" rather than a definitive reason to skip Everolimus, unless the source text explicitly supports this superiority claim.
+
+--- From Iteration 1 ---
+1. **Remove or Justify NCT03070301:** Either remove the citation of the Ribociclib trial if it was not part of the analysis, or ensure it is properly listed in the "Included Trials" section of the input.
+2. **Align Data with Input:** Ensure that the specific results cited (HR, PFS) are actually present in the "Trial Analysis Summary". If the summary provided is only titles, the recommendation should describe the trial's *intent* and *relevance* (e.g., "NETTER-2 investigates efficacy in G3...") rather than hallucinating specific numbers not in the text, OR the input text needs to be updated to include these results.
+3. **Enhance Monitoring Guidance:** Add a specific sentence in the "Safety Prerequisites" or "Rationale" acknowledging that while PRRT is appropriate for FDG-positive/SSTR-positive disease, the FDG uptake implies more aggressive biology, warranting close monitoring for early progression.
+
+--- Current Iteration ---
+1. **Remove or Justify NCT03070301:** Either remove the citation of the Ribociclib trial if it was not part of the analysis, or ensure it is properly listed in the "Included Trials" section of the input.
+2. **Align Data with Input:** Ensure that the specific results cited (HR, PFS) are actually present in the "Trial Analysis Summary". If the summary provided is only titles, the recommendation should describe the trial's *intent* and *relevance* (e.g., "NETTER-2 investigates efficacy in G3...") rather than hallucinating specific numbers not in the text, OR the input text needs to be updated to include these results.
+3. **Enhance Monitoring Guidance:** Add a specific sentence in the "Safety Prerequisites" or "Rationale" acknowledging that while PRRT is appropriate for FDG-positive/SSTR-positive disease, the FDG uptake implies more aggressive biology, warranting close monitoring for early progression.
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above - both new and persisting issues
+2. Base all recommendations on the evidence provided (trials, guidelines, assessment)
+3. Only cite trials and data that appear in the evidence sections above
+4. For standard therapies without trial evidence, cite the relevant guidelines
+5. Ensure clinical safety and appropriateness for this specific patient
+6. Maintain consistency with the patient's clinical status and history
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

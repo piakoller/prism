@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:19:23.287246
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 3 COMPETE trial provides critical evidence for guiding the next line of therapy for this patient. Biologically, the patient aligns perfectly with the study population: progressive, well-differentiated G2 Pan-NET (Ki-67 15%). Clinically, the patient is progressing on belzutifan and is likely ineligible for liver transplantation due to Ki-67 >10% and active progression. She requires a new systemic therapy and is naive to both interventions tested in this study (PRRT and everolimus), having previously received only sunitinib and lanreotide. Assuming SSTR-positivity (standard for G2 NETs and required for eligibility), this study offers direct, high-quality evidence that 177Lu-edotreotide significantly improves PFS compared to everolimus (23.9 vs 14.1 months, HR 0.67). This result is immediately actionable, suggesting PRRT may be the superior choice over everolimus for her next line of treatment, especially given the need to control extrahepatic disease if bone metastases are confirmed."
+}

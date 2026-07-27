@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:15:52.892971
+Trial: 7/86
+NCT ID: NCT06557408
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a high-grade metastatic pancreatic neuroendocrine carcinoma (NEC, Ki-67 95%) and has already undergone a distal pancreatectomy for the primary tumor. This study evaluates pancreatic fistula outcomes following minimally invasive enucleation, a parenchyma-sparing surgical technique specifically indicated for benign or low-grade tumors (Inclusion criterion #2) and explicitly excludes malignancies requiring oncological resection (Exclusion criterion #2). Enucleation is oncologically inappropriate for high-grade NECs, which require formal resection with lymphadenectomy if surgery is even considered. Furthermore, the patient's current clinical need involves consolidation strategies for hepatic metastases (e.g., liver resection or systemic maintenance), not management of a primary pancreatic lesion suitable for enucleation. Therefore, the study provides no actionable evidence for this patient's care."
+}

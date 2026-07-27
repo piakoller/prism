@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:42:53.933261
+Trial: 75/86
+NCT ID: NCT03972488
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful evidence for this patient's treatment planning. Biologically, the patient's tumor (well-differentiated Pan-NET, G2, Ki-67 20%) aligns perfectly with the NETTER-2 study population, which specifically targeted G2 and G3 NETs with Ki-67 10-55% to evaluate 177Lu-Dotatate as a first-line therapy. In the current clinical scenario of bulky, symptomatic, unresectable disease, the study establishes 177Lu-Dotatate as a highly effective option with a median PFS of 22.8 months, significantly superior to high-dose octreotide. While the patient has discordant SSTR-negative peritoneal metastases (which would strictly exclude her from the trial), the study remains clinically applicable by quantifying the expected efficacy of PRRT for the extensive SSTR-positive burden (liver and primary). This evidence allows the tumor board to weigh the benefit of treating the SSTR-positive bulk against the risk of the SSTR-negative clones, informing the choice between PRRT, chemotherapy, or a sequenced approach."
+}

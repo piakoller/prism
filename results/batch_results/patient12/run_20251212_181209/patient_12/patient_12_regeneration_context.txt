@@ -1,0 +1,82 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - CUMULATIVE VALIDATION ISSUES
+================================================================================
+
+⚠️  ATTENTION: This is a REGENERATION with cumulative feedback from ALL previous attempts.
+The issues below include BOTH new issues AND unresolved issues from prior iterations.
+You MUST address EVERY issue listed - not just the newest ones.
+
+================================================================================
+PREVIOUS RECOMMENDATION THAT FAILED VALIDATION
+================================================================================
+
+**Primary Recommendation:** Initiation of first-line systemic cytotoxic chemotherapy with **Capecitabine and Temozolomide (CAPTEM)**.
+
+**Alternative Consideration:** **Streptozotocin and 5-Fluorouracil (STZ/5-FU)** is a valid alternative regimen, particularly if oral chemotherapy is not feasible, though the patient's history of gestational diabetes warrants careful monitoring of glucose levels given Streptozotocin's potential pancreatic toxicity.
+
+**Concurrent Workup & Safety Measures:**
+*   **Breastfeeding Contraindication:** Given the patient is recently postpartum (C-section 12/08/2022), she must be explicitly advised that **breastfeeding is contraindicated** during chemotherapy and must be discontinued immediately if currently active to prevent toxicity to the infant.
+*   **Genetic Counseling:** Referral for genetic testing is mandatory given the patient's young age (35) and pancreatic primary to rule out MEN1, VHL, or TSC (ENETS Guideline Q1/Q9).
+*   **Thyroid Evaluation:** Urgent ultrasound and potential fine-needle aspiration (FNA) of the FDG-positive/Ga68-positive thyroid nodules to rule out synchronous malignancy or syndromic involvement.
+*   **Fertility Preservation:** Counseling regarding fertility preservation should be conducted prior to initiating cytotoxic therapy.
+
+**Follow-up & Re-staging:**
+*   Morphological imaging (CT/MRI) should be performed every **3 months** (or after 3 cycles) to assess response (RECIST 1.1) and toxicity.
+
+**Future/Second-Line Consideration:** **Cabozantinib** (based on **NCT03375320**) or **Sunitinib/Everolimus** upon disease progression.
+
+**Contraindicated Therapy:** **Peptide Receptor Radionuclide Therapy (PRRT)** with 177Lu-Dotatate is currently **contraindicated** as a first-line option due to discordant imaging (Ga68-negative peritoneal carcinomatosis), which predicts lack of response in those specific lesions.
+
+⚠️  The above recommendation had validation issues. Review it carefully and
+correct the specific problems identified below while preserving correct sections.
+
+================================================================================
+ALL VALIDATION ISSUES (CUMULATIVE)
+================================================================================
+
+📊 Total issues to address: 3
+
+### ACCURACY ISSUES:
+  ❌ Semantic: **Data Hallucination (Evidence Not in Source):** The recommendation cites specific numerical results (ORR, PFS) for multiple trials (NCT03217097, NCT03728361, NCT03074513, NCT03972488, NCT03375320) in the Rationale section. However, the "TRIAL ANALYSIS SUMMARY" provided in the input lists all these trials with "(Relevance: N/A)" and contains no results text. The recommendation claims "The provided results for this trial indicate...", which is false based on the provided context.
+  ❌ Semantic: **Data Inaccuracy (CABINET Trial):** The recommendation cites the Progression-Free Survival (PFS) for the CABINET trial (NCT03375320) as "**13.8 months vs 4.4 months**". This is factually incorrect. The actual results for the pancreatic NET cohort in the CABINET trial (Chan et al., NEJM 2024) demonstrated a median PFS of **11.4 months** (Cabozantinib) vs **3.0 months** (Placebo). The cited numbers do not match the known trial data, indicating a hallucination or error.
+  ❌ [Persisting from iter 0] Semantic: **Accuracy - Evidence Attribution:** The recommendation cites specific numerical outcomes (e.g., "Best ORR of 52.9%" for NCT03217097, "PFS of 22.7 months" for E2211) and states this is based on "provided trial evidence." However, the "Trial Analysis Summary" provided in the input lists these trials only by title with the tag "(Relevance: N/A)" and contains *no* results data. The recommendation incorrectly attributes external knowledge to the provided source text.
+
+================================================================================
+SPECIFIC GUIDANCE FOR REGENERATION (FROM ALL ITERATIONS)
+================================================================================
+
+--- From Iteration 0 ---
+1.  **Add Safety Warning:** Explicitly state that breastfeeding is contraindicated during chemotherapy and must be discontinued if currently active.
+2.  **Include Workup Actions:** Add a section for "Concurrent Workup" or "Next Steps" that includes:
+    *   Referral for genetic counseling (MEN1/VHL).
+    *   Ultrasound and potential biopsy of FDG-positive thyroid nodules.
+    *   Fertility preservation counseling.
+3.  **Correct Evidence Citation:** Do not claim the specific statistics come from the "provided trial evidence" if the summary is empty. Instead, state that the recommendation is based on "standard clinical guidelines (ESMO/ENETS)" or general clinical knowledge of the cited trials, or request that the trial data be properly included in the input.
+4.  **Define Follow-up:** Specify when the first re-staging scan should occur (e.g., after 3 cycles or 3 months).
+
+--- From Iteration 1 ---
+1. **Remove Unsupported Trial Data:** Delete specific numerical citations (ORR, PFS) for trials where the data was not provided in the source text (NCT03217097, NCT03728361, NCT03074513, NCT03972488, NCT03375320).
+2. **Correct CABINET Trial Data:** If the CABINET trial is to be mentioned as a future option, correct the PFS data to reflect the actual pNET cohort results (11.4 months vs 3.0 months) or remove the specific numbers if not verifying against a source.
+3. **Strengthen Guideline Rationale:** Since the trial data was not provided in the context, expand the justification using the **ENETS and ESMO guidelines** (which were provided). Focus on the guideline recommendations for "bulky," "symptomatic," and "FDG-positive" disease to support the use of Cytotoxic Chemotherapy (CAPTEM) over SSAs.
+4. **Maintain Clinical Plan:** Keep the primary recommendation (CAPTEM), the contraindication for PRRT, and the safety warnings (breastfeeding, genetics), as these are clinically correct.
+
+--- Current Iteration ---
+1. **Remove Unsupported Trial Data:** Delete specific numerical citations (ORR, PFS) for trials where the data was not provided in the source text (NCT03217097, NCT03728361, NCT03074513, NCT03972488, NCT03375320).
+2. **Correct CABINET Trial Data:** If the CABINET trial is to be mentioned as a future option, correct the PFS data to reflect the actual pNET cohort results (11.4 months vs 3.0 months) or remove the specific numbers if not verifying against a source.
+3. **Strengthen Guideline Rationale:** Since the trial data was not provided in the context, expand the justification using the **ENETS and ESMO guidelines** (which were provided). Focus on the guideline recommendations for "bulky," "symptomatic," and "FDG-positive" disease to support the use of Cytotoxic Chemotherapy (CAPTEM) over SSAs.
+4. **Maintain Clinical Plan:** Keep the primary recommendation (CAPTEM), the contraindication for PRRT, and the safety warnings (breastfeeding, genetics), as these are clinically correct.
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above - both new and persisting issues
+2. Base all recommendations on the evidence provided (trials, guidelines, assessment)
+3. Only cite trials and data that appear in the evidence sections above
+4. For standard therapies without trial evidence, cite the relevant guidelines
+5. Ensure clinical safety and appropriateness for this specific patient
+6. Maintain consistency with the patient's clinical status and history
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

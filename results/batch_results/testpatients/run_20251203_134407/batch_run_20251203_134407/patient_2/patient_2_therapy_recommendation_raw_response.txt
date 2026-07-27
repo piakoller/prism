@@ -1,0 +1,30 @@
+=== THERAPY RECOMMENDATION RAW RESPONSE ===
+Timestamp: 2025-12-03T15:49:31.596057
+Patient ID: 2
+Model: google/gemini-3-pro-preview
+==================================================
+
+<therapy_recommendation>
+The most appropriate first-line systemic treatment for this patient is **systemic chemotherapy**, specifically the combination of **Capecitabine and Temozolomide (CAPTEM)** or alternatively **Streptozotocin and 5-Fluorouracil (STZ/5-FU)**.
+
+This recommendation is based on the need for tumor shrinkage in a symptomatic patient with a Grade 2 Pan-NET (Ki-67 15%) and heterogeneous somatostatin receptor (SSTR) expression.
+
+Key evidence from the guidelines supporting this recommendation includes:
+*   **ECOG-ACRIN E2211 Trial (cited in ENETS and ESMO Guidelines):** A randomized phase II trial demonstrating that the combination of Temozolomide and Capecitabine provided a superior Progression-Free Survival (PFS) compared to Temozolomide alone (22.7 months vs. 14.4 months; HR 0.58, p = 0.023) and a trend toward improved Overall Survival (OS) in advanced Pan-NETs.
+*   **ESMO Guidelines:** Recommend chemotherapy (STZ/5-FU or TEM/CAP) for patients with bulky disease or symptomatic presentation where tumor shrinkage is the goal, even without documented prior progression (Level of Evidence II, Grade A/B).
+*   **ENETS 2023 Guidelines:** State that chemotherapy is favored over other options for patients with symptomatic disease due to high tumor volume or significant growth, particularly in G2 tumors with higher Ki-67 indices.
+</therapy_recommendation>
+
+<rationale>
+The rationale for selecting systemic chemotherapy over Somatostatin Analogs (SSAs), Targeted Therapies, or Peptide Receptor Radionuclide Therapy (PRRT) is based on the following factors derived from the patient assessment and guidelines:
+
+1.  **Symptomatic Disease and Cytoreduction Needs:** The patient is symptomatic with progressive weight loss (-5 kg) and moderate asthenia. According to ENETS Guidelines (Q7) and ESMO Guidelines, chemotherapy is the preferred modality when the therapeutic objective is tumor shrinkage (cytoreduction) to alleviate symptoms caused by tumor burden. SSAs (e.g., Lanreotide/Octreotide) are primarily indicated for tumor growth control in slow-growing, stable disease with Ki-67 <10% (based on the **CLARINET study** cited in guidelines), which does not align with this patient's clinical picture (Ki-67 15% and symptomatic progression).
+
+2.  **Heterogeneous SSTR Expression (PRRT Ineligibility):** The Ga-68 PET/CT demonstrates significant intra-patient heterogeneity. While metastases are avid (SUV 9–12), the primary pancreatic lesion has low uptake (SUV 3). PRRT eligibility generally requires homogenous SSTR expression where all lesions show uptake higher than the liver background (typically SUV ~6–7). The mismatch in this patient suggests the primary tumor would not be effectively targeted by PRRT, making it unsuitable as a first-line strategy compared to chemotherapy which acts systemically regardless of receptor status.
+
+3.  **Ki-67 Index:** The patient's Ki-67 is 15%. The **ECOG-ACRIN E2211** trial included patients with low or intermediate grade (G1/G2) Pan-NETs and supports the use of CAPTEM in this population. Conversely, the efficacy of SSAs is less established for Ki-67 >10% in the presence of symptoms.
+
+4.  **Comorbidities:** While the patient has a history of ischemic heart disease, chemotherapy (specifically Temozolomide-based) is generally a viable option. Sunitinib, a targeted therapy option (supported by the **Raymond et al. Phase 3 trial** cited in guidelines), is associated with potential cardiac side effects (e.g., hypertension, heart failure) and is typically used for disease stabilization rather than the rapid cytoreduction required here.
+
+5.  **Guideline Consensus:** Both ENETS and ESMO guidelines position chemotherapy as a standard first-line option for advanced, symptomatic, or bulky Pan-NETs G2 to achieve disease control and symptom relief.
+</rationale>

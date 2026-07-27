@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:05:38.586165
+Trial: 85/86
+NCT ID: NCT02842749
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study is not relevant because it fails all three criteria. First, the disease biology is fundamentally mismatched: the patient has a colonic MiNEN driven by a poorly differentiated, high-grade neuroendocrine carcinoma (NEC) component (Ki-67 90%), whereas the study evaluates Everolimus in well-differentiated G1/G2 pancreatic neuroendocrine tumors (pNETs). These are distinct clinical entities with different standard-of-care pathways (platinum-based chemotherapy for NEC vs. targeted therapy for NET). Second, the treatment context is inapplicable; Everolimus is not a standard treatment for high-grade NEC, and the patient is currently in a surveillance setting following a partial response to chemotherapy, rather than requiring second-line therapy for progressive well-differentiated disease. Finally, the provided data indicates no published results are available for this completed Phase IV study, meaning there is no evidence to assess."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:21:03.403764
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for relevance. First, the disease biology is completely discordant: the patient has a high-grade Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, whereas the study strictly recruits patients with low-grade (G1/G2, Ki-67 ≤5%) well-differentiated Neuroendocrine Tumors (NETs). Second, the treatment context is inapplicable; the patient requires management for a hepatic metastasis following a distal pancreatectomy (primary tumor removed), while the study investigates Endoscopic Ultrasound-guided Radiofrequency Ablation (EUS-RFA) specifically for primary pancreatic lesions. Finally, the evidence regarding the safety and efficacy of ablating small, indolent primary tumors provides no actionable insights for consolidating a response in aggressive, metastatic high-grade disease."
+}

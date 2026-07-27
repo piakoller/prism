@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:38:52.210122
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study provides high-quality Phase 3 evidence supporting cabozantinib as a therapeutic option for this patient. The patient has a well-differentiated G2 pancreatic NET (pNET) and is experiencing disease progression after multiple prior lines of therapy, including sunitinib and the HIF-2α inhibitor belzutifan. The CABINET trial specifically enrolled patients with progressive advanced pNETs who had received prior systemic therapy (including sunitinib) and demonstrated a clinically meaningful and statistically significant improvement in progression-free survival (13.8 months vs. 4.4 months; HR 0.23). Given that the patient is currently progressing and may not be eligible for liver transplantation due to a Ki-67 index of 15% (exceeding the <10% ESMO criterion) and lack of pre-transplant stability, cabozantinib represents a vital evidence-based systemic treatment alternative. The study's population and outcomes are directly transferable to this patient's clinical scenario of refractory metastatic pNET."
+}

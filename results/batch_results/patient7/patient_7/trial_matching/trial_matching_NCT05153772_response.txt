@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T10:18:38.263067
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for a potential future line of therapy for this patient. The patient has an SSTR-positive ileal NET and has completed standard Lu-177 PRRT; while currently stable, disease progression is expected eventually. The study evaluates 212Pb-DOTAMTATE (Targeted Alpha Therapy) and specifically includes a cohort for patients who have progressed on prior PRRT, directly matching the patient's anticipated future clinical scenario. Although the reported efficacy results (ORR 56.8%) focus on the PRRT-naïve cohort, they demonstrate potent antitumor activity superior to standard beta-emitters, providing a strong biological rationale for use in refractory cases. Additionally, the published safety data showing low hematologic and renal toxicity is highly relevant for informing treatment decisions in a patient with prior radioisotope exposure. This evidence supports identifying alpha-emitter therapy as a viable salvage option upon disease progression."
+}

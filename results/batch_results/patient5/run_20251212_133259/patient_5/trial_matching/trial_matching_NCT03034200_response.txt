@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:01:19.380291
+Trial: 72/86
+NCT ID: NCT03034200
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component (small-cell type, Ki-67 90%). In contrast, this Phase 2 study of ONC201 specifically targets tumors with high DRD2 receptor expression, demonstrating efficacy primarily in Pheochromocytoma-Paraganglioma (PC-PG) and Desmoplastic Small Round Cell Tumors (DSRCT). The study results indicate that clinical benefit was concentrated in these specific subtypes, with limited activity in other neuroendocrine tumors. Poorly differentiated digestive NECs are biologically distinct from PC-PG and DSRCT, typically behaving like small-cell lung cancer rather than the dopamine-dependent tumors studied here. Consequently, the evidence regarding ONC201 efficacy in PC-PG/DSRCT cannot be reasonably extrapolated to inform treatment or surveillance decisions for a patient with a colorectal small-cell NEC currently in remission."
+}

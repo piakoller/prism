@@ -1,0 +1,219 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-09-22T10:13:53.737794
+Trial: 82/86
+NCT ID: NCT02893930
+Model: google/gemini-2.5-pro
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 52-year-old man with no significant medical history presented in January 2025 with massive upper gastrointestinal bleeding and hemorrhagic shock. He required ICU admission and arterial embolization (gastric, splenic, and pancreatic branches). An incidental pulmonary embolism was also detected. He started first-line treatment with FOLFIRINOX (Cycle 1: Feb 11, 2025; Cycle 7: May 21, 2025).
+•	FDG-PET (Jan 2025): Hypermetabolic pancreatic mass (SUV 16) with a central photopenic area suggestive of necrosis and locoregional infiltration. No distant disease.
+•	CT scan (Apr 2025): Stable heterogeneous abdominal mass with necrotic areas up to 12 cm, infiltrating the pancreatic tail, splenic hilum, gastric fundus, and left adrenal. Complete splenic vein occlusion with tumor thrombus.
+•	CT scan (May 20, 2025): 10 cm pancreatic mass with similar locoregional infiltration and signs of splenic infarctions.
+2.	Current Clinical Status
+Referred to our center in June 2025. Pathology review reclassified the tumor as a Grade 2 NET with Ki67 19%. Admitted in June 2025 due to a new episode of upper GI bleeding (Hb 7.1 g/dL). Gastroscopy showed a 4 cm area of tumor infiltration without active bleeding.
+Question for Tumorboard:
+After clinical stabilization of the current GI bleeding episode, what should be the next therapeutic step in disease management?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+<assessment>
+### **Patient Summary**
+This is a 52-year-old man with a recently diagnosed, large, locally advanced pancreatic neuroendocrine tumor (Pan-NET). He initially presented with a life-threatening upper gastrointestinal (GI) bleed and was empirically treated with 7 cycles of FOLFIRINOX. A subsequent pathology review reclassified his tumor as a well-differentiated Grade 2 NET with a Ki-67 of 19%. He is now admitted for a second episode of severe upper GI bleeding, with a hemoglobin of 7.1 g/dL, secondary to direct tumor infiltration into the stomach.
+
+### **Tumor Characteristics and Staging**
+*   **Histopathology:** The diagnosis is a well-differentiated Pan-NET, Grade 2. The Ki-67 proliferation index of 19% is at the highest end of the G2 category (G2 range: 3-20%), bordering on G3, which often indicates a more aggressive clinical course (ESMO 2020, Table 1).
+*   **Anatomical Staging:** Imaging (CT scan, May 2025) confirms a large, 10 cm mass in the pancreatic tail. This is a locally advanced tumor, consistent with a pT4 stage, showing extensive locoregional infiltration into the splenic hilum, gastric fundus, and left adrenal gland. There is also evidence of complete splenic vein occlusion by a tumor thrombus (ENETS 2023, Sec 3.1.3).
+*   **Functional Imaging and Prognostic Markers:**
+    *   The initial FDG-PET scan (Jan 2025) revealed a highly hypermetabolic mass (SUV 16). According to the ENETS 2023 and ESMO 2020 guidelines, high FDG uptake is a poor prognostic factor in NETs and is associated with higher tumor grade (ENETS 2023, Sec 2.5.1; ESMO 2020, Staging section).
+    *   A significant limitation in the current workup is the absence of somatostatin receptor imaging (SRI), such as a 68Ga-DOTATATE PET/CT. The guidelines identify SRI as the functional imaging modality of choice for staging, prognostication, and determining eligibility for Peptide Receptor Radionuclide Therapy (PRRT) (ENETS 2023, Sec 2.5.2; ESMO 2020, Staging section). The tumor's SSTR expression status is therefore unknown.
+
+### **Response to Prior Therapy**
+*   The patient received 7 cycles of FOLFIRINOX from February to May 2025. While not a standard first-line therapy for Pan-NETs, this can be viewed as a form of neoadjuvant or conversion chemotherapy.
+*   Imaging follow-up suggests disease stabilization, with a modest decrease in the primary mass size from up to 12 cm (April 2025) to 10 cm (May 2025). This indicates the tumor is not refractory to systemic chemotherapy.
+
+### **Current Clinical Problem and Considerations for Management**
+*   The patient's readmission is due to a new, severe upper GI bleed, which is a direct and life-threatening complication of the tumor's local invasiveness. This underscores the urgent need for definitive local control of the primary tumor.
+*   **Surgical Candidacy:** The central question for the tumor board is the feasibility of surgical resection. The ENETS 2023 guidelines state that patients with locally advanced (T4) NF-Pan-NET can be resected safely in expert centers, and that radical (R0) resection, including venous reconstruction, can be considered (Level of evidence 3, Grade of recommendation A). The ESMO 2020 guidelines similarly support considering pancreatectomy with vascular resection in this setting. The patient's disease appears confined to the locoregional area without distant metastases on available imaging, making curative-intent surgery a primary consideration. The extent of infiltration will necessitate a complex multivisceral resection.
+*   **Alternative Therapeutic Options:** If the tumor is deemed unresectable, or if the surgical risk is prohibitive, other systemic therapies would be considered. These include alternative chemotherapy regimens (e.g., temozolomide/capecitabine), targeted agents (everolimus, sunitinib), or PRRT (ESMO 2020, Figure 4). However, eligibility for PRRT cannot be assessed without SRI to confirm sufficient SSTR expression, and the high FDG uptake raises the possibility of SSTR-negative disease, which would be a contraindication.
+
+### **Summary for Tumor Board Discussion**
+This patient has a large, locally advanced, high-end G2 Pan-NET with aggressive biological features (high Ki-67, high FDG uptake) that is causing recurrent, life-threatening GI bleeding. He has demonstrated disease stabilization following systemic chemotherapy. The immediate clinical priority is to achieve local control to prevent further hemorrhage. The main therapeutic question is to determine if a complex, multivisceral surgical resection with curative intent is technically feasible and offers an acceptable risk-benefit profile, as supported by both ENETS and ESMO guidelines for locally advanced disease.
+</assessment>
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: After clinical stabilization of the current GI bleeding episode, what should be the next therapeutic step in disease management?
+
+### STUDY DATA
+	•	NCT-ID: NCT02893930
+	•	Title: Sapanisertib in Treating Patients With Metastatic or Refractory Pancreatic Neuroendocrine Tumor That Cannot Be Removed by Surgery
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Sapanisertib
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Patients must have unresectable or metastatic, histologically confirmed low or intermediate grade (Klimstra Criteria) pancreatic neuroendocrine tumor (PNET) with radiological evidence of disease progression since last treatment
+* Refractory disease to treatment with an mTOR inhibitor
+* Patients with uncontrolled intercurrent illness including, but not limited to, ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements, are ineligible
+* Disease that is currently not amenable to surgery, radiation, or combined modality therapy with curative intent
+* Patients must not have poorly differentiated neuroendocrine carcinoma, high-grade neuroendocrine carcinoma, adenocarcinoid, goblet cell carcinoid and small cell carcinoma
+* Patients must have measurable disease
+* Documented radiological evidence for disease progression (measurable or nonmeasurable) =\< 12 months prior to enrollment
+
+  * NOTE: If patient has had previous radiation to the marker lesion(s), there must be evidence of progression since the radiation; at least one measurable lesion as per Response Evaluation Criteria in Solid Tumors (RECIST)
+* Prior or concurrent therapy with somatostatin analogue (SSA) is permitted; a stable dose at least 2 months prior to study start and must continue on the stable dose while receiving study treatment; SSA is not considered as systemic treatment
+* Recovered from adverse events to grade 1 or less toxicity according to Common Terminology Criteria for Adverse Events version 4.0 (CTCAE 4.0) due to agents administered previously
+
+  * NOTE: Chemotherapy-induced alopecia and grade 2 neuropathy are acceptable
+* Patients must have Eastern Cooperative Oncology Group (ECOG) performance status of 0-1
+* Patients must be able to swallow intact capsules
+* Leukocytes \>= 3,000/mm\^3 (within less than or equal to 14 days prior to registration)
+* Absolute neutrophil count (ANC) \>= 1.5 x 10\^9/L (within less than or equal to 14 days prior to registration)
+* Hemoglobin \>= 10 g/dL (within less than or equal to 14 days prior to registration)
+* Platelets \>= 100 x 10\^9/L (within less than or equal to 14 days prior to registration)
+* Total serum bilirubin =\< institutional upper limit of normal (ULN) (within less than or equal to 14 days prior to registration)
+* Alanine aminotransferase (ALT) and aspartate aminotransferase (AST) =\< 2.5 x ULN (within less than or equal to 14 days prior to registration)
+* Serum creatinine =\< 1.5 X institutional ULN and creatinine clearance \>= 60 ml/min (within less than or equal to 14 days prior to registration)
+
+  * NOTE: Creatinine clearance must be calculated using the Cockcroft-Gault equation
+* Glycosylated hemoglobin (HbA1c) \< 7.0% (within less than or equal to 14 days prior to registration)
+* Fasting serum glucose =\< 130 mg/dL (within less than or equal to 14 days prior to registration)
+* Fasting triglycerides =\< 300 mg/dL (within less than or equal to 14 days prior to registration)
+* Diabetics are allowed if:
+
+  * Fasting blood glucose (FBG) =\< 130 mg/dL (mmol/L), OR
+  * HbA1c =\< 7%
+* Women must not be pregnant or breast-feeding due to potential harm to the fetus from MLN0128 (TAK-228); all females of childbearing potential must have a blood test or urine study within 7 days of registration to rule out pregnancy; a female of childbearing potential is any woman, regardless of sexual orientation or whether they have undergone tubal ligation, who meets the following criteria: 1) has not undergone a hysterectomy or bilateral oophorectomy; or 2) has not been naturally postmenopausal for at least 24 consecutive months (i.e., has had menses at any time in the preceding 24 consecutive months)
+* Women of child-bearing potential and men must agree to practice 1 highly effective method of contraception and 1 additional effective (barrier) method of contraception, at the same time, from the time of signing the informed consent through 90 days (for female patients) and 120 day (for male patients) after the last dose of study drug, or agree to completely abstain from heterosexual intercourse; should a woman become pregnant or suspect she is pregnant while she or her partner is participating in this study, she should inform her treating physician immediately; men must agree not to donate sperm during the course of this study or within 120 days after receiving their last dose of study drug
+* Patients who have a history of brain metastasis are eligible for the study provided that all the following criteria are met:
+
+  * Brain metastases which have been treated
+  * No evidence of disease progression for \>= 3 months before the first dose of study drug
+  * No hemorrhage after treatment
+  * Off-treatment with dexamethasone for 4 weeks before administration of the first dose of TAK-228
+  * No ongoing requirement for dexamethasone or anti-epileptic drugs
+* Voluntary written consent must be given before performance of any study related procedure not part of standard medical care, with the understanding that consent may be withdrawn by the patient at any time without prejudice to future medical care
+
+Exclusion Criteria:
+
+* Patient is INELIGIBLE if patient discontinued prior mTOR inhibitor due to toxicity
+* Patients must NOT have radiotherapy, or major surgery or active drug therapy for pNET (SSA permitted) within 4 weeks prior to study treatment start
+* Patient must NOT have had previous treatment with any PI3K or AKT inhibitor
+* NO hepatic artery embolization or cryoablation/radiofrequency ablation of hepatic metastasis within 2 months of study treatment start
+* Patients must NOT have previous or concurrent malignancy within 2 years; exceptions are made for patients who meet any of the following conditions:
+
+  * Adequately treated basal cell or squamous cell skin cancer, superficial bladder cancer OR
+  * Adequately treated stage I or II cancer currently in complete remission, or any other cancer that has been in complete remission for at least 2 years
+* No more than 3 prior systemic treatment regimens for advanced PNET
+* Patients with a history of the following within =\< 6 months of study entry are NOT eligible:
+
+  * Ischemic myocardial event, including angina requiring therapy and artery revascularization procedures
+  * Ischemic cerebrovascular event, including transient ischemic attack (TIA) and artery revascularization procedures
+  * Requirement for inotropic support (excluding digoxin) or serious (uncontrolled) cardiac arrhythmia (including atrial flutter/fibrillation, ventricular fibrillation or ventricular tachycardia)
+  * New York Heart Association (NYHA) class III or IV heart failure
+  * Pulmonary embolism
+* Patients with known significant active cardiovascular or pulmonary disease at the time of study entry are INELIGIBLE including:
+
+  * Uncontrolled hypertension (i.e., systolic blood pressure \>180 mm Hg, diastolic blood pressure \> 95 mm Hg); use of anti-hypertensive agents to control hypertension before cycle1 day 1 is allowed
+  * Pulmonary hypertension
+  * Uncontrolled asthma or oxygen (O2) saturation \< 90% by arterial blood gas analysis or pulse oximetry on room air
+  * QT syndrome, or torsades de pointes
+  * Significant valvular disease; severe regurgitation or stenosis by imaging independent of symptom control with medical intervention, or history of valve replacement
+  * Medically significant (symptomatic) bradycardia
+  * History of arrhythmia requiring an implantable cardiac defibrillator
+  * Baseline prolongation of the rate-corrected QT interval (QTc) (e.g., repeated demonstration of QTc interval \> 480 milliseconds, or history of congenital long
+* Patients with known manifestations of malabsorption due to prior gastrointestinal (GI) surgery, GI disease, or for an unknown reason that may alter the absorption of MLN0128 (TAK-228) are INELIGIBLE
+* Human immunodeficiency virus (HIV)-positive patients on combination antiretroviral therapy are INELGIBLE because of the potential for pharmacokinetic interactions with MLN0128 (TAK-228)
+* NO treatment with strong inhibitors and/or inducers of cytochrome P450 (CYP) 3A4, or CYP2C19 within 1 week preceding the first dose of study drug
+* NO patients receiving systemic corticosteroids (either intravenous \[IV\] or oral steroids, excluding inhalers or low-dose hormone replacement therapy) within 1 week before administration of the first dose of study drug
+* Patients CANNOT have daily or chronic use of a proton pump inhibitor (PPI) and/or having taken a PPI within 7 days before receiving the first dose of study drug *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This phase II trial studies how well sapanisertib works in treating patients with pancreatic neuroendocrine tumor that has spread to other places in the body (metastatic), does not respond to treatment (refractory), or cannot be surgically removed. Drugs such as sapanisertib may stop the growth or shrink tumor cells by blocking some of the enzymes needed for cell growth.
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/36264382/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • A phase II study of sapanisertib (TAK-228) a mTORC1/2 inhibitor in rapalog-resistant advanced pancreatic neuroendocrine tumors (PNET): ECOG-ACRIN EA2161. (PMID: 36264382)
+	•	Key findings from publications: PubMed Abstract: This was a two-stage phase II trial of a mTORC1/2 inhibitor (mTORC: mammalian target of rapamycin complex) Sapanisertib (TAK228) in patients with rapalog-resistant pancreatic neuroendocrine tumors (PNETs) (NCT02893930). Approved rapalogs such as everolimus inhibit mTORC1 and have limited clinical activity, possibly due to compensatory feedback loops. Sapanisertib addresses the potential for incomp...
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract This was a two-stage phase II trial of a mTORC1/2 inhibitor (mTORC: mammalian target of rapamycin complex) Sapanisertib (TAK228) in patients with rapalog-resistant pancreatic neuroendocrine tumors (PNETs) ( NCT02893930 ). Approved rapalogs such as everolimus inhibit mTORC1 and have limited clinical activity, possibly due to compensatory feedback loops. Sapanisertib addresses the potential for incomplete inhibition of the mTOR pathway through targeting of both mTORC1 and mTORC2, and thus to reverse resistance to earlier rapamycin analogues. In stage 1, patients received sapanisertib 3 mg by mouth once daily on a continuous dosing schedule in 28-day cycle. This trial adopted a two-stage design with the primary objective of evaluating objective tumor response. The first stage would recruit 13 patients in order to accrue 12 eligible and treated patients. If among the 12 eligible patients at least 1 patient had an objective response to therapy, the study would move to the second stage of accrual where 25 eligible and treated patients would be enrolled. This study activated on February 1, 2017, the required pre-determined number of patients (n = 13) had entered by November 5, 2018 for the first stage response evaluation. The accrual of this trial was formally terminated on December 27, 2019 as no response had been observed after the first stage accrual. Treatment-related grade 3 adverse events were reported in eight (61%) patients with hyperglycemia being the most frequent, in three patients (23%). Other toxicities noted in the trial included fatigue, rash diarrhea, nausea, and vomiting. The median PFS was 5.19 months (95% CI [3.84, 9.30]) and the median OS was 20.44 months (95% CI [5.65, 22.54]). Due to the lack of responses in Stage 1 of the study, the study did not proceed to stage 2. Thus the potential to reverse resistance was not evident. Keywords: PNET; Sapanisertib; mTORC1/2 inhibitor. © 2022. The Author(s), under exclusive licence to Springer Science+Business Media, LLC, part of Springer Nature. PubMed Disclaimer Figures Fig. 1 Progression-Free Survival Fig. 1 Progression-Free Survival Fig. 1 Progression-Free Survival Fig. 2 Overall Survival Fig. 2 Overall Survival Fig. 2 Overall Survival See this image and copyright information in PMC Similar articles mTOR kinase inhibition reduces tissue factor expression and growth of pancreatic neuroendocrine tumors. Lewis CS, Elnakat Thomas H, Orr-Asman MA, Green LC, Boody RE, Matiash K, Karve A, Hisada YM, Davis HW, Qi X, Mercer CA, Lucas FV, Aronow BJ, Mackman N, Versteeg HH, Bogdanov VY. Lewis CS, et al. J Thromb Haemost. 2019 Jan;17(1):169-182. doi: 10.1111/jth.14342. Epub 2018 Dec 25. J Thromb Haemost. 2019. PMID: 30472780 Free PMC article. Phase II Study of BEZ235 versus Everolimus in Patients with Mammalian Target of Rapamycin Inhibitor-Naïve Advanced Pancreatic Neuroendocrine Tumors. Salazar R, Garcia-Carbonero R, Libutti SK, Hendifar AE, Custodio A, Guimbaud R, Lombard-Bohas C, Ricci S, Klümpen HJ, Capdevila J, Reed N, Walenkamp A, Grande E, Safina S, Meyer T, Kong O, Salomon H, Tavorath R, Yao JC. Salazar R, et al. Oncologist. 2018 Jul;23(7):766-e90. doi: 10.1634/theoncologist.2017-0144. Epub 2017 Dec 14. Oncologist. 2018. PMID: 29242283 Free PMC article. Clinical Trial. Phase I Study of mTORC1/2 Inhibitor Sapanisertib (CB-228/TAK-228) in Combination with Metformin in Patients with mTOR/AKT/PI3K Pathway Alterations and Advanced Solid Malignancies. Subbiah V, Coleman N, Piha-Paul SA, Tsimberidou AM, Janku F, Rodon J, Pant S, Dumbrava EEI, Fu S, Hong DS, Zhang S, Sun M, Jiang Y, Roszik J, Song J, Yuan Y, Meric-Bernstam F, Naing A. Subbiah V, et al. Cancer Res Commun. 2024 Feb 12;4(2):378-387. doi: 10.1158/2767-9764.CRC-22-0260. Cancer Res Commun. 2024. PMID: 38126764 Free PMC article. Clinical Trial. Everolimus: a new treatment option for advanced pancreatic neuroendocrine tumors. Thompson LA, Kim M, Wenger SD, O'Bryant CL. Thompson LA, et al. Ann Pharmacother. 2012 Sep;46(9):1212-9. doi: 10.1345/aph.1R087. Epub 2012 Sep 4. Ann Pharmacother. 2012. PMID: 22947595 Review. PI3K/Akt/mTOR pathway inhibitors in the therapy of pancreatic neuroendocrine tumors. Wolin EM. Wolin EM. Cancer Lett. 2013 Jul 10;335(1):1-8. doi: 10.1016/j.canlet.2013.02.016. Epub 2013 Feb 16. Cancer Lett. 2013. PMID: 23419523 Review. See all similar articles Cited by Novel RICTOR amplification harbouring entities: FISH validation of RICTOR amplification in tumour tissue after next-generation sequencing. Sztankovics D, Krencz I, Moldvai D, Dankó T, Nagy Á, Nagy N, Bedics G, Rókusz A, Papp G, Tőkés AM, Pápay J, Sápi Z, Dezső K, Bödör C, Sebestyén A. Sztankovics D, et al. Sci Rep. 2023 Nov 10;13(1):19610. doi: 10.1038/s41598-023-46927-x. Sci Rep. 2023. PMID: 37949943 Free PMC article. The mTORC2 signaling network: targets and cross-talks. Ragupathi A, Kim C, Jacinto E. Ragupathi A, et al. Biochem J. 2024 Jan 25;481(2):45-91. doi: 10.1042/BCJ20220325. Biochem J. 2024. PMID: 38270460 Free PMC article. Review. Counteracting Immunosenescence-Which Therapeutic Strategies Are Promising? Hieber C, Grabbe S, Bros M. Hieber C, et al. Biomolecules. 2023 Jul 6;13(7):1085. doi: 10.3390/biom13071085. Biomolecules. 2023. PMID: 37509121 Free PMC article. Review. Molecular Targeting of the Phosphoinositide-3-Protein Kinase (PI3K) Pathway across Various Cancers. Shan KS, Bonano-Rios A, Theik NWY, Hussein A, Blaya M. Shan KS, et al. Int J Mol Sci. 2024 Feb 6;25(4):1973. doi: 10.3390/ijms25041973. Int J Mol Sci. 2024. PMID: 38396649 Free PMC article. Review. Consensus report of the 2021 National Cancer Institute neuroendocrine tumor clinical trials planning meeting. Singh S, Hope TA, Bergsland EB, Bodei L, Bushnell DL, Chan JA, Chasen BR, Chauhan A, Das S, Dasari A, Del Rivero J, El-Haddad G, Goodman KA, Halperin DM, Lewis MA, Lindwasser OW, Myrehaug S, Raj NP, Reidy-Lagunes DL, Soares HP, Strosberg JR, Kohn EC, Kunz PL; NET CTPM participants. Singh S, et al. J Natl Cancer Inst. 2023 Sep 7;115(9):1001-1010. doi: 10.1093/jnci/djad096. J Natl Cancer Inst. 2023. PMID: 37255328 Free PMC article. References Milan SA, Yeo CJ (2012) Neuroendocrine tumors of the pancreas. Curr Opin Oncol 24(1):46e55. - PubMed Yao JC, Eisner MP, Leary C et al. (2007) Population-based study of islet cell car- cinoma. Ann Surg Oncol 14:3492e3500. - PMC - PubMed Averous J, Proud CG (2006) When translation meets transformation: the mTOR story. Oncogene 25:6423–6435 - PubMed Bjornsti MA, Houghton PJ (2004) The TOR pathway: a target for cancer therapy. Nat Rev Cancer 4:335–348. 10.1038/nrc1362 - DOI - PubMed Jiao Y, Shi C, Edil BH, de Wilde RF, Klimstra DS, Maitra A, Schulick RD, Tang LH, Wolfgang CL, Choti MA, Velculescu VE, Diaz LA, Vogelstein B, Kinzler KW, Hruban RH, Papadopoulos N (2011) DAXX/ATRX, MEN1, and mTOR pathway genes are frequently altered in pancreatic neuroendocrine tumors. Science 331:1199–1203. 10.1126/science.1200609 - DOI - PMC - PubMed Show all 40 references Publication types Clinical Trial, Phase II Actions Search in PubMed Search in MeSH Add to Search Research Support, N.I.H., Extramural Actions Search in PubMed Search in MeSH Add to Search MeSH terms Humans Actions Search in PubMed Search in MeSH Add to Search MTOR Inhibitors Actions Search in PubMed Search in MeSH Add to Search Mechanistic Target of Rapamycin Complex 1 / metabolism Actions Search in PubMed Search in MeSH Add to Search Neuroectodermal Tumors, Primitive* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / pathology Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms* / pathology Actions Search in PubMed Search in MeSH Add to Search Protein Kinase Inhibitors / adverse effects Actions Search in PubMed Search in MeSH Add to Search Sirolimus Actions Search in PubMed Search in MeSH Add to Search Substances sapanisertib Actions Search in PubMed Search in MeSH Add to Search Mechanistic Target of Rapamycin Complex 1 Actions Search in PubMed Search in MeSH Add to Search MTOR Inhibitors Actions Search in PubMed Search in MeSH Add to Search Protein Kinase Inhibitors Actions Search in PubMed Search in MeSH Add to Search Sirolimus Actions Search in PubMed Search in MeSH Add to Search Related information MedGen PubChem Compound (MeSH Keyword) Grants and funding UG1 CA233320/CA/NCI NIH HHS/United States UL1 TR001863/TR/NCATS NIH HHS/United States U10 CA180821/CA/NCI NIH HHS/United States U10 CA180820/CA/NCI NIH HHS/United States U10 CA180794/CA/NCI NIH HHS/United States LinkOut - more resources Full Text Sources Europe PubMed Central PubMed Central Springer eScholarship, University of California - Access Free Full Text Medical MedlinePlus Health Information Miscellaneous NCI CPTAC Assay Portal
+	•	Additional evidence from online sources: Primary outcome: Overall Response Rate
+Secondary outcomes: Progression-free Survival (PFS); Disease Control Rate; Duration of Response
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'A phase II study of sapanisertib (TAK-228) a mTORC1/2 inhibitor in rapalog-resistant advanced pancreatic neuroendocrine tumors (PNET): ECOG-ACRIN EA2161.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/36264382/', 'pmid': '36264382', 'content_scraped': True, 'content_length': 8946}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/36264382/
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

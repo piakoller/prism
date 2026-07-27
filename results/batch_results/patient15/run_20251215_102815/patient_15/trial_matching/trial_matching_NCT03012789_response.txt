@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:34:54.323856
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Treatment Context / Clinical Applicability criterion. While the disease biology (NET G3) aligns with the study population, the study evaluates the utility of a biomarker (NETest) specifically in the context of surgical intervention to assess resection completeness and predict recurrence. The patient presents with diffuse liver metastases and is explicitly assessed as not suitable for local therapies or surgery. Since the patient is not a candidate for the intervention being studied (surgery), and the study does not evaluate a systemic therapy (such as PRRT or chemotherapy) relevant to his refractory, unresectable status, the evidence provided cannot guide the current therapeutic decision-making process."
+}

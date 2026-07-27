@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:17:12.783531
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence to guide treatment for this patient primarily due to the lack of published results (Criterion 3). Although the disease biology (SSTR-positive neuroendocrine tumor) aligns with the study population (Criterion 1), the provided data contains only generic mentions of the trial in review articles without specific efficacy or safety outcomes. Furthermore, regarding clinical applicability (Criterion 2), the study explicitly excludes patients with prior peptide receptor radionuclide therapy (PRRT) with 90Y- or 177Lu-labeled agents. Since this patient has already received a full course of PRRT and is being evaluated for potential retreatment or late-line options, a study focusing on PRRT-naïve patients without available results cannot inform the clinical decision-making process."
+}

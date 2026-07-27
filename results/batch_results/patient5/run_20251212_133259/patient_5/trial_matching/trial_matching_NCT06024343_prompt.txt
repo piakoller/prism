@@ -1,0 +1,158 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-12T13:37:50.054454
+Trial: 5/86
+NCT ID: NCT06024343
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+A 65-year-old woman with a mixed neuroendocrine–non-neuroendocrine neoplasm (MiNEN) of the transverse colon (poorly differentiated NEC component, small-cell type, Ki-67 90%). In December 2024 underwent upfront en-bloc colectomy with jejunal/ileal resection (R0, pT4b pN2a). Received six cycles of carboplatin + etoposide between February and June 2025, achieving metabolic and morphological partial response with residual pararenal lesion. Biopsy of the residual mass in July 2025 showed chronic inflammation with no neoplasia.
+Current Clinical Status: ECOG performance status 0. Current weight 89 kg (previously 83 kg at last hospitalization in June 2025). Appetite increased. The patient reports no significant symptoms.
+Question for Tumorboard:
+After negative biopsy of the residual pararenal lesion, is there indication for further local treatment or surveillance?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Summary and Disease Characterization**
+The patient is a 65-year-old woman diagnosed with a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) of the transverse colon. The neoplasm is characterized by a poorly differentiated neuroendocrine carcinoma (NEC) component of the small-cell type with a very high proliferation index (Ki-67 90%). Following the ENETS 2023 guidelines (Q10), the prognosis of colorectal MiNEN is generally driven by the aggressive NEC component, and management strategies typically target this component. The initial staging was locally advanced (pT4b pN2a) following an R0 en-bloc colectomy in December 2024.
+
+**Treatment History and Response**
+The patient received adjuvant/palliative chemotherapy consisting of six cycles of carboplatin and etoposide between February and June 2025. This regimen aligns with ENETS recommendations (Q6 and Q10), which establish platinum-etoposide as the standard first-line treatment for the aggressive NEC component of MiNEN. The patient achieved a metabolic and morphological partial response, indicating chemosensitivity. Clinically, the patient has recovered well, presenting with an ECOG performance status of 0, significant weight gain (currently 89 kg), and no reported symptoms.
+
+**Assessment of Residual Pararenal Lesion**
+The primary clinical dilemma concerns the residual pararenal lesion. While imaging indicated a partial response, the biopsy performed in July 2025 revealed chronic inflammation with no evidence of neoplasia.
+*   **Pathological Interpretation:** The biopsy result suggests that the residual mass may represent necrotic or scar tissue resulting from the treatment response rather than viable tumor. This is consistent with the "chronic inflammation" finding.
+*   **Guideline Context:** According to ENETS 2023 (Q7), surgery for metastatic digestive NEC is generally not recommended due to poor prognosis and rapid disease progression. It is reserved for highly selected cases with limited disease where R0 resection is possible. In this case, the absence of viable tumor cells in the biopsy further weakens the indication for invasive local treatment (such as resection or ablation) at this time.
+
+**Surveillance Considerations**
+Given the negative biopsy and the high risk of recurrence associated with a Ki-67 of 90% and small-cell morphology, the clinical picture favors a rigorous surveillance strategy over immediate re-intervention.
+*   **Follow-up Intervals:** ESMO guidelines recommend imaging every 2–3 months for NEC G3.
+*   **Risk Assessment:** Despite the negative biopsy, the possibility of sampling error in the residual mass cannot be entirely excluded, though the current histological evidence points to a complete pathological response at that site. The patient's excellent performance status (ECOG 0) is a positive prognostic factor (ENETS Q3), allowing for potential future interventions should disease progression be detected.
+
+**Conclusion**
+The patient presents with a colonic MiNEN (small-cell NEC component, Ki-67 90%) in clinical and pathological remission regarding the residual pararenal lesion, based on the recent negative biopsy showing only chronic inflammation. There is currently no histological evidence of active disease to justify immediate local treatment (surgery or radiotherapy). The clinical assessment supports a strategy of close surveillance to monitor for potential recurrence or progression of the aggressive NEC component.
+
+Trial Search Recommendations:
+  - *Assessment of Residual Pararenal Lesion**
+  - **Pathological Interpretation:** The biopsy result suggests that the residual mass may represent necrotic or scar tissue resulting from the treatment response rather than viable tumor. This is consistent with the "chronic inflammation" finding.
+  - **Guideline Context:** According to ENETS 2023 (Q7), surgery for metastatic digestive NEC is generally not recommended due to poor prognosis and rapid disease progression. It is reserved for highly selected cases with limited disease where R0 resection is possible. In this case, the absence of viable tumor cells in the biopsy further weakens the indication for invasive local treatment (such as resection or ablation) at this time.
+  - *Surveillance Considerations**
+  - **Follow-up Intervals:** ESMO guidelines recommend imaging every 2–3 months for NEC G3.
+	•	Question for Tumorboard: After negative biopsy of the residual pararenal lesion, is there indication for further local treatment or surveillance?
+
+### STUDY DATA
+	•	NCT-ID: NCT06024343
+	•	Title: Minimally Invasive Pancreatic Enucleation With Main Pancreatic Duct Exposure, Repair or Reconstruction
+	•	Phase: NA, Status: COMPLETED
+	•	Intervention: MPD Exposure, Repair or Reconstruction
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+1. age between 18 and 75 years, regardless of gender;
+2. patients with solitary benign or low-grade malignant pancreatic tumors, including NET, SPN, and cystic tumors;
+3. eligible for pancreatic parenchyma-sparing resection (PSR) according to contemporary guidelines;
+4. patients with an ECOG performance status of 0 or 1;
+5. successfully received MIEN (laparoscopic or robotic)
+
+Exclusion Criteria:
+
+1. body mass index \> 35 kg/m2;
+2. concomitant malignancies;
+3. intraoperative frozen section or postoperative pathology indicating malignancy, requiring conversion to oncologic resection;
+4. loss to follow-up within 90 days postoperatively. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The aim of this study is to evaluate the impact of concomitant main pancreatic duct exposure, repair, or reconstruction during minimally invasive pancreatic tumor enucleation on long-term patient prognosis and quality of life.
+	•	Publications: 14 publication(s) found; Analysis: Found 14 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Cauley CE, Pitt HA, Ziegler KM, Nakeeb A, Schmidt CM, Zyromski NJ, House MG, Lillemoe KD. Pancreatic enucleation: improved outcomes compared to resection. J Gastrointest Surg. 2012 Jul;16(7):1347-53. doi: 10.1007/s11605-012-1893-7. Epub 2012 Apr 24.
+• Giuliani T, De Pastena M, Paiella S, Marchegiani G, Landoni L, Festini M, Ramera M, Marinelli V, Casetti L, Esposito A, Bassi C, Salvia R. Pancreatic Enucleation Patients Share the Same Quality of Life as the General Population at Long-Term Follow-Up: A Propensity Score-Matched Analysis. Ann Surg. 2023 Mar 1;277(3):e609-e616. doi: 10.1097/SLA.0000000000004911. Epub 2021 Apr 14.
+• Kromrey ML, Bulow R, Hubner J, Paperlein C, Lerch MM, Ittermann T, Volzke H, Mayerle J, Kuhn JP. Prospective study on the incidence, prevalence and 5-year pancreatic-related mortality of pancreatic cysts in a population-based study. Gut. 2018 Jan;67(1):138-145. doi: 10.1136/gutjnl-2016-313127. Epub 2017 Sep 6.
+• van Huijgevoort NCM, Del Chiaro M, Wolfgang CL, van Hooft JE, Besselink MG. Diagnosis and management of pancreatic cystic neoplasms: current evidence and guidelines. Nat Rev Gastroenterol Hepatol. 2019 Nov;16(11):676-689. doi: 10.1038/s41575-019-0195-x. Epub 2019 Sep 16.
+• Dasari A, Shen C, Halperin D, Zhao B, Zhou S, Xu Y, Shih T, Yao JC. Trends in the Incidence, Prevalence, and Survival Outcomes in Patients With Neuroendocrine Tumors in the United States. JAMA Oncol. 2017 Oct 1;3(10):1335-1342. doi: 10.1001/jamaoncol.2017.0589.
+• Zhou Y, Zhao M, Wu L, Ye F, Si X. Short- and long-term outcomes after enucleation of pancreatic tumors: An evidence-based assessment. Pancreatology. 2016 Nov-Dec;16(6):1092-1098. doi: 10.1016/j.pan.2016.07.006. Epub 2016 Jul 9.
+• Guerra F, Giuliani G, Bencini L, Bianchi PP, Coratti A. Minimally invasive versus open pancreatic enucleation. Systematic review and meta-analysis of surgical outcomes. J Surg Oncol. 2018 Jun;117(7):1509-1516. doi: 10.1002/jso.25026. Epub 2018 Mar 25.
+• Dalla Valle R, Cremaschi E, Lamecchi L, Guerini F, Rosso E, Iaria M. Open and minimally invasive pancreatic neoplasms enucleation: a systematic review. Surg Endosc. 2019 Oct;33(10):3192-3199. doi: 10.1007/s00464-019-06967-9. Epub 2019 Jul 30.
+• Shukla PJ, Barreto SG, Shrikhande SV. Enucleation of pancreatic neoplasms (Br J Surg 2007; 94: 1254-1259). Br J Surg. 2008 Feb;95(2):261; author reply 261-2. doi: 10.1002/bjs.6148. No abstract available.
+• Brient C, Regenet N, Sulpice L, Brunaud L, Mucci-Hennekine S, Carrere N, Milin J, Ayav A, Pradere B, Hamy A, Bresler L, Meunier B, Mirallie E. Risk factors for postoperative pancreatic fistulization subsequent to enucleation. J Gastrointest Surg. 2012 Oct;16(10):1883-7. doi: 10.1007/s11605-012-1971-x. Epub 2012 Aug 8.
+• Bartolini I, Bencini L, Bernini M, Farsi M, Calistri M, Annecchiarico M, Moraldi L, Coratti A. Robotic enucleations of pancreatic benign or low-grade malignant tumors: preliminary results and comparison with robotic demolitive resections. Surg Endosc. 2019 Sep;33(9):2834-2842. doi: 10.1007/s00464-018-6576-3. Epub 2018 Nov 12.
+• Ei S, Mihaljevic AL, Kulu Y, Kaiser J, Hinz U, Buchler MW, Hackert T. Enucleation for benign or borderline tumors of the pancreas: comparing open and minimally invasive surgery. HPB (Oxford). 2021 Jun;23(6):921-926. doi: 10.1016/j.hpb.2020.10.001. Epub 2020 Oct 18.
+• Zhang RC, Zhou YC, Mou YP, Huang CJ, Jin WW, Yan JF, Wang YX, Liao Y. Laparoscopic versus open enucleation for pancreatic neoplasms: clinical outcomes and pancreatic function analysis. Surg Endosc. 2016 Jul;30(7):2657-65. doi: 10.1007/s00464-015-4538-6. Epub 2015 Oct 20.
+• Strobel O, Cherrez A, Hinz U, Mayer P, Kaiser J, Fritz S, Schneider L, Klauss M, Buchler MW, Hackert T. Risk of pancreatic fistula after enucleation of pancreatic tumours. Br J Surg. 2015 Sep;102(10):1258-66. doi: 10.1002/bjs.9843. Epub 2015 Jun 24.
+	•	Key findings from publications: No detailed findings available
+	•	Additional evidence from online sources: Primary outcome: Incidence of Clinically Relevant Postoperative Pancreatic Fistula
+Secondary outcomes: Perioperative complication rate according to the Clavien-Dindo classification; Postoperative pancreatic hemorrhage (PPH) rate; Delayed gastric emptying (DGE) rate; Reoperation rate; Rate of pancreatic enzyme-dependent malabsorption; Rate of new-onset diabetes; Life quality satisfaction evaluated according to EORTC C30 scale; R0 resection rate; Recurrence-free survival (RFS)
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Found 14 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

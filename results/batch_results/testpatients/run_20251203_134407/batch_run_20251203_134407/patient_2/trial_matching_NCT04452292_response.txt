@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:38:00.103411
+Trial: 66/86
+NCT ID: NCT04452292
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The patient has a well-differentiated Grade 2 Pancreatic Neuroendocrine Tumor (NET) with a Ki-67 of 15%, whereas the study (PRECISION-NEC) focuses exclusively on High-Grade Neuroendocrine Carcinomas (HG-NEC), specifically Large Cell NEC. In neuroendocrine oncology, the distinction between well-differentiated NETs and poorly differentiated NECs is fundamental; they have distinct biological drivers (e.g., DAXX/ATRX in PanNETs vs. TP53/RB1 in NECs) and require different therapeutic approaches. The study's strategy of stratifying chemotherapy based on TP53/RB1 co-mutation status is designed for aggressive carcinomas and is not clinically applicable to a G2 NET, for which treatments like capecitabine/temozolomide, PRRT, or somatostatin analogs are appropriate. Therefore, the study does not meet the disease alignment criterion."
+}

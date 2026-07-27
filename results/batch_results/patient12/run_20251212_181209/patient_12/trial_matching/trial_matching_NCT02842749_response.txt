@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:47:06.774643
+Trial: 85/86
+NCT ID: NCT02842749
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence to guide therapy recommendations because no published results are available. While the disease biology (G1/G2 pNET) aligns with the patient's diagnosis and Everolimus is a known therapeutic option for pancreatic NETs, the input explicitly states that no publications or detailed findings were found for this completed Phase IV trial. Without accessible efficacy or safety data, the study fails the criterion for Evidence Quality and Relevance, as it offers no actionable insights to inform the tumor board's decision regarding first-line systemic treatment for this patient's bulky, symptomatic, and heterogeneous disease."
+}

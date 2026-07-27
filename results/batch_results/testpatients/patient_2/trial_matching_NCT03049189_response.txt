@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T11:35:43.904731
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides highly meaningful evidence for this patient's therapy recommendations. The disease and biology alignment is excellent, as the patient has a metastatic, SSTR-positive, Grade 2 (Ki-67 15%) pancreatic NET, which fits squarely within the COMPETE trial's population of G1/G2 SSTR-positive GEP-NETs. The treatment context is directly applicable to the patient's current clinical scenario: selecting a first-line systemic therapy for unresectable, high-burden disease. The study's design, which included a first-line treatment cohort and compared PRRT (177Lu-edotreotide) against a standard-of-care option (everolimus), directly addresses the tumor board's question. Finally, the evidence quality is high and relevant; the published Phase 3 results show a clinically and statistically significant progression-free survival benefit for PRRT over everolimus (23.9 vs 14.1 months). This provides a strong, evidence-based rationale to consider PRRT as a first-line option for this patient, potentially offering superior disease control compared to a standard targeted therapy."
+}
+```

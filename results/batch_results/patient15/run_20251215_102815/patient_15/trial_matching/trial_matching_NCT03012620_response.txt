@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:34:14.998887
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful clinical evidence for this patient because the provided published results (PMID: 37429302) are exclusively from the rare sarcoma cohort of this basket trial. Although the trial protocol included a cohort for rare malignant neuroendocrine tumors (NETs) for which the patient might have been eligible (well-differentiated, refractory to >4 lines), the input data contains no efficacy or safety findings for the NET population. Evidence derived from chordomas and soft tissue sarcomas cannot be biologically or clinically extrapolated to guide therapy for a well-differentiated pancreatic NET G3. Without specific outcomes for the neuroendocrine cohort, this study offers no actionable insights for the patient's treatment planning."
+}

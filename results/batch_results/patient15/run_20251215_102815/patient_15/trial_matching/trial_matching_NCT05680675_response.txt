@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:54:25.542026
+Trial: 67/86
+NCT ID: NCT05680675
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for clinical applicability or evidence relevance. It is a technical diagnostic study focused on developing simultaneous dual-tracer imaging algorithms (PET/CT) rather than evaluating the efficacy or safety of a therapeutic intervention. The patient has already undergone the relevant functional imaging (DOTATOC and FDG PET), confirming their disease status, so participation would not add diagnostic value or guide therapeutic decision-making. Furthermore, the study provides no published results regarding clinical outcomes or treatment responses. Consequently, it offers no actionable evidence to address the patient's need for a new line of systemic therapy for progressive, metastatic G3 PanNET."
+}

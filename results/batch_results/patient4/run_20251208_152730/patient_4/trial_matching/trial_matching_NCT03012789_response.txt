@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:37:39.611366
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence to guide therapy recommendations for this patient. While the disease biology (GEP-NET) aligns, the study's primary objective is to validate a biomarker (NETest) for monitoring disease burden before and after surgery, rather than evaluating the therapeutic efficacy or safety of a specific treatment. The patient requires a decision regarding the next line of management for refractory, progressive liver metastases (e.g., switching to everolimus, chemotherapy, or locoregional therapies). This study does not offer comparative efficacy data or clinical outcomes that would help select between these therapeutic options; it only provides evidence on the utility of a blood test for monitoring if surgery were already selected. Therefore, it fails the criterion of providing actionable clinical insights for treatment planning."
+}

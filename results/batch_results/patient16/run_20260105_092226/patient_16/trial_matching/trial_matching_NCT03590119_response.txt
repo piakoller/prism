@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:39:49.821503
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient's treatment recommendations. While the disease biology (G1 NET) aligns, the clinical context is fundamentally different. The study (LUTIA) evaluates intra-arterial 177Lu-dotatate specifically for patients with bulky, bilobar liver metastases (lesions ≥3 cm, >25% tumor load) and progressive disease, aiming to improve radiotracer uptake in large tumors. In contrast, the patient has stable, oligometastatic disease with very small liver lesions (5–10 mm) and is a candidate for potential resection or standard neoadjuvant therapy. The rationale for intra-arterial delivery (overcoming perfusion/uptake issues in bulky disease) is not applicable to small, well-perfused metastases. Furthermore, the provided text is a study protocol rather than a report of efficacy outcomes, offering no actionable data to guide therapy."
+}

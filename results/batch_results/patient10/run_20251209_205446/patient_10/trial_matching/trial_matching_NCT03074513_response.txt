@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:08:11.638993
+Trial: 27/86
+NCT ID: NCT03074513
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful clinical evidence for this patient with a metastatic, grade 2 pancreatic neuroendocrine tumor (pNET) who has exhausted standard therapies. Biologically, the study population (progressive G1-G2 pNETs) aligns perfectly with the patient's disease. Clinically, the patient requires a late-line systemic treatment option after failing SSAs, PRRT, targeted therapies (everolimus, sunitinib), and chemotherapy. The published results (Halperin et al., JAMA Oncol 2022) demonstrate a clinically meaningful objective response rate of 20% and a progression-free survival of 14.9 months in the pNET cohort treated with atezolizumab and bevacizumab. Although the patient had prior intolerance to sunitinib (a VEGF TKI) and has grade 1 thrombocytopenia, the distinct toxicity profile of bevacizumab (a monoclonal antibody) combined with immunotherapy offers a potential evidence-based alternative to consider in this refractory setting where no standard options remain."
+}

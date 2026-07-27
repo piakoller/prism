@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T10:19:04.381067
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "The study is highly relevant as it evaluates the efficacy and survival predictors of Lu-177-DOTATATE (PRRT) in patients with progressive well-differentiated NETs, directly aligning with the patient's diagnosis (ileal NET G2) and recent treatment history. The patient recently completed 4 cycles of PRRT for progressive disease; the study's published results provide critical prognostic benchmarks, reporting a median progression-free survival (PFS) of 34.1 months and identifying risk factors (e.g., tumor burden, ascites) that inform post-treatment surveillance and prognostic counseling. Additionally, the study protocol describes a regimen including maintenance cycles, which could offer insights for long-term management strategies given the patient's stable status. The evidence directly supports the clinical utility of the intervention the patient received and aids in interpreting the expected duration of response."
+}
+```

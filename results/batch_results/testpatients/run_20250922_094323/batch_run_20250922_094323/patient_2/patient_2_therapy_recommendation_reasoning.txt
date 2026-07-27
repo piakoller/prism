@@ -1,0 +1,57 @@
+=== LLM THERAPY RECOMMENDATION REASONING ===
+Timestamp: 2025-09-22T10:54:35.627318
+Patient ID: 2
+Model: google/gemini-2.5-pro
+============================================================
+
+PURPOSE: This file captures the LLM's reasoning about therapy recommendations
+based on the pre-analyzed trial data.
+
+LLM'S THERAPY RECOMMENDATION:
+==================================================
+**Primary Recommendation: First-Line Systemic Chemotherapy**
+
+Based on the comprehensive assessment, I recommend initiating first-line systemic chemotherapy with **Capecitabine and Temozolomide (CAPTEM)**.
+
+**Secondary Recommendation: Biomarker Testing**
+
+Concurrent with the initiation of therapy, I recommend testing the tumor tissue for **O6-methylguanine-DNA methyltransferase (MGMT) promoter methylation status**. The results of this test will provide important prognostic information regarding the expected efficacy of the temozolomide-based regimen. The MGMT-NET trial (NCT03217097) demonstrated that patients with deficient MGMT (dMGMT) status have a significantly higher objective response rate (ORR) to alkylating agents (best ORR 52.9% in dMGMT vs. 11.5% in proficient MGMT).
+
+**Supportive Care**
+
+Concomitant administration of a long-acting somatostatin analogue (SSA), such as octreotide LAR or lanreotide Autogel, should be considered alongside chemotherapy. While insufficient as monotherapy for this patient's disease burden, SSAs can provide a baseline antiproliferative effect and may help with symptom control.
+
+**Monitoring**
+
+Given the patient's age and history of ischemic heart disease, close monitoring of hematologic parameters (for myelosuppression), renal function, and potential gastrointestinal and dermatologic toxicities (hand-foot syndrome) is essential throughout treatment.
+
+❌ NO EXPLICIT TRIAL SELECTION REASONING PROVIDED
+The LLM did not provide explicit reasoning about trial selection.
+This may indicate the prompt needs to be updated to enforce this requirement.
+
+TRIALS MENTIONED IN THERAPY RECOMMENDATION:
+==================================================
+- NCT03217097
+
+TRIAL EMPHASIS (mention frequency):
+- NCT03217097: mentioned 1 time
+
+FULL THERAPY RECOMMENDATION CONTEXT:
+==================================================
+THERAPY RECOMMENDATION:
+**Primary Recommendation: First-Line Systemic Chemotherapy**
+
+Based on the comprehensive assessment, I recommend initiating first-line systemic chemotherapy with **Capecitabine and Temozolomide (CAPTEM)**.
+
+**Secondary Recommendation: Biomarker Testing**
+
+Concurrent with the initiation of therapy, I recommend testing the tumor tissue for **O6-methylguanine-DNA methyltransferase (MGMT) promoter methylation status**. The results of this test will provide important prognostic information regarding the expected efficacy of the temozolomide-based regimen. The MGMT-NET trial (NCT03217097) demonstrated that patients with deficient MGMT (dMGMT) status have a significantly higher objective response rate (ORR) to alkylating agents (best ORR 52.9% in dMGMT vs. 11.5% in proficient MGMT).
+
+**Supportive Care**
+
+Concomitant administration of a long-acting somatostatin analogue (SSA), such as octreotide LAR or lanreotide Autogel, should be considered alongside chemotherapy. While insufficient as monotherapy for this patient's disease burden, SSAs can provide a baseline antiproliferative effect and may help with symptom control.
+
+**Monitoring**
+
+Given the patient's age and history of ischemic heart disease, close monitoring of hematologic parameters (for myelosuppression), renal function, and potential gastrointestinal and dermatologic toxicities (hand-foot syndrome) is essential throughout treatment.
+

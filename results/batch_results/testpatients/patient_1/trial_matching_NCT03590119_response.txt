@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:29:17.145077
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient. Although the disease biology aligns well (Criterion 1 is met), as both the patient and study population have well-differentiated G2 NETs with Ki-67 ≤20%, the study fails on the other two criteria. The treatment context is not applicable (Criterion 2 is not met) because the study exclusively investigates intra-arterial PRRT for patients with extensive, inoperable liver metastases. This patient's clinical problem is a locally advanced, non-metastatic primary pancreatic tumor causing hemorrhage, a completely different clinical scenario. Furthermore, the evidence quality is insufficient for decision-making (Criterion 3 is not met) as the provided publication is a study protocol. It describes the trial's design and rationale but contains no efficacy or safety results. Therefore, even assuming the patient's tumor is SSTR-positive, this study offers no actionable data to guide therapy for his current clinical situation."
+}
+```

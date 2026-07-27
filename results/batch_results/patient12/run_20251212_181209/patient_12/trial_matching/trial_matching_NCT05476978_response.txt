@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:26:14.143767
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context or Evidence Relevance. While the study involves pancreatic lesions including NETs (Disease Alignment), it evaluates a diagnostic artificial intelligence model for Endoscopic Ultrasound (EUS) to improve the differentiation of solid pancreatic lesions. The patient already has a confirmed histological diagnosis of metastatic well-differentiated pancreatic NET G2 via biopsy and extensive staging. Consequently, the study's focus on diagnostic accuracy provides no actionable evidence regarding therapeutic efficacy, safety, or treatment selection. It cannot inform the specific clinical question regarding the best first-line systemic treatment for this patient's bulky, heterogeneous metastatic disease."
+}

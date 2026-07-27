@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:49:41.738911
+Trial: 1/86
+NCT ID: NCT03278379
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful clinical evidence by demonstrating the lack of efficacy of Avelumab in the patient's specific biological cohort. The patient has a metastatic, well-differentiated G2 Pan-NET with a Ki-67 of 20% (borderline G3) and high tumor burden, aligning with the study's inclusion of G2-3 well-differentiated NETs. While the patient requires tumor shrinkage (cytoreduction) for bulky symptomatic disease, the published results (Chan et al., 2022) report a 0% objective response rate (ORR) and a median PFS of only 3.3 months in this population. This negative evidence is highly actionable as it informs the treatment decision to exclude single-agent PD-L1 immunotherapy, which might otherwise be considered due to the patient's aggressive features (FDG-avidity, high Ki-67). Consequently, the evidence supports prioritizing cytotoxic chemotherapy (e.g., CAPTEM) over immunotherapy for this treatment-naive patient."
+}

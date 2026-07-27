@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:36:34.862168
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful clinical evidence for this patient because the provided published results are exclusively restricted to the sarcoma cohort (chordoma, alveolar soft part sarcoma, etc.) and do not report outcomes for the neuroendocrine tumor (NET) cohort. Although the study protocol theoretically included a cohort for well-differentiated NETs refractory to standard therapy (which aligns with this patient's history of progression on SSA, PRRT, and TKIs), the absence of efficacy or safety data for the NET population in the provided materials prevents any evidence-based assessment of pembrolizumab's utility for this specific patient. Furthermore, immunotherapy is not a standard treatment for well-differentiated G2 NETs, and without specific trial results demonstrating benefit in this subtype, the sarcoma data cannot be biologically extrapolated to guide decision-making for a duodenal NET."
+}

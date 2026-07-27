@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:45:56.250645
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence to guide the primary therapeutic decision for this patient. While the disease biology (WDNET) aligns, the study is a Phase 4 trial evaluating patient preference and injection experience (pain scores) between two standard Somatostatin Analogs (SSAs), rather than oncologic efficacy. This patient presents with bulky, symptomatic, FDG-positive, and partially SSTR-negative (peritoneal) disease with a high Ki-67 (20%), indicating aggressive biology that typically requires cytotoxic chemotherapy or combination strategies rather than SSA monotherapy. Furthermore, the presence of SSTR-negative metastases limits the therapeutic rationale for SSAs in controlling the entire disease burden. Consequently, evidence regarding injection preference does not address the critical clinical question of selecting an effective antiproliferative regimen for high-risk, discordant metastatic disease."
+}

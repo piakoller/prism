@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:57:30.763880
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient's specific clinical scenario. First, there is a biological discordance: the patient has a Bronchial NET with a Ki-67 of 25% (G3), whereas the COMPETE trial recruits GEP-NETs (Gastroenteropancreatic) with G1-G2 differentiation. While extrapolation across primary sites is sometimes reasonable, the grade difference is significant. Second, and most critically, the treatment context is inapplicable. The patient has already received and progressed after PRRT and is seeking 'consolidation' or re-treatment. The study evaluates initial PRRT in PRRT-naive patients and explicitly excludes those with prior PRRT exposure. Evidence regarding the efficacy of first-line PRRT versus Everolimus does not inform the safety (particularly bone marrow reserve) or efficacy of PRRT re-challenge/consolidation in a patient who has already exhausted standard lines including Everolimus and initial PRRT."
+}

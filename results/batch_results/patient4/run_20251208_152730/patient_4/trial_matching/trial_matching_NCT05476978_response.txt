@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:46:10.055012
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because it evaluates a diagnostic artificial intelligence model for endoscopic ultrasound (EUS) of pancreatic solid lesions, whereas the patient has a known, histologically confirmed metastatic duodenal neuroendocrine tumor requiring therapeutic management. The study focuses on improving initial diagnostic accuracy (differentiating cancer, pancreatitis, and NETs) in the pancreas, which does not address the clinical question of managing disease progression in a heavily pre-treated patient with liver metastases. Consequently, the study offers no data on treatment efficacy, safety, or survival outcomes to guide the choice between systemic therapies (e.g., mTOR inhibitors, chemotherapy) or locoregional interventions."
+}

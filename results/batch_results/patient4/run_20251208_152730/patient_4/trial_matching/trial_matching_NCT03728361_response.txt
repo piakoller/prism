@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:48:00.709276
+Trial: 34/86
+NCT ID: NCT03728361
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant because it evaluates the combination of Nivolumab and Temozolomide in patients with advanced neuroendocrine neoplasms (NENs) of any grade and origin, biologically aligning with the patient's well-differentiated G2 duodenal NET. Clinically, this patient has exhausted standard lines of therapy (SSAs, PRRT, Surufatinib, Sunitinib) and requires salvage treatment options; the study's inclusion of refractory patients makes the context highly applicable. The published Phase II results (PMID 36255391) provide meaningful evidence for decision-making, showing an overall response rate of 32.1%. Crucially, the data highlights a significant divergence in efficacy based on primary site (64% in lung NENs vs. significantly lower in others), which provides the tumor board with specific, actionable evidence to weigh the potential limited benefit (~12% in non-lung NENs) against toxicity when considering this regimen for a patient with a duodenal primary."
+}

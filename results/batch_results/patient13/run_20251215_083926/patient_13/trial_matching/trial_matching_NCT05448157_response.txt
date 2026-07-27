@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:58:40.700226
+Trial: 45/86
+NCT ID: NCT05448157
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates the diagnostic accuracy and feasibility of radio-guided surgery using a beta-probe to improve lesion detection during resection of GEP-NETs. While the patient has an SSTR-positive Pan-NET, they present with high-burden, progressive metastatic disease involving the liver, bones, and lungs, and have failed multiple lines of systemic therapy. The clinical priority is identifying the next line of systemic treatment (e.g., PRRT, Everolimus) rather than surgical resection, which is generally not indicated for high-burden extrahepatic metastatic disease. Consequently, evidence regarding a surgical tool for improving radical resection rates does not provide actionable insights for managing this patient's advanced, unresectable condition."
+}

@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:56:40.697746
+Trial: 59/86
+NCT ID: NCT03136055
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful clinical evidence for the patient's disease type. Biologically, the study population (extrapulmonary high-grade NEC and MiNENs with >50% NEC) aligns perfectly with the patient's diagnosis (colonic MiNEN, small-cell NEC component, Ki-67 90%). Clinically, while the patient is currently in remission, the high risk of recurrence necessitates planning for second-line options (post-platinum/etoposide). The study results are highly relevant for decision-making, providing strong evidence that pembrolizumab-based therapy is generally ineffective in this population (ORR 5-7%, mPFS ~2 months) unless the tumor is TMB-high/MSI-H. This negative result is clinically actionable, guiding the tumor board to avoid futile immunotherapy in the absence of specific biomarkers and to prioritize TMB/MSI testing on the surgical specimen to determine if this therapeutic avenue remains a valid option for the future."
+}
+```

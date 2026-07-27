@@ -1,0 +1,240 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-15T09:57:45.167708
+Trial: 14/86
+NCT ID: NCT03333616
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Patient: 82-year-old woman, ECOG 1, no cognitive impairment
+Bronchial NET (atypical carcinoid), operated in 2019, Ki-67 11%
+Metastatic since 2020: liver, bone, lymph nodes, pituitary
+Tumor burden: low to moderate
+Functional imaging: DOTATOC +++, FDG low uptake, no mismatch
+Non-secreting, likely sporadic
+
+Previous treatments:
+- 2020: Second thoracic surgery with mediastinal dissection (Ki-67 25%)
+- Jan 2021: Clavicle and lumbar radiotherapy
+- Everolimus (Mar–Nov 2021): poor tolerance, stable disease
+- Temozolomide (Jan–Aug 2022): partial hepatic response; discontinued for grade 3 thrombocytopenia
+- FOLFOX (Dec 2022–Jan 2023): very poor tolerance; discontinued
+- PRRT via CPC (Apr–Oct 2023): excellent tolerance; prolonged partial hepatic response
+- Somatostatin analogs (June 2025)
+- Oct 2025: hepatic RECIST progression; no option for local therapy
+Question for Tumorboard:
+What would be next step to consolidate the response?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Disease Biology**
+The patient is an 82-year-old woman with an ECOG performance status of 1 and no cognitive impairment, presenting with a metastatic bronchial neuroendocrine tumor (atypical carcinoid). The disease course is characterized by metastatic spread to the liver, bone, lymph nodes, and pituitary since 2020.
+
+Biologically, the tumor demonstrates heterogeneity and grade progression over time, with Ki-67 increasing from 11% (2019) to 25% (2020). According to the *ESMO Clinical Practice Guidelines for GEP-NENs*, a Ki-67 >20% classifies the tumor within the G3 category. However, the functional imaging profile—DOTATOC +++ and low FDG uptake with no mismatch—indicates a well-differentiated phenotype (NET G3) rather than a poorly differentiated neuroendocrine carcinoma (NEC), as high SSTR expression is generally inversely related to glucose metabolism in low-grade tumors. The strong SSTR expression (DOTATOC +++) confirms the target presence required for peptide receptor radionuclide therapy (PRRT).
+
+**Treatment History and Tolerance Analysis**
+The patient has exhausted multiple lines of standard systemic therapy, significantly limited by intolerance and toxicity:
+*   **mTOR Inhibitors:** Everolimus (approved for lung NETs per RADIANT-4 trial data referenced in the guidelines) resulted in poor tolerance.
+*   **Chemotherapy:** Temozolomide yielded a partial hepatic response but was discontinued due to Grade 3 thrombocytopenia. FOLFOX was discontinued due to very poor tolerance.
+*   **Radiotherapy:** Prior clavicle and lumbar radiotherapy (Jan 2021).
+*   **PRRT:** Treatment with PRRT via CPC (Apr–Oct 2023) resulted in a prolonged partial hepatic response with excellent tolerance, distinguishing it as the most favorable modality in terms of the therapeutic index for this specific patient.
+
+**Current Clinical Status**
+The patient currently exhibits hepatic RECIST progression as of October 2025 while on Somatostatin analogs. There are no options for local therapy.
+
+**Assessment per Guidelines**
+Based on the *ESMO Clinical Practice Guidelines*, the following factors are relevant for the tumor board's consideration:
+1.  **PRRT Eligibility:** The guidelines recommend PRRT for progressive SSTR-positive NETs. While the guidelines primarily discuss midgut and pancreatic NETs, they reference efficacy in bronchial neuroendocrine tumors (Ref 97). The patient's imaging (DOTATOC +++) satisfies the requirement for homogenous SSTR expression.
+2.  **High-Grade (G3) Consideration:** The guidelines acknowledge that PRRT may be considered in patients with NET G3 (Ki-67 >20%), citing disease control rates between 30% and 80% in retrospective studies, particularly for patients with Ki-67 <55%. This patient (Ki-67 25%) falls within this range.
+3.  **Therapeutic Options:**
+    *   **Chemotherapy:** While systemic chemotherapy (e.g., Temozolomide or platinum-based regimens) is recommended for NEN G3, this patient has demonstrated severe intolerance (FOLFOX) and Grade 3 hematological toxicity (Temozolomide), making re-challenge high risk.
+    *   **Targeted Therapy:** Re-introduction of Everolimus is likely not feasible due to prior poor tolerance.
+    *   **PRRT Re-treatment/Consolidation:** Given the "excellent tolerance" and "prolonged partial hepatic response" to the previous PRRT course, and the persistence of high SSTR uptake (DOTATOC +++), the clinical assessment points toward the potential utility of further PRRT.
+
+**Conclusion**
+The patient presents with a progressive, SSTR-avid (DOTATOC +++) metastatic bronchial NET G3 (Ki-67 25%). She is refractory or intolerant to standard chemotherapy and mTOR inhibitors. The assessment highlights that PRRT has been the only modality providing disease control with acceptable tolerability. Consequently, evaluating the feasibility of consolidating the response with further PRRT is the most clinically supported consideration, provided bone marrow reserve is adequate given the history of Grade 3 thrombocytopenia.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: What would be next step to consolidate the response?
+
+### STUDY DATA
+	•	NCT-ID: NCT03333616
+	•	Title: Nivolumab Combined With Ipilimumab for Patients With Advanced Rare Genitourinary Tumors
+	•	Phase: PHASE2, Status: ACTIVE_NOT_RECRUITING
+	•	Intervention: Ipilimumab; Nivolumab
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Age ≥ 18 years at the time of consent.
+* Eastern Cooperative Oncology Group (ECOG) Performance Status of ≤ 2 within 28 days prior to registration (Appendix A).
+* Unresectable advanced or metastatic ACC, non-urothelial bladder/upper tract cancer, non-adenocarcinoma prostate cancer, penile cancer, treatment refractory germ-cell tumor or a high grade neuroendocrine carcinoma/small cell carcinoma of any genitourinary site. Pure is defined as \>90% and those with a portion of urothelial carcinoma or prostate adenocarcinoma may be included at discretion of the principal investigator. With variant histology in the primary, if metastatic biopsy shows pure variant histology, patient is eligible.
+* at this time only the bladder and neuroendocrine cohorts are open
+* Availability of Formalin-fixed, Paraffin-embedded (FFPE) archival tumor specimens, when available, and willingness of the subject to undergo mandatory fresh tumor biopsy prior to treatment initiation unless determined medically unsafe or not feasible.
+
+  * The archival specimen, when available, must contain adequate viable tumor tissue.
+  * The specimen may consist of a tissue block (preferred and should contain the highest grade of tumor) or at least 20 unstained serial sections. Fine-needle aspiration, brushings, cell pellet from pleural effusion, bone marrow aspirate/biopsy are not acceptable.
+  * A mandatory biopsy at the time of radiographic progression will be requested from patients who have an initial response to treatment and then subsequently progress as determined by RECIST version 1.1.
+* Measurable disease as defined by RECIST 1.1 within 28 days prior to registration.
+* Demonstrate adequate organ function. All screening labs to be obtained within 28 days prior to first study treatment.
+
+  * Hematological
+
+    * White blood cell (WBC) ≥ 2000 cells/µL
+    * Absolute Neutrophil Count (ANC) ≥ 1000 cells/µL
+    * Platelet count (plt) ≥ 75,000/ µL
+    * Hemoglobin (Hgb) ≥ 9 g/dL
+    * Absolute lymphocyte count ≥ 500 cells/µL
+  * Renal
+
+    * Serum creatinine OR
+    * Calculated creatinine clearance1 ≤ 1.5 x ULN ≥ 40 mL/min
+  * Hepatic and Other
+
+    * Bilirubin ≤ 1.5 × upper limit of normal (ULN)
+    * AST2 ≤ 2.5 × ULN
+    * ALT2 ≤ 2.5 × ULN
+    * Alkaline Phosphatase2 ≤ 2.5 × ULN
+    * Albumin \> 2.5 g/dL
+  * Coagulation
+
+    * International Normalized Ratio (INR) or Prothrombin Time (PT)
+    * Activated Partial Thromboplastin Time (aPTT) ≤ 1.5 × ULN (unless on prophylactic or therapeutic dosing with low molecular weight heparin or warfarin)
+* Females of childbearing potential must have a negative urine or serum pregnancy test within 28 days prior to registration. NOTE: Females are considered of child bearing potential unless they are surgically sterile (have undergone a hysterectomy, bilateral tubal ligation, or bilateral oophorectomy) or they are naturally postmenopausal for at least 12 consecutive months
+* Females of childbearing potential and males must be willing to abstain from heterosexual activity or to use 2 forms of effective methods of contraception from the time of informed consent until 120 days after treatment discontinuation. The two contraception methods can be comprised of two barrier methods, or a barrier method plus a hormonal method.
+* As determined by the enrolling physician or protocol designee, ability of the subject to understand and comply with study procedures for the entire length of the study
+
+Exclusion Criteria:
+
+* Prior use of systemic checkpoint inhibitors (including PD-1, PD-L1, and CTLA-4 targeting agents) for the management of ACC, non-urothelial bladder cancer/upper tract, non-adenocarcinoma prostate cancer, penile cancer or treatment refractory germ-cell tumor is excluded
+* Treatment with systemic immunosuppressive medications including but not limited to: prednisone, dexamethasone, cyclosporine, azathioprine, methotrexate, thalidomide, anti-tumor necrosis factor (TNF) agents within 2 weeks of first study dose.
+
+  * Subjects who have received acute, low-dose systemic immunosuppressant medications may be enrolled (such as steroids for acute nausea or cancer-related pain ≤ 10 mg prednisone) maybe enrolled sooner than 2 weeks of first study dose.
+  * Subjects with adrenal insufficiency on physiologic replacement doses of steroids may be enrolled (≤ 10 mg prednisone).
+  * The use of inhaled, topical, ocular or intra-articular corticosteroids and mineralocorticoids are allowed.
+* Treatment with chemotherapy, hormone therapy, or other investigational therapy within 3 weeks of first study doses. Patients with non-adenocarcinoma of the prostate who may be on luteinizing hormone-releasing hormone agonist/antagonist therapy may continue use. For ACC patients, hormonal agents (e.g mitotane) are allowed for the purpose to control endocrine-related symptoms when needed.
+* Radiotherapy within 14 days of first study treatment with the exception of a single fraction of radiation administered for palliation of symptoms.
+* Known active metastases to the brain, spinal cord or leptomeninges. Patients who are treated with radiotherapy, radiosurgery, or surgery and clinically stable for at least 2 weeks of first study treatment are eligible. Repeat imaging is not required to document treatment response.
+* Malignancies other than ACC, non-urothelial bladder/upper tract cancer, non-adenocarcinoma prostate cancer, penile cancer, treatment refractory germ-cell tumor or genitourinary high grade neuroendocrine carcinoma/small cell carcinoma within 5 years of first study treatment with the exception of those with negligible risk of metastases or death and/or treated with expected curative outcome (included but not limited to carcinoma in situ of the cervix, basal or squamous cell skin cancer, localized prostate cancer for patients with malignancies other than non-adenocarcinoma of the prostate, ductal carcinoma in situ of the breast, non-muscle invasive urothelial carcinoma of the bladder for patients with malignancies other than non-urothelial bladder cancer).
+* History of severe allergic, anaphylactic, or other hypersensitivity reactions to chimeric or humanized antibodies or fusion protein.
+* Known hypersensitivity to any component of the nivolumab or ipilimumab product.
+* Any active or recent history (within 6 months of first study dose) of autoimmune disease or syndrome that requires systemic corticosteroids (\>10 mg daily prednisone equivalent) or immunosuppressive medications including but not limited to: myasthenia gravis, myositis, autoimmune hepatitis, systemic lupus erythematosus, rheumatoid arthritis, inflammatory bowel disease, vascular thrombosis associated with anti-phospholipid syndrome, Wegner's granulomatosis, Sjogren's syndrome, Guillain-Barre syndrome, multiple sclerosis, vasculitis, or glomerulonephritis. Subjects with vitiligo, controlled type I diabetes mellitus, residual hypothyroidism due to autoimmune thyroiditis only requiring hormone replacement therapy are permitted to enroll.
+* Any condition requiring treatment with corticosteroids (\>10 mg daily prednisone equivalent) or other immunosuppressive medication within 14 days of the first dose of study drug. Inhaled, topical, ocular or intra-articular corticosteroids and adrenal replacement steroid doses ≤ 10 mg daily prednisone equivalents are permitted in the absence of active autoimmune disease.
+* Uncontrolled adrenal insufficiency.
+* History of idiopathic pulmonary fibrosis, organized pneumonia, drug-induced pneumonitis, idiopathic pneumonitis, or evidence of active pneumonitis on screening imaging CT of the chest. History of radiation pneumonitis in the radiation field is permitted.
+* Known history of testing positive for human immunodeficiency virus (HIV) or known acquired immunodeficiency syndrome.
+* Active or chronic hepatitis B infection (defined as having a positive hepatitis B surface antigen (HBsAg) test at screening). Subject with past or resolved hepatitis B infection (defined as having a negative HBsAg test and positive antibody to hepatitis B core antigen test) are eligible. Hepatitis B viral DNA must be obtained in Subjects with positive hepatitis B core antibody prior to first treatment start.
+* Active hepatitis C infection. Subjects positive hepatitis C antibody test are eligible if PCR is negative for hepatitis C viral DNA.
+* Receipt of therapeutic oral or IV antibiotics within 2 weeks of first study treatment. Subjects receiving routine antibiotic prophylaxis (for dental extractions/procedures) are eligible.
+* Active infection requiring systemic treatment.
+* Significant cardiovascular disease such New York Heart Association (NYHA) class III or greater, myocardial infarction within the previous 3 months, unstable arrhythmias, unstable angina, need for cardiac angioplasty or stenting, coronary artery by-pass graft surgery, symptomatic peripheral vascular disease. Subjects with known coronary artery disease treated with stenting or coronary artery by-pass graft, congestive heart failure not meeting the above criteria, or left ventricular ejection fraction \< 50% must be on a stable regimen that is optimized in the opinion of the treating physician, in consultation with a cardiologist when appropriate.
+* Prolongation of the QTcF interval defined as \> 450 msec for males and \> 470 msec for females.
+* Inadequately controlled hypertension (defined as systolic blood pressure \> 160 mmHg and/or diastolic blood pressure \> 100 mmHg). Anti-hypertensive therapy to achieve these parameters is allowed.
+* History of cerebrovascular accident or transient ischemic attack within 3 months of first study dose.
+* Significant vascular disease (such as aortic aneurysm requiring surgical repair or recent peripheral arterial thrombosis) within 3 months of first study dose.
+* Evidence of bleeding diathesis or significant coagulopathy (in the absence of therapeutic anticoagulation) within 4 weeks of first study dose.
+* History of symptomatic deep vein thrombosis or pulmonary embolism within 4 weeks of first study dose.
+* History of abdominal or tracheoesophageal fistula or GI perforation within 6 months of first study treatment.
+* Clinical signs or symptoms of GI obstruction or requirement of routine parenteral nutrition or tube feedings.
+* Evidence of abdominal free air not explained by paracentesis or recent surgical procedure.
+* Serious, non-healing or dehiscing wound or active ulcer.
+* Major surgical procedure within 4 weeks of first study treatment.
+* Presence of any toxicities attributed to prior anti-cancer therapy that are not resolved to grade 2 (CTCAE version 4.0) or baseline that could impose risk for serious complications before administration of study drug,
+* Prior allogenic stem cell or solid organ transplant. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This research study is studying a combination of drugs as a possible treatment for rare genitourinary malignancies among four cohorts, bladder or upper tract carcinoma with variant histology, adrenocortical carcinoma, other rare genitourinary carcinomas and any genitourinary carcinoma with neuroendocrine differentiation. Given preliminary results, the study is being tested in additional patients with bladder or upper tract carcinoma with variant histology at this time while the adrenocortical carcinoma, other rare genitourinary malignancies arms have closed to accrual
+
+-The names of the study drugs involved in this study are:
+
+* Nivolumab
+* Ipilimumab
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Listed publications appear to contain results; Online search performed; Found 2 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); 1 Onclive articles (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/33216356/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • McGregor BA, Campbell MT, Xie W, Farah S, Bilen MA, Schmidt AL, Sonpavde GP, Kilbridge KL, Choudhury AD, Mortazavi A, Shah AY, Venkatesan AM, Bubley GJ, Siefker-Radtke AO, McKay RR, Choueiri TK. Results of a multicenter, phase 2 study of nivolumab and ipilimumab for patients with advanced rare genitourinary malignancies. Cancer. 2021 Mar 15;127(6):840-849. doi: 10.1002/cncr.33328. Epub 2020 Nov 20.
+• Results of a multicenter, phase 2 study of nivolumab and ipilimumab for patients with advanced rare genitourinary malignancies. (PMID: 33216356)
+• Dr McGregor on the Potential Use of Checkpoint Inhibitors in … (https://www.onclive.com/view/dr-mcgregor-on-the-potential-use-of-checkpoint-inhibitors-in-rare-gu-cancers) [Onclive]
+	•	Key findings from publications: PubMed Abstract: In this multicenter, single-arm, multicohort, phase 2 trial, the efficacy of nivolumab and ipilimumab was evaluated in patients with advanced rare genitourinary cancers, including bladder and upper tract carcinoma of variant histology (BUTCVH), adrenal tumors, platinum-refractory germ cell tumors, penile carcinoma, and prostate cancer of variant histology (NCT03333616).
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: In this multicenter, single-arm, multicohort, phase 2 trial, the efficacy of nivolumab and ipilimumab was evaluated in patients with advanced rare genitourinary cancers, including bladder and upper tract carcinoma of variant histology (BUTCVH), adrenal tumors, platinum-refractory germ cell tumors, penile carcinoma, and prostate cancer of variant histology ( NCT03333616 ). Methods: Patients with rare genitourinary malignancies and no prior immune checkpoint inhibitor exposure were enrolled. Patients received nivolumab at 3 mg/kg and ipilimumab at 1 mg/kg intravenously every 3 weeks for 4 doses, and this was followed by 480 mg of nivolumab intravenously every 4 weeks. The primary endpoint was the objective response rate (ORR) by the Response Evaluation Criteria in Solid Tumors (version 1.1). Results: Fifty-five patients were enrolled at 6 institutions between April 2018 and July 2019 in 3 cohorts: BUTCVH (n = 19), adrenal tumors (n = 18), and other tumors (n = 18). The median follow-up was 9.9 months (range, 1 to 21 months). Twenty-eight patients (51%) received 4 doses of nivolumab and ipilimumab; 25 patients received nivolumab maintenance for a median of 4 cycles (range, 1-18 cycles). The ORR for the entire study was 16% (80% confidence interval, 10%-25%); the ORR in the BUTCVH cohort, including 2 complete responses, was 37%, and it was 6% in the other 2 cohorts. Twenty-two patients (40%) developed treatment-related grade 3 or higher toxicities; 24% (n = 13) required high-dose steroids (≥40 mg of prednisone or the equivalent). Grade 5 events occurred in 3 patients; 1 death was treatment related. Conclusions: Nivolumab and ipilimumab resulted in objective responses in a subset of patients with rare genitourinary malignancies, especially those with BUTCVH. An additional cohort exploring their activity in genitourinary tumors with neuroendocrine differentiation is ongoing. Lay summary: Patients with rare cancers are often excluded from studies and have limited treatment options. Fifty-five patients with rare tumors of the genitourinary system were enrolled from multiple sites and were treated with nivolumab and ipilimumab, a regimen used for kidney cancer. The regimen showed activity in some patients, particularly those with bladder or upper tract cancers of unusual or variant histology; 37% of those patients responded to therapy. Additional studies are ongoing to better determine who benefits the most from this combination. Keywords: adrenal tumor; bladder or upper tract tumor of variant histology; genitourinary; immunotherapy; rare cancer. © 2020 American Cancer Society. PubMed Disclaimer Comment in The emerging role of checkpoint inhibitors for rare genitourinary cancers. Aragon-Ching JB. Aragon-Ching JB. Nat Rev Urol. 2021 Mar;18(3):133-134. doi: 10.1038/s41585-021-00426-8. Nat Rev Urol. 2021. PMID: 33432180 No abstract available. Similar articles Immunotherapy of Ipilimumab and Nivolumab in Patients with Advanced Neuroendocrine Tumors: A Subgroup Analysis of the CA209-538 Clinical Trial for Rare Cancers. Klein O, Kee D, Markman B, Michael M, Underhill C, Carlino MS, Jackett L, Lum C, Scott C, Nagrial A, Behren A, So JY, Palmer J, Cebon J. Klein O, et al. Clin Cancer Res. 2020 Sep 1;26(17):4454-4459. doi: 10.1158/1078-0432.CCR-20-0621. Epub 2020 Jun 12. Clin Cancer Res. 2020. PMID: 32532787 Clinical Trial. Final Results From a Phase I Trial and Expansion Cohorts of Cabozantinib and Nivolumab Alone or With Ipilimumab for Advanced/Metastatic Genitourinary Tumors. Apolo AB, Girardi DM, Niglio SA, Nadal R, Kydd AR, Simon N, Ley L, Cordes LM, Chandran E, Steinberg SM, Lee S, Lee MJ, Rastogi S, Sato N, Cao L, Banday AR, Boudjadi S, Merino MJ, Toubaji A, Akbulut D, Redd B, Bagheri H, Costello R, Gurram S, Agarwal PK, Chalfin HJ, Valera V, Streicher H, Wright JJ, Sharon E, Figg WD, Parnes HL, Gulley JL, Saraiya B, Pal SK, Quinn D, Stein MN, Lara PN, Bottaro DP, Mortazavi A. Apolo AB, et al. J Clin Oncol. 2024 Sep 1;42(25):3033-3046. doi: 10.1200/JCO.23.02233. Epub 2024 Jul 2. J Clin Oncol. 2024. PMID: 38954785 Free PMC article. Clinical Trial. Evaluation of Combination Nivolumab and Ipilimumab Immunotherapy in Patients With Advanced Biliary Tract Cancers: Subgroup Analysis of a Phase 2 Nonrandomized Clinical Trial. Klein O, Kee D, Nagrial A, Markman B, Underhill C, Michael M, Jackett L, Lum C, Behren A, Palmer J, Tebbutt NC, Carlino MS, Cebon J. Klein O, et al. JAMA Oncol. 2020 Sep 1;6(9):1405-1409. doi: 10.1001/jamaoncol.2020.2814. JAMA Oncol. 2020. PMID: 32729929 Free PMC article. Clinical Trial. Ipilimumab in combination with nivolumab for the treatment of renal cell carcinoma. Gao X, McDermott DF. Gao X, et al. Expert Opin Biol Ther. 2018 Sep;18(9):947-957. doi: 10.1080/14712598.2018.1513485. Epub 2018 Aug 30. Expert Opin Biol Ther. 2018. PMID: 30124333 Free PMC article. Review. FDA Approval Summary: Nivolumab Plus Ipilimumab for the Treatment of Patients with Hepatocellular Carcinoma Previously Treated with Sorafenib. Saung MT, Pelosof L, Casak S, Donoghue M, Lemery S, Yuan M, Rodriguez L, Schotland P, Chuk M, Davis G, Goldberg KB, Theoret MR, Pazdur R, Fashoyin-Aje L. Saung MT, et al. Oncologist. 2021 Sep;26(9):797-806. doi: 10.1002/onco.13819. Epub 2021 Jun 10. Oncologist. 2021. PMID: 33973307 Free PMC article. Review. See all similar articles Cited by Therapeutic Targets in Advanced Penile Cancer: From Bench to Bedside. Pagliaro LC, Tekin B, Gupta S, Herrera Hernandez L. Pagliaro LC, et al. Cancers (Basel). 2024 May 30;16(11):2086. doi: 10.3390/cancers16112086. Cancers (Basel). 2024. PMID: 38893204 Free PMC article. Review. Case Report: Response to ipilimumab and nivolumab in a patient with adrenocortical carcinoma. Charles R, Madhu D, Powles A, Boyde A, Hughes O, Kumar N, Moorcraft SY. Charles R, et al. Front Oncol. 2023 Sep 8;13:1242560. doi: 10.3389/fonc.2023.1242560. eCollection 2023. Front Oncol. 2023. PMID: 37746287 Free PMC article. Emerging Therapies in Pheochromocytoma and Paraganglioma: Immune Checkpoint Inhibitors in the Starting Blocks. Fanciulli G, Di Molfetta S, Dotto A, Florio T, Feola T, Rubino M, de Cicco F, Colao A, Faggiano A, Nike Group. Fanciulli G, et al. J Clin Med. 2020 Dec 29;10(1):88. doi: 10.3390/jcm10010088. J Clin Med. 2020. PMID: 33383673 Free PMC article. Review. Endocrine and Neuroendocrine Tumors Special Issue-Checkpoint Inhibitors for Adrenocortical Carcinoma and Metastatic Pheochromocytoma and Paraganglioma: Do They Work? Jimenez C, Armaiz-Pena G, Dahia PLM, Lu Y, Toledo RA, Varghese J, Habra MA. Jimenez C, et al. Cancers (Basel). 2022 Jan 18;14(3):467. doi: 10.3390/cancers14030467. Cancers (Basel). 2022. PMID: 35158739 Free PMC article. Review. Treatment approaches in advanced penile cancer: targeted therapies and immunotherapy. Benjamin DJ, Hsu RC. Benjamin DJ, et al. Front Oncol. 2025 Jan 15;14:1457006. doi: 10.3389/fonc.2024.1457006. eCollection 2024. Front Oncol. 2025. PMID: 39882447 Free PMC article. Review. See all "Cited by" articles References Sun C, Mezzadra R, Schumacher TN. Regulation and function of the PD-L1 checkpoint. Immunity. 2018;48:434-452. Allolio B, Fassnacht M. Clinical review: adrenocortical carcinoma: clinical update. J Clin Endocrinol Metab. 2006;91:2027-2037. Siegel RL, Miller KD, Jemal A. Cancer statistics, 2020. CA Cancer J Clin. 2020;70:7-30. Fay AP, Elfiky A, Teló GH, et al. Adrenocortical carcinoma: the management of metastatic disease. Crit Rev Oncol Hematol. 2014;92:123-132. Buonerba C, Di Lorenzo G, Pond G, et al. Prognostic and predictive factors in patients with advanced penile cancer receiving salvage (2nd or later line) systemic treatment: a retrospective, multi-center study. Front Pharmacol. 2016;7:487. Show all 41 references Publication types Clinical Trial, Phase II Actions Search in PubMed Search in MeSH Add to Search Multicenter Study Actions Search in PubMed Search in MeSH Add to Search Research Support, N.I.H., Extramural Actions Search in PubMed Search in MeSH Add to Search Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search MeSH terms Antineoplastic Combined Chemotherapy Protocols / therapeutic use* Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Ipilimumab / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Ipilimumab / adverse effects Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Nivolumab / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Nivolumab / adverse effects Actions Search in PubMed Search in MeSH Add to Search Rare Diseases Actions Search in PubMed Search in MeSH Add to Search Urogenital Neoplasms / drug therapy* Actions Search in PubMed Search in MeSH Add to Search Urogenital Neoplasms / mortality Actions Search in PubMed Search in MeSH Add to Search Substances Ipilimumab Actions Search in PubMed Search in MeSH Add to Search Nivolumab Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT03333616 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen Grants and funding Bristol-Myers Squibb P30 CA016672/NH/NIH HHS/United States LinkOut - more resources Full Text Sources Ovid Technologies, Inc. Wiley Medical ClinicalTrials.gov Miscellaneous NCI CPTAC Assay Portal
+
+Onclive Article (Dr McGregor on the Potential Use of Checkpoint Inhibitors in …): “We began] the development of [this program] years ago, and the idea was that we have a lot of patients who [present] with rare tumors or a rare variety of a common tumor, [such as] variants of bladder cancers [including] small cell or squamous cell [cancer] of the bladder or urinary tract. The idea was that immunotherapy is a tumor-agnostic approach that is approved across a variety of tumors.” Bradley McGregor, MD, director, clinical research, Lank Center for Genitourinary Oncology; senior physician, Marra Lochiatto Investigator, Dana-Farber Cancer Institute (DFCI); assistant professor, medicine, Harvard Medical School, discusses the rationale for investigating the combination of nivolumab (Opdivo) and ipilimumab (Yervoy) for the treatment of patients with advanced rare genitourinary (GU) malignancies who had not previously received immunotherapy, as well as the process of implementing this regimen into the GU treatment paradigm at DFCI. The rationale for investigating this immunotherapy regimen for patients with advanced rare GU malignancies stems from the unmet need for effective treatments in this population, particularly for patients with histological subtypes often excluded from traditional clinical trials, McGregor begins. These include patients presenting with rare GU malignancies or uncommon variants of common GU tumors, such as small cell or squamous cell carcinoma of the bladder or urinary tract, he expands. Recognizing immunotherapy’s broad application across tumor types, McGregor and colleagues identified an opportunity to explore its efficacy in this niche population. In a phase 2 study (NCT03333616) , through the DFCI rare GU tumor protocol, the combination of nivolumab and ipilimumab is being evaluated in 4 cohorts of patients with diverse diseasehistologies: bladder or upper tract carcinoma with variant histology, adrenocortical carcinoma, other rare genitourinary carcinomas, and any genitourinary carcinoma with neuroendocrine differentiation. This trial’s protocol was designed to include patients often excluded from traditional trials, reflecting a commitment to expanding therapeutic options for rare GU malignancies, McGregor notes. By leveraging immunotherapy’s tumor-agnostic mechanism, the study aims to establish a foundation for incorporating checkpoint inhibitors into the treatment paradigms for rare and refractory GU cancers, he concludes.
+	•	Additional evidence from online sources: Primary outcome: Objective Response Rate
+Secondary outcomes: Objective Response Rate for all rare GU tumor types; Duration of Response; Immune related objective response rate; Progression-Free Survival for the total cohort and by tumor cohort; Overall Survival for all patients and by tumor cohort; Safety and tolerability according to Common Terminology Criteria for Adverse Events (CTCAE).
+Web search summary: 1 PubMed publications (1 scraped); 1 Onclive articles (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Results of a multicenter, phase 2 study of nivolumab and ipilimumab for patients with advanced rare genitourinary malignancies.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/33216356/', 'pmid': '33216356', 'content_scraped': True, 'content_length': 9650}], 'scraped': 1}, 'onclive': {'count': 1, 'items': [{'title': 'Dr McGregor on the Potential Use of Checkpoint Inhibitors in …', 'url': 'https://www.onclive.com/view/dr-mcgregor-on-the-potential-use-of-checkpoint-inhibitors-in-rare-gu-cancers', 'content_scraped': True, 'content_length': 2405}], 'scraped': 1}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/33216356/
+Analysis notes: Found 1 listed publication(s); Listed publications appear to contain results; Online search performed; Found 2 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); 1 Onclive articles (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

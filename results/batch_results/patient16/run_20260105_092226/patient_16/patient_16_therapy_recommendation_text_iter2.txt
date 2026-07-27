@@ -1,0 +1,20 @@
+=== REGENERATION ITERATION 2 - THERAPY RECOMMENDATION ===
+Timestamp: 2026-01-05T09:59:24.485556
+Patient ID: 16
+================================================================================
+
+**1. First-Line Systemic Therapy: Somatostatin Analogues (SSAs)**
+Initiate **Lanreotide Autogel (120 mg)** or **Octreotide LAR (30 mg)** every 4 weeks for antiproliferative control.
+*   **Evidence:** The prospective observational study **NCT02730104** (Paulson et al.) demonstrated a **24-month progression-free survival (PFS) rate of 73.7%** in patients with GEP-NETs treated with Lanreotide, confirming its effectiveness and safety in a real-world setting.
+*   **Guideline Support:** ENETS and ESMO guidelines recommend SSAs as the standard first-line therapy for SSTR-positive, well-differentiated (G1) NF-Pan-NETs with slow growth (Ki-67 <10%).
+
+**2. Evaluation for Peptide Receptor Radionuclide Therapy (PRRT)**
+Evaluate the patient for **177Lu-DOTATATE PRRT**, potentially as a neoadjuvant strategy to facilitate downstaging or as a second-line option if the disease progresses.
+*   **Evidence:**
+    *   **NCT02754297:** In the P-PRRT trial (Del Prete et al.), personalized PRRT achieved a **partial or minor response in 84.6% (11 of 13)** of patients with pancreatic NETs. This high response rate supports the utility of PRRT for tumor shrinkage (downstaging) in locally advanced cases.
+    *   **NCT02236910:** A registry study (Swiha et al.) reported a **median PFS of 34.1 months** in patients with well-differentiated NETs treated with 177Lu-DOTATATE, supporting its long-term efficacy.
+*   **Condition:** Eligibility requires confirming that uptake in the paraaortic lymph nodes and liver metastases exceeds normal liver background, which is suggested by the "intense accumulation" on PET/CT.
+
+**3. Surgical Consultation**
+Refer to a high-volume pancreatic surgery center to assess the feasibility of **pancreaticoduodenectomy with venous resection** and lymphadenectomy.
+*   **Caveat:** The presence of **retroperitoneal paraaortic lymph nodes** may represent extra-regional disease (M1), potentially precluding curative (R0) resection. If R0 resection is not currently feasible due to these nodes or the vascular contact, proceed with the systemic/PRRT strategies above to attempt downstaging.

@@ -1,0 +1,202 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-12T14:24:41.480359
+Trial: 26/86
+NCT ID: NCT03870399
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+A 51-year-old woman with a well-differentiated (G2, Ki-67 15%) pancreatic neuroendocrine tumor with synchronous bilobar liver metastases diagnosed in 2018. In September 2018 underwent total gastrectomy, splenectomy, and distal pancreatectomy. From November 2018, start of therapy with sunitinib 37.5 mg/day and lanreotide 120 mg every 28 days, best response PR, suspended for liver disease debulking program with arterial embolization. From 12/9/2019 to 9/4/2020, 4 TAE treatments, than follow-up with CT scan every six months. After liver progression in 2022, she was enrolled in a phase II trial with belzutifan (HIF-2α inhibitor). The disease remained radiologically stable (SD RECIST) for >2 years under reduced-dose therapy (40 mg/day since 2024).
+In early 2025, mild hepatic progression was observed, and evaluation by transplant surgery considered potential liver transplantation due to liver-only disease. Exploratory laparoscopy confirmed no peritoneal spread. 
+Current Clinical Status: ECOG PS 0. The patient reports mild, migratory bone pain.
+Physical examination: unremarkable overall; no signs of motor or sensory deficits in the upper limbs.
+Question for Tumorboard:
+Feasibility of liver transplantation in a patient with long-term stable, liver-only metastatic pancreatic NET under belzutifan therapy.
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Summary**
+The patient is a 51-year-old female with a metastatic well-differentiated pancreatic neuroendocrine tumor (Pan-NET), Grade 2, with a Ki-67 index of 15%. She has a history of synchronous bilobar liver metastases diagnosed in 2018. The primary tumor was resected (total gastrectomy, splenectomy, distal pancreatectomy) in September 2018. She has been heavily pre-treated with somatostatin analogs (lanreotide), tyrosine kinase inhibitors (sunitinib), and liver-directed therapies (TAE). Most recently, she achieved stable disease (SD) for >2 years on the HIF-2α inhibitor belzutifan (40 mg/day) within a clinical trial but is now experiencing mild hepatic progression.
+
+**Assessment of Liver Transplantation Feasibility**
+Based on the **ESMO Clinical Practice Guidelines (2020)**, liver transplantation (LT) is a valid option only in *very selected* patients. The assessment of this patient against the specific ESMO criteria for LT is as follows:
+
+*   **Criteria Met:**
+    *   **Age:** The patient is 51 years old, meeting the criterion of age <60 years.
+    *   **Primary Tumor Resection:** The primary tumor was removed in 2018.
+    *   **Extrahepatic Disease:** Current evaluation (including exploratory laparoscopy) indicates liver-only disease.
+
+*   **Criteria Not Met / Areas of Concern:**
+    *   **Tumor Grade/Proliferation:** The patient's Ki-67 index is 15%. The ESMO guidelines explicitly state that LT criteria include histological confirmation of a well-differentiated NET with **Ki-67 <10%**. This patient falls outside this strict selection criterion.
+    *   **Disease Stability:** The guidelines require stable disease in response to therapy for at least 6 months *before* transplant consideration. While the patient had long-term stability on belzutifan, she is currently presenting with "mild hepatic progression," which conflicts with the requirement for pre-transplant stability.
+    *   **Tumor Burden:** The guidelines require metastatic diffusion <50% of the total liver volume. The specific liver tumor burden percentage is not provided in the patient information and requires calculation to determine eligibility.
+
+**Diagnostic Assessment and Discrepancies**
+*   **Bone Pain vs. Liver-Only Status:** The patient reports "mild, migratory bone pain," yet is classified as having "liver-only disease." The ESMO guidelines note that CT sensitivity for bone metastases is poor (61%, range 46%–80%). Since the patient has been followed up with CT scans, occult bone metastases cannot be ruled out based on the provided history.
+*   **Imaging Recommendations:** To confirm the "absence of extrahepatic disease" required for LT consideration, and to investigate the reported bone pain, **SST-PET/CT** (or MRI for bone/liver) is indicated. ENETS 2023 guidelines recommend SST-PET/CT for whole-body staging and note it is superior to CT for skeletal lesions.
+
+**Assessment of Current Therapy and Alternatives**
+*   **Belzutifan:** The patient is progressing on belzutifan. The ENETS 2023 guidelines note that while belzutifan is approved for VHL-associated Pan-NETs, its value in metastatic Pan-NET outside of VHL is currently "unclear."
+*   **PRRT Assessment:** If LT is deemed unfeasible due to the Ki-67 index (15%) or progression, Peptide Receptor Radionuclide Therapy (PRRT) is a potential consideration for progressive disease. However, eligibility requires confirmation of sufficient uptake on SST-imaging. It must be acknowledged that PRRT eligibility requires DOTATATE/DOTATOC PET uptake higher than liver background in all primary tumor lesions and metastases. If lesions show heterogeneous or low uptake, PRRT is generally not indicated.
+*   **Chemotherapy:** According to ESMO guidelines, systemic chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is recommended in progressive G2 Pan-NETs, particularly when there is bulky disease or progression on other therapies.
+
+**Conclusion**
+While the patient meets the age and primary resection criteria for liver transplantation, she does not meet the strict ESMO guideline criteria regarding Ki-67 index (<10% required; patient is 15%) and current disease stability (patient is progressing). Furthermore, the reported bone pain necessitates urgent exclusion of extrahepatic bone metastases via high-sensitivity imaging (SST-PET/CT) before any definitive decision on "liver-only" procedures can be made.
+
+Trial Search Recommendations:
+  - ** To confirm the "absence of extrahepatic disease" required for LT consideration
+  - and to investigate the reported bone pain
+  - **SST-PET/CT** (or MRI for bone/liver) is indicated. ENETS 2023 guidelines recommend SST-PET/CT for whole-body staging and note it is superior to CT for skeletal lesions.
+  - *Assessment of Current Therapy and Alternatives**
+  - **Belzutifan:** The patient is progressing on belzutifan. The ENETS 2023 guidelines note that while belzutifan is approved for VHL-associated Pan-NETs, its value in metastatic Pan-NET outside of VHL is currently "unclear."
+	•	Question for Tumorboard: Feasibility of liver transplantation in a patient with long-term stable, liver-only metastatic pancreatic NET under belzutifan therapy.
+
+### STUDY DATA
+	•	NCT-ID: NCT03870399
+	•	Title: Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Tamoxifen
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Age greater than or equal to 18 years
+* Histological diagnosis of well differentiated NET (typical and atypical lung carcinoids, NET G1, NET G2 of all gastroenteropancreatic sites and pancreatic NET G3 according to WHO 2017 classification) 20 advanced / metastatic, inoperable, with no possibility of curative treatment
+* Immunohistochemical expression ≥ 1 percent for estrogen and / or progesterone receptor
+* Disease with radiological progression (at least 10 percent tumor volume growth) in the last 12 months before day 1 cycle 1.
+* No possibility of established treatments due to lack of access, risk of toxicities or without clinical indication. Patients who meet criteria for watchful waiting (low-dose disease and non-functioning NET) may be included.
+* Measurable disease
+* ECOG performance scale 0 to 2.
+* Adequate organic function as defined by the following criteria:
+
+  * serum aspartate aminotransferase (AST), serum alanine aminotransferase (ALT) ≤ 2.5 times the upper limit of local laboratory normality (LSN-LL);
+  * Total serum bilirubin ≤ 2.0 x ULN-LL;
+  * Absolute neutrophil count ≥ 1,500 / mm\^3;
+  * Platelet count ≥ 80,000 / mm\^3;
+  * Hemoglobin ≥ 9.0 g / dL;
+  * Estimated creatinine clearance by the MDRD equation ≥ 30ml / min
+* Albumin ≥ 3.5 g / dL;
+* INR ≤ 1.5
+* Term of free and informed consent signed by the patient or legal representative.
+
+Exclusion Criteria:
+
+* Patients already on tamoxifen, but other prior treatment are allowed
+* Patients with aggressive disease requiring cytotoxic therapy or locoregional therapies (eg hepatic embolization)
+* A history of serious clinical or psychiatric illness that, by clinical judgment, may involve participation risk in this study
+* Patients participating in other protocols with experimental drugs.
+* Patients with oral food difficulties.
+* Patients who underwent major recent surgery less than 4 weeks previously.
+* Patients receiving chemotherapy or other oncologic therapy for less than 3 weeks.
+* Patients who use oral anticoagulation
+* Previous history of deep vein thrombosis or pulmonary embolism in the last 12 months.
+* Pregnant or lactating patients.
+* Patients with postmenopausal vaginal bleeding with no defined etiology.
+* Patients with breast cancer who need to use tamoxifen for this neoplasm
+* Another synchronous neoplasm that requires systemic treatment *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This is a single-arm, unicentric, single-stage clinical study of tamoxifen for patients with well differentiated neuroendocrine tumors and radiological progression with positive (\> 1 percent) HR (estrogen and / or progesterone) expression by IHC. It will evaluate if Tamoxifen exerts antitumor action in patients with well differentiated NET and positive for the expression of HR, estrogen and / or progesterone.
+	•	Publications: 21 publication(s) found; Analysis: Found 21 listed publication(s); Listed publications appear to contain results; Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/37529158/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Yao JC, Hassan M, Phan A, Dagohoy C, Leary C, Mares JE, Abdalla EK, Fleming JB, Vauthey JN, Rashid A, Evans DB. One hundred years after "carcinoid": epidemiology of and prognostic factors for neuroendocrine tumors in 35,825 cases in the United States. J Clin Oncol. 2008 Jun 20;26(18):3063-72. doi: 10.1200/JCO.2007.15.4377.
+• Caplin ME, Buscombe JR, Hilson AJ, Jones AL, Watkinson AF, Burroughs AK. Carcinoid tumour. Lancet. 1998 Sep 5;352(9130):799-805. doi: 10.1016/S0140-6736(98)02286-7.
+• Modlin IM, Pavel M, Kidd M, Gustafsson BI. Review article: somatostatin analogues in the treatment of gastroenteropancreatic neuroendocrine (carcinoid) tumours. Aliment Pharmacol Ther. 2010 Jan 15;31(2):169-88. doi: 10.1111/j.1365-2036.2009.04174.x. Epub 2009 Oct 21.
+• Caplin ME, Pavel M, Ruszniewski P. Lanreotide in metastatic enteropancreatic neuroendocrine tumors. N Engl J Med. 2014 Oct 16;371(16):1556-7. doi: 10.1056/NEJMc1409757. No abstract available.
+• Rinke A, Muller HH, Schade-Brittinger C, Klose KJ, Barth P, Wied M, Mayer C, Aminossadati B, Pape UF, Blaker M, Harder J, Arnold C, Gress T, Arnold R; PROMID Study Group. Placebo-controlled, double-blind, prospective, randomized study on the effect of octreotide LAR in the control of tumor growth in patients with metastatic neuroendocrine midgut tumors: a report from the PROMID Study Group. J Clin Oncol. 2009 Oct 1;27(28):4656-63. doi: 10.1200/JCO.2009.22.8510. Epub 2009 Aug 24.
+• Viale G, Doglioni C, Gambacorta M, Zamboni G, Coggi G, Bordi C. Progesterone receptor immunoreactivity in pancreatic endocrine tumors. An immunocytochemical study of 156 neuroendocrine tumors of the pancreas, gastrointestinal and respiratory tracts, and skin. Cancer. 1992 Nov 1;70(9):2268-77. doi: 10.1002/1097-0142(19921101)70:93.0.co;2-x.
+• Zimmermann N, Lazar-Karsten P, Keck T, Billmann F, Schmid S, Brabant G, Thorns C. Expression Pattern of CDX2, Estrogen and Progesterone Receptors in Primary Gastroenteropancreatic Neuroendocrine Tumors and Metastases. Anticancer Res. 2016 Mar;36(3):921-4.
+• Estrella JS, Broaddus RR, Mathews A, Milton DR, Yao JC, Wang H, Rashid A. Progesterone receptor and PTEN expression predict survival in patients with low- and intermediate-grade pancreatic neuroendocrine tumors. Arch Pathol Lab Med. 2014 Aug;138(8):1027-36. doi: 10.5858/arpa.2013-0195-OA.
+• Kim SJ, An S, Lee JH, Kim JY, Song KB, Hwang DW, Kim SC, Yu E, Hong SM. Loss of Progesterone Receptor Expression Is an Early Tumorigenesis Event Associated with Tumor Progression and Shorter Survival in Pancreatic Neuroendocrine Tumor Patients. J Pathol Transl Med. 2017 Jul;51(4):388-395. doi: 10.4132/jptm.2017.03.19. Epub 2017 Jun 8.
+• Arganini M, Spinelli C, Cecchini GM, Miccoli P. Long term treatment with tamoxifen for metastatic carcinoid tumor. Acta Chir Belg. 1989 Jul-Aug;89(4):209-11.
+• Myers CF, Ershler WB, Tannenbaum MA, Barth R. Tamoxifen and carcinoid tumor. Ann Intern Med. 1982 Mar;96(3):383. doi: 10.7326/0003-4819-96-3-383_1. No abstract available.
+• Biasco E, Antonuzzo A, Galli L, Baldi GG, Derosa L, Marconcini R, Farnesi A, Ricci S, Falcone A. Small-bowel neuroendocrine tumor and retroperitoneal fibrosis: efficacy of octreotide and tamoxifen. Tumori. 2015 Mar 20;101(1):e24-8. doi: 10.5301/tj.5000259.
+• Stathopoulos GP, Karvountzis GG, Yiotis J. Tamoxifen in carcinoid syndrome. N Engl J Med. 1981 Jul 2;305(1):52. doi: 10.1056/NEJM198107023050115. No abstract available.
+• Moertel CG, Engstrom PF, Schutt AJ. Tamoxifen therapy for metastatic carcinoid tumor: a negative study. Ann Intern Med. 1984 Apr;100(4):531-2. doi: 10.7326/0003-4819-100-4-531. No abstract available.
+• Harvey JM, Clark GM, Osborne CK, Allred DC. Estrogen receptor status by immunohistochemistry is superior to the ligand-binding assay for predicting response to adjuvant endocrine therapy in breast cancer. J Clin Oncol. 1999 May;17(5):1474-81. doi: 10.1200/JCO.1999.17.5.1474.
+• Goldhirsch A, Glick JH, Gelber RD, Coates AS, Thurlimann B, Senn HJ; Panel members. Meeting highlights: international expert consensus on the primary therapy of early breast cancer 2005. Ann Oncol. 2005 Oct;16(10):1569-83. doi: 10.1093/annonc/mdi326. Epub 2005 Sep 7.
+• Krebs MG, Hou JM, Sloane R, Lancashire L, Priest L, Nonaka D, Ward TH, Backen A, Clack G, Hughes A, Ranson M, Blackhall FH, Dive C. Analysis of circulating tumor cells in patients with non-small cell lung cancer using epithelial marker-dependent and -independent approaches. J Thorac Oncol. 2012 Feb;7(2):306-15. doi: 10.1097/JTO.0b013e31823c5c16.
+• Crippa S, Partelli S, Belfiori G, Palucci M, Muffatti F, Adamenko O, Cardinali L, Doglioni C, Zamboni G, Falconi M. Management of neuroendocrine carcinomas of the pancreas (WHO G3): A tailored approach between proliferation and morphology. World J Gastroenterol. 2016 Dec 7;22(45):9944-9953. doi: 10.3748/wjg.v22.i45.9944.
+• Furr BJ, Jordan VC. The pharmacology and clinical uses of tamoxifen. Pharmacol Ther. 1984;25(2):127-205. doi: 10.1016/0163-7258(84)90043-3. No abstract available.
+• Shiau AK, Barstad D, Loria PM, Cheng L, Kushner PJ, Agard DA, Greene GL. The structural basis of estrogen receptor/coactivator recognition and the antagonism of this interaction by tamoxifen. Cell. 1998 Dec 23;95(7):927-37. doi: 10.1016/s0092-8674(00)81717-1.
+• Yao JC, Shah MH, Ito T, Bohas CL, Wolin EM, Van Cutsem E, Hobday TJ, Okusaka T, Capdevila J, de Vries EG, Tomassetti P, Pavel ME, Hoosen S, Haas T, Lincy J, Lebwohl D, Oberg K; RAD001 in Advanced Neuroendocrine Tumors, Third Trial (RADIANT-3) Study Group. Everolimus for advanced pancreatic neuroendocrine tumors. N Engl J Med. 2011 Feb 10;364(6):514-23. doi: 10.1056/NEJMoa1009290.
+• HORMONET: a phase II trial of tamoxifen for estrogen/progesterone receptor-positive neuroendocrine tumors. (PMID: 37529158)
+	•	Key findings from publications: PubMed Abstract: Nearly 30% of neuroendocrine tumors (NETs) have evidence of immunohistochemical (IHC) expression of estrogen (ER) and/or progesterone (PR) receptors. Therefore, targeting ER/PR may offer an effective NET-directed treatment to select patients.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: Nearly 30% of neuroendocrine tumors (NETs) have evidence of immunohistochemical (IHC) expression of estrogen (ER) and/or progesterone (PR) receptors. Therefore, targeting ER/PR may offer an effective NET-directed treatment to select patients. Methods: We conducted a multicenter Simon two-stage single-arm phase II trial of tamoxifen in patients with metastatic, progressive NETs. Eligible patients had positive IHC expression of ER and/or PR ⩾ 1%. Prior therapy with somatostatin analogs was required for progressing/functioning cases. Main exclusion criterion was aggressive disease requiring cytotoxic therapy. The primary end point was disease control rate (DCR) at week 24 by Response Evaluation Criteria in Solid Tumors version 1.1. We planned to enroll 23 patients in the first stage, to reach a DCR at week 24 of 70% ( versus 50%); if ⩾12 patients reached the primary end point, a total of 37 would be included. Results: From February 2019 to February 2022, 23 out of 59 patients were eligible and enrolled: 15 (65%) were females; the most common sites were pancreas (11; 48%) and small bowel (6; 26%). In all, 13 patients (56.5%) had G2 NETs. At a median follow-up of 27 months, 13 patients (56.5%) had stable disease at week 24 and median progression-free survival (PFS) was 7.9 months [interquartile range (IQR): 3.7-12.1]. The best response was stable disease in 13 patients, with most patients experiencing minor tumor growth. Median PFS times were not significantly different according to ER/PR < or ⩾30% ( p = 0.49) or ER versus PR expression ( p = 0.19). One patient experienced grade 2 constipation. Conclusion: Tamoxifen for ER-/PR-positive NETs patients is safe but offers modest antitumor effects. Trial registry name: Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression (HORMONET). Url: https://clinicaltrials.gov/ct2/show/NCT03870399?term=03870399&draw=2&rank=1. Registration number: NCT03870399 . Keywords: clinical trial; neuroendocrine tumors; tamoxifen. © The Author(s), 2023. PubMed Disclaimer Conflict of interest statement MJB: none; JS: Honoraria from Ipsen and Tersera; TAT: none; LD: none; MDD: honoraria from Novartis and Ipsen; CAM: none; VHFJ: none; TCF: none; RGT: none; RPR: honoraria from Novartis and Ipsen. Figures Figure 1. Waterfall plot. *Disease progression resulting… Figure 1. Waterfall plot. *Disease progression resulting from new non-target lesion(s). Patients 5 and 6… Figure 1. Waterfall plot. *Disease progression resulting from new non-target lesion(s). Patients 5 and 6 had no tumor changes. Figure 2. Progression free survival by type… Figure 2. Progression free survival by type of hormone receptor IHC expression. Red curve: PR-positive… Figure 2. Progression free survival by type of hormone receptor IHC expression. Red curve: PR-positive NETs; blue curve: ER-positive NETs. Figure 3. Progression-free survival by ER and/or… Figure 3. Progression-free survival by ER and/or PR NETs IHC expression Figure 3. Progression-free survival by ER and/or PR NETs IHC expression < or ⩾ 30%. Blue curve: ER/PR IHC expression < 30%; red curve: ER/PR IHC expression ⩾ 30%. See this image and copyright information in PMC Similar articles Assessing the safety and activity of cabozantinib combined with lanreotide in gastroenteropancreatic and thoracic neuroendocrine tumors: rationale and protocol of the phase II LOLA trial. Corti F, Brizzi MP, Amoroso V, Giuffrida D, Panzuto F, Campana D, Prinzi N, Milione M, Cascella T, Spreafico C, Randon G, Oldani S, Leporati R, Scotto G, Pulice I, Stocchetti BL, Porcu L, Coppa J, Di Bartolomeo M, de Braud F, Pusceddu S. Corti F, et al. BMC Cancer. 2023 Sep 26;23(1):908. doi: 10.1186/s12885-023-11287-2. BMC Cancer. 2023. PMID: 37752423 Free PMC article. Assessment of 25-Year Survival of Women With Estrogen Receptor-Positive/ERBB2-Negative Breast Cancer Treated With and Without Tamoxifen Therapy: A Secondary Analysis of Data From the Stockholm Tamoxifen Randomized Clinical Trial. Dar H, Johansson A, Nordenskjöld A, Iftimi A, Yau C, Perez-Tenorio G, Benz C, Nordenskjöld B, Stål O, Esserman LJ, Fornander T, Lindström LS. Dar H, et al. JAMA Netw Open. 2021 Jun 1;4(6):e2114904. doi: 10.1001/jamanetworkopen.2021.14904. JAMA Netw Open. 2021. PMID: 34190995 Free PMC article. Clinical Trial. Estrogen receptor-positive, progesterone receptor-negative breast cancer: association with growth factor receptor expression and tamoxifen resistance. Arpino G, Weiss H, Lee AV, Schiff R, De Placido S, Osborne CK, Elledge RM. Arpino G, et al. J Natl Cancer Inst. 2005 Sep 7;97(17):1254-61. doi: 10.1093/jnci/dji249. J Natl Cancer Inst. 2005. PMID: 16145046 Combined use of 177Lu-DOTATATE and metronomic capecitabine (Lu-X) in FDG-positive gastro-entero-pancreatic neuroendocrine tumors. Nicolini S, Bodei L, Bongiovanni A, Sansovini M, Grassi I, Ibrahim T, Monti M, Caroli P, Sarnelli A, Diano D, Di Iorio V, Grana CM, Cittanti C, Pieri F, Severi S, Paganelli G. Nicolini S, et al. Eur J Nucl Med Mol Imaging. 2021 Sep;48(10):3260-3267. doi: 10.1007/s00259-021-05236-z. Epub 2021 Feb 18. Eur J Nucl Med Mol Imaging. 2021. PMID: 33604690 Free PMC article. Clinical Trial. Endocrine responsiveness: understanding how progesterone receptor can be used to select endocrine therapy. Osborne CK, Schiff R, Arpino G, Lee AS, Hilsenbeck VG. Osborne CK, et al. Breast. 2005 Dec;14(6):458-65. doi: 10.1016/j.breast.2005.08.024. Epub 2005 Oct 19. Breast. 2005. PMID: 16236516 Review. See all similar articles Cited by Neuroendocrine tumours and pregnancy: Real-world data from an European Neuroendocrine Tumour Centre of Excellence. Ratnayake GM, Shekhda KM, Glover T, Al-Obudi Y, Hayes A, Armonis P, Mandair D, Khoo B, Luong T, Toumpanakis C, Grossman A, Caplin M. Ratnayake GM, et al. J Neuroendocrinol. 2025 Jan;37(1):e13465. doi: 10.1111/jne.13465. Epub 2024 Nov 6. J Neuroendocrinol. 2025. PMID: 39503166 Free PMC article. Sex Differences in the Survival of Patients with Neuroendocrine Neoplasms: A Comparative Study of Two National Databases. Mortagy M, El Asmar ML, Chandrakumaran K, Ramage J. Mortagy M, et al. Cancers (Basel). 2024 Jun 28;16(13):2376. doi: 10.3390/cancers16132376. Cancers (Basel). 2024. PMID: 39001438 Free PMC article. Mesenteric Fibrosis in Neuroendocrine Neoplasms: a Systematic Review of New Thoughts on Causation and Potential Treatments. Spyroglou A, Violetis O, Iliakopoulos K, Vezakis A, Alexandraki K. Spyroglou A, et al. Curr Oncol Rep. 2025 May;27(5):642-655. doi: 10.1007/s11912-025-01668-0. Epub 2025 Apr 11. Curr Oncol Rep. 2025. PMID: 40214893 Free PMC article. Exploring the top 30 drugs associated with drug-induced constipation based on the FDA adverse event reporting system. Li W, Liu C, Zhang Z, Cai Z, Lv T, Zhang R, Zuo Y, Chen S. Li W, et al. Front Pharmacol. 2024 Sep 2;15:1443555. doi: 10.3389/fphar.2024.1443555. eCollection 2024. Front Pharmacol. 2024. PMID: 39286628 Free PMC article. References Strosberg J, El-Haddad G, Wolin E, et al.. Phase 3 Trial of (177)Lu-Dotatate for midgut neuroendocrine tumors. N Engl J Med 2017; 376: 125–135. - PMC - PubMed Yao JC, Shah MH, Ito T, et al.. Everolimus for advanced pancreatic neuroendocrine tumors. N Engl J Med 2011; 364: 514–523. - PMC - PubMed Yao JC, Fazio N, Singh S, et al.. Everolimus for the treatment of advanced, non-functional neuroendocrine tumours of the lung or gastrointestinal tract (RADIANT-4): a randomised, placebo-controlled, phase 3 study. Lancet 2016; 387: 968–977. - PMC - PubMed Raymond E, Dahan L, Raoul JL, et al.. Sunitinib malate for the treatment of pancreatic neuroendocrine tumors. N Engl J Med 2011; 364: 501–513. - PubMed Viale G, Doglioni C, Gambacorta M, et al.. Progesterone receptor immunoreactivity in pancreatic endocrine tumors. An immunocytochemical study of 156 neuroendocrine tumors of the pancreas, gastrointestinal and respiratory tracts, and skin. Cancer 1992; 70: 2268–2277. - PubMed Show all 24 references Associated data ClinicalTrials.gov/NCT03870399 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen LinkOut - more resources Full Text Sources Atypon Europe PubMed Central PubMed Central Medical ClinicalTrials.gov Research Materials NCI CPTC Antibody Characterization Program
+	•	Additional evidence from online sources: Primary outcome: Disease control rate
+Secondary outcomes: Progression-free survival; Rate of Biochemical response; Radiological response rate; Disease control rate; Incidence of Treatment-related Adverse Events
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'HORMONET: a phase II trial of tamoxifen for estrogen/progesterone receptor-positive neuroendocrine tumors.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/37529158/', 'pmid': '37529158', 'content_scraped': True, 'content_length': 8389}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/37529158/
+Analysis notes: Found 21 listed publication(s); Listed publications appear to contain results; Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

@@ -1,0 +1,17 @@
+=== TRIAL ANALYSIS REASONING REPORT ===
+Timestamp: 2025-12-03T15:49:31.602718
+Patient ID: 2
+Analysis Status: success
+============================================================
+
+ANALYSIS SUMMARY:
+- Trials analyzed: 0
+- Trials included: 0
+- Trials excluded: 0
+- Analysis complete: False
+
+VALIDATION WARNINGS:
+⚠️ Trial count mismatch: analyzed 0, expected 14
+
+RAW ANALYSIS RESPONSE:
+==================================================

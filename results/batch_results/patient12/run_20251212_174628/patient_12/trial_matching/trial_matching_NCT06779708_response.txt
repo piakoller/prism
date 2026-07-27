@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:52:05.372926
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant for this patient's treatment planning. First, the study specifically recruits patients classified as cM0 (non-metastatic) preoperatively to evaluate the utility of intraoperative ultrasound (IOUS) in detecting occult liver metastases, whereas this patient has bulky, clinically evident metastatic disease (M1) with liver lesions up to 150 mm and peritoneal carcinomatosis. Second, the intervention is a diagnostic tool used during curative-intent surgery; this patient is currently assessed as unresectable due to extensive bilobar liver metastases and extra-hepatic (peritoneal) disease, rendering intraoperative staging inapplicable. Finally, the primary clinical question is determining the best first-line systemic therapy (e.g., chemotherapy, PRRT, or SSAs) for aggressive G2 disease, and this study provides no evidence regarding systemic treatment efficacy or outcomes."
+}

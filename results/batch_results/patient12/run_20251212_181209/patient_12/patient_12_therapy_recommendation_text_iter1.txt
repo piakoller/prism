@@ -1,0 +1,21 @@
+=== REGENERATION ITERATION 1 - THERAPY RECOMMENDATION ===
+Timestamp: 2025-12-12T18:51:40.925164
+Patient ID: 12
+================================================================================
+
+**Primary Recommendation:** Initiation of first-line systemic cytotoxic chemotherapy with **Capecitabine and Temozolomide (CAPTEM)**.
+
+**Alternative Consideration:** **Streptozotocin and 5-Fluorouracil (STZ/5-FU)** is a valid alternative regimen, particularly if oral chemotherapy is not feasible, though the patient's history of gestational diabetes warrants careful monitoring of glucose levels given Streptozotocin's potential pancreatic toxicity.
+
+**Concurrent Workup & Safety Measures:**
+*   **Breastfeeding Contraindication:** Given the patient is recently postpartum (C-section 12/08/2022), she must be explicitly advised that **breastfeeding is contraindicated** during chemotherapy and must be discontinued immediately if currently active to prevent toxicity to the infant.
+*   **Genetic Counseling:** Referral for genetic testing is mandatory given the patient's young age (35) and pancreatic primary to rule out MEN1, VHL, or TSC (ENETS Guideline Q1/Q9).
+*   **Thyroid Evaluation:** Urgent ultrasound and potential fine-needle aspiration (FNA) of the FDG-positive/Ga68-positive thyroid nodules to rule out synchronous malignancy or syndromic involvement.
+*   **Fertility Preservation:** Counseling regarding fertility preservation should be conducted prior to initiating cytotoxic therapy.
+
+**Follow-up & Re-staging:**
+*   Morphological imaging (CT/MRI) should be performed every **3 months** (or after 3 cycles) to assess response (RECIST 1.1) and toxicity.
+
+**Future/Second-Line Consideration:** **Cabozantinib** (based on **NCT03375320**) or **Sunitinib/Everolimus** upon disease progression.
+
+**Contraindicated Therapy:** **Peptide Receptor Radionuclide Therapy (PRRT)** with 177Lu-Dotatate is currently **contraindicated** as a first-line option due to discordant imaging (Ga68-negative peritoneal carcinomatosis), which predicts lack of response in those specific lesions.

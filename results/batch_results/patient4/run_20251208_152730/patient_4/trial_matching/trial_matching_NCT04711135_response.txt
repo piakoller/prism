@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T16:10:59.482951
+Trial: 80/86
+NCT ID: NCT04711135
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study (NETTER-P) does not provide meaningful evidence for this patient because it is specifically designed to evaluate the safety and dosimetry of Lutathera in **adolescents (12–17 years old)**. While the disease biology (GEP-NET) aligns, the clinical context is inapplicable to a 68-year-old woman. Efficacy and safety data for Lutathera in adults are already well-established (e.g., NETTER-1), and this pediatric study offers no new insights regarding efficacy, safety, or re-treatment strategies for an elderly, heavily pre-treated adult patient. Consequently, the evidence is not transferable or actionable for her care."
+}

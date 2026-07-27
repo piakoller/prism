@@ -1,0 +1,236 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-12T18:36:15.374954
+Trial: 58/86
+NCT ID: NCT03896503
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+35-year-old woman, born in Georgia, living in Catalonia for 9 years.
+No significant past medical history except gestational diabetes.
+
+Initial Presentation
+During her second pregnancy, the patient presented to the emergency department with abdominal pain of one year of evolution, progressively worsening. An external abdominal ultrasound demonstrated hepatomegaly with multiple focal lesions suggesting metastases. She was admitted for full work-up.
+
+Diagnostic Workup
+-MRI Abdomen: 75 mm pancreatic tail mass. Infiltration of splenic hilum. Loss of fat plane with left adrenal gland and upper pole of left kidney. Implants in hepatoduodenal ligament and ligamentum venosum fissure. Multiple bilobar hepatic metastases, up to 150 mm (right hepatic lobe)
+
+-Liver Core Biopsy: Well-differentiated neuroendocrine tumor (NET) G2
+Chromogranin A+, Synaptophysin+ Ki-67: 20%, CK7–, CK20–
+
+-Obstetric Care: Received lung maturation therapy; Cesarean section on 12/08/2022
+
+-Functional Imaging (Aug 2022): PET-FDG & PET-Ga68
+Primary pancreatic tumor: FDG+ / Ga68+
+Right adrenal nodule: FDG– / Ga68+
+Liver metastases: FDG+ / Ga68+
+Hepatic hilum adenopathy: FDG+ / Ga68+
+Peritoneal carcinomatosis: FDG+ / Ga68–
+Thyroid nodules: FDG+ / Ga68+
+
+
+2.	Current Clinical Status
+Epigastric abdominal pain for ≥1 year
+Postcesarean recovery
+Good glycemic control after recent gestational diabetes
+ECOG 1
+
+Diagnosis
+Metastatic well-differentiated pancreatic NET G2 (Ki-67 20%), with bulky hepatic metastases and peritoneal involvement.
+Question for Tumorboard:
+What should be the best first line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Tumor Biology**
+The patient is a 35-year-old female, recently postpartum, presenting with a metastatic, well-differentiated non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET). The tumor is classified as G2 based on a Ki-67 index of 20%. This proliferation index is at the upper limit for G2 tumors (cutoffs of 3% and 20% for NET G2 and G3, respectively, per ENETS 2023). The patient has a significant tumor burden, characterized as "bulky," with a 75 mm primary pancreatic tail mass and multiple bilobar hepatic metastases measuring up to 150 mm.
+
+**Functional Imaging and Heterogeneity**
+The dual-tracer PET imaging (FDG and Ga68) reveals significant tumor heterogeneity, which is a critical factor for prognostic stratification and treatment planning:
+1.  **FDG-Avidity:** The primary tumor, liver metastases, hepatic hilum adenopathy, peritoneal carcinomatosis, and thyroid nodules are FDG-positive. According to ENETS guidelines (Section 2.5.1), high FDG uptake correlates with a higher grade and is a strong poor prognostic factor.
+2.  **Somatostatin Receptor (SSTR) Status:** While the primary tumor and liver metastases are Ga68-positive, the peritoneal carcinomatosis is notably **Ga68-negative** (FDG+ / Ga68–). Additionally, the right adrenal nodule shows a reverse pattern (FDG– / Ga68+).
+3.  **PRRT Eligibility Assessment:** Per ESMO guidelines, PRRT requires homogenous SSTR expression where all NET lesions are positive. The presence of Ga68-negative peritoneal carcinomatosis indicates a lack of SSTR expression in this compartment. Consequently, these lesions would likely not respond to Peptide Receptor Radionuclide Therapy (PRRT), as eligibility requires uptake higher than liver background in all metastatic sites.
+
+**Staging and Resectability**
+The disease is advanced and metastatic. The primary tumor shows local invasion (splenic hilum, left adrenal gland, upper pole of left kidney). The presence of extensive bilobar liver metastases (up to 150 mm) and peritoneal carcinomatosis renders the patient unresectable for curative intent. Per ESMO guidelines, upfront surgery is generally excluded in the presence of extra-abdominal metastases (peritoneal involvement is extra-hepatic) or high-grade features, and debulking is controversial for non-functioning tumors with high Ki-67 (>10%).
+
+**Genetic Considerations**
+Given the patient's young age (35 years) and the diagnosis of Pan-NET, genetic counseling is indicated to rule out hereditary syndromes such as Multiple Endocrine Neoplasia type 1 (MEN1) or Von Hippel-Lindau (VHL) disease (ENETS 2.1). The presence of thyroid nodules (FDG+/Ga68+) warrants further investigation to exclude a synchronous malignancy or manifestations of a syndromic complex (e.g., MEN1).
+
+**Therapeutic Assessment**
+The clinical picture is dominated by bulky, symptomatic disease (abdominal pain for $\ge$1 year) with aggressive features (FDG positivity, Ki-67 20%).
+*   **Systemic Therapy:** According to ENETS (Q7) and ESMO guidelines, chemotherapy is a suitable consideration for patients with bulky, symptomatic, or significant tumor growth, particularly when Ki-67 is high (G2/G3) or FDG uptake is present. Regimens such as Temozolomide/Capecitabine or Streptozotocin/5-FU are referenced for such scenarios.
+*   **Somatostatin Analogues (SSAs):** While SSAs are the standard first-line for slow-growing, SSTR-positive G1/G2 tumors (ENETS Q6), this patient's high tumor burden, symptoms, and FDG positivity suggest a more aggressive biology that may require a more active antiproliferative approach than SSA monotherapy.
+*   **Targeted Therapies:** Sunitinib and Everolimus are options for progressive disease but are generally cytostatic rather than cytotoxic (tumor shrinkage is less common compared to chemotherapy).
+
+**Conclusion**
+The patient presents with a high-risk, bulky, metastatic G2 Pan-NET with discordant imaging features (FDG-positive/Ga68-negative peritoneal disease). The imaging mismatch suggests dedifferentiation in the peritoneal compartment, limiting the utility of SSTR-targeted therapies (PRRT) for those specific lesions. The clinical priority is systemic control of a bulky, symptomatic, and biologically aggressive tumor.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+	•	Question for Tumorboard: What should be the best first line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT03896503
+	•	Title: Randomized Trial of Topotecan With M6620, an ATR Kinase Inhibitor, in Small Cell Lung Cancers and Small Cell Cancers Outside of the Lungs
+	•	Phase: PHASE2, Status: ACTIVE_NOT_RECRUITING
+	•	Intervention: Berzosertib; Biopsy Procedure; Biospecimen Collection; Computed Tomography; Topotecan Hydrochloride
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Patients enrolled to the primary cohort must have limited- or extensive-disease SCLC at diagnosis, with relapse at study entry with measurable disease at random assignment per Response Evaluation Criteria in Solid Tumors (RECIST) 1.1. Both platinum-sensitive and platinum-resistant patients will be included
+* Patients with extrapulmonary small cell cancers (cancers with small cell morphology and arising outside the lung, such as small cell prostate, bladder, etc.) will be eligible for the exploratory cohort
+* Patients must be \>= 18 years of age because no dosing or adverse event data are currently available on the use of M6620 in combination with topotecan in patients \<18 years of age
+* Eastern Cooperative Oncology Group (ECOG) performance status =\< 2 (Karnofsky \>= 60%)
+* Hemoglobin \>= 9.0 g/dL - patients may receive transfusion to meet the hemoglobin (Hb) eligibility
+* Absolute neutrophil count (ANC) \>= 1,500/mcL
+* Platelets \>= 100,000/mcL
+* Total bilirubin =\< 2 mg/dL
+* Aspartate aminotransferase (AST) (serum glutamic oxaloacetic transaminase \[SGOT\])/alanine aminotransferase (ALT) (serum glutamate pyruvate transaminase \[SGPT\]) =\< 3.0 x institutional upper limit of normal (ULN)
+* Creatinine =\< institutional ULN OR
+* Glomerular filtration rate (GFR) \>= 60 mL/min/1.73 m\^2 unless data exists supporting safe use at lower kidney function values, no lower than 30 mL/min/1.73 m\^2
+* Human immunodeficiency virus (HIV)-positive subjects on combination antiretroviral therapy are eligible as long as they are on effective anti-retroviral therapy with undetectable viral load within 6 months and there is no drug-drug interaction with M6220
+* For patients with evidence of chronic hepatitis B virus (HBV) infection, the HBV viral load must be undetectable on suppressive therapy, if indicated
+* Patients with a history of hepatitis C virus (HCV) infection must have been treated and cured. For patients with HCV infection who are currently on treatment, they are eligible if they have an undetectable HCV viral load
+* The effects of M6620 on the developing human fetus are unknown. For this reason and because DNA-damage response (DDR) inhibitors as well as other therapeutic agents used in this trial are known to be teratogenic, women of child-bearing potential must agree to use adequate contraception (hormonal or barrier method of birth control; abstinence) prior to study entry, for the duration of study participation, and for 6 months after completion of M6620 administration. Should a woman become pregnant or suspect she is pregnant while she or her partner is participating in this study, she should inform her treating physician immediately. Men treated or enrolled on this protocol must also agree to use adequate contraception prior to the study, for the duration of study participation, and for 6 months after completion of M6620 administration
+* Patients with treated brain metastases are eligible if they are symptomatically stable while off steroid therapy for a minimum of 21 days
+* Patients with a prior or concurrent malignancy whose natural history or treatment does not have the potential to interfere with the safety or efficacy assessment of the investigational regimen are eligible for this trial
+* Patients with known history or current symptoms of cardiac disease, or history of treatment with cardiotoxic agents, should have a clinical risk assessment of cardiac function using the New York Heart Association Functional Classification. To be eligible for this trial, patients should be class 2B or better
+* Ability to understand and the willingness to sign a written informed consent document
+
+Exclusion Criteria:
+
+* Patients with symptomatic brain metastasis are not eligible due to their extremely poor prognosis and since it is unclear whether the investigational agent penetrates the blood-brain barrier. However, subjects who have had treatment for their brain metastasis and are symptomatically stable while off steroid therapy for a minimum of 21 days may be enrolled
+* Patients who have received prior topotecan therapy
+* Patients who have had chemotherapy or radiotherapy within 3 weeks prior to enrollment.
+
+  * Note: Patients who have had palliative radiotherapy may be included as long as they have recovered from any radiotherapy related adverse events (allow at least a week between radiotherapy completion and study treatment)
+* Patients who have not recovered from adverse events due to prior anti-cancer therapy except hair loss and peripheral neuropathy (i.e., have residual toxicities \> grade 1)
+* Patients who are receiving any other investigational agents
+* History of allergic reactions attributed to compounds of similar chemical or biologic composition to M6620 or topotecan used in study
+* M6620 is primarily metabolized by cytochrome P450 3A4 (CYP3A4); therefore, concomitant administration with strong inhibitors of CYP3A4 (e.g., ketoconazole, itraconazole, clarithromycin, ritonavir, indinavir, nelfinavir and saquinavir) or inducers of CYP3A4 (e.g., rifampin, phenytoin, carbamazepine, phenobarbital, St. John's wort) should be avoided. Patients requiring any medications or substances that are strong inhibitors or inducers of CYP3A during the course of the study are ineligible. Because the lists of these agents are constantly changing, it is important to regularly consult a frequently-updated medical reference for a list of drugs to avoid or of which to minimize use. The Patient Drug Interactions Handout and Wallet Card should be provided to patients. As part of the enrollment/informed consent procedures, the patient will be counseled on the risk of interactions with other agents, and what to do if new medications need to be prescribed or if the patient is considering a new over-the-counter medicine or herbal product
+* Patients with uncontrolled intercurrent illness
+* Pregnant women are excluded from this study because M6620 as a DDR inhibitor may have the potential for teratogenic or abortifacient effects. Because there is an unknown but potential risk for adverse events in nursing infants secondary to treatment of the mother with M6620, breastfeeding should be discontinued if the mother is treated with M6620. These potential risks may also apply to topotecan used in this study
+* Patients with high grade neuroendocrine cancers, but with no small cell morphology will not be eligible
+* Patients with psychiatric illness/social situations that would limit compliance with study requirements
+* Patients with Li-Fraumeni syndrome will not be eligible *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This phase II trial studies how well berzosertib (M6620) works when given in combination with topotecan hydrochloride (topotecan) compared with topotecan alone in treating patients with small cell lung cancer that has come back (relapsed), or small cell cancer that arises from a site other than the lung (extrapulmonary). Drugs used in chemotherapy, such as topotecan hydrochloride, work by damaging the DNA (deoxyribonucleic acid) in tumor cells, causing those cells to die and the tumor to shrink. However, some tumor cells can become less affected by chemotherapy because they have ways to repair the damaged DNA. The addition of M6620 could help topotecan hydrochloride shrink the cancer and prevent it from returning by blocking enzymes needed for DNA repair.
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/37824137/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Berzosertib Plus Topotecan vs Topotecan Alone in Patients With Relapsed Small Cell Lung Cancer: A Randomized Clinical Trial. (PMID: 37824137)
+• Efficacyand toxicity of lurbinectedin in subsequent systemic therapy of extensive-stage small cell lung cancer: a meta-analysis [Google Scholar]
+• [HTML][HTML]… led Phase IIclinical studymet its primary objective with 36% confirmed ORR, and showed durable responses1 A new company-sponsored, globalclinical trial… [Google Scholar]
+• [HTML][HTML]EMD Serono Advances ATR Inhibitor Berzosertib in Small Cell Lung Cancer With New Published Data and Initiation of Phase IITrialWith Registrational Intent [Google Scholar]
+• [HTML][HTML]EMD Serono Advances ATR Inhibitor Berzosertib in Small Cell Lung Cancer With New Published Data and Initiation of Phase II Trial With Registrational Intent [Google Scholar]
+• [HTML][HTML]Merck Advances ATR Inh [Google Scholar]
+• Berzosertib plus topotecan vs topotecan alone in patients with relapsed small cell lung cancer: a randomized clinical trial [Google Scholar]
+• Randomized phase IItrialof topotecan plus M6620 (VX-970) versus topotecan alone in patients with relapsed small-cell neuroendocrine cancers including small cell … [Google Scholar]
+• Berzosertib plus topotecan vs topotecan alone in patients with relapsed small cell lung cancer: a randomized clinicaltrial [Google Scholar]
+• [HTML][HTML]Small cell neuroendocrine carcinoma of the cervix: from molecular basis to therapeutic advances [Google Scholar]
+• Treatment strategy for patients with relapsed small-cell lung cancer: past, present and future [Google Scholar]
+• Berzosertib plus topotecan vs topotecan alone in patients with relapsed small cell lung cancer: a randomizedclinical trial [Google Scholar]
+	•	Key findings from publications: PubMed Abstract: Patients with relapsed small cell lung cancer (SCLC), a high replication stress tumor, have poor prognoses and few therapeutic options. A phase 2 study showed antitumor activity with the addition of the ataxia telangiectasia and Rad3-related kinase inhibitor berzosertib to topotecan.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Importance: Patients with relapsed small cell lung cancer (SCLC), a high replication stress tumor, have poor prognoses and few therapeutic options. A phase 2 study showed antitumor activity with the addition of the ataxia telangiectasia and Rad3-related kinase inhibitor berzosertib to topotecan. Objective: To investigate whether the addition of berzosertib to topotecan improves clinical outcomes for patients with relapsed SCLC. Design, setting, and participants: Between December 1, 2019, and December 31, 2022, this open-label phase 2 randomized clinical trial recruited 60 patients with SCLC and relapse after 1 or more prior therapies from 16 US cancer centers. Patients previously treated with topotecan were not eligible. Interventions: Eligible patients were randomly assigned to receive topotecan alone (group 1), 1.25 mg/m2 intravenously on days 1 through 5, or with berzosertib (group 2), 210 mg/m2 intravenously on days 2 and 5, in 21-day cycles. Randomization was stratified by tumor sensitivity to first-line platinum-based chemotherapy. Main outcomes and measures: The primary end point was progression-free survival (PFS) in the intention-to-treat population. Secondary end points included overall survival (OS) in the overall population and among patients with platinum-sensitive or platinum-resistant tumors. The PFS and OS for each treatment group were estimated using the Kaplan-Meier method. The log-rank test was used to compare PFS and OS between the 2 groups, and Cox proportional hazards models were used to estimate the treatment hazard ratios (HRs) and the corresponding 2-sided 95% CI. Results: Of 60 patients (median [range] age, 59 [34-79] years; 33 [55%] male) included in this study, 20 were randomly assigned to receive topotecan alone and 40 to receive a combination of topotecan with berzosertib. After a median (IQR) follow-up of 21.3 (18.1-28.3) months, there was no difference in PFS between the 2 groups (median, 3.0 [95% CI, 1.2-5.1] months for group 1 vs 3.9 [95% CI, 2.8-4.6] months for group 2; HR, 0.80 [95% CI, 0.46-1.41]; P = .44). Overall survival was significantly longer with the combination therapy (5.4 [95% CI, 3.2-6.8] months vs 8.9 [95% CI, 4.8-11.4] months; HR, 0.53 [95% CI, 0.29-0.96], P = .03). Adverse event profiles were similar between the 2 groups (eg, grade 3 or 4 thrombocytopenia, 11 of 20 [55%] vs 20 of 40 [50%], and any grade nausea, 9 of 20 [45%] vs 14 of 40 [35%]). Conclusions and relevance: In this randomized clinical trial, treatment with berzosertib plus topotecan did not improve PFS compared with topotecan therapy alone among patients with relapsed SCLC. However, the combination treatment significantly improved OS. Trial registration: ClinicalTrials.gov Identifier: NCT03896503 . PubMed Disclaimer Conflict of interest statement Conflict of Interest Disclosures: Dr Villaruz reported receiving personal fees from Janssen, Sanofi, Takeda, InterVenn Biosciences, Daiichi Sankyo, Jazz Pharmaceuticals, and Bristol Myers Squibb outside the submitted work. Dr Zhang reported receiving grants from Abbvie, AstraZeneca, BeiGene, Genentech, InnoCare Pharma, Janssen, KAHR Medical, Merck, Mirati Therapeutics, and Nilogen Oncosystems; receiving personal fees from AstraZeneca, Bayer, Biodesix, Bristol Myers Squibb, Cardinal Health, Daiichi Sankyo, Jiangsu Hengrui Pharmaceuticals, Eli Lilly and Company, Mirati Therapeutics, MJH Life Sciences, Nexus Health, Novartis, Novocure, Regeneron, Sanofi, and Takeda Oncology; and receiving nonfinancial support from Novartis and Nilogen Oncosystems outside the submitted work. Dr Petty reported receiving personal fees from Jazz Pharmaceuticals and Mirati Therapeutics outside the submitted work. Dr Mamdani reported being on the advisory board of AstraZeneca, Genentech, and Zentalis Pharmaceuticals outside the submitted work. Dr Riess reported receiving grants paid to his institution from ArriVent Biopharma, Merck, Novartis, Revolution Medicines, AstraZeneca, Spectrum Pharmaceuticals, IO Biotech, and Kinnate Biopharma outside the submitted work; and receiving personal fees from AstraZeneca, Boehringer Ingelheim, Bristol Myers Squibb, Turning Point Therapeutics, Genentech, Biodesix, Jazz Pharmaceuticals, EMD Serono, Daiichi Sankyo, Blueprint Medicines, Novartis, Regeneron, Sanofi, Janssen, Bayer, Beigene, and Merus NV outside the submitted work. Dr Nieva reported receiving grants from the National Cancer Institute (NCI) during the conduct of the study; receiving grants from Genentech and Merck and personal fees from Aadi Bioscience, ANP Technologies, AstraZeneca, BioAtla, G1 Therapeutics, Mindmed, and Naveris outside the submitted work; and holding a patent for a human performance measurement. Dr Pacheco reported receiving grants from Pfizer, and receiving personal fees from AstraZeneca, Novartis, Takeda, Genentech, Pfizer, Jazz Pharmaceuticals, Blueprint Medicine, Jiangsu Hengrui Pharmaceuticals, Silverback Therapeutics, Checkmate Pharmaceuticals, and Daichii Sankyo outside the submitted work. Dr Shum reported receiving grants paid to her institution from Delfi Diagnostics, and receiving personal fees from AstraZeneca, Boehringer Ingelheim, Genentech, Regeneron, and Blueprint Medicines outside the submitted work. Dr Thomas reported receiving grants paid to NCI from EMD Serono Research & Development, AstraZeneca, Gilead Sciences, and Prolynx during the conduct of the study. No other disclosures were reported. Figures Figure 1.. Study Flow Diagram Figure 1.. Study Flow Diagram Figure 1.. Study Flow Diagram Figure 2.. Progression-Free Survival and Overall Survival… Figure 2.. Progression-Free Survival and Overall Survival Among Patients Treated With Topotecan Alone (Group 1)… Figure 2.. Progression-Free Survival and Overall Survival Among Patients Treated With Topotecan Alone (Group 1) or Topotecan Plus Berzosertib (Group 2) Plus signs represent censored. Figure 3.. Best Response and Duration of… Figure 3.. Best Response and Duration of Antitumor Efficacy Among Patients Treated With Topotecan Alone… Figure 3.. Best Response and Duration of Antitumor Efficacy Among Patients Treated With Topotecan Alone or With a Combination of Topotecan and Berzosertib Platinum-sensitive disease was defined as relapse or disease progression 90 or more days after first-line platinum-based chemotherapy. Platinum-resistant disease was defined as relapse or disease progression at less than 90 days or during first-line chemotherapy. Top and bottom blue lines indicate 30% increase or 20% decrease as tumor size change from baseline. The arrowhead indicates an increase from baseline of more than 100%. a Not assessed per protocol. b Clinical progression. See this image and copyright information in PMC Similar articles Carboplatin plus etoposide versus topotecan as second-line treatment for patients with sensitive relapsed small-cell lung cancer: an open-label, multicentre, randomised, phase 3 trial. Baize N, Monnet I, Greillier L, Geier M, Lena H, Janicot H, Vergnenegre A, Crequit J, Lamy R, Auliac JB, Letreut J, Le Caer H, Gervais R, Dansin E, Madroszyk A, Renault PA, Le Garff G, Falchero L, Berard H, Schott R, Saulnier P, Chouaid C; Groupe Français de Pneumo-Cancérologie 01–13 investigators. Baize N, et al. Lancet Oncol. 2020 Sep;21(9):1224-1233. doi: 10.1016/S1470-2045(20)30461-7. Lancet Oncol. 2020. PMID: 32888454 Clinical Trial. Combined chemotherapy with cisplatin, etoposide, and irinotecan versus topotecan alone as second-line treatment for patients with sensitive relapsed small-cell lung cancer (JCOG0605): a multicentre, open-label, randomised phase 3 trial. Goto K, Ohe Y, Shibata T, Seto T, Takahashi T, Nakagawa K, Tanaka H, Takeda K, Nishio M, Mori K, Satouchi M, Hida T, Yoshimura N, Kozuki T, Imamura F, Kiura K, Okamoto H, Sawa T, Tamura T; JCOG0605 investigators. Goto K, et al. Lancet Oncol. 2016 Aug;17(8):1147-1157. doi: 10.1016/S1470-2045(16)30104-8. Epub 2016 Jun 14. Lancet Oncol. 2016. PMID: 27312053 Clinical Trial. Effect of Cisplatin and Gemcitabine With or Without Berzosertib in Patients With Advanced Urothelial Carcinoma: A Phase 2 Randomized Clinical Trial. Pal SK, Frankel PH, Mortazavi A, Milowsky M, Vaishampayan U, Parikh M, Lyou Y, Weng P, Parikh R, Teply B, Dreicer R, Emamekhoo H, Michaelson D, Hoimes C, Zhang T, Srinivas S, Kim WY, Cui Y, Newman E, Lara PN Jr. Pal SK, et al. JAMA Oncol. 2021 Oct 1;7(10):1536-1543. doi: 10.1001/jamaoncol.2021.3441. JAMA Oncol. 2021. PMID: 34436521 Free PMC article. Clinical Trial. Topotecan: a review of its efficacy in small cell lung cancer. Ormrod D, Spencer CM. Ormrod D, et al. Drugs. 1999 Sep;58(3):533-51. doi: 10.2165/00003495-199958030-00020. Drugs. 1999. PMID: 10493279 Review. Single or combined immune checkpoint inhibitors compared to first-line platinum-based chemotherapy with or without bevacizumab for people with advanced non-small cell lung cancer. Ferrara R, Imbimbo M, Malouf R, Paget-Bailly S, Calais F, Marchal C, Westeel V. Ferrara R, et al. Cochrane Database Syst Rev. 2020 Dec 14;12(12):CD013257. doi: 10.1002/14651858.CD013257.pub2. Cochrane Database Syst Rev. 2020. Update in: Cochrane Database Syst Rev. 2021 Apr 30;4:CD013257. doi: 10.1002/14651858.CD013257.pub3. PMID: 33316104 Free PMC article. Updated. See all similar articles Cited by Targeting ATR in patients with cancer. Ngoi NYL, Pilié PG, McGrail DJ, Zimmermann M, Schlacher K, Yap TA. Ngoi NYL, et al. Nat Rev Clin Oncol. 2024 Apr;21(4):278-293. doi: 10.1038/s41571-024-00863-5. Epub 2024 Feb 20. Nat Rev Clin Oncol. 2024. PMID: 38378898 Review. ANP32E drives vulnerability to ATR inhibitors by inducing R-loops-dependent transcription replication conflicts in triple negative breast cancer. Lago S, Poli V, Fol L, Botteon M, Busi F, Turdo A, Gaggianesi M, Ciani Y, D'Amato G, Fagnocchi L, Fasciani A, Demichelis F, Todaro M, Zippo A. Lago S, et al. Nat Commun. 2025 May 17;16(1):4602. doi: 10.1038/s41467-025-59804-0. Nat Commun. 2025. PMID: 40382323 Free PMC article. Medicinal chemistry breakthroughs on ATM, ATR, and DNA-PK inhibitors as prospective cancer therapeutics. Sharma R, Mishra A, Bhardwaj M, Singh G, Indira Harahap LV, Vanjani S, Pan CH, Nepali K. Sharma R, et al. J Enzyme Inhib Med Chem. 2025 Dec;40(1):2489720. doi: 10.1080/14756366.2025.2489720. Epub 2025 Apr 21. J Enzyme Inhib Med Chem. 2025. PMID: 40256842 Free PMC article. Review. Non-linear IV pharmacokinetics of the ATR inhibitor berzosertib (M6620) in mice. Deppas JJ, Kiesel BF, Guo J, Parise RA, Clump DA, D'Argenio DZ, Bakkenist CJ, Beumer JH. Deppas JJ, et al. Cancer Chemother Pharmacol. 2024 Aug;94(2):271-283. doi: 10.1007/s00280-024-04675-3. Epub 2024 May 14. Cancer Chemother Pharmacol. 2024. PMID: 38743253 Free PMC article. The Novel ATR Inhibitor M1774 Induces Replication Protein Overexpression and Broad Synergy with DNA-targeted Anticancer Drugs. Jo U, Arakawa Y, Zimmermann A, Taniyama D, Mizunuma M, Jenkins LM, Maity T, Kumar S, Zenke FT, Takebe N, Pommier Y. Jo U, et al. Mol Cancer Ther. 2024 Jul 2;23(7):911-923. doi: 10.1158/1535-7163.MCT-23-0402. Mol Cancer Ther. 2024. PMID: 38466804 Free PMC article. See all "Cited by" articles References Rudin CM, Brambilla E, Faivre-Finn C, Sage J. Small-cell lung cancer. Nat Rev Dis Primers. 2021;7(1):3. doi:10.1038/s41572-020-00235-0 - DOI - PMC - PubMed Thomas A, Pattanayak P, Szabo E, Pinsky P. Characteristics and outcomes of small cell lung cancer detected by CT screening. Chest. 2018;154(6):1284-1290. doi:10.1016/j.chest.2018.07.029 - DOI - PMC - PubMed Horn L, Mansfield AS, Szczęsna A, et al. ; IMpower133 Study Group . First-line atezolizumab plus chemotherapy in extensive-stage small-cell lung cancer. N Engl J Med. 2018;379(23):2220-2229. doi:10.1056/NEJMoa1809064 - DOI - PubMed Paz-Ares L, Dvorkin M, Chen Y, et al. ; CASPIAN investigators . Durvalumab plus platinum-etoposide versus platinum-etoposide in first-line treatment of extensive-stage small-cell lung cancer (CASPIAN): a randomised, controlled, open-label, phase 3 trial. Lancet. 2019;394(10212):1929-1939. doi:10.1016/S0140-6736(19)32222-6 - DOI - PubMed Horita N, Yamamoto M, Sato T, et al. . Topotecan for relapsed small-cell lung cancer: systematic review and meta-analysis of 1347 patients. Sci Rep. 2015;5:15437. doi:10.1038/srep15437 - DOI - PMC - PubMed Show all 35 references Publication types Randomized Controlled Trial Actions Search in PubMed Search in MeSH Add to Search Clinical Trial, Phase II Actions Search in PubMed Search in MeSH Add to Search Research Support, N.I.H., Intramural Actions Search in PubMed Search in MeSH Add to Search Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search MeSH terms Antineoplastic Combined Chemotherapy Protocols / adverse effects Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Lung Neoplasms* / pathology Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Recurrence Actions Search in PubMed Search in MeSH Add to Search Small Cell Lung Carcinoma* / pathology Actions Search in PubMed Search in MeSH Add to Search Topotecan / adverse effects Actions Search in PubMed Search in MeSH Add to Search Substances Topotecan Actions Search in PubMed Search in MeSH Add to Search berzosertib Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT03896503 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen PubChem Compound (MeSH Keyword) Grants and funding P30 CA093373/CA/NCI NIH HHS/United States UM1 CA186690/CA/NCI NIH HHS/United States UM1 CA186712/CA/NCI NIH HHS/United States P30 CA177558/CA/NCI NIH HHS/United States UM1 CA186717/CA/NCI NIH HHS/United States UM1 CA186691/CA/NCI NIH HHS/United States ZIA BC011793/ImNIH/Intramural NIH HHS/United States Show all 7 grants LinkOut - more resources Full Text Sources Ovid Technologies, Inc. PubMed Central Silverchair Information Systems Medical ClinicalTrials.gov MedlinePlus Health Information
+
+Google Scholar Abstract (Efficacyand toxicity of lurbinectedin in subsequent systemic therapy of extensive-stage small cell lung cancer: a meta-analysis): … Currently, a randomized phase II clinical trial of topotecan combined with ATR inhibitorM6620 and topotecan is underway (NCT03896503) [43]. In a proof-of-concept study, the …
+
+Google Scholar Abstract ([HTML][HTML]… led Phase IIclinical studymet its primary objective with 36% confirmed ORR, and showed durable responses1 A new company-sponsored, globalclinical trial…): … The NCI is also conducting a separate Phase IItrialof berzosertib in combination with … thathas relapsed (NCT03896503)* which is currently the only randomizedcontrolledtrialof the …
+
+Google Scholar Abstract ([HTML][HTML]EMD Serono Advances ATR Inhibitor Berzosertib in Small Cell Lung Cancer With New Published Data and Initiation of Phase IITrialWith Registrational Intent): … The NCI is also conducting a separate Phase IItrialof berzosertib in combination with … thathas relapsed (NCT03896503)* which is currently the only randomizedcontrolledtrialof the …
+
+Google Scholar Abstract ([HTML][HTML]EMD Serono Advances ATR Inhibitor Berzosertib in Small Cell Lung Cancer With New Published Data and Initiation of Phase II Trial With Registrational Intent): … The NCI is also conducting a separate Phase II trial of berzosertib in combination withtopotecan versus topotecan monotherapy in SCLC that has relapsed (NCT03896503)* which is …
+
+Google Scholar Abstract ([HTML][HTML]Merck Advances ATR Inh): … The NCI is also conducting a separate Phase IItrialof berzosertib in combination with … thathas relapsed (NCT03896503)* which is currently the only randomizedcontrolledtrialof the …
+
+Google Scholar Abstract (Berzosertib plus topotecan vs topotecan alone in patients with relapsed small cell lung cancer: a randomized clinical trial): … Race and ethicity data were assessed to address whether theefficacyandsafetywereobserved across different races and ethnicity. The information collection was not required by a …
+
+Google Scholar Abstract (Randomized phase IItrialof topotecan plus M6620 (VX-970) versus topotecan alone in patients with relapsed small-cell neuroendocrine cancers including small cell …): … Based on promising data from a single-armstudy, thisstudyseeks to evaluate the … : Thisstudyis an investigator-initiated, multicenter, open-label randomized phase 2clinicaltrial. Key …
+
+Google Scholar Abstract (Berzosertib plus topotecan vs topotecan alone in patients with relapsed small cell lung cancer: a randomized clinicaltrial): … Building on thesefindings, we launched a randomized, phase 2trial, reported here, askingwhether administration of berzosertib would enhance the activity of topotecan therapy and …
+
+Google Scholar Abstract ([HTML][HTML]Small cell neuroendocrine carcinoma of the cervix: from molecular basis to therapeutic advances): … chemoradiation to improve the clinicaloutcomesof patients with SCNECC. Future advancesin our understanding of SCNECC biology – associated with thestudyof its genomic and …
+
+Google Scholar Abstract (Treatment strategy for patients with relapsed small-cell lung cancer: past, present and future): … Table 1 presents theefficacyof various drugs for patients with relapsed SCLC. Individualcytotoxic drugs had lowefficacyexcluding topotecan, which displayed superiority over BSC in …
+
+Google Scholar Abstract (Berzosertib plus topotecan vs topotecan alone in patients with relapsed small cell lung cancer: a randomizedclinical trial): … This open-label, 2-arm, phase 2 randomizedclinicaltrialwas conducted in 16 cancer centersin the United States, including the Center for CancerResearch, National Cancer Institute (…
+	•	Additional evidence from online sources: Primary outcome: Progression-free Survival (PFS) Reported With 80% Confidence Interval; Progression-free Survival (PFS) Reported With 95% Confidence Interval
+Secondary outcomes: Objective Response Rate (ORR); Overall Survival (OS) Reported With 80% Confidence Interval; Overall Survival (OS) Reported With 95% Confidence Interval
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Berzosertib Plus Topotecan vs Topotecan Alone in Patients With Relapsed Small Cell Lung Cancer: A Randomized Clinical Trial.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/37824137/', 'pmid': '37824137', 'content_scraped': True, 'content_length': 14296}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/37824137/
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T11:01:59.658481
+Trial: 86/86
+NCT ID: NCT02246127
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient due to significant mismatches in disease biology, treatment context, and a lack of available results. Biologically, the patient has a high-grade G3 PanNET (Ki-67 70%), whereas the study is restricted to G1-G2 tumors, representing a distinct clinical entity with different aggressiveness. Clinically, the study investigates the optimal sequencing of Everolimus and Streptozotocin-5FU as first-line therapies. This is not applicable to this patient, who is heavily pre-treated and has already progressed on Everolimus and multiple chemotherapy regimens (including 5-FU/Dacarbazine and Temozolomide), rendering the study's question regarding the sequencing of these agents moot. Furthermore, the provided data indicates no published results are available to inform efficacy or safety."
+}

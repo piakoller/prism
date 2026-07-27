@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:43:47.502082
+Trial: 27/86
+NCT ID: NCT03074513
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful clinical evidence for this patient with a progressive, well-differentiated G2 duodenal NET. Biologically, the patient fits the study's extrapancreatic NET cohort (Grade 1-2, progressive disease). Clinically, the patient has exhausted standard therapies including SSAs, PRRT, and multiple TKIs (surufatinib, sunitinib). The published results (Halperin et al., JAMA Oncol 2022) demonstrate an objective response rate of 15% and a median progression-free survival of 14.2 months in the extrapancreatic cohort using the combination of atezolizumab (PD-L1 inhibitor) and bevacizumab (VEGF inhibitor). Although the patient has progressed on VEGF-targeted TKIs, the study allows for any number of prior therapies, and the combination with immunotherapy represents a distinct mechanistic approach relevant for a heavily pre-treated patient with limited remaining systemic options (e.g., beyond everolimus). This evidence directly informs the tumor board regarding the potential efficacy of immune-checkpoint/VEGF inhibitor combinations in this refractory setting."
+}
+```

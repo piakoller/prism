@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:36:21.001614
+Trial: 24/86
+NCT ID: NCT03110978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for clinical applicability or disease alignment. The patient has widespread metastatic disease (Stage IV) involving the liver, bones, and lymph nodes, requiring systemic therapy for progression after PRRT. In contrast, the study (NCT03110978) evaluates Stereotactic Body Radiation Therapy (SABR) with or without Nivolumab specifically for early-stage (Stage I-IIA) or isolated lung parenchymal recurrent node-negative NSCLC. While the study inclusion criteria technically allow for atypical carcinoids, the treatment intent (curative/local control of limited disease) and setting are fundamentally different from the patient's palliative, systemic need. Evidence regarding event-free survival in early-stage disease treated with SABR plus immunotherapy cannot be extrapolated to guide treatment for a patient with extensive metastatic burden."
+}

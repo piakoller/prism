@@ -1,0 +1,21 @@
+=== REGENERATION ITERATION 2 - THERAPY RECOMMENDATION ===
+Timestamp: 2026-01-05T10:23:27.476929
+Patient ID: 16
+================================================================================
+
+**Primary Recommendation: Upfront Curative-Intent Surgical Resection**
+Given the patient's ECOG 0 status, the presence of a symptomatic Grade 1 (G1) neuroendocrine tumor (vomiting, abdominal pain, duct dilation), and resectable oligometastatic disease, the recommended primary therapy is **surgical resection** performed at an expert center. The surgical plan should include:
+1.  **Pancreaticoduodenectomy (Whipple procedure)** with regional lymphadenectomy to remove the primary pancreatic head lesion (41x51x35 mm) and involved retroperitoneal/perihepatic lymph nodes.
+2.  **Concurrent management of liver metastases** (Segment VIII and VI) via parenchymal-sparing resection or intraoperative radiofrequency ablation (RFA), as the lesions are small (10 mm and 5 mm).
+
+**Concurrent Systemic Therapy: Somatostatin Analogues (SSA)**
+Initiate **Lanreotide** (e.g., 120 mg deep s.c. every 4 weeks) or **Octreotide LAR** (e.g., 30 mg i.m. every 4 weeks) for antiproliferative control.
+*   **Evidence:** **NCT02730104** (Community-based NET Research Study) supports the real-world effectiveness and safety of Lanreotide in GEP-NETs.
+
+**Symptom Management**
+Immediate management of the mechanical obstruction causing vomiting is required. If surgery is not performed immediately, endoscopic stenting of the pancreatic/biliary duct should be considered to relieve symptoms.
+
+**Alternative/Adjuvant Consideration: Peptide Receptor Radionuclide Therapy (PRRT)**
+If intraoperative findings preclude R0 resection, or if the patient is deemed unresectable upon further surgical review, **PRRT with 177Lu-DOTATATE/Edotreotide** is the recommended second-line option given the intense SSTR uptake.
+*   **Evidence:** **NCT02754297** (Personalized PRRT) and **NCT01842165** (Prediction Using Multimodality Imaging).
+*   *Protocol Note:* If PRRT is initiated, long-acting SSAs must be paused for at least 4 weeks prior to each cycle.

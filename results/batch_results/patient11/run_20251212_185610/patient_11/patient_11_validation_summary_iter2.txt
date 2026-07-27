@@ -1,0 +1,57 @@
+=== VALIDATION ITERATION 2 ===
+
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 11
+Timestamp: 2025-12-12T19:01:45.430761
+Overall Status: PASSED
+Requires Regeneration: NO
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 6
+Trials available: 8
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: PASS
+Status: PASS
+
+Detailed Reasoning:
+The therapy recommendation is robust, clinically sound, and accurately reflects the complex balance between aggressive disease biology and patient comorbidities.
+
+**1. Completeness:**
+The recommendation addresses all aspects of the patient's case:
+*   **Consolidation:** It provides a clear strategy for the oligometastatic residual disease (RFA/SBRT), appropriately pivoting away from major surgery due to the patient's valvular heart disease.
+*   **Future Lines:** It proactively defines a second-line strategy (Nal-IRI/5-FU) and the limited role of immunotherapy.
+*   **Biomarkers:** It correctly identifies the need for MSI/TMB testing, which is crucial for this tumor type.
+*   **MiNEN Context:** The choice of Nal-IRI/5-FU as second-line therapy is particularly astute. While cited for NEC (NET-02 trial), this regimen is also the standard second-line for pancreatic ductal adenocarcinoma (NAPOLI-1 trial), effectively covering both components of the patient's original MiNEN diagnosis should the ductal component re-emerge.
+
+**2. Accuracy:**
+*   **Trial Data:** The citation of the **NET-02 trial (NCT03837977)** is precise, correctly quoting the 6-month PFS benefit (29.6% vs 13.8%) which established Nal-IRI/5-FU as a standard in this setting.
+*   **Immunotherapy Nuance:** The recommendation accurately distinguishes between general high-grade NENs and pancreatic NEC, correctly noting the lack of efficacy of dual immunotherapy in pancreatic NEC (0% ORR in the **DART trial** subgroup), thereby preventing the prescription of an ineffective and toxic regimen.
+*   **Guidelines:** The interpretation of ENETS 2023 guidelines regarding the "highly selected" nature of surgical/local consolidation is correct and well-applied to this oligometastatic responder.
+
+**3. Consistency:**
+*   The recommendation acknowledges the aggressive biology (Ki-67 95%) by mandating a tight surveillance schedule (CT every 2-3 months), which is consistent with the risk of rapid progression, even after local consolidation.
+*   The decision to recommend RFA/SBRT aligns perfectly with the patient's "moderate asthenia" and cardiac comorbidities, ensuring the treatment intensity matches the patient's physiological reserve.
+
+**4. Safety:**
+*   **Cardiac Safety:** Explicitly prioritizing RFA/SBRT over surgery due to aortic/mitral/tricuspid regurgitation is a critical safety measure.
+*   **Toxicity Management:** The warning regarding diarrhea and neutropenia with Nal-IRI is appropriate for a 73-year-old patient.
+
+**5. Actionability:**
+*   The steps are clearly defined, with immediate actions (biomarkers), primary treatment (local consolidation), and conditional future steps (2nd line upon progression).
+
+The recommendation is safe, evidence-based, and tailored to the specific needs of the patient.
+  ✅ No issues found
+
+======================================================================
+✅ VALIDATION PASSED - NO REGENERATION NEEDED
+======================================================================

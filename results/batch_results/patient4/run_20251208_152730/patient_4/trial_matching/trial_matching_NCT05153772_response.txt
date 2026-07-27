@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:40:54.223971
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study meets all criteria for relevance. Biologically, the patient's Grade 2 functional duodenal NET aligns with the study's inclusion of SSTR-positive GEP-NETs (assuming continued SSTR positivity, which is standard for G2 NETs). Clinically, the patient has progressed on prior PRRT (177Lu) and multiple TKIs (surufatinib, sunitinib), representing a refractory setting with limited standard options. The study specifically includes a cohort for patients refractory to prior PRRT (Cohort 2), directly addressing this patient's current clinical scenario where switching from beta-emitting (Lutetium) to alpha-emitting (212Pb) radionuclide therapy is a logical therapeutic consideration. The published results demonstrate a high objective response rate (56.8% in PRRT-naive) and a manageable safety profile (low hematologic/renal toxicity, specific note of alopecia and dysphagia), providing meaningful evidence of the drug's activity and safety to support consideration of this trial or therapy class for the patient."
+}

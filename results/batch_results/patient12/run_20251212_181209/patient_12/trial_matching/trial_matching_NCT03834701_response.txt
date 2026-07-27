@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:22:49.094835
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criteria for Disease Alignment and Treatment Context. The patient presents with a bulky (75 mm), symptomatic, metastatic G2 PanNET with a high Ki-67 (20%) and extensive liver involvement (up to 150 mm), requiring systemic therapy. In contrast, this study evaluates EUS-guided radiofrequency ablation (RFA) specifically for small (15–25 mm), asymptomatic, localized, and low-grade (Ki-67 ≤5%) tumors. The intervention is a focal therapy intended to avoid surgery for small incidentalomas and has no clinical application for a patient with massive primary tumor burden and widespread metastases. Consequently, the evidence regarding the safety and feasibility of EUS-RFA for small lesions provides no actionable insights for managing this patient's advanced, aggressive disease."
+}

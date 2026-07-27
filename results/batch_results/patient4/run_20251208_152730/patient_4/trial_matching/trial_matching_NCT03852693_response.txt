@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:46:25.325490
+Trial: 32/86
+NCT ID: NCT03852693
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criteria for disease alignment and clinical applicability. The patient has a metastatic, functional duodenal neuroendocrine tumor (NET) with liver-only progression after multiple lines of systemic therapy (SSA, PRRT, Surufatinib, Sunitinib). The study focuses exclusively on the surgical management (appendectomy vs. hemicolectomy) of localized appendiceal NETs measuring 1-2 cm. There is no biological or clinical overlap between the management of advanced, heavily pre-treated metastatic duodenal NETs and the surgical extent required for early-stage appendiceal tumors. The study provides no evidence regarding systemic therapies or liver-directed interventions relevant to this patient's current need for disease control."
+}

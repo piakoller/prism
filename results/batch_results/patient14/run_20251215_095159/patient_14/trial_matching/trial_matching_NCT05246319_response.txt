@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:07:51.645704
+Trial: 43/86
+NCT ID: NCT05246319
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant for this patient. First, there is a fundamental mismatch in disease biology and primary site: the patient has a metastatic bronchial NET (lung primary), whereas the study focuses exclusively on small bowel NETs (midgut primary). Second, the treatment context is inapplicable; the patient has progressive metastatic disease requiring systemic therapy consolidation (specifically considering PRRT re-treatment), while the study evaluates the diagnostic utility of preoperative imaging (DOPA-PET/DOTATOC) for planning surgical lymph node dissection. Finally, evidence regarding the accuracy of imaging for small bowel resection planning offers no actionable insights for an 82-year-old patient with unresectable, metastatic disease who has already exhausted standard surgical and systemic options."
+}

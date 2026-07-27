@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:59:16.769476
+Trial: 78/86
+NCT ID: NCT01253161
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient due to significant mismatches in disease biology and treatment context. First, the study evaluated Pasireotide LAR in treatment-naïve patients with Grade 1 or 2 NETs, whereas the patient has a Grade 3 NET with a very high Ki-67 index (70%) and aggressive biology. Second, the patient is heavily pre-treated and has already progressed on a somatostatin analog (Somatuline), while the study explicitly excluded patients with prior systemic therapy. Evidence of disease stabilization in low-grade, treatment-naïve tumors cannot be reasonably extrapolated to guide therapy for a refractory, high-grade patient who has already failed the drug class. Consequently, the study offers no actionable data regarding the efficacy of Pasireotide as a salvage therapy in this specific high-grade, refractory setting."
+}

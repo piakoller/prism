@@ -1,0 +1,42 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Recommendation:**\nProceed with **surgical resection (metastasectomy)** of the residual hepatic lesion in Segment VII, contingent upon preoperative cardiac clearance.\n\n**Adjunct Recommendation:**\nPerform **molecular profiling** (Next-Generation Sequencing) on the tumor specimen to assess for Microsatellite Instability (MSI), Tumor Mutational Burden (TMB), and actionable mutations (e.g., BRAF V600E).\n\n**Contraindications & Exclusions:**\n- **Peptide Receptor Radionuclide Therapy (PRRT)** is **not recommended** for this patient due to the extremely high Ki-67 index (95%) and lack of evidence of SSTR-avid disease.\n- **Maintenance Chemotherapy:** There is no standard evidence for maintenance chemotherapy following platinum-etoposide in this setting; observation post-resection is the standard approach.",
+  "rationale_text": "**1. Surgical Consolidation in Metastatic NEC:**\nWhile surgery for metastatic Neuroendocrine Carcinoma (NEC) is generally discouraged due to aggressive biology, **ENETS 2023 Guidelines (Guideline 1, Q7)** state that surgery \"may be considered in rare cases for highly selected patients with limited disease without rapid disease progression where an R0 resection is possible.\"\n*   **Patient Eligibility:** This patient fits the \"highly selected\" criteria: she has demonstrated a Partial Response (PR) to first-line Carboplatin–VP16, has maintained disease control for >9 months (no rapid progression), and currently presents with oligometastatic disease (single 20 × 12 mm lesion in Segment VII) amenable to R0 resection.\n*   **MiNEN Consideration:** The primary tumor was a MiNEN. **ENETS 2023 (Q10)** notes that patients with MiNEN, like NEC, \"can benefit from surgery if an R0 resection can be obtained,\" citing retrospective data where surgery was associated with improved survival in selected cases.\n*   **ESMO Guidelines (Guideline 2):** While ESMO considers advanced NEC G3 an \"absolute contraindication for upfront surgery,\" this patient is not in the upfront setting but rather in a consolidation phase following a confirmed response, aligning with the ENETS exception for limited disease.\n\n**2. Molecular Profiling:**\n**ENETS 2023 (Q2, Q8, Q9)** recommends molecular profiling for digestive NEC.\n*   **Immunotherapy:** MSI-high status (found in ~5% of digestive NECs) or high TMB would make the patient eligible for Immune Checkpoint Inhibitors (e.g., Pembrolizumab) in future lines of therapy.\n*   **Targeted Therapy:** BRAF V600E mutations (more common in colorectal but possible in others) could open options for BRAF-inhibitor combinations.\n\n**3. Safety and Contraindications:**\n*   **Cardiac Risk:** The patient has valvular heart disease (aortic, mitral, tricuspid regurgitation) and ventricular extrasystoles. Preoperative assessment by her cardiologist is mandatory to ensure she can tolerate hepatic resection.\n*   **PRRT Exclusion:** **ENETS 2023 (Q7)** notes PRRT is generally not recommended for NEC, particularly with Ki-67 >55% (patient is 95%). Furthermore, PRRT eligibility requires high SSTR uptake on imaging (e.g., 68Ga-DOTATOC/TATE), which is typically absent in high-grade, FDG-avid NECs.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Recommendation:**\nProceed with **surgical resection (metastasectomy)** of the residual hepatic lesion in Segment VII, contingent upon preoperative cardiac clearance",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "standard_care",
+      "therapy_name": "Standard care based on guidelines",
+      "rationale": "**Primary Recommendation:**\nProceed with **surgical resection (metastasectomy)** of the residual hepatic lesion in Segment VII, contingent upon preoperative cardiac clearance.\n\n**Adjunct Recommendatio...",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [],
+    "trial_search_suggestions": [
+      "Consider additional trials based on assessment"
+    ]
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "Based on the patient assessment and the provided medical guidelines, here is the therapy recommendation.\n\n<therapy_recommendation>\n**Primary Recommendation:**\nProceed with **surgical resection (metastasectomy)** of the residual hepatic lesion in Segment VII, contingent upon preoperative cardiac clearance.\n\n**Adjunct Recommendation:**\nPerform **molecular profiling** (Next-Generation Sequencing) on the tumor specimen to assess for Microsatellite Instability (MSI), Tumor Mutational Burden (TMB), and actionable mutations (e.g., BRAF V600E).\n\n**Contraindications & Exclusions:**\n- **Peptide Receptor Radionuclide Therapy (PRRT)** is **not recommended** for this patient due to the extremely high Ki-67 index (95%) and lack of evidence of SSTR-avid disease.\n- **Maintenance Chemotherapy:** There is no standard evidence for maintenance chemotherapy following platinum-etoposide in this setting; observation post-resection is the standard approach.\n</therapy_recommendation>\n\n<rationale>\n**1. Surgical Consolidation in Metastatic NEC:**\nWhile surgery for metastatic Neuroendocrine Carcinoma (NEC) is generally discouraged due to aggressive biology, **ENETS 2023 Guidelines (Guideline 1, Q7)** state that surgery \"may be considered in rare cases for highly selected patients with limited disease without rapid disease progression where an R0 resection is possible.\"\n*   **Patient Eligibility:** This patient fits the \"highly selected\" criteria: she has demonstrated a Partial Response (PR) to first-line Carboplatin–VP16, has maintained disease control for >9 months (no rapid progression), and currently presents with oligometastatic disease (single 20 × 12 mm lesion in Segment VII) amenable to R0 resection.\n*   **MiNEN Consideration:** The primary tumor was a MiNEN. **ENETS 2023 (Q10)** notes that patients with MiNEN, like NEC, \"can benefit from surgery if an R0 resection can be obtained,\" citing retrospective data where surgery was associated with improved survival in selected cases.\n*   **ESMO Guidelines (Guideline 2):** While ESMO considers advanced NEC G3 an \"absolute contraindication for upfront surgery,\" this patient is not in the upfront setting but rather in a consolidation phase following a confirmed response, aligning with the ENETS exception for limited disease.\n\n**2. Molecular Profiling:**\n**ENETS 2023 (Q2, Q8, Q9)** recommends molecular profiling for digestive NEC.\n*   **Immunotherapy:** MSI-high status (found in ~5% of digestive NECs) or high TMB would make the patient eligible for Immune Checkpoint Inhibitors (e.g., Pembrolizumab) in future lines of therapy.\n*   **Targeted Therapy:** BRAF V600E mutations (more common in colorectal but possible in others) could open options for BRAF-inhibitor combinations.\n\n**3. Safety and Contraindications:**\n*   **Cardiac Risk:** The patient has valvular heart disease (aortic, mitral, tricuspid regurgitation) and ventricular extrasystoles. Preoperative assessment by her cardiologist is mandatory to ensure she can tolerate hepatic resection.\n*   **PRRT Exclusion:** **ENETS 2023 (Q7)** notes PRRT is generally not recommended for NEC, particularly with Ki-67 >55% (patient is 95%). Furthermore, PRRT eligibility requires high SSTR uptake on imaging (e.g., 68Ga-DOTATOC/TATE), which is typically absent in high-grade, FDG-avid NECs.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-12T17:43:13.736852",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 11,
+    "trials_considered": 0,
+    "trials_included": 0,
+    "trials_excluded": 0,
+    "assessment_confidence": "medium",
+    "analysis_complete": false,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251212_171017\\patient_11\\patient_11_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251212_171017\\patient_11\\patient_11_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251212_171017\\patient_11\\patient_11_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251212_171017\\patient_11\\patient_11_therapy_recommendation_reasoning.txt"
+  }
+}

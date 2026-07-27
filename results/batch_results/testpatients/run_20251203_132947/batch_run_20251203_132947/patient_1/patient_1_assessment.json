@@ -1,0 +1,47 @@
+{
+  "assessment_text": "<assessment>\n**Patient Clinical Status and Diagnosis**\nThe patient is a 52-year-old male with a final diagnosis of a locally advanced, non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET), Grade 2. The disease presentation was clinically aggressive, characterized by massive upper gastrointestinal bleeding, hemorrhagic shock, and tumor thrombus with splenic vein occlusion.\n\n**Pathological and Molecular Characteristics**\n*   **Histology:** Confirmed NET G2. There is a noted variation in the Ki67 proliferation index between the pre-operative pathology review (19%) and the final surgical specimen (10%). Both values fall within the Grade 2 definition (Ki67 3–20%) according to ENETS and WHO classifications.\n*   **Staging:** The final pathological stage is pT4N0, indicating local invasion (stomach, adrenal, spleen) but no lymph node metastasis.\n*   **Metabolic Profile:** The baseline FDG-PET (Jan 2025) demonstrated a hypermetabolic mass with an SUV of 16 and central necrosis. According to ENETS guidelines, high FDG uptake correlates with a higher grade and is a strong poor prognostic factor.\n\n**Treatment History and Response**\n*   **Neoadjuvant Therapy:** The patient received first-line FOLFIRINOX (7 cycles). While FOLFIRINOX is not a standard regimen described in the provided ENETS guidelines for G2 NETs (which discuss streptozotocin-based or temozolomide-based regimens), the choice was likely driven by the initial aggressive presentation, high FDG uptake (SUV 16), and massive size (up to 12 cm). The response was stable disease (heterogeneous mass, 10–12 cm) rather than significant regression, but it prevented distant progression.\n*   **Surgical Management:** The patient underwent a curative-intent R0 resection (distal pancreatectomy, distal gastrectomy,",
+  "clinical_summary": {
+    "disease_status": "Unable to parse",
+    "stage": "Unknown",
+    "key_features": []
+  },
+  "clinical_needs": {
+    "primary_needs": [
+      "Assessment and management guidance needed"
+    ],
+    "urgency_level": "medium"
+  },
+  "evidence_priorities": {
+    "high_priority": [
+      "Clinical guidance for management decisions"
+    ],
+    "trial_types_needed": [
+      "clinical trials"
+    ]
+  },
+  "trial_eligibility": {
+    "favorable_factors": [],
+    "potential_barriers": []
+  },
+  "recommendations_for_trial_search": [
+    "Search for relevant clinical trials"
+  ],
+  "assessment_confidence": "low",
+  "raw_response": "<assessment>\n**Patient Clinical Status and Diagnosis**\nThe patient is a 52-year-old male with a final diagnosis of a locally advanced, non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET), Grade 2. The disease presentation was clinically aggressive, characterized by massive upper gastrointestinal bleeding, hemorrhagic shock, and tumor thrombus with splenic vein occlusion.\n\n**Pathological and Molecular Characteristics**\n*   **Histology:** Confirmed NET G2. There is a noted variation in the Ki67 proliferation index between the pre-operative pathology review (19%) and the final surgical specimen (10%). Both values fall within the Grade 2 definition (Ki67 3–20%) according to ENETS and WHO classifications.\n*   **Staging:** The final pathological stage is pT4N0, indicating local invasion (stomach, adrenal, spleen) but no lymph node metastasis.\n*   **Metabolic Profile:** The baseline FDG-PET (Jan 2025) demonstrated a hypermetabolic mass with an SUV of 16 and central necrosis. According to ENETS guidelines, high FDG uptake correlates with a higher grade and is a strong poor prognostic factor.\n\n**Treatment History and Response**\n*   **Neoadjuvant Therapy:** The patient received first-line FOLFIRINOX (7 cycles). While FOLFIRINOX is not a standard regimen described in the provided ENETS guidelines for G2 NETs (which discuss streptozotocin-based or temozolomide-based regimens), the choice was likely driven by the initial aggressive presentation, high FDG uptake (SUV 16), and massive size (up to 12 cm). The response was stable disease (heterogeneous mass, 10–12 cm) rather than significant regression, but it prevented distant progression.\n*   **Surgical Management:** The patient underwent a curative-intent R0 resection (distal pancreatectomy, distal gastrectomy,",
+  "parsing_note": "No assessment tags found",
+  "parsing_method": "fallback",
+  "metadata": {
+    "timestamp": "2025-12-03T13:04:20.106703",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 1,
+    "guidelines_provided": false,
+    "matched_guidelines_used": true,
+    "matched_guidelines_count": 2,
+    "matched_trials_used": false,
+    "matched_trials_count": 0,
+    "prompt_file": "batch_results/run_20251203_130123\\batch_run_20251203_130123\\patient_1\\patient_1_assessment_prompt.txt",
+    "response_file": "batch_results/run_20251203_130123\\batch_run_20251203_130123\\patient_1\\patient_1_assessment_raw_response.txt",
+    "cache_reused": true,
+    "cached_at": "2025-12-03T13:29:48.259047"
+  }
+}

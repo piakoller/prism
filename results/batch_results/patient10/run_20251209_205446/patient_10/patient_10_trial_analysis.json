@@ -1,0 +1,95 @@
+{
+  "status": "success",
+  "analysis_complete": true,
+  "trials_analyzed": 10,
+  "trials_included": 7,
+  "trials_excluded": 3,
+  "expected_trial_count": 10,
+  "trial_analyses": [
+    {
+      "nct_number": "NCT03278379",
+      "trial_name": "Avelumab in G2-3 NET",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial provides critical negative evidence regarding immunotherapy in Grade 2-3 NETs. The results (0% ORR, 21% DCR) indicate limited antitumor activity of single-agent PD-L1 blockade in this population, supporting the decision to avoid immunotherapy for this patient."
+    },
+    {
+      "nct_number": "NCT02568267",
+      "trial_name": "Basket Study of Entrectinib (STARTRK-2)",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "While Entrectinib is effective for NTRK/ROS1 fusion-positive tumors, these alterations are extremely rare in Pan-NETs (<1%). Without genomic profiling confirming such a fusion, this trial does not provide actionable evidence for this patient's general treatment recommendation."
+    },
+    {
+      "nct_number": "NCT05153772",
+      "trial_name": "Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (AlphaMedix)",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This trial includes a cohort of patients with prior PRRT exposure and demonstrates a high objective response rate (55.6%) with 212Pb-DOTAMTATE. This provides strong supporting evidence for the efficacy of peptide receptor radionuclide therapy (PRRT) retreatment strategies, which is a key consideration for this patient."
+    },
+    {
+      "nct_number": "NCT03870399",
+      "trial_name": "Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial requires ER/PR expression (status unknown for this patient) and demonstrated only modest disease control (56.5% SD) with no objective responses. Given the patient's significant tumor burden and progressive liver metastases, more potent cytotoxic or targeted options are required."
+    },
+    {
+      "nct_number": "NCT03074513",
+      "trial_name": "Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This trial demonstrated a 20% ORR and ~15 months PFS in Pan-NETs using a VEGF/PD-L1 inhibitor combination. This serves as a relevant evidence source for a non-cytotoxic alternative, particularly given the patient's prior failure of Sunitinib (VEGF TKI) due to toxicity, though cross-resistance is a potential concern."
+    },
+    {
+      "nct_number": "NCT03728361",
+      "trial_name": "Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This trial evaluates Temozolomide (a key component of the potential CAPTEM regimen) in combination with Nivolumab. While responses were driven by lung NENs, the data supports the activity of Temozolomide-based regimens in NENs, informing the consideration of alkylating agents for this patient who has not yet received Temozolomide."
+    },
+    {
+      "nct_number": "NCT03217097",
+      "trial_name": "MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This randomized Phase 2 trial compares alkylating agents (like Streptozocin/Temozolomide) vs. Oxaliplatin based on MGMT status. Since the patient has received both Streptozocin and Oxaliplatin with stable disease, this evidence helps contextualize the potential utility of a Temozolomide rechallenge (CAPTEM) and the importance of MGMT status in predicting response."
+    },
+    {
+      "nct_number": "NCT02834013",
+      "trial_name": "Nivolumab and Ipilimumab in Treating Patients With Rare Tumors (DART)",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "The non-pancreatic NET cohort of this trial showed a 44% ORR in high-grade tumors but a 0% ORR in low/intermediate grade tumors. This provides further evidence (alongside NCT03278379) arguing against the use of checkpoint inhibitors for this patient's Grade 2 disease."
+    },
+    {
+      "nct_number": "NCT03375320",
+      "trial_name": "Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 3 trial provides high-quality evidence that Cabozantinib significantly improves PFS compared to placebo in patients with progressive Pan-NETs after prior therapy. Given the patient's progression on Everolimus and Sunitinib, this trial supports Cabozantinib as a strong, evidence-based next-line option."
+    },
+    {
+      "nct_number": "NCT01466036",
+      "trial_name": "Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This Phase 2 trial evaluates the same intervention (Cabozantinib) in the same population as the Phase 3 CABINET trial (NCT03375320). The Phase 3 trial provides superior, confirmatory evidence, rendering this Phase 2 trial redundant for the final recommendation."
+    }
+  ],
+  "summary": {},
+  "validation_warnings": [],
+  "raw_response": "Based on the patient's history of metastatic, well-differentiated (Grade 2) NF-Pan-NET, heavy pretreatment (7 lines), and current fragility with thrombocytopenia, here is the analysis of the clinical trials to inform the final therapy recommendation.\n\n<trial_analysis>\n**NCT NUMBER:** NCT03278379\n**TRIAL NAME:** Avelumab in G2-3 NET\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial provides critical negative evidence regarding immunotherapy in Grade 2-3 NETs. The results (0% ORR, 21% DCR) indicate limited antitumor activity of single-agent PD-L1 blockade in this population, supporting the decision to avoid immunotherapy for this patient.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02568267\n**TRIAL NAME:** Basket Study of Entrectinib (STARTRK-2)\n**DECISION:** EXCLUDE\n**RATIONALE:** While Entrectinib is effective for NTRK/ROS1 fusion-positive tumors, these alterations are extremely rare in Pan-NETs (<1%). Without genomic profiling confirming such a fusion, this trial does not provide actionable evidence for this patient's general treatment recommendation.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT05153772\n**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (AlphaMedix)\n**DECISION:** INCLUDE\n**RATIONALE:** This trial includes a cohort of patients with prior PRRT exposure and demonstrates a high objective response rate (55.6%) with 212Pb-DOTAMTATE. This provides strong supporting evidence for the efficacy of peptide receptor radionuclide therapy (PRRT) retreatment strategies, which is a key consideration for this patient.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03870399\n**TRIAL NAME:** Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial requires ER/PR expression (status unknown for this patient) and demonstrated only modest disease control (56.5% SD) with no objective responses. Given the patient's significant tumor burden and progressive liver metastases, more potent cytotoxic or targeted options are required.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03074513\n**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This trial demonstrated a 20% ORR and ~15 months PFS in Pan-NETs using a VEGF/PD-L1 inhibitor combination. This serves as a relevant evidence source for a non-cytotoxic alternative, particularly given the patient's prior failure of Sunitinib (VEGF TKI) due to toxicity, though cross-resistance is a potential concern.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03728361\n**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer\n**DECISION:** INCLUDE\n**RATIONALE:** This trial evaluates Temozolomide (a key component of the potential CAPTEM regimen) in combination with Nivolumab. While responses were driven by lung NENs, the data supports the activity of Temozolomide-based regimens in NENs, informing the consideration of alkylating agents for this patient who has not yet received Temozolomide.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03217097\n**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This randomized Phase 2 trial compares alkylating agents (like Streptozocin/Temozolomide) vs. Oxaliplatin based on MGMT status. Since the patient has received both Streptozocin and Oxaliplatin with stable disease, this evidence helps contextualize the potential utility of a Temozolomide rechallenge (CAPTEM) and the importance of MGMT status in predicting response.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02834013\n**TRIAL NAME:** Nivolumab and Ipilimumab in Treating Patients With Rare Tumors (DART)\n**DECISION:** INCLUDE\n**RATIONALE:** The non-pancreatic NET cohort of this trial showed a 44% ORR in high-grade tumors but a 0% ORR in low/intermediate grade tumors. This provides further evidence (alongside NCT03278379) arguing against the use of checkpoint inhibitors for this patient's Grade 2 disease.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03375320\n**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 3 trial provides high-quality evidence that Cabozantinib significantly improves PFS compared to placebo in patients with progressive Pan-NETs after prior therapy. Given the patient's progression on Everolimus and Sunitinib, this trial supports Cabozantinib as a strong, evidence-based next-line option.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01466036\n**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** This Phase 2 trial evaluates the same intervention (Cabozantinib) in the same population as the Phase 3 CABINET trial (NCT03375320). The Phase 3 trial provides superior, confirmatory evidence, rendering this Phase 2 trial redundant for the final recommendation.\n---\n</trial_analysis>\n\n### Summary\n\n**TOTAL TRIALS ANALYZED:** 10\n**TRIALS TO INCLUDE:** 7\n**TRIALS TO EXCLUDE:** 3\n\n**Conclusion:**\nThe included trials provide a robust evidence base for determining the next line of therapy. **NCT03375320 (CABINET)** offers Level 1 evidence for **Cabozantinib** as a viable option for this heavily pre-treated patient. **NCT05153772 (AlphaMedix)** supports the efficacy of **PRRT retreatment** strategies. **NCT03217097 (MGMT-NET)** and **NCT03728361** provide context for **Temozolomide-based chemotherapy (CAPTEM)**, validating alkylator activity. Conversely, **NCT03278379** and **NCT02834013 (DART)** provide crucial negative predictive evidence, suggesting that immunotherapy (PD-1/PD-L1 blockade) is unlikely to be effective for this Grade 2 tumor and should be avoided.",
+  "metadata": {
+    "timestamp": "2025-12-09T21:29:21.201875",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 10,
+    "input_trial_count": 10,
+    "cache_reused": false,
+    "cached_at": null,
+    "prompt_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_trial_analysis_prompt.txt",
+    "results_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_trial_analysis.json",
+    "response_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_trial_analysis_raw_response.txt",
+    "summary_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_trial_analysis_summary.txt"
+  }
+}

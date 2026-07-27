@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T11:57:47.395697
+Trial: 75/86
+NCT ID: NCT03972488
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides highly meaningful evidence for this patient's therapy recommendation. All three criteria are met. 1) **Disease/Biology Alignment:** The patient has a newly diagnosed, metastatic, SSTR-positive, well-differentiated Grade 2 pancreatic NET with a Ki-67 of 15%. This aligns perfectly with the NETTER-2 study population, which enrolled patients with newly diagnosed, advanced, SSTR-positive, well-differentiated G2-G3 GEP-NETs with a Ki-67 ≥10%. 2) **Treatment Context/Clinical Applicability:** The study is directly applicable to the patient's current clinical scenario, which is the selection of a first-line systemic therapy for advanced disease. The trial was designed to answer this exact question for this specific higher-risk patient profile (G2 with Ki-67 ≥10%). 3) **Evidence Quality and Relevance:** The study is a randomized, phase 3 trial providing the highest level of evidence. The published results (Singh et al., Lancet 2024) demonstrate a profound and clinically meaningful improvement in progression-free survival with first-line [177Lu]Lu-DOTA-TATE compared to high-dose octreotide (median PFS 22.8 vs. 8.5 months; HR 0.276). This practice-changing evidence directly informs the tumor board's question, providing a strong rationale to consider PRRT as a primary treatment option, challenging the older guideline paradigm of reserving it for subsequent lines of therapy."
+}
+```

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T10:57:20.525529
+Trial: 76/86
+NCT ID: NCT01794793
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient's treatment. The study (NCT01794793) is a rollover access program designed specifically for patients already participating in prior Novartis-sponsored trials who are benefiting from Pasireotide. The provided inclusion criteria and published results explicitly focus on patients with Cushing's Disease and Acromegaly, which are biologically distinct from the patient's Pancreatic Neuroendocrine Tumor (Pan-NET). Furthermore, the patient is currently progressing on a somatostatin analog (Lanreotide), and this study does not evaluate the efficacy of Pasireotide as a second-line therapy for Pan-NETs in a prospective manner relevant to decision-making. Consequently, the disease biology does not align, and the study design (restricted access for existing trial participants) renders the evidence inapplicable to a new patient seeking second-line systemic therapy."
+}

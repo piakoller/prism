@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:24:51.356776
+Trial: 32/86
+NCT ID: NCT03852693
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient. The first criterion, Disease/Biology Alignment, is not met. The study evaluates small (1-2 cm), resected, low-risk appendiceal neuroendocrine tumors (aNETs), which have a fundamentally different natural history and prognosis compared to the patient's large (10 cm), locally advanced, symptomatic, high-risk (G2, Ki-67 19%, FDG-avid) pancreatic NET (PanNET). The second criterion, Treatment Context/Clinical Applicability, also fails. The study's findings address the de-escalation of adjuvant surgery (hemicolectomy vs. appendectomy) in a low-risk, post-resection setting. This is irrelevant to the patient's clinical problem, which is the management of unresected, locally advanced disease where treatment decisions involve potential neoadjuvant therapy, major surgical intervention, or systemic options. The evidence about surgical extent for small aNETs provides no actionable insight for any potential scenario for this patient, be it resectable or unresectable disease. Therefore, due to the profound mismatch in disease biology, primary site, stage, and the clinical question, the study's evidence is not transferable."
+}
+```

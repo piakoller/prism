@@ -1,0 +1,268 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2026-01-05T09:45:52.001871
+Trial: 64/86
+NCT ID: NCT03070301
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Brief Clinical History: 65-year-old woman with a well-differentiated metastatic (hepatic, 
+lymphatic) neuroendocrine tumor of the pancreas (G1, ki-67 2%, SSTR2 positive). The 
+diagnosis was made on the basis of investigations due to abdominal pain and intermittent 
+vomiting, with MRI of the abdomen showing a lesion of the pancreatic head (41x51x35 
+mm) with dilation of the distal pancreatic duct, as well as lesions of the liver in segment 
+VIII (10 mm) and segment VI (5 mm). An endosonography-guided fine needle biopsy 
+revealed evidence of a NET. The subsequent DOTATOC PET/CT showed intense 
+accumulation in the pancreatic lesions, several intense DOTATOC-avid liver lesions, and 
+suspected small lymph node metastasis retroperitoneally paraaortally on the left with 
+intense accumulation and suspicion of one further lymph node metastasis perihepatically 
+adjacent to liver segment III. 
+A CT scan 2 months after initial diagnosis showed a stable lesion in the pancreatic head 
+without infiltration of adjacent vessels. The arterial vessels were well contrasted. The 
+portal vein and superior mesenteric vein with close contact with the pancreatic lesion over 
+a length of 3 cm, without signs of stenosis or thrombosis.  
+Current Clinical Status: ECOG 0 
+Question for Tumorboard:
+Recommended therapy? 
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Profile and Tumor Biology**
+The patient is a 65-year-old woman with an ECOG performance status of 0, presenting with a metastatic neuroendocrine tumor (NET) of the pancreas.
+*   **Classification:** The tumor is well-differentiated and classified as Grade 1 (G1) based on a Ki-67 proliferation index of 2%.
+*   **Functionality:** There is no evidence of a hormonal syndrome provided in the history; thus, the clinical assessment aligns with a nonfunctioning pancreatic NET (NF-Pan-NET).
+*   **Receptor Status:** The tumor is SSTR2 positive, confirmed by immunohistochemistry and intense accumulation on DOTATOC PET/CT.
+
+**Anatomical Extent and Staging**
+*   **Primary Tumor:** A large lesion (41x51x35 mm) is located in the pancreatic head.
+*   **Local Complications:** The mass causes dilation of the distal pancreatic duct, which correlates with the patient's symptoms of abdominal pain and intermittent vomiting.
+*   **Vascular Involvement:** There is close contact with the portal vein and superior mesenteric vein over a length of 3 cm. However, arterial vessels are well contrasted, and there are no signs of venous stenosis or thrombosis. This presentation suggests a locally advanced or borderline resectable primary tumor.
+*   **Metastatic Disease:** The patient has oligometastatic liver disease with two small lesions (Segment VIII: 10 mm; Segment VI: 5 mm) and lymph node involvement (retroperitoneal paraaortic left and perihepatic adjacent to segment III).
+*   **Disease Stability:** A CT scan 2 months post-diagnosis indicates stable disease.
+
+**Guideline-Based Clinical Considerations**
+
+**1. Surgical Considerations:**
+*   **Primary Tumor:** According to ENETS guidelines, surgery is strongly recommended for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation. This patient meets both criteria. The vascular contact (3 cm) requires careful evaluation; however, ENETS guidelines note that radical local resection including portal-venous resection can be performed safely in expert centers.
+*   **Metastatic Context:** ESMO guidelines state that a surgical approach is indicated in selected stage IV patients with exclusive or predominant liver involvement. Given the small size of the liver metastases (10 mm and 5 mm), they may be amenable to resection or ablation. However, the presence of retroperitoneal lymph node metastasis requires evaluation regarding the feasibility of curative (R0) resection.
+
+**2. Systemic and Neoadjuvant Considerations:**
+*   **Somatostatin Analogues (SSAs):** For antiproliferative control, ESMO and ENETS guidelines recommend SSAs (e.g., lanreotide or octreotide) as first-line therapy for SSTR-positive, well-differentiated (G1/G2) NF-Pan-NETs with slow growth (Ki-67 <10%).
+*   **Neoadjuvant Approaches:** ENETS guidelines suggest that preoperative treatment with Peptide Receptor Radionuclide Therapy (PRRT) or chemotherapy may be considered in selected cases of locally advanced or oligometastatic SSTR-positive G1/G2 NF-Pan-NETs to facilitate R0 resection or downstaging.
+*   **Chemotherapy:** While chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is an option for bulky or progressive disease, the patient currently has stable disease on CT.
+
+**3. Functional Imaging and PRRT Eligibility:**
+*   The DOTATOC PET/CT shows "intense accumulation" in pancreatic lesions, liver lesions, and lymph nodes.
+*   **Assessment for PRRT:** While "intense" accumulation suggests high SSTR expression, strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed, this patient is a potential candidate for PRRT, either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.
+
+**Summary of Clinical Status:**
+The patient presents with a symptomatic, G1, SSTR-positive NF-Pan-NET with limited hepatic and nodal metastases. The primary tumor is locally advanced with venous contact but no occlusion. The clinical scenario requires a multidisciplinary decision regarding upfront resection (pancreaticoduodenectomy + liver management) versus neoadjuvant therapy (PRRT or systemic) to improve resectability, given the favorable tumor biology (G1) and high SSTR expression.
+
+Trial Search Recommendations:
+  - ** While "intense" accumulation suggests high SSTR expression
+  - strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed
+  - this patient is a potential candidate for PRRT
+  - either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.
+  - *Summary of Clinical Status:**
+	•	Question for Tumorboard: Recommended therapy? 
+
+### STUDY DATA
+	•	NCT-ID: NCT03070301
+	•	Title: A Study of LEE011 With Everolimus in Patients With Advanced Neuroendocrine Tumors
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: LEE011; everolimus
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Patient has signed the Informed Consent prior to any screening procedures being performed and is able to comply with the protocol requirements.
+* Adults ≥ 18 years old
+* Histologic or cytologic diagnosis of a WDNET, Ki67 ≤ 30%, unresectable, of foregut origin (thymic, bronchopulmonary, gastric, duodenal, and pancreatic) confirmed by the enrolling institution
+
+  \*Note: If patients have a functional NET, they are permitted to continue on a somatostatin analog for hormonal symptom control
+* MSK patient has tissue available from a previous biopsy for the evaluation of potential predictive biomarkers. If tissue is not available for MSK patient, a new tumor specimen will need to be obtained prior to the start of study treatment If archived tissue is available, participating site patient will provide for the evaluation of potential predictive biomarkers. If tissue is not available for participating site patient, a new tumor specimen is optional prior to the start of study treatment.
+* Documented radiological evidence for disease progression (measurable or nonmeasurable) ≤12 months prior to enrollment
+* Disease that is currently not amenable to surgical resection with curative intent as determined by the treating investigator
+* Measurable disease as defined by RECIST v1.1
+* ECOG performance status 0 or 1 or KPS performance status 100 to 70
+* Patient has adequate bone marrow and organ function as defined by the following laboratory values at screening:
+
+  * Absolute neutrophil count ≥1.5 x 10\^9/L
+  * Platelets ≥ 100 x 10\^9/L
+  * Hemoglobin ≥ 9.0 g/dL
+  * INR ≤ 1.5
+  * Serum creatinine \<1.5mg/dL or creatinine clearance ≥ 50 mL/min
+  * In the absence of liver metastases, alanine aminotransferase (ALT) and aspartate aminotransferase (AST) \<2.5 x ULN. If a patient has liver metastases, ALT and AST \<5 x ULN
+  * Total bilirubin \< ULN; or total bilirubin ≤3.0 x ULN or direct bilirubin ≤1.5 x ULN in patients with well-documented Gilbert"s Syndrome
+* Negative serum pregnancy test done ≤14 days prior to registration, for women of childbearing potential only A serum pregnancy test will be conducted ≤ 72 hours prior to treatment start as a pre-treatment parameter. All women of reproductive potential and their partners must agree to use adequate methods of birth control (e.g. latex condoms) throughout the study and for 30 days after the last dose of study drug.
+
+  † A female of reproductive potential is a sexually mature female who: has not undergone a hysterectomy or bilateral oophorectomy; or has not been naturally postmenopausal for at least 24 consecutive months (i.e. has had menses at any time in the preceding 24 consecutive months).
+* Patient with standard 12-lead ECG with the following parameters at screening (defined as the mean of the triplicate ECGs)
+
+  °QTcF interval at screening \<450msec (using Fridericia"s correction)
+* Must be able to swallow LEE011 and everolimus capsules/tablets
+* Recovered from adverse events (to grade 1 or less toxicity according to CTCAE 4.0) due to agents administered previously \*NOTE: Chemotherapy-induced alopecia and grade 2 neuropathy are acceptable
+
+Exclusion Criteria:
+
+* Patient has a known hypersensitivity to any of the excipients of LEE011 or everolimus
+* Previous treatment with a CDK 4/6 inhibitor or an mTOR inhibitor
+* Has had prior chemotherapy, targeted small molecule therapy within 2 weeks prior to study Day 1 or who has not recovered (i.e. ≤ Grade 1 or at baseline) from adverse events due to a previously administered agent
+
+  \*Note: Subjects with \< Grade 2 neuropathy or chemotherapy-induced alopecia are an exception to this criterion and may qualify for the study
+* Patient has a concurrent malignancy or malignancy within 3 years prior to starting study drug, with the exception of adequately treated, basal or squamous cell carcinoma, non-melanomatous skin cancer or curatively resected cervical cancer
+* Patients with central nervous system (CNS) involvement unless they meet ALL of the following criteria:
+
+  * At least 4 weeks from prior therapy completion (including radiation and/or surgery) to starting the study treatment
+  * Clinically stable CNS tumor at the time of screening and not receiving steroids and/or enzyme-inducing anti-epileptic medications for brain metastases
+* Patient has impairment of gastrointestinal (GI) function or GI disease that may significantly alter the absorption of the study drugs (e.g., ulcerative diseases, uncontrolled nausea, vomiting, diarrhea, malabsorption syndrome, or small bowel resection)
+* Patient has a known history of HIV infection (testing not mandatory)
+* Patient has any other concurrent severe and/or uncontrolled medical condition that would, in the investigator"s judgment, cause unacceptable safety risks, contraindicate patient participation in the clinical study or compromise compliance with the protocol (e.g. chronic pancreatitis, active untreated or uncontrolled fungal, bacterial or viral infections, etc.).
+* Uncontrolled diabetes mellitus as defined by HbA1c \>8% despite adequate therapy. Patients with a known history of impaired fasting glucose or diabetes mellitus (DM) may be included, however blood glucose and antidiabetic treatment must be monitored closely throughout the trial and adjusted as necessary
+* Clinically significant, uncontrolled heart disease and/or cardiac repolarization abnormality, including any of the following:
+
+  * History of myocardial infarction (MI), angina pectoris, symptomatic pericarditis, or coronary artery bypass graft (CABG) within 6 months prior to study entry
+  * Documented cardiomyopathy
+  * Left Ventricular Ejection Fraction (LVEF) \< 50% as determined by Multiple Gated acquisition (MUGA) scan or echocardiogram (ECHO)
+  * Long QT syndrome or family history of idiopathic sudden death or congenital long QT syndrome, or any of the following:
+  * Risk factors for Torsades de Pointe (TdP) including uncorrected hypokalemia or hypomagnesemia, history of cardiac failure, or history of clinically significant/symptomatic bradycardia
+  * Concomitant medication(s) with a known risk to prolong the QT interval and/or known to cause Torsades de Pointe that cannot be discontinued or replaced by safe alternative medication (e.g. within 5 half-lives or 7 days prior to starting study drug)
+  * Inability to determine the QTcF interval
+  * Clinically significant cardiac arrhythmias (e.g., ventricular tachycardia), complete left bundle branch block, high-grade AV block (e.g., bifascicular block, Mobitz type II and third degree AV block)
+* Patient is currently receiving any of the following medications and cannot be discontinued 7 days prior to starting study drug
+
+  * Known strong inducers or inhibitors of CYP3A4/5, including grapefruit, grapefruit hybrids, pummelos, star-fruit, and Seville oranges, that have a narrow therapeutic window and are predominantly metabolized through CYP3A4/5
+  * Herbal preparations/medications, dietary supplements
+* Patient is currently receiving or has received systemic corticosteroids ≤2 weeks prior to starting study drug, or who have not fully recovered from side effects of such treatment
+
+  °The following uses of corticosteroids are permitted: single doses, topical applications (e.g., for rash), inhaled sprays (e.g., for obstructive airways diseases), eye drops or local injections (e.g., intra-articular)
+* Participation in a prior investigational study within 30 days prior to enrollment or within 5 half-lives of the investigational product, whichever is longer
+* Patient who has received radiotherapy ≤4 weeks or limited field radiation for palliation ≤2 weeks prior to starting study drug, and who has not recovered to grade 1 or better from related side effects of such therapy (exceptions include alopecia) or in whom ≥25% of the bone marrow (Ellis, 1961) was irradiated
+* Patient has had major surgery within 14 days prior to starting study drug or has not recovered from major side effects (tumor biopsy is not considered as major surgery)
+* Patient with a Child-Pugh score B or C
+* Patient has a history of non-compliance to medical regimen or inability to grant consent
+* Pregnant or nursing (lactating) women, where pregnancy is defined as the state of a female after conception until the termination of gestation, confirmed by a positive hCG laboratory test. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The purpose of this study is to test any good and bad effects of the combination of LEE011 with everolimus on the participant and the cancer.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/33640871/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Raj N, Zheng Y, Hauser H, Chou J, Rafailov J, Bou-Ayache J, Sawan P, Chaft J, Chan J, Perez K, Rudin C, Tang L, Reidy-Lagunes D. Ribociclib and everolimus in well-differentiated foregut neuroendocrine tumors. Endocr Relat Cancer. 2021 Apr;28(4):237-246. doi: 10.1530/ERC-20-0446.
+• Ribociclib and everolimus in well-differentiated foregut neuroendocrine tumors. (PMID: 33640871)
+• Inhibition of the CDK4/6‐Cyclin D‐Rb pathway by ribociclib augments chemotherapy and immunotherapy in renal cell carcinoma [Google Scholar]
+• Ribociclib and everolimus in well-differentiated foregut neuroendocrine tumors [Google Scholar]
+• Cyclin-dependent kinases 4/6 inhibitors in neuroendocrine neoplasms: from bench to bedside [Google Scholar]
+• Novel therapeutics for patients with well-differentiated gastroenteropancreatic neuroendocrine tumors [Google Scholar]
+• Therapeutic strategies for patients with neuroendocrine neoplasms: current perspectives [Google Scholar]
+• A phase IItrialof LEE011 in combination with everolimus in the treatment of advanced well differentiated neuroendocrine tumors of foregut origin. [Google Scholar]
+• Cyclin-dependent kinase (CDK) inhibitors in solid tumors: a review ofclinical trials [Google Scholar]
+• A phase II trial of LEE011 in combination with everolimus in the treatment of advanced well differentiated neuroendocrine tumors of foregut origin. [Google Scholar]
+• Advances in medical treatment for pancreatic neuroendocrine neoplasms [Google Scholar]
+• [HTML][HTML]Targeted cancer therapy: what's new in the field of neuroendocrine neoplasms? [Google Scholar]
+• Cyclin-dependent kinase (CDK) inhibitors in solid tumors: a review of clinical trials [Google Scholar]
+• CDK4 and CDK6 kinases: From basic science to cancer therapy [Google Scholar]
+• Ribociclib: first global approval [Google Scholar]
+	•	Key findings from publications: PubMed Abstract: The mammalian target of rapamycin inhibitor everolimus is an established therapy for well-differentiated (WD) foregut neuroendocrine tumors (NETs). Pre-clinical data demonstrates a potential synergistic role for cyclin dependent kinase 4/6 inhibition and everolimus to treat this disease. In this phase II multicenter study, patients with advanced foregut WDNETs received combination ribociclib and e...
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract The mammalian target of rapamycin inhibitor everolimus is an established therapy for well-differentiated (WD) foregut neuroendocrine tumors (NETs). Pre-clinical data demonstrates a potential synergistic role for cyclin dependent kinase 4/6 inhibition and everolimus to treat this disease. In this phase II multicenter study, patients with advanced foregut WDNETs received combination ribociclib and everolimus until confirmed disease progression or unacceptable toxicity. The first 12 patients received ribociclib 300 mg three weeks in a row with a 1 week break and everolimus 2.5 mg daily (recommended phase II dose). Due to unexpected hematologic and infectious toxicities, the trial was put on hold, modified, and an additional 9 patients received ribociclib 200 mg and everolimus 2.5 mg daily. The primary end point was progression-free survival. Archived pre-treatment tumor was profiled by next-generation sequencing to evaluate for genomic markers of drug response. Twenty-one patients were treated (median age, 56; range, 24 to 77). The study did not meet the pre-specified criteria to advance to stage two. No patients experienced an objective response. Thirteen patients (62%) experienced stable disease. Median progression-free survival was 7.7 months (95% CI, 2.8 months to not reached). Eleven of the first 12 patients (92%) developed grade 2 or more myelosuppression. Ten patients (84%) experienced treatment interruption and 8 patients (67%) required dose reduction. Genetic testing in archival tumor tissue samples failed to identify a predictive biomarker of disease stabilization. The combination of ribociclib and everolimus had insufficient activity to warrant further investigation in foregut WDNETs. Trial registration: ClinicalTrials.gov NCT03070301 . Keywords: CDK4/6; everolimus; mTOR; neuroendocrine tumors; ribociclib. PubMed Disclaimer Conflict of interest statement The remaining authors declare no potential conflicts of interest. Figures Figure 1. Tumor responses and clinical outcomes.… Figure 1. Tumor responses and clinical outcomes. (A) Maximum decrease from baseline in the size… Figure 1. Tumor responses and clinical outcomes. (A) Maximum decrease from baseline in the size of tumors in patients treated with ribociclib and everolimus who underwent blinded radiologic evaluation (n = 19) after initiation of treatment. (B) Kaplan-Meier curve showing progression-free survival among 21 patients with advanced foregut WDNETs who received ribociclib and everolimus. Progression-free survival was measured from the start of treatment with ribociclib and everolimus until progression of disease or death as a result of any cause, whichever occurred first. (C) Kaplan-Meier curve showing overall survival among 21 patients with advanced well differentiated neuroendocrine tumors of foregut origin who received ribociclib and everolimus. Overall survival was measured as the time from the start of treatment with ribociclib and everolimus until death. For patients alive at the end of study or lost to follow up, overall survival was censored on the last date when patients were known to be alive. Figure 2. Pathologic and genomic correlates of… Figure 2. Pathologic and genomic correlates of response. (A) Oncoprint showing the genomic landscape of… Figure 2. Pathologic and genomic correlates of response. (A) Oncoprint showing the genomic landscape of well differentiated neuroendocrine tumors of foregut origin treated with ribociclib and everolimus in this study, as identified through next-generation sequencing by Memorial Sloan Kettering-Integrated Mutation Profiling of Actional Cancer Targets (MSK-IMPACT). (B and C). Alteration status in (B) cell cycle regulators and (C) mTOR pathway genes in relation to disease stabilization during treatment with ribociclib and everolimus. In correlative analyses, there was no association between genetic alterations in the tumor of patients experiencing disease stabilization versus progressive disease during treatment with this drug combination. Sequencing data from two pre-treatment tumor samples were available in 2 patients. Sequencing data from pre- and post-treatment tumor samples were available in one patient (notated with *). Abbreviations: SD, stable disease. PD, progressive disease. Figure 3. Acquisition of RPTOR alteration (exon… Figure 3. Acquisition of RPTOR alteration (exon 34 p.V1327M) after treatment with ribociclib and everolimus.… Figure 3. Acquisition of RPTOR alteration (exon 34 p.V1327M) after treatment with ribociclib and everolimus. Abbreviation: VAF, variant allele frequency See this image and copyright information in PMC Similar articles Phase I or II Study of Ribociclib in Combination With Topotecan-Temozolomide or Everolimus in Children With Advanced Malignancies: Arms A and B of the AcSé-ESMART Trial. Bautista F, Paoletti X, Rubino J, Brard C, Rezai K, Nebchi S, Andre N, Aerts I, De Carli E, van Eijkelenburg N, Thebaud E, Corradini N, Defachelles AS, Ducassou S, Morscher RJ, Vassal G, Geoerger B. Bautista F, et al. J Clin Oncol. 2021 Nov 10;39(32):3546-3560. doi: 10.1200/JCO.21.01152. Epub 2021 Aug 4. J Clin Oncol. 2021. PMID: 34347542 Clinical Trial. Phase I/II Trial of Exemestane, Ribociclib, and Everolimus in Women with HR + /HER2 - Advanced Breast Cancer after Progression on CDK4/6 Inhibitors (TRINITI-1). Bardia A, Hurvitz SA, DeMichele A, Clark AS, Zelnak A, Yardley DA, Karuturi M, Sanft T, Blau S, Hart L, Ma C, Rugo HS, Purkayastha D, Moulder S. Bardia A, et al. Clin Cancer Res. 2021 Aug 1;27(15):4177-4185. doi: 10.1158/1078-0432.CCR-20-2114. Epub 2021 Mar 15. Clin Cancer Res. 2021. PMID: 33722897 Free PMC article. Clinical Trial. SAR-096: Phase II Clinical Trial of Ribociclib in Combination with Everolimus in Advanced Dedifferentiated Liposarcoma (DDL) and Leiomyosarcoma (LMS). Movva S, Matloob S, Handorf EA, Choy E, Merriam P, Flieder DB, Cai KQ, Zhou Y, Tetzlaff ED, Pagan C, Barker E, Veggeberg R, Zumpano D, Rink L, von Mehren M, George S. Movva S, et al. Clin Cancer Res. 2024 Jan 17;30(2):315-322. doi: 10.1158/1078-0432.CCR-23-2469. Clin Cancer Res. 2024. PMID: 37967116 Clinical Trial. Everolimus, lutetium-177 DOTATATE and sunitinib for advanced, unresectable or metastatic neuroendocrine tumours with disease progression: a systematic review and cost-effectiveness analysis. Mujica-Mota R, Varley-Campbell J, Tikhonova I, Cooper C, Griffin E, Haasova M, Peters J, Lucherini S, Talens-Bou J, Long L, Sherriff D, Napier M, Ramage J, Hoyle M. Mujica-Mota R, et al. Health Technol Assess. 2018 Sep;22(49):1-326. doi: 10.3310/hta22490. Health Technol Assess. 2018. PMID: 30209002 Free PMC article. Treatment of advanced HR+/HER2- breast cancer with new targeted agents in combination with endocrine therapy: a review of efficacy and tolerability based on available randomized trials on everolimus, ribociclib, palbociclib and abemaciclib. Bøttcher TM, Cold S, Jensen AB. Bøttcher TM, et al. Acta Oncol. 2019 Feb;58(2):147-153. doi: 10.1080/0284186X.2018.1532603. Epub 2018 Oct 30. Acta Oncol. 2019. PMID: 30375908 See all similar articles Cited by Gastroenteropancreatic neuroendocrine neoplasms: epidemiology, genetics, and treatment. Tan B, Zhang B, Chen H. Tan B, et al. Front Endocrinol (Lausanne). 2024 Sep 30;15:1424839. doi: 10.3389/fendo.2024.1424839. eCollection 2024. Front Endocrinol (Lausanne). 2024. PMID: 39411312 Free PMC article. Review. Pancreatic Neuroendocrine Tumors: Molecular Mechanisms and Therapeutic Targets. Maharjan CK, Ear PH, Tran CG, Howe JR, Chandrasekharan C, Quelle DE. Maharjan CK, et al. Cancers (Basel). 2021 Oct 12;13(20):5117. doi: 10.3390/cancers13205117. Cancers (Basel). 2021. PMID: 34680266 Free PMC article. Review. Resistance mechanisms and therapeutic strategies of CDK4 and CDK6 kinase targeting in cancer. Asciolla JJ, Wu X, Adamopoulos C, Gavathiotis E, Poulikakos PI. Asciolla JJ, et al. Nat Cancer. 2025 Jan;6(1):24-40. doi: 10.1038/s43018-024-00893-z. Epub 2025 Jan 30. Nat Cancer. 2025. PMID: 39885369 Free PMC article. Review. References LEE011 (Ribociclib) Investigator’s Brochure Edition 9, 2016. BARDIA A, MODI S, GREGOR MCM, KITTANEH M, MARINO AJ, MATANO A, BHANSALI S, HEWES B & CORTES J 2014. Phase Ib/II study of LEE011, everolimus, and exemestane in postmenopausal women with ER+/HER2-metastatic breast cancer. Journal of Clinical Oncology 32. CHAN AOO, KIM SG, BEDEIR A, ISSA JP, HAMILTON SR & RASHID A 2003. CpG island methylation in carcinoid and pancreatic endocrine tumors. Oncogene 22 924–934. - PubMed CHENG DT, MITCHELL TN, ZEHIR A, SHAH RH, BENAYED R, SYED A, CHANDRAMOHAN R, LIU ZY, WON HH, SCOTT SN, et al.2015Memorial Sloan Kettering-Integrated Mutation Profiling of Actionable Cancer Targets (MSK-IMPACT) A Hybridization Capture-Based Next-Generation Sequencing Clinical Assay for Solid Tumor Molecular Oncology. Journal of Molecular Diagnostics 17251–264. - PMC - PubMed DAMMANN R, SCHAGDARSURENGIN U, LIU LM, OTTO N, GIMM O, DRALLE H, BOEHM B, PFEIFER GP & HOANG-VU C 2003. Frequent RASSF1A promoter hypermethylation and K-ras mutations in pancreatic carcinoma. Oncogene 22 3806–3812. - PubMed Show all 27 references Publication types Multicenter Study Actions Search in PubMed Search in MeSH Add to Search Research Support, N.I.H., Extramural Actions Search in PubMed Search in MeSH Add to Search MeSH terms Aminopyridines / therapeutic use Actions Search in PubMed Search in MeSH Add to Search Everolimus* / pharmacology Actions Search in PubMed Search in MeSH Add to Search Everolimus* / therapeutic use Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / pathology Actions Search in PubMed Search in MeSH Add to Search Purines / therapeutic use Actions Search in PubMed Search in MeSH Add to Search Substances Aminopyridines Actions Search in PubMed Search in MeSH Add to Search Purines Actions Search in PubMed Search in MeSH Add to Search Everolimus Actions Search in PubMed Search in MeSH Add to Search ribociclib Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT03070301 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen PubChem Compound (MeSH Keyword) Grants and funding P30 CA008748/CA/NCI NIH HHS/United States LinkOut - more resources Full Text Sources Europe PubMed Central PubMed Central Sheridan PubFactory Other Literature Sources scite Smart Citations Medical ClinicalTrials.gov Miscellaneous NCI CPTAC Assay Portal
+
+Google Scholar Abstract (Inhibition of the CDK4/6‐Cyclin D‐Rb pathway by ribociclib augments chemotherapy and immunotherapy in renal cell carcinoma): … Apart from breast cancer, increasingclinicaltrialsare currently investigating the efficacy of… tumors (NCT03070301). Our findings may accelerate the initialization ofclinicaltrialson the …
+
+Google Scholar Abstract (Ribociclib and everolimus in well-differentiated foregut neuroendocrine tumors): … in patients with foregut WDNETs (ClinicalTrials.govstudyNCT03070301). The … , ourfindingsdemonstrate the notable myelosuppression seen in thisstudyis likely aresultof the addition …
+
+Google Scholar Abstract (Cyclin-dependent kinases 4/6 inhibitors in neuroendocrine neoplasms: from bench to bedside): … -arm, multicenter phase IIstudy(NCT03070301) evaluated … up to date, no positiveresultsinterms of clinical endopoints has …studieshave been conducted in NETs, with negativeresults. …
+
+Google Scholar Abstract (Novel therapeutics for patients with well-differentiated gastroenteropancreatic neuroendocrine tumors): … Thesefindingsprompted a phase Istudyof 177 Lu-OPS201 in well-differentiated NET …based on preclinical rationale which suggests synergy between the combination (NCT03070301). …
+
+Google Scholar Abstract (Therapeutic strategies for patients with neuroendocrine neoplasms: current perspectives): … intestinal NETs, demonstrating favorablesafetyand tolerability [Citation36]. Latest datasupport long-termsafetyprofile and sustained anti-proliferativeefficacyof lanreotide in indolent …
+
+Google Scholar Abstract (A phase IItrialof LEE011 in combination with everolimus in the treatment of advanced well differentiated neuroendocrine tumors of foregut origin.): … The aim of thisstudyis to evaluate the efficacy and safety of LEE011 in combination with …Methods: Thisstudyis a multicenter, non-randomized, open-label phase IIclinicaltrialusing a …
+
+Google Scholar Abstract (Cyclin-dependent kinase (CDK) inhibitors in solid tumors: a review ofclinical trials): … results in earlyclinicaltrials. In this paper, we review the data fromclinicaltrialsof CDK …agents, with an emphasis on novel agents and potential new indications for thisdrugclass. …
+
+Google Scholar Abstract (A phase II trial of LEE011 in combination with everolimus in the treatment of advanced well differentiated neuroendocrine tumors of foregut origin.): … The aim of this study is to evaluate theefficacyandsafetyof LEE011 in combination witheverolimus in pts with advanced WDNETs of foregut origin (thymic, bronchopulmonary, gastric, …
+
+Google Scholar Abstract (Advances in medical treatment for pancreatic neuroendocrine neoplasms): … -3 and FGFR1-4 inhibitors lenvatinib in which good clinicalefficacywas observed in thePanNET cohort with a tolerablesafetyprofile[56]. In addition, the TALENT study quantified a …
+
+Google Scholar Abstract ([HTML][HTML]Targeted cancer therapy: what's new in the field of neuroendocrine neoplasms?): … A phase I study evaluated theefficacyandsafetyof 177Lu-satoreotide tetraxetan in 20patients with advanced SSTR2-positive NETs [165]. Six patients received one cycle and 14 …
+
+Google Scholar Abstract (Cyclin-dependent kinase (CDK) inhibitors in solid tumors: a review of clinical trials): … Based on theresultsof thisstudy, the FDA granted accelerated approval to palbociclib incombination with letrozole in first-line treatment of advanced HR + , HER2 − BC in …
+
+Google Scholar Abstract (CDK4 and CDK6 kinases: From basic science to cancer therapy): … to be efficacious in preclinicalstudiesand will enterclinicaltrialssoon. Another CDK4/6 …developed and are being assessed in preclinical andclinicaltrials. The major impediment in the …
+
+Google Scholar Abstract (Ribociclib: first global approval): … is being evaluated primarily in the MONALEESAclinicaltrialprogramme, which includesthree randomized, double-blind, multinational phase IIItrials: MONALEESA-2 (NCT01958021), …
+	•	Additional evidence from online sources: Primary outcome: Progression Free Survival (PFS)
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Ribociclib and everolimus in well-differentiated foregut neuroendocrine tumors.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/33640871/', 'pmid': '33640871', 'content_scraped': True, 'content_length': 10683}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/33640871/
+Analysis notes: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

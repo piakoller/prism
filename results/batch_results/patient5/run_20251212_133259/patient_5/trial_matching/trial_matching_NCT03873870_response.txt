@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:46:29.163027
+Trial: 29/86
+NCT ID: NCT03873870
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because of a fundamental mismatch in disease biology and clinical applicability. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90%. High-grade NECs (particularly small-cell type) typically exhibit high glucose metabolism (FDG-avid) and low or absent somatostatin receptor expression, making 18F-FDG PET/CT the standard functional imaging modality rather than 68Ga-DOTATATE PET/CT. The study evaluates the diagnostic yield of 68Ga-DOTATATE PET in patients with suspected or well-differentiated neuroendocrine tumors (NETs), a biologically distinct population. Therefore, evidence regarding the utility of SSTR-PET in NETs does not provide meaningful clinical insights for the surveillance or treatment decision-making (local treatment vs. surveillance) of a patient with a known aggressive NEC."
+}

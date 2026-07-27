@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:24:24.629435
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient's therapy recommendations. The study fails on all three core criteria. First, there is a critical mismatch in disease/biology alignment; the study exclusively enrolls patients with localized (cM0) neuroendocrine tumors, whereas this patient has widely metastatic (Stage IV) disease. Second, the treatment context is not applicable. The patient's clinical question is the choice of first-line systemic therapy for unresectable, high-burden disease. The study, however, investigates the utility of an intraoperative surgical staging tool (IOUS) for patients with localized disease who are candidates for primary tumor resection. This surgical staging context is irrelevant to the patient's current clinical scenario. Third, the evidence is not relevant for the therapeutic decision at hand. As a diagnostic study, it provides no data on the efficacy or safety of systemic treatments such as chemotherapy, PRRT, or targeted agents, which are the options under consideration. Therefore, its findings cannot inform the choice of the most appropriate first-line systemic therapy for this patient."
+}
+```

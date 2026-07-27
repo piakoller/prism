@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:14:34.723463
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment or Treatment Context criteria. The patient has a metastatic ileal (small bowel) neuroendocrine tumor with liver and peritoneal involvement, whereas this study evaluates Endoscopic Ultrasound-guided Radiofrequency Ablation (EUS-RFA) specifically for Pancreatic Neuroendocrine Neoplasms (PanNENs). The intervention is a local therapy designed for pancreatic lesions accessible via endoscopy and is anatomically and technically inapplicable to an ileal primary or diffuse peritoneal/liver metastases. Consequently, the evidence regarding the safety and feasibility of EUS-RFA for pancreatic tumors provides no actionable clinical insights for the management of this patient's Stage IV midgut NET or the decision regarding surgery versus PRRT sequencing."
+}

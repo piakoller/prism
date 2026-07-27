@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T11:13:03.228328
+Trial: 43/86
+NCT ID: NCT05246319
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient. The Disease/Biology Alignment is poor, as the study focuses on resectable small bowel neuroendocrine tumors, whereas the patient has advanced, metastatic pancreatic NET (pNET). These are distinct entities with different treatment algorithms. The Treatment Context/Clinical Applicability criterion is not met because the patient requires a decision on second-line systemic therapy for unresectable disease, while the study is a non-therapeutic, diagnostic trial evaluating preoperative imaging to guide surgical planning. Finally, the Evidence Quality and Relevance criterion fails because the study provides no data on the efficacy or safety of any systemic treatment. Its focus on the accuracy of imaging for surgical staging is irrelevant to the patient's clinical question of choosing between PRRT, targeted therapy, or chemotherapy."
+}
+```

@@ -1,0 +1,74 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Recommendation: Targeted Therapy Selection Based on Comorbidity Control**\n\nThe most appropriate second-line systemic treatment is a choice between **Cabozantinib** or **Everolimus**, contingent upon the patient's specific control of comorbidities.\n\n**Option 1: Cabozantinib**\n*   **Evidence:** Supported by the Phase 3 **CABINET trial (NCT03375320)**, which demonstrated a significant improvement in progression-free survival (PFS) for patients with progressive pancreatic NETs (median PFS **13.8 months** vs. 4.4 months with placebo; HR 0.23).\n*   **Safety Warning (CRITICAL):** Cabozantinib is associated with **hypertension** and **proteinuria**, which pose a significant risk of further renal decline in this patient with existing Chronic Kidney Disease (Creatinine 2.24 mg/dL) and Hypertension.\n*   **Mandatory Monitoring:** If selected, strict monitoring of **blood pressure** (daily at home, weekly in clinic initially) and **urine protein** (regular urinalysis) is required. Dose reductions or interruption must be implemented immediately if renal function worsens or hypertension becomes uncontrolled.\n\n**Option 2: Everolimus**\n*   **Evidence:** Supported by the Phase 3 **RADIANT-3 trial** (referenced in ENETS/ESMO guidelines), which showed a median PFS of **11.0 months** vs. 4.6 months with placebo (HR 0.35) in advanced Pan-NETs.\n*   **Safety Warning (CRITICAL):** Everolimus is associated with **hyperglycemia**. Given the patient's 10-year history of Type 2 Diabetes, this therapy carries a high risk of metabolic decompensation.\n*   **Mandatory Monitoring:** If selected, strict monitoring of **fasting blood glucose** and **HbA1c** is mandatory. Consultation with an endocrinologist to adjust antidiabetic medication may be necessary prior to and during therapy.\n\n**Selection Criteria:**\n*   Select **Cabozantinib** if the patient's diabetes is poorly controlled but blood pressure is well-managed and stable.\n*   Select **Everolimus** if the patient's renal function/blood pressure is the primary concern and diabetes is well-controlled.\n\n**Exclusion of Sunitinib:**\n**Sunitinib** is explicitly excluded from this recommendation. Although indicated for Pan-NETs, it is associated with a higher risk of renal toxicity and hypertension compared to the alternatives, making it unsuitable for a patient with a creatinine of 2.24 mg/dL.\n\n**Conditional Option: Peptide Receptor Radionuclide Therapy (PRRT)**\nPRRT (177Lu-DOTATATE) is a valid option supported by the **COMPETE trial (NCT03049189)** design and **NETTER-1** data, but is currently **conditional** upon:\n1.  **SSTR-PET/CT Imaging:** Confirmation of strong somatostatin receptor expression (uptake > liver background).\n2.  **Nephrological Clearance:** Due to the patient's renal impairment (Cr 2.24 mg/dL), standard fixed-dose PRRT carries a risk of nephrotoxicity. Personalized dosimetry (as investigated in **NCT02754297**) would be required to ensure safety.",
+  "rationale_text": "**Efficacy Rationale:**\nThe patient has progressed after first-line Somatostatin Analog (Lanreotide) therapy. According to ENETS 2023 and ESMO 2020 guidelines, targeted therapies are the standard second-line options.\n*   **Cabozantinib:** The **CABINET trial (NCT03375320)** provides high-level Phase 3 evidence specifically for patients with progressive Pan-NETs, showing a robust PFS benefit (13.8 months). This makes it a highly effective option for controlling the patient's increasing liver metastases and primary mass.\n*   **Everolimus:** The **RADIANT-3 trial** established Everolimus as a standard of care for Pan-NETs, with a proven PFS benefit (11.0 months).\n\n**Safety and Comorbidity Management:**\nThe patient's complex comorbidity profile necessitates a risk-stratified approach:\n*   **Renal Impairment (CKD, Cr 2.24 mg/dL):** This is the most critical safety factor.\n    *   **Cabozantinib** targets VEGF receptors, which can induce hypertension and proteinuria, potentially accelerating renal failure. While hepatically metabolized, its systemic effects on hemodynamics require caution.\n    *   **Sunitinib** is excluded because renal toxicity is a prominent side effect, and the risk of precipitating dialysis in a patient with this level of creatinine is unacceptably high when safer alternatives exist.\n    *   **PRRT** is renally excreted. While trials like **ALPHAMEDIX02 (NCT05153772)** and **P-PRRT (NCT02754297)** explore safer dosimetry or alpha-emitters, standard PRRT is hazardous without specialized dosimetry and nephrological oversight.\n*   **Type 2 Diabetes:**\n    *   **Everolimus** inhibits the mTOR pathway, frequently leading to hyperglycemia. In a patient with long-standing diabetes, this could lead to severe metabolic complications. However, if the patient's renal function is deemed too fragile for VEGF inhibitors (Cabozantinib), Everolimus remains the viable alternative provided glucose is aggressively managed.\n\n**Conclusion:**\nThe choice between Cabozantinib and Everolimus represents a trade-off between renal risk and metabolic risk. By mandating specific monitoring (BP/Protein vs. Glucose), the recommendation ensures that whichever therapy is chosen based on the patient's baseline control, the associated risks are actively managed.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Recommendation: Targeted Therapy Selection Based on Comorbidity Control**\n\nThe most appropriate second-line systemic treatment is a choice between **Cabozantinib** or **Everolimus**, conting...",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03049189",
+      "nct_id": "NCT03049189",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02754297",
+      "nct_id": "NCT02754297",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03049189",
+        "trial_name": "Trial NCT03049189",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02754297",
+        "trial_name": "Trial NCT02754297",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "Based on the patient's progressive, non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET) and significant comorbidities (CKD with creatinine 2.24 mg/dL, Type 2 Diabetes, Hypertension), the following therapy recommendation is proposed:\n\n<therapy_recommendation>\n**Primary Recommendation: Targeted Therapy Selection Based on Comorbidity Control**\n\nThe most appropriate second-line systemic treatment is a choice between **Cabozantinib** or **Everolimus**, contingent upon the patient's specific control of comorbidities.\n\n**Option 1: Cabozantinib**\n*   **Evidence:** Supported by the Phase 3 **CABINET trial (NCT03375320)**, which demonstrated a significant improvement in progression-free survival (PFS) for patients with progressive pancreatic NETs (median PFS **13.8 months** vs. 4.4 months with placebo; HR 0.23).\n*   **Safety Warning (CRITICAL):** Cabozantinib is associated with **hypertension** and **proteinuria**, which pose a significant risk of further renal decline in this patient with existing Chronic Kidney Disease (Creatinine 2.24 mg/dL) and Hypertension.\n*   **Mandatory Monitoring:** If selected, strict monitoring of **blood pressure** (daily at home, weekly in clinic initially) and **urine protein** (regular urinalysis) is required. Dose reductions or interruption must be implemented immediately if renal function worsens or hypertension becomes uncontrolled.\n\n**Option 2: Everolimus**\n*   **Evidence:** Supported by the Phase 3 **RADIANT-3 trial** (referenced in ENETS/ESMO guidelines), which showed a median PFS of **11.0 months** vs. 4.6 months with placebo (HR 0.35) in advanced Pan-NETs.\n*   **Safety Warning (CRITICAL):** Everolimus is associated with **hyperglycemia**. Given the patient's 10-year history of Type 2 Diabetes, this therapy carries a high risk of metabolic decompensation.\n*   **Mandatory Monitoring:** If selected, strict monitoring of **fasting blood glucose** and **HbA1c** is mandatory. Consultation with an endocrinologist to adjust antidiabetic medication may be necessary prior to and during therapy.\n\n**Selection Criteria:**\n*   Select **Cabozantinib** if the patient's diabetes is poorly controlled but blood pressure is well-managed and stable.\n*   Select **Everolimus** if the patient's renal function/blood pressure is the primary concern and diabetes is well-controlled.\n\n**Exclusion of Sunitinib:**\n**Sunitinib** is explicitly excluded from this recommendation. Although indicated for Pan-NETs, it is associated with a higher risk of renal toxicity and hypertension compared to the alternatives, making it unsuitable for a patient with a creatinine of 2.24 mg/dL.\n\n**Conditional Option: Peptide Receptor Radionuclide Therapy (PRRT)**\nPRRT (177Lu-DOTATATE) is a valid option supported by the **COMPETE trial (NCT03049189)** design and **NETTER-1** data, but is currently **conditional** upon:\n1.  **SSTR-PET/CT Imaging:** Confirmation of strong somatostatin receptor expression (uptake > liver background).\n2.  **Nephrological Clearance:** Due to the patient's renal impairment (Cr 2.24 mg/dL), standard fixed-dose PRRT carries a risk of nephrotoxicity. Personalized dosimetry (as investigated in **NCT02754297**) would be required to ensure safety.\n</therapy_recommendation>\n\n<rationale>\n**Efficacy Rationale:**\nThe patient has progressed after first-line Somatostatin Analog (Lanreotide) therapy. According to ENETS 2023 and ESMO 2020 guidelines, targeted therapies are the standard second-line options.\n*   **Cabozantinib:** The **CABINET trial (NCT03375320)** provides high-level Phase 3 evidence specifically for patients with progressive Pan-NETs, showing a robust PFS benefit (13.8 months). This makes it a highly effective option for controlling the patient's increasing liver metastases and primary mass.\n*   **Everolimus:** The **RADIANT-3 trial** established Everolimus as a standard of care for Pan-NETs, with a proven PFS benefit (11.0 months).\n\n**Safety and Comorbidity Management:**\nThe patient's complex comorbidity profile necessitates a risk-stratified approach:\n*   **Renal Impairment (CKD, Cr 2.24 mg/dL):** This is the most critical safety factor.\n    *   **Cabozantinib** targets VEGF receptors, which can induce hypertension and proteinuria, potentially accelerating renal failure. While hepatically metabolized, its systemic effects on hemodynamics require caution.\n    *   **Sunitinib** is excluded because renal toxicity is a prominent side effect, and the risk of precipitating dialysis in a patient with this level of creatinine is unacceptably high when safer alternatives exist.\n    *   **PRRT** is renally excreted. While trials like **ALPHAMEDIX02 (NCT05153772)** and **P-PRRT (NCT02754297)** explore safer dosimetry or alpha-emitters, standard PRRT is hazardous without specialized dosimetry and nephrological oversight.\n*   **Type 2 Diabetes:**\n    *   **Everolimus** inhibits the mTOR pathway, frequently leading to hyperglycemia. In a patient with long-standing diabetes, this could lead to severe metabolic complications. However, if the patient's renal function is deemed too fragile for VEGF inhibitors (Cabozantinib), Everolimus remains the viable alternative provided glucose is aggressively managed.\n\n**Conclusion:**\nThe choice between Cabozantinib and Everolimus represents a trade-off between renal risk and metabolic risk. By mandating specific monitoring (BP/Protein vs. Glucose), the recommendation ensures that whichever therapy is chosen based on the patient's baseline control, the associated risks are actively managed.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-08T12:16:21.698290",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 3,
+    "trials_considered": 12,
+    "trials_included": 9,
+    "trials_excluded": 3,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251208_121205\\patient_3\\patient_3_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251208_121205\\patient_3\\patient_3_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251208_121205\\patient_3\\patient_3_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251208_121205\\patient_3\\patient_3_therapy_recommendation_reasoning.txt"
+  }
+}

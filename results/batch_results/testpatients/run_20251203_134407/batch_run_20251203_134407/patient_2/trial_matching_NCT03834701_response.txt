@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:59:08.703142
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for clinical relevance. Biologically, the patient has a metastatic Grade 2 NET with a Ki-67 of 15%, whereas the study is restricted to localized, asymptomatic tumors with Ki-67 ≤5%. Clinically, the patient requires systemic therapy for widespread metastatic disease (liver, lung, bone), while the study evaluates a local ablative therapy (EUS-RFA) strictly for non-metastatic, localized pancreatic lesions. The presence of distant metastases and the need for systemic cytoreduction render local ablation of the primary tumor inappropriate and clinically irrelevant in this setting. Consequently, the study provides no actionable evidence to guide the requested systemic treatment decision."
+}

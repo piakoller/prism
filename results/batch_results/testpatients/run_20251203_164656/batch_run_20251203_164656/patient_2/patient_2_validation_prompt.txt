@@ -1,0 +1,143 @@
+=== RECOMMENDATION VALIDATION PROMPT ===
+Timestamp: 2025-12-04T12:30:26.736119
+Patient ID: 2
+Model: google/gemini-3-pro-preview
+==================================================
+
+You are a clinical validation expert reviewing a therapy recommendation for quality assurance.
+
+Your task is to CRITICALLY EVALUATE whether the therapy recommendation is:
+1. COMPLETE - addresses all clinical needs identified in the patient assessment
+2. ACCURATE - correctly cites and interprets evidence from trials and guidelines  
+3. CONSISTENT - doesn't contradict itself or the patient assessment
+4. SAFE - considers contraindications and patient-specific risk factors
+5. ACTIONABLE - provides clear next steps
+
+**IMPORTANT**: Be thorough and critical. If you find ANY issues that could compromise patient care, you must flag them.
+
+=== PATIENT ASSESSMENT SUMMARY ===
+=== DETAILED CLINICAL ASSESSMENT ===
+
+**Diagnostic and Pathological Assessment**
+The patient presents with a metastatic Grade 2 neuroendocrine tumor (NET). The histopathological analysis of the liver biopsy confirms a Grade 2 classification with a Ki-67 index of 15% and 1.6 mitoses/2 mm², falling within the WHO classification for well-differentiated NET G2 (Ki-67 3–20%). The immunohistochemical profile (TTF1–, CDX2–, chromogranin A+, synaptophysin+, progesterone+) strongly supports a pancreatic origin (NF-Pan-NET), as noted in the ENETS 2023 guidelines which state that Islet-1 or progesterone positivity can help define the organ of origin in the absence of TTF-1 or CDX-2. The lung biopsy (TTF1–) is consistent with a metastasis from the pancreatic primary rather than a lung primary.
+
+**Clinical Status and Disease Burden**
+The patient exhibits significant tumor burden with metastases involving the liver (segments VIII, V, perivesicular), lung (LLL), and bones. Clinically, the patient is symptomatic with progressive weight loss (–5 kg over 3 months; current weight 7 kg below baseline), moderate asthenia, and hyporexia. According to ENETS guidelines (Q7), symptomatic disease due to high volume or significant tumor growth are factors favoring treatments with higher response rates, such as chemotherapy, over agents primarily aiming for stabilization.
+
+**Functional Imaging and SSTR Heterogeneity**
+The Ga-68 PET/CT (July 30, 2025) reveals significant intra-patient heterogeneity regarding somatostatin receptor (SSTR) expression:
+*   **High Uptake:** Bone metastases (SUV 12) and hepatic metastases (SUV 9) show high avidity.
+*   **Intermediate Uptake:** The LLL lung nodule has an SUV of 6.
+*   **Low Uptake:** The primary pancreatic head lesion has an SUV of 3.
+
+According to ESMO Clinical Practice Guidelines, PRRT is a therapeutic option for SSTR-positive NETs with **homogenous** SSTR expression where all lesions are positive. PRRT eligibility typically requires uptake higher than the liver background (which is gen...
+[Assessment text truncated for validation prompt]
+
+Urgency Level: medium
+Assessment Confidence: medium
+
+=== TRIAL ANALYSIS SUMMARY ===
+Total Trials Analyzed: 14
+Trials Marked for INCLUSION: 2
+Trials Marked for EXCLUSION: 12
+
+INCLUDED TRIALS:
+  - NCT03217097: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents (Relevance: N/A)
+  - NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (Relevance: N/A)
+
+=== GUIDELINES SUMMARY ===
+Matched Guidelines: 2
+
+  - Nonfunctioning pancreatic neuroendocrine tumours (Relevance: 1.0)
+  - Gastroenteropancreatic neuroendocrine neoplasms: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up [y] (Relevance: 1.0)
+
+=== THERAPY RECOMMENDATION TO VALIDATE ===
+
+RECOMMENDATION:
+Based on the patient's symptomatic presentation, significant tumor burden, and Grade 2 Pancreatic Neuroendocrine Tumor (Pan-NET) status with a Ki-67 of 15%, the most appropriate first-line systemic treatment is **systemic chemotherapy**, specifically a regimen combining **Temozolomide and Capecitabine (CAPTEM)** or **Streptozotocin and 5-Fluorouracil (STZ/5-FU)**.
+
+This recommendation is supported by the **MGMT-NET trial (NCT03217097)**, which demonstrated that alkylating agent-based chemotherapy can achieve high objective response rates (ORR), particularly in tumors with MGMT deficiency (ORR up to 52.9%), making it highly suitable for achieving the necessary tumor shrinkage to alleviate this patient's symptoms.
+
+**Cabozantinib** represents a viable alternative or subsequent line of therapy, supported by the Phase 3 **CABINET trial (NCT03375320)**, which showed a significant progression-free survival benefit (median 13.8 months vs. 4.4 months for placebo) and an objective response rate of 19% in patients with advanced pancreatic neuroendocrine tumors.
+
+**Peptide Receptor Radionuclide Therapy (PRRT)** is **not recommended** as the first-line systemic treatment for this specific patient due to the heterogeneous Somatostatin Receptor (SSTR) expression, specifically the low uptake in the primary pancreatic lesion (SUV 3).
+
+RATIONALE:
+The rationale for this recommendation is based on the following integration of clinical assessment, trial evidence, and guidelines:
+
+1.  **Need for Cytoreduction (Tumor Shrinkage):**
+    The patient is symptomatic with progressive weight loss (-5 kg) and has a high tumor burden involving the liver, lungs, and bones. According to **ENETS 2023 Guidelines (Question 7)** and **ESMO Guidelines**, chemotherapy is the preferred first-line approach for bulky, symptomatic, or progressive Grade 2 Pan-NETs (Ki-67 10–20%) where the therapeutic goal is tumor shrinkage rather than just stabilization.
+
+2.  **Evidence for Chemotherapy Efficacy:**
+    The **MGMT-NET trial (NCT03217097)** provides prospective evidence supporting the use of alkylating chemotherapy. The trial reported objective response rates (ORR) of up to **52.9%** in MGMT-deficient tumors treated with alkylating agents. Given the patient's need for symptom relief through tumor regression, a regimen with a high response potential (30–50%) is superior to agents that primarily induce stability. While MGMT status is not provided in the assessment, chemotherapy remains a standard of care for G2 Pan-NETs with this clinical profile.
+
+3.  **Evidence for Cabozantinib:**
+    The **CABINET trial (NCT03375320)** provides high-level Phase 3 evidence for Cabozantinib in advanced Pan-NETs, demonstrating a significant improvement in progression-free survival (HR 0.23) and an ORR of **19%**. While this response rate is clinically meaningful, it is generally lower than that of cytotoxic chemotherapy. Therefore, Cabozantinib is an excellent option should chemotherapy be contraindicated or fail, but chemotherapy is prioritized for immediate symptom control.
+
+4.  **Contraindication for First-Line PRRT:**
+    The patient's **Ga-68 PET/CT** shows significant intra-patient heterogeneity. While metastases are avid (SUV 9–12), the primary pancreatic lesion has an **SUV of 3**. Effective PRRT requires homogenous SSTR expression with uptake significantly higher than the liver background (typically SUV ~6–7). The "cold" primary tumor (SUV 3) suggests it would not be effectively targeted by 177Lu-labeled somatostatin analogs, leading to a high risk of primary tumor progression. Consequently, PRRT is not suitable as a first-line strategy in this setting.
+
+5.  **Safety Considerations:**
+    The patient has a history of ischemic heart disease (stent in 2004). While 5-Fluorouracil and Capecitabine carry a risk of coronary vasospasm, they are standard components of the recommended regimens. Careful cardiac monitoring is advised. If the cardiac risk is deemed too high for fluoropyrimidines, Temozolomide monotherapy (supported by the alkylating arm of NCT03217097) or Cabozantinib (with hypertension management) could be considered alternatives.
+
+=== YOUR VALIDATION TASK ===
+
+Carefully review the therapy recommendation against the evidence provided above.
+
+Check for the following issues:
+
+1. COMPLETENESS ISSUES:
+   - Does the recommendation address ALL clinical needs identified in the patient assessment?
+   - Are important clinical considerations (disease grade, symptoms, biomarkers, prior treatments) adequately addressed?
+   - Are alternative options discussed if the primary recommendation isn't feasible?
+
+2. ACCURACY ISSUES:
+   - Are all trial citations (NCT numbers) correctly used?
+   - Are the claimed trial outcomes/findings accurate based on the trial analysis?
+   - Are guideline recommendations correctly interpreted?
+   - Is there any evidence of fabricated or misrepresented data?
+
+3. CONSISTENCY ISSUES:
+   - Does the recommendation align with the urgency level from the patient assessment?
+   - Are there any internal contradictions in the recommendation?
+   - Does the rationale actually support the recommendation given?
+   - Are trials marked for EXCLUSION incorrectly being recommended?
+
+4. SAFETY ISSUES:
+   - Are known contraindications from the patient assessment respected?
+   - Are patient-specific risk factors (organ function, performance status) considered?
+   - Are monitoring requirements mentioned for high-risk therapies?
+
+5. ACTIONABILITY ISSUES:
+   - Are next steps clearly defined?
+   - Is the recommendation specific enough to be implemented?
+   - Are follow-up timelines provided?
+
+Provide your validation in the following format:
+
+<validation_decision>
+[State clearly: PASS or RECONSIDER]
+</validation_decision>
+
+<critical_issues>
+[List any critical issues that make the recommendation incomplete, wrong, or unsafe. Be specific about what is missing or incorrect. If none, write "None identified."]
+</critical_issues>
+
+<warnings>
+[List any non-critical concerns or areas for improvement. If none, write "None identified."]
+</warnings>
+
+<detailed_reasoning>
+[Provide detailed reasoning for your validation decision. Explain:
+- What you checked in each validation category
+- Specific examples of issues you found (quote relevant parts)
+- Why each issue is problematic for patient care
+- What would need to be corrected for the recommendation to pass validation
+Be thorough and specific - this reasoning will guide the regeneration process.]
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+[If you marked as RECONSIDER, provide specific actionable guidance on what should be corrected or added in the regenerated recommendation. If PASS, write "No improvements needed."]
+</recommendations_for_improvement>
+
+Remember: Patient safety is paramount. If in doubt, mark as RECONSIDER and explain your concerns in detail.

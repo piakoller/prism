@@ -1,0 +1,27 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - PREVIOUS RECOMMENDATION HAD ISSUES
+================================================================================
+
+The previous therapy recommendation did not pass validation and requires regeneration.
+You MUST address ALL of the issues identified below.
+
+================================================================================
+VALIDATION ISSUES IDENTIFIED
+================================================================================
+
+### SAFETY ISSUES:
+  ❌ Semantic: **Safety/Contraindication (Capecitabine):** The recommendation suggests "Temozolomide-based chemotherapy (monotherapy or in combination with Capecitabine, with dose adjustments)" as an alternative. The patient is a 78-year-old male with a serum creatinine of 2.24 mg/dL. Using the Cockcroft-Gault equation (assuming a standard weight of ~70kg), his estimated Creatinine Clearance (CrCl) is approximately **27 mL/min**. Capecitabine is **contraindicated** in patients with severe renal impairment (CrCl < 30 mL/min). Suggesting its use, even with "dose adjustments," is unsafe and contrary to standard labeling.
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above
+2. Be explicit about safety considerations and contraindications
+3. Provide clear rationale for any high-risk interventions
+4. Ensure all trial citations are accurate and from the evidence provided
+5. Maintain consistency with the patient assessment
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

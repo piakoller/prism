@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:47:31.519857
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This Phase II trial (DART, SWOG S1609) provides meaningful clinical evidence for treating refractory high-grade neuroendocrine neoplasms (NENs) with ipilimumab plus nivolumab. The patient has a metastatic Pancreatic NET G3 with a high Ki-67 (70%), which aligns with the trial's \"High-grade neuroendocrine neoplasm\" cohort (Cohort 52). Published results for this cohort (Patel et al., 2021) included pancreatic primaries and reported an objective response rate (ORR) of 26% and a clinical benefit rate of 32% in patients with high-grade disease (median Ki-67 80%). This contrasts with the \"Nonpancreatic\" cohort (Patel et al., 2020), which showed 0% ORR in low/intermediate-grade tumors, suggesting that high-grade biology is a key predictor for immunotherapy response. Since the patient is refractory to all standard systemic therapies (chemotherapy, sunitinib, everolimus) and is currently evaluating salvage options (e.g., PRRT vs. immunotherapy), this study provides actionable evidence to weigh the potential efficacy of immune checkpoint inhibition in this specific high-grade setting."
+}
+```

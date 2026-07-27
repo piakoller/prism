@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:40:29.536420
+Trial: 84/86
+NCT ID: NCT02259725
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient primarily because **Criterion 3 (Evidence Quality and Relevance)** is not met; the input indicates that although the trial is completed, there are no published results or detailed findings available to assess efficacy or safety. Furthermore, **Criterion 2 (Treatment Context)** is not met due to significant safety contraindications. The patient presents with life-threatening upper GI bleeding caused by direct tumor infiltration into the stomach and recent thrombotic events (pulmonary embolism, splenic vein thrombosis). Regorafenib is an anti-angiogenic tyrosine kinase inhibitor associated with bleeding risks, and the study explicitly excludes patients with Grade ≥3 hemorrhage within 4 weeks or recent thrombotic events. Consequently, the intervention is clinically inappropriate for the patient's current hemorrhagic state, and without published outcomes, the study offers no actionable data to guide alternative treatment scenarios."
+}

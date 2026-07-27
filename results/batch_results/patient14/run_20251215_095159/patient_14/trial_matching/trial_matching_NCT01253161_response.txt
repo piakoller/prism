@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:20:34.345745
+Trial: 78/86
+NCT ID: NCT01253161
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient's treatment. The patient has a Grade 3 (Ki-67 25%) bronchial NET and is heavily pre-treated (refractory to chemotherapy, mTOR inhibitors, PRRT, and current somatostatin analogs). The study evaluates Pasireotide LAR exclusively in *treatment-naïve* patients with Grade 1 or 2 tumors. Evidence of efficacy in a first-line, low-grade setting cannot be reasonably extrapolated to a patient with higher-grade disease who is progressing on standard somatostatin analogs and has exhausted multiple lines of therapy. The study's strict exclusion of prior systemic treatment and restriction to lower-grade tumors makes the results clinically inapplicable for guiding decision-making in this salvage scenario."
+}

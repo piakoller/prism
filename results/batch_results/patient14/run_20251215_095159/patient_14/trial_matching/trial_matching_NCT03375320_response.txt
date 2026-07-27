@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:15:08.737751
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 3 trial (CABINET) provides high-level evidence for cabozantinib in patients with advanced extrapancreatic neuroendocrine tumors (epNETs), specifically including lung primaries and well-differentiated Grade 3 tumors, which aligns perfectly with this patient's biology (bronchial NET, Ki-67 25%, well-differentiated phenotype). The study population required progression after prior therapy (including everolimus and PRRT), directly matching the patient's current clinical scenario where she has exhausted standard chemotherapy and everolimus. The published results demonstrate a significant progression-free survival benefit (8.4 months vs. 3.9 months, HR 0.38) in this cohort. While the patient has a history of poor tolerance to systemic therapies and the study reports a high rate of Grade 3+ adverse events (62–65%), this evidence is essential for informing the tumor board about a validated subsequent line of therapy, allowing for a risk-benefit assessment against re-challenge with PRRT."
+}

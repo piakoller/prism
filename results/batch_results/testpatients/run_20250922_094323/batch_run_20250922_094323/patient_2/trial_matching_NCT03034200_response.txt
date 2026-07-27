@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:47:29.669524
+Trial: 72/86
+NCT ID: NCT03034200
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient. The primary reason is a failure of Disease/Biology Alignment and Evidence Relevance (Criteria 1 and 3). The published results from the Phase 2 trial of ONC201 (Anderson et al., Clin Cancer Res. 2022) demonstrate clinical benefit, including objective responses, almost exclusively in patients with pheochromocytoma-paraganglioma (PC-PG) and desmoplastic small round cell tumor (DSRCT). These are biologically distinct neuroendocrine neoplasms compared to the patient's Grade 2 pancreatic NET (pNET). The cohort of \"other neuroendocrine tumors\" (n=12), which would presumably include a pNET, showed very limited activity with no reported responses in any tumor type similar to the patient's. The study's biological rationale is based on DRD2 antagonism, a mechanism with established relevance in PC-PG but not in typical pNETs. Therefore, even when considering future treatment lines for this patient's unresectable disease, the evidence presented is not transferable and provides no actionable insight to guide therapy recommendations for a G2 pNET."
+}
+```

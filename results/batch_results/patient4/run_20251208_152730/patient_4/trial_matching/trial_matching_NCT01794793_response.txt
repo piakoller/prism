@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T16:09:36.823039
+Trial: 76/86
+NCT ID: NCT01794793
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not meet the criteria for disease alignment or clinical applicability. The patient has a progressive duodenal neuroendocrine tumor (NET), whereas this study (NCT01794793) is a rollover access protocol specifically for patients with Cushing's Disease or Acromegaly who were already benefiting from pasireotide in prior Novartis-sponsored trials. The provided results focus exclusively on long-term safety and efficacy in pituitary disorders, which is biologically distinct from the patient's gastroenteropancreatic NET. Furthermore, the patient has already progressed on somatostatin analogues (octreotide) and PRRT, and evidence from a maintenance study in pituitary disease does not provide actionable insights for managing a TKI-refractory duodenal NET."
+}

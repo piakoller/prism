@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:00:15.035700
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 2 study is clinically relevant as it evaluates 212Pb-DOTAMTATE (Targeted Alpha Therapy) in patients with SSTR-positive NETs, specifically including a cohort of patients who have progressed after prior PRRT (177Lu-based). This directly aligns with the patient's current scenario: an 82-year-old with SSTR-avid (DOTATOC+++) metastatic bronchial NET who has progressed post-PRRT and is intolerant to standard systemic therapies (chemotherapy, everolimus). Although the published results highlight GEP-NETs, the biological rationale (SSTR targeting) allows for extrapolation to bronchial NETs, consistent with the patient's prior response to PRRT. Crucially, the study reports a favorable safety profile with low hematologic toxicity, offering meaningful evidence for a potential treatment alternative given the patient's history of Grade 3 thrombocytopenia with temozolomide."
+}

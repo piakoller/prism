@@ -1,0 +1,213 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2026-01-05T11:54:13.062984
+Trial: 79/86
+NCT ID: NCT01563354
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Brief Clinical History: 67-year-old man with a typical carcinoid of the lingula, initially pT2a 
+pN0 (0/12) L0 V0 Pn0 G1 R0 stage IB, with initial diagnosis in 2018, followed by uniportal 
+minimally invasive lingular resection (segments IV and V) with radical mediastinal 
+lymphadenectomy. In 2022, sonography revealed hepatic lesions and biopsy confirmed 
+metastases of the well-differentiated NET with Ki-67 of 5%. Gallium DODATOC PET/CT 
+also showed multiple, moderately intensive bone metastases of the spine, pelvis, ribs, 
+and proximal right femur. Somatostatin analogue was initiated and 4 cycles of PRRT were 
+conducted. Subsequent radiological follow-up examinations showed stable results up 
+until March 2025, when DOTATOC PET/CT revealed a new lymph node metastasis at the 
+hepatic portal and ventral to the inferior vena cava with intensive tracer activity. The liver 
+showed one new intensively DOTATOC-avid metastasis, one metastasis with progression 
+in size and metabolism, as well as some metastases with metabolic regression. Multiple 
+new inhomogeneous (partly moderate, partly intensive) DOTATOC accumulations were 
+found in the bones, while morphologically, the known bone metastases remained 
+unchanged.  
+Current Clinical Status: ECOG 0-1, fatigue, loose stools. 
+Question for Tumorboard:
+further therapy? 
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Clinical Summary and Disease Status**
+The patient is a 67-year-old male with a history of a typical carcinoid of the lingula (lung neuroendocrine neoplasm), initially diagnosed in 2018 (pT2a pN0 L0 V0 Pn0 G1 R0 stage IB). Following curative resection, he developed metastatic disease in 2022 involving the liver and bones. The tumor biology at the time of metastasis was confirmed as a well-differentiated NET with a Ki-67 index of 5%. The patient has previously been treated with a somatostatin analogue (SSA) and 4 cycles of Peptide Receptor Radionuclide Therapy (PRRT), achieving disease stability until March 2025.
+
+**Current Assessment of Progression**
+Current imaging via DOTATOC PET/CT (March 2025) confirms systemic disease progression (PD) after a period of stability. The progression pattern is mixed but predominantly worsening:
+1.  **Nodal:** New metastasis at the hepatic portal/ventral to the inferior vena cava with intensive tracer activity.
+2.  **Hepatic:** Mixed response with one new intensively avid metastasis and one progressing lesion, despite metabolic regression in others.
+3.  **Skeletal:** Multiple new inhomogeneous (moderate to intensive) DOTATOC accumulations, while known metastases remain morphologically unchanged.
+
+**Molecular and Functional Assessment**
+Based on the provided ESMO guidelines and the patient's imaging:
+*   **SSTR Status:** The patient demonstrates "intensive" DOTATOC uptake in the new lymph node and liver metastases, as well as "moderate" to "intensive" uptake in bone lesions. According to clinical standards, PRRT eligibility generally requires uptake higher than liver background (typically SUVmax ~6–7). The description of "intensive" activity suggests the tumor phenotype remains SSTR-positive and likely meets the uptake criteria for SSTR-targeted interventions, provided the uptake in all targetable lesions exceeds the liver background.
+*   **Tumor Biology:** The Ki-67 index of 5% places this tumor in the G2 category (based on WHO classification referenced in the guidelines for GEP-NENs, which is often extrapolated to lung NETs in systemic therapy trials).
+
+**Clinical Considerations based on Guidelines**
+1.  **Systemic Therapy Options:**
+    *   **Everolimus:** The ESMO guidelines reference the RADIANT-4 trial, which demonstrated a progression-free survival benefit for non-functional lung NETs treated with everolimus (HR 0.5). Given the patient's progression on SSA and prior PRRT, everolimus is a guideline-supported consideration for antiproliferative therapy in lung NETs.
+    *   **PRRT:** The patient has previously received 4 cycles. While the guidelines state PRRT is an option for progressive SSTR-positive NETs, the patient has now progressed following a completed course. The guidelines do not explicitly detail retreatment protocols, but the persistence of strong SSTR expression ("intensive tracer activity") is a relevant biological factor.
+    *   **Chemotherapy:** Systemic chemotherapy is generally not recommended for well-differentiated, slowly growing NETs (G1/G2) unless rapidly progressive. This patient has a Ki-67 of 5%, suggesting an indolent biology, although the development of multiple new bone lesions indicates a change in disease burden.
+
+2.  **Symptom Management:**
+    *   The patient reports "loose stools." It is necessary to differentiate whether this is a symptom of carcinoid syndrome (functional tumor) or a side effect of the ongoing SSA therapy (steatorrhea) or other causes.
+    *   If the loose stools are confirmed to be refractory diarrhea related to carcinoid syndrome, the guidelines recommend Telotristat ethyl as an add-on treatment to SSAs.
+    *   If the tumor is functional, the guidelines note that hormonal crises can occur, and symptom control is a primary goal.
+
+**Conclusion**
+The patient presents with progressive, metastatic, well-differentiated SSTR-positive NET (lung primary) with a Ki-67 of 5%. He has progressed on standard first-line SSA and completed PRRT. The disease remains SSTR-avid. The clinical focus is now on selecting a subsequent line of antiproliferative therapy for widespread progression (bone, liver, nodal) and clarifying the etiology of the loose stools to optimize supportive care.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: further therapy? 
+
+### STUDY DATA
+	•	NCT-ID: NCT01563354
+	•	Title: 3-arm Trial to Evaluate Pasireotide LAR/Everolimus Alone/in Combination in Patients With Lung/Thymus NET - LUNA Trial
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Pasireotide LAR; Everolimus; Pasireotide LAR and Everolimus Combination
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Histological confirmed advanced well differentiated typical and atypical carcinoid tumors of the lung or thymus
+* Patients of all treatment lines including naive patients could have been enrolled
+* At least one measurable lesion of disease on CT scan or MRI
+* Radiological documentation of disease progression within 12 months prior to randomization
+* Adequate liver, renal and bone marrow function
+* WHO Performance Status 0-2
+
+Exclusion Criteria:
+
+* Poorly differentiated neuroendocrine carcinoma
+* Non-neuroendocrine thymoma
+* Patients with severe functional disease who required symptomatic treatment with somatostatin analogs
+* Prior therapy with mTOR inhibitors
+* History of liver disease
+* Baseline QTcF\> 470 msec
+* Uncontrolled diabetes mellitus despite adequate therapy *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This was a multicenter, randomized, phase II study evaluating Everolimus or Pasireotide LAR alone or in combination in adult patients with advanced (unresectable or metastatic) neuroendocrine carcinoma of the lung and thymus
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Listed publications appear to contain results; Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/29074099/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Ferolla P, Brizzi MP, Meyer T, Mansoor W, Mazieres J, Do Cao C, Lena H, Berruti A, Damiano V, Buikhuisen W, Gronbaek H, Lombard-Bohas C, Grohe C, Minotti V, Tiseo M, De Castro J, Reed N, Gislimberti G, Singh N, Stankovic M, Oberg K, Baudin E. Efficacy and safety of long-acting pasireotide or everolimus alone or in combination in patients with advanced carcinoids of the lung and thymus (LUNA): an open-label, multicentre, randomised, phase 2 trial. Lancet Oncol. 2017 Dec;18(12):1652-1664. doi: 10.1016/S1470-2045(17)30681-2. Epub 2017 Oct 23.
+• Efficacy and safety of long-acting pasireotide or everolimus alone or in combination in patients with advanced carcinoids of the lung and thymus (LUNA): an open-label, multicentre, randomised, phase 2 trial. (PMID: 29074099)
+• Long-term management of a patient with well-differentiated pulmonary neuroendocrine carcinoma: a case report [Google Scholar]
+• Evaluation of theefficacyandsafetyof lanreotide in combination with targeted therapies in patients with neuroendocrine tumours in clinical practice: a retrospective … [Google Scholar]
+• How do theresultsof the RADIANT trials impact on the management of NET patients? A systematic review of publishedstudies [Google Scholar]
+• Diagnosis and treatment of bronchopulmonary neuroendocrine tumours: state of the art [Google Scholar]
+• [HTML][HTML]Advances in the diagnosis and management of well-differentiated and intermediate-differentiated neuroendocrine tumors of the lung [Google Scholar]
+• First long-termresultson efficacy and safety of long-acting pasireotide in combination with everolimus in patients with advanced carcinoids (NET) of the lung/thymus … [Google Scholar]
+• First long-term results onefficacyandsafetyof long-acting pasireotide in combination with everolimus in patients with advanced carcinoids (NET) of the lung/thymus … [Google Scholar]
+• Everolimus plus octreotide long-acting repeatable in patients with advanced lung neuroendocrine tumors: analysis of the phase 3, randomized, placebo-controlled … [Google Scholar]
+• … on efficacy and safety of long-acting pasireotide in combination with everolimus in patients with advanced carcinoids (NET) of the lung/thymus: Phase II LUNAtrial. [Google Scholar]
+• Efficacyandsafetyof long-acting pasireotide or everolimus alone or in combination in patients with advanced carcinoids of the lung and thymus (LUNA): an open … [Google Scholar]
+• Systemic treatment of advanced lung carcinoid tumors: show me the data! [Google Scholar]
+• Advancements in mTOR Inhibitors for Non-Small-Cell Lung Cancer: Mechanisms,Efficacy, and Future Perspectives [Google Scholar]
+• … or everolimus alone or in combination in patients with advanced carcinoids of the lung and thymus (LUNA): an open-label, multicentre, randomised, phase 2trial [Google Scholar]
+	•	Key findings from publications: PubMed Abstract: There are no data from prospective studies focused exclusively on patients with advanced lung and thymic carcinoids. We aimed to assess the efficacy and safety of long-acting pasireotide and everolimus, administered alone or in combination, in patients with advanced carcinoids of the lung or thymus.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: There are no data from prospective studies focused exclusively on patients with advanced lung and thymic carcinoids. We aimed to assess the efficacy and safety of long-acting pasireotide and everolimus, administered alone or in combination, in patients with advanced carcinoids of the lung or thymus. Methods: LUNA was a prospective, multicentre, randomised, open-label, phase 2 trial of adult patients (aged >18 years) with advanced (unresectable or metastatic), well differentiated carcinoid tumours of the lung or thymus, with radiological progression within 12 months before randomisation, and a WHO performance status of 0-2. At each centre, the investigator or their designee registered each patient using an interactive voice recognition system into one of the three treatment groups. The randomisation allocation sequence was generated by an external company; patients were randomly assigned (1:1:1) to receive treatment with long-acting pasireotide (60 mg intramuscularly every 28 days), everolimus (10 mg orally once daily), or both in combination, for the core 12-month treatment period. Patients were stratified by carcinoid type (typical vs atypical) and line of study treatment (first line vs others). The primary endpoint was the proportion of patients progression-free at month 9, defined as the proportion of patients with overall lesion assessment at month 9 showing a complete response, partial response, or stable disease according to local Response Evaluation Criteria in Solid Tumors, version 1.1, assessed in the intention-to-treat population. Safety was assessed in all patients who received at least one dose of study drug and had at least one post-baseline safety assessment. The trial is registered with ClinicalTrials.gov, number NCT01563354 . The extension phase of the study is ongoing. Findings: Between Aug 16, 2013, and Sept 30, 2014, 124 patients were enrolled from 36 centres in nine countries: 41 were allocated to the long-acting pasireotide group, 42 to the everolimus group, and 41 to the combination group. At month 9, the proportion of patients with an overall lesion assessment of complete response, partial response, or stable disease was 16 of 41 patients (39·0%, 95% CI 24·2-55·5) in the long-acting pasireotide group, 14 of 42 patients (33·3%, 19·6-49·5) in the everolimus group, and 24 of 41 patients (58·5%, 42·1-73·7) in the combination group. The most common grade 1-2 adverse events with a suspected association with long-acting pasireotide monotherapy were diarrhoea (15 [37%] of 41), hyperglycaemia (17 [41%]), and weight loss (8 [20%]); those with a suspected association with everolimus monotherapy were stomatitis (26 [62%] of 42) and diarrhoea (16 [38%]); and those suspected to be associated with combination treatment were hyperglycaemia (27 [66%] of 41]), diarrhoea (19 [46%]), and asthenia (8 [20%]). The most common grade 3-4 adverse events with a suspected association with long-acting pasireotide monotherapy were γ-glutamyltransferase increased (four [10%] of 41 patients), diarrhoea (three [7%]), and hyperglycaemia (three [7%]); those for everolimus were hyperglycaemia (seven [17%] of 42 patients), stomatitis (four [10%]), and diarrhoea (three [7%]); those for combination treatment were hyperglycaemia (nine [22%] of 41 patients) and diarrhoea (four [10%]). 11 patients died during the core 12-month treatment phase or up to 56 days after the last study treatment exposure date: two (5%) of 41 in the long-acting pasireotide group, six (14%) of 42 in the everolimus group, and three (7%) of 41 in the combination group. No deaths were suspected to be related to long-acting pasireotide treatment. One death in the everolimus group (acute kidney injury associated with diarrhoea), and two deaths in the combination group (diarrhoea and urinary sepsis in one patient, and acute renal failure and respiratory failure in one patient) were suspected to be related to everolimus treatment. In the latter patient, acute renal failure was not suspected to be related to everolimus treatment, but respiratory failure was suspected to be related. Interpretation: The study met the primary endpoint in all three treatment groups. Safety profiles were consistent with the known safety profiles of these agents. Further studies are needed to confirm the antitumour efficacy of the combination of a somatostatin analogue with everolimus in lung and thymic carcinoids. Funding: Novartis Pharma AG. Copyright © 2017 Elsevier Ltd. All rights reserved. PubMed Disclaimer Comment in Towards personalised medicine in lung and thymus neuroendocrine tumours. Pelosi G, Cave J, Ottensmeier CH. Pelosi G, et al. Lancet Oncol. 2017 Dec;18(12):1563-1565. doi: 10.1016/S1470-2045(17)30784-2. Epub 2017 Oct 23. Lancet Oncol. 2017. PMID: 29074101 No abstract available. Similar articles Combination of everolimus with trastuzumab plus paclitaxel as first-line treatment for patients with HER2-positive advanced breast cancer (BOLERO-1): a phase 3, randomised, double-blind, multicentre trial. Hurvitz SA, Andre F, Jiang Z, Shao Z, Mano MS, Neciosup SP, Tseng LM, Zhang Q, Shen K, Liu D, Dreosti LM, Burris HA, Toi M, Buyse ME, Cabaribere D, Lindsay MA, Rao S, Pacaud LB, Taran T, Slamon D. Hurvitz SA, et al. Lancet Oncol. 2015 Jul;16(7):816-29. doi: 10.1016/S1470-2045(15)00051-0. Epub 2015 Jun 16. Lancet Oncol. 2015. PMID: 26092818 Clinical Trial. Efficacy and safety of once-monthly pasireotide in Cushing's disease: a 12 month clinical trial. Lacroix A, Gu F, Gallardo W, Pivonello R, Yu Y, Witek P, Boscaro M, Salvatori R, Yamada M, Tauchmanova L, Roughton M, Ravichandran S, Petersenn S, Biller BMK, Newell-Price J; Pasireotide G2304 Study Group. Lacroix A, et al. Lancet Diabetes Endocrinol. 2018 Jan;6(1):17-26. doi: 10.1016/S2213-8587(17)30326-1. Epub 2017 Oct 12. Lancet Diabetes Endocrinol. 2018. PMID: 29032078 Clinical Trial. Pasireotide versus continued treatment with octreotide or lanreotide in patients with inadequately controlled acromegaly (PAOLA): a randomised, phase 3 trial. Gadelha MR, Bronstein MD, Brue T, Coculescu M, Fleseriu M, Guitelman M, Pronin V, Raverot G, Shimon I, Lievre KK, Fleck J, Aout M, Pedroncelli AM, Colao A; Pasireotide C2402 Study Group. Gadelha MR, et al. Lancet Diabetes Endocrinol. 2014 Nov;2(11):875-84. doi: 10.1016/S2213-8587(14)70169-X. Epub 2014 Sep 24. Lancet Diabetes Endocrinol. 2014. PMID: 25260838 Clinical Trial. Peptide Receptor Radionuclide Therapy for Patients With Advanced Lung Carcinoids. Naraev BG, Ramirez RA, Kendi AT, Halfdanarson TR. Naraev BG, et al. Clin Lung Cancer. 2019 May;20(3):e376-e392. doi: 10.1016/j.cllc.2019.02.007. Epub 2019 Mar 1. Clin Lung Cancer. 2019. PMID: 30910575 Review. Advances in the Diagnosis and Management of Well-Differentiated and Intermediate-Differentiated Neuroendocrine Tumors of the Lung. Wolin EM. Wolin EM. Chest. 2017 May;151(5):1141-1146. doi: 10.1016/j.chest.2016.06.018. Epub 2016 Jun 29. Chest. 2017. PMID: 27373769 Review. See all similar articles Cited by Efficacy and Safety of 177 Lu-DOTATATE in Lung Neuroendocrine Tumors: A Bicenter study. Zidan L, Iravani A, Oleinikov K, Ben-Haim S, Gross DJ, Meirovitz A, Maimon O, Akhurst T, Michael M, Hicks RJ, Grozinsky-Glasberg S, Kong G. Zidan L, et al. J Nucl Med. 2022 Feb;63(2):218-225. doi: 10.2967/jnumed.120.260760. Epub 2021 May 28. J Nucl Med. 2022. PMID: 34049983 Free PMC article. Antitumor Activity of Axitinib in Lung Carcinoids: A Preclinical Study. Dicitore A, Gaudenzi G, Carra S, Cantone MC, Oldani M, Saronni D, Borghi MO, Grotteschi J, Persani L, Vitale G. Dicitore A, et al. Cancers (Basel). 2023 Nov 12;15(22):5375. doi: 10.3390/cancers15225375. Cancers (Basel). 2023. PMID: 38001635 Free PMC article. Thymic neuroendocrine neoplasms-what we know, what we don't know, and what to do about it. Lang M, Pausch TM, Anamaterou C. Lang M, et al. Transl Cancer Res. 2023 Jan 30;12(1):1-3. doi: 10.21037/tcr-22-2645. Epub 2023 Jan 9. Transl Cancer Res. 2023. PMID: 36760379 Free PMC article. No abstract available. Principles of medical and oncological management of giant masses of the mediastinum: a narrative review. Conci N, Grilli G, Dall'Olio FG. Conci N, et al. Mediastinum. 2022 Dec 25;6:35. doi: 10.21037/med-21-54. eCollection 2022. Mediastinum. 2022. PMID: 36582971 Free PMC article. Review. Implications of surgical intervention in patients with metastatic pulmonary carcinoid tumors: a SEER-based population study and propensity score matching comparative analysis. Liu C, Cong Z, Luo J, Wang Q, Qiang Y, Wu H, Shen Y. Liu C, et al. J Thorac Dis. 2025 Apr 30;17(4):2248-2264. doi: 10.21037/jtd-2024-1935. Epub 2025 Apr 27. J Thorac Dis. 2025. PMID: 40400982 Free PMC article. See all "Cited by" articles Publication types Clinical Trial, Phase II Actions Search in PubMed Search in MeSH Add to Search Comparative Study Actions Search in PubMed Search in MeSH Add to Search Multicenter Study Actions Search in PubMed Search in MeSH Add to Search Randomized Controlled Trial Actions Search in PubMed Search in MeSH Add to Search Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search MeSH terms Administration, Oral Actions Search in PubMed Search in MeSH Add to Search Adult Actions Search in PubMed Search in MeSH Add to Search Aged Actions Search in PubMed Search in MeSH Add to Search Antineoplastic Combined Chemotherapy Protocols / adverse effects Actions Search in PubMed Search in MeSH Add to Search Carcinoid Tumor / drug therapy* Actions Search in PubMed Search in MeSH Add to Search Carcinoid Tumor / mortality Actions Search in PubMed Search in MeSH Add to Search Carcinoid Tumor / pathology Actions Search in PubMed Search in MeSH Add to Search Delayed-Action Preparations / administration & dosage Actions Search in PubMed Search in MeSH Add to Search Disease-Free Survival Actions Search in PubMed Search in MeSH Add to Search Dose-Response Relationship, Drug Actions Search in PubMed Search in MeSH Add to Search Drug Administration Schedule Actions Search in PubMed Search in MeSH Add to Search Everolimus / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Everolimus / adverse effects Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Injections, Intramuscular Actions Search in PubMed Search in MeSH Add to Search Lung Neoplasms / drug therapy* Actions Search in PubMed Search in MeSH Add to Search Lung Neoplasms / mortality Actions Search in PubMed Search in MeSH Add to Search Lung Neoplasms / pathology Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Neoplasm Invasiveness / pathology Actions Search in PubMed Search in MeSH Add to Search Neoplasm Staging Actions Search in PubMed Search in MeSH Add to Search Patient Safety* Actions Search in PubMed Search in MeSH Add to Search Prognosis Actions Search in PubMed Search in MeSH Add to Search Prospective Studies Actions Search in PubMed Search in MeSH Add to Search Somatostatin / administration & dosage Actions Search in PubMed Search in MeSH Add to Search Somatostatin / adverse effects Actions Search in PubMed Search in MeSH Add to Search Somatostatin / analogs & derivatives* Actions Search in PubMed Search in MeSH Add to Search Survival Analysis Actions Search in PubMed Search in MeSH Add to Search Thymus Neoplasms / drug therapy* Actions Search in PubMed Search in MeSH Add to Search Thymus Neoplasms / mortality Actions Search in PubMed Search in MeSH Add to Search Thymus Neoplasms / pathology Actions Search in PubMed Search in MeSH Add to Search Treatment Outcome Actions Search in PubMed Search in MeSH Add to Search Substances Delayed-Action Preparations Actions Search in PubMed Search in MeSH Add to Search Somatostatin Actions Search in PubMed Search in MeSH Add to Search pasireotide Actions Search in PubMed Search in MeSH Add to Search Everolimus Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT01563354 Actions Search in PubMed Search in ClinicalTrials.gov Related information Cited in Books MedGen PubChem Compound (MeSH Keyword) LinkOut - more resources Full Text Sources ClinicalKey Elsevier Science Other Literature Sources scite Smart Citations Medical ClinicalTrials.gov MedlinePlus Health Information Miscellaneous NCI CPTAC Assay Portal
+
+Google Scholar Abstract (Long-term management of a patient with well-differentiated pulmonary neuroendocrine carcinoma: a case report): … NET, results from an upcoming phase IIclinicaltrial(LUNA,NCT01563354) will be of greatinterest. The multicenter 3-armtrialwill evaluate the efficacy and safety of pasireotide LAR or …
+
+Google Scholar Abstract (Evaluation of theefficacyandsafetyof lanreotide in combination with targeted therapies in patients with neuroendocrine tumours in clinical practice: a retrospective …): … Furthermore, LUNA (ClinicalTrials.govNCT01563354) will test theeffectivenessandsafetyof everolimus or pasireotide alone or in combination in adult patients with advanced …
+
+Google Scholar Abstract (How do theresultsof the RADIANT trials impact on the management of NET patients? A systematic review of publishedstudies): … (NCT01263353), now completed, conducted in patients with advanced metastatic NETsand in the 3-arm, phase II LUNAtrial(NCT01563354) which compares everolimus+pasireotide …
+
+Google Scholar Abstract (Diagnosis and treatment of bronchopulmonary neuroendocrine tumours: state of the art): …studies, extrapolation ofresultsfrom other tumour types and a few, sometimes underpoweredprospectivestudies… and phase IIIstudies(Identifiers: NCT 01524783;NCT01563354; NCT …
+
+Google Scholar Abstract ([HTML][HTML]Advances in the diagnosis and management of well-differentiated and intermediate-differentiated neuroendocrine tumors of the lung): … diagnosis, and additional adequately poweredcontrolledclinicaltrialsof patients with well-…-acting release (LUNA,NCT01563354). The lanreotide Phase IIItrialwill investigate whether …
+
+Google Scholar Abstract (First long-termresultson efficacy and safety of long-acting pasireotide in combination with everolimus in patients with advanced carcinoids (NET) of the lung/thymus …): … Twelve deaths were reported during thestudyand up to 56 days from laststudytreatment… signals being reported during thestudy. Post-hoc prognosticstudiesare ongoing. Clinical …
+
+Google Scholar Abstract (First long-term results onefficacyandsafetyof long-acting pasireotide in combination with everolimus in patients with advanced carcinoids (NET) of the lung/thymus …): … The LUNA trial aimed to assess theefficacyandsafetyof long-acting pasireotide (PAS)and EVE alone or in combination in pts with progressive bronchial or thymic carcinoids. Core …
+
+Google Scholar Abstract (Everolimus plus octreotide long-acting repeatable in patients with advanced lung neuroendocrine tumors: analysis of the phase 3, randomized, placebo-controlled …): … This exploratory subanalysis evaluated theefficacyandsafetyof everolimus plusoctreotide long-acting repeatable (LAR) in a cohort of patients with low- to intermediate-grade …
+
+Google Scholar Abstract (… on efficacy and safety of long-acting pasireotide in combination with everolimus in patients with advanced carcinoids (NET) of the lung/thymus: Phase II LUNAtrial.): … Most common AEs of any grade regardless of thestudydrugin PAS +EVE arm were …Twelve deaths were reported during thestudyand up to 56 days from laststudytreatment …
+
+Google Scholar Abstract (Efficacyandsafetyof long-acting pasireotide or everolimus alone or in combination in patients with advanced carcinoids of the lung and thymus (LUNA): an open …): … We aimed to assess theefficacyandsafetyof long-acting pasireotide and everolimus,administered alone or in combination, in patients with advanced carcinoids of the lung or thymus. …
+
+Google Scholar Abstract (Systemic treatment of advanced lung carcinoid tumors: show me the data!): … with a series of key recommendations forclinicaltrialsplanning. They recommended that …inclinicaltrials. Carcinoid tumors should be stratified by primary site in larger randomizedtrials…
+
+Google Scholar Abstract (Advancements in mTOR Inhibitors for Non-Small-Cell Lung Cancer: Mechanisms,Efficacy, and Future Perspectives): This account comprehensively reviews the recent advancements in the development ofmechanistic target of rapamycin (mTOR) inhibitors targeting non-small-cell lung cancer (NSCLC)…
+
+Google Scholar Abstract (… or everolimus alone or in combination in patients with advanced carcinoids of the lung and thymus (LUNA): an open-label, multicentre, randomised, phase 2trial): … We identified no prospectiveclinicaltrialsspecifically investigating the treatment ofadvanced lung or thymic neuroendocrine tumours or carcinoids. However, prospective …
+	•	Additional evidence from online sources: Primary outcome: Percentage of Participants Progression-free at 9 Months Based on Response Evaluation Criteria In Solid Tumors v1.1 (RECIST v1.1)
+Secondary outcomes: Summary of Progression-free Survival (PFS) Based on RECIST v1.1; Kaplan-Meier Estimates of Progression-free Survival (PFS); Summary of Time to Response (Months); Summary of Duration of Response (Months); 12-month Disease Control Rate (DCR) and Objective Response Rate (ORR); Biochemical Response Rate (BRR) for Chromogranin A (CgA) Levels; Duration of Biochemical Response (DBR), by Treatment (Full Analysis Set); Kaplan-Meier Event-free Probability Estimate Based on CgA Levels; Summary of Biochemical Progression-free Survival Based on CgA Levels by Treatment; Kaplan-Meier Event-free Probability Estimate for Biochemical Progression-free Survival Based on CgA Levels; Biochemical Response Rate (BRR) for 5HIAA Levels
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Efficacy and safety of long-acting pasireotide or everolimus alone or in combination in patients with advanced carcinoids of the lung and thymus (LUNA): an open-label, multicentre, randomised, phase 2 trial.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/29074099/', 'pmid': '29074099', 'content_scraped': True, 'content_length': 12636}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/29074099/
+Analysis notes: Found 1 listed publication(s); Listed publications appear to contain results; Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

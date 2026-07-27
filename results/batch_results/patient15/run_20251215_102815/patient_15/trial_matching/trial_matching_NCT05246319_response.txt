@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:45:52.545336
+Trial: 43/86
+NCT ID: NCT05246319
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criteria for disease alignment and clinical applicability. It evaluates the utility of preoperative imaging (DOPA-PET and DOTATOC) specifically for planning surgical lymph node dissection in patients with small bowel neuroendocrine tumors. This does not align with the patient's diagnosis of a metastatic, grade 3 pancreatic neuroendocrine tumor (Pan-NET) with a Ki-67 of 70%. Furthermore, the patient is currently presenting with diffuse liver metastases and is explicitly deemed not suitable for local therapies or surgery. Evidence regarding surgical planning for small bowel disease cannot inform systemic therapy decisions for an unresectable, refractory pancreatic malignancy."
+}

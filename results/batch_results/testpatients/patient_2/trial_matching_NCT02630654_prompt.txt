@@ -1,0 +1,177 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-09-17T11:44:45.663114
+Trial: 38/86
+NCT ID: NCT02630654
+Model: google/gemini-2.5-pro
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 70-year-old patient with a history of cataracts, ischemic heart disease (angina in 2004 with stent placement), and hiatal hernia.
+o	May 2025: Presented with progressive weight loss over 3 months (–5 kg).
+o	CT scan (May 30, 2025): 18×15 mm mass in the lower left lung lobe (LLL), multiple hepatic metastases, and an 11×10 mm pancreatic nodule in the head of the pancreas.
+o	Liver biopsy: Grade 2 neuroendocrine tumor (NET) with Ki67 15%, 1.6 mitoses/2 mm². Immunohistochemistry: TTF1–, CDX2–, chromogranin A+, synaptophysin+, progesterone+. Suggestive of pancreatic origin.
+o	Lung biopsy: NET with 1 mitosis/2 mm², TTF1–.
+The patient was referred to our center, and a Ga-68 PET/CT scan was requested for staging.
+2.	Current Clinical Status
+The patient reports moderate asthenia and hyporexia. Weight: 63 kg (7 kg below baseline). Height: 164 cm.
+•	Ga-68 PET/CT (July 30, 2025): LLL lung nodule (SUV 6, 17 mm); pancreatic head lesion (SUV 3); hepatic metastases in segments VIII (SUV 9), V (SUV 9), and perivesicular region (SUV 8); multiple bone metastases (SUV 12).
+Question for Tumorboard:
+What would be the most appropriate first-line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+### Clinical Assessment for Tumor Board
+
+**Patient:** 70-year-old male
+**Diagnosis:** Metastatic, well-differentiated, non-functioning Grade 2 neuroendocrine tumor (NET), probable pancreatic primary.
+
+**1. Summary of Clinical Presentation and Diagnosis:**
+This is a 70-year-old male with a history of ischemic heart disease who presented with progressive weight loss, asthenia, and hyporexia. 
+
+- **Histopathology:** A liver biopsy confirmed a Grade 2 neuroendocrine tumor with a Ki-67 of 15% and 1.6 mitoses/2 mm². This classification is consistent with the WHO 2019 criteria for G2 NETs (Ki-67 3-20%) as referenced in the ESMO guidelines (Table 1). The immunohistochemistry profile (Chromogranin A+, Synaptophysin+, TTF1-, CDX2-) is suggestive of a pancreatic origin, a conclusion supported by the ENETS 2023 guidelines which discuss the use of transcription factors like TTF-1 and CDX-2 to help determine the primary site.
+
+- **Staging and Tumor Burden:** The patient has de novo, widely metastatic disease. The Ga-68 PET/CT scan from July 30, 2025, demonstrates a high tumor burden with multisystemic involvement, including:
+    - A primary lesion in the head of the pancreas (SUV 3).
+    - A lung nodule in the LLL (SUV 6, 17 mm).
+    - Multiple hepatic metastases (SUV 8-9).
+    - Multiple bone metastases with high avidity (SUV 12).
+
+- **Somatostatin Receptor (SSTR) Status:** All identified tumor sites are SSTR-positive on Ga-68 PET/CT, confirming SSTR expression. This is a critical theranostic finding for potential future therapies.
+
+**2. Key Assessment Factors for First-Line Systemic Treatment:**
+
+The decision for first-line systemic therapy should be guided by several key factors as outlined in the provided ENETS and ESMO guidelines.
+
+- **Tumor Grade and Proliferation:** The tumor is a G2 NET with a Ki-67 of 15%. This proliferation index is in the upper range for G2 tumors. Both the ENETS and ESMO guidelines suggest that somatostatin analogues (SSAs) as an initial antiproliferative monotherapy are preferable for tumors with a lower Ki-67, typically <10% (ENETS Figure 1; ESMO Section: Somatostatin analogues).
+
+- **Tumor Burden and Symptoms:** The patient has a high tumor burden with extensive liver and bone metastases. He is also symptomatic with significant weight loss, asthenia, and hyporexia. The ENETS guidelines (Section 3.5) identify tumor load and tumor-related symptoms as crucial factors influencing treatment choice. The ESMO guidelines (Figure 4) stratify treatment for Pan-NET G1/G2 based on disease characteristics, placing patients with "Rapid growth/symptomatic/high tumour burden" into a category requiring more active systemic therapy.
+
+- **Disease Aggressiveness:** The combination of a high tumor burden at initial presentation, significant constitutional symptoms, and a Ki-67 of 15% indicates a biologically active and aggressive disease process. The ENETS guidelines (Section 3.4) state that patient selection favoring chemotherapy relies on features of "high mitotic activity (bulky disease, symptomatic disease due to high volume, or significant tumour growth)." This patient's clinical picture aligns with these characteristics.
+
+**3. Evaluation of Potential First-Line Therapies Based on Guidelines:**
+
+- **Chemotherapy:** Both the ENETS and ESMO guidelines support chemotherapy as a primary first-line option for this clinical scenario. 
+    - The ENETS guidelines (Section 3.4.1) state that temozolomide in combination with capecitabine may be considered as an upfront treatment for metastatic, progressive, and/or symptomatic G1-G2 NF-Pan-NETs.
+    - The ESMO guidelines (Figure 4) also list chemotherapy (STZ/5-FU or CAPTEM) as a primary option for Pan-NET G2 patients with high tumor burden and symptoms.
+
+- **Targeted Therapy (Everolimus/Sunitinib):** Everolimus and sunitinib are recommended as options for progressive G1 and G2 NF-Pan-NETs in both guidelines (ENETS Section 3.3.1; ESMO Figure 4). They represent a valid first-line consideration for this patient.
+
+- **Somatostatin Analogues (SSAs):** While the tumor is SSTR-positive, the guidelines suggest that the antiproliferative efficacy of SSA monotherapy may be limited in this context. The ENETS algorithm (Figure 1) notes that SSAs are "Preferably for Ki 67 < 10%," and the ESMO guidelines place SSAs in the treatment arm for "Slow growth" disease. Given the patient's high Ki-67, high tumor burden, and symptoms, SSAs as a sole first-line antiproliferative agent appear less suitable.
+
+- **Peptide Receptor Radionuclide Therapy (PRRT):** The patient's tumors are SSTR-avid, making him a potential candidate for PRRT. However, the provided guidelines position PRRT as a subsequent-line therapy. The ENETS guidelines (Section 3.2.2) recommend PRRT as a *second-line* treatment. Similarly, the ESMO guidelines (Section: PRRT) state that for Pan-NETs, PRRT should be used "after failure of approved therapies."
+
+**4. Conclusion of Assessment:**
+This patient presents with a high-risk, symptomatic, metastatic G2 pancreatic NET characterized by a high tumor burden and a Ki-67 of 15%. According to the ENETS 2023 and ESMO 2020 guidelines, the clinical priority is to initiate a systemic therapy capable of inducing tumor shrinkage and controlling symptoms. The patient's profile (high burden, symptoms, Ki-67 >10%) makes chemotherapy (e.g., temozolomide-capecitabine) or targeted therapy (everolimus or sunitinib) the most appropriate considerations for first-line treatment. PRRT is a valid future option but is recommended for subsequent lines of therapy.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+	•	Question for Tumorboard: What would be the most appropriate first-line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT02630654
+	•	Title: Study For Evaluating The Value Of A Multi Biomarker Approach In Metastatic GEP NETs
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: This is a non-interventional study. Patients will be treated with any intervention deemed appropriate by the patient's physician.
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Provision of written informed consent prior to any study related procedures.
+* Suspected of suffering from a metastatic midgut NET or Pancreatic non-functional NET (WHO grade 1 or 2, up to 10% Ki67).
+* Male or female aged 18 or older.
+
+Exclusion Criteria:
+
+* Previously treated for the NET disease with pharmaceutical treatment, Peptide Receptor Radionuclide Therapy (PRRT) or radiation therapy(surgery of primary tumour is accepted)
+* Has any mental condition rendering the subject unable to understand the nature, scope and possible consequences of the study, and/or evidence of an uncooperative attitude.
+* Suffering from a malignant disease or previously treated for a malignant disease within the last 6 months.
+* Suffering from a chronic inflammatory disease.
+* Suffering from a renal and/or liver disease. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This exploratory study aims to evaluate the diagnostic, prognostic and response predictive value of a multi biomarker strategy in patients with Gastroenteropancreatic Neuroendocrine Tumors (GEP NETs) originating from the midgut or pancreas. Using a recently developed methodology enabling the evaluation of 92 concomitant cancer biomarkers will provide an interesting approach to solve this question (Lundberg et al 2011).
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/32721955/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Kjellman M, Knigge U, Welin S, Thiis-Evensen E, Gronbaek H, Schalin-Jantti C, Sorbye H, Joergensen MT, Johanson V, Metso S, Waldum H, Soreide JA, Ebeling T, Lindberg F, Landerholm K, Wallin G, Salem F, Schneider MDP, Belusa R. A Plasma Protein Biomarker Strategy for Detection of Small Intestinal Neuroendocrine Tumors. Neuroendocrinology. 2021;111(9):840-849. doi: 10.1159/000510483. Epub 2020 Jul 28.
+• A Plasma Protein Biomarker Strategy for Detection of Small Intestinal Neuroendocrine Tumors. (PMID: 32721955)
+	•	Key findings from publications: PubMed Abstract: Small intestinal neuroendocrine tumors (SI-NETs) are difficult to diagnose in the early stage of disease. Current blood biomarkers such as chromogranin A (CgA) and 5-hydroxyindolacetic acid have low sensitivity (SEN) and specificity (SPE). This is a first preplanned interim analysis (Nordic non-interventional, prospective, exploratory, EXPLAIN study [NCT02630654]). Its objective is to investigate ...
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: Small intestinal neuroendocrine tumors (SI-NETs) are difficult to diagnose in the early stage of disease. Current blood biomarkers such as chromogranin A (CgA) and 5-hydroxyindolacetic acid have low sensitivity (SEN) and specificity (SPE). This is a first preplanned interim analysis (Nordic non-interventional, prospective, exploratory, EXPLAIN study [ NCT02630654 ]). Its objective is to investigate if a plasma protein multi-biomarker strategy can improve diagnostic accuracy (ACC) in SI-NETs. Methods: At the time of diagnosis, before any disease-specific treatment was initiated, blood was collected from patients with advanced SI-NETs and 92 putative cancer-related plasma proteins from 135 patients were analyzed and compared with the results of age- and sex-matched controls (n = 143), using multiplex proximity extension assay and machine learning techniques. Results: Using a random forest model including 12 top ranked plasma proteins in patients with SI-NETs, the multi-biomarker strategy showed SEN and SPE of 89 and 91%, respectively, with negative predictive value (NPV) and positive predictive value (PPV) of 90 and 91%, respectively, to identify patients with regional or metastatic disease with an area under the receiver operator characteristic curve (AUROC) of 99%. In 30 patients with normal CgA concentrations, the model provided a diagnostic SPE of 98%, SEN of 56%, and NPV 90%, PPV of 90%, and AUROC 97%, regardless of proton pump inhibitor intake. Conclusion: This interim analysis demonstrates that a multi-biomarker/machine learning strategy improves diagnostic ACC of patients with SI-NET at the time of diagnosis, especially in patients with normal CgA levels. The results indicate that this multi-biomarker strategy can be useful for early detection of SI-NETs at presentation and conceivably detect recurrence after radical primary resection. Keywords: Biomarker; Diagnosis; Machine learning; Neuroendocrine tumor. © 2020 S. Karger AG, Basel. PubMed Disclaimer Conflict of interest statement M.K.: grants from IPSEN, consulting fees from IPSEN and Novartis Healthcare. U.K.: grants from IPSEN and Novartis Healthcare, consulting fees from IPSEN. E.T.E.: research grants from Novartis, consulting fees from IPSEN, and speaker honoraria from Novartis, Ipsen, and Pfizer. H.G.: research grants from the Novo Nordisk Foundation, Intercept, Abbvie, and consulting fees from IPSEN and Novartis. C.S.J.:. grant from IPSEN, consulting fees from IPSEN, Kyowa Kirin, and Novartis. H.S.: received research support from Novartis, Amgen, Ipsen and honoraria from Novartis, Ipsen, Pfizer, Keocyt, AstraZeneca, Roche, Amgen, BMS, Hutchinson, Merck, Shire, and Celgene. H.W.: no conflicts of interest. V.J.: no conflicts of interest. M.T.J.: no conflicts of interest. S.W.: consulting fees from IPSEN and Novartis Healthcare. J.A.S.: consulting fee from Novartis. S.M.: speaker honoraria from Amgen, Ipsen, Novartis, Novo Nordisk, MSD, and Sanofi. T.E.: speaker honoraria from Ipsen, AstraZeneca, and Novo Nordisk Pharma, consulting fee from Amgen, educational grants by Novartis, Ipsen, and MSD Finland to the employer institution for international symposia. F.L.: speaker honorarium from Novartis. K.L:. no conflicts of interest. F.S.: no conflicts of interest. G.W.: no conflicts of interest. M.d.P.S.: IPSEN employee. R.B.: IPSEN employee. Figures Fig. 1 a–c Box plots of the… Fig. 1 a–c Box plots of the random forest performances (PPV, NPV, SEN, SPE, and… Fig. 1 a–c Box plots of the random forest performances (PPV, NPV, SEN, SPE, and ACC) in a 5-fold cross-validation including all patients, 92 plasma protein biomarkers, and CgA-log (model 1, [ a ]), including all patients and the 12 most frequently identified biomarkers ( b ) and including the control group and patients with SI-NETs and low CgA (≤ULN), 92 biomarkers, and excluding the CgA-log (model 2, [ c ]). PPV, positive predictive value; NPV, negative predictive value; SEN, sensitivity; SPE, specificity; ACC, accuracy; CgA, chromogranin A; SI-NET, small intestinal neuroendocrine tumor. Fig. 2 ROC curves and the corresponding… Fig. 2 ROC curves and the corresponding AUC values generated from a random forest model… Fig. 2 ROC curves and the corresponding AUC values generated from a random forest model analysis including the control group and patients with SI-NETs and the top 12 ranked identified plasma protein biomarkers. ROC, receiver operating characteristic; AUC, area under the curve. See this image and copyright information in PMC Similar articles Comparison of Two Modern Survival Prediction Tools, SORG-MLA and METSSS, in Patients With Symptomatic Long-bone Metastases Who Underwent Local Treatment With Surgery Followed by Radiotherapy and With Radiotherapy Alone. Lee CC, Chen CW, Yen HK, Lin YP, Lai CY, Wang JL, Groot OQ, Janssen SJ, Schwab JH, Hsu FM, Lin WH. Lee CC, et al. Clin Orthop Relat Res. 2024 Dec 1;482(12):2193-2208. doi: 10.1097/CORR.0000000000003185. Epub 2024 Jul 23. Clin Orthop Relat Res. 2024. PMID: 39051924 Signs and symptoms to determine if a patient presenting in primary care or hospital outpatient settings has COVID-19. Struyf T, Deeks JJ, Dinnes J, Takwoingi Y, Davenport C, Leeflang MM, Spijker R, Hooft L, Emperador D, Domen J, Tans A, Janssens S, Wickramasinghe D, Lannoy V, Horn SRA, Van den Bruel A; Cochrane COVID-19 Diagnostic Test Accuracy Group. Struyf T, et al. Cochrane Database Syst Rev. 2022 May 20;5(5):CD013665. doi: 10.1002/14651858.CD013665.pub3. Cochrane Database Syst Rev. 2022. PMID: 35593186 Free PMC article. 123I-MIBG scintigraphy and 18F-FDG-PET imaging for diagnosing neuroblastoma. Bleeker G, Tytgat GA, Adam JA, Caron HN, Kremer LC, Hooft L, van Dalen EC. Bleeker G, et al. Cochrane Database Syst Rev. 2015 Sep 29;2015(9):CD009263. doi: 10.1002/14651858.CD009263.pub2. Cochrane Database Syst Rev. 2015. PMID: 26417712 Free PMC article. Diagnostic value of circulating chromogranin a for neuroendocrine tumors: a systematic review and meta-analysis. Yang X, Yang Y, Li Z, Cheng C, Yang T, Wang C, Liu L, Liu S. Yang X, et al. PLoS One. 2015 Apr 20;10(4):e0124884. doi: 10.1371/journal.pone.0124884. eCollection 2015. PLoS One. 2015. PMID: 25894842 Free PMC article. Can a Liquid Biopsy Detect Circulating Tumor DNA With Low-passage Whole-genome Sequencing in Patients With a Sarcoma? A Pilot Evaluation. Anderson CJ, Yang H, Parsons J, Ahrens WA, Jagosky MH, Hsu JH, Patt JC, Kneisl JS, Steuerwald NM. Anderson CJ, et al. Clin Orthop Relat Res. 2025 Jan 1;483(1):39-48. doi: 10.1097/CORR.0000000000003161. Epub 2024 Jun 21. Clin Orthop Relat Res. 2025. PMID: 38905450 See all similar articles Cited by Predicting Survival of Patients With Rectal Neuroendocrine Tumors Using Machine Learning: A SEER-Based Population Study. Cheng X, Li J, Xu T, Li K, Li J. Cheng X, et al. Front Surg. 2021 Nov 3;8:745220. doi: 10.3389/fsurg.2021.745220. eCollection 2021. Front Surg. 2021. PMID: 34805260 Free PMC article. Artificial Intelligence and Machine Learning in the Diagnosis and Management of Gastroenteropancreatic Neuroendocrine Neoplasms-A Scoping Review. Pantelis AG, Panagopoulou PA, Lapatsanis DP. Pantelis AG, et al. Diagnostics (Basel). 2022 Mar 31;12(4):874. doi: 10.3390/diagnostics12040874. Diagnostics (Basel). 2022. PMID: 35453922 Free PMC article. Transparency and Representation in Clinical Research Utilizing Artificial Intelligence in Oncology: A Scoping Review. D'Amiano AJ, Cheunkarndee T, Azoba C, Chen KY, Mak RH, Perni S. D'Amiano AJ, et al. Cancer Med. 2025 Mar;14(5):e70728. doi: 10.1002/cam4.70728. Cancer Med. 2025. PMID: 40059400 Free PMC article. Prioritization of Fluorescence In Situ Hybridization (FISH) Probes for Differentiating Primary Sites of Neuroendocrine Tumors with Machine Learning. Pietan L, Vaughn H, Howe JR, Bellizzi AM, Smith BJ, Darbro B, Braun T, Casavant T. Pietan L, et al. Int J Mol Sci. 2023 Dec 12;24(24):17401. doi: 10.3390/ijms242417401. Int J Mol Sci. 2023. PMID: 38139230 Free PMC article. Artificial intelligence in small intestinal diseases: Application and prospects. Yang Y, Li YX, Yao RQ, Du XH, Ren C. Yang Y, et al. World J Gastroenterol. 2021 Jul 7;27(25):3734-3747. doi: 10.3748/wjg.v27.i25.3734. World J Gastroenterol. 2021. PMID: 34321840 Free PMC article. Review. See all "Cited by" articles References Yao JC, Hassan M, Phan A, Dagohoy C, Leary C, Mares JE, et al. One hundred years after “carcinoid”: epidemiology of and prognostic factors for neuroendocrine tumors in 35,825 cases in the United States. J Clin Oncol. 2008 Jun;26((18)):3063–72. - PubMed Lawrence B, Gustafsson BI, Chan A, Svejda B, Kidd M, Modlin IM. The epidemiology of gastroenteropancreatic neuroendocrine tumors. Endocrinol Metab Clin North Am. 2011;40((1)):1–18. - PubMed Fraenkel M, Kim M, Faggiano A, de Herder WW, Valk GD, Knowledge NETwork Incidence of gastroenteropancreatic neuroendocrine tumours: a systematic review of the literature. Endocr Relat Cancer. 2014;21((3)):R153–63. - PubMed Cetinkaya RB, Aagnes B, Thiis-Evensen E, Tretli S, Bergestuen DS, Hansen S. Trends in incidence of neuroendocrine neoplasms in Norway: a report of 16,075 cases from 1993 through 2010. Neuroendocrinology. 2017;104((1)):1–10. - PubMed Dasari A, Shen C, Halperin D, Zhao B, Zhou S, Xu Y, et al. Trends in the incidence, prevalence, and survival outcomes in patients with neuroendocrine tumors in the United States. JAMA Oncol. 2017 Oct;3((10)):1335–42. - PMC - PubMed Show all 42 references Publication types Multicenter Study Actions Search in PubMed Search in MeSH Add to Search Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search Observational Study Actions Search in PubMed Search in MeSH Add to Search MeSH terms Biomarkers / blood Actions Search in PubMed Search in MeSH Add to Search Duodenal Neoplasms / blood* Actions Search in PubMed Search in MeSH Add to Search Duodenal Neoplasms / diagnosis Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Ileal Neoplasms / blood* Actions Search in PubMed Search in MeSH Add to Search Ileal Neoplasms / diagnosis Actions Search in PubMed Search in MeSH Add to Search Jejunal Neoplasms / blood* Actions Search in PubMed Search in MeSH Add to Search Jejunal Neoplasms / diagnosis Actions Search in PubMed Search in MeSH Add to Search Machine Learning Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / blood* Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / diagnosis Actions Search in PubMed Search in MeSH Add to Search Substances Biomarkers Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT02630654 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen LinkOut - more resources Full Text Sources Europe PubMed Central Ovid Technologies, Inc. PubMed Central S. Karger AG, Basel, Switzerland Medical ClinicalTrials.gov MedlinePlus Health Information Research Materials NCI CPTC Antibody Characterization Program
+	•	Additional evidence from online sources: Primary outcome: Number of Participants With Progression Free Survival
+Secondary outcomes: Change in oncological biomarker levels
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'A Plasma Protein Biomarker Strategy for Detection of Small Intestinal Neuroendocrine Tumors.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/32721955/', 'pmid': '32721955', 'content_scraped': True, 'content_length': 11170}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/32721955/
+Analysis notes: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

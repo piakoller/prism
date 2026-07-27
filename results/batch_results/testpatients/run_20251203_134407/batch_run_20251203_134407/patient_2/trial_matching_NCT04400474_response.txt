@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:37:45.068300
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful clinical evidence for this patient because the provided published results are specific to the Adrenocortical Carcinoma (ACC) cohort, not the Neuroendocrine Tumor (NET) cohort. While the study design (Cohort 5) biologically aligns with the patient's diagnosis of a Grade 2 Pancreatic NET and addresses advanced disease, the input data explicitly indicates that results are available only for ACC or that no results were found for the NET population. Without efficacy or safety data specific to the NET cohort, it is not possible to evaluate the clinical utility of the Cabozantinib plus Atezolizumab combination for this patient. Furthermore, the patient is treatment-naïve (first-line), whereas the study investigates this combination in a refractory setting (post-progression), limiting its immediate applicability even if results were available."
+}

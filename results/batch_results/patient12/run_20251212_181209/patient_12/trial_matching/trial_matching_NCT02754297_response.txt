@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:26:55.872083
+Trial: 33/86
+NCT ID: NCT02754297
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant due to a critical mismatch in disease biology and target expression. The patient presents with significant tumor heterogeneity, specifically FDG-positive/Ga68-negative (SSTR-negative) peritoneal carcinomatosis. The study intervention, 177Lu-Octreotate (PRRT), targets Somatostatin Receptors (SSTR) and requires overexpression for efficacy. Since a substantial and aggressive portion of the patient's metastatic burden (peritoneal disease) lacks the therapeutic target, PRRT is not a viable comprehensive treatment strategy for her current state. Evidence regarding personalized dosimetry to optimize PRRT is not clinically applicable when the fundamental mechanism of action is compromised by the absence of the target in key metastatic lesions, necessitating a different systemic approach (e.g., chemotherapy) to control the SSTR-negative disease."
+}

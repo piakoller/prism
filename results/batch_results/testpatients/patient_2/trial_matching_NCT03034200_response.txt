@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T11:56:47.454624
+Trial: 72/86
+NCT ID: NCT03034200
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient. The primary reason is a failure in disease/biology alignment and evidence relevance. The published results from Anderson et al. demonstrate clinical benefit for ONC201 almost exclusively in pheochromocytoma-paraganglioma (PC-PG) and desmoplastic small round cell tumor (DSRCT), which are biologically distinct from the patient's G2 pancreatic NET. The cohort of \"other neuroendocrine tumors\" did not report any responses in tumor types similar to the patient's. Furthermore, the study evaluated patients in a refractory setting, which is not applicable to this patient's current clinical scenario requiring a first-line treatment decision for newly diagnosed, high-burden metastatic disease. Given the lack of any efficacy signal for pancreatic NETs, the study's evidence is not relevant and provides no actionable insights to guide this patient's therapy in either the first-line or subsequent-line settings."
+}
+```

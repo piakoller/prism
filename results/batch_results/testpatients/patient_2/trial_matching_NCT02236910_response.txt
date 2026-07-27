@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T11:39:13.512372
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful clinical evidence for this patient. The **Disease/Biology Alignment** is strong; the patient has a metastatic, well-differentiated G2 pancreatic NET (Ki-67 15%), which fits the study's population of progressive, well-differentiated NETs (Ki-67 <20%) with a GEP-NET primary. The **Treatment Context/Clinical Applicability** is also met. While the immediate question is for first-line therapy and PRRT is typically used second-line, it is a critical component of this patient's overall treatment plan. The study's evidence is highly relevant for this inevitable future decision. Most importantly, the **Evidence Quality and Relevance** is high because the publication provides actionable prognostic data. It identifies that a high burden of bone metastases (≥5) and liver metastases (>50% volume) are predictors of worse outcomes with PRRT. This patient has multiple bone and liver metastases, placing him in a higher-risk category. This evidence directly informs treatment planning by helping to risk-stratify the patient, manage expectations for PRRT efficacy, and guide discussions on treatment sequencing, such as whether to use chemotherapy first to reduce tumor burden before considering PRRT."
+}
+```

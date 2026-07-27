@@ -1,0 +1,18 @@
+=== REGENERATION ITERATION 1 - THERAPY RECOMMENDATION ===
+Timestamp: 2025-12-15T09:17:48.492590
+Patient ID: 13
+================================================================================
+
+Based on the patient's diagnosis of a progressive, DOTATOC-positive, Grade 3 (Ki-67 25%) well-differentiated pancreatic neuroendocrine tumor (NF-Pan-NET), the recommended therapy is **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE**.
+
+**Key Clinical Trial Evidence Supporting PRRT:**
+*   **NETTER-2 (NCT03972488):** This Phase 3 trial provides high-level evidence for patients with Grade 2 and Grade 3 (Ki-67 10–55%) GEP-NETs. The trial demonstrated that 177Lu-DOTATATE plus long-acting octreotide significantly extended median progression-free survival (PFS) to **22.8 months** compared to **8.5 months** with high-dose octreotide (stratified hazard ratio **0.276**; p<0.0001). This directly supports the efficacy of PRRT in this patient's specific tumor grade and biology.
+*   **COMPETE (NCT03049189):** Emerging topline results from this Phase 3 trial indicate a statistically significant improvement in PFS with 177Lu-edotreotide compared to everolimus in SSTR-positive GEP-NETs, supporting the prioritization of PRRT over mTOR inhibitors in the treatment sequence.
+*   **P-PRRT (NCT02754297):** This Phase 2 trial reported a high objective response rate in pancreatic NETs (84.6% partial or minor response) treated with personalized 177Lu-octreotate, reinforcing the utility of PRRT for pancreatic primaries.
+
+**Safety Prerequisites:**
+*   **Liver Function:** Given the patient's "high hepatic tumor burden," it is critical to **confirm preserved liver function (bilirubin/albumin) prior to initiation** due to the risk of hepatotoxicity. Trial NCT02236910 identifies high hepatic burden as a predictor of outcomes and toxicity risks.
+*   **Uptake:** Eligibility requires confirmation that DOTATOC PET uptake is higher than liver background in all target lesions.
+
+**Alternative Therapy:**
+If PRRT is not feasible, **Cabozantinib** is a recommended alternative based on the **CABINET trial (NCT03375320)**, which demonstrated a statistically significant improvement in progression-free survival compared to placebo in patients with progressive pancreatic neuroendocrine tumors who had received prior therapy. **Everolimus** is another guideline-supported option (ENETS/ESMO), though COMPETE results suggest PRRT may offer superior PFS.

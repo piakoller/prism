@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:23:37.191016
+Trial: 72/86
+NCT ID: NCT03034200
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful clinical evidence to guide treatment for this patient. Although the inclusion criteria mention \"PNET\" (likely referring to Primitive Neuroectodermal Tumor given the context with Ewing Sarcoma) and broad neuroendocrine tumors, the study primarily investigates and demonstrates efficacy in Pheochromocytoma-Paraganglioma (PC-PG) and Desmoplastic Small Round Cell Tumor (DSRCT). These malignancies are biologically distinct from the patient's well-differentiated Grade 2 Pancreatic Neuroendocrine Tumor (Pan-NET). The published results highlight a 50% response rate in PC-PG and responses in DSRCT/Neuroblastoma, but provide no specific efficacy data for Pan-NETs. Without evidence of activity in the relevant tumor type, the findings regarding the DRD2 antagonist ONC201 are not transferable to this patient's clinical scenario, despite the need for late-line systemic options with low toxicity."
+}

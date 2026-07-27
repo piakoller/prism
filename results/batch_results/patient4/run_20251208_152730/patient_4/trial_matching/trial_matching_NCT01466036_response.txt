@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T16:07:10.342435
+Trial: 69/86
+NCT ID: NCT01466036
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase II study (NCT01466036) provides meaningful clinical evidence for the patient's management. Biologically, the patient's well-differentiated G2 duodenal NET aligns with the study's \"carcinoid\" cohort (non-pancreatic NETs). Clinically, the patient has progressed on multiple lines of therapy, including somatostatin analogs, PRRT, and two tyrosine kinase inhibitors (surufatinib and sunitinib). The study evaluates cabozantinib, a TKI with a distinct target profile (MET/VEGFR/AXL), in patients with progressive NETs. The published results referenced (Phase II trial of cabozantinib) demonstrate the agent's activity and safety in this population, providing a vital evidence-based systemic therapy option for a patient who has exhausted standard TKI treatments and requires a new line of therapy for liver-only progression. While the patient has prior TKI exposure, the study evidence supports cabozantinib's efficacy in advanced NETs, making it a relevant consideration for sequential therapy."
+}

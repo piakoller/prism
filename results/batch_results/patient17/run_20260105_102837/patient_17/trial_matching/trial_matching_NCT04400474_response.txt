@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:14:06.238833
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "While the study design is biologically aligned and clinically applicable—including a specific cohort (Cohort 5) for well-differentiated digestive NETs progressing on somatostatin analogues—the provided published results do not offer actionable evidence for this patient. The input data only references results for Adrenocortical Carcinoma (ACC) or general reviews mentioning the trial. There are no specific efficacy or safety outcomes reported for the neuroendocrine tumor cohort. Without published results demonstrating benefit in the relevant NET population, this study cannot currently inform therapy recommendations or justify selecting this experimental combination (Cabozantinib + Atezolizumab) over standard guideline-based options like PRRT or Everolimus."
+}

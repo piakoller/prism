@@ -1,0 +1,12 @@
+=== RAW LLM RESPONSE ===
+Timestamp: 2025-12-03T13:38:32.908757
+Patient ID: 1
+Model: google/gemini-3-pro-preview
+==================================================
+
+<assessment>
+**Diagnostic Classification and Prognostic Factors**
+The patient presents with a locally advanced pancreatic mass, recently reclassified via pathology review as a Grade 2 Neuroendocrine Tumor (NET) with a Ki-67 index of 19%. According to ENETS 2023 and ESMO guidelines, this places the tumor at the upper limit of Grade 2 (cutoff <20%), bordering on Grade 3. The initial FDG-PET scan from January 2025 demonstrated a hypermetabolic mass with an SUV of 16. According to ENETS guidelines (Section 2.5.1), high FDG uptake is a strong poor prognostic factor and correlates with a higher grade and aggressive biological behavior. The presence of a central photopenic area suggestive of necrosis further supports the aggressive nature of this neoplasm.
+
+**Staging and Locoregional Extent**
+The disease is characterized as locally advanced (T4 equivalent per ENETS/AJCC staging due to invasion of adjacent structures). CT imaging from April and May 2025 confirms a large heterogeneous mass (10–12 cm) infiltrating the pancreatic tail, splenic hilum, left adrenal gland, and notably

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:30:54.506234
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for clinical relevance. First, the Disease/Biology Alignment is poor: the patient has a lung NET with known widespread metastases (liver, bone, nodes), whereas the study focuses exclusively on gastrointestinal or pancreatic NETs that are clinically non-metastatic (cM0) at preoperative imaging. Second, the Treatment Context is inapplicable: the patient previously underwent primary resection in 2018 and currently requires systemic therapy for progressive metastatic disease. This study evaluates the diagnostic utility of intraoperative ultrasound (IOUS) to detect occult liver metastases during primary tumor resection, a scenario that does not apply to a patient with established, bulky metastatic disease who is not a candidate for curative intent surgery. Finally, the Evidence Quality/Relevance is insufficient for this case because the study addresses diagnostic staging in early-stage disease rather than the efficacy of therapeutic interventions for advanced, progressive neuroendocrine neoplasms."
+}

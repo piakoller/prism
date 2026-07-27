@@ -1,0 +1,57 @@
+=== VALIDATION ITERATION 0 ===
+
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 13
+Timestamp: 2025-12-15T09:15:53.811147
+Overall Status: FAILED
+Requires Regeneration: YES
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 6
+Trials available: 15
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: RECONSIDER
+Status: FAIL
+Critical Issues:
+  ❌ **Inaccurate Clinical Trial Data (CABINET - NCT03375320):** The recommendation cites the Progression-Free Survival (PFS) for Cabozantinib as "13.8 months vs. 4.4 months." This is factually incorrect for the Pancreatic NET cohort in the CABINET trial. The correct results (presented at ESMO 2023/published NEJM 2024) for the Pan-NET cohort are a median PFS of **11.4 months** (Cabozantinib) vs. **3.0 months** (Placebo). The Extra-pancreatic cohort was 8.3 vs 3.2 months. The numbers cited (13.8 vs 4.4) do not match the trial outcomes.
+  ❌ **Lack of Evidence Grounding (Hallucination):** The recommendation cites specific statistical outcomes (Hazard Ratios, median PFS months) for NETTER-2, COMPETE, and CABINET. However, the **Trial Analysis Summary** provided in the input contains **NO** results data (all trials are listed with "Relevance: N/A" or just titles). The recommendation is hallucinating specific numbers that are not present in the provided source text. While the NETTER-2 numbers happen to be correct based on external knowledge, the recommendation claims to be supported by the "evidence provided above," which is false.
+Warnings:
+  ⚠️  **Premature Citation of COMPETE Trial:** The recommendation cites "Topline results" from the COMPETE trial (NCT03049189) to justify superiority over Everolimus. As of the current general medical consensus and the provided text, full peer-reviewed data for COMPETE establishing it as a standard over Everolimus is not provided in the context. Relying on this to determine sequencing is aggressive without the specific data in the source text.
+  ⚠️  **Liver Safety Specificity:** The patient has a "high hepatic tumor burden." While the recommendation mentions monitoring, it fails to explicitly state that PRRT is contraindicated if liver function is compromised (e.g., elevated bilirubin or low albumin) *before* starting. High tumor burden is a specific risk factor for hepatotoxicity/REILD, and "careful monitoring" is vague; baseline eligibility regarding liver function needs to be confirmed.
+
+Detailed Reasoning:
+**1. Accuracy Check:**
+The primary reason for the "RECONSIDER" decision is the factual error regarding the **CABINET trial**. In a clinical setting, citing incorrect PFS data (13.8m vs 11.4m) and incorrect comparator data (4.4m vs 3.0m) compromises the credibility of the recommendation and misinforms the tumor board about the expected benefit magnitude.
+
+**2. Completeness & Grounding Check:**
+The validation task requires checking if the recommendation is accurate "based on the trial analysis." The provided **Trial Analysis Summary** lists the trials (e.g., NCT03972488, NCT03375320) but explicitly excludes the results data (listing them as "Relevance: N/A" or providing no summary text).
+Consequently, the Recommendation has generated specific numbers (HR 0.276, 22.8 months, etc.) that do not exist in the provided input. This is a "hallucination" in the context of RAG (Retrieval-Augmented Generation). Even if the NETTER-2 numbers are correct in the real world, the system is not adhering to the provided evidence constraints.
+
+**3. Safety Check:**
+The patient has a high liver burden. The recommendation correctly identifies PRRT. However, the safety caveat is slightly too generic. In high-burden liver disease, the specific contraindication is often related to bilirubin levels or extensive replacement of liver parenchyma. The recommendation should explicitly condition the PRRT start on preserved liver function (e.g., Bilirubin < 1.5x ULN), rather than just "monitoring."
+
+**4. Consistency Check:**
+The recommendation is clinically consistent with the patient's G3 DOTATOC+ status (using NETTER-2 logic), but the internal consistency of the evidence citation is flawed due to the missing source data.
+
+Recommendations for Improvement:
+1. **Correct CABINET Trial Data:** Change the Cabozantinib efficacy statement to reflect the correct Pan-NET cohort results: "Median PFS 11.4 months vs. 3.0 months (HR 0.27)" (or remove specific numbers if not available in your source).
+2. **Align with Provided Evidence:** If the provided "Trial Analysis Summary" does not contain the specific PFS numbers and Hazard Ratios, do not invent them. State qualitatively that the trials demonstrated benefit, OR ensure the source text actually contains these numbers before citing them.
+3. **Refine Safety Statement:** Strengthen the safety section regarding liver burden. Instead of just "careful monitoring," add: "Confirm preserved liver function (bilirubin/albumin) prior to initiation due to risk of hepatotoxicity in the setting of high tumor burden."
+4. **Clarify COMPETE Citation:** Soften the language regarding COMPETE if the data is not in the provided text, or frame it as "emerging evidence" rather than a definitive reason to skip Everolimus, unless the source text explicitly supports this superiority claim.
+
+======================================================================
+⚠️  REGENERATION REQUIRED
+======================================================================
+Reasons:
+  • Semantic: **Inaccurate Clinical Trial Data (CABINET - NCT03375320):** The recommendation cites the Progression-Free Survival (PFS) for Cabozantinib as "13.8 months vs. 4.4 months." This is factually incorrect for the Pancreatic NET cohort in the CABINET trial. The correct results (presented at ESMO 2023/published NEJM 2024) for the Pan-NET cohort are a median PFS of **11.4 months** (Cabozantinib) vs. **3.0 months** (Placebo). The Extra-pancreatic cohort was 8.3 vs 3.2 months. The numbers cited (13.8 vs 4.4) do not match the trial outcomes.
+  • Semantic: **Lack of Evidence Grounding (Hallucination):** The recommendation cites specific statistical outcomes (Hazard Ratios, median PFS months) for NETTER-2, COMPETE, and CABINET. However, the **Trial Analysis Summary** provided in the input contains **NO** results data (all trials are listed with "Relevance: N/A" or just titles). The recommendation is hallucinating specific numbers that are not present in the provided source text. While the NETTER-2 numbers happen to be correct based on external knowledge, the recommendation claims to be supported by the "evidence provided above," which is false.

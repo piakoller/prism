@@ -1,0 +1,65 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - CUMULATIVE VALIDATION ISSUES
+================================================================================
+
+⚠️  ATTENTION: This is a REGENERATION with cumulative feedback from ALL previous attempts.
+The issues below include BOTH new issues AND unresolved issues from prior iterations.
+You MUST address EVERY issue listed - not just the newest ones.
+
+================================================================================
+PREVIOUS RECOMMENDATION THAT FAILED VALIDATION
+================================================================================
+
+**Primary Recommendation:** Re-treatment with **Peptide Receptor Radionuclide Therapy (PRRT)** using **177Lu-DOTATATE** (or 177Lu-DOTATOC).
+
+**Key Evidence Support:**
+*   **NCT03972488 (NETTER-2, Phase 3):** Demonstrated that 177Lu-DOTATATE significantly improves Progression-Free Survival (median PFS 22.8 months vs 8.5 months; HR 0.276) in patients with Grade 2 and Grade 3 (Ki-67 10–55%) well-differentiated SSTR-positive neuroendocrine tumors. This trial validates the biological efficacy of PRRT in high-grade, well-differentiated tumors matching this patient's profile (Ki-67 25%).
+*   **NCT02236910 (Registry Study):** Supports the utility of 177Lu-DOTATATE in progressive well-differentiated NETs, identifying high hepatic burden as a prognostic factor, which aligns with the patient's need for hepatic control.
+*   **NCT02754297 (Personalized PRRT):** Provides evidence for personalized dosimetry to optimize tumor dose while sparing critical organs, which is essential given the patient's age (82) and history of thrombocytopenia.
+
+**Alternative Option (if PRRT contraindicated by bone marrow status):** **Cabozantinib**.
+*   **NCT03375320 (CABINET, Phase 3):** Showed a significant PFS benefit in extra-pancreatic NETs (median PFS 8.4 months vs 3.9 months; HR 0.38). However, this is a second-line recommendation due to the high rate of Grade 3+ adverse events (62–65%), which poses a risk given the patient's history of poor tolerance to targeted therapies (Everolimus).
+
+⚠️  The above recommendation had validation issues. Review it carefully and
+correct the specific problems identified below while preserving correct sections.
+
+================================================================================
+ALL VALIDATION ISSUES (CUMULATIVE)
+================================================================================
+
+📊 Total issues to address: 2
+
+### SAFETY ISSUES:
+  ❌ Semantic: **Treatment Line (Re-treatment):** The patient is being considered for **re-treatment** (salvage PRRT) after a prior course in 2023. NETTER-2 investigated PRRT in patients who had not previously received peptide receptor radionuclide therapy. It does not provide evidence for the efficacy or safety (particularly cumulative marrow toxicity) of *re-treatment*.
+  ❌ Semantic: **Missing Evidence for Re-treatment:** The recommendation fails to cite evidence specifically supporting *re-treatment* (e.g., retrospective series or registry data on salvage PRRT). Relying on a first-course Phase 3 trial to justify re-treatment conceals the lack of high-level evidence for this specific, higher-risk clinical scenario.
+
+================================================================================
+SPECIFIC GUIDANCE FOR REGENERATION (FROM ALL ITERATIONS)
+================================================================================
+
+--- From Iteration 0 ---
+1. **Correct the Evidence Citation:** Do not state that NETTER-2 validates re-treatment or the bronchial NET profile. Use NETTER-2 *only* to support the biological rationale that PRRT is effective in G3 (high Ki-67) well-differentiated neuroendocrine tumors.
+2. **Clarify Re-treatment Rationale:** Explicitly state that the recommendation for *re-treatment* is based on the patient's prior favorable response and tolerance (clinical judgment) and/or registry data (e.g., NCT02236910), rather than the NETTER-2 trial.
+3. **Address Bronchial NET Extrapolation:** Acknowledge that while NETTER-2 and guidelines focus on GEP-NETs, efficacy in SSTR+ bronchial NETs is extrapolated based on biological similarity and retrospective data (as noted in the patient assessment).
+4. **Strengthen Safety Warning:** Emphasize that re-treatment carries cumulative marrow risks not present in the primary setting, making the suggested personalized dosimetry and strict hematologic monitoring critical, especially given the patient's age and prior thrombocytopenia.
+
+--- Current Iteration ---
+1. **Correct the Evidence Citation:** Do not state that NETTER-2 validates re-treatment or the bronchial NET profile. Use NETTER-2 *only* to support the biological rationale that PRRT is effective in G3 (high Ki-67) well-differentiated neuroendocrine tumors.
+2. **Clarify Re-treatment Rationale:** Explicitly state that the recommendation for *re-treatment* is based on the patient's prior favorable response and tolerance (clinical judgment) and/or registry data (e.g., NCT02236910), rather than the NETTER-2 trial.
+3. **Address Bronchial NET Extrapolation:** Acknowledge that while NETTER-2 and guidelines focus on GEP-NETs, efficacy in SSTR+ bronchial NETs is extrapolated based on biological similarity and retrospective data (as noted in the patient assessment).
+4. **Strengthen Safety Warning:** Emphasize that re-treatment carries cumulative marrow risks not present in the primary setting, making the suggested personalized dosimetry and strict hematologic monitoring critical, especially given the patient's age and prior thrombocytopenia.
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above - both new and persisting issues
+2. Base all recommendations on the evidence provided (trials, guidelines, assessment)
+3. Only cite trials and data that appear in the evidence sections above
+4. For standard therapies without trial evidence, cite the relevant guidelines
+5. Ensure clinical safety and appropriateness for this specific patient
+6. Maintain consistency with the patient's clinical status and history
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

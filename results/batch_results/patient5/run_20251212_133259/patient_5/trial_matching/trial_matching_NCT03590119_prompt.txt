@@ -1,0 +1,169 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-12T13:51:26.300096
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+A 65-year-old woman with a mixed neuroendocrine–non-neuroendocrine neoplasm (MiNEN) of the transverse colon (poorly differentiated NEC component, small-cell type, Ki-67 90%). In December 2024 underwent upfront en-bloc colectomy with jejunal/ileal resection (R0, pT4b pN2a). Received six cycles of carboplatin + etoposide between February and June 2025, achieving metabolic and morphological partial response with residual pararenal lesion. Biopsy of the residual mass in July 2025 showed chronic inflammation with no neoplasia.
+Current Clinical Status: ECOG performance status 0. Current weight 89 kg (previously 83 kg at last hospitalization in June 2025). Appetite increased. The patient reports no significant symptoms.
+Question for Tumorboard:
+After negative biopsy of the residual pararenal lesion, is there indication for further local treatment or surveillance?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Summary and Disease Characterization**
+The patient is a 65-year-old woman diagnosed with a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) of the transverse colon. The neoplasm is characterized by a poorly differentiated neuroendocrine carcinoma (NEC) component of the small-cell type with a very high proliferation index (Ki-67 90%). Following the ENETS 2023 guidelines (Q10), the prognosis of colorectal MiNEN is generally driven by the aggressive NEC component, and management strategies typically target this component. The initial staging was locally advanced (pT4b pN2a) following an R0 en-bloc colectomy in December 2024.
+
+**Treatment History and Response**
+The patient received adjuvant/palliative chemotherapy consisting of six cycles of carboplatin and etoposide between February and June 2025. This regimen aligns with ENETS recommendations (Q6 and Q10), which establish platinum-etoposide as the standard first-line treatment for the aggressive NEC component of MiNEN. The patient achieved a metabolic and morphological partial response, indicating chemosensitivity. Clinically, the patient has recovered well, presenting with an ECOG performance status of 0, significant weight gain (currently 89 kg), and no reported symptoms.
+
+**Assessment of Residual Pararenal Lesion**
+The primary clinical dilemma concerns the residual pararenal lesion. While imaging indicated a partial response, the biopsy performed in July 2025 revealed chronic inflammation with no evidence of neoplasia.
+*   **Pathological Interpretation:** The biopsy result suggests that the residual mass may represent necrotic or scar tissue resulting from the treatment response rather than viable tumor. This is consistent with the "chronic inflammation" finding.
+*   **Guideline Context:** According to ENETS 2023 (Q7), surgery for metastatic digestive NEC is generally not recommended due to poor prognosis and rapid disease progression. It is reserved for highly selected cases with limited disease where R0 resection is possible. In this case, the absence of viable tumor cells in the biopsy further weakens the indication for invasive local treatment (such as resection or ablation) at this time.
+
+**Surveillance Considerations**
+Given the negative biopsy and the high risk of recurrence associated with a Ki-67 of 90% and small-cell morphology, the clinical picture favors a rigorous surveillance strategy over immediate re-intervention.
+*   **Follow-up Intervals:** ESMO guidelines recommend imaging every 2–3 months for NEC G3.
+*   **Risk Assessment:** Despite the negative biopsy, the possibility of sampling error in the residual mass cannot be entirely excluded, though the current histological evidence points to a complete pathological response at that site. The patient's excellent performance status (ECOG 0) is a positive prognostic factor (ENETS Q3), allowing for potential future interventions should disease progression be detected.
+
+**Conclusion**
+The patient presents with a colonic MiNEN (small-cell NEC component, Ki-67 90%) in clinical and pathological remission regarding the residual pararenal lesion, based on the recent negative biopsy showing only chronic inflammation. There is currently no histological evidence of active disease to justify immediate local treatment (surgery or radiotherapy). The clinical assessment supports a strategy of close surveillance to monitor for potential recurrence or progression of the aggressive NEC component.
+
+Trial Search Recommendations:
+  - *Assessment of Residual Pararenal Lesion**
+  - **Pathological Interpretation:** The biopsy result suggests that the residual mass may represent necrotic or scar tissue resulting from the treatment response rather than viable tumor. This is consistent with the "chronic inflammation" finding.
+  - **Guideline Context:** According to ENETS 2023 (Q7), surgery for metastatic digestive NEC is generally not recommended due to poor prognosis and rapid disease progression. It is reserved for highly selected cases with limited disease where R0 resection is possible. In this case, the absence of viable tumor cells in the biopsy further weakens the indication for invasive local treatment (such as resection or ablation) at this time.
+  - *Surveillance Considerations**
+  - **Follow-up Intervals:** ESMO guidelines recommend imaging every 2–3 months for NEC G3.
+	•	Question for Tumorboard: After negative biopsy of the residual pararenal lesion, is there indication for further local treatment or surveillance?
+
+### STUDY DATA
+	•	NCT-ID: NCT03590119
+	•	Title: Intra-arterial Lutetium-177-dotatate for Treatment of Patients With Neuro-endocrine Tumor Liver Metastases
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Lutetium Lu 177-DOTATATE
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Patients must have given written informed consent.
+* Female or male aged 18 years and over.
+* Inoperable histologically proven neuro-endocrine tumor with indication for 177Lu-dotatate at enrollment time.
+* Well-differentiated neuro-endocrine tumor with a Ki67-index ≤20% and a mitotic count of ≤20.
+* Confirmed presence of somatostatin receptors on target lesions, based on somatostatin receptor imaging.
+* Life expectancy of 6 months or longer.
+* Eastern Cooperative Oncology Group (ECOG) performance score 0-1.
+* Hepatic metastases with at least one lesion ≥3 cm on cross sectional imaging in both the right and left liver lobe (i.e. left and right lobes are based on the hepatic arterial perfusion territory).
+* Presence of excessive liver metastases, defined as \>25% tumor load, with or without extrahepatic metastases.
+* Patients must have clinical or radiological progressive disease.
+* Negative pregnancy test for women of childbearing potential.
+
+Exclusion Criteria:
+
+* Any previous radioembolization, chemoembolization, or bland embolization, at any time, or surgery or radiofrequency ablation (or other ablative therapies) within 12 weeks prior to randomization in the study.
+* Prior external beam radiation therapy to the liver.
+* Interferons, Everolimus (mTOR-inhibitors) or other systemic therapies within 4 weeks prior to randomization in the study.
+* Any patient receiving treatment with short-acting Octreotide, which cannot be interrupted for 24 hours before and 24 hours after the administration of 177Lu-dotatate, or any patient receiving treatment with Octreotide LAR, which cannot be interrupted for at least 4 weeks before the administration of 177Lu-dotatate, unless the tumor uptake on target lesions observed by imaging during continued Octreotide LAR treatment is higher than normal liver uptake.
+* Any unresolved toxicity greater than National Cancer Institute (NCI), Common Terminology Criteria for Adverse Events (CTCAE version 4.03) grade 2 from previous anti-cancer therapy.
+* Serum bilirubin \> Upper Limit of Normal (ULN), serum albumin \<3.0 g/dL.
+* Glomerular filtration rate \<50 ml/min.
+* Hb \<5.5 mmol/L; leucocytes \<3.0x109/L; platelets \<100x109/L (at baseline; 75x109/L is sufficient for cycles 2-4).
+* Uncontrolled congestive heart failure (NYHA II, III, IV).
+* Uncontrolled diabetes mellitus.
+* Patients suffering from diseases with an increased chance of liver toxicity.
+* Patients suffering from psychic disorders that make a comprehensive judgement impossible, such as psychosis, hallucinations and/or depression. Patients who are declared incompetent.
+* Previous enrolment in the present study or previous treatment with 177Lu-dotatate.
+* Female patients who are not using an acceptable method of contraception (oral contraceptives, barrier methods, approved contraceptive implant, long-term injectable contraception, intrauterine device or tubal ligation) OR are less than 1 year postmenopausal or surgically sterile during their participation in this study (from the time they sign the consent form) to prevent pregnancy.
+* Male patients who are not surgically sterile or do not use an acceptable method of contraception during their participation in this study (from the time they sign the consent form) to prevent pregnancy in a partner.
+* Body weight over 150 kg.
+* Current spontaneous urinary incontinence.
+* Severe allergy for i.v. contrast (Visipaque®), used for CT evaluation and treatment angiography. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The objective is to investigate the impact of intra-arterial administration of 177Lu-dotatate on the intrahepatic biodistribution in patients with NET liver metastases. Our primary objective is to evaluate if there is a difference in post-treatment tumor-to-non-tumor (T/N) activity concentration ratio on SPECT/CT between the intra-arterial treated liver lobe and the intravenous treated liver lobe.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/32024533/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Ebbers SC, Braat AJAT, Moelker A, Stokkel MPM, Lam MGEH, Barentsz MW. Intra-arterial versus standard intravenous administration of lutetium-177-DOTA-octreotate in patients with NET liver metastases: study protocol for a multicenter, randomized controlled trial (LUTIA trial). Trials. 2020 Feb 5;21(1):141. doi: 10.1186/s13063-019-3888-0.
+• Intra-arterial versus standard intravenous administration of lutetium-177-DOTA-octreotate in patients with NET liver metastases: study protocol for a multicenter, randomized controlled trial (LUTIA trial). (PMID: 32024533)
+	•	Key findings from publications: PubMed Abstract: Lutetium-177-DOTA-octreotate ( 177 Lu-DOTATATE) significantly increases survival and response rates in patients with grade I and grade II neuroendocrine tumors (NETs). However, survival and response rates are significantly lower in patients with bulky liver metastases. Increasing the tumor-absorbed dose in liver metastases may improve response to 177 Lu-DOTATATE. The LUTIA (Lutetium Intra-Arterial...
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: Lutetium-177-DOTA-octreotate ( 177 Lu-DOTATATE) significantly increases survival and response rates in patients with grade I and grade II neuroendocrine tumors (NETs). However, survival and response rates are significantly lower in patients with bulky liver metastases. Increasing the tumor-absorbed dose in liver metastases may improve response to 177 Lu-DOTATATE. The LUTIA (Lutetium Intra-Arterial) study aims to increase the tumor-absorbed dose in liver metastases by intra-arterial (IA) administration of 177 Lu-DOTATATE, compared to conventional intravenous (IV) administration. Methods: A multicenter, within-patient randomized controlled trial (RCT) in 26 patients with progressive, liver-dominant, unresectable grade I or grade II NET will be conducted. Patients with bilobar bulky disease will be randomly allocated to receive IA treatment into either the left or the right hepatic artery. Using this approach, one liver lobe will be treated intra-arterially (first-pass effect), while the contralateral lobe will receive an intravenous treatment as a second-pass effect. The primary endpoint of this study is the difference in tumor-to-non-tumor ratio of 177 Lu-DOTATATE uptake between the two liver lobes on post-treatment SPECT/CT (IA versus IV). Secondary endpoints include absorbed dose in both liver lobes, tumor response, dose-response relationship, toxicity, uptake in extrahepatic lesions, and renal uptake. Discussion: This multicenter, within-patient RCT will investigate whether IA administration of 177 Lu-DOTATATE results in a higher activity concentration in liver metastases compared to IV administration. Trial registration: ClinicalTrials.gov, NCT03590119 . Registered on 17 July 2018. Keywords: 177Lu-DOTATATE; Intra-arterial; Lutetium-177-DOTATATE; NET; Neuroendocrine neoplasm; Neuroendocrine tumor; PRRT. PubMed Disclaimer Conflict of interest statement The authors declare that they have no competing interests. Figures Fig. 1 Treatment principle. a IA administration… Fig. 1 Treatment principle. a IA administration of 177 Lu-DOTATATE selectively in the right or… Fig. 1 Treatment principle. a IA administration of 177 Lu-DOTATATE selectively in the right or left hepatic artery (right in this figure). b Systemic circulation of 177 Lu-DOTATATE after IA administration. c Treatment of whole liver (second-pass) and other organs Fig. 2 SPIRIT figure showing all phases… Fig. 2 SPIRIT figure showing all phases of the trial, including the interventions and assessment… Fig. 2 SPIRIT figure showing all phases of the trial, including the interventions and assessment time points Fig. 3 Study procedures in the LUTIA… Fig. 3 Study procedures in the LUTIA trial Fig. 3 Study procedures in the LUTIA trial See this image and copyright information in PMC Similar articles Dosimetric analyses of intra-arterial versus standard intravenous administration of 177Lu-DOTATATE in patients of well differentiated neuroendocrine tumor with liver-dominant metastatic disease. Thakral P, Sen I, Das SS, Manda D, Cb V, Malik D. Thakral P, et al. Br J Radiol. 2021 Oct 1;94(1126):20210403. doi: 10.1259/bjr.20210403. Epub 2021 Aug 6. Br J Radiol. 2021. PMID: 34357794 Free PMC article. Intra-arterial peptide-receptor radionuclide therapy for neuro-endocrine tumour liver metastases: an in-patient randomised controlled trial (LUTIA). Ebbers SC, Barentsz MW, de Vries-Huizing DMV, Versleijen MWJ, Klompenhouwer EG, Tesselaar MET, Stokkel MPM, Brabander T, Hofland J, Moelker A, van Leeuwaarde RS, Smits MLJ, Braat AJAT, Lam MGEH. Ebbers SC, et al. Eur J Nucl Med Mol Imaging. 2024 Mar;51(4):1121-1132. doi: 10.1007/s00259-023-06467-y. Epub 2023 Oct 28. Eur J Nucl Med Mol Imaging. 2024. PMID: 37897617 Free PMC article. Clinical Trial. Additional hepatic 166 Ho-radioembolization in patients with neuroendocrine tumours treated with 177 Lu-DOTATATE; a single center, interventional, non-randomized, non-comparative, open label, phase II study (HEPAR PLUS trial). Braat AJAT, Kwekkeboom DJ, Kam BLR, Teunissen JJM, de Herder WW, Dreijerink KMA, van Rooij R, Krijger GC, de Jong HWAM, van den Bosch MAAJ, Lam MGEH. Braat AJAT, et al. BMC Gastroenterol. 2018 Jun 15;18(1):84. doi: 10.1186/s12876-018-0817-8. BMC Gastroenterol. 2018. PMID: 29902988 Free PMC article. Clinical Trial. Everolimus, lutetium-177 DOTATATE and sunitinib for advanced, unresectable or metastatic neuroendocrine tumours with disease progression: a systematic review and cost-effectiveness analysis. Mujica-Mota R, Varley-Campbell J, Tikhonova I, Cooper C, Griffin E, Haasova M, Peters J, Lucherini S, Talens-Bou J, Long L, Sherriff D, Napier M, Ramage J, Hoyle M. Mujica-Mota R, et al. Health Technol Assess. 2018 Sep;22(49):1-326. doi: 10.3310/hta22490. Health Technol Assess. 2018. PMID: 30209002 Free PMC article. Lutetium-177 DOTATATE: A Practical Review. Jia AY, Kashani R, Zaorsky NG, Spratt DE, Kiess AP, Michalski JM, Zoberi JE, Kim H, Baumann BC. Jia AY, et al. Pract Radiat Oncol. 2022 Jul-Aug;12(4):305-311. doi: 10.1016/j.prro.2022.02.002. Pract Radiat Oncol. 2022. PMID: 35717045 Review. See all similar articles Cited by Metastatic disease to the liver: Locoregional therapy strategies and outcomes. Zane KE, Cloyd JM, Mumtaz KS, Wadhwa V, Makary MS. Zane KE, et al. World J Clin Oncol. 2021 Sep 24;12(9):725-745. doi: 10.5306/wjco.v12.i9.725. World J Clin Oncol. 2021. PMID: 34631439 Free PMC article. Review. Targeted Cancer Therapy: What's New in the Field of Neuroendocrine Neoplasms? La Salvia A, Espinosa-Olarte P, Riesco-Martinez MDC, Anton-Pascual B, Garcia-Carbonero R. La Salvia A, et al. Cancers (Basel). 2021 Apr 3;13(7):1701. doi: 10.3390/cancers13071701. Cancers (Basel). 2021. PMID: 33916707 Free PMC article. Review. The LUTIA trial: a small step for PRRT, a giant leap for intra-arterial radionuclide therapy trial methodology. Deroose CM. Deroose CM. Eur J Nucl Med Mol Imaging. 2024 Mar;51(4):1133-1135. doi: 10.1007/s00259-023-06581-x. Eur J Nucl Med Mol Imaging. 2024. PMID: 38158435 No abstract available. Role of Radioembolization in Metastatic Neuroendocrine Tumors. Lewandowski RJ, Toskich BB, Brown DB, El-Haddad G, Padia SA. Lewandowski RJ, et al. Cardiovasc Intervent Radiol. 2022 Nov;45(11):1590-1598. doi: 10.1007/s00270-022-03206-y. Epub 2022 Aug 2. Cardiovasc Intervent Radiol. 2022. PMID: 35918431 Review. Selective Intra-Arterial Lutetium-177-Labeled Prostate-Specific Membrane Antigen Therapy for Castration-Resistant Prostate Cancer: Initial Results. Sayman HB, Gulsen F, Sager S, Akgun E, Yeyin N, Bilgic S, Toplutas KN, An F, Beytur F, Oklu R, Aras O. Sayman HB, et al. J Vasc Interv Radiol. 2022 Mar;33(3):342-345. doi: 10.1016/j.jvir.2021.10.016. Epub 2021 Oct 27. J Vasc Interv Radiol. 2022. PMID: 34715321 Free PMC article. Clinical Trial. No abstract available. See all "Cited by" articles References Pavel M, O’Toole D, Costa F, et al. ENETS Consensus Guidelines update for the management of distant metastatic disease of intestinal, pancreatic, bronchial neuroendocrine neoplasms (NEN) and NEN of unknown primary site. Neuroendocrinology. 2016;103(2):172–185. doi: 10.1159/000443167. - DOI - PubMed Kaltsas GA, Besser GM, Grossman AB. The diagnosis and medical management of advanced neuroendocrine tumors. Endocr Rev. 2004;25(3):458–511. doi: 10.1210/er.2003-0014. - DOI - PubMed Lepage C, Bouvier AM, Faivre J. Endocrine tumours: epidemiology of malignant digestive neuroendocrine tumours. Eur J Endocrinol. 2013;168(4):R77–R83. doi: 10.1530/EJE-12-0418. - DOI - PubMed Niederle MB, Hackl M, Kaserer K, Niederle B. Gastroenteropancreatic neuroendocrine tumours: the current incidence and staging based on the WHO and European Neuroendocrine Tumour Society classification: an analysis based on prospectively collected parameters. Endocr Relat Cancer. 2010;17(4):909–918. doi: 10.1677/ERC-10-0152. - DOI - PubMed Strosberg J, El-Haddad G, Wolin E, et al. Phase 3 trial of 177 Lu-Dotatate for midgut neuroendocrine tumors. N Engl J Med. 2017;376(2):125–135. doi: 10.1056/NEJMoa1607427. - DOI - PMC - PubMed Show all 44 references Publication types Clinical Trial Protocol Actions Search in PubMed Search in MeSH Add to Search Comparative Study Actions Search in PubMed Search in MeSH Add to Search MeSH terms Adult Actions Search in PubMed Search in MeSH Add to Search Antineoplastic Agents, Hormonal / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Clinical Trials, Phase II as Topic Actions Search in PubMed Search in MeSH Add to Search Coordination Complexes / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Hepatic Artery Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Infusions, Intra-Arterial Actions Search in PubMed Search in MeSH Add to Search Infusions, Intravenous Actions Search in PubMed Search in MeSH Add to Search Liver / diagnostic imaging Actions Search in PubMed Search in MeSH Add to Search Liver / pathology Actions Search in PubMed Search in MeSH Add to Search Liver / radiation effects Actions Search in PubMed Search in MeSH Add to Search Liver Neoplasms / diagnosis Actions Search in PubMed Search in MeSH Add to Search Liver Neoplasms / mortality Actions Search in PubMed Search in MeSH Add to Search Liver Neoplasms / radiotherapy* Actions Search in PubMed Search in MeSH Add to Search Liver Neoplasms / secondary Actions Search in PubMed Search in MeSH Add to Search Lutetium / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Multicenter Studies as Topic Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / diagnosis Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / mortality Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / radiotherapy* Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / secondary Actions Search in PubMed Search in MeSH Add to Search Octreotide / administration & dosage Actions Search in PubMed Search in MeSH Add to Search Octreotide / analogs & derivatives* Actions Search in PubMed Search in MeSH Add to Search Radioisotopes / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Randomized Controlled Trials as Topic Actions Search in PubMed Search in MeSH Add to Search Single Photon Emission Computed Tomography Computed Tomography Actions Search in PubMed Search in MeSH Add to Search Treatment Outcome Actions Search in PubMed Search in MeSH Add to Search Substances 177Lu-DOTA-octreotate Actions Search in PubMed Search in MeSH Add to Search Antineoplastic Agents, Hormonal Actions Search in PubMed Search in MeSH Add to Search Coordination Complexes Actions Search in PubMed Search in MeSH Add to Search Radioisotopes Actions Search in PubMed Search in MeSH Add to Search Lutetium Actions Search in PubMed Search in MeSH Add to Search Lutetium-177 Actions Search in PubMed Search in MeSH Add to Search Octreotide Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT03590119 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen PubChem Compound (MeSH Keyword) Grants and funding LSHM18016/Health~Holland LinkOut - more resources Full Text Sources BioMed Central Europe PubMed Central PubMed Central Medical ClinicalTrials.gov MedlinePlus Health Information Miscellaneous NCI CPTAC Assay Portal
+	•	Additional evidence from online sources: Primary outcome: The difference in post-treatment tumor-to-non-tumor (T/N) activity concentration ratio on SPECT/CT between the intra-arterial treated liver lobe and the intravenous treated liver lobe.
+Secondary outcomes: The difference in absolute values of mean tumor and healthy liver absorbed dose on post-treatment SPECT/CT between the intra-arterial treated liver lobe and the intravenous treated liver lobe; The difference in post-treatment tumor response between the intra-arterial treated liver lobe and the intravenous treated liver lobe; The dose-response relation between tumor absorbed dose and post-treatment tumor response; Toxicity and how toxicity is compared to historical controls; Sufficient uptake of 177Lu-dotatate in extrahepatic lesions; Sufficient uptake of 177Lu-dotatate in the contralateral lobe, compared to historical controls; The difference in kidney uptake of 177Lu-dotatate between the IA treated patients and historical controls
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Intra-arterial versus standard intravenous administration of lutetium-177-DOTA-octreotate in patients with NET liver metastases: study protocol for a multicenter, randomized controlled trial (LUTIA trial).', 'url': 'https://pubmed.ncbi.nlm.nih.gov/32024533/', 'pmid': '32024533', 'content_scraped': True, 'content_length': 11685}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/32024533/
+Analysis notes: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

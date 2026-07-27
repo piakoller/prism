@@ -1,0 +1,48 @@
+=== RECOMMENDATION VALIDATION RESPONSE ===
+Timestamp: 2025-12-12T14:53:35.017766
+Patient ID: 6
+Model: google/gemini-3-pro-preview
+==================================================
+
+<validation_decision>
+PASS
+</validation_decision>
+
+<critical_issues>
+None identified.
+</critical_issues>
+
+<warnings>
+1. **Applicability of NETTER-2 PFS Data:** The recommendation cites the median PFS of 22.8 months from the NETTER-2 trial. It should be noted that NETTER-2 largely evaluated 177Lu-Dotatate as a first-line treatment for G2/G3 NETs. As this patient is heavily pre-treated (4th line after Lanreotide, Sunitinib, TAE, Belzutifan), the expected PFS may be shorter than the trial benchmark. However, the selection of PRRT as the therapeutic strategy remains clinically appropriate and evidence-based.
+2. **Pre-PRRT Organ Function Assessment:** While the recommendation correctly conditions PRRT on SSTR status, it does not explicitly mention the need to verify renal and bone marrow function. Given the patient's history of multiple systemic therapies (including Sunitinib and Belzutifan), verifying adequate organ function is a standard safety requirement before administering radionuclide therapy.
+</warnings>
+
+<detailed_reasoning>
+The therapy recommendation has been validated as **PASS** based on the following criteria:
+
+1.  **Completeness:** The recommendation comprehensively addresses the patient's complex clinical picture. It prioritizes the investigation of the "migratory bone pain" which is a critical missing piece in the current assessment. It definitively addresses the question of Liver Transplantation (LT) feasibility, providing clear reasons for exclusion. It provides a primary systemic therapy option (PRRT) and a valid alternative (Cabozantinib) if PRRT is not feasible, covering the need for next-line management after Belzutifan failure.
+
+2.  **Accuracy:**
+    *   **Trial Evidence:** The citation of **NETTER-2 (NCT03972488)** is highly accurate for this specific patient profile. The patient's Ki-67 of 15% falls exactly within the G2/G3 (Ki-67 10-55%) population recruited in this trial, justifying the use of PRRT over chemotherapy in this "grey zone" of differentiation.
+    *   **Alternative Therapy:** The citation of **CABINET (NCT03375320)** is accurate. The trial demonstrated efficacy in pNETs progressing after prior targeted therapy, which matches the patient's history (post-Sunitinib, post-Belzutifan).
+    *   **Guidelines:** The interpretation of ESMO guidelines regarding Liver Transplantation is precise. The recommendation correctly identifies that a Ki-67 of 15% and active progression are exclusionary criteria for LT.
+
+3.  **Consistency:**
+    *   The recommendation aligns with the urgency level. The call for "Urgent" SSTR-PET/CT is consistent with the need to rule out extrahepatic disease before making further treatment decisions.
+    *   The rationale logically connects the patient's specific tumor biology (Ki-67 15%) to the selection of PRRT (supported by NETTER-2) rather than defaulting to chemotherapy, which is a sophisticated and appropriate clinical judgment.
+
+4.  **Safety:**
+    *   The recommendation safely excludes Liver Transplantation, avoiding a high-risk procedure in a patient who does not meet the strict biological and stability criteria.
+    *   It correctly identifies the need to rule out bone metastases, which would alter the staging and management.
+    *   It appropriately discontinues Belzutifan due to progression.
+
+5.  **Actionability:**
+    *   The steps are clear: 1. Imaging, 2. PRRT (if positive) or Cabozantinib (if negative).
+    *   The conditions for each step are explicitly defined.
+
+The recommendation is clinically sound, evidence-based, and safe.
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+No improvements needed.
+</recommendations_for_improvement>

@@ -1,0 +1,74 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**1. Primary Therapeutic Recommendation: Everolimus**\nWe recommend initiating systemic targeted therapy with **Everolimus** (10 mg daily, with potential dose adjustment for fragility).\n*   **Evidence:** **ENETS 2023 Guidelines (Q6, Q8)** and **ESMO Clinical Practice Guidelines** recommend Everolimus as a standard line of therapy for progressive G2 pNETs after failure of chemotherapy and/or PRRT.\n*   **Safety & Suitability:** Given the patient's fragility (78 years old), significant renal impairment (EGFR 38 ml/min), and history of renal toxicity, Everolimus is the preferred option. It is primarily metabolized by the liver with minimal renal elimination, making it safer for this patient compared to renally cleared chemotherapy or TKIs with high vascular/renal risks.\n\n**2. Alternative Therapeutic Recommendation: Cabozantinib**\nIf Everolimus is not tolerated or if the disease progresses further, **Cabozantinib** is the recommended alternative.\n*   **Evidence:** The Phase 3 **CABINET trial (NCT03375320)** provides high-level evidence for patients with advanced pNETs who have progressed on prior therapies (including PRRT). The trial results (PMID: 39282913) demonstrated a significant improvement in **Progression-Free Survival (PFS)** with Cabozantinib compared to placebo (**13.8 months vs. 4.4 months**; HR 0.23).\n*   **Dosing & Safety:** Due to the patient's fragility and the drug's side effect profile (hypertension, diarrhea, fatigue, which can impact renal perfusion), a reduced starting dose (e.g., 40 mg or 20 mg instead of the standard 60 mg) with strict monitoring of blood pressure and renal function is required.\n\n**3. Conditional Option: Dosimetry-Guided PRRT Retreatment**\nRetreatment with PRRT (177Lu-DOTATATE) may be considered **only if** the following conditions are met:\n*   **Diagnostic Confirmation:** A new **68Ga-SSTR-PET/CT** confirms high SSTR uptake (higher than liver background) in all progressive lesions (ENETS Q3, Q10).\n*   **Dosimetry Requirement:** Standard fixed-dose PRRT is not recommended due to the EGFR of 38 ml/min. Retreatment must be **dosimetry-guided** to ensure the renal dose remains within safe limits, as supported by evidence from **NCT02754297** (Personalized PRRT), which demonstrated that personalized activity based on dosimetry is safe and effective.\n\n**4. Therapies to AVOID (Contraindicated)**\n*   **Chemotherapy (Capecitabine/Temozolomide/Streptozotocin):** Strictly contraindicated. The patient has a documented history of renal toxicity with Capecitabine. Streptozotocin carries a high risk of renal dysfunction (ENETS Q10), which is unacceptable in a patient with CKD stage 3b and a solitary functional kidney physiology (nephrostomy).\n*   **Sunitinib:** While indicated in guidelines, it is less preferred than Everolimus in this specific setting due to the risk of hypertension and renal microvascular injury in a patient with pre-existing renal compromise.\n\n**5. Clinical Trial Consideration**\nScreening for **NCT05153772 (AlphaMedix, 212Pb-DOTAMTATE)** may be considered if the patient meets the strict renal eligibility criteria, as the trial analysis suggests a favorable safety profile. However, an EGFR of 38 ml/min is a likely exclusion criterion for many radionuclide trials, so protocol-specific renal thresholds must be verified first.",
+  "rationale_text": "The rationale prioritizes the safety of this **fragile 78-year-old patient** with significant **renal impairment (EGFR 38 ml/min)** and a history of **renal toxicity**.\n\n1.  **Safety-First Approach (Everolimus):** While the **CABINET trial (NCT03375320)** shows impressive efficacy for Cabozantinib in this setting (PFS 13.8 months), the drug's toxicity profile (Grade 3+ adverse events in ~60% of patients, including hypertension and diarrhea) poses a significant risk of acute-on-chronic kidney injury in this specific patient. **Everolimus** is selected as the primary recommendation because guidelines (ENETS/ESMO) support its use in progressive pNETs, and its hepatic metabolism avoids placing additional stress on the kidneys. It offers the best balance of tumor control and safety for a fragile patient.\n\n2.  **Evidence-Based Alternative (Cabozantinib):** Cabozantinib is included as a strong alternative based on the **CABINET trial** data (PMID: 39282913), which specifically included patients pre-treated with PRRT. It is a viable option if the patient's performance status allows, but requires careful dose titration to mitigate risks.\n\n3.  **Renal Protection (Avoiding Chemotherapy):** The patient experienced renal toxicity with Capecitabine previously. Re-challenging with Capecitabine or using nephrotoxic agents like Streptozotocin would likely precipitate renal failure. Therefore, cytotoxic chemotherapy is excluded.\n\n4.  **PRRT Considerations:** The patient has progressed after prior PRRT. Retreatment is a valid consideration per ENETS guidelines but is hazardous with an EGFR of 38 ml/min without **dosimetry**. The evidence from **NCT02754297** supports a personalized approach to mitigate renal toxicity. A new PET/CT is mandatory as the last scan (2019) is outdated and cannot confirm current receptor expression required for PRRT eligibility.",
+  "recommendation_summary": {
+    "primary_recommendation": "**1",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02754297",
+      "nct_id": "NCT02754297",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT05153772",
+      "nct_id": "NCT05153772",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02754297",
+        "trial_name": "Trial NCT02754297",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT05153772",
+        "trial_name": "Trial NCT05153772",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "Based on the patient's clinical assessment, the pre-analyzed trial evidence, and the ENETS/ESMO guidelines, here is the therapy recommendation.\n\n<therapy_recommendation>\n**1. Primary Therapeutic Recommendation: Everolimus**\nWe recommend initiating systemic targeted therapy with **Everolimus** (10 mg daily, with potential dose adjustment for fragility).\n*   **Evidence:** **ENETS 2023 Guidelines (Q6, Q8)** and **ESMO Clinical Practice Guidelines** recommend Everolimus as a standard line of therapy for progressive G2 pNETs after failure of chemotherapy and/or PRRT.\n*   **Safety & Suitability:** Given the patient's fragility (78 years old), significant renal impairment (EGFR 38 ml/min), and history of renal toxicity, Everolimus is the preferred option. It is primarily metabolized by the liver with minimal renal elimination, making it safer for this patient compared to renally cleared chemotherapy or TKIs with high vascular/renal risks.\n\n**2. Alternative Therapeutic Recommendation: Cabozantinib**\nIf Everolimus is not tolerated or if the disease progresses further, **Cabozantinib** is the recommended alternative.\n*   **Evidence:** The Phase 3 **CABINET trial (NCT03375320)** provides high-level evidence for patients with advanced pNETs who have progressed on prior therapies (including PRRT). The trial results (PMID: 39282913) demonstrated a significant improvement in **Progression-Free Survival (PFS)** with Cabozantinib compared to placebo (**13.8 months vs. 4.4 months**; HR 0.23).\n*   **Dosing & Safety:** Due to the patient's fragility and the drug's side effect profile (hypertension, diarrhea, fatigue, which can impact renal perfusion), a reduced starting dose (e.g., 40 mg or 20 mg instead of the standard 60 mg) with strict monitoring of blood pressure and renal function is required.\n\n**3. Conditional Option: Dosimetry-Guided PRRT Retreatment**\nRetreatment with PRRT (177Lu-DOTATATE) may be considered **only if** the following conditions are met:\n*   **Diagnostic Confirmation:** A new **68Ga-SSTR-PET/CT** confirms high SSTR uptake (higher than liver background) in all progressive lesions (ENETS Q3, Q10).\n*   **Dosimetry Requirement:** Standard fixed-dose PRRT is not recommended due to the EGFR of 38 ml/min. Retreatment must be **dosimetry-guided** to ensure the renal dose remains within safe limits, as supported by evidence from **NCT02754297** (Personalized PRRT), which demonstrated that personalized activity based on dosimetry is safe and effective.\n\n**4. Therapies to AVOID (Contraindicated)**\n*   **Chemotherapy (Capecitabine/Temozolomide/Streptozotocin):** Strictly contraindicated. The patient has a documented history of renal toxicity with Capecitabine. Streptozotocin carries a high risk of renal dysfunction (ENETS Q10), which is unacceptable in a patient with CKD stage 3b and a solitary functional kidney physiology (nephrostomy).\n*   **Sunitinib:** While indicated in guidelines, it is less preferred than Everolimus in this specific setting due to the risk of hypertension and renal microvascular injury in a patient with pre-existing renal compromise.\n\n**5. Clinical Trial Consideration**\nScreening for **NCT05153772 (AlphaMedix, 212Pb-DOTAMTATE)** may be considered if the patient meets the strict renal eligibility criteria, as the trial analysis suggests a favorable safety profile. However, an EGFR of 38 ml/min is a likely exclusion criterion for many radionuclide trials, so protocol-specific renal thresholds must be verified first.\n</therapy_recommendation>\n\n<rationale>\nThe rationale prioritizes the safety of this **fragile 78-year-old patient** with significant **renal impairment (EGFR 38 ml/min)** and a history of **renal toxicity**.\n\n1.  **Safety-First Approach (Everolimus):** While the **CABINET trial (NCT03375320)** shows impressive efficacy for Cabozantinib in this setting (PFS 13.8 months), the drug's toxicity profile (Grade 3+ adverse events in ~60% of patients, including hypertension and diarrhea) poses a significant risk of acute-on-chronic kidney injury in this specific patient. **Everolimus** is selected as the primary recommendation because guidelines (ENETS/ESMO) support its use in progressive pNETs, and its hepatic metabolism avoids placing additional stress on the kidneys. It offers the best balance of tumor control and safety for a fragile patient.\n\n2.  **Evidence-Based Alternative (Cabozantinib):** Cabozantinib is included as a strong alternative based on the **CABINET trial** data (PMID: 39282913), which specifically included patients pre-treated with PRRT. It is a viable option if the patient's performance status allows, but requires careful dose titration to mitigate risks.\n\n3.  **Renal Protection (Avoiding Chemotherapy):** The patient experienced renal toxicity with Capecitabine previously. Re-challenging with Capecitabine or using nephrotoxic agents like Streptozotocin would likely precipitate renal failure. Therefore, cytotoxic chemotherapy is excluded.\n\n4.  **PRRT Considerations:** The patient has progressed after prior PRRT. Retreatment is a valid consideration per ENETS guidelines but is hazardous with an EGFR of 38 ml/min without **dosimetry**. The evidence from **NCT02754297** supports a personalized approach to mitigate renal toxicity. A new PET/CT is mandatory as the last scan (2019) is outdated and cannot confirm current receptor expression required for PRRT eligibility.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-12T17:07:44.841232",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 9,
+    "trials_considered": 8,
+    "trials_included": 5,
+    "trials_excluded": 3,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251212_161742\\patient_9\\patient_9_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251212_161742\\patient_9\\patient_9_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251212_161742\\patient_9\\patient_9_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251212_161742\\patient_9\\patient_9_therapy_recommendation_reasoning.txt"
+  }
+}

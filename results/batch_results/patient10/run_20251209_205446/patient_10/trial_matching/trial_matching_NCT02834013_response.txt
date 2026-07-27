@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:15:42.620414
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase II DART trial (SWOG S1609) provides meaningful clinical evidence regarding the efficacy of dual checkpoint blockade (Ipilimumab plus Nivolumab) in neuroendocrine neoplasms, specifically stratified by tumor grade. The published results for the non-pancreatic neuroendocrine tumor cohort (Patel et al., 2020) demonstrated a significant dichotomy in response: while high-grade carcinomas achieved an objective response rate (ORR) of 44%, low/intermediate grade tumors showed a 0% ORR (0/14 patients). This patient has a Grade 2 (Ki-67 9%) well-differentiated Pan-NET, which aligns biologically with the low/intermediate grade population that failed to derive benefit. Although the specific results for the pancreatic cohort (Cohort 22) are cited but not detailed in the provided text, the strong negative signal in the biologically concordant low/intermediate grade non-pancreatic cohort allows for clinically justified extrapolation. This evidence is highly relevant for the tumor board's query regarding late-line options, as it supports ruling out this toxic and likely futile immunotherapy regimen for this fragile patient, thereby prioritizing other guideline-supported options such as PRRT retreatment (assuming SSTR-positivity) or Temozolomide-based chemotherapy."
+}

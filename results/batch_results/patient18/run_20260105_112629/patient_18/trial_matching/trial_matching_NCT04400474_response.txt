@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:50:36.496089
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study meets the disease alignment and treatment context criteria in terms of design, as it includes a specific cohort (Cohort 1) for well-differentiated Lung NETs progressing after prior therapies like PRRT, which matches the patient's clinical profile (Lung NET G2, post-SSA/PRRT progression). However, the study fails the evidence quality and relevance criterion because the provided published results are exclusively for the Adrenocortical Carcinoma (ACC) cohort. No efficacy or safety data are reported for the Lung NET cohort in the provided inputs. Clinical outcomes from ACC, a biologically distinct and aggressive adrenal malignancy, cannot be reasonably extrapolated to guide treatment for a well-differentiated Lung NET. Without specific results for the neuroendocrine tumor cohort, this study does not currently provide actionable evidence to inform therapy recommendations for this patient."
+}

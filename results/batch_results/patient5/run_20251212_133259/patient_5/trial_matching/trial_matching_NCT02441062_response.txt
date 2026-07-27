@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:57:48.209370
+Trial: 61/86
+NCT ID: NCT02441062
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Disease/Biology Alignment or Evidence Relevance for this specific patient. The patient has a Mixed Neuroendocrine-Non-neuroendocrine Neoplasm (MiNEN) driven by a high-grade, poorly differentiated NEC component (Ki-67 90%, small-cell type). The study evaluates the impact of 68Ga-DOTATOC PET/CT, an imaging modality targeting somatostatin receptors (SSTR), which is primarily the standard of care for well-differentiated, SSTR-positive NETs. High-grade NECs (especially with Ki-67 >55%) typically exhibit high glucose metabolism (FDG-avid) and low or absent SSTR expression, making FDG-PET the preferred functional imaging modality. The study's published results focus on repeatability and management changes in pancreatic and small bowel NETs or pediatric tumors, populations biologically distinct from aggressive colorectal NEC. Consequently, the evidence regarding the utility of SSTR-PET in those populations does not provide actionable insights for the surveillance or management of this patient's high-grade disease."
+}

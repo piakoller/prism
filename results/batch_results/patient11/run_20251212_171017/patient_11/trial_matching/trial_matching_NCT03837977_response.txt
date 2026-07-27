@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:29:58.057633
+Trial: 48/86
+NCT ID: NCT03837977
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study is relevant because it provides prospective evidence for second-line therapy in poorly differentiated extra-pulmonary neuroendocrine carcinoma (NEC), aligning perfectly with the patient's diagnosis (pancreatic NEC G3, Ki-67 95%). Although the patient is currently responding to first-line platinum-etoposide and the immediate question regards consolidation, the aggressive biology (Ki-67 95%) implies a high risk of recurrence/progression. The NET-02 trial establishes liposomal irinotecan (nal-IRI) plus 5-FU/folinic acid as a viable second-line standard (meeting the primary endpoint with a 6-month PFS rate of 29.6%), while docetaxel failed to meet efficacy targets. Understanding the efficacy of subsequent systemic options is essential for the tumor board when weighing the risks of surgical consolidation against the potential for salvage therapy upon progression. The patient meets the key biological inclusion criteria (extra-pulmonary NEC, prior platinum exposure), making these findings directly applicable to her future care path."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:53:32.958113
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context or Evidence Relevance. While the study involves pancreatic lesions including NETs (Disease Alignment), it evaluates a diagnostic artificial intelligence model for Endoscopic Ultrasound (EUS) to differentiate lesion types. This patient already has a confirmed diagnosis of metastatic Grade 3 pancreatic NET and is currently seeking therapeutic guidance for progressive disease after multiple lines of systemic therapy. A study focused on improving initial diagnostic accuracy via EUS-AI provides no actionable evidence regarding treatment efficacy, safety, or sequencing (e.g., PRRT vs. Everolimus) for a patient with established, refractory metastatic disease."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T10:42:27.258997
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context or Evidence Relevance. It evaluates a diagnostic artificial intelligence model for endoscopic ultrasound (EUS) to differentiate solid pancreatic lesions (e.g., carcinoma vs. NET vs. pancreatitis), whereas the patient has a long-established, histologically confirmed metastatic duodenal neuroendocrine tumor. The patient's primary tumor was resected in 2016, and the current clinical priority is determining the optimal therapeutic escalation (e.g., PRRT, Everolimus, or liver surgery) for progressive metastatic disease. Evidence regarding the diagnostic accuracy of an EUS-AI model for primary pancreatic lesions offers no actionable data on the efficacy, safety, or sequencing of systemic therapies or surgical interventions required for this patient's management."
+}

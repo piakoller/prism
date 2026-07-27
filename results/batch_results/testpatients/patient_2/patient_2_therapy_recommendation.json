@@ -1,0 +1,48 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "Based on a comprehensive review of the available evidence, the primary recommendation for this patient is **first-line systemic therapy with Peptide Receptor Radionuclide Therapy (PRRT) using [177Lu]Lu-DOTA-TATE, administered concurrently with a long-acting somatostatin analogue (SSA) such as octreotide LAR.**\n\nThis recommendation is based principally on the practice-changing results of the **NETTER-2 trial (NCT03972488)**.",
+  "rationale_text": "",
+  "recommendation_summary": {
+    "primary_recommendation": "Based on a comprehensive review of the available evidence, the primary recommendation for this patient is **first-line systemic therapy with Peptide Receptor Radionuclide Therapy (PRRT) using [177Lu]L...",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03972488",
+      "nct_id": "NCT03972488",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03972488",
+        "trial_name": "Trial NCT03972488",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\nBased on a comprehensive review of the available evidence, the primary recommendation for this patient is **first-line systemic therapy with Peptide Receptor Radionuclide Therapy (PRRT) using [177Lu]Lu-DOTA-TATE, administered concurrently with a long-acting somatostatin analogue (SSA) such as octreotide LAR.**\n\nThis recommendation is based principally on the practice-changing results of the **NETTER-2 trial (NCT03972488)**.\n</therapy_recommendation>\n\n<rationale>\nThe recommendation for first-line PRRT is based on the integration of the patient's specific clinical profile with the highest level of available clinical trial evidence, which in this case supersedes the treatment sequence suggested in the provided 2020-2023 guidelines.\n\n**1. Direct Applicability of Level 1 Evidence from the NETTER-2 Trial:**\nThe patient—a 70-year-old male with newly diagnosed, metastatic, SSTR-positive, Grade 2 pancreatic NET with a Ki-67 of 15%—is an exact match for the patient population studied in the **NETTER-2 trial (NCT03972488)**. This landmark, open-label, randomized, Phase 3 study evaluated first-line [177Lu]Lu-DOTA-TATE plus long-acting octreotide versus high-dose long-acting octreotide in patients with advanced G2/G3 GEP-NETs and a Ki-67 of ≥10%.\n- **Efficacy:** The trial demonstrated a profound and statistically significant improvement in the primary endpoint of progression-free survival (PFS). The median PFS was **22.8 months** in the [177Lu]Lu-DOTA-TATE arm compared to **8.5 months** in the control arm (HR 0.276; p<0.0001).\n- **Conclusion:** As stated in the trial publication, these results establish first-line [177Lu]Lu-DOTA-TATE as a new standard of care for this specific patient population.\n\n**2. Patient Suitability and Theranostic Confirmation:**\nThe patient is an ideal candidate for PRRT. The Ga-68 PET/CT scan confirms that all sites of disease, including extensive liver and bone metastases, are strongly SSTR-positive (SUVmax up to 12), which is a prerequisite for effective PRRT. The tumor uptake is well above the liver background, predicting a high likelihood of therapeutic benefit.\n\n**3. Superiority Over Other Guideline-Recommended First-Line Options:**\nWhile the clinical assessment correctly noted that older guidelines (ENETS 2023, ESMO 2020) favored chemotherapy or targeted therapy for this high-risk profile, the new evidence from NETTER-2 and other trials demonstrates the superiority of PRRT.\n- **vs. Targeted Therapy (Everolimus):** The **COMPETE trial (NCT03049189)**, a Phase 3 study, directly compared PRRT to everolimus (a standard first-line option) and found a significant PFS benefit in favor of PRRT. This provides further high-level evidence that PRRT is a more effective option than everolimus for this patient.\n- **vs. Chemotherapy (Capecitabine-Temozolomide):** The efficacy of temozolomide-based chemotherapy is highly dependent on the tumor's MGMT status, as demonstrated in the **MGMT-NET trial (NCT03217097)**. This trial showed a much higher objective response rate (ORR) in patients with dMGMT (deficient/methylated) tumors (best ORR 52.9%) compared to pMGMT tumors (11.5%). As the patient's MGMT status is unknown, the likelihood of response to chemotherapy is uncertain. PRRT offers a more predictable and robust benefit based on the confirmed SSTR-positivity and the Level 1 evidence from NETTER-2.\n- **vs. SSA Monotherapy:** Given the patient's high tumor burden, significant symptoms (asthenia, weight loss), and Ki-67 of 15%, SSA monotherapy is not an appropriate first-line antiproliferative treatment. Both the ENETS and ESMO guidelines reserve this approach for patients with low-burden, slow-growing disease, and typically a Ki-67 <10%.\n\n**4. Alignment with Treatment Goals:**\nThe patient is symptomatic with a high tumor burden. The primary treatment goal is to induce tumor shrinkage, control disease progression, and alleviate symptoms. PRRT has demonstrated objective response rates and is well-suited to achieve these goals, as supported by data from the **P-PRRT trial (NCT02754297)**, which showed high response rates in pancreatic NETs, and the **NETTER-2 trial** itself.\n\nIn conclusion, while historical guidelines positioned PRRT as a second-line or later therapy, the recent, high-quality evidence from the NETTER-2 trial has redefined the standard of care for patients with newly diagnosed, advanced, higher-proliferating (Ki-67 ≥10%) G2 GEP-NETs. First-line therapy with **[177Lu]Lu-DOTA-TATE** offers this patient the best-evidenced opportunity for prolonged progression-free survival.",
+  "metadata": {
+    "timestamp": "2025-09-17T12:03:49.158259",
+    "model_used": "google/gemini-2.5-pro",
+    "patient_id": 2,
+    "trials_considered": 19,
+    "trials_included": 8,
+    "trials_excluded": 11,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20250917_113119\\patient_2\\patient_2_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20250917_113119\\patient_2\\patient_2_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20250917_113119\\patient_2\\patient_2_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20250917_113119\\patient_2\\patient_2_therapy_recommendation_reasoning.txt"
+  }
+}

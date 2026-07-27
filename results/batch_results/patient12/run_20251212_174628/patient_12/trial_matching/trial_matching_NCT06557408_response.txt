@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:51:47.679979
+Trial: 7/86
+NCT ID: NCT06557408
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criteria for treatment context and clinical applicability. It evaluates postoperative pancreatic fistula following minimally invasive enucleation, a surgical technique specifically reserved for small, benign, or low-grade localized tumors where parenchymal preservation is feasible. This intervention is not applicable to the patient, who presents with a bulky (75 mm), locally invasive (splenic hilum, adrenal, kidney), and widely metastatic PanNET G2. Given the extensive tumor burden and invasion, enucleation is contraindicated; even if surgery were considered (e.g., debulking), it would require extensive resection (e.g., distal pancreatectomy with en bloc resection) rather than enucleation. Furthermore, the study focuses on surgical complications rather than the efficacy of systemic therapies, which is the primary clinical question for this patient requiring first-line treatment for unresectable disease."
+}

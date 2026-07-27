@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:49:57.141573
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context or Evidence Relevance. This is a diagnostic study evaluating the role of intraoperative ultrasound (IOUS) to detect occult liver metastases in patients classified as non-metastatic (cM0) prior to curative-intent surgery. The patient currently presents with widely metastatic disease (cM1) involving the liver, lung, and bones, confirmed by CT and PET/CT. Consequently, the clinical question focuses on selecting the best first-line systemic therapy (e.g., chemotherapy vs. PRRT vs. SSAs) for symptomatic, advanced disease, whereas the study focuses on surgical staging for localized disease. The detection of occult metastases is not relevant for a patient with already documented high-volume metastatic burden. Therefore, this study provides no actionable evidence to guide the systemic treatment decision for this patient."
+}

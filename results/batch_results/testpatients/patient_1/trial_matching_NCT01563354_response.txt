@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:41:54.837874
+Trial: 79/86
+NCT ID: NCT01563354
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "Despite a mismatch in the primary tumor site (patient: pancreas vs. study: lung/thymus), this study provides meaningful evidence. The disease biology is reasonably aligned, as both the patient and study population have well-differentiated NETs (Criterion 1). The treatment context is highly applicable, as the patient has locally advanced, unresectable disease for which systemic therapy is a primary consideration, either as a conversion strategy to enable surgery or as definitive treatment. The study evaluates everolimus and a somatostatin analog (SSA), both of which are standard therapeutic options for a G2 pancreatic NET (Criterion 2). Most importantly, the evidence is relevant and actionable (Criterion 3). While stronger data from RADIANT-3 supports everolimus monotherapy in PanNETs, this patient's aggressive features (Ki-67 19%, high FDG-avidity, symptomatic) may warrant a more intensive approach. The LUNA trial provides unique, prospective, randomized data on the combination of everolimus and an SSA, showing a higher 9-month progression-free rate for the combination (58.5%) versus monotherapy. This evidence directly informs the risk-benefit discussion of using a combination strategy to achieve better disease control in this high-risk patient, weighed against the increased toxicity."
+}
+```

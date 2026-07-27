@@ -1,0 +1,62 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Recommendation: Peptide Receptor Radionuclide Therapy (PRRT) Retreatment**\n*   **Regimen:** 177Lu-DOTATATE (Retreatment cycles, typically 2-4 cycles).\n*   **Evidence Basis:** **ENETS 2023 Guidance Paper (Section Q5)** and **ESMO Clinical Practice Guidelines**.\n*   **Prerequisites for Eligibility:**\n    1.  **Somatostatin Receptor Imaging (SRI):** A new **68Ga-DOTATATE/TOC PET/CT** must confirm high tracer uptake (SUVmax > liver background) in all metastatic liver lesions to ensure the target is still present and dominant.\n    2.  **Bone Marrow Reserve:** A thorough hematological assessment is mandatory. Although the patient currently has Grade 1 thrombocytopenia (recovering from Grade 2), guidelines warn of cumulative bone marrow toxicity (myelodysplasia/leukemia risk ~3-4%). Retreatment is contingent upon adequate reserve to withstand potential myelosuppression.\n    3.  **Renal Function:** Verification of adequate renal function is required per standard PRRT protocols.\n\n**Alternative Recommendation: Cabozantinib (Tyrosine Kinase Inhibitor)**\n*   **Status:** **High-Risk Alternative** (To be considered only if PRRT retreatment is not feasible due to low SRI uptake or bone marrow contraindications).\n*   **Evidence Basis:** **NCT03375320 (CABINET Phase 3 Trial)**.\n*   **Dosing Strategy:** Initiate at a **reduced starting dose** (e.g., 40 mg or 20 mg daily) rather than the standard 60 mg.\n    *   *Justification:* The patient has demonstrated intolerance to the TKI class (Sunitinib) with significant asthenia and thrombocytopenia. A reduced dose is critical to mitigate the risk of recurrent Grade 3-4 toxicity while attempting to leverage the efficacy seen in the CABINET trial.\n*   **Efficacy Data:** In the Phase 3 CABINET trial (NCT03375320), patients with advanced pancreatic neuroendocrine tumors (pNETs) who had progressed after prior therapy achieved a **median progression-free survival (PFS) of 13.8 months** with Cabozantinib compared to 4.4 months with placebo (Stratified HR 0.23; 95% CI, 0.12 to 0.42; P<0.001).",
+  "rationale_text": "**1. Prioritization of PRRT Retreatment (Safety and History):**\nThe decision to prioritize PRRT Retreatment over Cabozantinib is driven by the patient's **fragility** and **treatment history**.\n*   **Tolerability:** The patient previously received 4 cycles of PRRT (ending March 2021) with a best response of Stable Disease and no documented severe toxicity, whereas the recent course of Sunitinib (a TKI) was discontinued due to poor tolerance (asthenia, Grade 2 thrombocytopenia). Given the patient's current fragility, re-challenging with a therapy class that caused significant toxicity (TKI) is less favorable than re-treating with a modality that was previously well-tolerated.\n*   **Guideline Support:** The **ENETS 2023 Guidance Paper (Section Q5)** explicitly supports PRRT retreatment in patients who achieved disease control for at least one year following the initial course. This patient had a progression-free interval of >1 year (March 2021 to post-CAPOX progression), meeting the criteria for retreatment eligibility.\n*   **Contraindication Check:** While the patient has persistent Grade 1 thrombocytopenia, this is not an absolute contraindication for PRRT, provided bone marrow reserve is clinically assessed and deemed adequate.\n\n**2. Justification for Cabozantinib as a High-Risk Alternative:**\n*   **Addressing the Assessment Contradiction:** The clinical assessment initially advised against TKI re-challenge due to Sunitinib intolerance. However, the **CABINET trial (NCT03375320)** provides high-quality Phase 3 evidence specifically for patients who have progressed on prior therapies (including Everolimus and Sunitinib). The trial demonstrated a substantial PFS benefit (13.8 months vs 4.4 months).\n*   **Risk/Benefit Balance:** Consequently, Cabozantinib is included as an alternative *despite* the assessment's caution, but strictly as a **second-choice option**. It is reserved for a scenario where PRRT is contraindicated (e.g., loss of somatostatin receptor expression on PET). Due to the patient's history of TKI-induced asthenia and thrombocytopenia, standard dosing is likely unsafe; thus, a reduced starting dose is recommended to balance the proven efficacy against the high risk of overlapping toxicity.\n\n**3. Exclusion of Chemotherapy (Temozolomide):**\nWhile Temozolomide-based regimens (e.g., CAPTEM) are guideline-recommended (ENETS Q7), the patient's persistent thrombocytopenia and fragility following Sunitinib and CAPOX make further myelosuppressive cytotoxic chemotherapy a less attractive option compared to PRRT retreatment (which is targeted) or a dose-reduced TKI.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Recommendation: Peptide Receptor Radionuclide Therapy (PRRT) Retreatment**\n*   **Regimen:** 177Lu-DOTATATE (Retreatment cycles, typically 2-4 cycles)",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**Primary Recommendation: Peptide Receptor Radionuclide Therapy (PRRT) Retreatment**\n*   **Regimen:** 177Lu-DOTATATE (Retreatment cycles, typically 2-4 cycles).\n*   **Evidence Basis:** **ENETS 2023 Guidance Paper (Section Q5)** and **ESMO Clinical Practice Guidelines**.\n*   **Prerequisites for Eligibility:**\n    1.  **Somatostatin Receptor Imaging (SRI):** A new **68Ga-DOTATATE/TOC PET/CT** must confirm high tracer uptake (SUVmax > liver background) in all metastatic liver lesions to ensure the target is still present and dominant.\n    2.  **Bone Marrow Reserve:** A thorough hematological assessment is mandatory. Although the patient currently has Grade 1 thrombocytopenia (recovering from Grade 2), guidelines warn of cumulative bone marrow toxicity (myelodysplasia/leukemia risk ~3-4%). Retreatment is contingent upon adequate reserve to withstand potential myelosuppression.\n    3.  **Renal Function:** Verification of adequate renal function is required per standard PRRT protocols.\n\n**Alternative Recommendation: Cabozantinib (Tyrosine Kinase Inhibitor)**\n*   **Status:** **High-Risk Alternative** (To be considered only if PRRT retreatment is not feasible due to low SRI uptake or bone marrow contraindications).\n*   **Evidence Basis:** **NCT03375320 (CABINET Phase 3 Trial)**.\n*   **Dosing Strategy:** Initiate at a **reduced starting dose** (e.g., 40 mg or 20 mg daily) rather than the standard 60 mg.\n    *   *Justification:* The patient has demonstrated intolerance to the TKI class (Sunitinib) with significant asthenia and thrombocytopenia. A reduced dose is critical to mitigate the risk of recurrent Grade 3-4 toxicity while attempting to leverage the efficacy seen in the CABINET trial.\n*   **Efficacy Data:** In the Phase 3 CABINET trial (NCT03375320), patients with advanced pancreatic neuroendocrine tumors (pNETs) who had progressed after prior therapy achieved a **median progression-free survival (PFS) of 13.8 months** with Cabozantinib compared to 4.4 months with placebo (Stratified HR 0.23; 95% CI, 0.12 to 0.42; P<0.001).\n</therapy_recommendation>\n\n<rationale>\n**1. Prioritization of PRRT Retreatment (Safety and History):**\nThe decision to prioritize PRRT Retreatment over Cabozantinib is driven by the patient's **fragility** and **treatment history**.\n*   **Tolerability:** The patient previously received 4 cycles of PRRT (ending March 2021) with a best response of Stable Disease and no documented severe toxicity, whereas the recent course of Sunitinib (a TKI) was discontinued due to poor tolerance (asthenia, Grade 2 thrombocytopenia). Given the patient's current fragility, re-challenging with a therapy class that caused significant toxicity (TKI) is less favorable than re-treating with a modality that was previously well-tolerated.\n*   **Guideline Support:** The **ENETS 2023 Guidance Paper (Section Q5)** explicitly supports PRRT retreatment in patients who achieved disease control for at least one year following the initial course. This patient had a progression-free interval of >1 year (March 2021 to post-CAPOX progression), meeting the criteria for retreatment eligibility.\n*   **Contraindication Check:** While the patient has persistent Grade 1 thrombocytopenia, this is not an absolute contraindication for PRRT, provided bone marrow reserve is clinically assessed and deemed adequate.\n\n**2. Justification for Cabozantinib as a High-Risk Alternative:**\n*   **Addressing the Assessment Contradiction:** The clinical assessment initially advised against TKI re-challenge due to Sunitinib intolerance. However, the **CABINET trial (NCT03375320)** provides high-quality Phase 3 evidence specifically for patients who have progressed on prior therapies (including Everolimus and Sunitinib). The trial demonstrated a substantial PFS benefit (13.8 months vs 4.4 months).\n*   **Risk/Benefit Balance:** Consequently, Cabozantinib is included as an alternative *despite* the assessment's caution, but strictly as a **second-choice option**. It is reserved for a scenario where PRRT is contraindicated (e.g., loss of somatostatin receptor expression on PET). Due to the patient's history of TKI-induced asthenia and thrombocytopenia, standard dosing is likely unsafe; thus, a reduced starting dose is recommended to balance the proven efficacy against the high risk of overlapping toxicity.\n\n**3. Exclusion of Chemotherapy (Temozolomide):**\nWhile Temozolomide-based regimens (e.g., CAPTEM) are guideline-recommended (ENETS Q7), the patient's persistent thrombocytopenia and fragility following Sunitinib and CAPOX make further myelosuppressive cytotoxic chemotherapy a less attractive option compared to PRRT retreatment (which is targeted) or a dose-reduced TKI.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-09T21:34:43.386279",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 10,
+    "trials_considered": 10,
+    "trials_included": 7,
+    "trials_excluded": 3,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251209_205446\\patient_10\\patient_10_therapy_recommendation_reasoning.txt"
+  },
+  "regeneration_iteration": 2
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:57:00.261520
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient because the provided published results (PMID: 37429302) are exclusively from the sarcoma cohort of the AcSé Pembrolizumab basket trial. While the trial protocol originally included a cohort for rare neuroendocrine tumors, the specific evidence provided focuses on chordomas, alveolar soft part sarcomas, and other mesenchymal malignancies, which are biologically distinct from the patient's bronchial neuroendocrine tumor (NET). Consequently, the efficacy and safety data derived from the sarcoma population cannot be clinically extrapolated to inform treatment decisions for a well-differentiated, SSTR-positive NET, regardless of the patient's refractory status or potential eligibility for immunotherapy."
+}

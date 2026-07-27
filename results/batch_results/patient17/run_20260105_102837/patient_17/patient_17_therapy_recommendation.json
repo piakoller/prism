@@ -1,0 +1,74 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Recommendation: Escalation to Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE combined with continued Somatostatin Analogue (SSA)**\n\nGiven the radiological progression of the SSTR-positive duodenal neuroendocrine tumor, the recommended course is to escalate systemic therapy to **177Lu-DOTATATE PRRT**. Standard clinical practice and guideline recommendations support **continuing the Somatostatin Analogue (SSA)** maintenance therapy during and after PRRT to maintain symptom control (if functional) and for potential synergistic anti-proliferative effects.\n\n*   **Pre-treatment Verification:** Confirm that uptake in all new liver and lymph node metastases exceeds normal liver parenchyma uptake on the Gallium DOTATATE-PET/CT (liver SUVmax typically ~6–7) to ensure eligibility.\n*   **Supporting Evidence:**\n    *   **NCT02754297 (Phase 2, Personalized PRRT):** Demonstrated an **Objective Response Rate (ORR) of 23.1%** and stable disease in 33.3% of assessable patients with progressive NETs, supporting the efficacy of 177Lu-octreotate in this setting.\n    *   **NCT02236910 (Registry Study):** Provided real-world evidence for 177Lu-DOTATATE in progressive well-differentiated NETs, reporting a median **Progression-Free Survival (PFS) of 34.1 months**. While retrospective, this supports the potential for durable disease control.\n    *   **NCT03049189 (COMPETE Phase 3 Trial):** This ongoing trial directly compares PRRT against Everolimus in GEP-NETs, underscoring PRRT as a primary standard-of-care consideration for patients progressing on first-line therapy.\n\n**Alternative Systemic Options (Targeted Therapy)**\nIf PRRT is not feasible (e.g., due to renal/bone marrow compromise) or is declined, the following targeted therapies are recommended:\n\n1.  **Cabozantinib:**\n    *   **Evidence:** **NCT03375320 (CABINET Phase 3 Trial):** In patients with advanced extra-pancreatic NETs (epNETs) progressing on prior therapy, Cabozantinib significantly improved median PFS to **8.4 months** compared to 3.9 months with placebo (HR 0.38; 95% CI, 0.25 to 0.59). This trial provides high-level evidence specifically relevant to the patient's duodenal (extra-pancreatic) primary.\n2.  **Everolimus:**\n    *   **Evidence:** Supported by the **RADIANT-4** trial (referenced in ESMO guidelines), Everolimus is recommended for progressive non-functional GI-NETs.\n\n**Surgical Recommendation**\nA third liver resection is **not recommended** at this time. The rapid recurrence (within 2 years of the 2023 resection) and the appearance of new extra-hepatic disease (lymph node metastases) indicate that the disease is systemically driven, making local control insufficient.",
+  "rationale_text": "**Clinical Justification:**\nThe patient presents with a well-differentiated (Ki-67 2-3%), SSTR-positive duodenal NET that has progressed radiologically (new liver and lymph node metastases) despite maintenance SSA therapy and multiple prior liver resections. This clinical picture necessitates systemic therapy escalation rather than further local surgical intervention.\n\n**Guideline Alignment:**\n*   **ESMO (2020) & ENETS (2023):** Both guidelines identify PRRT as a valid therapeutic option for progressive, SSTR-positive NETs. ESMO specifically notes PRRT is recommended for patients with disease progression on SSAs. The guidelines also support the use of targeted therapies like Everolimus (RADIANT-4) or Cabozantinib (based on recent data like CABINET) in this setting.\n*   **SSA Continuation:** Discontinuing SSA is not recommended. Guidelines and standard practice (e.g., NETTER-1 paradigm) support continuing SSA alongside PRRT, particularly for functional tumors or to prevent hormonal crises, and potentially for additive tumor control.\n\n**Evidence Synthesis:**\n*   **PRRT:** The recommendation for PRRT is supported by prospective Phase 2 data (**NCT02754297**) showing objective responses and retrospective registry data (**NCT02236910**) suggesting favorable long-term survival outcomes. The ongoing **COMPETE trial (NCT03049189)** further validates PRRT as a key therapeutic modality to consider against targeted agents.\n*   **Cabozantinib:** The **CABINET trial (NCT03375320)** provides robust Phase 3 evidence for Cabozantinib in extra-pancreatic NETs, making it a strong alternative if PRRT is unsuitable.\n*   **Surgery:** Given the history of two prior liver resections (2018, 2023) and rapid recurrence with new extra-hepatic involvement, the likelihood of achieving durable disease control with surgery alone is low. Systemic therapy is required to address the multifocal nature of the progression.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Recommendation: Escalation to Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE combined with continued Somatostatin Analogue (SSA)**\n\nGiven the radiological progression of th...",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02754297",
+      "nct_id": "NCT02754297",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02236910",
+      "nct_id": "NCT02236910",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03049189",
+      "nct_id": "NCT03049189",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT02754297",
+        "trial_name": "Trial NCT02754297",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02236910",
+        "trial_name": "Trial NCT02236910",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03049189",
+        "trial_name": "Trial NCT03049189",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "Based on the clinical assessment of disease progression under Somatostatin Analogue (SSA) therapy and the patient's SSTR-positive status, the following therapy recommendation is proposed:\n\n<therapy_recommendation>\n**Primary Recommendation: Escalation to Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE combined with continued Somatostatin Analogue (SSA)**\n\nGiven the radiological progression of the SSTR-positive duodenal neuroendocrine tumor, the recommended course is to escalate systemic therapy to **177Lu-DOTATATE PRRT**. Standard clinical practice and guideline recommendations support **continuing the Somatostatin Analogue (SSA)** maintenance therapy during and after PRRT to maintain symptom control (if functional) and for potential synergistic anti-proliferative effects.\n\n*   **Pre-treatment Verification:** Confirm that uptake in all new liver and lymph node metastases exceeds normal liver parenchyma uptake on the Gallium DOTATATE-PET/CT (liver SUVmax typically ~6–7) to ensure eligibility.\n*   **Supporting Evidence:**\n    *   **NCT02754297 (Phase 2, Personalized PRRT):** Demonstrated an **Objective Response Rate (ORR) of 23.1%** and stable disease in 33.3% of assessable patients with progressive NETs, supporting the efficacy of 177Lu-octreotate in this setting.\n    *   **NCT02236910 (Registry Study):** Provided real-world evidence for 177Lu-DOTATATE in progressive well-differentiated NETs, reporting a median **Progression-Free Survival (PFS) of 34.1 months**. While retrospective, this supports the potential for durable disease control.\n    *   **NCT03049189 (COMPETE Phase 3 Trial):** This ongoing trial directly compares PRRT against Everolimus in GEP-NETs, underscoring PRRT as a primary standard-of-care consideration for patients progressing on first-line therapy.\n\n**Alternative Systemic Options (Targeted Therapy)**\nIf PRRT is not feasible (e.g., due to renal/bone marrow compromise) or is declined, the following targeted therapies are recommended:\n\n1.  **Cabozantinib:**\n    *   **Evidence:** **NCT03375320 (CABINET Phase 3 Trial):** In patients with advanced extra-pancreatic NETs (epNETs) progressing on prior therapy, Cabozantinib significantly improved median PFS to **8.4 months** compared to 3.9 months with placebo (HR 0.38; 95% CI, 0.25 to 0.59). This trial provides high-level evidence specifically relevant to the patient's duodenal (extra-pancreatic) primary.\n2.  **Everolimus:**\n    *   **Evidence:** Supported by the **RADIANT-4** trial (referenced in ESMO guidelines), Everolimus is recommended for progressive non-functional GI-NETs.\n\n**Surgical Recommendation**\nA third liver resection is **not recommended** at this time. The rapid recurrence (within 2 years of the 2023 resection) and the appearance of new extra-hepatic disease (lymph node metastases) indicate that the disease is systemically driven, making local control insufficient.\n</therapy_recommendation>\n\n<rationale>\n**Clinical Justification:**\nThe patient presents with a well-differentiated (Ki-67 2-3%), SSTR-positive duodenal NET that has progressed radiologically (new liver and lymph node metastases) despite maintenance SSA therapy and multiple prior liver resections. This clinical picture necessitates systemic therapy escalation rather than further local surgical intervention.\n\n**Guideline Alignment:**\n*   **ESMO (2020) & ENETS (2023):** Both guidelines identify PRRT as a valid therapeutic option for progressive, SSTR-positive NETs. ESMO specifically notes PRRT is recommended for patients with disease progression on SSAs. The guidelines also support the use of targeted therapies like Everolimus (RADIANT-4) or Cabozantinib (based on recent data like CABINET) in this setting.\n*   **SSA Continuation:** Discontinuing SSA is not recommended. Guidelines and standard practice (e.g., NETTER-1 paradigm) support continuing SSA alongside PRRT, particularly for functional tumors or to prevent hormonal crises, and potentially for additive tumor control.\n\n**Evidence Synthesis:**\n*   **PRRT:** The recommendation for PRRT is supported by prospective Phase 2 data (**NCT02754297**) showing objective responses and retrospective registry data (**NCT02236910**) suggesting favorable long-term survival outcomes. The ongoing **COMPETE trial (NCT03049189)** further validates PRRT as a key therapeutic modality to consider against targeted agents.\n*   **Cabozantinib:** The **CABINET trial (NCT03375320)** provides robust Phase 3 evidence for Cabozantinib in extra-pancreatic NETs, making it a strong alternative if PRRT is unsuitable.\n*   **Surgery:** Given the history of two prior liver resections (2018, 2023) and rapid recurrence with new extra-hepatic involvement, the likelihood of achieving durable disease control with surgery alone is low. Systemic therapy is required to address the multifocal nature of the progression.\n</rationale>",
+  "metadata": {
+    "timestamp": "2026-01-05T11:24:33.967889",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 17,
+    "trials_considered": 13,
+    "trials_included": 6,
+    "trials_excluded": 7,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20260105_102837\\patient_17\\patient_17_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20260105_102837\\patient_17\\patient_17_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20260105_102837\\patient_17\\patient_17_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20260105_102837\\patient_17\\patient_17_therapy_recommendation_reasoning.txt"
+  }
+}

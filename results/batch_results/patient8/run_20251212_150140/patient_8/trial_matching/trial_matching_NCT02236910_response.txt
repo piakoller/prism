@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:14:22.241327
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study aligns well with the patient's diagnosis of a progressive, SSTR-positive, well-differentiated GEP-NET (G2). The published results (Swiha et al., 2022) provide meaningful clinical evidence regarding the efficacy of Lu-177 DOTATATE in this specific population, reporting a median progression-free survival of 34.1 months. This evidence directly supports the clinical decision to initiate PRRT following progression on somatostatin analogs (the \"PRRT directly\" scenario considered by the tumor board) and validates the treatment path taken. Furthermore, the study identifies prognostic factors—specifically that GEP-NETs have better overall survival than non-GEP NETs and that lower liver tumor burden predicts better outcomes—which are relevant for this patient's prognosis given her ileal primary and partial response. While the study does not directly compare PRRT to upfront surgery, establishing the robust efficacy of PRRT is a necessary component for the multidisciplinary discussion on treatment sequencing."
+}

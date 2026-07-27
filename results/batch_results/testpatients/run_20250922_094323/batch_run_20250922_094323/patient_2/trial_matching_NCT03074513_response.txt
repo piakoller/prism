@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:31:40.440001
+Trial: 27/86
+NCT ID: NCT03074513
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful clinical evidence for this patient. The disease and biology show strong alignment, as the study's pancreatic NET (pNET) cohort specifically included patients with metastatic, well-differentiated Grade 1-2 tumors, matching this patient's G2 pNET diagnosis (Criterion 1 met). The treatment context is highly applicable to the patient's current scenario of requiring a first-line systemic therapy for symptomatic, high-burden, unresectable disease. The study allowed treatment-naive patients, providing direct evidence for this setting (Criterion 2 met). The published results in JAMA Oncology offer actionable evidence, reporting an objective response rate of 20% and a median progression-free survival of 14.9 months for the pNET cohort treated with atezolizumab and bevacizumab. This allows for a direct comparison against other first-line options like chemotherapy or targeted agents, informing the risk-benefit discussion, especially given the patient's cardiac history and the known risks of bevacizumab. Although the study required 'progressive disease,' the patient's symptomatic, high-burden presentation is a clinical surrogate for progression, making the evidence transferable (Criterion 3 met)."
+}
+```

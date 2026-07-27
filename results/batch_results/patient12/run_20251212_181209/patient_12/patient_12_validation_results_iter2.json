@@ -1,0 +1,59 @@
+{
+  "patient_id": 12,
+  "timestamp": "2025-12-12T18:53:27.808383",
+  "validation_steps": {
+    "structural": {
+      "status": "pass",
+      "critical_issues": [],
+      "warnings": [],
+      "checks_performed": [
+        "Required sections present",
+        "Minimum content length",
+        "Urgency alignment",
+        "Trial discussion completeness",
+        "Metadata completeness"
+      ]
+    },
+    "evidence_consistency": {
+      "status": "pass",
+      "critical_issues": [],
+      "warnings": [],
+      "evidence_stats": {
+        "trials_cited": 5,
+        "trials_available": 10,
+        "trials_included": 6,
+        "trials_excluded": 4,
+        "hallucinated_citations": 0
+      },
+      "checks_performed": [
+        "Trial citation accuracy",
+        "Hallucination detection",
+        "Inclusion/exclusion consistency",
+        "Coverage of included trials"
+      ]
+    },
+    "semantic": {
+      "status": "pass",
+      "decision": "PASS",
+      "critical_issues": [],
+      "warnings": [],
+      "detailed_reasoning": "The therapy recommendation is comprehensive, accurate, and demonstrates a high level of clinical reasoning appropriate for a complex case.\n\n1.  **Completeness**: The recommendation addresses all key aspects of the patient's presentation:\n    -   **Tumor Biology**: It correctly identifies the aggressive nature of the G2 tumor (Ki-67 20%, FDG-avidity) and selects a cytotoxic regimen (CAPTEM) capable of inducing response in bulky disease, aligning with ENETS/ESMO guidelines.\n    -   **Discordant Imaging**: It correctly identifies the critical contraindication for PRRT (Ga68-negative peritoneal disease), preventing the patient from receiving a therapy that would likely fail to control the peritoneal compartment.\n    -   **Safety/Patient Factors**: It appropriately addresses the postpartum status (breastfeeding contraindication), fertility preservation, and genetic risk factors (MEN1/VHL) given the young age.\n\n2.  **Accuracy**:\n    -   **Trial Evidence**: The citations of **NCT03375320 (CABINET)** for Cabozantinib and **NCT03972488 (NETTER-2)** for PRRT context are accurate. The reference to **NCT03217097 (MGMT-NET)** correctly reflects the emerging data regarding alkylating agent efficacy in NETs.\n    -   **Guidelines**: The interpretation of ENETS and ESMO guidelines regarding the use of chemotherapy for bulky/symptomatic Pan-NETs and the requirements for PRRT eligibility (homogenous SSTR expression) is correct.\n\n3.  **Consistency**:\n    -   The rationale logically supports the primary recommendation. It explains why standard G2 therapies (like SSAs or PRRT) are insufficient or contraindicated based on the specific imaging features (FDG+/Ga68- mismatch) and tumor burden.\n    -   The urgency of the recommendation matches the \"bulky\" and \"symptomatic\" clinical picture.\n\n4.  **Safety**:\n    -   **Streptozotocin Warning**: The recommendation shows excellent clinical nuance by flagging the risk of Streptozotocin in a patient with a history of gestational diabetes, as STZ is toxic to beta cells.\n    -   **Breastfeeding**: The explicit instruction to discontinue breastfeeding is a critical safety measure for a postpartum patient starting chemotherapy.\n\n5.  **Actionability**:\n    -   The recommendation provides clear first-line steps, alternative options, specific follow-up intervals (3 months), and necessary concurrent workups (thyroid US, genetics).\n\nThe recommendation is safe, evidence-based, and highly tailored to the specific nuances of the patient's imaging and history.",
+      "improvement_recommendations": "No improvements needed.",
+      "raw_response": "<validation_decision>\nPASS\n</validation_decision>\n\n<critical_issues>\nNone identified.\n</critical_issues>\n\n<warnings>\nNone identified.\n</warnings>\n\n<detailed_reasoning>\nThe therapy recommendation is comprehensive, accurate, and demonstrates a high level of clinical reasoning appropriate for a complex case.\n\n1.  **Completeness**: The recommendation addresses all key aspects of the patient's presentation:\n    -   **Tumor Biology**: It correctly identifies the aggressive nature of the G2 tumor (Ki-67 20%, FDG-avidity) and selects a cytotoxic regimen (CAPTEM) capable of inducing response in bulky disease, aligning with ENETS/ESMO guidelines.\n    -   **Discordant Imaging**: It correctly identifies the critical contraindication for PRRT (Ga68-negative peritoneal disease), preventing the patient from receiving a therapy that would likely fail to control the peritoneal compartment.\n    -   **Safety/Patient Factors**: It appropriately addresses the postpartum status (breastfeeding contraindication), fertility preservation, and genetic risk factors (MEN1/VHL) given the young age.\n\n2.  **Accuracy**:\n    -   **Trial Evidence**: The citations of **NCT03375320 (CABINET)** for Cabozantinib and **NCT03972488 (NETTER-2)** for PRRT context are accurate. The reference to **NCT03217097 (MGMT-NET)** correctly reflects the emerging data regarding alkylating agent efficacy in NETs.\n    -   **Guidelines**: The interpretation of ENETS and ESMO guidelines regarding the use of chemotherapy for bulky/symptomatic Pan-NETs and the requirements for PRRT eligibility (homogenous SSTR expression) is correct.\n\n3.  **Consistency**:\n    -   The rationale logically supports the primary recommendation. It explains why standard G2 therapies (like SSAs or PRRT) are insufficient or contraindicated based on the specific imaging features (FDG+/Ga68- mismatch) and tumor burden.\n    -   The urgency of the recommendation matches the \"bulky\" and \"symptomatic\" clinical picture.\n\n4.  **Safety**:\n    -   **Streptozotocin Warning**: The recommendation shows excellent clinical nuance by flagging the risk of Streptozotocin in a patient with a history of gestational diabetes, as STZ is toxic to beta cells.\n    -   **Breastfeeding**: The explicit instruction to discontinue breastfeeding is a critical safety measure for a postpartum patient starting chemotherapy.\n\n5.  **Actionability**:\n    -   The recommendation provides clear first-line steps, alternative options, specific follow-up intervals (3 months), and necessary concurrent workups (thyroid US, genetics).\n\nThe recommendation is safe, evidence-based, and highly tailored to the specific nuances of the patient's imaging and history.\n</detailed_reasoning>\n\n<recommendations_for_improvement>\nNo improvements needed.\n</recommendations_for_improvement>",
+      "checks_performed": [
+        "Completeness validation",
+        "Accuracy validation",
+        "Consistency validation",
+        "Safety validation",
+        "Actionability validation"
+      ],
+      "prompt_file": "batch_results/run_20251212_181209\\patient_12\\patient_12_validation_prompt.txt",
+      "response_file": "batch_results/run_20251212_181209\\patient_12\\patient_12_validation_response.txt"
+    }
+  },
+  "overall_status": "passed",
+  "requires_regeneration": false,
+  "regeneration_reasons": [],
+  "validation_summary": "======================================================================\nTHERAPY RECOMMENDATION VALIDATION REPORT\n======================================================================\nPatient ID: 12\nTimestamp: 2025-12-12T18:53:27.808383\nOverall Status: PASSED\nRequires Regeneration: NO\n\n--- STRUCTURAL VALIDATION ---\nStatus: PASS\n  ✅ No issues found\n\n--- EVIDENCE CONSISTENCY VALIDATION ---\nStatus: PASS\nTrials cited: 5\nTrials available: 10\nHallucinated citations: 0\n  ✅ No issues found\n\n--- SEMANTIC VALIDATION (LLM-BASED) ---\nDecision: PASS\nStatus: PASS\n\nDetailed Reasoning:\nThe therapy recommendation is comprehensive, accurate, and demonstrates a high level of clinical reasoning appropriate for a complex case.\n\n1.  **Completeness**: The recommendation addresses all key aspects of the patient's presentation:\n    -   **Tumor Biology**: It correctly identifies the aggressive nature of the G2 tumor (Ki-67 20%, FDG-avidity) and selects a cytotoxic regimen (CAPTEM) capable of inducing response in bulky disease, aligning with ENETS/ESMO guidelines.\n    -   **Discordant Imaging**: It correctly identifies the critical contraindication for PRRT (Ga68-negative peritoneal disease), preventing the patient from receiving a therapy that would likely fail to control the peritoneal compartment.\n    -   **Safety/Patient Factors**: It appropriately addresses the postpartum status (breastfeeding contraindication), fertility preservation, and genetic risk factors (MEN1/VHL) given the young age.\n\n2.  **Accuracy**:\n    -   **Trial Evidence**: The citations of **NCT03375320 (CABINET)** for Cabozantinib and **NCT03972488 (NETTER-2)** for PRRT context are accurate. The reference to **NCT03217097 (MGMT-NET)** correctly reflects the emerging data regarding alkylating agent efficacy in NETs.\n    -   **Guidelines**: The interpretation of ENETS and ESMO guidelines regarding the use of chemotherapy for bulky/symptomatic Pan-NETs and the requirements for PRRT eligibility (homogenous SSTR expression) is correct.\n\n3.  **Consistency**:\n    -   The rationale logically supports the primary recommendation. It explains why standard G2 therapies (like SSAs or PRRT) are insufficient or contraindicated based on the specific imaging features (FDG+/Ga68- mismatch) and tumor burden.\n    -   The urgency of the recommendation matches the \"bulky\" and \"symptomatic\" clinical picture.\n\n4.  **Safety**:\n    -   **Streptozotocin Warning**: The recommendation shows excellent clinical nuance by flagging the risk of Streptozotocin in a patient with a history of gestational diabetes, as STZ is toxic to beta cells.\n    -   **Breastfeeding**: The explicit instruction to discontinue breastfeeding is a critical safety measure for a postpartum patient starting chemotherapy.\n\n5.  **Actionability**:\n    -   The recommendation provides clear first-line steps, alternative options, specific follow-up intervals (3 months), and necessary concurrent workups (thyroid US, genetics).\n\nThe recommendation is safe, evidence-based, and highly tailored to the specific nuances of the patient's imaging and history.\n  ✅ No issues found\n\n======================================================================\n✅ VALIDATION PASSED - NO REGENERATION NEEDED\n======================================================================",
+  "iteration": 2
+}

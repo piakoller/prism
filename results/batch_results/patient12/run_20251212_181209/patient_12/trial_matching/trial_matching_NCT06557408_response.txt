@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:15:07.111626
+Trial: 7/86
+NCT ID: NCT06557408
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criteria for Disease Alignment and Treatment Context. The patient has a bulky (75 mm), invasive, metastatic pancreatic NET G2 requiring systemic therapy, whereas the study evaluates surgical complications (pancreatic fistula) following minimally invasive enucleation—a procedure reserved for small, benign, or low-grade localized tumors. Enucleation is contraindicated for this patient due to the large size, local invasion, and metastatic nature of the disease, which would require formal resection (e.g., distal pancreatectomy) if surgery were even an option. Furthermore, the study addresses surgical outcomes rather than the systemic treatment efficacy needed to answer the tumor board's question regarding first-line therapy for unresectable disease."
+}

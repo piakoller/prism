@@ -1,0 +1,74 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Recommendation:**\n**Active Surveillance** is recommended. No further local treatment (surgery or radiotherapy) or systemic maintenance therapy is indicated at this time.\n\n**Specific Management Plan:**\n1.  **Surveillance Interval:** Perform high-resolution Computed Tomography (CT) of the thorax, abdomen, and pelvis every **2–3 months**.\n2.  **No Local Intervention:** Do not resect or irradiate the residual pararenal lesion, as the biopsy confirmed absence of viable neoplasia.\n3.  **Future Contingency (Upon Recurrence):** Should disease recurrence be documented, the following second-line systemic therapy options are supported by clinical trial evidence:\n    *   **FOLFIRI (5-FU/leucovorin/irinotecan):** A standard second-line option based on the **PRODIGE 41-BEVANEC** trial (**NCT02820857**).\n    *   **Liposomal Irinotecan + 5-FU/Folinic Acid:** Validated as an active regimen in the **NET-02** trial (**NCT03837977**).\n    *   **Nivolumab + Ipilimumab:** A salvage option for high-grade non-pancreatic NEC based on the **DART** trial (**NCT02834013**).",
+  "rationale_text": "**1. Pathological Complete Response at Residual Site:**\nThe biopsy of the residual pararenal lesion in July 2025 demonstrated **chronic inflammation with no neoplasia**. This finding indicates that the residual mass likely represents necrotic tissue or scarring (treatment effect) rather than active disease. Consequently, local treatments such as surgery or radiotherapy would target non-viable tissue, offering no oncological benefit while exposing the patient to unnecessary morbidity.\n\n**2. Guideline Consensus (ENETS & ESMO):**\n*   **ENETS 2023 (Q7, Q10):** Surgery for metastatic digestive NEC is generally not recommended due to the aggressive nature of the disease and high risk of rapid systemic relapse. It is reserved for highly selected cases with limited, resectable viable disease. The negative biopsy removes the indication for resection.\n*   **ESMO Guidelines:** Due to the high proliferation rate (Ki-67 90%) and aggressive biology of NEC G3, the risk of recurrence is substantial. Guidelines recommend a strict follow-up schedule with cross-sectional imaging every **2–3 months** to detect systemic progression early.\n\n**3. Systemic Disease Biology:**\nThe prognosis of this MiNEN is driven by the small-cell NEC component (Ki-67 90%). This biology requires a systemic approach. The patient has successfully completed the standard maximum of 6 cycles of first-line platinum-etoposide. There is currently no evidence from randomized trials to support maintenance therapy (e.g., immunotherapy alone) in this setting, especially given the negative results of single-agent checkpoint inhibitors in NEC (e.g., Avelumab in **NCT03278379** and Pembrolizumab in **NCT03136055**).\n\n**4. Evidence-Based Future Planning:**\nWhile surveillance is the current recommendation, the high Ki-67 index warrants preparedness for second-line therapy:\n*   **Chemotherapy:** The **NET-02** trial (**NCT03837977**) demonstrated that **Liposomal Irinotecan + 5-FU/Folinic Acid** met its primary efficacy endpoint in progressive extra-pulmonary NEC, whereas Docetaxel did not. Similarly, **PRODIGE 41** (**NCT02820857**) established FOLFIRI as a standard second-line backbone.\n*   **Immunotherapy:** Dual checkpoint inhibition (**Nivolumab + Ipilimumab**) showed a promising 44% Overall Response Rate in non-pancreatic high-grade NEC in the **DART** trial (**NCT02834013**), making it a strong consideration for salvage therapy, unlike single-agent PD-1/PD-L1 inhibitors which have demonstrated limited activity.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Recommendation:**\n**Active Surveillance** is recommended",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02820857",
+      "nct_id": "NCT02820857",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03837977",
+      "nct_id": "NCT03837977",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02834013",
+      "nct_id": "NCT02834013",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT02820857",
+        "trial_name": "Trial NCT02820857",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03837977",
+        "trial_name": "Trial NCT03837977",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02834013",
+        "trial_name": "Trial NCT02834013",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**Recommendation:**\n**Active Surveillance** is recommended. No further local treatment (surgery or radiotherapy) or systemic maintenance therapy is indicated at this time.\n\n**Specific Management Plan:**\n1.  **Surveillance Interval:** Perform high-resolution Computed Tomography (CT) of the thorax, abdomen, and pelvis every **2–3 months**.\n2.  **No Local Intervention:** Do not resect or irradiate the residual pararenal lesion, as the biopsy confirmed absence of viable neoplasia.\n3.  **Future Contingency (Upon Recurrence):** Should disease recurrence be documented, the following second-line systemic therapy options are supported by clinical trial evidence:\n    *   **FOLFIRI (5-FU/leucovorin/irinotecan):** A standard second-line option based on the **PRODIGE 41-BEVANEC** trial (**NCT02820857**).\n    *   **Liposomal Irinotecan + 5-FU/Folinic Acid:** Validated as an active regimen in the **NET-02** trial (**NCT03837977**).\n    *   **Nivolumab + Ipilimumab:** A salvage option for high-grade non-pancreatic NEC based on the **DART** trial (**NCT02834013**).\n\n</therapy_recommendation>\n\n<rationale>\n**1. Pathological Complete Response at Residual Site:**\nThe biopsy of the residual pararenal lesion in July 2025 demonstrated **chronic inflammation with no neoplasia**. This finding indicates that the residual mass likely represents necrotic tissue or scarring (treatment effect) rather than active disease. Consequently, local treatments such as surgery or radiotherapy would target non-viable tissue, offering no oncological benefit while exposing the patient to unnecessary morbidity.\n\n**2. Guideline Consensus (ENETS & ESMO):**\n*   **ENETS 2023 (Q7, Q10):** Surgery for metastatic digestive NEC is generally not recommended due to the aggressive nature of the disease and high risk of rapid systemic relapse. It is reserved for highly selected cases with limited, resectable viable disease. The negative biopsy removes the indication for resection.\n*   **ESMO Guidelines:** Due to the high proliferation rate (Ki-67 90%) and aggressive biology of NEC G3, the risk of recurrence is substantial. Guidelines recommend a strict follow-up schedule with cross-sectional imaging every **2–3 months** to detect systemic progression early.\n\n**3. Systemic Disease Biology:**\nThe prognosis of this MiNEN is driven by the small-cell NEC component (Ki-67 90%). This biology requires a systemic approach. The patient has successfully completed the standard maximum of 6 cycles of first-line platinum-etoposide. There is currently no evidence from randomized trials to support maintenance therapy (e.g., immunotherapy alone) in this setting, especially given the negative results of single-agent checkpoint inhibitors in NEC (e.g., Avelumab in **NCT03278379** and Pembrolizumab in **NCT03136055**).\n\n**4. Evidence-Based Future Planning:**\nWhile surveillance is the current recommendation, the high Ki-67 index warrants preparedness for second-line therapy:\n*   **Chemotherapy:** The **NET-02** trial (**NCT03837977**) demonstrated that **Liposomal Irinotecan + 5-FU/Folinic Acid** met its primary efficacy endpoint in progressive extra-pulmonary NEC, whereas Docetaxel did not. Similarly, **PRODIGE 41** (**NCT02820857**) established FOLFIRI as a standard second-line backbone.\n*   **Immunotherapy:** Dual checkpoint inhibition (**Nivolumab + Ipilimumab**) showed a promising 44% Overall Response Rate in non-pancreatic high-grade NEC in the **DART** trial (**NCT02834013**), making it a strong consideration for salvage therapy, unlike single-agent PD-1/PD-L1 inhibitors which have demonstrated limited activity.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-12T14:07:38.816090",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 5,
+    "trials_considered": 7,
+    "trials_included": 7,
+    "trials_excluded": 0,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251212_133259\\patient_5\\patient_5_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251212_133259\\patient_5\\patient_5_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251212_133259\\patient_5\\patient_5_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251212_133259\\patient_5\\patient_5_therapy_recommendation_reasoning.txt"
+  }
+}

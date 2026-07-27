@@ -1,0 +1,24 @@
+=== REGENERATION ITERATION 1 - THERAPY RECOMMENDATION ===
+Timestamp: 2026-01-05T15:01:29.367601
+Patient ID: 18
+================================================================================
+
+**Primary Systemic Therapy Recommendation:**
+**Cabozantinib** (60 mg orally once daily).
+*   **Evidence:** The Phase 3 **CABINET trial (NCT03375320)** provides high-level evidence for this specific clinical scenario. In patients with advanced extrapancreatic neuroendocrine tumors (including lung NETs) who experienced disease progression after prior therapy (including PRRT), Cabozantinib demonstrated a statistically significant improvement in progression-free survival (PFS) compared to placebo (median PFS **8.4 months** vs. 3.9 months; HR 0.38; 95% CI, 0.25 to 0.59; P<0.001).
+
+**Strong Alternative / Clinical Trial Consideration:**
+**Targeted Alpha-Therapy (212Pb-DOTAMTATE)** or **PRRT Retreatment (177Lu-DOTATATE)**.
+*   **Evidence:** Given the patient's "intensive" SSTR uptake and durable response to prior PRRT (stability from ~2022 to March 2025), SSTR-targeted therapy remains a biologically sound approach. The Phase 2 trial **NCT05153772** evaluating **212Pb-DOTAMTATE (AlphaMedix)** in patients who progressed on prior PRRT reported an Objective Response Rate (ORR) of approximately 55%, offering a potent option for refractory disease. Alternatively, retreatment with 177Lu-DOTATATE is supported by registry data (**NCT02236910**) suggesting utility in patients with prior durable responses.
+
+**Symptom Management & Safety Pre-requisites:**
+**Investigate the etiology of "loose stools" prior to initiating Cabozantinib.**
+*   Differentiation is critical because Cabozantinib is associated with high rates of diarrhea (Grade 3+ in ~62-65% of patients in CABINET).
+*   **If Carcinoid Syndrome (CS) is confirmed:** Initiate **Telotristat ethyl** (250 mg three times daily) as an add-on to SSA. Evidence from the real-world study **NCT03223428** and pivotal trials confirms its efficacy in reducing bowel movement frequency in refractory CS.
+*   **If Non-CS (e.g., SSA-induced steatorrhea):** Manage with pancreatic enzyme replacement or anti-motility agents to ensure baseline bowel function is optimized before adding a diarrhea-inducing tyrosine kinase inhibitor.
+
+**Therapies to AVOID:**
+*   **Single-agent Immunotherapy (PD-1/PD-L1 inhibitors):** Do not use single-agent Nivolumab or Avelumab.
+    *   **Evidence:** The **DART trial (NCT02834013)** demonstrated a **0% ORR** in low/intermediate-grade NETs treated with Ipilimumab plus Nivolumab. Similarly, **NCT03278379** showed **0% ORR** with Avelumab in G2-3 NETs.
+*   **Ribociclib + Everolimus:** Do not use this combination.
+    *   **Evidence:** **NCT03070301** demonstrated insufficient activity and significant toxicity (myelosuppression) in foregut NETs.

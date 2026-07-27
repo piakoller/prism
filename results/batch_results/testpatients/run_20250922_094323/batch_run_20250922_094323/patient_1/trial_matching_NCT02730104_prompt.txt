@@ -1,0 +1,156 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-09-22T09:44:44.012077
+Trial: 3/86
+NCT ID: NCT02730104
+Model: google/gemini-2.5-pro
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 52-year-old man with no significant medical history presented in January 2025 with massive upper gastrointestinal bleeding and hemorrhagic shock. He required ICU admission and arterial embolization (gastric, splenic, and pancreatic branches). An incidental pulmonary embolism was also detected. He started first-line treatment with FOLFIRINOX (Cycle 1: Feb 11, 2025; Cycle 7: May 21, 2025).
+•	FDG-PET (Jan 2025): Hypermetabolic pancreatic mass (SUV 16) with a central photopenic area suggestive of necrosis and locoregional infiltration. No distant disease.
+•	CT scan (Apr 2025): Stable heterogeneous abdominal mass with necrotic areas up to 12 cm, infiltrating the pancreatic tail, splenic hilum, gastric fundus, and left adrenal. Complete splenic vein occlusion with tumor thrombus.
+•	CT scan (May 20, 2025): 10 cm pancreatic mass with similar locoregional infiltration and signs of splenic infarctions.
+2.	Current Clinical Status
+Referred to our center in June 2025. Pathology review reclassified the tumor as a Grade 2 NET with Ki67 19%. Admitted in June 2025 due to a new episode of upper GI bleeding (Hb 7.1 g/dL). Gastroscopy showed a 4 cm area of tumor infiltration without active bleeding.
+Question for Tumorboard:
+After clinical stabilization of the current GI bleeding episode, what should be the next therapeutic step in disease management?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+<assessment>
+### **Patient Summary**
+This is a 52-year-old man with a recently diagnosed, large, locally advanced pancreatic neuroendocrine tumor (Pan-NET). He initially presented with a life-threatening upper gastrointestinal (GI) bleed and was empirically treated with 7 cycles of FOLFIRINOX. A subsequent pathology review reclassified his tumor as a well-differentiated Grade 2 NET with a Ki-67 of 19%. He is now admitted for a second episode of severe upper GI bleeding, with a hemoglobin of 7.1 g/dL, secondary to direct tumor infiltration into the stomach.
+
+### **Tumor Characteristics and Staging**
+*   **Histopathology:** The diagnosis is a well-differentiated Pan-NET, Grade 2. The Ki-67 proliferation index of 19% is at the highest end of the G2 category (G2 range: 3-20%), bordering on G3, which often indicates a more aggressive clinical course (ESMO 2020, Table 1).
+*   **Anatomical Staging:** Imaging (CT scan, May 2025) confirms a large, 10 cm mass in the pancreatic tail. This is a locally advanced tumor, consistent with a pT4 stage, showing extensive locoregional infiltration into the splenic hilum, gastric fundus, and left adrenal gland. There is also evidence of complete splenic vein occlusion by a tumor thrombus (ENETS 2023, Sec 3.1.3).
+*   **Functional Imaging and Prognostic Markers:**
+    *   The initial FDG-PET scan (Jan 2025) revealed a highly hypermetabolic mass (SUV 16). According to the ENETS 2023 and ESMO 2020 guidelines, high FDG uptake is a poor prognostic factor in NETs and is associated with higher tumor grade (ENETS 2023, Sec 2.5.1; ESMO 2020, Staging section).
+    *   A significant limitation in the current workup is the absence of somatostatin receptor imaging (SRI), such as a 68Ga-DOTATATE PET/CT. The guidelines identify SRI as the functional imaging modality of choice for staging, prognostication, and determining eligibility for Peptide Receptor Radionuclide Therapy (PRRT) (ENETS 2023, Sec 2.5.2; ESMO 2020, Staging section). The tumor's SSTR expression status is therefore unknown.
+
+### **Response to Prior Therapy**
+*   The patient received 7 cycles of FOLFIRINOX from February to May 2025. While not a standard first-line therapy for Pan-NETs, this can be viewed as a form of neoadjuvant or conversion chemotherapy.
+*   Imaging follow-up suggests disease stabilization, with a modest decrease in the primary mass size from up to 12 cm (April 2025) to 10 cm (May 2025). This indicates the tumor is not refractory to systemic chemotherapy.
+
+### **Current Clinical Problem and Considerations for Management**
+*   The patient's readmission is due to a new, severe upper GI bleed, which is a direct and life-threatening complication of the tumor's local invasiveness. This underscores the urgent need for definitive local control of the primary tumor.
+*   **Surgical Candidacy:** The central question for the tumor board is the feasibility of surgical resection. The ENETS 2023 guidelines state that patients with locally advanced (T4) NF-Pan-NET can be resected safely in expert centers, and that radical (R0) resection, including venous reconstruction, can be considered (Level of evidence 3, Grade of recommendation A). The ESMO 2020 guidelines similarly support considering pancreatectomy with vascular resection in this setting. The patient's disease appears confined to the locoregional area without distant metastases on available imaging, making curative-intent surgery a primary consideration. The extent of infiltration will necessitate a complex multivisceral resection.
+*   **Alternative Therapeutic Options:** If the tumor is deemed unresectable, or if the surgical risk is prohibitive, other systemic therapies would be considered. These include alternative chemotherapy regimens (e.g., temozolomide/capecitabine), targeted agents (everolimus, sunitinib), or PRRT (ESMO 2020, Figure 4). However, eligibility for PRRT cannot be assessed without SRI to confirm sufficient SSTR expression, and the high FDG uptake raises the possibility of SSTR-negative disease, which would be a contraindication.
+
+### **Summary for Tumor Board Discussion**
+This patient has a large, locally advanced, high-end G2 Pan-NET with aggressive biological features (high Ki-67, high FDG uptake) that is causing recurrent, life-threatening GI bleeding. He has demonstrated disease stabilization following systemic chemotherapy. The immediate clinical priority is to achieve local control to prevent further hemorrhage. The main therapeutic question is to determine if a complex, multivisceral surgical resection with curative intent is technically feasible and offers an acceptable risk-benefit profile, as supported by both ENETS and ESMO guidelines for locally advanced disease.
+</assessment>
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: After clinical stabilization of the current GI bleeding episode, what should be the next therapeutic step in disease management?
+
+### STUDY DATA
+	•	NCT-ID: NCT02730104
+	•	Title: Community-based Neuroendocrine Tumor (NET) Research Study
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: 
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Histologically confirmed locally advanced or metastatic, well-differentiated neuroendocrine tumor (NET) of the small bowel, stomach, colon/rectum, or pancreas (low or intermediate grade; i.e. G1 or G2)
+* Treatment with lanreotide depot (Somatostatin Analogue-naïve patients and patients with prior treatment with octreotide long-acting repeatable (LAR) are permitted)
+* Radiographically measurable disease
+* Has signed the most recent written Patient Informed Consent Form
+
+Exclusion Criteria:
+
+* Known hypersensitivity to lanreotide
+* Poorly differentiated or high grade carcinoma, or patients with neuroendocrine tumors not of lung or thymic origin
+* Patients who have previously initiated treatment with lanreotide depot prior to the start of the study cannot have progressed between lanreotide initiation and study entry
+* Significant history of uncontrolled cardiac disease (ie, myocardial infarction within 6 months prior to enrollment or has congestive heart failure, uncontrolled angina, severe uncontrolled ventricular arrhythmias, or electrocardiographic evidence of acute ischemia or active conduction system abnormalities) *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The purpose of this trial is to assess time to disease progression of patients with locally advanced or metastatic gastroenteropancreatic neuroendocrine tumors treated with Lanreotide Depot. This is an observational study therefore all data collected will be in accordance with the routine practice of physicians.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/36136274/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Paulson S, Ray D, Aranha S, Scales A, Wang Y, Liu E. Lanreotide Depot to Treat Gastroenteropancreatic Neuroendocrine Tumors in a US Community Oncology Setting: A Prospective, Observational Study. Oncol Ther. 2022 Dec;10(2):463-479. doi: 10.1007/s40487-022-00208-1. Epub 2022 Sep 22.
+• Lanreotide Depot to Treat Gastroenteropancreatic Neuroendocrine Tumors in a US Community Oncology Setting: A Prospective, Observational Study. (PMID: 36136274)
+	•	Key findings from publications: PubMed Abstract: Gastroenteropancreatic neuroendocrine tumors (GEP-NETs) can result in symptoms such as diarrhea, flushing, abdominal pain, and fatigue and are often associated with a significant disease burden and poor prognosis. This non-interventional, prospective, observational study evaluated the real-world safety and effectiveness of lanreotide depot, a somatostatin analog (SSA) used to treat GEP-NETs, in a ...
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Introduction: Gastroenteropancreatic neuroendocrine tumors (GEP-NETs) can result in symptoms such as diarrhea, flushing, abdominal pain, and fatigue and are often associated with a significant disease burden and poor prognosis. This non-interventional, prospective, observational study evaluated the real-world safety and effectiveness of lanreotide depot, a somatostatin analog (SSA) used to treat GEP-NETs, in a community setting. Methods: In this prospective, non-interventional study ( NCT02730104 ), adult patients with locally advanced (inoperable), metastatic GEP-NETs treated with lanreotide depot were evaluated by their physician every 6 months from enrollment for 24 months. Clinically defined time to disease progression (TTDP) and overall survival (OS) were estimated for the total population and by primary tumor type (gastrointestinal [GI], pancreatic, unknown origin), and an exploratory analysis determined the rate of progression-free survival (PFS) at 12 and 24 months. Patient satisfaction was evaluated via the Treatment Satisfaction Questionnaire for Medication (TSQM-9), and safety information was recorded. Results: Of 99 patients, the 24-month PFS rate was 73.7% (95% confidence interval [CI] 63.1-81.7) and 24-month OS rate was 84.2% (95% CI 74.0-90.7). Median TTDP was not reached because few patients experienced disease progression during the study period. The majority of responding patients expressed satisfaction with treatment on each domain of the TSQM-9. Treatment-related adverse events (AEs) occurred in 19.2% of patients, while no serious AEs (SAEs) were related to the study drug. Conclusions: Lanreotide depot is an effective and well-tolerated treatment for GEP-NETs in the real-world community setting. Trial registration: ClinicalTrials.gov identifier, NCT02730104 . Keywords: GEP-NETs; Lanreotide depot; Neuroendocrine tumors; Oncology; Patient satisfaction; Progression-free survival; Prospective study; Real-world evidence. Plain language summary Gastroenteropancreatic neuroendocrine tumors (GEP-NETs) are rare tumors that develop in the gut or pancreas. GEP-NETs may lead to a reduced lifespan, and people with GEP-NETs may have symptoms such as fatigue, muscle weakness, diarrhea, stomach pain/cramping, and skin reactions. One approved treatment for patients whose tumor cannot be removed with surgery is lanreotide depot. Clinical trials have found lanreotide depot to be effective at prolonging survival and managing symptoms in people with GEP-NETs. However, clinical trials take place under very strict conditions and often do not represent all people with a certain disease in the ‘real world’. It is important to determine whether treatments are still effective when used outside of clinical trials. This study was conducted in the real world and followed 99 people with GEP-NETs whose physicians were treating them with lanreotide depot. Each person was monitored for 24 months and assessed during check-ups by their physician every 6 months. After 24 months, 73.7% of people did not have progression (worsening) of disease. The percentage of people who had not died by the end of the study was 84.2%. Most patients (91.6%) said they were satisfied with their treatment. Only 19.2% of patients experienced side effects, none of which were serious. © 2022. The Author(s). PubMed Disclaimer Figures Fig. 1 TTDP and OS in the… Fig. 1 TTDP and OS in the total study population. A TTDP: Rates of PFS… Fig. 1 TTDP and OS in the total study population. A TTDP: Rates of PFS for the study population were 88.2% (95% CI 79.6%—93.3%) at 12 months and 73.7% (95% CI 63.1%—81.7%) at 24 months. TTDP was evaluated using Kaplan–Meier estimates. Vertical lines represent censored events. a ‘Patients at risk’ refers to the number of patients at each timepoint who had neither experienced the event of interest (in this case, disease progression) nor been censored for any other reason (e.g., withdrew from the study, switched to a different treatment, completed their final study visit); therefore, the number ‘at risk’ at 24 months is substantially lower than the total number of patients who did not experience disease progression over the course of the study. CI confidence interval, PFS progression-free survival, TTDP time to disease progression. B OS: Rates of OS for the study population were 92.3% (95% CI 84.6%−96.3%) at 12 months and 84.2% (95% CI 74.0%−90.7%) at 24 months. OS was evaluated using Kaplan–Meier estimates. Vertical lines represent censored events. a ‘Patients at risk’ refers to the number of patients at each timepoint who had neither experienced the event of interest (in this case, death) nor been censored for any other reason (e.g., withdrew from the study, switched to a different treatment, completed their final study visit); therefore, the number ‘at risk’ at 24 months is substantially lower than the total number of patients who did not die over the course of the study. CI confidence interval, OS overall survival Fig. 2 TTDP and OS evaluated by… Fig. 2 TTDP and OS evaluated by primary tumor type. A TTDP: Rates of PFS… Fig. 2 TTDP and OS evaluated by primary tumor type. A TTDP: Rates of PFS for GI NETs were 89.3% (95% CI 77.7%−95.1%) at 12 months and 77.5% (95% CI 63.7%−86.6%) at 24 months; for pancreatic NETs, PFS was 81.5% (95% CI 61.1%−91.8%) at 12 months and 60.8% (95% CI 39.3%−76.8%) at 24 months; for unknown primary NETs, PFS was 100% at 12 months and 88.9% (95% CI 43.3%−98.4%) at 24 months. TTDP was evaluated using Kaplan–Meier estimates. Vertical lines represent censored events. a ‘Patients at risk’ refers to the number of patients at each timepoint who had neither experienced the event of interest (in this case, disease progression) nor been censored for any other reason (e.g., withdrew from the study, switched to a different treatment, completed their final study visit); therefore, the number ‘at risk’ at 24 months is substantially lower than the total number of patients who did not experience disease progression over the course of the study. CI confidence interval, GI gastrointestinal, NET neuroendocrine tumor, PFS progression-free survival, TTDP time to disease progression. B OS: Rates of OS for GI NETs were 89.8% (95% CI 78.6%−95.3%) at 12 months and 79.0% (95% CI 64.7%−88.0%) at 24 months; for pancreatic NETs, OS was 96.0% (95% CI 74.8%−99.4%) at 12 months and 91.6% (95% CI 70.4%−97.8%) at 24 months; for unknown primary NETs, OS was 100% at 12 months and 100% at 24 months. OS was evaluated using Kaplan–Meier estimates. Vertical lines represent censored events. a ‘Patients at risk’ refers to the number of patients at each timepoint who had neither experienced the event of interest (in this case, death) nor been censored for any other reason (e.g., withdrew from the study, switched to a different treatment, completed their final study visit); therefore, the number ‘at risk’ at 24 months is substantially lower than the total number of patients who did not die over the course of the study. CI confidence interval, GI gastrointestinal, NET neuroendocrine tumor, OS overall survival See this image and copyright information in PMC Similar articles Real-World Study of Lanreotide Autogel in Routine Practice in Patients with Gastroenteropancreatic Neuroendocrine Tumors (GEP-NETs) in Hong Kong and Taiwan. Chen JS, Bai LY, Cheng HH, Chan SL, Zou JY, Shi X, Houchard A, Truong-Thanh XM, Chen MH. Chen JS, et al. Oncol Ther. 2025 Mar;13(1):69-83. doi: 10.1007/s40487-024-00302-6. Epub 2024 Aug 31. Oncol Ther. 2025. PMID: 39215958 Free PMC article. Lanreotide Depot: An Antineoplastic Treatment of Carcinoid or Neuroendocrine Tumors. Wolin EM, Manon A, Chassaing C, Lewis A, Bertocchi L, Richard J, Phan AT. Wolin EM, et al. J Gastrointest Cancer. 2016 Dec;47(4):366-374. doi: 10.1007/s12029-016-9866-9. J Gastrointest Cancer. 2016. PMID: 27619395 Free PMC article. Review. Comparing Somatostatin Analogs in the Treatment of Advanced Gastroenteropancreatic Neuroendocrine Tumors. Allaw MB, Switchenko JM, Khalil L, Wu C, Alese OB, Akce M, Draper A, Jones AT, El-Rayes B, Shaib W. Allaw MB, et al. Oncology. 2022;100(3):131-139. doi: 10.1159/000519605. Epub 2022 Jan 25. Oncology. 2022. PMID: 35078191 Free PMC article. Neuroendocrine Tumors and Lanreotide Depot: Clinical Considerations and Nurse and Patient Preferences. Ryan P, Phan AT, Adelman DT, Iwasaki M. Ryan P, et al. Clin J Oncol Nurs. 2016 Dec 1;20(6):E139-E146. doi: 10.1188/16.CJON.E139-E146. Clin J Oncol Nurs. 2016. PMID: 27857269 Review. Patterns of Care Among Real-World Patients with Metastatic Neuroendocrine Tumors. Klink AJ, Feinberg B, Yu HT, Ray D, Pulgar S, Phan A, Vinik A. Klink AJ, et al. Oncologist. 2019 Oct;24(10):1331-1339. doi: 10.1634/theoncologist.2018-0798. Epub 2019 Apr 23. Oncologist. 2019. PMID: 31015313 Free PMC article. See all similar articles Cited by Comparative analysis of adverse event profiles of lanreotide and octreotide in somatostatin-responsive endocrine and neoplastic diseases. Wang L, Chen S, Wu M, Zhou L. Wang L, et al. Sci Rep. 2025 May 28;15(1):18641. doi: 10.1038/s41598-025-03850-7. Sci Rep. 2025. PMID: 40437077 Free PMC article. Subcutaneous Lanreotide Depot: A Diagnostic Pitfall in Neuroendocrine Tumor Imaging. Nishida T. Nishida T. Cureus. 2025 Feb 22;17(2):e79436. doi: 10.7759/cureus.79436. eCollection 2025 Feb. Cureus. 2025. PMID: 40130122 Free PMC article. Epidemiology of Neuroendocrine Neoplasms and Results of Their Treatment with [ 177 Lu]Lu-DOTA-TATE or [ 177 Lu]Lu-DOTA-TATE and [ 90 Y]Y-DOTA-TATE-A Six-Year Experience in High-Reference Polish Neuroendocrine Neoplasm Center. Durma AD, Saracyn M, Kołodziej M, Jóźwik-Plebanek K, Dmochowska B, Kapusta W, Żmudzki W, Mróz A, Kos-Kudła B, Kamiński G. Durma AD, et al. Cancers (Basel). 2023 Nov 18;15(22):5466. doi: 10.3390/cancers15225466. Cancers (Basel). 2023. PMID: 38001726 Free PMC article. Agonists, Antagonists and Receptors of Somatostatin: Pathophysiological and Therapeutical Implications in Neoplasias. Periferakis A, Tsigas G, Periferakis AT, Tone CM, Hemes DA, Periferakis K, Troumpata L, Badarau IA, Scheau C, Caruntu A, Savulescu-Fiedler I, Caruntu C, Scheau AE. Periferakis A, et al. Curr Issues Mol Biol. 2024 Sep 2;46(9):9721-9759. doi: 10.3390/cimb46090578. Curr Issues Mol Biol. 2024. PMID: 39329930 Free PMC article. Review. Real-World Study of Lanreotide Autogel in Routine Practice in Patients with Gastroenteropancreatic Neuroendocrine Tumors (GEP-NETs) in Hong Kong and Taiwan. Chen JS, Bai LY, Cheng HH, Chan SL, Zou JY, Shi X, Houchard A, Truong-Thanh XM, Chen MH. Chen JS, et al. Oncol Ther. 2025 Mar;13(1):69-83. doi: 10.1007/s40487-024-00302-6. Epub 2024 Aug 31. Oncol Ther. 2025. PMID: 39215958 Free PMC article. See all "Cited by" articles References Dasari A, Shen C, Halperin D, et al. Trends in the incidence, prevalence, and survival outcomes in patients with neuroendocrine tumors in the United States. JAMA Oncol. 2017;3(10):1335–1342. - PMC - PubMed Shah MH, Goldner WS, Benson AB, et al. Neuroendocrine and adrenal tumors, Version 2.2021, NCCN Clinical Practice Guidelines in Oncology. J Natl Compr Canc Netw. 2021;19(7):839–868. - PubMed Frilling A, Akerström G, Falconi M, et al. Neuroendocrine tumor disease: an evolving landscape. Endocr-Relat Cancer. 2012;19(5):R163–R185. - PubMed Deroose CM, Hindié E, Kebebew E, et al. Molecular imaging of gastroenteropancreatic neuroendocrine tumors: current status and future directions. J Nucl Med. 2016;57(12):1949–1956. - PMC - PubMed Öberg K. Management of functional neuroendocrine tumors of the pancreas. Gland Surg. 2018;7(1):20–27. - PMC - PubMed Show all 49 references Associated data ClinicalTrials.gov/NCT02730104 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen LinkOut - more resources Full Text Sources Europe PubMed Central PubMed Central Springer Medical ClinicalTrials.gov Research Materials NCI CPTC Antibody Characterization Program
+	•	Additional evidence from online sources: Primary outcome: Time to disease progression
+Secondary outcomes: Overall survival; Adverse events; Change in flushing and diarrhea; Patient satisfaction with treatment
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Lanreotide Depot to Treat Gastroenteropancreatic Neuroendocrine Tumors in a US Community Oncology Setting: A Prospective, Observational Study.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/36136274/', 'pmid': '36136274', 'content_scraped': True, 'content_length': 12059}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/36136274/
+Analysis notes: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

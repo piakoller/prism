@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:26:45.177063
+Trial: 82/86
+NCT ID: NCT02893930
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "While the study aligns with the patient's disease biology (metastatic Pan-NET) and clinical context (progression on Everolimus/rapalog-resistant), it fails to provide actionable evidence for a therapy recommendation. The Phase II trial was terminated early due to futility, demonstrating zero objective responses (0/13 patients) and concluding that Sapanisertib did not reverse resistance to mTOR inhibitors. In the patient's current scenario of seeking effective late-line systemic options, this study confirms that Sapanisertib is not a viable intervention. Therefore, the evidence does not justify consideration in treatment planning, failing the criterion for evidence relevance."
+}

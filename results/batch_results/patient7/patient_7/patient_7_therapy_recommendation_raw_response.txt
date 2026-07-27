@@ -1,0 +1,48 @@
+=== THERAPY RECOMMENDATION RAW RESPONSE ===
+Timestamp: 2025-12-09T15:40:44.358655
+Patient ID: 7
+Model: google/gemini-3-pro-preview
+==================================================
+
+<therapy_recommendation>
+**1. Current Management: Maintenance Therapy and Surveillance**
+*   **Therapy:** Continue **Lanreotide Autogel 120 mg** deep subcutaneous injection every 28 days.
+*   **Surveillance:**
+    *   **Biochemical:** Monitor plasma or urinary 5-HIAA and **NT-proBNP** every 6 months. The diagnostic utility of plasma/urinary 5-HIAA is supported by **NCT02826928** and **ENETS 2022 Guidelines**.
+    *   **Cardiac:** Perform transthoracic echocardiography every 6–12 months to screen for Carcinoid Heart Disease (CHD), given the patient's history of elevated 5-HIAA, as recommended by **ENETS 2022 Guidelines**.
+    *   **Radiological:** CT or MRI of the abdomen/pelvis every 6 months (or 3-6 months per **ENETS 2024 Guidelines** for G2 tumors).
+
+**2. Response to Tumor Board Question**
+*   **Question:** If there is not a radiological PD, but the syndrome is not well controlled, is PRRT indicated?
+*   **Recommendation:** **Yes, PRRT is indicated.**
+*   **Evidence:** According to **ENETS 2022** and **ENETS 2024 Guidelines**, PRRT is a valid therapeutic option for Refractory Carcinoid Syndrome (RCS) even in the absence of radiological progressive disease (PD), provided there is sufficient uptake on SSTR imaging. PRRT has been documented to decrease diarrhea, flushing, and 5-HIAA levels.
+
+**3. Future Therapeutic Options (Upon Progression or Recurrent Syndrome)**
+*   **For Recurrent Syndrome (Diarrhea):**
+    *   **Telotristat Ethyl:** If diarrhea recurs despite optimized SSA, add Telotristat Ethyl 250 mg t.i.d. (**ENETS 2024 Guidelines**).
+*   **For Radiological Progression (Antiproliferative Therapy):**
+    *   **Cabozantinib:** Supported by **NCT03375320 (CABINET)** and **ENETS 2024 Guidelines**, which note that Cabozantinib improved Progression-Free Survival (PFS) in patients with advanced extra-pancreatic NETs (HR 0.41).
+    *   **Everolimus:** A standard option for progressive GI-NETs (**ESMO Guidelines**; **NCT03049189** context).
+    *   **PRRT Rechallenge:** If the patient maintains SSTR expression and had a durable response (>12 months), retreatment may be considered (**ENETS 2024 Guidelines**). Future options may also include Alpha-emitter therapy (**NCT05153772**) or personalized dosimetry (**NCT02754297**).
+
+**4. Periprocedural Safety**
+*   **Recommendation:** For any future invasive procedures (biopsy, TAE) or PRRT cycles, administer **prophylactic short-acting octreotide** (s.c. 100–500 µg q 6–8 h or i.v. infusion) starting 12 hours pre-procedure and continuing until stabilization to prevent carcinoid crisis, given the patient's history of hypotensive episodes (**ENETS 2022 Guidelines**).
+</therapy_recommendation>
+
+<rationale>
+**Current Clinical Status and Maintenance:**
+The patient has achieved stable disease and biochemical normalization (5-HIAA 8 mg/24h) following 4 cycles of Lu-177-PRRT. **ENETS 2024 Guidelines** recommend continuing Somatostatin Analogues (SSA) in patients with functioning tumors to maintain symptom control and prevent carcinoid crisis, even after PRRT. Regular monitoring of NT-proBNP is crucial as the patient had significantly elevated 5-HIAA previously, which is a risk factor for Carcinoid Heart Disease (**ENETS 2022 Guidelines**). **NCT02826928** validates the use of plasma or urinary 5-HIAA for monitoring.
+
+**Indication for PRRT in Refractory Syndrome:**
+The tumor board specifically asked about PRRT for syndrome control without radiological progression. **ENETS 2022** and **2024 Guidelines** explicitly support this, noting that PRRT can reduce symptoms (diarrhea, flushing) and 5-HIAA levels in refractory carcinoid syndrome (RCS). Although the patient is currently stable, this establishes the protocol should symptoms recur without tumor growth.
+
+**Future Treatment Lines:**
+Should the disease progress or syndrome recur:
+*   **Telotristat Ethyl** is the standard addition for refractory diarrhea (**ENETS 2024 Guidelines**).
+*   **Cabozantinib** is a strong candidate for subsequent antiproliferative therapy. The **ENETS 2024 Guidelines** reference the Phase 3 **CABINET trial (NCT03375320)**, stating it showed an improvement in PFS (HR 0.41) for extra-pancreatic NETs.
+*   **Everolimus** is an approved option for progressive GI-NETs (**ESMO Guidelines**).
+*   **PRRT Rechallenge** is supported by **ENETS 2024 Guidelines** for patients with durable response. Trials like **NCT05153772** (Alpha-emitters) and **NCT02754297** (Personalized Dosimetry) represent relevant investigative options for post-PRRT settings.
+
+**Safety Considerations:**
+The patient's history of a hypotensive episode (2019) and increased flushing during PRRT indicates a high risk for carcinoid crisis. **ENETS 2022 Guidelines** mandate prophylactic short-acting octreotide coverage for any cytolytic or invasive procedures.
+</rationale>

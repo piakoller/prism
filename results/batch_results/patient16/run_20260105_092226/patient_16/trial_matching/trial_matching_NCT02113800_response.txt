@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:35:18.460761
+Trial: 30/86
+NCT ID: NCT02113800
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a well-differentiated Grade 1 pancreatic NET (Ki-67 2%), whereas the study specifically recruits patients with Grade 3 Neuroendocrine Neoplasms (NEC G3 or NET G3) who have progressed on first-line platinum-based chemotherapy. The biological behavior and standard treatment algorithms for G1 NETs differ significantly from G3 neoplasms; platinum-based chemotherapy is not a standard first-line approach for G1 tumors. Consequently, evidence regarding the safety and efficacy of Everolimus in a post-platinum G3 setting cannot be meaningfully extrapolated to guide therapy for a treatment-naive G1 patient, for whom established evidence (e.g., RADIANT trials) already exists."
+}

@@ -1,0 +1,57 @@
+{
+  "assessment_text": "**Patient Profile and Tumor Biology**\nThe patient is a 65-year-old woman with an ECOG performance status of 0, presenting with a metastatic neuroendocrine tumor (NET) of the pancreas.\n*   **Classification:** The tumor is well-differentiated and classified as Grade 1 (G1) based on a Ki-67 proliferation index of 2%.\n*   **Functionality:** There is no evidence of a hormonal syndrome provided in the history; thus, the clinical assessment aligns with a nonfunctioning pancreatic NET (NF-Pan-NET).\n*   **Receptor Status:** The tumor is SSTR2 positive, confirmed by immunohistochemistry and intense accumulation on DOTATOC PET/CT.\n\n**Anatomical Extent and Staging**\n*   **Primary Tumor:** A large lesion (41x51x35 mm) is located in the pancreatic head.\n*   **Local Complications:** The mass causes dilation of the distal pancreatic duct, which correlates with the patient's symptoms of abdominal pain and intermittent vomiting.\n*   **Vascular Involvement:** There is close contact with the portal vein and superior mesenteric vein over a length of 3 cm. However, arterial vessels are well contrasted, and there are no signs of venous stenosis or thrombosis. This presentation suggests a locally advanced or borderline resectable primary tumor.\n*   **Metastatic Disease:** The patient has oligometastatic liver disease with two small lesions (Segment VIII: 10 mm; Segment VI: 5 mm) and lymph node involvement (retroperitoneal paraaortic left and perihepatic adjacent to segment III).\n*   **Disease Stability:** A CT scan 2 months post-diagnosis indicates stable disease.\n\n**Guideline-Based Clinical Considerations**\n\n**1. Surgical Considerations:**\n*   **Primary Tumor:** According to ENETS guidelines, surgery is strongly recommended for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation. This patient meets both criteria. The vascular contact (3 cm) requires careful evaluation; however, ENETS guidelines note that radical local resection including portal-venous resection can be performed safely in expert centers.\n*   **Metastatic Context:** ESMO guidelines state that a surgical approach is indicated in selected stage IV patients with exclusive or predominant liver involvement. Given the small size of the liver metastases (10 mm and 5 mm), they may be amenable to resection or ablation. However, the presence of retroperitoneal lymph node metastasis requires evaluation regarding the feasibility of curative (R0) resection.\n\n**2. Systemic and Neoadjuvant Considerations:**\n*   **Somatostatin Analogues (SSAs):** For antiproliferative control, ESMO and ENETS guidelines recommend SSAs (e.g., lanreotide or octreotide) as first-line therapy for SSTR-positive, well-differentiated (G1/G2) NF-Pan-NETs with slow growth (Ki-67 <10%).\n*   **Neoadjuvant Approaches:** ENETS guidelines suggest that preoperative treatment with Peptide Receptor Radionuclide Therapy (PRRT) or chemotherapy may be considered in selected cases of locally advanced or oligometastatic SSTR-positive G1/G2 NF-Pan-NETs to facilitate R0 resection or downstaging.\n*   **Chemotherapy:** While chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is an option for bulky or progressive disease, the patient currently has stable disease on CT.\n\n**3. Functional Imaging and PRRT Eligibility:**\n*   The DOTATOC PET/CT shows \"intense accumulation\" in pancreatic lesions, liver lesions, and lymph nodes.\n*   **Assessment for PRRT:** While \"intense\" accumulation suggests high SSTR expression, strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed, this patient is a potential candidate for PRRT, either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.\n\n**Summary of Clinical Status:**\nThe patient presents with a symptomatic, G1, SSTR-positive NF-Pan-NET with limited hepatic and nodal metastases. The primary tumor is locally advanced with venous contact but no occlusion. The clinical scenario requires a multidisciplinary decision regarding upfront resection (pancreaticoduodenectomy + liver management) versus neoadjuvant therapy (PRRT or systemic) to improve resectability, given the favorable tumor biology (G1) and high SSTR expression.",
+  "clinical_summary": {
+    "disease_status": "Not specified",
+    "stage": "Not specified",
+    "key_features": []
+  },
+  "clinical_needs": {
+    "primary_needs": [
+      "Treatment needed based on assessment",
+      "Therapy needed based on assessment",
+      "Management needed based on assessment",
+      "Assessment needed based on assessment"
+    ],
+    "urgency_level": "medium"
+  },
+  "evidence_priorities": {
+    "high_priority": [
+      "** There is no evidence of a hormonal syndrome provided in the history; thus",
+      "the clinical assessment aligns with a nonfunctioning pancreatic NET (NF-Pan-NET).",
+      "**Receptor Status:** The tumor is SSTR2 positive, confirmed by immunohistochemistry and intense accumulation on DOTATOC PET/CT.",
+      "*Anatomical Extent and Staging**",
+      "**Primary Tumor:** A large lesion (41x51x35 mm) is located in the pancreatic head."
+    ],
+    "trial_types_needed": [
+      "clinical trials addressing current management gaps"
+    ]
+  },
+  "trial_eligibility": {
+    "favorable_factors": [],
+    "potential_barriers": []
+  },
+  "recommendations_for_trial_search": [
+    "** While \"intense\" accumulation suggests high SSTR expression",
+    "strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed",
+    "this patient is a potential candidate for PRRT",
+    "either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.",
+    "*Summary of Clinical Status:**"
+  ],
+  "assessment_confidence": "medium",
+  "raw_response": "<assessment>\n**Patient Profile and Tumor Biology**\nThe patient is a 65-year-old woman with an ECOG performance status of 0, presenting with a metastatic neuroendocrine tumor (NET) of the pancreas.\n*   **Classification:** The tumor is well-differentiated and classified as Grade 1 (G1) based on a Ki-67 proliferation index of 2%.\n*   **Functionality:** There is no evidence of a hormonal syndrome provided in the history; thus, the clinical assessment aligns with a nonfunctioning pancreatic NET (NF-Pan-NET).\n*   **Receptor Status:** The tumor is SSTR2 positive, confirmed by immunohistochemistry and intense accumulation on DOTATOC PET/CT.\n\n**Anatomical Extent and Staging**\n*   **Primary Tumor:** A large lesion (41x51x35 mm) is located in the pancreatic head.\n*   **Local Complications:** The mass causes dilation of the distal pancreatic duct, which correlates with the patient's symptoms of abdominal pain and intermittent vomiting.\n*   **Vascular Involvement:** There is close contact with the portal vein and superior mesenteric vein over a length of 3 cm. However, arterial vessels are well contrasted, and there are no signs of venous stenosis or thrombosis. This presentation suggests a locally advanced or borderline resectable primary tumor.\n*   **Metastatic Disease:** The patient has oligometastatic liver disease with two small lesions (Segment VIII: 10 mm; Segment VI: 5 mm) and lymph node involvement (retroperitoneal paraaortic left and perihepatic adjacent to segment III).\n*   **Disease Stability:** A CT scan 2 months post-diagnosis indicates stable disease.\n\n**Guideline-Based Clinical Considerations**\n\n**1. Surgical Considerations:**\n*   **Primary Tumor:** According to ENETS guidelines, surgery is strongly recommended for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation. This patient meets both criteria. The vascular contact (3 cm) requires careful evaluation; however, ENETS guidelines note that radical local resection including portal-venous resection can be performed safely in expert centers.\n*   **Metastatic Context:** ESMO guidelines state that a surgical approach is indicated in selected stage IV patients with exclusive or predominant liver involvement. Given the small size of the liver metastases (10 mm and 5 mm), they may be amenable to resection or ablation. However, the presence of retroperitoneal lymph node metastasis requires evaluation regarding the feasibility of curative (R0) resection.\n\n**2. Systemic and Neoadjuvant Considerations:**\n*   **Somatostatin Analogues (SSAs):** For antiproliferative control, ESMO and ENETS guidelines recommend SSAs (e.g., lanreotide or octreotide) as first-line therapy for SSTR-positive, well-differentiated (G1/G2) NF-Pan-NETs with slow growth (Ki-67 <10%).\n*   **Neoadjuvant Approaches:** ENETS guidelines suggest that preoperative treatment with Peptide Receptor Radionuclide Therapy (PRRT) or chemotherapy may be considered in selected cases of locally advanced or oligometastatic SSTR-positive G1/G2 NF-Pan-NETs to facilitate R0 resection or downstaging.\n*   **Chemotherapy:** While chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is an option for bulky or progressive disease, the patient currently has stable disease on CT.\n\n**3. Functional Imaging and PRRT Eligibility:**\n*   The DOTATOC PET/CT shows \"intense accumulation\" in pancreatic lesions, liver lesions, and lymph nodes.\n*   **Assessment for PRRT:** While \"intense\" accumulation suggests high SSTR expression, strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed, this patient is a potential candidate for PRRT, either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.\n\n**Summary of Clinical Status:**\nThe patient presents with a symptomatic, G1, SSTR-positive NF-Pan-NET with limited hepatic and nodal metastases. The primary tumor is locally advanced with venous contact but no occlusion. The clinical scenario requires a multidisciplinary decision regarding upfront resection (pancreaticoduodenectomy + liver management) versus neoadjuvant therapy (PRRT or systemic) to improve resectability, given the favorable tumor biology (G1) and high SSTR expression.\n</assessment>",
+  "parsing_method": "XML",
+  "metadata": {
+    "timestamp": "2026-01-05T09:24:33.371282",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 16,
+    "guidelines_provided": true,
+    "matched_guidelines_used": true,
+    "matched_guidelines_count": 2,
+    "matched_trials_used": false,
+    "matched_trials_count": 0,
+    "prompt_file": "batch_results/run_20260105_092226\\patient_16\\patient_16_assessment_prompt.txt",
+    "response_file": "batch_results/run_20260105_092226\\patient_16\\patient_16_assessment_raw_response.txt",
+    "cache_reused": false,
+    "cached_at": null
+  }
+}

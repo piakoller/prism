@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T10:39:53.464078
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study provides critical evidence for the patient's future treatment planning. The patient has a metastatic, well-differentiated ileal NET (G2) and has recently completed PRRT after progressing on SSA and TAE. The CABINET trial (NCT03375320) is a Phase 3 randomized study evaluating Cabozantinib in advanced neuroendocrine tumors, specifically including a cohort for extra-pancreatic NETs (epNETs) that aligns with this patient's biology. Importantly, the trial enrolled patients who had progressed on prior lines of therapy, including Lu-177-DOTATATE (PRRT). The published results (PMID: 39282913) demonstrate a significant progression-free survival benefit (8.4 months vs. 3.9 months with placebo) in this population. As the patient will eventually experience disease progression following their current post-PRRT stabilization, this study offers high-quality, actionable evidence establishing Cabozantinib as a validated subsequent line of therapy in the post-PRRT setting."
+}

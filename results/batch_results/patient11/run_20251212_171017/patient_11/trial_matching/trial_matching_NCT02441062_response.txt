@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:33:59.100023
+Trial: 61/86
+NCT ID: NCT02441062
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Disease/Biology Alignment or Clinical Applicability. The patient has a high-grade pancreatic Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, a biology typically characterized by low or absent somatostatin receptor (SSTR) expression. The study evaluates the impact of 68Ga-DOTATOC PET/CT imaging in patients with tumors likely to express SSTRs (typically well-differentiated NETs). Given the patient's aggressive NEC biology, SSTR-PET is unlikely to be positive or clinically useful, as noted in the clinical assessment which deems PRRT unsuitable. Furthermore, the study investigates the diagnostic utility and management impact of the scan itself, rather than testing a therapeutic intervention for consolidation in NEC. The published results regarding scan repeatability and safety in pediatric/young adult populations do not provide actionable evidence to guide the consolidation strategy (surgery vs. chemotherapy) for an elderly patient with metastatic NEC."
+}

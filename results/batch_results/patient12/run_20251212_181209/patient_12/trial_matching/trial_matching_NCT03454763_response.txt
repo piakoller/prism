@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:29:57.304149
+Trial: 42/86
+NCT ID: NCT03454763
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant for this patient's treatment planning. While the patient has a Pancreatic NET, her imaging reveals significant tumor heterogeneity with FDG-positive/Ga68-negative peritoneal carcinomatosis. This absence of Somatostatin Receptor (SSTR) expression in a major metastatic compartment makes PRRT (the study intervention) clinically unsuitable as a sole modality, as it would leave the SSTR-negative disease untreated. The patient requires a systemic therapy capable of controlling both SSTR-positive and SSTR-negative bulky disease (e.g., chemotherapy), rather than optimization of PRRT dosing intervals. Additionally, the provided published results focus specifically on Olfactory Neuroblastoma, a biologically distinct entity, limiting the transferability of efficacy data to this patient's Pancreatic NET context."
+}

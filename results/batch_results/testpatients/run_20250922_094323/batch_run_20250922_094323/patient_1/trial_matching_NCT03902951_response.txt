@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:01:40.410916
+Trial: 49/86
+NCT ID: NCT03902951
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient. The primary reason is a complete failure to meet the **Disease / Biology Alignment** criterion. The study investigates treatments for prostate adenocarcinoma, a malignancy driven by androgen signaling, whereas the patient has a well-differentiated pancreatic neuroendocrine tumor (Pan-NET), which has a distinct and unrelated biological basis. Consequently, the **Treatment Context / Clinical Applicability** is also not met; the study's intervention of androgen deprivation therapy (leuprolide, abiraterone, apalutamide) is entirely irrelevant for a Pan-NET. While SBRT is a modality that can be used in NENs, its use in this study is for oligometastases, not a large, locally advanced primary tumor as seen in this patient. Finally, the **Evidence Quality and Relevance** criterion is not met because the study's outcomes, such as PSA response, are specific to prostate cancer and provide no transferable or actionable insights for managing a Pan-NET. The evidence cannot inform the key clinical decision for this patient, which involves choosing between complex surgery and systemic therapies appropriate for NENs (e.g., CAPTEM, everolimus, PRRT)."
+}
+```

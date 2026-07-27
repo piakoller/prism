@@ -1,0 +1,176 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-08T10:38:51.975920
+Trial: 25/86
+NCT ID: NCT04696042
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 78-year-old patient with no active malignancy and medical history of:
+•	Type 2 diabetes mellitus (on oral antidiabetic drugs for 10 years)
+•	Hypertension and dyslipidemia
+•	Chronic kidney disease (baseline creatinine 1.6–1.8 mg/dL)
+•	Malignant external otitis with secondary osteomyelitis in January 2019 (malaritis); incidental finding of pituitary macroadenoma
+•	Benign prostatic hyperplasia (treated with prostatectomy in 2012)
+•	Glaucoma under ophthalmologic follow-up
+•	Jan–Mar 2021: Incidental elevation of GGT, with liver metastases detected on abdominal ultrasound.
+•	Thoracoabdominal CT: 8 cm mass in the pancreatic uncinate process with internal calcifications. Mesenteric vessels displaced but not infiltrated. Subcentimetric peripancreatic and retroperitoneal lymph nodes. Multiple liver metastases.
+•	Liver biopsy: Well-differentiated NET G1 with Ki67 2%. IHC: chromogranin A+, synaptophysin+, CD56+, CAM5.2+; CK20–, CK7–.
+•	The patient received first-line treatment with Lanreotide Autogel from April 2021 to July 2025.
+2.	Current Clinical Status
+•	Mild toxicity: grade 1 diarrhea
+•	No tumor-related symptoms
+•	ECOG performance status: 0–1
+•	Lab tests: Creatinine 2.24 mg/dL; other parameters unremarkable
+•	MRI (July 2025): Stable liver metastases (at least 25 lesions); largest increased from 55 mm to 58 mm in segment I, and from 65 mm to 68 mm in the right hepatic lobe. Mesenteric root mass increased from 82×40 mm to 90×49 mm.
+Question for Tumorboard:
+What would be the most appropriate second-line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Summary and Oncological Status**
+The patient is a 78-year-old male with a well-differentiated, non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET), Grade 1 (Ki67 2%). He presents with extensive metastatic disease involving the liver (at least 25 lesions), a large primary mass in the pancreatic uncinate process (8 cm), and a mesenteric root mass. Following first-line treatment with Lanreotide Autogel (April 2021 to July 2025), the patient exhibits radiological evidence of progressive disease (PD) based on the MRI from July 2025. Specifically, the largest liver lesions have increased (segment I: 55 mm to 58 mm; right hepatic lobe: 65 mm to 68 mm), and the mesenteric root mass has enlarged from 82×40 mm to 90×49 mm. The patient remains asymptomatic regarding the tumor, with an ECOG performance status of 0–1.
+
+**Comorbidities and Safety Considerations**
+A critical factor in the clinical assessment is the patient's renal function. He has a history of chronic kidney disease with a baseline creatinine of 1.6–1.8 mg/dL, which has deteriorated to a current level of 2.24 mg/dL. Additional comorbidities include Type 2 diabetes mellitus (10-year duration), hypertension, dyslipidemia, and a history of malignant external otitis. The worsening renal function (Creatinine 2.24 mg/dL) necessitates careful evaluation of potential nephrotoxicity associated with second-line systemic therapies.
+
+**Guideline-Based Assessment of Second-Line Options**
+According to the ENETS 2023 and ESMO 2020 guidelines, the following considerations apply to the selection of second-line treatment for a patient with progressive NF-Pan-NET G1:
+
+1.  **Targeted Therapies (Everolimus/Sunitinib):**
+    *   The ENETS guidelines (Section 3.3, Q6) and ESMO guidelines recommend Everolimus and Sunitinib for patients with progressive advanced Pan-NETs.
+    *   These agents are established options for G1/G2 tumors after the failure of somatostatin analogs.
+    *   Given the patient's renal impairment, the metabolic clearance profiles of these drugs make them relevant considerations, though careful monitoring of comorbidities (e.g., diabetes with Everolimus) is required.
+
+2.  **Peptide Receptor Radionuclide Therapy (PRRT):**
+    *   ENETS (Section 3.2, Q5) and ESMO guidelines list PRRT (specifically 177Lu-DOTATATE) as a valid therapeutic option for progressive Pan-NETs.
+    *   **Prerequisites:** Eligibility strictly requires confirmation of strong somatostatin receptor expression via SSTR-PET/CT (e.g., 68Ga-DOTATATE). Uptake must be higher than liver background in all primary tumor lesions and metastases. The patient information does not currently provide SSTR-PET/CT results; this imaging is mandatory before PRRT can be considered.
+    *   **Renal Contraindication:** The patient's current creatinine of 2.24 mg/dL poses a significant safety concern. Guidelines warn that renal dysfunction is a potential adverse event of PRRT. The ESMO guidelines note that mild renal toxicity can occur, and ENETS highlights the need to screen for renal dysfunction. This level of renal impairment may contraindicate PRRT or require specific dosimetry and nephrological clearance.
+
+3.  **Chemotherapy:**
+    *   ENETS (Section 3.4, Q7) and ESMO guidelines mention chemotherapy (Temozolomide/Capecitabine or Streptozotocin/5-FU) for progressive Pan-NETs, particularly when tumor burden is high.
+    *   While the patient has a high tumor burden (bulky primary and >25 liver metastases), the indolent biology (G1, Ki67 2%) and significant renal impairment (Cr 2.24 mg/dL) complicate the use of regimens containing renal-cleared agents like Streptozotocin or Capecitabine.
+
+**Conclusion**
+The patient has progressive, high-burden, well-differentiated G1 NF-Pan-NET. While guidelines support Targeted Therapies, PRRT, or Chemotherapy as second-line options, the clinical assessment is heavily influenced by the patient's renal insufficiency (Creatinine 2.24 mg/dL). SSTR-PET/CT imaging is required to determine receptor status; however, even if SSTR-positive, the renal function may limit PRRT eligibility.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Monitor needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: What would be the most appropriate second-line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT04696042
+	•	Title: Asian Investigation of Lanreotide Autogel® in the Management of GEP-NETs
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: Lanreotide autogel
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Written informed consent
+* Male or female subject aged ≥18 years and legally capable to provide informed consent
+* Functioning or non-functioning gastroenteropancreatic (GEP)-neuroendocrine tumor (NET) or unknown primary-NET
+* Well differentiated tumor
+* Grade (G) 1, G2 according to the 2017 World Health Organization (WHO) criteria
+* Subject already treated with Lanreotide Autogel® for the period up to 5 months, according to local standard of care, prior to documentation into this study
+* Use of Lanreotide autogel® monotherapy by local label (SmPC).
+* Concomitant locoregional therapy such as surgery, RFA or TAE is allowed.
+
+Exclusion Criteria:
+
+* Parallel participation in an interventional study
+* Lanreotide treatment for more than 5 months prior inclusion into the study
+* Prior anti-proliferative medication with somatostatin analogue (e.g. Octreotide LAR).
+* Concomitant anti-proliferative systemic medication/therapies for GEP-NET are not allowed. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: Lanreotide Autogel® has been established as a standard of care for patients with locally advanced or metastatic GEP-NETs based on the success of CLARINET trial. However, only few patients with Asian ethnicity were included in the trial.
+
+According to the nationwide comprehensive study of patients with GEP-NET in Korea, hindgut primary NETs(Rectal) occured more frequently than western countries. However, small intestine or lung primary NET is relatively rare compared with western countries.1) Considering the clinical characteristics of GEP-NETs are distinct between the patients in Asian and Western countries, further evaluation on the efficacy and safety of Lanreotide Autogel® in Asian patients with GEP-NETs is needed.
+	•	Publications: 5 publication(s) found; Analysis: Found 5 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Gastrointestinal Pathology Study Group of Korean Society of Pathologists; Cho MY, Kim JM, Sohn JH, Kim MJ, Kim KM, Kim WH, Kim H, Kook MC, Park DY, Lee JH, Chang H, Jung ES, Kim HK, Jin SY, Choi JH, Gu MJ, Kim S, Kang MS, Cho CH, Park MI, Kang YK, Kim YW, Yoon SO, Bae HI, Joo M, Moon WS, Kang DY, Chang SJ. Current Trends of the Incidence and Pathological Diagnosis of Gastroenteropancreatic Neuroendocrine Tumors (GEP-NETs) in Korea 2000-2009: Multicenter Study. Cancer Res Treat. 2012 Sep;44(3):157-65. doi: 10.4143/crt.2012.44.3.157. Epub 2012 Sep 30.
+• Kim SJ, Kim JW, Oh DY, Han SW, Lee SH, Kim DW, Im SA, Kim TY, Heo DS, Bang YJ. Clinical course of neuroendocrine tumors with different origins (the pancreas, gastrointestinal tract, and lung). Am J Clin Oncol. 2012 Dec;35(6):549-56. doi: 10.1097/COC.0b013e31821dee0f.
+• Pavel M, O'Toole D, Costa F, Capdevila J, Gross D, Kianmanesh R, Krenning E, Knigge U, Salazar R, Pape UF, Oberg K; Vienna Consensus Conference participants. ENETS Consensus Guidelines Update for the Management of Distant Metastatic Disease of Intestinal, Pancreatic, Bronchial Neuroendocrine Neoplasms (NEN) and NEN of Unknown Primary Site. Neuroendocrinology. 2016;103(2):172-85. doi: 10.1159/000443167. Epub 2016 Jan 5. No abstract available.
+• Kang J, Yoo C, Hwang HS, Hong SM, Kim KP, Kim SY, Hong YS, Kim TW, Ryoo BY. Efficacy and safety of lanreotide in Korean patients with metastatic, well-differentiated gastroenteropancreatic-neuroendocrine tumors: a retrospective analysis. Invest New Drugs. 2019 Aug;37(4):763-770. doi: 10.1007/s10637-018-0710-x. Epub 2018 Dec 10.
+• Caplin ME, Pavel M, Cwikla JB, Phan AT, Raderer M, Sedlackova E, Cadiot G, Wolin EM, Capdevila J, Wall L, Rindi G, Langley A, Martinez S, Blumberg J, Ruszniewski P; CLARINET Investigators. Lanreotide in metastatic enteropancreatic neuroendocrine tumors. N Engl J Med. 2014 Jul 17;371(3):224-33. doi: 10.1056/NEJMoa1316158.
+	•	Key findings from publications: No detailed findings available
+	•	Additional evidence from online sources: Primary outcome: Progression-free survival rate at 2 years
+Secondary outcomes: Progression-free survival; Response rates; Disease control rates; Overall survival; Chromogranin A response
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Found 5 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

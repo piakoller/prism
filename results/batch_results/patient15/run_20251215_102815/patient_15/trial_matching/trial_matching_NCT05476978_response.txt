@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:42:29.613084
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for therapy recommendations because it evaluates a diagnostic intervention (AI-assisted EUS for differentiating pancreatic lesions) rather than a therapeutic modality. While the disease context (pancreatic solid lesions) aligns biologically, the patient has an established diagnosis of metastatic Pan-NET G3 and requires guidance on the next line of systemic treatment for refractory disease. The study's outcomes focus solely on diagnostic accuracy and do not offer data on treatment efficacy, safety, or clinical management strategies relevant to this patient's need for disease control."
+}

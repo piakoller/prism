@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:40:01.618272
+Trial: 84/86
+NCT ID: NCT02259725
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criteria for Disease/Biology Alignment and Evidence Quality. Biologically, the patient has a high-grade Neuroendocrine Carcinoma (NEC G3, Ki-67 95%) arising from a MiNEN, whereas the study investigates Regorafenib specifically in well-differentiated \"carcinoid or pancreatic islet cell cancers\" (NETs). Clinical evidence from well-differentiated NETs is generally not transferable to high-grade NECs due to distinct molecular drivers and aggressive behavior. Furthermore, the input indicates that no published results or detailed findings are available for this completed trial. Without accessible efficacy or safety data, the study cannot provide actionable evidence to guide treatment decisions for this patient's consolidation strategy."
+}

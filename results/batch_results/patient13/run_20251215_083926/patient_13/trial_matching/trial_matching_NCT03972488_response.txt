@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:09:26.885585
+Trial: 75/86
+NCT ID: NCT03972488
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study provides critical evidence supporting the use of Peptide Receptor Radionuclide Therapy (PRRT) for this patient. Biologically, the patient has a Grade 3 (Ki-67 25%), SSTR-positive pancreatic NET, which aligns perfectly with the NETTER-2 study population (G2 and G3 GEP-NETs with Ki-67 10–55%). Although the patient is heavily pre-treated (progression on FOLFOX, 5-FU/dacarbazine, and sunitinib) and the study focused on the first-line setting, the results are highly transferable: NETTER-2 definitively demonstrated that G3 well-differentiated NETs are sensitive to PRRT (median PFS 22.8 months vs. 8.5 months). This validates the biological rationale for using PRRT in G3 disease, addressing the key clinical question of whether this aggressive subtype responds to radioligand therapy. Given the patient's SSTR-positive status and lack of remaining standard options, this Phase 3 evidence strongly supports PRRT as a viable next step."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:30:12.427285
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful evidence for a subsequent line of therapy for this patient. Biologically, the patient's well-differentiated G2 ileal NET aligns with the study's extra-pancreatic NET (epNET) cohort. Clinically, the patient has progressed on SSA and recently completed PRRT; the CABINET trial specifically enrolled patients who had progressed after prior therapies, including PRRT (Lu-177-DOTATATE), making the study population directly representative of this patient's treatment history and future trajectory. Although the patient is currently responding to PRRT and considering surgery, she has metastatic disease that will likely eventually progress. The published Phase 3 results demonstrate a significant progression-free survival benefit (8.4 vs. 3.9 months) for Cabozantinib versus placebo in this setting. This establishes Cabozantinib as an evidence-based treatment option for the patient upon future disease progression, informing the long-term sequencing strategy."
+}

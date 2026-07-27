@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:11:24.704179
+Trial: 75/86
+NCT ID: NCT03972488
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides highly meaningful evidence for this patient. The three core criteria are met. First, the **disease and biology alignment** is excellent; the patient has a well-differentiated pancreatic NET with a Ki-67 of 19%, which fits perfectly within the NETTER-2 study's population of G2 NETs with a Ki-67 index of ≥10%. Second, the **treatment context is clinically applicable**, particularly in the likely scenario where the patient's locally advanced tumor is deemed unresectable. Assuming a forthcoming SSTR-PET is positive, which is standard for G2 NETs, this study provides a powerful, evidence-based systemic therapy option. Although the patient received prior FOLFIRINOX and would not meet the strict first-line eligibility, the evidence is still highly transferable given the tumor's aggressive features and need for effective NET-specific therapy. Third, the **evidence quality and relevance** are outstanding. The NETTER-2 trial is a phase 3 study demonstrating a practice-changing, clinically meaningful improvement in progression-free survival (22.8 vs 8.5 months) with Lutathera. This robust evidence directly informs the tumor board's decision-making by establishing Lutathera as a standard-of-care option for this specific high-risk G2 NET population."
+}
+```

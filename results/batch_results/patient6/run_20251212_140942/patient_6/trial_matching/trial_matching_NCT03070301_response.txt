@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:40:05.278951
+Trial: 64/86
+NCT ID: NCT03070301
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful clinical evidence for this patient with a G2 PanNET (Ki-67 15%) who is progressing on prior therapies (sunitinib, belzutifan) and is naïve to mTOR inhibitors. The patient's disease characteristics align with the study's inclusion of advanced foregut WDNETs with Ki-67 ≤30%. While everolimus is a standard next-line consideration for this patient, the study results demonstrate that the combination of ribociclib and everolimus failed to show benefit (0% ORR, median PFS 7.7 months) and caused high toxicity (92% grade ≥2 myelosuppression). This negative evidence is clinically actionable as it informs the treatment recommendation to explicitly avoid this combination strategy due to unfavorable risk/benefit, guiding the clinician to prioritize standard everolimus monotherapy, PRRT (assuming SSTR-PET positivity), or chemotherapy (e.g., capecitabine/temozolomide) for the patient's current unresectable, progressive disease state."
+}
+```

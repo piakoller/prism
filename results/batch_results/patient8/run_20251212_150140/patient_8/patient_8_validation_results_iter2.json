@@ -1,0 +1,59 @@
+{
+  "patient_id": 8,
+  "timestamp": "2025-12-12T15:43:55.571573",
+  "validation_steps": {
+    "structural": {
+      "status": "pass",
+      "critical_issues": [],
+      "warnings": [],
+      "checks_performed": [
+        "Required sections present",
+        "Minimum content length",
+        "Urgency alignment",
+        "Trial discussion completeness",
+        "Metadata completeness"
+      ]
+    },
+    "evidence_consistency": {
+      "status": "pass",
+      "critical_issues": [],
+      "warnings": [],
+      "evidence_stats": {
+        "trials_cited": 3,
+        "trials_available": 11,
+        "trials_included": 10,
+        "trials_excluded": 1,
+        "hallucinated_citations": 0
+      },
+      "checks_performed": [
+        "Trial citation accuracy",
+        "Hallucination detection",
+        "Inclusion/exclusion consistency",
+        "Coverage of included trials"
+      ]
+    },
+    "semantic": {
+      "status": "pass",
+      "decision": "PASS",
+      "critical_issues": [],
+      "warnings": [],
+      "detailed_reasoning": "The therapy recommendation is comprehensive, accurate, and safe, effectively addressing the complex clinical scenario of a patient with Stage IV Si-NET who has achieved a partial response to second-line PRRT.\n\n**1. Completeness:**\nThe recommendation addresses all aspects of the patient's current status. It validates the sequencing of therapy (PRRT first, then surgery), which is the core clinical question. It covers the surgical plan (primary, nodes, metastases), perioperative safety (carcinoid crisis prophylaxis), and post-operative follow-up. It also acknowledges the Ki-67 discrepancy noted in the assessment, correctly interpreting that the tumor remains well-differentiated (G1/G2) regardless of the specific value (2% vs 6%).\n\n**2. Accuracy:**\n*   **Guideline Interpretation:** The recommendation correctly applies ENETS 2024 guidelines regarding the \"combination strategy\" (PRRT + Surgery) for diffuse disease and the timing of surgery (delayed >6 months). It accurately reflects the consensus that cytoreductive surgery is indicated when feasible, especially after a response to systemic therapy.\n*   **Trial Citations:**\n    *   **NCT05448157:** The suggestion to consider radioguided surgery (if available) is appropriately supported by this trial citation, framed as an adjunctive tool rather than a mandatory standard.\n    *   **NCT04727723:** This observational study is correctly used to validate the efficacy of the PRRT already administered.\n    *   **NCT03049189 (COMPETE):** Correctly referenced to contextualize the choice of radionuclide therapy over other options like Everolimus.\n\n**3. Consistency:**\nThe recommendation is consistent with the patient's \"Partial Response\" status and \"good clinical condition.\" It logically connects the positive response to PRRT with the decision to proceed to cytoreduction, aligning with the assessment's conclusion that surgery is now a valid consideration.\n\n**4. Safety:**\n*   **Carcinoid Crisis:** The inclusion of perioperative IV Somatostatin Analogues is a critical safety measure for a patient with functional potential undergoing liver manipulation.\n*   **Patient Selection:** The recommendation respects the patient's young age (39) and good performance status, which supports the decision for aggressive surgical management.\n\n**5. Actionability:**\nThe steps are clear and specific: proceed with surgery, ensure perioperative SSA coverage, consider intraoperative detection tools, and plan for long-term monitoring without adjuvant therapy. This provides a clear roadmap for the clinical team.",
+      "improvement_recommendations": "No improvements needed.",
+      "raw_response": "<validation_decision>\nPASS\n</validation_decision>\n\n<critical_issues>\nNone identified.\n</critical_issues>\n\n<warnings>\nNone identified.\n</warnings>\n\n<detailed_reasoning>\nThe therapy recommendation is comprehensive, accurate, and safe, effectively addressing the complex clinical scenario of a patient with Stage IV Si-NET who has achieved a partial response to second-line PRRT.\n\n**1. Completeness:**\nThe recommendation addresses all aspects of the patient's current status. It validates the sequencing of therapy (PRRT first, then surgery), which is the core clinical question. It covers the surgical plan (primary, nodes, metastases), perioperative safety (carcinoid crisis prophylaxis), and post-operative follow-up. It also acknowledges the Ki-67 discrepancy noted in the assessment, correctly interpreting that the tumor remains well-differentiated (G1/G2) regardless of the specific value (2% vs 6%).\n\n**2. Accuracy:**\n*   **Guideline Interpretation:** The recommendation correctly applies ENETS 2024 guidelines regarding the \"combination strategy\" (PRRT + Surgery) for diffuse disease and the timing of surgery (delayed >6 months). It accurately reflects the consensus that cytoreductive surgery is indicated when feasible, especially after a response to systemic therapy.\n*   **Trial Citations:**\n    *   **NCT05448157:** The suggestion to consider radioguided surgery (if available) is appropriately supported by this trial citation, framed as an adjunctive tool rather than a mandatory standard.\n    *   **NCT04727723:** This observational study is correctly used to validate the efficacy of the PRRT already administered.\n    *   **NCT03049189 (COMPETE):** Correctly referenced to contextualize the choice of radionuclide therapy over other options like Everolimus.\n\n**3. Consistency:**\nThe recommendation is consistent with the patient's \"Partial Response\" status and \"good clinical condition.\" It logically connects the positive response to PRRT with the decision to proceed to cytoreduction, aligning with the assessment's conclusion that surgery is now a valid consideration.\n\n**4. Safety:**\n*   **Carcinoid Crisis:** The inclusion of perioperative IV Somatostatin Analogues is a critical safety measure for a patient with functional potential undergoing liver manipulation.\n*   **Patient Selection:** The recommendation respects the patient's young age (39) and good performance status, which supports the decision for aggressive surgical management.\n\n**5. Actionability:**\nThe steps are clear and specific: proceed with surgery, ensure perioperative SSA coverage, consider intraoperative detection tools, and plan for long-term monitoring without adjuvant therapy. This provides a clear roadmap for the clinical team.\n</detailed_reasoning>\n\n<recommendations_for_improvement>\nNo improvements needed.\n</recommendations_for_improvement>",
+      "checks_performed": [
+        "Completeness validation",
+        "Accuracy validation",
+        "Consistency validation",
+        "Safety validation",
+        "Actionability validation"
+      ],
+      "prompt_file": "batch_results/run_20251212_150140\\patient_8\\patient_8_validation_prompt.txt",
+      "response_file": "batch_results/run_20251212_150140\\patient_8\\patient_8_validation_response.txt"
+    }
+  },
+  "overall_status": "passed",
+  "requires_regeneration": false,
+  "regeneration_reasons": [],
+  "validation_summary": "======================================================================\nTHERAPY RECOMMENDATION VALIDATION REPORT\n======================================================================\nPatient ID: 8\nTimestamp: 2025-12-12T15:43:55.571573\nOverall Status: PASSED\nRequires Regeneration: NO\n\n--- STRUCTURAL VALIDATION ---\nStatus: PASS\n  ✅ No issues found\n\n--- EVIDENCE CONSISTENCY VALIDATION ---\nStatus: PASS\nTrials cited: 3\nTrials available: 11\nHallucinated citations: 0\n  ✅ No issues found\n\n--- SEMANTIC VALIDATION (LLM-BASED) ---\nDecision: PASS\nStatus: PASS\n\nDetailed Reasoning:\nThe therapy recommendation is comprehensive, accurate, and safe, effectively addressing the complex clinical scenario of a patient with Stage IV Si-NET who has achieved a partial response to second-line PRRT.\n\n**1. Completeness:**\nThe recommendation addresses all aspects of the patient's current status. It validates the sequencing of therapy (PRRT first, then surgery), which is the core clinical question. It covers the surgical plan (primary, nodes, metastases), perioperative safety (carcinoid crisis prophylaxis), and post-operative follow-up. It also acknowledges the Ki-67 discrepancy noted in the assessment, correctly interpreting that the tumor remains well-differentiated (G1/G2) regardless of the specific value (2% vs 6%).\n\n**2. Accuracy:**\n*   **Guideline Interpretation:** The recommendation correctly applies ENETS 2024 guidelines regarding the \"combination strategy\" (PRRT + Surgery) for diffuse disease and the timing of surgery (delayed >6 months). It accurately reflects the consensus that cytoreductive surgery is indicated when feasible, especially after a response to systemic therapy.\n*   **Trial Citations:**\n    *   **NCT05448157:** The suggestion to consider radioguided surgery (if available) is appropriately supported by this trial citation, framed as an adjunctive tool rather than a mandatory standard.\n    *   **NCT04727723:** This observational study is correctly used to validate the efficacy of the PRRT already administered.\n    *   **NCT03049189 (COMPETE):** Correctly referenced to contextualize the choice of radionuclide therapy over other options like Everolimus.\n\n**3. Consistency:**\nThe recommendation is consistent with the patient's \"Partial Response\" status and \"good clinical condition.\" It logically connects the positive response to PRRT with the decision to proceed to cytoreduction, aligning with the assessment's conclusion that surgery is now a valid consideration.\n\n**4. Safety:**\n*   **Carcinoid Crisis:** The inclusion of perioperative IV Somatostatin Analogues is a critical safety measure for a patient with functional potential undergoing liver manipulation.\n*   **Patient Selection:** The recommendation respects the patient's young age (39) and good performance status, which supports the decision for aggressive surgical management.\n\n**5. Actionability:**\nThe steps are clear and specific: proceed with surgery, ensure perioperative SSA coverage, consider intraoperative detection tools, and plan for long-term monitoring without adjuvant therapy. This provides a clear roadmap for the clinical team.\n  ✅ No issues found\n\n======================================================================\n✅ VALIDATION PASSED - NO REGENERATION NEEDED\n======================================================================",
+  "iteration": 2
+}

@@ -1,0 +1,157 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-09-22T09:44:23.650012
+Trial: 2/86
+NCT ID: NCT04028479
+Model: google/gemini-2.5-pro
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 52-year-old man with no significant medical history presented in January 2025 with massive upper gastrointestinal bleeding and hemorrhagic shock. He required ICU admission and arterial embolization (gastric, splenic, and pancreatic branches). An incidental pulmonary embolism was also detected. He started first-line treatment with FOLFIRINOX (Cycle 1: Feb 11, 2025; Cycle 7: May 21, 2025).
+•	FDG-PET (Jan 2025): Hypermetabolic pancreatic mass (SUV 16) with a central photopenic area suggestive of necrosis and locoregional infiltration. No distant disease.
+•	CT scan (Apr 2025): Stable heterogeneous abdominal mass with necrotic areas up to 12 cm, infiltrating the pancreatic tail, splenic hilum, gastric fundus, and left adrenal. Complete splenic vein occlusion with tumor thrombus.
+•	CT scan (May 20, 2025): 10 cm pancreatic mass with similar locoregional infiltration and signs of splenic infarctions.
+2.	Current Clinical Status
+Referred to our center in June 2025. Pathology review reclassified the tumor as a Grade 2 NET with Ki67 19%. Admitted in June 2025 due to a new episode of upper GI bleeding (Hb 7.1 g/dL). Gastroscopy showed a 4 cm area of tumor infiltration without active bleeding.
+Question for Tumorboard:
+After clinical stabilization of the current GI bleeding episode, what should be the next therapeutic step in disease management?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+<assessment>
+### **Patient Summary**
+This is a 52-year-old man with a recently diagnosed, large, locally advanced pancreatic neuroendocrine tumor (Pan-NET). He initially presented with a life-threatening upper gastrointestinal (GI) bleed and was empirically treated with 7 cycles of FOLFIRINOX. A subsequent pathology review reclassified his tumor as a well-differentiated Grade 2 NET with a Ki-67 of 19%. He is now admitted for a second episode of severe upper GI bleeding, with a hemoglobin of 7.1 g/dL, secondary to direct tumor infiltration into the stomach.
+
+### **Tumor Characteristics and Staging**
+*   **Histopathology:** The diagnosis is a well-differentiated Pan-NET, Grade 2. The Ki-67 proliferation index of 19% is at the highest end of the G2 category (G2 range: 3-20%), bordering on G3, which often indicates a more aggressive clinical course (ESMO 2020, Table 1).
+*   **Anatomical Staging:** Imaging (CT scan, May 2025) confirms a large, 10 cm mass in the pancreatic tail. This is a locally advanced tumor, consistent with a pT4 stage, showing extensive locoregional infiltration into the splenic hilum, gastric fundus, and left adrenal gland. There is also evidence of complete splenic vein occlusion by a tumor thrombus (ENETS 2023, Sec 3.1.3).
+*   **Functional Imaging and Prognostic Markers:**
+    *   The initial FDG-PET scan (Jan 2025) revealed a highly hypermetabolic mass (SUV 16). According to the ENETS 2023 and ESMO 2020 guidelines, high FDG uptake is a poor prognostic factor in NETs and is associated with higher tumor grade (ENETS 2023, Sec 2.5.1; ESMO 2020, Staging section).
+    *   A significant limitation in the current workup is the absence of somatostatin receptor imaging (SRI), such as a 68Ga-DOTATATE PET/CT. The guidelines identify SRI as the functional imaging modality of choice for staging, prognostication, and determining eligibility for Peptide Receptor Radionuclide Therapy (PRRT) (ENETS 2023, Sec 2.5.2; ESMO 2020, Staging section). The tumor's SSTR expression status is therefore unknown.
+
+### **Response to Prior Therapy**
+*   The patient received 7 cycles of FOLFIRINOX from February to May 2025. While not a standard first-line therapy for Pan-NETs, this can be viewed as a form of neoadjuvant or conversion chemotherapy.
+*   Imaging follow-up suggests disease stabilization, with a modest decrease in the primary mass size from up to 12 cm (April 2025) to 10 cm (May 2025). This indicates the tumor is not refractory to systemic chemotherapy.
+
+### **Current Clinical Problem and Considerations for Management**
+*   The patient's readmission is due to a new, severe upper GI bleed, which is a direct and life-threatening complication of the tumor's local invasiveness. This underscores the urgent need for definitive local control of the primary tumor.
+*   **Surgical Candidacy:** The central question for the tumor board is the feasibility of surgical resection. The ENETS 2023 guidelines state that patients with locally advanced (T4) NF-Pan-NET can be resected safely in expert centers, and that radical (R0) resection, including venous reconstruction, can be considered (Level of evidence 3, Grade of recommendation A). The ESMO 2020 guidelines similarly support considering pancreatectomy with vascular resection in this setting. The patient's disease appears confined to the locoregional area without distant metastases on available imaging, making curative-intent surgery a primary consideration. The extent of infiltration will necessitate a complex multivisceral resection.
+*   **Alternative Therapeutic Options:** If the tumor is deemed unresectable, or if the surgical risk is prohibitive, other systemic therapies would be considered. These include alternative chemotherapy regimens (e.g., temozolomide/capecitabine), targeted agents (everolimus, sunitinib), or PRRT (ESMO 2020, Figure 4). However, eligibility for PRRT cannot be assessed without SRI to confirm sufficient SSTR expression, and the high FDG uptake raises the possibility of SSTR-negative disease, which would be a contraindication.
+
+### **Summary for Tumor Board Discussion**
+This patient has a large, locally advanced, high-end G2 Pan-NET with aggressive biological features (high Ki-67, high FDG uptake) that is causing recurrent, life-threatening GI bleeding. He has demonstrated disease stabilization following systemic chemotherapy. The immediate clinical priority is to achieve local control to prevent further hemorrhage. The main therapeutic question is to determine if a complex, multivisceral surgical resection with curative intent is technically feasible and offers an acceptable risk-benefit profile, as supported by both ENETS and ESMO guidelines for locally advanced disease.
+</assessment>
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: After clinical stabilization of the current GI bleeding episode, what should be the next therapeutic step in disease management?
+
+### STUDY DATA
+	•	NCT-ID: NCT04028479
+	•	Title: The Registry of Oncology Outcomes Associated with Testing and Treatment
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: Biomarker Testing (L); Systemic Treatment (T); Patient Reported Outcomes (P)
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Patient or representative provides written informed consent
+* Patient is diagnosed with advanced malignancy
+* Patient is willing to be treated for this malignancy according to a plan determine by them and their physician
+* patient will be willing to have regular follow up visits as part of their standard of care
+
+Exclusion Criteria:
+
+* patient is not a candidate or does not desire any treatment for their disease *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This study is to collect and validate regulatory-grade real-world data (RWD) in oncology using the novel, Master Observational Trial construct. This data can be then used in real-world evidence (RWE) generation. It will also create reusable infrastructure to allow creation or affiliation with many additional RWD/RWE efforts both prospective and retrospective in nature.
+	•	Publications: 9 publication(s) found; Analysis: Found 9 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Woodcock J, LaVange LM. Master Protocols to Study Multiple Therapies, Multiple Diseases, or Both. N Engl J Med. 2017 Jul 6;377(1):62-70. doi: 10.1056/NEJMra1510062. No abstract available.
+• Boland JF, Chung CC, Roberson D, Mitchell J, Zhang X, Im KM, He J, Chanock SJ, Yeager M, Dean M. The new sequencer on the block: comparison of Life Technology's Proton sequencer to an Illumina HiSeq for whole-exome sequencing. Hum Genet. 2013 Oct;132(10):1153-63. doi: 10.1007/s00439-013-1321-4. Epub 2013 Jun 12.
+• Morash M, Mitchell H, Beltran H, Elemento O, Pathak J. The Role of Next-Generation Sequencing in Precision Medicine: A Review of Outcomes in Oncology. J Pers Med. 2018 Sep 17;8(3):30. doi: 10.3390/jpm8030030.
+• Korphaisarn K, Kopetz S. BRAF-Directed Therapy in Metastatic Colorectal Cancer. Cancer J. 2016 May-Jun;22(3):175-8. doi: 10.1097/PPO.0000000000000189.
+• Sherman RE, Anderson SA, Dal Pan GJ, Gray GW, Gross T, Hunter NL, LaVange L, Marinac-Dabic D, Marks PW, Robb MA, Shuren J, Temple R, Woodcock J, Yue LQ, Califf RM. Real-World Evidence - What Is It and What Can It Tell Us? N Engl J Med. 2016 Dec 8;375(23):2293-2297. doi: 10.1056/NEJMsb1609216. No abstract available.
+• Kaplan RM, Chambers DA, Glasgow RE. Big data and large sample size: a cautionary note on the potential for bias. Clin Transl Sci. 2014 Aug;7(4):342-6. doi: 10.1111/cts.12178. Epub 2014 Jul 15.
+• AACR Project GENIE Consortium. AACR Project GENIE: Powering Precision Medicine through an International Consortium. Cancer Discov. 2017 Aug;7(8):818-831. doi: 10.1158/2159-8290.CD-17-0151. Epub 2017 Jun 1.
+• Dickson DJ, Pfeifer JD. Real-world data in the molecular era-finding the reality in the real world. Clin Pharmacol Ther. 2016 Feb;99(2):186-97. doi: 10.1002/cpt.300. Epub 2016 Jan 12.
+• Conley RB, Dickson D, Zenklusen JC, Al Naber J, Messner DA, Atasoy A, Chaihorsky L, Collyar D, Compton C, Ferguson M, Khozin S, Klein RD, Kotte S, Kurzrock R, Lin CJ, Liu F, Marino I, McDonough R, McNeal A, Miller V, Schilsky RL, Wang LI. Core Clinical Data Elements for Cancer Genomic Repositories: A Multi-stakeholder Consensus. Cell. 2017 Nov 16;171(5):982-986. doi: 10.1016/j.cell.2017.10.032.
+	•	Key findings from publications: No detailed findings available
+	•	Additional evidence from online sources: Primary outcome: Best overall response (BOR) - 1st line of therapy; Best overall response (BOR) - 2nd line of therapy; Best overall response (BOR) - 3rd line of therapy; Best overall response (BOR) - 4th line of therapy; Best overall response (BOR) - 5th line of therapy; Progression-free survival (PFS) - 1st line of therapy; Progression-free survival (PFS) - 2nd line of therapy; Progression-free survival (PFS) - 3rd line of therapy; Progression-free survival (PFS) - 4th line of therapy; Progression-free survival (PFS) - 5th line of therapy
+Secondary outcomes: Overall survival (OS)
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Found 9 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:02:18.998628
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for the patient's current clinical situation. While the disease biology (well-differentiated NET) aligns, the treatment context is inapplicable. The patient has progressive disease on Octreotide LAR and is considered SSA-refractory, requiring a new line of systemic therapy for tumor control (e.g., targeted agents). This Phase 4 study compares patient preference and injection experience (pain scores) between Octreotide and Lanreotide in patients initiating SSA therapy (SSA-naive). Evidence regarding which SSA injection is preferred or less painful does not guide therapeutic decision-making for a patient who has already failed this class of drugs and needs efficacy data for subsequent lines of therapy."
+}

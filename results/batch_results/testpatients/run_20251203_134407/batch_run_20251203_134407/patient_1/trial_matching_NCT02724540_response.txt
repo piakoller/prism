@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:55:05.116059
+Trial: 16/86
+NCT ID: NCT02724540
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context/Clinical Applicability. The patient presents with locally advanced pancreatic NET infiltrating the stomach and spleen, with explicit confirmation of \"no distant disease\" (i.e., no liver metastases). The RETNET trial specifically evaluates liver-directed therapies (bland embolization vs. chemoembolization) for the management of neuroendocrine tumor liver metastases. Since the patient does not have liver metastases, evidence regarding hepatic progression-free survival and the optimal technique for hepatic embolization is clinically irrelevant to his management. While the patient underwent emergency embolization for gastric bleeding, this was a hemostatic procedure for a primary tumor complication, distinct from the oncologic liver-directed therapies studied here."
+}

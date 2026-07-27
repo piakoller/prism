@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:29:26.466824
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient for two key reasons. First, regarding **Treatment Context**, the patient presents with life-threatening upper GI bleeding due to direct tumor invasion of the stomach. Cabozantinib is a VEGF inhibitor associated with significant bleeding and perforation risks; the study explicitly excludes patients with tumor invasion of the GI tract and significant recent bleeding (Exclusion 12b/c). Consequently, this treatment approach is clinically contraindicated and unsafe for the patient's current scenario. Second, regarding **Evidence Quality**, while the trial includes a cohort for G1/G2 NETs (Cohort 5), the provided published results focus exclusively on Adrenocortical Carcinoma (ACC) or general trial descriptions. No efficacy or safety data specific to the Neuroendocrine Tumor cohort is provided in the input to inform therapeutic decision-making."
+}

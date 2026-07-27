@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:24:46.765983
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context or Evidence Relevance. The patient has a confirmed diagnosis of metastatic pancreatic neuroendocrine carcinoma (NEC) and the clinical question focuses on therapeutic consolidation strategies (e.g., liver resection vs. maintenance chemotherapy) following a partial response to first-line treatment. The study evaluates a diagnostic artificial intelligence model for characterizing solid pancreatic lesions via endoscopic ultrasound (EUS) to improve diagnostic accuracy. Since the patient's diagnosis is already established pathologically and the primary tumor has been resected, a study focused on initial diagnostic performance offers no actionable evidence regarding therapeutic efficacy, safety, or oncologic outcomes relevant to the decision-making process for this patient."
+}

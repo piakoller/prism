@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:26:04.327144
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "While the disease and biology align (Criterion 1 is met), as the patient has a G2 GEP-NET which is included in the study, the study fails on treatment context and evidence relevance (Criteria 2 and 3 are not met). The patient's urgent clinical question is the choice of first-line systemic therapy for unresectable, symptomatic, metastatic disease. This study (NCT03012789) does not evaluate a therapeutic intervention. Instead, it investigates the utility of a blood-based biomarker (NETest) to monitor the effectiveness of surgical resection and predict recurrence. The published evidence, focusing on a biomarker in a surgical context, provides no efficacy or safety data for any of the relevant systemic therapy options for this patient, such as chemotherapy, PRRT, or targeted agents. Therefore, the study's findings are not applicable to the patient's current clinical scenario and cannot provide any meaningful evidence to guide the critical decision on first-line medical treatment."
+}
+```

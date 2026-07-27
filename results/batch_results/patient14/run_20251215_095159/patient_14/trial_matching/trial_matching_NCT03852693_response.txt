@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:04:06.801061
+Trial: 32/86
+NCT ID: NCT03852693
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails all criteria for relevance to this patient. First, there is no disease alignment: the patient has a metastatic bronchial neuroendocrine tumor (lung primary, Ki-67 25%), whereas the study focuses exclusively on localized appendiceal neuroendocrine tumors (1-2 cm). Second, the treatment context is inapplicable: the patient requires decision-making regarding systemic therapy (specifically PRRT re-treatment) for advanced progressive disease, while the study evaluates the extent of surgical resection (appendectomy vs. hemicolectomy) for early-stage disease. Finally, the evidence regarding surgical de-escalation in appendiceal NETs offers no actionable insights for managing a patient with an aggressive, metastatic lung NET who has exhausted multiple lines of systemic therapy."
+}

@@ -1,0 +1,194 @@
+=== TRIAL ANALYSIS REASONING REPORT ===
+Timestamp: 2025-12-12T18:53:27.728547
+Patient ID: 12
+Analysis Status: success
+============================================================
+
+ANALYSIS SUMMARY:
+- Trials analyzed: 10
+- Trials included: 6
+- Trials excluded: 4
+- Analysis complete: True
+
+DETAILED TRIAL ANALYSES:
+==================================================
+
+TRIAL 1: NCT03278379
+Name: Avelumab in G2-3 NET
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 2: NCT02568267
+Name: Basket Study of Entrectinib (STARTRK-2)
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 3: NCT03074513
+Name: Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 4: NCT03728361
+Name: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 5: NCT03217097
+Name: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 6: NCT01842165
+Name: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 7: NCT03375320
+Name: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 8: NCT01466036
+Name: Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 9: NCT03972488
+Name: Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET (NETTER-2)
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 10: NCT01253161
+Name: Study of Pasireotide Long Acting Release (LAR) in Patients With Metastatic Neuroendocrine Tumors (NETs)
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+RAW ANALYSIS RESPONSE:
+==================================================
+Based on the patient's clinical profile—specifically the bulky, symptomatic, G2 (Ki-67 20%) Pan-NET with discordant imaging (FDG-positive/Ga68-negative peritoneal metastases)—the treatment priority is systemic control of aggressive disease. The analysis focuses on trials providing evidence for chemotherapy, targeted therapy, and the exclusion of PRRT.
+
+<trial_analysis>
+**NCT NUMBER:** NCT03278379
+**TRIAL NAME:** Avelumab in G2-3 NET
+**DECISION:** INCLUDE
+**RATIONALE:** This trial provides evidence that single-agent PD-L1 blockade (Avelumab) has limited antitumor activity (0% ORR) in G2-3 NETs. This informs the recommendation to avoid immunotherapy monotherapy despite the patient's high tumor grade and FDG avidity.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02568267
+**TRIAL NAME:** Basket Study of Entrectinib (STARTRK-2)
+**DECISION:** EXCLUDE
+**RATIONALE:** This trial requires specific gene fusions (NTRK/ROS1/ALK). While genetic counseling is indicated for this patient, these somatic alterations are extremely rare in Pan-NETs (<1%), and without a confirmed target, this trial does not inform the immediate empiric treatment recommendation.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03074513
+**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** Provides Phase 2 evidence for the combination of Atezolizumab and Bevacizumab in pNETs (ORR 20%). While likely less efficacious than cytotoxic chemotherapy for bulky disease, it represents a viable non-cytotoxic systemic option supported by clinical data.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03728361
+**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+**DECISION:** INCLUDE
+**RATIONALE:** Evaluates a Temozolomide-based combination, which is central to the patient's potential chemotherapy plan. Although efficacy was driven by lung NETs, the data informs expectations regarding the addition of checkpoint inhibitors to alkylating agents in pNETs.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03217097
+**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** This is a critical evidence source for a patient requiring chemotherapy. The trial results guide the selection between alkylating agents (e.g., Temozolomide) and Oxaliplatin based on MGMT methylation status, directly addressing the need for an optimal cytotoxic regimen for bulky disease.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01842165
+**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+**DECISION:** EXCLUDE
+**RATIONALE:** This trial focuses on dosimetry and prediction in patients treated with PRRT. Since the patient is clinically ineligible for PRRT due to Ga68-negative peritoneal metastases (discordant imaging), optimization data for a therapy she should not receive is not relevant for the recommendation.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03375320
+**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+**DECISION:** INCLUDE
+**RATIONALE:** Provides high-quality Phase 3 evidence that Cabozantinib significantly improves PFS and achieves an ORR of 19% in pNETs. This establishes Cabozantinib as a robust therapeutic option for this patient's aggressive, bulky disease profile.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01466036
+**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** No published results are available to evaluate the efficacy or safety of this intervention.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03972488
+**TRIAL NAME:** Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET (NETTER-2)
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 3 trial establishes 177Lu-Dotatate as a standard first-line therapy for G2/G3 NETs. It is included to provide the evidence-based context for why this patient, despite fitting the grade criteria, must be explicitly excluded from this standard of care due to her discordant (SSTR-negative) peritoneal disease.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01253161
+**TRIAL NAME:** Study of Pasireotide Long Acting Release (LAR) in Patients With Metastatic Neuroendocrine Tumors (NETs)
+**DECISION:** EXCLUDE
+**RATIONALE:** The trial investigates a somatostatin analog with significant toxicity (hyperglycemia) and limited tumor shrinkage capability. Given the patient's need for significant tumor reduction (bulky disease), this agent is less relevant than cytotoxic or targeted options.
+---
+</trial_analysis>
+
+<summary>
+**TOTAL TRIALS ANALYZED:** 10
+**TRIALS TO INCLUDE:** 6
+**TRIALS TO EXCLUDE:** 4
+</summary>

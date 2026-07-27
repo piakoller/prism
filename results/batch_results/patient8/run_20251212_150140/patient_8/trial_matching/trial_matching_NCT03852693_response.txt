@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:18:04.736993
+Trial: 32/86
+NCT ID: NCT03852693
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a metastatic ileal neuroendocrine tumor (Si-NET) with liver and peritoneal involvement (Stage IV), whereas the study focuses exclusively on localized appendiceal neuroendocrine tumors (aNETs) measuring 1-2 cm. The study evaluates the necessity of right-sided hemicolectomy versus appendectomy to prevent recurrence in early-stage appendiceal disease. This evidence is not transferable to the patient's scenario, which involves decision-making regarding cytoreductive surgery for established metastatic ileal disease following PRRT. The biological behavior and surgical management of localized appendiceal NETs differ significantly from metastatic small bowel NETs, rendering the study's findings on prophylactic lymphadenectomy irrelevant to this patient's treatment plan."
+}

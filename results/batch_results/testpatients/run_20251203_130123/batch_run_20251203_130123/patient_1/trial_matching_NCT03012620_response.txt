@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:15:21.117678
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is a multi-cohort basket trial, but the provided published results (PMID: 37429302) report exclusively on the **sarcoma** cohort (e.g., chordoma, alveolar soft part sarcoma). There are no efficacy or safety data provided for the neuroendocrine tumor cohort in the supplied text. Evidence derived from sarcoma patients is not biologically aligned with or transferable to a patient with a Grade 2 Pancreatic Neuroendocrine Tumor (PanNET). Furthermore, even if NET results were available, the protocol requires well-differentiated tumors to be refractory to four lines of treatment, whereas this patient has only received one line of systemic therapy (FOLFIRINOX). Therefore, the study provides no meaningful clinical evidence to guide decision-making for this specific patient."
+}

@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:45:09.926310
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "While the study's Cohort 5 aligns with the patient's disease biology (well-differentiated G2 digestive NET), and the intervention could be considered in a future, post-progression clinical scenario, the study fails to provide meaningful evidence for therapy recommendations. The critical failing criterion is Evidence Quality and Relevance. The provided information, including the publication list and online search summary, explicitly states that no results have been published for the relevant digestive NET cohort. The only results mentioned are for the adrenocortical carcinoma cohort, which are not clinically or biologically transferable to a patient with a pancreatic NET. Without any published efficacy (e.g., ORR, PFS) or safety data for the G1/G2 digestive NET population, the study offers no actionable insights that could guide treatment decisions for this patient at this time, either for the current first-line question or for future planning."
+}
+```

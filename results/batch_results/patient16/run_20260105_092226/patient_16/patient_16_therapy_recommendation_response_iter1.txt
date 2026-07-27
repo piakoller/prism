@@ -1,0 +1,49 @@
+=== REGENERATION ITERATION 1 - THERAPY RECOMMENDATION RESPONSE ===
+Timestamp: 2026-01-05T09:57:31.123492
+================================================================================
+
+=== THERAPY RECOMMENDATION RAW RESPONSE ===
+Timestamp: 2026-01-05T09:57:31.050475
+Patient ID: 16
+Model: google/gemini-3-pro-preview
+==================================================
+
+<therapy_recommendation>
+Based on the patient's clinical profile (symptomatic, G1, SSTR-positive NF-Pan-NET with oligometastatic liver and nodal disease) and the provided evidence, the recommended therapy is:
+
+**1. Primary Strategy: Surgical Resection (If R0 Feasible)**
+**Recommendation:** Proceed with **pancreaticoduodenectomy (Whipple procedure)** combined with **resection or ablation of liver metastases** and regional lymphadenectomy.
+*   **Condition:** This is indicated only if the multidisciplinary surgical team confirms that a curative (R0) resection is technically feasible, specifically addressing the 3 cm contact with the portal/superior mesenteric vein and the retroperitoneal paraaortic lymph nodes.
+*   **Guideline Support:** ENETS guidelines strongly recommend surgery for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation (both present here). The guidelines also state that radical resection including venous resection can be performed safely in expert centers.
+
+**2. Neoadjuvant Strategy: Peptide Receptor Radionuclide Therapy (PRRT) (If R0 Not Feasible)**
+**Recommendation:** If R0 resection is assessed as not immediately feasible due to the vascular contact or retroperitoneal nodal extent, administer **neoadjuvant PRRT with 177Lu-DOTATATE**.
+*   **Trial Evidence:**
+    *   **NCT02754297 (Personalized PRRT):** According to the publication abstract included in the trial evidence (Del Prete et al.), this Phase 2 trial demonstrated that personalized PRRT achieved a **partial or minor response in 84.6% (11 of 13)** of patients with pancreatic NETs. This high response rate supports the utility of PRRT for tumor shrinkage (downstaging) to facilitate future resection.
+    *   **NCT02236910:** This registry study reported a median progression-free survival (PFS) of **34.1 months** in well-differentiated NETs treated with 177Lu-DOTATATE, supporting its efficacy in this patient population.
+*   **Guideline Support:** ENETS guidelines explicitly suggest that preoperative treatment with PRRT may be considered in selected cases of locally advanced or oligometastatic SSTR-positive NF-Pan-NETs to facilitate R0 resection.
+*   **Eligibility:** The patient's DOTATOC PET/CT shows "intense accumulation," satisfying the requirement for high SSTR expression.
+
+**3. Systemic Therapy: Somatostatin Analogues (SSAs)**
+**Recommendation:** Initiate **Lanreotide Autogel (120 mg)** or **Octreotide LAR (30 mg)** every 4 weeks for antiproliferative control and symptom management.
+*   **Trial Evidence:**
+    *   **NCT02730104:** The prospective observational study by Paulson et al. demonstrated a **24-month PFS rate of 73.7%** in patients with GEP-NETs treated with Lanreotide, confirming its real-world effectiveness and safety profile.
+*   **Guideline Support:** ESMO and ENETS guidelines recommend SSAs as first-line antiproliferative therapy for SSTR-positive, well-differentiated (G1) NF-Pan-NETs.
+</therapy_recommendation>
+
+<rationale>
+**Clinical Context:**
+The patient presents with a Grade 1 (Ki-67 2%) non-functioning pancreatic NET. While the biology is favorable (slow-growing), the tumor is symptomatic (vomiting/pain due to duct dilation) and locally advanced (3 cm venous contact) with oligometastatic disease (small liver lesions and paraaortic nodes).
+
+**Surgical Justification:**
+Immediate symptom relief and potential cure are best achieved through surgery if R0 resection is possible. ENETS guidelines support aggressive surgical management for symptomatic NF-Pan-NETs and oligometastatic liver disease. However, the presence of retroperitoneal paraaortic lymph nodes and significant venous contact poses a risk for incomplete (R1/R2) resection.
+
+**Neoadjuvant PRRT Rationale:**
+If the surgical risk is deemed too high for R0 resection, downstaging is required. PRRT is preferred over chemotherapy for this patient because:
+1.  **Tumor Biology:** The tumor is G1 (Ki-67 2%) and strongly SSTR-positive, making it an ideal target for PRRT. Chemotherapy is typically reserved for higher-grade or rapidly progressive disease.
+2.  **Evidence of Efficacy:** Trial **NCT02754297** provides specific evidence for Pan-NETs, showing an 84.6% partial/minor response rate, which is critical for a neoadjuvant approach where shrinkage is the goal. Trial **NCT02236910** further supports the survival benefits of this modality.
+3.  **Guideline Alignment:** ENETS guidelines specifically mention PRRT as a neoadjuvant consideration for SSTR-positive Pan-NETs to improve resectability.
+
+**SSA Rationale:**
+SSAs (Lanreotide/Octreotide) are the standard of care for background antiproliferative control in G1 NETs. Trial **NCT02730104** confirms high progression-free survival rates (73.7% at 24 months) with Lanreotide, supporting its use to stabilize the disease, particularly if surgery is delayed or during the neoadjuvant period.
+</rationale>

@@ -1,0 +1,160 @@
+=== TRIAL ANALYSIS REASONING REPORT ===
+Timestamp: 2025-12-12T19:01:45.317984
+Patient ID: 11
+Analysis Status: success
+============================================================
+
+ANALYSIS SUMMARY:
+- Trials analyzed: 8
+- Trials included: 6
+- Trials excluded: 2
+- Analysis complete: True
+
+DETAILED TRIAL ANALYSES:
+==================================================
+
+TRIAL 1: NCT03278379
+Name: Avelumab in G2-3 NET
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 2: NCT02568267
+Name: Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 3: NCT05168631
+Name: Multicenter Retrospective Database on Prognostic and Predictive Factors in Patients With Neuroendocrine Tumors
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 4: NCT03728361
+Name: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 5: NCT02820857
+Name: Assessment of the Efficacy of Bevacizumab in Combination With Folfiri as Second-line Treatment in Patients Suffering From an Advanced Inoperable Poorly Differentiated Neuroendocrine Carcinoma of an Unknown or Gastroentero-pancreatic Primary Cancer
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 6: NCT02834013
+Name: Nivolumab and Ipilimumab in Treating Patients With Rare Tumors
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 7: NCT03837977
+Name: Second-line Therapy for Patients With Progressive Poorly Differentiated Extra-pulmonary Neuroendocrine Carcinoma
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 8: NCT03136055
+Name: Pembrolizumab-based Therapy in Previously Treated High Grade Neuroendocrine Carcinomas
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+RAW ANALYSIS RESPONSE:
+==================================================
+Based on the patient's diagnosis of **Pancreatic Neuroendocrine Carcinoma (NEC)** with a **Ki-67 of 95%** (High Grade), and her current status as a responder to first-line Platinum-Etoposide, the following clinical trials are analyzed as evidence sources for determining the next steps in her management (consolidation vs. second-line options).
+
+<trial_analysis>
+**NCT NUMBER:** NCT03278379
+**TRIAL NAME:** Avelumab in G2-3 NET
+**DECISION:** INCLUDE
+**RATIONALE:** This trial evaluated Avelumab (PD-L1 inhibitor) in G2-3 Neuroendocrine Neoplasms, including poorly differentiated NECs (NET-001 cohort). The results demonstrated no objective responses, providing critical negative evidence that single-agent PD-L1 blockade is likely ineffective for this patient, guiding the recommendation away from this monotherapy.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02568267
+**TRIAL NAME:** Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+**DECISION:** EXCLUDE
+**RATIONALE:** This trial targets tumors with specific gene fusions (NTRK/ROS1/ALK). There is no evidence in the patient file that she harbors these specific alterations, which are extremely rare in pancreatic NEC. The evidence is not applicable without a positive biomarker result.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT05168631
+**TRIAL NAME:** Multicenter Retrospective Database on Prognostic and Predictive Factors in Patients With Neuroendocrine Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** This is a retrospective observational database study, not an interventional trial. While it may provide prognostic data, it does not provide level 1 clinical evidence regarding the efficacy of specific therapeutic regimens to inform a treatment recommendation.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03728361
+**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+**DECISION:** INCLUDE
+**RATIONALE:** This trial demonstrated a 32% response rate in neuroendocrine neoplasms treated with Nivolumab plus Temozolomide. Given the patient's high Ki-67 (95%) mimicking small-cell biology, this combination represents a viable evidence-based option for second-line or intensification therapy.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02820857
+**TRIAL NAME:** Assessment of the Efficacy of Bevacizumab in Combination With Folfiri as Second-line Treatment in Patients Suffering From an Advanced Inoperable Poorly Differentiated Neuroendocrine Carcinoma of an Unknown or Gastroentero-pancreatic Primary Cancer
+**DECISION:** INCLUDE
+**RATIONALE:** The PRODIGE 41-BEVANEC trial specifically addresses second-line treatment for GEP-NEC after platinum-etoposide failure. It established FOLFIRI as a standard second-line option and demonstrated that adding Bevacizumab does not improve survival, directly informing the choice of subsequent chemotherapy.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02834013
+**TRIAL NAME:** Nivolumab and Ipilimumab in Treating Patients With Rare Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** The DART trial's high-grade neuroendocrine neoplasm cohort showed a 26-44% objective response rate with dual checkpoint inhibition (Nivolumab + Ipilimumab). This provides strong evidence for using dual immunotherapy as a therapeutic strategy for high-grade NEC, particularly if chemotherapy options are exhausted or declined.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03837977
+**TRIAL NAME:** Second-line Therapy for Patients With Progressive Poorly Differentiated Extra-pulmonary Neuroendocrine Carcinoma
+**DECISION:** INCLUDE
+**RATIONALE:** The NET-02 trial demonstrated that Liposomal Irinotecan (nal-IRI) plus 5-FU/Folinic Acid met the primary endpoint for progression-free survival in progressive PD-EP-NEC, whereas Docetaxel did not. This identifies a specific, evidence-based second-line chemotherapy regimen for this patient.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03136055
+**TRIAL NAME:** Pembrolizumab-based Therapy in Previously Treated High Grade Neuroendocrine Carcinomas
+**DECISION:** INCLUDE
+**RATIONALE:** This study showed that Pembrolizumab, either alone or with chemotherapy, had minimal efficacy (ORR 5-7%) in extrapulmonary high-grade NEC. This is crucial negative evidence that helps rule out Pembrolizumab-based regimens in favor of more effective combinations (like Ipi/Nivo or Nivo/TMZ) for this patient.
+---
+</trial_analysis>
+
+# SUMMARY
+
+**TOTAL TRIALS ANALYZED:** 8
+**TRIALS TO INCLUDE:** 6
+**TRIALS TO EXCLUDE:** 2

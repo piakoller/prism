@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:58:38.800165
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant because it provides critical prognostic evidence for Peptide Receptor Radionuclide Therapy (PRRT) in well-differentiated NETs, directly aligning with the patient's diagnosis (G2 Pan-NET). Specifically, the published results (Swiha et al.) identify the presence of ≥5 bone metastases as a strong independent predictor of poor overall survival (HR 4.33) and non-GEP status/high liver burden as negative prognostic factors. This patient presents with \"multiple bone metastases\" and significant liver burden. Although the patient has heterogeneous SSTR uptake (low in primary) which already complicates PRRT eligibility, this study offers additional evidence that even if treated with PRRT, the patient's specific metastatic pattern (high skeletal burden) is associated with inferior outcomes. This information is clinically actionable for the tumor board, supporting the assessment to prioritize alternative systemic therapies (such as chemotherapy) over PRRT as a first-line strategy due to the predicted poor response and high risk."
+}

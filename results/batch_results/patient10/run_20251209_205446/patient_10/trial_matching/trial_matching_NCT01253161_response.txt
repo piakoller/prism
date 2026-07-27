@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:25:18.916061
+Trial: 78/86
+NCT ID: NCT01253161
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates Pasireotide LAR exclusively in treatment-naïve patients as a first-line therapy, explicitly excluding those with prior systemic treatment or prior somatostatin analog (SSA) use. The patient is heavily pre-treated (seeking 8th-line therapy) and has already demonstrated disease progression on a standard SSA (Lanreotide), as well as PRRT, targeted therapies, and chemotherapy. Clinical outcomes (PFS, response rates) derived from a treatment-naïve population cannot be reasonably extrapolated to a refractory, late-line setting, especially for a drug within the same pharmacological class as a failed prior therapy. Therefore, this study does not provide actionable evidence to guide treatment for this specific patient's refractory disease."
+}

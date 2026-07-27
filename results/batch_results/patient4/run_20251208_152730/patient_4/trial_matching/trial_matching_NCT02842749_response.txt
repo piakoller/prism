@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T16:12:32.018600
+Trial: 85/86
+NCT ID: NCT02842749
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient. The primary failing criterion is Evidence Quality and Relevance (Criterion 3), as the input data indicates no published results or findings are available; without data, the study cannot guide therapeutic decision-making. Additionally, Disease Alignment (Criterion 1) is not met. The patient has a duodenal neuroendocrine tumor (GI-NET), whereas the study is strictly limited to pancreatic neuroendocrine tumors (pNETs). While Everolimus is a relevant treatment option for the patient's current scenario (progression on TKIs) based on other trials (e.g., RADIANT-4), a pNET-specific Phase IV study without results offers no transferable or actionable evidence for a patient with a duodenal primary."
+}

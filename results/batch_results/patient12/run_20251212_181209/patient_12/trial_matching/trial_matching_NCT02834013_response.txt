@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:33:11.043207
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The provided study results do not offer meaningful evidence for this specific patient's diagnosis. While the DART trial included a pancreatic neuroendocrine tumor (Pan-NET) cohort (Cohort 22), the specific results for this cohort are not included in the provided text (only the citation is listed). The available results cover **non-pancreatic** neuroendocrine tumors (Patel 2020), which showed a **0% objective response rate** in low/intermediate grade tumors, and **high-grade** neuroendocrine neoplasms (Patel 2021), which showed activity (26-44% ORR) but enrolled patients with high-grade histology (median Ki-67 80%). The patient has a **pancreatic** well-differentiated NET G2 (Ki-67 20%). She does not align with the \"high-grade\" cohort (typically poorly differentiated or G3) nor the \"non-pancreatic\" cohort (distinct biology). Extrapolating the lack of efficacy from non-pancreatic low-grade NETs suggests this therapy is likely ineffective, but without the specific pancreatic NET data, the evidence is insufficient to robustly guide a therapy recommendation for a pancreatic G2 NET, particularly given the patient's aggressive features (FDG-avidity) which might differ from the populations in the provided abstracts."
+}
+```

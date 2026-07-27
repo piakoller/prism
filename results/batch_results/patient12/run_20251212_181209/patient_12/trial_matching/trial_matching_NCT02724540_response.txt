@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:18:57.216304
+Trial: 16/86
+NCT ID: NCT02724540
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence to guide therapy for this patient. First, the provided publication is a **study protocol** outlining the trial design, not a report of clinical results; it contains no efficacy or safety outcomes (e.g., progression-free survival) to inform decision-making. Second, regarding clinical applicability, the patient has significant extra-hepatic disease (peritoneal carcinomatosis) and the specific clinical question is to identify the best **systemic treatment**. This trial investigates liver-directed therapies (bland embolization vs. chemoembolization), which are locoregional interventions that do not address the patient's peritoneal burden. While the patient has bulky liver metastases, the requirement for systemic control of FDG-avid extra-hepatic disease and the lack of published outcome data in the provided input render this study insufficient for treatment planning."
+}

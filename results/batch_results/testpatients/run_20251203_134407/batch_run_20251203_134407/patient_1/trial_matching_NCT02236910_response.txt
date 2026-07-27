@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:59:05.241913
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study is relevant because it evaluates the efficacy and survival predictors of Peptide Receptor Radionuclide Therapy (PRRT) with Lu-177 DOTATATE in patients with well-differentiated neuroendocrine tumors, aligning with this patient's Grade 2 Pan-NET (Ki-67 19%). Although the patient's SSTR status is currently unconfirmed, we assume SSTR positivity based on the well-differentiated histology (G2) per instructions, making PRRT a potential therapeutic option for the next line of treatment. The published results (Swiha et al., 2022) report a median progression-free survival of 34.1 months and identify prognostic factors (e.g., tumor burden, metastatic sites) that could help the tumor board stratify this patient's risk and determine the potential benefit of switching from chemotherapy to PRRT. While the patient has high FDG uptake (SUV 16) which may impact response, the study's inclusion of progressive NETs provides actionable evidence for considering PRRT in the management of locally advanced, unresectable disease."
+}
+```

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:23:04.636990
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient's current treatment decision regarding surgery versus PRRT sequencing. While the disease biology (G2 NET with liver metastases) aligns, the clinical context is fundamentally different: the patient has already completed 4 cycles of standard intravenous PRRT with a partial response and has extrahepatic (peritoneal) disease. The study investigates the pharmacokinetic advantages of intra-arterial (IA) versus intravenous (IV) PRRT delivery in PRRT-naïve patients with liver-dominant disease. It does not address the efficacy of PRRT compared to surgery, nor does it inform management in a post-PRRT setting (maintenance or re-treatment). Additionally, the patient's peritoneal metastases require systemic exposure, making the study's focus on liver-directed IA delivery less relevant than the standard systemic approach she has already received."
+}

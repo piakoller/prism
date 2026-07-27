@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T16:35:36.040897
+Trial: 76/86
+NCT ID: NCT01794793
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Disease/Biology Alignment or Clinical Applicability. This is a Phase 4 rollover/extension study specifically designed to provide continued access to Pasireotide for patients with Cushing's Disease or Acromegaly who were already benefiting from the drug in previous Novartis-sponsored trials. The patient has a metastatic pancreatic neuroendocrine tumor (Pan-NET), which is biologically distinct from the pituitary disorders (Cushing's/Acromegaly) investigated in this study. Furthermore, the published results focus exclusively on long-term safety and efficacy in pituitary indications. There is no evidence provided regarding the efficacy of Pasireotide for Pan-NETs in this specific trial, nor is the study design (rollover for existing users) applicable to a patient seeking de novo second-line therapy for a progressive pancreatic tumor."
+}

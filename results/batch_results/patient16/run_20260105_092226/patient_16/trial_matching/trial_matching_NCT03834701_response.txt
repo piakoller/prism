@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:32:21.554814
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient's treatment. While the tumor biology (G1 PanNET) aligns, the disease stage and tumor burden are fundamentally discordant. The patient has metastatic (Stage IV), symptomatic disease with a large primary tumor (>4 cm) causing ductal dilation. The study evaluates EUS-guided radiofrequency ablation (RFA) strictly for small (15-25 mm), asymptomatic, localized tumors without metastases. EUS-RFA is a local therapy designed to spare surgery for small incidentalomas; it is not clinically applicable to this patient's large primary tumor (which exceeds safe ablation limits) or her metastatic context, which requires systemic therapy (e.g., SSAs, PRRT) or surgical cytoreduction. Therefore, the study's evidence on ablating small, localized lesions cannot guide therapy for this advanced, metastatic case."
+}

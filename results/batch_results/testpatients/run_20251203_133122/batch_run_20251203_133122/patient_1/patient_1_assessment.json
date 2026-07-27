@@ -1,0 +1,47 @@
+{
+  "assessment_text": "<assessment>\n**Diagnostic Classification and Prognostic Factors**\nThe patient presents with a locally advanced pancreatic mass, recently reclassified via pathology review as a Grade 2 Neuroendocrine Tumor (NET) with a Ki-67 index of 19%. According to ENETS 2023 and ESMO guidelines, this places the tumor at the upper limit of Grade 2 (cutoff <20%), bordering on Grade 3. The initial FDG-PET scan from January 2025 demonstrated a hypermetabolic mass with an SUV of 16. According to ENETS guidelines (Section 2.5.1), high FDG uptake is a strong poor prognostic factor and correlates with a higher grade and aggressive biological behavior. The presence of a central photopenic area suggestive of necrosis further supports the aggressive nature of this neoplasm.\n\n**Staging and Locoregional Extent**\nThe disease is characterized as locally advanced (T4 equivalent per ENETS/AJCC staging due to invasion of adjacent structures). CT imaging from April and May 2025 confirms a large heterogeneous mass (10–12 cm) infiltrating the pancreatic tail, splenic hilum, left adrenal gland, and notably",
+  "clinical_summary": {
+    "disease_status": "Unable to parse",
+    "stage": "Unknown",
+    "key_features": []
+  },
+  "clinical_needs": {
+    "primary_needs": [
+      "Assessment and management guidance needed"
+    ],
+    "urgency_level": "medium"
+  },
+  "evidence_priorities": {
+    "high_priority": [
+      "Clinical guidance for management decisions"
+    ],
+    "trial_types_needed": [
+      "clinical trials"
+    ]
+  },
+  "trial_eligibility": {
+    "favorable_factors": [],
+    "potential_barriers": []
+  },
+  "recommendations_for_trial_search": [
+    "Search for relevant clinical trials"
+  ],
+  "assessment_confidence": "low",
+  "raw_response": "<assessment>\n**Diagnostic Classification and Prognostic Factors**\nThe patient presents with a locally advanced pancreatic mass, recently reclassified via pathology review as a Grade 2 Neuroendocrine Tumor (NET) with a Ki-67 index of 19%. According to ENETS 2023 and ESMO guidelines, this places the tumor at the upper limit of Grade 2 (cutoff <20%), bordering on Grade 3. The initial FDG-PET scan from January 2025 demonstrated a hypermetabolic mass with an SUV of 16. According to ENETS guidelines (Section 2.5.1), high FDG uptake is a strong poor prognostic factor and correlates with a higher grade and aggressive biological behavior. The presence of a central photopenic area suggestive of necrosis further supports the aggressive nature of this neoplasm.\n\n**Staging and Locoregional Extent**\nThe disease is characterized as locally advanced (T4 equivalent per ENETS/AJCC staging due to invasion of adjacent structures). CT imaging from April and May 2025 confirms a large heterogeneous mass (10–12 cm) infiltrating the pancreatic tail, splenic hilum, left adrenal gland, and notably",
+  "parsing_note": "No assessment tags found",
+  "parsing_method": "fallback",
+  "metadata": {
+    "timestamp": "2025-12-03T13:38:32.909797",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 1,
+    "guidelines_provided": false,
+    "matched_guidelines_used": true,
+    "matched_guidelines_count": 2,
+    "matched_trials_used": false,
+    "matched_trials_count": 0,
+    "prompt_file": "batch_results/run_20251203_133122\\batch_run_20251203_133122\\patient_1\\patient_1_assessment_prompt.txt",
+    "response_file": "batch_results/run_20251203_133122\\batch_run_20251203_133122\\patient_1\\patient_1_assessment_raw_response.txt",
+    "cache_reused": false,
+    "cached_at": null
+  }
+}

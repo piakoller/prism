@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:49:20.509638
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant because it evaluates the efficacy and survival predictors of Lu-177 DOTATATE (PRRT) in patients with progressive, SSTR-positive well-differentiated NETs, aligning with the patient's diagnosis (SSTR-positive Pan-NET) and current need for third-line therapy. Although the patient has a Grade 3 tumor (Ki-67 25%), this falls within the study's conditional inclusion for Ki-67 <30% in pre-treated patients, and extrapolation to well-differentiated G3 is clinically justified given the strong SSTR positivity. The published results (Swiha et al., 2022) provide specific, actionable prognostic evidence: high liver tumor burden (>50%) and extensive bone metastases (≥5) were found to independently predict worse overall survival. Since the patient presents with a \"high burden\" of liver metastases and bone involvement, this data is crucial for the tumor board to risk-stratify the patient, manage expectations regarding PRRT outcomes, and weigh the potential benefit against other options like Everolimus."
+}

@@ -1,0 +1,157 @@
+=== RECOMMENDATION VALIDATION PROMPT ===
+Timestamp: 2025-12-12T17:43:13.796950
+Patient ID: 11
+Model: google/gemini-3-pro-preview
+==================================================
+
+You are a clinical validation expert reviewing a therapy recommendation for quality assurance.
+
+Your task is to CRITICALLY EVALUATE whether the therapy recommendation is:
+1. COMPLETE - addresses all clinical needs identified in the patient assessment
+2. ACCURATE - correctly cites and interprets evidence from trials and guidelines  
+3. CONSISTENT - doesn't contradict itself or the patient assessment
+4. SAFE - considers contraindications and patient-specific risk factors
+5. ACTIONABLE - provides clear next steps
+
+**IMPORTANT**: Be thorough and critical. If you find ANY issues that could compromise patient care, you must flag them.
+
+=== PATIENT ASSESSMENT SUMMARY ===
+=== DETAILED CLINICAL ASSESSMENT ===
+
+**Patient Summary and Oncologic Status**
+The patient is a 73-year-old female with an ECOG performance status of 1, presenting with a hepatic recurrence of a pancreatic Neuroendocrine Carcinoma (NEC). The primary tumor, resected in May 2020, was a Mixed Neuroendocrine-Non-Neuroendocrine Neoplasm (MiNEN) composed of 30% Ductal Carcinoma (G2) and 30% Neuroendocrine Carcinoma (G3) with a Ki-67 proliferation index of 95%. The current metastatic disease, confirmed via liver biopsy in October 2020, consists of metastatic neuroendocrine carcinoma.
+
+**Response to First-Line Therapy**
+Following the diagnosis of liver progression (initial 6.7 cm lesion in segment VIII with portal venous invasion) and local recurrence, the patient received first-line palliative chemotherapy with Carboplatin–VP16 (Etoposide), initiated in October 2020. This aligns with ENETS 2023 guidelines (Q6) and ESMO guidelines recommending platinum-etoposide as the standard first-line treatment for metastatic NEC.
+
+The patient has demonstrated a significant Partial Response (PR):
+*   **Hepatic:** Reduction of the segment VII lesion from 22 × 14 mm (April 2021) to 20 × 12 mm (July 2021).
+*   **Local:** Complete response at the pancreatic bed/local recurrence.
+*   **Metabolic:** FDG-PET/CT (09/08/21) confirms a single hypodense hepatic lesion in segment VII with no locoregional or extrahepatic disease.
+
+**Clinical Assessment for Consolidation Strategies**
+The Tumor Board's inquiry regards the consolidation of this response. Based on the provided guidelines, the following clinical factors are relevant:
+
+1.  **Surgical Resection of Metastasis:**
+    *   **Guideline Position:** ENETS 2023 (Q7) states that surgery for metastatic NEC is generally not recommended due to poor prognosis and rapid disease progression. However, it notes that surgery *may* be considered in highly selected patients with limited disease and no rapid progression where an R0 resection is possible. ESMO guidelines are more restrictive, suggesting the presence of advanced NEC G3 is often considered a contraindication for upfront surgery, though this patient is in a consolidation setting after response.
+    *   **Patient Applicability:** The patient presents with "limited disease" (single hepatic lesion on FDG-PET) and has demonstrated disease control (PR) rather than rapid progression over roughly 9 months of therapy. However, the extremely high Ki-67 (95%) indicates aggressive biology, which is a significant risk factor for early recurrence post-intervention.
+
+2.  **Systemic Therapy and Maintenance:**
+    *   The patient has tolerated Carboplatin–VP16 well (ECOG 1, moderate asthenia). ENETS guidelines do not explicitly define a standard "consolidation" chemotherapy regimen following a response to platinum-etoposide, often necessitating a decision between observation, maintenance, or re-challenge upon progression.
+    *   **Molecular Profiling:** ENETS 2023 (Q2, Q8) recommends testing for Microsatellite Instability (MSI) or high Tumor Mutational Burden (TMB), as these are agnostic markers for immunotherapy benefit (e.g., Pembrolizumab). While rare in pancreatic NEC, this assessment is relevant for future lines of therapy.
+
+3.  **Peptide Receptor Radionuclide Therapy (PRRT):**
+    *   **Suitability:** PRRT is generally not indicated for this patient. ENETS guidelines (Q7) note that PRRT is rarely considered for NEC and is most relevant for cases with Ki-67 <55%. This patient has a Ki-67 of 95%.
+    *   **Imaging Requirements:** There is no evidence of Somatostatin Receptor (SSTR) imaging (e.g., 68Ga-SSA-PET/CT) in the patient file. PRRT eligibility strictly requires uptake in all lesions to be higher than liver background. Given the high Ki-67 and FDG-avidity, SSTR expression is likely low or absent, making PRRT an unsuitable consolidation option unless discordant differentiation is proven via imaging.
+
+**Comorbidities and Safety**
+The patient has valvular heart disease (aortic, mitral, and tricuspid regurgitation) with preserved LVEF and ventricular extrasystoles. While she has tolerated chemotherapy, any consideration for surgical consolidation must weigh the perioperative risks associated with her cardiac history and age (73 years) against the high risk of recurrence inherent to a Ki-67 95% NEC.
+
+**Conclusion**
+The patient is a responder to first-line platinum-based chemotherapy with currently oligometastatic disease (single liver lesion). The clinical decision regarding consolidation hinges on balancing the aggressive tumor biology (Ki-67 95%)—which argues against the durability of surgical benefit—against the current limited disease extent, which technically meets the ENETS criteria for "highly selected" surgical consideration.
+
+Urgency Level: medium
+Assessment Confidence: medium
+
+=== TRIAL ANALYSIS SUMMARY ===
+Total Trials Analyzed: 0
+Trials Marked for INCLUSION: 0
+Trials Marked for EXCLUSION: 0
+
+
+=== GUIDELINES SUMMARY ===
+Matched Guidelines: 2
+
+  - Digestive neuroendocrine carcinoma (Relevance: 1.0)
+  - Gastroenteropancreatic neuroendocrine neoplasms: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up [y] (Relevance: 1.0)
+
+=== THERAPY RECOMMENDATION TO VALIDATE ===
+
+RECOMMENDATION:
+**Primary Recommendation:**
+Proceed with **surgical resection (metastasectomy)** of the residual hepatic lesion in Segment VII, contingent upon preoperative cardiac clearance.
+
+**Adjunct Recommendation:**
+Perform **molecular profiling** (Next-Generation Sequencing) on the tumor specimen to assess for Microsatellite Instability (MSI), Tumor Mutational Burden (TMB), and actionable mutations (e.g., BRAF V600E).
+
+**Contraindications & Exclusions:**
+- **Peptide Receptor Radionuclide Therapy (PRRT)** is **not recommended** for this patient due to the extremely high Ki-67 index (95%) and lack of evidence of SSTR-avid disease.
+- **Maintenance Chemotherapy:** There is no standard evidence for maintenance chemotherapy following platinum-etoposide in this setting; observation post-resection is the standard approach.
+
+RATIONALE:
+**1. Surgical Consolidation in Metastatic NEC:**
+While surgery for metastatic Neuroendocrine Carcinoma (NEC) is generally discouraged due to aggressive biology, **ENETS 2023 Guidelines (Guideline 1, Q7)** state that surgery "may be considered in rare cases for highly selected patients with limited disease without rapid disease progression where an R0 resection is possible."
+*   **Patient Eligibility:** This patient fits the "highly selected" criteria: she has demonstrated a Partial Response (PR) to first-line Carboplatin–VP16, has maintained disease control for >9 months (no rapid progression), and currently presents with oligometastatic disease (single 20 × 12 mm lesion in Segment VII) amenable to R0 resection.
+*   **MiNEN Consideration:** The primary tumor was a MiNEN. **ENETS 2023 (Q10)** notes that patients with MiNEN, like NEC, "can benefit from surgery if an R0 resection can be obtained," citing retrospective data where surgery was associated with improved survival in selected cases.
+*   **ESMO Guidelines (Guideline 2):** While ESMO considers advanced NEC G3 an "absolute contraindication for upfront surgery," this patient is not in the upfront setting but rather in a consolidation phase following a confirmed response, aligning with the ENETS exception for limited disease.
+
+**2. Molecular Profiling:**
+**ENETS 2023 (Q2, Q8, Q9)** recommends molecular profiling for digestive NEC.
+*   **Immunotherapy:** MSI-high status (found in ~5% of digestive NECs) or high TMB would make the patient eligible for Immune Checkpoint Inhibitors (e.g., Pembrolizumab) in future lines of therapy.
+*   **Targeted Therapy:** BRAF V600E mutations (more common in colorectal but possible in others) could open options for BRAF-inhibitor combinations.
+
+**3. Safety and Contraindications:**
+*   **Cardiac Risk:** The patient has valvular heart disease (aortic, mitral, tricuspid regurgitation) and ventricular extrasystoles. Preoperative assessment by her cardiologist is mandatory to ensure she can tolerate hepatic resection.
+*   **PRRT Exclusion:** **ENETS 2023 (Q7)** notes PRRT is generally not recommended for NEC, particularly with Ki-67 >55% (patient is 95%). Furthermore, PRRT eligibility requires high SSTR uptake on imaging (e.g., 68Ga-DOTATOC/TATE), which is typically absent in high-grade, FDG-avid NECs.
+
+=== YOUR VALIDATION TASK ===
+
+Carefully review the therapy recommendation against the evidence provided above.
+
+Check for the following issues:
+
+1. COMPLETENESS ISSUES:
+   - Does the recommendation address ALL clinical needs identified in the patient assessment?
+   - Are important clinical considerations (disease grade, symptoms, biomarkers, prior treatments) adequately addressed?
+   - Are alternative options discussed if the primary recommendation isn't feasible?
+
+2. ACCURACY ISSUES:
+   - Are all trial citations (NCT numbers) correctly used?
+   - Are the claimed trial outcomes/findings accurate based on the trial analysis?
+   - Are guideline recommendations correctly interpreted?
+   - Is there any evidence of fabricated or misrepresented data?
+
+3. CONSISTENCY ISSUES:
+   - Does the recommendation align with the urgency level from the patient assessment?
+   - Are there any internal contradictions in the recommendation?
+   - Does the rationale actually support the recommendation given?
+   - Are trials marked for EXCLUSION incorrectly being recommended?
+
+4. SAFETY ISSUES:
+   - Are known contraindications from the patient assessment respected?
+   - Are patient-specific risk factors (organ function, performance status) considered?
+   - Are monitoring requirements mentioned for high-risk therapies?
+
+5. ACTIONABILITY ISSUES:
+   - Are next steps clearly defined?
+   - Is the recommendation specific enough to be implemented?
+   - Are follow-up timelines provided?
+
+Provide your validation in the following format:
+
+<validation_decision>
+[State clearly: PASS or RECONSIDER]
+</validation_decision>
+
+<critical_issues>
+[List any critical issues that make the recommendation incomplete, wrong, or unsafe. Be specific about what is missing or incorrect. If none, write "None identified."]
+</critical_issues>
+
+<warnings>
+[List any non-critical concerns or areas for improvement. If none, write "None identified."]
+</warnings>
+
+<detailed_reasoning>
+[Provide detailed reasoning for your validation decision. Explain:
+- What you checked in each validation category
+- Specific examples of issues you found (quote relevant parts)
+- Why each issue is problematic for patient care
+- What would need to be corrected for the recommendation to pass validation
+Be thorough and specific - this reasoning will guide the regeneration process.]
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+[If you marked as RECONSIDER, provide specific actionable guidance on what should be corrected or added in the regenerated recommendation. If PASS, write "No improvements needed."]
+</recommendations_for_improvement>
+
+Remember: Patient safety is paramount. If in doubt, mark as RECONSIDER and explain your concerns in detail.

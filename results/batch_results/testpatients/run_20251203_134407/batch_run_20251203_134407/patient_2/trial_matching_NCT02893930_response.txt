@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:46:14.979824
+Trial: 82/86
+NCT ID: NCT02893930
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide actionable evidence for this patient's treatment. While the disease biology (metastatic Pan-NET) aligns, the clinical context is mismatched: the patient is treatment-naïve seeking first-line therapy, whereas the study specifically enrolled patients with disease refractory to prior mTOR inhibitors (rapalog-resistant). Furthermore, the study was terminated early due to futility (0 objective responses in the first stage), demonstrating that sapanisertib is ineffective in this setting. As the intervention failed to show benefit and the patient does not meet the specific refractory criteria required for the study rationale, this negative trial does not inform the selection of an appropriate first-line systemic treatment."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:55:26.765064
+Trial: 5/86
+NCT ID: NCT06024343
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because it evaluates a specific surgical technique (minimally invasive enucleation with pancreatic duct repair) for solitary, low-grade pancreatic tumors. This does not align with the patient's diagnosis of a metastatic bronchial neuroendocrine tumor (atypical carcinoid/G3) with widespread metastases (liver, bone, lymph nodes, pituitary). The patient is explicitly noted to have no options for local therapy, and the clinical focus is on systemic consolidation (likely PRRT re-treatment) rather than primary surgical resection. There is no biological or clinical overlap between localized pancreatic surgery and the management of progressive, metastatic lung NETs."
+}

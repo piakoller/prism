@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:22:33.275212
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates Lu-177 DOTATATE (PRRT) specifically in patients with SSTR-positive tumors (Octreoscan uptake ≥ liver). This evidence is not clinically applicable to the patient due to a fundamental biological mismatch: the patient exhibits significant tumor heterogeneity with Ga68-negative (SSTR-negative) peritoneal carcinomatosis. PRRT relies on SSTR expression for therapeutic efficacy, and the absence of this target in a major metastatic compartment renders the intervention unsuitable for controlling the patient's systemic disease. While the patient has SSTR-positive liver metastases, the study's population (homogenously SSTR-positive) does not reflect the patient's discordant biology (FDG+/Ga68-), making the efficacy and prognostic data non-transferable. Additionally, the study identifies high liver burden (>50%) and ascites as predictors of poor survival, which would further suggest limited benefit even if the biology were aligned, but the primary reason for non-relevance is the lack of the therapeutic target in the peritoneal lesions."
+}
+```

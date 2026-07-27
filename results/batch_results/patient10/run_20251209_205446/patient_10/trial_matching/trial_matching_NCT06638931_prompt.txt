@@ -1,0 +1,264 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-09T21:02:44.776466
+Trial: 19/86
+NCT ID: NCT06638931
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+A 70-year-old patient with a history of non-functiong, grade 2 (Ki67 9%) pancreatic neuroendocrine tumor. No relevant past medical history.
+Surgical resection of primary pancreatic tumor in January 2016. In the postoperative course development of multiple bilobar hepatic metastases.
+Treatment history:
+1st line: Lanreotide (after detection of postoperative metastatic disease)
+2nd line: PRRT (x4 cycles until march 2021, best response stable disease)
+3rd line: Everolimus (best response, progressive disease)
+4th line: Belzutifan (clinical trial, best response progressive disease)
+5th line: Streptozocin-5Fluorouracil (stable disease / minor response)
+Imaging during STZ-5FU: Mild reduction in hepatic metastases (43mm segII, 33mm segVI).
+6th line: CAPOX (stable disease)
+	Imaging after CAPOX progression: Multiple liver M1 (i.e. 66mm segIV)
+7th line: Sunitinib (poor tolerance due to cumulative toxicity: asthenia, G2 thrombocytopenia).
+
+2.	Current Clinical Status
+Sunitinib discontinued due to toxicity. After 1 month, recovered from toxicities, fragility but asymptomatic. Weight 83kg. Keeps G1 thrombocitopenia.
+Last CT scan: Multiple liver metastases (i.e. 70mm segIV).
+Question for Tumorboard:
+Any available late-line systemic treatment option for this patient? Non elegible for locoregional liver directed therapies.
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**1. Patient Summary and Disease Characteristics**
+The patient is a 70-year-old male with a heavily pre-treated, metastatic, non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET). The tumor biology is well-differentiated, Grade 2, with a Ki-67 index of 9%. The disease is currently characterized by progressive, bilobar hepatic metastases with a significant tumor burden (largest lesion 70mm in segment IV), following a surgical resection of the primary tumor in 2016. The patient is currently asymptomatic but fragile, with a body weight of 83kg.
+
+**2. Treatment History and Response Analysis**
+The patient has undergone seven lines of systemic therapy, indicating a refractory disease course:
+*   **Somatostatin Analogues (SSA):** Progression on Lanreotide (1st line).
+*   **PRRT (Peptide Receptor Radionuclide Therapy):** The patient received 4 cycles ending in March 2021. The best response was Stable Disease (SD). According to ENETS 2023 guidelines (Section Q5), retreatment with PRRT may be considered in patients who previously responded (including stabilization) and have a progression-free interval exceeding one year. The interval from March 2021 to the current progression exceeds this threshold.
+*   **Targeted Therapies:** The patient demonstrated primary resistance to Everolimus (Best response: Progressive Disease) and Belzutifan (Best response: Progressive Disease). Sunitinib (7th line) was discontinued due to cumulative toxicity (asthenia, G2 thrombocytopenia) despite the patient recovering to fragility status after one month.
+*   **Chemotherapy:** The patient achieved Stable Disease/minor response with Streptozocin-5FU (5th line) and Stable Disease with CAPOX (6th line). It is noted that while the patient received Capecitabine (within CAPOX) and Streptozocin (alkylating agent), the specific regimen of Temozolomide alone or in combination with Capecitabine (CAPTEM)—highlighted in ENETS Q7 and ESMO guidelines as a standard option—has not been explicitly documented in the history.
+
+**3. Clinical Assessment of Late-Line Options and Limitations**
+Based on the ENETS 2023 and ESMO 2020 guidelines, the following clinical factors are critical for assessing late-line options:
+
+*   **PRRT Retreatment Assessment:**
+    *   **Guideline Support:** ENETS guidelines (Section Q5) and ESMO guidelines support considering PRRT retreatment (Re-PRRT) in selected patients with prior response/stabilization and sufficient time since the last cycle.
+    *   **Bone Marrow Safety:** The patient presents with persistent G1 thrombocytopenia (recovering from G2). ESMO guidelines warn that up to 3-4% of patients may develop irreversible bone marrow toxicity. The persistent thrombocytopenia requires careful evaluation of bone marrow reserve before considering Re-PRRT or cytotoxic chemotherapy.
+    *   **Imaging Requirement:** Eligibility for PRRT retreatment strictly requires confirmation via Somatostatin Receptor Imaging (SRI), preferably PET/CT. As per standard nuclear medicine criteria, uptake in all metastatic liver lesions must exceed normal liver background activity. The current SRI status is not provided in the patient information.
+
+*   **Chemotherapy Assessment:**
+    *   **Guideline Support:** ENETS Q7 and ESMO guidelines identify Temozolomide-based regimens (e.g., CAPTEM) as active in Pan-NETs. While the patient has received alkylating agents (Streptozocin) and Capecitabine (in CAPOX), Temozolomide specifically has not been used.
+    *   **Toxicity Barrier:** The cumulative toxicity from Sunitinib and persistent G1 thrombocytopenia significantly impact the risk-benefit ratio for further myelosuppressive chemotherapy (such as Temozolomide).
+
+*   **Targeted Therapy Assessment:**
+    *   Re-challenge with TKIs or mTOR inhibitors is not supported by the guidelines given the prior progression on Everolimus and intolerance to Sunitinib.
+
+**4. Conclusion**
+The patient presents with progressive, liver-dominant metastatic disease after exhausting standard lines of therapy. The clinical assessment points toward two potential guideline-based avenues for evaluation, heavily constrained by the patient's fragility and hematological toxicity:
+1.  **PRRT Retreatment:** Feasible based on the duration of response to the first course (>1 year since March 2021), contingent upon adequate bone marrow function and confirmed high uptake on updated SRI.
+2.  **Temozolomide-based chemotherapy:** A potential systemic option per ENETS Q7, though the patient's persistent thrombocytopenia and fragility may limit tolerability.
+
+No locoregional liver-directed therapies are applicable as per the provided information.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: Any available late-line systemic treatment option for this patient? Non elegible for locoregional liver directed therapies.
+
+### STUDY DATA
+	•	NCT-ID: NCT06638931
+	•	Title: Agnostic Therapy in Rare Solid Tumors
+	•	Phase: PHASE2, Status: ACTIVE_NOT_RECRUITING
+	•	Intervention: Nivolumab
+	•	Inclusion/exclusion criteria: Inclusion Criteria
+
+1. Age 18 years or older.
+2. Patients with immunohistochemistry for PD-L1 with a combined positive score (CPS) of 10 or higher.
+3. Patients with progression or intolerance to already approved and accessible treatments for the specific neoplasm and population.
+4. Documented disease progression radiologically after the last routine treatment.
+5. Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1.
+6. Measurable lesion per RECIST v1.1. Lesions previously treated with radiotherapy can only be used as target lesions if they are confirmed to be progressing by imaging before enrollment.
+7. Male participants must meet at least one of the following conditions:
+
+   1. Considered infertile;
+   2. No fertile partner;
+   3. Has a fertile partner who agrees to follow contraceptive guidance throughout the study period and for at least 6 months after the last dose of Nivolumab;
+
+      and
+   4. Agrees to abstain from sperm donation throughout the study period and for at least 6 months after the last dose of Nivolumab.
+8. Female participants must meet at least one of the following conditions:
+
+   1. Considered infertile;
+   2. Agrees to follow contraceptive guidance throughout the study period and for at least 6 months after the last dose of Nivolumab;
+9. Estimated life expectancy greater than 12 weeks, as determined by the investigator or delegated sub-investigator.
+10. Preserved organ functions defined by:
+
+    * Absolute neutrophil count ≥ 1,000;
+    * Hemoglobin ≥ 8.0 g/dL (patients may receive transfusions to reach this level);
+    * Platelet count ≥ 100,000;
+    * Total bilirubin ≤ 1.5 × Upper Limit of Normal (ULN), or ≤ 3.0 × ULN for patients with Gilbert's syndrome;
+    * Aspartate Aminotransferase (AST) and Alanine Aminotransferase (ALT) ≤ 2.5 × ULN (≤ 5 × ULN in the presence of liver metastases);
+    * Creatinine clearance \> 30 mL/min (estimated by Cockcroft-Gault).
+11. Diagnosis of rare cancer (List I) confirmed by histopathological examination, with the possibility of including other types of rare tumors (incidence of less than 6 in every 100,000) after careful evaluation and approval by the study board.
+
+    * List I:
+
+      * Urachal adenocarcinoma
+      * Parathyroid carcinoma
+      * Nasopharyngeal epithelial tumors
+      * Fibrolamellar carcinoma of any primary site
+      * Angiosarcoma of any primary site
+      * Secretory breast carcinoma
+      * Anal cancer
+      * Metaplastic breast carcinoma
+      * Chromophobe renal carcinoma, Microphthalmia-associated Transcription Factor (MiT) family translocation renal carcinoma; renal carcinoma with Fumarate Hydratase (FH) or Succinate Dehydrogenase (SDH) deficiency
+      * Carcinosarcoma of any primary site
+      * Small intestine cancer
+      * Cholangiocarcinoma
+      * Sertoli-Leydig cell tumors
+      * Cervical cancer of non-epidermoid histology
+      * Tracheal epithelial tumors
+      * Non-cystadenoma salivary gland tumors
+      * Mesothelioma of any site
+      * Neuroblastoma
+      * Adrenal cancer
+      * Penile cancer
+      * Apocrine carcinoma
+      * Fibrosarcoma of any primary site
+      * Cancer of unknown primary site
+      * Hemangioblastoma of any primary site
+      * Thyroid cancer
+      * Hepatoblastoma
+      * Fallopian tube cancer
+      * Leiomyosarcoma of any primary site
+      * Vaginal cancer
+      * Neurofibrosarcoma of any primary site
+      * Gallbladder cancer
+      * Osteosarcoma of any primary site
+      * Bile duct cancer
+      * Clear cell endometrial carcinoma
+      * Yolk sac tumor of any primary site
+      * Non-epidermoid bladder cancer
+      * Vulvar cancer
+      * Kaposi's sarcoma
+      * Epithelial ovarian cancer
+      * Soft tissue sarcoma
+      * Urethral cancer
+      * Granulosa cell tumor of any primary site
+      * Cystadenoma carcinoma
+      * Primitive neuroectodermal tumor of any primary site
+      * Pure or mixed neuroendocrine tumors with neuroendocrine component
+      * Trophoblastic tumor
+
+Exclusion Criteria
+
+1. Previous treatment lines with immunotherapy (immune checkpoint inhibitors).
+2. Pregnant or breastfeeding individuals.
+3. Limiting comorbidity, in the opinion of the investigator.
+4. Active infection.
+5. Major surgery within the last 4 weeks.
+6. Functional class II or greater heart failure.
+7. Myocardial infarction or stroke within the last 6 months.
+8. History of pulmonary fibrosis or pneumonitis.
+9. Autoimmune diseases, except for patients with vitiligo and/or controlled thyroid/hypothyroidism without the use of immunosuppressors.
+10. Second invasive primary tumor diagnosed in the last 3 years and/or with active disease, except for localized skin tumors (non-melanoma) that have been treated with curative intent.
+11. Patients with prolonged QT interval.
+12. Uncontrolled Central Nervous System (CNS) metastases. Patients who have previously received local treatment, such as radiotherapy, will be eligible if clinical and radiological stability is demonstrated in the 2 weeks prior to the start of treatment. Patients must not be using corticosteroids for managing CNS disease.
+13. Presence of meningeal carcinomatosis.
+14. Worsening renal and liver function in the 14 days prior to enrollment.
+15. History of solid organ transplantation with or without immunosuppression.
+16. Patients with untreated acquired immunodeficiency. Immunocompromised patients may be included as long as they do not have active opportunistic disease and/or active infection, after thorough clinical evaluation by the investigator or sub-investigator. HIV-positive patients must have documented undetectable viral load prior to inclusion.
+17. Chronic use of corticosteroids at doses greater than 10 mg/day of prednisone or equivalent. Patients with adrenal insufficiency of non-autoimmune etiology (e.g., previous bilateral adrenalectomy) may be included if they are clinically compensated with 10 mg/day of prednisone or equivalent or less. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The ANTARES study is a phase II basket trial designed to evaluate the tissue-agnostic efficacy of the monoclonal anti-PD1 antibody, nivolumab, in patients with advanced or metastatic rare tumors.
+
+The study aims to treat rare malignancies with PD-L1 expression (CPS ≥ 10), regardless of the tumor's tissue type or location. Patients who have not responded to standard treatments will be included, and treatment will last for up to 12 months. The study will assess objective response, progression-free survival, and biomarkers such as PD-L1, ctDNA, and microvesicles, in a multicenter collaborative effort to provide innovative therapeutic options for this underrepresented population
+	•	Publications: 8 publication(s) found; Analysis: Found 8 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Bogaerts J, Sydes MR, Keat N, McConnell A, Benson A, Ho A, Roth A, Fortpied C, Eng C, Peckitt C, Coens C, Pettaway C, Arnold D, Hall E, Marshall E, Sclafani F, Hatcher H, Earl H, Ray-Coquard I, Paul J, Blay JY, Whelan J, Panageas K, Wheatley K, Harrington K, Licitra L, Billingham L, Hensley M, McCabe M, Patel PM, Carvajal R, Wilson R, Glynne-Jones R, McWilliams R, Leyvraz S, Rao S, Nicholson S, Filiaci V, Negrouk A, Lacombe D, Dupont E, Pauporte I, Welch JJ, Law K, Trimble T, Seymour M. Clinical trial designs for rare diseases: studies developed and discussed by the International Rare Cancers Initiative. Eur J Cancer. 2015 Feb;51(3):271-81. doi: 10.1016/j.ejca.2014.10.027. Epub 2014 Dec 24.
+• Cortes J, Kim SB, Chung WP, Im SA, Park YH, Hegg R, Kim MH, Tseng LM, Petry V, Chung CF, Iwata H, Hamilton E, Curigliano G, Xu B, Huang CS, Kim JH, Chiu JWY, Pedrini JL, Lee C, Liu Y, Cathcart J, Bako E, Verma S, Hurvitz SA; DESTINY-Breast03 Trial Investigators. Trastuzumab Deruxtecan versus Trastuzumab Emtansine for Breast Cancer. N Engl J Med. 2022 Mar 24;386(12):1143-1154. doi: 10.1056/NEJMoa2115022.
+• DuBois SG, Laetsch TW, Federman N, Turpin BK, Albert CM, Nagasubramanian R, Anderson ME, Davis JL, Qamoos HE, Reynolds ME, Cruickshank S, Cox MC, Hawkins DS, Mascarenhas L, Pappo AS. The use of neoadjuvant larotrectinib in the management of children with locally advanced TRK fusion sarcomas. Cancer. 2018 Nov 1;124(21):4241-4247. doi: 10.1002/cncr.31701. Epub 2018 Sep 11.
+• Le DT, Uram JN, Wang H, Bartlett BR, Kemberling H, Eyring AD, Skora AD, Luber BS, Azad NS, Laheru D, Biedrzycki B, Donehower RC, Zaheer A, Fisher GA, Crocenzi TS, Lee JJ, Duffy SM, Goldberg RM, de la Chapelle A, Koshiji M, Bhaijee F, Huebner T, Hruban RH, Wood LD, Cuka N, Pardoll DM, Papadopoulos N, Kinzler KW, Zhou S, Cornish TC, Taube JM, Anders RA, Eshleman JR, Vogelstein B, Diaz LA Jr. PD-1 Blockade in Tumors with Mismatch-Repair Deficiency. N Engl J Med. 2015 Jun 25;372(26):2509-20. doi: 10.1056/NEJMoa1500596. Epub 2015 May 30.
+• Li BT, Smit EF, Goto Y, Nakagawa K, Udagawa H, Mazieres J, Nagasaka M, Bazhenova L, Saltos AN, Felip E, Pacheco JM, Perol M, Paz-Ares L, Saxena K, Shiga R, Cheng Y, Acharyya S, Vitazka P, Shahidi J, Planchard D, Janne PA; DESTINY-Lung01 Trial Investigators. Trastuzumab Deruxtecan in HER2-Mutant Non-Small-Cell Lung Cancer. N Engl J Med. 2022 Jan 20;386(3):241-251. doi: 10.1056/NEJMoa2112431. Epub 2021 Sep 18.
+• Marabelle A, Fakih M, Lopez J, Shah M, Shapira-Frommer R, Nakagawa K, Chung HC, Kindler HL, Lopez-Martin JA, Miller WH Jr, Italiano A, Kao S, Piha-Paul SA, Delord JP, McWilliams RR, Fabrizio DA, Aurora-Garg D, Xu L, Jin F, Norwood K, Bang YJ. Association of tumour mutational burden with outcomes in patients with advanced solid tumours treated with pembrolizumab: prospective biomarker analysis of the multicohort, open-label, phase 2 KEYNOTE-158 study. Lancet Oncol. 2020 Oct;21(10):1353-1365. doi: 10.1016/S1470-2045(20)30445-9. Epub 2020 Sep 10.
+• Mok TSK, Wu YL, Kudaba I, Kowalski DM, Cho BC, Turna HZ, Castro G Jr, Srimuninnimit V, Laktionov KK, Bondarenko I, Kubota K, Lubiniecki GM, Zhang J, Kush D, Lopes G; KEYNOTE-042 Investigators. Pembrolizumab versus chemotherapy for previously untreated, PD-L1-expressing, locally advanced or metastatic non-small-cell lung cancer (KEYNOTE-042): a randomised, open-label, controlled, phase 3 trial. Lancet. 2019 May 4;393(10183):1819-1830. doi: 10.1016/S0140-6736(18)32409-7. Epub 2019 Apr 4.
+• Schmid P, Cortes J, Pusztai L, McArthur H, Kummel S, Bergh J, Denkert C, Park YH, Hui R, Harbeck N, Takahashi M, Foukakis T, Fasching PA, Cardoso F, Untch M, Jia L, Karantza V, Zhao J, Aktan G, Dent R, O'Shaughnessy J; KEYNOTE-522 Investigators. Pembrolizumab for Early Triple-Negative Breast Cancer. N Engl J Med. 2020 Feb 27;382(9):810-821. doi: 10.1056/NEJMoa1910549.
+	•	Key findings from publications: No detailed findings available
+	•	Additional evidence from online sources: Primary outcome: Primary Objective; Primary Endpoint
+Secondary outcomes: Objective Response Rate (ORR); Subgroup Analysis Based on PD-L1 Expression and CPS:; Correlation of Clinical Outcomes with Biomarker Assessments; Overall Survival (OS); Progression-Free Survival (PFS)
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Found 8 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

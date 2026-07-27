@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:17:40.841633
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant for this patient's treatment planning. While the disease biology (GEP-NET) aligns, the study evaluates a biomarker (NETest) in the context of surgical resection or ablation, whereas this patient has unresectable, bulky metastatic disease (bilobar liver metastases up to 150 mm and peritoneal carcinomatosis) requiring systemic therapy. The patient is not currently a candidate for the study intervention (surgery). Furthermore, the study provides diagnostic/prognostic evidence regarding a blood test's ability to predict recurrence or surgical completeness, rather than therapeutic efficacy data to guide the selection of the best first-line systemic treatment (e.g., chemotherapy vs. SSAs), which is the primary clinical question."
+}

@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T16:49:05.747412
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence to support a treatment recommendation for this patient's current unresectable state. While the DART trial includes a cohort for pancreatic neuroendocrine tumors (pNETs), the provided published results (Patel 2020, 2021) indicate that dual anti-CTLA-4/anti-PD-1 therapy is effective primarily in high-grade neuroendocrine carcinomas (ORR 44%) but demonstrated **0% efficacy** in low/intermediate grade tumors. This patient has a well-differentiated G2 pNET with a low Ki-67 (5%), a biological profile associated with a lack of response in the reported cohorts. Critically, the patient has **Sjogren's Syndrome**, an active autoimmune condition that generally contraindicates immune checkpoint inhibitor therapy due to the risk of severe immune-related adverse events, and she would be excluded by the study's safety criteria. Additionally, her fragility and significant renal impairment (EGFR 38 ml/min) further limit the clinical applicability of this toxicity-prone regimen. Consequently, the evidence suggests this treatment approach is neither efficacious nor safe for this specific patient."
+}
+```

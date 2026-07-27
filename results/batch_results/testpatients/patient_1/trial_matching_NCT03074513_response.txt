@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:23:18.633141
+Trial: 27/86
+NCT ID: NCT03074513
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for this patient. The **Disease/Biology Alignment** is excellent, as the study's pancreatic neuroendocrine tumor (pNET) cohort specifically included patients with progressive, advanced Grade 1-2 NETs, directly matching this patient's G2 pNET diagnosis. The **Treatment Context/Clinical Applicability** is high, as the evidence informs decision-making for the key clinical scenarios: neoadjuvant therapy for a locally advanced tumor or systemic treatment for unresectable disease. The reported objective response rate of 20% and progression-free survival of 14.9 months in the pNET cohort represent a clinically meaningful outcome that could be pursued to shrink the tumor and facilitate resection. The **Evidence Quality and Relevance** are sufficient; the prospective Phase 2 data provides actionable efficacy and survival benchmarks. While the patient's history of major GI bleeding makes the use of bevacizumab a high-risk consideration that would require careful evaluation after stabilization, the published evidence itself is critical for the tumor board to weigh the potential benefits of this combination against other options like PRRT (assuming SSTR-positivity) or chemotherapy."
+}
+```

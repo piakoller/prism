@@ -1,0 +1,48 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Recommendation: First-Line Systemic Chemotherapy**\n\nBased on the comprehensive assessment, I recommend initiating first-line systemic chemotherapy with **Capecitabine and Temozolomide (CAPTEM)**.\n\n**Secondary Recommendation: Biomarker Testing**\n\nConcurrent with the initiation of therapy, I recommend testing the tumor tissue for **O6-methylguanine-DNA methyltransferase (MGMT) promoter methylation status**. The results of this test will provide important prognostic information regarding the expected efficacy of the temozolomide-based regimen. The MGMT-NET trial (NCT03217097) demonstrated that patients with deficient MGMT (dMGMT) status have a significantly higher objective response rate (ORR) to alkylating agents (best ORR 52.9% in dMGMT vs. 11.5% in proficient MGMT).\n\n**Supportive Care**\n\nConcomitant administration of a long-acting somatostatin analogue (SSA), such as octreotide LAR or lanreotide Autogel, should be considered alongside chemotherapy. While insufficient as monotherapy for this patient's disease burden, SSAs can provide a baseline antiproliferative effect and may help with symptom control.\n\n**Monitoring**\n\nGiven the patient's age and history of ischemic heart disease, close monitoring of hematologic parameters (for myelosuppression), renal function, and potential gastrointestinal and dermatologic toxicities (hand-foot syndrome) is essential throughout treatment.",
+  "rationale_text": "",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Recommendation: First-Line Systemic Chemotherapy**\n\nBased on the comprehensive assessment, I recommend initiating first-line systemic chemotherapy with **Capecitabine and Temozolomide (CAPTE...",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03217097",
+      "nct_id": "NCT03217097",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03217097",
+        "trial_name": "Trial NCT03217097",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**Primary Recommendation: First-Line Systemic Chemotherapy**\n\nBased on the comprehensive assessment, I recommend initiating first-line systemic chemotherapy with **Capecitabine and Temozolomide (CAPTEM)**.\n\n**Secondary Recommendation: Biomarker Testing**\n\nConcurrent with the initiation of therapy, I recommend testing the tumor tissue for **O6-methylguanine-DNA methyltransferase (MGMT) promoter methylation status**. The results of this test will provide important prognostic information regarding the expected efficacy of the temozolomide-based regimen. The MGMT-NET trial (NCT03217097) demonstrated that patients with deficient MGMT (dMGMT) status have a significantly higher objective response rate (ORR) to alkylating agents (best ORR 52.9% in dMGMT vs. 11.5% in proficient MGMT).\n\n**Supportive Care**\n\nConcomitant administration of a long-acting somatostatin analogue (SSA), such as octreotide LAR or lanreotide Autogel, should be considered alongside chemotherapy. While insufficient as monotherapy for this patient's disease burden, SSAs can provide a baseline antiproliferative effect and may help with symptom control.\n\n**Monitoring**\n\nGiven the patient's age and history of ischemic heart disease, close monitoring of hematologic parameters (for myelosuppression), renal function, and potential gastrointestinal and dermatologic toxicities (hand-foot syndrome) is essential throughout treatment.\n</therapy_recommendation>\n\n<rationale>\nThe recommendation for first-line chemotherapy with CAPTEM is based on a synthesis of current medical guidelines, clinical trial evidence, and the patient's specific clinical presentation.\n\n**1. Alignment with Guideline-Directed Therapy:**\nThe patient presents with a symptomatic, high-volume, metastatic Grade 2 Pan-NET with a Ki-67 of 15%. This clinical profile strongly aligns with indications for upfront chemotherapy.\n*   The **ENETS 2023 guidelines (Guideline 1)** recommend temozolomide with capecitabine for metastatic, progressive, and/or symptomatic G1-G2 NF-Pan-NETs (Section 3.4, Q7). The guideline algorithm (Figure 1) explicitly lists \"Chemotherapy\" as a primary option for patients with high tumor burden and/or symptoms.\n*   The **ESMO 2020 guidelines (Guideline 2)** also recommend chemotherapy (e.g., TEM-based) as a primary option for Pan-NETs with rapid growth, high tumor burden, and symptoms (Figure 4). The primary goal in this patient is cytoreduction to alleviate symptoms, a setting where chemotherapy is favored.\n\n**2. Rationale for Excluding Other First-Line Options:**\n*   **Peptide Receptor Radionuclide Therapy (PRRT):** While the **NETTER-2 trial (NCT03972488)** established first-line PRRT as a standard of care for newly diagnosed, SSTR-positive, advanced G2/G3 GEP-NETs (mPFS 22.8 vs. 8.5 months), this patient is not a suitable candidate. A critical requirement for PRRT efficacy is homogenous and high SSTR expression in all tumor sites, with uptake greater than the background liver. This patient's Ga-68 PET/CT shows low SSTR avidity in the primary pancreatic tumor (SUV 3), which is below the uptake of his metastases and likely below the normal liver background. This heterogeneity and low primary uptake predict a poor response, making PRRT a suboptimal first-line choice. Furthermore, the ESMO guidelines position PRRT as a later-line option for Pan-NETs, to be used after failure of other approved therapies [III, A].\n*   **Somatostatin Analogues (SSAs) Monotherapy:** The ENETS guidelines (Section 3.3.1, Q6) recommend SSA monotherapy for *slow-growing* G1-G2 NF-Pan-NETs, preferably with a Ki-67 <10%. This patient's symptomatic disease, high tumor burden, and Ki-67 of 15% indicate a more active disease for which SSAs alone are unlikely to provide sufficient disease control. Evidence from the observational study **NCT02730104** supports the antiproliferative effect of lanreotide but does not override the guideline recommendations for more aggressive therapy in this specific clinical context.\n*   **Targeted Therapies (Everolimus/Sunitinib):** These are approved for *progressive* Pan-NETs. While the patient's disease is clearly active, the ENETS guidelines (Section 3.4, Q7) note that chemotherapy is often preferred when the primary goal is tumor debulking, which is the case here.\n*   **Other Investigational Therapies:** Evidence from included trials such as **NCT03074513** (Atezolizumab/Bevacizumab) and **NCT03375320** (Cabozantinib) positions these agents as potential second-line or later therapies, not as the optimal choice for first-line treatment in this patient.\n\n**3. Evidence Supporting the Recommended Regimen:**\nThe efficacy of temozolomide-based chemotherapy is well-established in guidelines and supported by clinical trial data. The ENETS guidelines cite the **ECOG-ACRIN E2211 trial**, which demonstrated superior PFS for the CAPTEM combination over temozolomide alone in patients with advanced Pan-NETs. Additionally, the Phase II trial **NCT03728361** (Nivolumab/Temozolomide) showed a promising ORR of 32.1% in patients with NENs, further supporting the activity of temozolomide in this disease.\n\nIn summary, first-line chemotherapy with CAPTEM is the most appropriate choice for this patient, as it is directly supported by high-level guidelines for his specific clinical situation (symptomatic, high-burden G2 Pan-NET) and offers the best chance for a meaningful tumor response and symptom improvement. Other effective therapies such as PRRT and targeted agents are deferred to later lines due to patient-specific contraindications (low SSTR uptake) or strategic sequencing considerations.",
+  "metadata": {
+    "timestamp": "2025-09-22T10:54:35.632657",
+    "model_used": "google/gemini-2.5-pro",
+    "patient_id": 2,
+    "trials_considered": 20,
+    "trials_included": 8,
+    "trials_excluded": 12,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20250922_094323\\batch_run_20250922_094323\\patient_2\\patient_2_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20250922_094323\\batch_run_20250922_094323\\patient_2\\patient_2_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20250922_094323\\batch_run_20250922_094323\\patient_2\\patient_2_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20250922_094323\\batch_run_20250922_094323\\patient_2\\patient_2_therapy_recommendation_reasoning.txt"
+  }
+}

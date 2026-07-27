@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:04:19.532567
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study provides high-quality Phase 3 evidence supporting cabozantinib as a treatment option for this patient. The patient has a progressive, well-differentiated Grade 3 pancreatic NET (Ki-67 25%) and has previously received sunitinib and chemotherapy. The CABINET trial explicitly included patients with well-differentiated Grade 3 NETs and those who had progressed on prior targeted therapies (including sunitinib), aligning perfectly with the patient's histology and treatment history. The published results demonstrated a clinically meaningful and statistically significant improvement in progression-free survival for the pancreatic NET cohort (13.8 months vs. 4.4 months with placebo; HR 0.23). While the patient is also a candidate for PRRT given the DOTATOC-positive status, this study establishes cabozantinib as a validated, evidence-based alternative or subsequent line of therapy, offering actionable guidance for the tumor board's decision on next steps."
+}

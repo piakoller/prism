@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:09:34.207189
+Trial: 34/86
+NCT ID: NCT03728361
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase II study provides meaningful clinical evidence for a patient with a high-grade G2 (Ki-67 19%) pancreatic NET, particularly given the tumor's aggressive features (FDG-avid, necrotic). While the patient is currently stable on FOLFIRINOX, the study evaluates Nivolumab plus Temozolomide in advanced NETs (G1-3) of any origin, offering data on a relevant alternative therapeutic strategy. Temozolomide is a standard backbone for Pan-NETs, and the addition of immunotherapy is clinically interesting for this patient due to the high FDG uptake (SUV 16) which suggests a more aggressive, potentially immune-responsive biology compared to typical low-grade NETs. Although the published results (PMID 36255391) indicated higher response rates in lung NENs compared to other sites, the overall ORR of 32.1% and the evaluation of this combination in non-lung NETs provide critical data to inform whether to consider this regimen versus standard CAPTEM or PRRT (assuming SSTR positivity), or as a salvage option if standard therapies fail."
+}

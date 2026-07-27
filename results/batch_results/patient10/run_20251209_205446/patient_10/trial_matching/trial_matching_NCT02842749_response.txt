@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:27:38.399784
+Trial: 85/86
+NCT ID: NCT02842749
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient primarily due to the Treatment Context and Clinical Applicability criterion. The patient has already received Everolimus as a 3rd-line therapy and demonstrated primary resistance (Best Response: Progressive Disease). This study investigates Everolimus in patients with progressive pNETs but explicitly excludes those with prior mTOR inhibitor therapy. Clinically, re-challenging a patient with a drug on which they have already progressed is not a viable strategy, and the study population (mTOR-naive) is not representative of this patient's refractory status. Furthermore, the input indicates no published results are available for this completed Phase IV study, meaning there is no data to assess regarding efficacy or safety that could even theoretically inform decision-making."
+}

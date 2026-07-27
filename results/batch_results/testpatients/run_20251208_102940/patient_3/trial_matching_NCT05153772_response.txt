@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T10:36:53.068964
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 2 study of 212Pb-DOTAMTATE (AlphaMedix) is clinically relevant for this patient with progressive, well-differentiated G1 Pan-NET. Biologically, the study population (SSTR+ GEP-NETs progressing on somatostatin analogs) aligns perfectly with the patient's current disease state (assuming SSTR-positivity, which is typical for G1 NETs). Clinically, the patient requires a second-line systemic therapy but faces significant constraints due to renal impairment (Creatinine 2.24 mg/dL). While the patient's creatinine exceeds the study's strict inclusion limit (≤1.7 mg/dL), the published results are highly relevant because they report a high objective response rate (56.8%) and, crucially, a low incidence of renal toxicity. This evidence regarding the renal safety profile of Targeted Alpha Therapy (TAT) is vital for the Tumorboard when weighing the risks of standard beta-emitter PRRT (177Lu-DOTATATE) versus investigational alternatives that might offer a more favorable safety margin for a patient with pre-existing CKD and high tumor burden."
+}

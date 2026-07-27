@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:05:51.367297
+Trial: 61/86
+NCT ID: NCT02441062
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence to inform therapy recommendations. While the disease alignment is appropriate (Criterion 1) as the study includes patients with pancreatic neuroendocrine tumors, and the clinical applicability is high (Criterion 2) because the patient urgently needs somatostatin receptor imaging (SSTR-PET) to guide all potential treatment scenarios (surgical planning, PRRT eligibility), the study fails on evidence quality and relevance (Criterion 3). The provided information contains no published results, data, or key findings. It only describes the study's objective—to assess the impact of 68Ga-DOTATOC PET/CT on management—but presents no outcomes. Without any data on how the scan actually changed management in the study population, it is impossible to derive any actionable clinical insights. Therefore, the study provides no evidence to guide therapeutic decision-making for this patient."
+}
+```

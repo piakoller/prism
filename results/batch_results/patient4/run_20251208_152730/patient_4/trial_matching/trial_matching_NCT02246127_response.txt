@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T16:12:53.238982
+Trial: 86/86
+NCT ID: NCT02246127
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant for this patient primarily due to a lack of biological alignment and clinical applicability. The patient has a duodenal neuroendocrine tumor (GI NET), whereas the study is exclusively restricted to pancreatic neuroendocrine tumors (pNETs). These subtypes differ significantly in their biological behavior and sensitivity to cytotoxic chemotherapy; streptozotocin-based regimens (a core intervention in this study) are established for pNETs but are generally considered to have poor efficacy and are not standard for well-differentiated non-pancreatic GI NETs. Furthermore, the study evaluates the sequencing of therapies in a first-line systemic treatment setting (or post-SSA), which does not align with the patient's heavily pre-treated status (post-PRRT, post-surufatinib, post-sunitinib). Consequently, evidence regarding the optimal sequence of streptozotocin and everolimus in pNETs cannot be reasonably extrapolated to guide salvage therapy for a duodenal NET."
+}

@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:57:05.792416
+Trial: 72/86
+NCT ID: NCT03034200
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence to guide treatment for this patient. While the trial enrolled 'neuroendocrine tumors,' the results demonstrate efficacy specifically in Pheochromocytoma-Paraganglioma (PC-PG) and Desmoplastic Small Round Cell Tumor (DSRCT), driven by high DRD2 receptor expression characteristic of these subtypes. The patient has a Pancreatic NET (Pan-NET) G3. The published results indicate that responses in the 'other neuroendocrine tumor' cohort were limited to DSRCT and Neuroblastoma, with no evidence of efficacy presented for epithelial NETs like Pan-NET. Furthermore, the biological rationale (DRD2 antagonism) is distinct from the SSTR-targeted mechanisms relevant to this patient's SSTR-positive (DOTATOC +++) disease. Given the lack of biological alignment and specific efficacy data for Pan-NETs, this study does not support ONC201 as a viable option compared to established therapies like PRRT."
+}
+```

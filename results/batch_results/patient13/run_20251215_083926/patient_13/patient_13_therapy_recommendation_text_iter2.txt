@@ -1,0 +1,19 @@
+=== REGENERATION ITERATION 2 - THERAPY RECOMMENDATION ===
+Timestamp: 2025-12-15T09:19:44.074208
+Patient ID: 13
+================================================================================
+
+The recommended therapy is **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE**.
+
+**Key Clinical Trial Evidence:**
+*   **NCT03972488 (NETTER-2):** This Phase 3 trial specifically evaluated 177Lu-DOTATATE in patients with Grade 2 and Grade 3 (Ki-67 10–55%) advanced GEP-NETs. The trial demonstrated that 177Lu-DOTATATE plus long-acting octreotide significantly extended median progression-free survival (PFS) to **22.8 months** compared to **8.5 months** with high-dose octreotide (stratified hazard ratio **0.276**; p<0.0001). This provides high-level evidence supporting PRRT for this patient's specific Grade 3 tumor biology.
+*   **NCT02754297 (P-PRRT):** This Phase 2 trial reported a high objective response rate in pancreatic NETs (84.6% partial or minor response) treated with personalized 177Lu-octreotate, reinforcing the utility of PRRT for pancreatic primaries.
+*   **NCT03049189 (COMPETE):** Emerging topline results from this Phase 3 trial indicate a statistically significant improvement in PFS with 177Lu-edotreotide compared to everolimus in SSTR-positive GEP-NETs, supporting the prioritization of PRRT over mTOR inhibitors.
+
+**Safety Prerequisites:**
+*   **Liver Function:** Given the patient's "high hepatic tumor burden," it is critical to **confirm preserved liver function (bilirubin/albumin) prior to initiation** due to the risk of hepatotoxicity. Trial **NCT02236910** identifies high hepatic tumor burden as a predictor of outcomes and toxicity risks.
+*   **Uptake:** Eligibility requires confirmation that DOTATOC PET uptake is higher than liver background in all target lesions.
+*   **Monitoring:** While the patient is SSTR-positive, the concurrent FDG-positive status implies a more aggressive biology; therefore, close monitoring for early progression is warranted despite the efficacy of PRRT.
+
+**Alternative Therapy:**
+If PRRT is not feasible or contraindicated, **Cabozantinib** is a recommended alternative. The Phase 3 **CABINET trial (NCT03375320)** demonstrated that Cabozantinib significantly improved progression-free survival in patients with progressive pancreatic neuroendocrine tumors (Median PFS **11.4 months** vs. **3.0 months**; HR 0.27). **Everolimus** is another guideline-supported option, though the combination of Ribociclib and Everolimus should be avoided as it showed insufficient activity (0% ORR) in trial **NCT03070301**.

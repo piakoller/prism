@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T16:33:02.533136
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "The study provides highly relevant clinical evidence for this patient with progressive, metastatic pNET G2 who is refractory to SSA, chemotherapy, and prior PRRT. The trial evaluates 212Pb-DOTAMTATE (Targeted Alpha Therapy) specifically in a cohort of patients who have progressed after prior PRRT, directly matching the patient's treatment history and current clinical need. Biologically, the disease aligns well, assuming the patient remains SSTR-positive upon restaging (a reasonable assumption for well-differentiated NETs). Most importantly, the published results indicate a robust objective response rate (55.6%) in the post-PRRT setting and explicitly note a low incidence of renal toxicity. Given the patient's significant renal impairment (EGFR 38 ml/min) and history of chemotherapy-induced renal toxicity, evidence of a potent therapy with a favorable renal safety profile is critical for decision-making. While strict eligibility regarding creatinine levels might be a hurdle for enrollment, the study's data on efficacy and safety in this specific refractory population offers actionable insights for considering alpha-emitter therapy as a potential alternative to high-risk chemotherapy or PRRT retreatment."
+}
+```

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:41:35.818570
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Disease Alignment or Clinical Applicability. The patient has a metastatic duodenal neuroendocrine tumor with liver-only progression and a previously resected primary tumor. The study evaluates Endoscopic Ultrasound-guided Radiofrequency Ablation (EUS-RFA) specifically for localized pancreatic neuroendocrine neoplasms (PanNENs) to avoid surgery. Since the patient does not have a pancreatic tumor and requires management for hepatic metastases (which would be treated with percutaneous ablation or embolization, not EUS-guided pancreatic ablation), the intervention and evidence from this study are anatomically and clinically inapplicable to her current disease state."
+}

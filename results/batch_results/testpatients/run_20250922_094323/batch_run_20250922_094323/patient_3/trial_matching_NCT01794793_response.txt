@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T11:25:21.970269
+Trial: 76/86
+NCT ID: NCT01794793
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient. The primary reason is a failure to meet the Disease/Biology Alignment criterion. The published results from this Phase 4 rollover study (NCT01794793) exclusively concern the long-term safety and efficacy of pasireotide in patients with Cushing's disease and acromegaly, which are functional pituitary neuroendocrine tumors. These are biologically and clinically distinct from the patient's well-differentiated Grade 1 pancreatic neuroendocrine tumor (Pan-NET). Furthermore, the Treatment Context and Evidence Relevance criteria are also not met. The study was designed as an extension for patients who were already benefiting from pasireotide in prior trials, not to evaluate its efficacy as a second-line agent for patients with progressive disease, which is the patient's current clinical scenario. Consequently, the study provides no data on progression-free survival or response rates in a Pan-NET population, offering no actionable evidence to inform the critical decision between pasireotide and standard-of-care options like everolimus, sunitinib, or CAPTEM for this patient with progressive, unresectable metastatic disease."
+}
+```

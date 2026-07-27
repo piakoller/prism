@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:23:07.239693
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 2 study of 212Pb-DOTAMTATE (AlphaMedix) is highly relevant for this patient with a metastatic G2 pancreatic NET who is progressing on belzutifan. Biologically, the patient's disease aligns with the study population of SSTR-positive GEP-NETs (assuming typical SSTR positivity for G2 NETs). Clinically, the patient is PRRT-naive, matching Cohort 1 of the study. The published results demonstrate a remarkably high Objective Response Rate (ORR) of 56.8% in PRRT-naive patients, which is superior to historical controls for standard 177Lu-DOTATATE. Given the patient's liver-dominant disease and the previous consideration of liver transplantation (which requires disease control/stability), a therapy with a high probability of inducing objective tumor shrinkage is particularly valuable. This evidence supports considering targeted alpha therapy as a potent alternative to standard beta-PRRT or chemotherapy in the sequence of treatment."
+}

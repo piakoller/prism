@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:54:46.708673
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because the provided data represents the clinical trial protocol (Trials 2020) rather than the published results. The text outlines the design and objectives to compare intra-arterial versus intravenous 177Lu-DOTATATE but does not report efficacy or safety outcomes. Without published results in the provided input, there is no evidence to determine if the intra-arterial approach offers any clinical benefit over the standard intravenous administration. Consequently, the study cannot inform treatment recommendations. Furthermore, the patient has already received and progressed on prior PRRT (2017–2018), a criterion that would exclude her from this study, and without outcome data suggesting superior efficacy of the intra-arterial route, there is no basis to consider this specific investigational approach for re-treatment."
+}

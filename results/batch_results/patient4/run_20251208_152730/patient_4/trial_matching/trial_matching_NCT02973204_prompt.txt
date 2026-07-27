@@ -1,0 +1,183 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-08T15:33:41.683693
+Trial: 4/86
+NCT ID: NCT02973204
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+A 68-year-old woman with a well-differentiated (G2, Ki-67 3–5%) functional duodenal neuroendocrine tumor diagnosed in 2013 with synchronous liver metastases. In October 2013 she started octreotide LAR therapy. From December 17, 2013, to March 5, 2014, three TAE sessions and resection of duodenal neoplasm and segmentectomy of S1, S3, and wedge of 6-7 in November 17, 2014. Due to liver progression of the disease, subsequent treatments included PRRT (2017–2018) and multiple loco-regional therapies. In 2022 she started surufatinib within a phase II trial, achieving long-term disease control (>40 cycles), later continued on compassionate use with dose reductions due to diarrhea and hypertension.
+In June 2025, CT showed mild progression of hepatic lesions. Sunitinib was initiated, achieving stable disease for several months. In October 2025, imaging revealed further hepatic progression (RECIST PD confirmed).
+
+Current Clinical Status: ECOG PS 0, good treatment tolerance, and no relevant clinical symptoms.
+Question for Tumorboard:
+Management of disease progression after long-term surufatinib and ongoing sunitinib treatment in a patient with liver-only G2 NET.
+Source: AD
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Disease Status**
+The patient is a 68-year-old female with a well-differentiated, Grade 2 (Ki-67 3–5%) functional duodenal neuroendocrine tumor (NET), initially diagnosed in 2013. The disease course is characterized by synchronous liver metastases and a long natural history (12 years). The patient presents with liver-only disease progression (confirmed by RECIST PD in October 2025) following a sequence of extensive multimodal treatments.
+
+**Treatment History and Resistance Profile**
+The patient is heavily pre-treated and has demonstrated disease progression on multiple therapeutic lines:
+1.  **Somatostatin Analogues (SSA):** Progressed after initial control (started 2013).
+2.  **Locoregional and Surgical Therapy:** Underwent TAE, resection of the primary duodenal neoplasm, and liver resection (2013–2014), followed by multiple subsequent locoregional therapies.
+3.  **Peptide Receptor Radionuclide Therapy (PRRT):** Administered in 2017–2018 due to liver progression.
+4.  **Tyrosine Kinase Inhibitors (TKIs):**
+    *   **Surufatinib:** Achieved long-term control (>40 cycles) within a phase II trial but eventually progressed.
+    *   **Sunitinib:** Initiated in June 2025 for mild hepatic progression; resulted in stable disease initially but failed by October 2025 (RECIST PD).
+
+**Current Clinical Assessment**
+Despite radiological progression, the patient maintains an excellent performance status (ECOG PS 0) and is currently asymptomatic ("no relevant clinical symptoms"), suggesting a dissociation between tumor growth and clinical deterioration. The tumor remains well-differentiated with a relatively low proliferative index (Ki-67 3–5%).
+
+**Guideline-Based Assessment of Management Options**
+Based on the *ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up*, the following factors are relevant for the tumor board's assessment:
+
+*   **Systemic Therapy (mTOR Inhibitors):** The patient has progressed on TKIs (Surufatinib and Sunitinib). The guidelines recommend Everolimus for the treatment of advanced, non-functional neuroendocrine tumors of the gastrointestinal tract (RADIANT-4 trial). While the patient's tumor was originally functional, she is currently asymptomatic. The guidelines note that Everolimus should be used in patients with clearly progressive GI NETs.
+*   **Chemotherapy:** The guidelines state that results with systemic chemotherapy for advanced well-differentiated G1/G2 GI NETs are poor (ORR 11.5%) and generally "cannot be recommended." Chemotherapy is typically reserved for rapidly progressive tumors or those with higher Ki-67 (e.g., 15–20%). Given this patient's Ki-67 of 3–5% and long disease history, chemotherapy may have limited utility.
+*   **Locoregional Therapy:** As the patient presents with liver-only progression, the guidelines suggest that vascular and ablative locoregional modalities (e.g., embolization, ablation) can be considered as an alternative or adjunct to systemic therapy in patients with liver-limited disease.
+*   **PRRT Re-treatment Consideration:** The patient received PRRT 7–8 years ago. While the guidelines primarily discuss PRRT as a second-line therapy after SSA failure, they acknowledge it as a therapeutic option in progressive SSTR-positive NETs. Re-evaluation of Somatostatin Receptor (SSTR) status is essential.
+    *   *Crucial Constraint:* Eligibility for any further PRRT consideration requires confirmation via [68]Ga/[64]Cu-SSTR-PET-CT that uptake in all metastatic lesions is significantly higher than the liver background. If lesions show low or heterogeneous uptake, PRRT is generally not indicated.
+*   **Surufatinib Context:** The guidelines acknowledge recent data (SANET-ep) indicating activity of Surufatinib in extra-pancreatic NETs, consistent with the patient's prior response, though she has now developed resistance to this class.
+
+**Diagnostic Requirements**
+To finalize the management plan, updated staging and molecular imaging are necessary to characterize the metabolic activity and receptor status of the progressing hepatic lesions, specifically to distinguish between slow progression suitable for locoregional control versus systemic progression requiring a switch in drug class (e.g., to an mTOR inhibitor).
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: Management of disease progression after long-term surufatinib and ongoing sunitinib treatment in a patient with liver-only G2 NET.
+
+### STUDY DATA
+	•	NCT-ID: NCT02973204
+	•	Title: Circulating Tumor Cells and Tumor DNA in HCC and NET
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: Sorafenib; Radiofrequency ablation (RFA) or surgery; Everolimus; Lanreotide
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* one of the above mentioned diseases
+* planed surgery, RFA, Somatostatin Analogue, Sorafenib or Everolimus treatment
+* signed informed consent
+
+Exclusion Criteria:
+
+* age below 18, concomitant invasive cancer (not skin cancer) and planed emigration of Denmark. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: Background Treatment and control of cancer is associated with high costs, to patients in the form of side effects and discomfort during investigations, to society in the form of expensive drugs and studies.
+
+Circulating tumor cells (CTC) has received great attention as a cancer biomarker in trying to estimate future course in patients with breast cancer, colon cancer and prostate cancer. CTC is believed to be a crucial step in cancer spreading to the bloodstream and giving rise to metastases. Detection of circulating tumor DNA (ctDNA) specifically adds specificity to the analysis of the CTC.
+
+The investigators would like to with molecular biological methods predict which patients requires special monitoring and individualized therapy and explore these tests as clinical decision support.
+
+Purpose and method
+
+In a blood sample from patients with neuro-endocrine tumor (NET) and hepatocellular carcinoma (HCC), the investigators will by cell separation, flow cytometry and DNA sequencing and digital polymerase chain reaction (PCR):
+
+1. Identify and isolate the CTC and investigate these for tumor-specific mutations.
+2. Quantify ctDNA and analyze this for specific mutations, which in the past has been found frequent in NET and HCC.
+3. Compare findings of mutations on CTC and ctDNA with mutations in tissue biopsies.
+
+The results are compared with the clinical data on disease course, including the effect of treatment and survival.
+
+Subjects 40 Patients with small intestinal/unknown primary NET before treatment with somatostatin analogues 30 patients with pancreatic NET before treatment with Everolimus 30 patients with presumed radically treated HCC 30 patients with HCC in treatment with Sorafenib A blood sample will be taken prior to the start of treatment, after 1 month after start of treatment and thereafter every 3.-6. month for up to two years.
+
+Perspectives In several cancer types molecular diagnostics have had significant influence in treatment and control strategy. The goal is in future to be able to take advantage of a so-called "liquid biopsy" as clinical decision support. The study will bring new knowledge to this growing field of research.
+	•	Publications: 16 publication(s) found; Analysis: Found 16 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Janson ET, Sorbye H, Welin S, Federspiel B, Gronbaek H, Hellman P, Ladekarl M, Langer SW, Mortensen J, Schalin-Jantti C, Sundin A, Sundlov A, Thiis-Evensen E, Knigge U. Nordic guidelines 2014 for diagnosis and treatment of gastroenteropancreatic neuroendocrine neoplasms. Acta Oncol. 2014 Oct;53(10):1284-97. doi: 10.3109/0284186X.2014.941999. Epub 2014 Aug 20.
+• Bruix J, Sherman M; American Association for the Study of Liver Diseases. Management of hepatocellular carcinoma: an update. Hepatology. 2011 Mar;53(3):1020-2. doi: 10.1002/hep.24199. No abstract available.
+• Zhang Y, Li J, Cao L, Xu W, Yin Z. Circulating tumor cells in hepatocellular carcinoma: detection techniques, clinical implications, and future perspectives. Semin Oncol. 2012 Aug;39(4):449-60. doi: 10.1053/j.seminoncol.2012.05.012.
+• Khan MS, Tsigani T, Rashid M, Rabouhans JS, Yu D, Luong TV, Caplin M, Meyer T. Circulating tumor cells and EpCAM expression in neuroendocrine tumors. Clin Cancer Res. 2011 Jan 15;17(2):337-45. doi: 10.1158/1078-0432.CCR-10-1776. Epub 2011 Jan 11.
+• Khan MS, Kirkwood A, Tsigani T, Garcia-Hernandez J, Hartley JA, Caplin ME, Meyer T. Circulating tumor cells as prognostic markers in neuroendocrine tumors. J Clin Oncol. 2013 Jan 20;31(3):365-72. doi: 10.1200/JCO.2012.44.2905. Epub 2012 Dec 17.
+• Schulze K, Gasch C, Staufer K, Nashan B, Lohse AW, Pantel K, Riethdorf S, Wege H. Presence of EpCAM-positive circulating tumor cells as biomarker for systemic disease strongly correlates to survival in patients with hepatocellular carcinoma. Int J Cancer. 2013 Nov;133(9):2165-71. doi: 10.1002/ijc.28230. Epub 2013 Jun 11.
+• Guo W, Yang XR, Sun YF, Shen MN, Ma XL, Wu J, Zhang CY, Zhou Y, Xu Y, Hu B, Zhang X, Zhou J, Fan J. Clinical significance of EpCAM mRNA-positive circulating tumor cells in hepatocellular carcinoma by an optimized negative enrichment and qRT-PCR-based platform. Clin Cancer Res. 2014 Sep 15;20(18):4794-805. doi: 10.1158/1078-0432.CCR-14-0251. Epub 2014 Jul 9.
+• Francis JM, Kiezun A, Ramos AH, Serra S, Pedamallu CS, Qian ZR, Banck MS, Kanwar R, Kulkarni AA, Karpathakis A, Manzo V, Contractor T, Philips J, Nickerson E, Pho N, Hooshmand SM, Brais LK, Lawrence MS, Pugh T, McKenna A, Sivachenko A, Cibulskis K, Carter SL, Ojesina AI, Freeman S, Jones RT, Voet D, Saksena G, Auclair D, Onofrio R, Shefler E, Sougnez C, Grimsby J, Green L, Lennon N, Meyer T, Caplin M, Chung DC, Beutler AS, Ogino S, Thirlwell C, Shivdasani R, Asa SL, Harris CR, Getz G, Kulke M, Meyerson M. Somatic mutation of CDKN1B in small intestine neuroendocrine tumors. Nat Genet. 2013 Dec;45(12):1483-6. doi: 10.1038/ng.2821. Epub 2013 Nov 3.
+• Jiao Y, Shi C, Edil BH, de Wilde RF, Klimstra DS, Maitra A, Schulick RD, Tang LH, Wolfgang CL, Choti MA, Velculescu VE, Diaz LA Jr, Vogelstein B, Kinzler KW, Hruban RH, Papadopoulos N. DAXX/ATRX, MEN1, and mTOR pathway genes are frequently altered in pancreatic neuroendocrine tumors. Science. 2011 Mar 4;331(6021):1199-203. doi: 10.1126/science.1200609. Epub 2011 Jan 20.
+• Marinoni I, Kurrer AS, Vassella E, Dettmer M, Rudolph T, Banz V, Hunger F, Pasquinelli S, Speel EJ, Perren A. Loss of DAXX and ATRX are associated with chromosome instability and reduced survival of patients with pancreatic neuroendocrine tumors. Gastroenterology. 2014 Feb;146(2):453-60.e5. doi: 10.1053/j.gastro.2013.10.020. Epub 2013 Oct 19.
+• Pipinikas CP, Dibra H, Karpathakis A, Feber A, Novelli M, Oukrif D, Fusai G, Valente R, Caplin M, Meyer T, Teschendorff A, Bell C, Morris TJ, Salomoni P, Luong TV, Davidson B, Beck S, Thirlwell C. Epigenetic dysregulation and poorer prognosis in DAXX-deficient pancreatic neuroendocrine tumours. Endocr Relat Cancer. 2015 Jun;22(3):L13-8. doi: 10.1530/ERC-15-0108. Epub 2015 Apr 21. No abstract available.
+• Rimassa L, Santoro A. Sorafenib therapy in advanced hepatocellular carcinoma: the SHARP trial. Expert Rev Anticancer Ther. 2009 Jun;9(6):739-45. doi: 10.1586/era.09.41.
+• Schulze K, Imbeaud S, Letouze E, Alexandrov LB, Calderaro J, Rebouissou S, Couchy G, Meiller C, Shinde J, Soysouvanh F, Calatayud AL, Pinyol R, Pelletier L, Balabaud C, Laurent A, Blanc JF, Mazzaferro V, Calvo F, Villanueva A, Nault JC, Bioulac-Sage P, Stratton MR, Llovet JM, Zucman-Rossi J. Exome sequencing of hepatocellular carcinomas identifies new mutational signatures and potential therapeutic targets. Nat Genet. 2015 May;47(5):505-511. doi: 10.1038/ng.3252. Epub 2015 Mar 30.
+• Newman AM, Bratman SV, To J, Wynne JF, Eclov NC, Modlin LA, Liu CL, Neal JW, Wakelee HA, Merritt RE, Shrager JB, Loo BW Jr, Alizadeh AA, Diehn M. An ultrasensitive method for quantitating circulating tumor DNA with broad patient coverage. Nat Med. 2014 May;20(5):548-54. doi: 10.1038/nm.3519. Epub 2014 Apr 6.
+• Sorensen BS, Wu L, Wei W, Tsai J, Weber B, Nexo E, Meldgaard P. Monitoring of epidermal growth factor receptor tyrosine kinase inhibitor-sensitizing and resistance mutations in the plasma DNA of patients with advanced non-small cell lung cancer during treatment with erlotinib. Cancer. 2014 Dec 15;120(24):3896-901. doi: 10.1002/cncr.28964. Epub 2014 Aug 7.
+• Neychev V, Steinberg SM, Cottle-Delisle C, Merkel R, Nilubol N, Yao J, Meltzer P, Pacak K, Marx S, Kebebew E. Mutation-targeted therapy with sunitinib or everolimus in patients with advanced low-grade or intermediate-grade neuroendocrine tumours of the gastrointestinal tract and pancreas with or without cytoreductive surgery: protocol for a phase II clinical trial. BMJ Open. 2015 May 19;5(5):e008248. doi: 10.1136/bmjopen-2015-008248.
+	•	Key findings from publications: No detailed findings available
+	•	Additional evidence from online sources: Primary outcome: Concordance between specific DNA mutations found in patient biopsies and plasma circulating tumor DNA
+Secondary outcomes: Flow cytometry for detection and quantification of CTC in peripheral blood (absolute and relative counts); Correlations between mutations found in circulating tumor DNA and amount of circulating tumor cells and treatment response according to RECIST criteria; Correlations between mutations found in circulating tumor DNA and amount of circulating tumor cells and survival; Correlations between mutations fund in circulating DNA and circulating tumor cells
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Found 16 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

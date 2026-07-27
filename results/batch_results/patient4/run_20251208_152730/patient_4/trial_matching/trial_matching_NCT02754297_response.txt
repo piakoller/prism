@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:47:19.175391
+Trial: 33/86
+NCT ID: NCT02754297
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The patient has previously received Peptide Receptor Radionuclide Therapy (PRRT) in 2017–2018 and is now presenting with progression after subsequent TKI therapies. The evaluated study (P-PRRT trial) specifically investigates a personalized dosimetry induction protocol in **PRRT-naïve** patients. Clinical evidence regarding efficacy (ORR, PFS) and safety profiles from a PRRT-naïve population is not transferable to the re-treatment (salvage) setting, where tumor resistance mechanisms and cumulative toxicity risks (particularly to bone marrow and kidneys) differ significantly. While the study validates a personalized dosimetry method, it does not provide the necessary evidence on the efficacy or safety of PRRT re-treatment to inform therapy recommendations for a patient with prior radioligand exposure."
+}

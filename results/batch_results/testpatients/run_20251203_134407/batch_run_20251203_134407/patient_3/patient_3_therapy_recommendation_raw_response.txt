@@ -1,0 +1,27 @@
+=== THERAPY RECOMMENDATION RAW RESPONSE ===
+Timestamp: 2025-12-03T16:44:04.959199
+Patient ID: 3
+Model: google/gemini-3-pro-preview
+==================================================
+
+<therapy_recommendation>
+The recommended second-line systemic treatment is the initiation of targeted therapy with **Everolimus** (10 mg daily).
+
+*   **Evidence:** The recommendation is supported by the Phase III **RADIANT-3 trial** (cited in ENETS 2023 and ESMO 2020 guidelines), which demonstrated a significant improvement in progression-free survival (PFS) for patients with advanced, progressive pancreatic neuroendocrine tumors (Pan-NETs) treated with Everolimus compared to placebo (**median PFS 11.0 months vs. 4.6 months**; HR 0.35; 95% CI: 0.27–0.45).
+
+Alternatively, **Sunitinib** (37.5 mg daily) is a valid option based on the Phase III trial by **Raymond et al.** (cited in ENETS 2023 and ESMO 2020 guidelines), which showed a median **PFS of 11.4 months vs. 5.5 months** with placebo (HR 0.42; 95% CI: 0.26–0.66).
+
+**Peptide Receptor Radionuclide Therapy (PRRT)** with 177Lu-DOTATATE is currently **not recommended** as the immediate next step due to the lack of mandatory SSTR-PET/CT imaging to confirm receptor expression and the significant safety risk posed by the patient's renal impairment (Creatinine 2.24 mg/dL).
+</therapy_recommendation>
+
+<rationale>
+The rationale for recommending **Everolimus** as the primary second-line therapy is based on the following integration of the patient's assessment, guidelines, and trial evidence:
+
+1.  **Guideline Recommendations for Progressive Disease:** The patient has a well-differentiated (G1, Ki67 2%) NF-Pan-NET with radiological progression (enlargement of liver metastases and mesenteric mass) after first-line Lanreotide. Both **ENETS 2023** (Guideline 1, Section 3.3) and **ESMO 2020** (Guideline 2, Section 3.5) recommend Everolimus or Sunitinib (Level of Evidence 1a, Grade A) as the standard of care for progressive G1/G2 Pan-NETs.
+2.  **Renal Impairment (Creatinine 2.24 mg/dL):** The patient's significant renal dysfunction is the critical factor in therapy selection.
+    *   **Everolimus** is primarily metabolized by the liver and excreted in feces, requiring no dose adjustment for renal impairment, making it pharmacokinetically safer for this patient.
+    *   **Sunitinib**, while also an option, carries a known risk of hypertension and potential renal toxicity (e.g., proteinuria, thrombotic microangiopathy), which could exacerbate the patient's existing chronic kidney disease and hypertension.
+    *   **Chemotherapy** with Streptozotocin is contraindicated due to nephrotoxicity. Capecitabine-based regimens (e.g., CAPTEM) would require significant dose adjustments and are less favorable for an asymptomatic G1 tumor compared to targeted agents.
+3.  **PRRT Eligibility and Safety:** While PRRT is a valid second-line option per guidelines (ENETS Q5), it strictly requires positive uptake on SSTR-PET/CT (which has not been performed). Furthermore, the patient's creatinine of 2.24 mg/dL represents a significant risk for PRRT-associated renal toxicity. Guidelines warn that renal dysfunction is a potential adverse event; thus, PRRT would require nephrological clearance and potentially personalized dosimetry, making it less suitable as an immediate recommendation compared to Everolimus.
+4.  **Comorbidity Management:** While Everolimus is preferred for renal safety, the patient's Type 2 diabetes requires careful monitoring of blood glucose levels, as hyperglycemia is a known side effect (RADIANT-3). The history of malignant otitis (2019) warrants vigilance for infections but does not contraindicate treatment given the time elapsed.
+</rationale>

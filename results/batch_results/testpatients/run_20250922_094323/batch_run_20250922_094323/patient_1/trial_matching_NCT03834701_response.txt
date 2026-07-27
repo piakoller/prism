@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T09:51:57.663104
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient. There is a profound mismatch on all three core criteria. First, the **Disease/Biology Alignment** fails; the patient has a large (10 cm), symptomatic, locally advanced, high-end G2 Pan-NET (Ki-67 19%) with aggressive features (high FDG uptake, bleeding). The study specifically included patients with small (1.5-2.5 cm), asymptomatic, localized, low-risk G1 or G2 tumors (Ki-67 ≤5%). Second, the **Treatment Context/Clinical Applicability** is nonexistent. The patient's urgent clinical need is definitive local control for a massive, bleeding tumor, for which complex surgery is the primary consideration. The study's intervention, EUS-guided radiofrequency ablation (RFA), is a technique for small, contained lesions and is completely inappropriate and technically infeasible for a 10 cm mass with extensive locoregional infiltration. Finally, the **Evidence Quality and Relevance** is poor for this case; the study evaluates the safety of RFA in a vastly different population and provides no relevant efficacy data that could inform the management of advanced, aggressive disease. Therefore, the evidence is not transferable to any of this patient's potential clinical scenarios."
+}
+```

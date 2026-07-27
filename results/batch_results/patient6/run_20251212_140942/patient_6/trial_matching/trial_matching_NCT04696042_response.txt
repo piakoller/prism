@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:24:41.467293
+Trial: 25/86
+NCT ID: NCT04696042
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criterion for Treatment Context/Clinical Applicability. This study evaluates Lanreotide Autogel in Asian patients with GEP-NETs, primarily in early treatment settings (inclusion requires <5 months of prior Lanreotide). The patient has already received Lanreotide (in combination with sunitinib) starting in 2018 and has since progressed through multiple lines of therapy, including liver-directed therapies and belzutifan. Evidence confirming the efficacy of first-line somatostatin analogs does not provide actionable insights for a patient who has already developed resistance to this drug class and is currently seeking salvage options (e.g., liver transplantation, PRRT, or chemotherapy) for progressive disease."
+}

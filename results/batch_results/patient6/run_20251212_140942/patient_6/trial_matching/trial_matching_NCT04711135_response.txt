@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:45:49.241878
+Trial: 80/86
+NCT ID: NCT04711135
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because it specifically evaluates the safety and dosimetry of 177Lu-DOTATATE in adolescents (12–17 years old) to extend the indication from adults to pediatric populations (NETTER-P). The patient is a 51-year-old woman for whom 177Lu-DOTATATE is already a standard, evidence-based therapeutic option supported by adult trials (e.g., NETTER-1, NETTER-2). While the disease biology (well-differentiated GEP-NET) aligns, the study's focus on pediatric pharmacokinetics and safety provides no meaningful clinical evidence to guide treatment for an adult patient. The evidence flow is intended to apply adult insights to children, not vice versa, making the results inapplicable to this patient's care."
+}

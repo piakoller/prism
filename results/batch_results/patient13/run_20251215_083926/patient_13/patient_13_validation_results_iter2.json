@@ -1,0 +1,50 @@
+{
+  "patient_id": 13,
+  "timestamp": "2025-12-15T09:19:44.120652",
+  "validation_steps": {
+    "structural": {
+      "status": "pass",
+      "critical_issues": [],
+      "warnings": [],
+      "checks_performed": [
+        "Required sections present",
+        "Minimum content length",
+        "Urgency alignment",
+        "Trial discussion completeness",
+        "Metadata completeness"
+      ]
+    },
+    "evidence_consistency": {
+      "status": "pass",
+      "critical_issues": [],
+      "warnings": [],
+      "evidence_stats": {
+        "trials_cited": 7,
+        "trials_available": 15,
+        "trials_included": 11,
+        "trials_excluded": 4,
+        "hallucinated_citations": 0
+      },
+      "checks_performed": [
+        "Trial citation accuracy",
+        "Hallucination detection",
+        "Inclusion/exclusion consistency",
+        "Coverage of included trials"
+      ]
+    },
+    "semantic": {
+      "status": "error",
+      "critical_issues": [
+        "Validation failed due to error: ('Connection aborted.', ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None))"
+      ],
+      "warnings": [],
+      "detailed_reasoning": "",
+      "checks_performed": []
+    }
+  },
+  "overall_status": "passed",
+  "requires_regeneration": false,
+  "regeneration_reasons": [],
+  "validation_summary": "======================================================================\nTHERAPY RECOMMENDATION VALIDATION REPORT\n======================================================================\nPatient ID: 13\nTimestamp: 2025-12-15T09:19:44.120652\nOverall Status: PASSED\nRequires Regeneration: NO\n\n--- STRUCTURAL VALIDATION ---\nStatus: PASS\n  ✅ No issues found\n\n--- EVIDENCE CONSISTENCY VALIDATION ---\nStatus: PASS\nTrials cited: 7\nTrials available: 15\nHallucinated citations: 0\n  ✅ No issues found\n\n--- SEMANTIC VALIDATION (LLM-BASED) ---\nDecision: UNKNOWN\nStatus: ERROR\nCritical Issues:\n  ❌ Validation failed due to error: ('Connection aborted.', ConnectionResetError(10054, 'Eine vorhandene Verbindung wurde vom Remotehost geschlossen', None, 10054, None))\n\n======================================================================\n✅ VALIDATION PASSED - NO REGENERATION NEEDED\n======================================================================",
+  "iteration": 2
+}

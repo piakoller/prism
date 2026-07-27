@@ -1,0 +1,95 @@
+{
+  "status": "success",
+  "analysis_complete": true,
+  "trials_analyzed": 10,
+  "trials_included": 6,
+  "trials_excluded": 4,
+  "expected_trial_count": 10,
+  "trial_analyses": [
+    {
+      "nct_number": "NCT03278379",
+      "trial_name": "Avelumab in G2-3 NET",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This trial provides evidence that single-agent PD-L1 blockade (Avelumab) has limited antitumor activity (0% ORR) in G2-3 NETs. This informs the recommendation to avoid immunotherapy monotherapy despite the patient's high tumor grade and FDG avidity."
+    },
+    {
+      "nct_number": "NCT02568267",
+      "trial_name": "Basket Study of Entrectinib (STARTRK-2)",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This trial requires specific gene fusions (NTRK/ROS1/ALK). While genetic counseling is indicated for this patient, these somatic alterations are extremely rare in Pan-NETs (<1%), and without a confirmed target, this trial does not inform the immediate empiric treatment recommendation."
+    },
+    {
+      "nct_number": "NCT03074513",
+      "trial_name": "Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "Provides Phase 2 evidence for the combination of Atezolizumab and Bevacizumab in pNETs (ORR 20%). While likely less efficacious than cytotoxic chemotherapy for bulky disease, it represents a viable non-cytotoxic systemic option supported by clinical data."
+    },
+    {
+      "nct_number": "NCT03728361",
+      "trial_name": "Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "Evaluates a Temozolomide-based combination, which is central to the patient's potential chemotherapy plan. Although efficacy was driven by lung NETs, the data informs expectations regarding the addition of checkpoint inhibitors to alkylating agents in pNETs."
+    },
+    {
+      "nct_number": "NCT03217097",
+      "trial_name": "MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This is a critical evidence source for a patient requiring chemotherapy. The trial results guide the selection between alkylating agents (e.g., Temozolomide) and Oxaliplatin based on MGMT methylation status, directly addressing the need for an optimal cytotoxic regimen for bulky disease."
+    },
+    {
+      "nct_number": "NCT01842165",
+      "trial_name": "177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "This trial focuses on dosimetry and prediction in patients treated with PRRT. Since the patient is clinically ineligible for PRRT due to Ga68-negative peritoneal metastases (discordant imaging), optimization data for a therapy she should not receive is not relevant for the recommendation."
+    },
+    {
+      "nct_number": "NCT03375320",
+      "trial_name": "Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "Provides high-quality Phase 3 evidence that Cabozantinib significantly improves PFS and achieves an ORR of 19% in pNETs. This establishes Cabozantinib as a robust therapeutic option for this patient's aggressive, bulky disease profile."
+    },
+    {
+      "nct_number": "NCT01466036",
+      "trial_name": "Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "No published results are available to evaluate the efficacy or safety of this intervention."
+    },
+    {
+      "nct_number": "NCT03972488",
+      "trial_name": "Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET (NETTER-2)",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 3 trial establishes 177Lu-Dotatate as a standard first-line therapy for G2/G3 NETs. It is included to provide the evidence-based context for why this patient, despite fitting the grade criteria, must be explicitly excluded from this standard of care due to her discordant (SSTR-negative) peritoneal disease."
+    },
+    {
+      "nct_number": "NCT01253161",
+      "trial_name": "Study of Pasireotide Long Acting Release (LAR) in Patients With Metastatic Neuroendocrine Tumors (NETs)",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "The trial investigates a somatostatin analog with significant toxicity (hyperglycemia) and limited tumor shrinkage capability. Given the patient's need for significant tumor reduction (bulky disease), this agent is less relevant than cytotoxic or targeted options."
+    }
+  ],
+  "summary": {},
+  "validation_warnings": [],
+  "raw_response": "Based on the patient's clinical profile—specifically the bulky, symptomatic, G2 (Ki-67 20%) Pan-NET with discordant imaging (FDG-positive/Ga68-negative peritoneal metastases)—the treatment priority is systemic control of aggressive disease. The analysis focuses on trials providing evidence for chemotherapy, targeted therapy, and the exclusion of PRRT.\n\n<trial_analysis>\n**NCT NUMBER:** NCT03278379\n**TRIAL NAME:** Avelumab in G2-3 NET\n**DECISION:** INCLUDE\n**RATIONALE:** This trial provides evidence that single-agent PD-L1 blockade (Avelumab) has limited antitumor activity (0% ORR) in G2-3 NETs. This informs the recommendation to avoid immunotherapy monotherapy despite the patient's high tumor grade and FDG avidity.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02568267\n**TRIAL NAME:** Basket Study of Entrectinib (STARTRK-2)\n**DECISION:** EXCLUDE\n**RATIONALE:** This trial requires specific gene fusions (NTRK/ROS1/ALK). While genetic counseling is indicated for this patient, these somatic alterations are extremely rare in Pan-NETs (<1%), and without a confirmed target, this trial does not inform the immediate empiric treatment recommendation.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03074513\n**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** Provides Phase 2 evidence for the combination of Atezolizumab and Bevacizumab in pNETs (ORR 20%). While likely less efficacious than cytotoxic chemotherapy for bulky disease, it represents a viable non-cytotoxic systemic option supported by clinical data.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03728361\n**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer\n**DECISION:** INCLUDE\n**RATIONALE:** Evaluates a Temozolomide-based combination, which is central to the patient's potential chemotherapy plan. Although efficacy was driven by lung NETs, the data informs expectations regarding the addition of checkpoint inhibitors to alkylating agents in pNETs.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03217097\n**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This is a critical evidence source for a patient requiring chemotherapy. The trial results guide the selection between alkylating agents (e.g., Temozolomide) and Oxaliplatin based on MGMT methylation status, directly addressing the need for an optimal cytotoxic regimen for bulky disease.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01842165\n**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs\n**DECISION:** EXCLUDE\n**RATIONALE:** This trial focuses on dosimetry and prediction in patients treated with PRRT. Since the patient is clinically ineligible for PRRT due to Ga68-negative peritoneal metastases (discordant imaging), optimization data for a therapy she should not receive is not relevant for the recommendation.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03375320\n**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)\n**DECISION:** INCLUDE\n**RATIONALE:** Provides high-quality Phase 3 evidence that Cabozantinib significantly improves PFS and achieves an ORR of 19% in pNETs. This establishes Cabozantinib as a robust therapeutic option for this patient's aggressive, bulky disease profile.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01466036\n**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** No published results are available to evaluate the efficacy or safety of this intervention.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03972488\n**TRIAL NAME:** Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET (NETTER-2)\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 3 trial establishes 177Lu-Dotatate as a standard first-line therapy for G2/G3 NETs. It is included to provide the evidence-based context for why this patient, despite fitting the grade criteria, must be explicitly excluded from this standard of care due to her discordant (SSTR-negative) peritoneal disease.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01253161\n**TRIAL NAME:** Study of Pasireotide Long Acting Release (LAR) in Patients With Metastatic Neuroendocrine Tumors (NETs)\n**DECISION:** EXCLUDE\n**RATIONALE:** The trial investigates a somatostatin analog with significant toxicity (hyperglycemia) and limited tumor shrinkage capability. Given the patient's need for significant tumor reduction (bulky disease), this agent is less relevant than cytotoxic or targeted options.\n---\n</trial_analysis>\n\n<summary>\n**TOTAL TRIALS ANALYZED:** 10\n**TRIALS TO INCLUDE:** 6\n**TRIALS TO EXCLUDE:** 4\n</summary>",
+  "metadata": {
+    "timestamp": "2025-12-12T18:48:50.740790",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 12,
+    "input_trial_count": 10,
+    "cache_reused": false,
+    "cached_at": null,
+    "prompt_file": "batch_results/run_20251212_181209\\patient_12\\patient_12_trial_analysis_prompt.txt",
+    "results_file": "batch_results/run_20251212_181209\\patient_12\\patient_12_trial_analysis.json",
+    "response_file": "batch_results/run_20251212_181209\\patient_12\\patient_12_trial_analysis_raw_response.txt",
+    "summary_file": "batch_results/run_20251212_181209\\patient_12\\patient_12_trial_analysis_summary.txt"
+  }
+}

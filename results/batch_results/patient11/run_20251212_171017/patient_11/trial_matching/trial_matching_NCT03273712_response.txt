@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:31:10.182718
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient, failing primarily on **Criterion 3 (Evidence Quality)** and **Criterion 1 (Disease Alignment)**. Regarding evidence quality, the provided data contains no published results, efficacy endpoints, or safety profiles from the trial; the listed citations are general review articles that merely mention the trial exists. Without outcomes, the study cannot inform treatment decisions. Biologically, the patient has a high-grade Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, while the study evaluates PRRT (90Y-DOTATOC) for SSTR-positive tumors. NECs with such high proliferation indices typically lack sufficient SSTR expression for PRRT, and guidelines generally reserve PRRT for well-differentiated NETs or G3 tumors with lower Ki-67 (<55%). Therefore, the study lacks both the biological concordance and the necessary clinical evidence to guide consolidation therapy for this patient."
+}

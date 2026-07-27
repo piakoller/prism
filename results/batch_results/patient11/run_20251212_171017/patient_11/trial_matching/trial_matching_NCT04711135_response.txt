@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:38:52.893387
+Trial: 80/86
+NCT ID: NCT04711135
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a high-grade pancreatic neuroendocrine carcinoma (NEC) with a Ki-67 of 95% and a mixed histology (MiNEN), whereas the study (NETTER-P) evaluates Lutathera specifically in adolescent patients (12-17 years) with well-differentiated G1/G2 NETs (Ki-67 ≤20%) or PPGLs. Biologically, the patient's aggressive NEC is distinct from the indolent, well-differentiated tumors studied. Furthermore, the study focuses on safety and dosimetry in a pediatric population, offering no transferable evidence for a 73-year-old adult. Even if SSTR positivity were assumed (unlikely given Ki-67 95% and FDG avidity), data regarding adolescent safety does not inform the management of high-grade NEC in an elderly patient."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:21:12.365082
+Trial: 51/86
+NCT ID: NCT03290079
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient for several critical reasons. First, the study explicitly excludes pancreatic neuroendocrine tumors (Pan-NETs), enrolling only lung, thymic, and bowel NETs, which limits biological transferability as Pan-NETs often have distinct response profiles. Second, the treatment regimen includes Lenvatinib, a VEGF-targeted tyrosine kinase inhibitor. This intervention is clinically contraindicated for this patient, who has a history of recent life-threatening upper GI bleeding caused by direct tumor infiltration into the stomach; the study specifically excludes patients with clinically significant bleeding due to the high risk of hemorrhage associated with anti-angiogenic therapy. Consequently, the safety profile is unacceptable for the patient's current clinical state, and the disease indication does not match."
+}

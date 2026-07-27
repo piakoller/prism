@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:39:17.706756
+Trial: 82/86
+NCT ID: NCT02893930
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a high-grade pancreatic Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95% (part of a MiNEN), whereas the study specifically enrolled patients with low or intermediate grade pancreatic Neuroendocrine Tumors (PNETs) and explicitly excluded poorly differentiated or high-grade neuroendocrine carcinomas. Biologically, high-grade NECs are distinct from well-differentiated NETs and are typically treated with platinum-based chemotherapy rather than mTOR inhibitors. Furthermore, the study was terminated early due to lack of efficacy (zero objective responses), providing no evidence to support the use of sapanisertib even in the target population, let alone for a biologically aggressive NEC."
+}

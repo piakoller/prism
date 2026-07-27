@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T09:54:31.257915
+Trial: 29/86
+NCT ID: NCT03873870
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence to inform the next therapeutic step for this patient. The three criteria are met: 1) **Disease/Biology Alignment:** The patient has a confirmed G2 pancreatic NET, and the study evaluates the utility of 68Ga-DOTATATE PET/CT in patients with suspected or confirmed NETs, with published results specifically highlighting a high positivity rate (81.2%) in pancreatic masses. 2) **Treatment Context/Clinical Applicability:** The study is highly applicable to the patient's current clinical scenario. The central question is the next therapeutic step (e.g., surgery, PRRT, or other systemic therapy), and this decision critically depends on SSTR-expression status and ruling out distant metastases. This study prospectively evaluates the utility of the exact diagnostic test needed to make this determination. 3) **Evidence Quality and Relevance:** The evidence is directly actionable. While it is a diagnostic, not a therapeutic study, its findings provide a strong rationale for performing a 68Ga-DOTATATE PET/CT. The scan's results will directly guide therapy recommendations: SSTR-positivity would open the door for PRRT, while SSTR-negativity would rule it out and favor other systemic options. Therefore, the study's evidence is essential for informing the patient's treatment plan."
+}
+```

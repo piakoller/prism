@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T20:59:53.830767
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The patient has a metastatic well-differentiated pancreatic neuroendocrine tumor (Pan-NET). Although the study design (NCT03012620) included a cohort for refractory neuroendocrine tumors, the provided published results (PMID: 37429302) are exclusively restricted to the rare sarcoma cohort (e.g., chordoma, alveolar soft part sarcoma). Criterion 1 (Disease/Biology Alignment) is not met because efficacy and safety data derived from sarcoma patients are not biologically transferable to neuroendocrine neoplasms. Without specific outcomes for the NET cohort, the study provides no actionable evidence to guide systemic therapy recommendations for this patient's specific disease context."
+}

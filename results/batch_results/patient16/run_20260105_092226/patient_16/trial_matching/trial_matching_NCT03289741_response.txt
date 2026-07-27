@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:52:08.161651
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study is relevant because it addresses the choice between two standard-of-care Somatostatin Analogues (SSAs) for this patient's specific disease profile. 1) **Disease Alignment:** The patient has a well-differentiated (G1), SSTR-positive metastatic neuroendocrine tumor, which matches the study population of locally advanced or metastatic WDNETs. 2) **Treatment Context:** SSAs (Octreotide LAR or Lanreotide) are the guideline-recommended first-line systemic therapy for antiproliferative control in G1 pancreatic NETs, particularly if the patient is not an immediate candidate for curative surgery or requires disease stabilization. 3) **Evidence Quality:** While the study focuses on patient experience (pain scores, preference) rather than antitumor efficacy (Phase 4), this evidence is clinically actionable for decision-making. Since Octreotide and Lanreotide are often considered therapeutically similar, data regarding injection pain and patient preference (Raj et al., 2022) provides meaningful guidance for selecting the specific agent to optimize long-term adherence and quality of life in this chronic treatment setting."
+}

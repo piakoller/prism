@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:18:43.639740
+Trial: 16/86
+NCT ID: NCT02724540
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient due to significant biological discordance and a lack of published results. First, the patient has a high-grade Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, whereas the RETNET trial investigates liver-directed therapies in Neuroendocrine Tumors (NETs), a population typically characterized by well-differentiated histology and slower growth (evidenced by the inclusion criterion regarding somatostatin analog progression). Extrapolating embolization outcomes from indolent NETs to aggressive NECs is not clinically sound. Second, the provided publication is a study protocol describing the design rather than reporting efficacy or safety results; without outcome data, the study cannot guide therapeutic decision-making. Finally, for a single oligometastatic lesion in a responder, other local modalities (e.g., ablation, resection, SBRT) are often prioritized over lobar embolization strategies."
+}

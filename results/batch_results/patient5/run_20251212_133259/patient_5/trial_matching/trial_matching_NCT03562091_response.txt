@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:39:22.318947
+Trial: 10/86
+NCT ID: NCT03562091
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment or Treatment Context criteria. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90%. In contrast, the OPERA study (NCT03562091) specifically investigates patients with Grade 1 or 2 well-differentiated gastroenteropancreatic neuroendocrine tumors (GEP-NETs). Biologically, high-grade NECs are distinct from indolent G1/G2 NETs and require cytotoxic chemotherapy (e.g., platinum-etoposide) rather than somatostatin analogs (Lanreotide) which are the focus of this study. Consequently, the study's insights regarding patient perception and quality of life on Lanreotide are not clinically applicable to the management of this patient's aggressive disease."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T10:32:31.976172
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study is not relevant because it evaluates the diagnostic utility of intraoperative ultrasound (IOUS) specifically in patients classified as non-metastatic (cM0) preoperatively to detect occult liver metastases. The patient has extensive, radiologically evident metastatic disease (>25 liver lesions, cM1) and is seeking second-line systemic therapy recommendations. The study's focus on staging localized disease does not align with the patient's advanced stage, and the diagnostic intervention does not provide evidence for selecting systemic treatments (such as targeted therapies or chemotherapy) for progressive metastatic neuroendocrine tumors."
+}

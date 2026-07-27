@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:00:33.827577
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for the patient's potential treatment with Peptide Receptor Radionuclide Therapy (PRRT). Biologically, the patient's SSTR-positive bronchial NET with a Ki-67 of 25% aligns with the study's inclusion criteria, which permit Ki-67 up to 30% in post-chemotherapy patients. Clinically, the study is highly applicable as it includes a specific cohort (Group B) for patients who have previously received radionuclide therapy, directly addressing the tumor board's question regarding PRRT re-treatment or consolidation. The published results (Swiha et al.) offer actionable prognostic evidence, identifying non-GEP primary sites and high skeletal metastasis burden—both present in this patient—as predictors of outcomes (median PFS 34.1 months in the general cohort). This information is crucial for risk stratification and managing expectations for re-treatment in a patient with limited remaining therapeutic options."
+}

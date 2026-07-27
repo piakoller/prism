@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:31:44.637888
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful clinical evidence for this patient with an SSTR-positive G1 pancreatic NET. Biologically, the patient matches the study population (SSTR+ GEP-NET). Clinically, the patient presents with locally advanced, borderline resectable disease where neoadjuvant PRRT is explicitly being considered to facilitate R0 resection. The study results demonstrate a high Objective Response Rate (ORR) of 56.8% with 212Pb-DOTAMTATE (AlphaMedix) in PRRT-naïve patients, which is significantly higher than standard somatostatin analogs (SSAs) or beta-emitting PRRT (177Lu-DOTATATE). Although the patient has not yet progressed on SSAs (a trial inclusion criterion), the evidence of high tumor shrinkage rates is directly relevant to the clinical goal of downstaging the primary tumor and managing oligometastatic disease. This evidence supports the consideration of Targeted Alpha Therapy as a potent neoadjuvant or systemic option, potentially superior to standard therapies for achieving resectability."
+}

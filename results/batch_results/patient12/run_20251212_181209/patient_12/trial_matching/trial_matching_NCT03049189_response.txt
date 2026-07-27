@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:17:26.585003
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient due to a fundamental mismatch in disease biology and treatment applicability (Criteria 1 & 2 not met). The patient presents with significant tumor heterogeneity, specifically FDG-positive/Ga68-negative peritoneal carcinomatosis, indicating a lack of Somatostatin Receptor (SSTR) expression in these metastatic lesions. The COMPETE trial evaluates 177Lu-edotreotide (PRRT) specifically in patients with SSTR-positive GEP-NETs. Since the mechanism of action of the study intervention relies on SSTR binding, and the patient lacks this target in a critical disease compartment (peritoneum), the study's efficacy results (demonstrating PRRT superiority) are not biologically aligned or clinically applicable to her specific mixed-phenotype disease. While the study provides data on Everolimus (the control arm), the primary evidence regarding PRRT is non-transferable because the SSTR-negative peritoneal metastases would likely not respond to the targeted radiopharmaceutical, rendering the treatment approach unsuitable for her full clinical picture."
+}
+```

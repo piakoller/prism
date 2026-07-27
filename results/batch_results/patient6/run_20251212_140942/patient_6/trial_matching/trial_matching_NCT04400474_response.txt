@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:40:27.155904
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful clinical evidence for this patient because the provided published results are specific to the Adrenocortical Carcinoma (ACC) cohort, not the Neuroendocrine Tumor (NET) cohort. While the study design includes a relevant cohort (Cohort 5: Well-differentiated digestive NETs) that aligns with the patient's diagnosis (G2 Pan-NET) and clinical state (progression on prior targeted therapies), the input data only contains efficacy findings for ACC. Due to distinct biological differences between ACC and Pan-NET, results cannot be extrapolated to guide therapy for this patient. Without specific outcomes (ORR, PFS) for the digestive NET cohort, the study fails to meet the criterion for evidence quality and relevance."
+}

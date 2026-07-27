@@ -1,0 +1,10 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T16:14:50.520442
+Trial: 42/86
+NCT ID: NCT03454763
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criterion for Evidence Quality and Relevance regarding this specific patient. While the intervention (PRRT with 177

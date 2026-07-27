@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:51:50.396791
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context and Evidence Relevance regarding the patient's specific clinical need. While the disease biology (GEP-NET) aligns, the patient requires a recommendation for first-line systemic therapy (e.g., chemotherapy vs. SSA vs. PRRT) for symptomatic, widely metastatic disease (liver, lung, bone). The study focuses on validating a biomarker (NETest) to monitor outcomes following surgical intervention. Since the patient has unresectable metastatic disease and the clinical question pertains to selecting a systemic therapeutic agent rather than surgical monitoring or biomarker validation, the study's evidence regarding transcript levels post-surgery does not provide actionable insights to guide the choice of systemic treatment."
+}

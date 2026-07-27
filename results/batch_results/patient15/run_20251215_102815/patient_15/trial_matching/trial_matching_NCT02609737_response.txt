@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:56:20.644103
+Trial: 70/86
+NCT ID: NCT02609737
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant. While the patient has SSTR-positive disease (DOTATOC +++) and is a candidate for peptide receptor radionuclide therapy (PRRT), this study evaluates an investigational somatostatin antagonist (177Lu-satoreotide tetraxetan/177Lu-DOTA-JR11) in a Phase I safety and dosimetry trial (NCT02609737). The intervention is not a standard available therapy, and the study's completed status precludes enrollment. Furthermore, the evidence quality and relevance (Criterion 3) are insufficient to guide treatment because the study population ('well-differentiated') typically targets lower-grade tumors, offering no specific efficacy data for the patient's aggressive biological profile (NET G3 with Ki-67 70% and FDG positivity). Phase I safety results for an unavailable experimental agent do not provide actionable insights to inform the management of a highly proliferative, refractory tumor where the primary clinical question is the efficacy of PRRT in the context of a Ki-67 >55%."
+}
+```

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:33:45.239071
+Trial: 49/86
+NCT ID: NCT03902951
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study (SATURN/NCT03902951) evaluates antiandrogen therapy (abiraterone, apalutamide, leuprolide) combined with SBRT for oligometastatic prostate cancer. This fails the Disease/Biology Alignment criterion as the patient has a pancreatic neuroendocrine tumor (Pan-NET), a completely different malignancy with distinct biological drivers compared to prostate adenocarcinoma. Furthermore, the treatment approach (androgen deprivation) is not mechanistically relevant for Pan-NETs, and the patient is a female. Additionally, the patient has bulky, extensive metastatic disease (liver metastases up to 150 mm and peritoneal carcinomatosis), which does not align with the oligometastatic setting (1-5 lesions) targeted by the study's SBRT intervention. Consequently, the study provides no transferable evidence for this patient's care."
+}

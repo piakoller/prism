@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:49:45.611127
+Trial: 72/86
+NCT ID: NCT03034200
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence to guide therapy for this patient. While the inclusion criteria broadly mention \"neuroendocrine tumors,\" the study's primary efficacy signal and biological rationale (DRD2 antagonism) are specific to Pheochromocytoma-Paraganglioma (PC-PG) and Desmoplastic Small Round Cell Tumor (DSRCT). The term \"PNET\" in the study context (grouped with Ewing Sarcoma) likely refers to Primitive Neuroectodermal Tumor rather than Pancreatic Neuroendocrine Tumor. Furthermore, the results for Cohort B (\"other neuroendocrine tumors\") showed limited efficacy (median duration of therapy 3 months), with responses driven by DSRCT and neuroblastoma, not well-differentiated PanNETs. Given the patient has a G1 SSTR-positive PanNET with established standard-of-care options (Surgery, SSAs, PRRT) and no evidence suggests this tumor type is driven by DRD2 or responsive to ONC201, this experimental approach is not clinically applicable."
+}
+```

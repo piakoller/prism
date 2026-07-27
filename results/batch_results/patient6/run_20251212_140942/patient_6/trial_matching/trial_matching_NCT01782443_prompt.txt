@@ -1,0 +1,216 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-12T14:37:14.951564
+Trial: 57/86
+NCT ID: NCT01782443
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+A 51-year-old woman with a well-differentiated (G2, Ki-67 15%) pancreatic neuroendocrine tumor with synchronous bilobar liver metastases diagnosed in 2018. In September 2018 underwent total gastrectomy, splenectomy, and distal pancreatectomy. From November 2018, start of therapy with sunitinib 37.5 mg/day and lanreotide 120 mg every 28 days, best response PR, suspended for liver disease debulking program with arterial embolization. From 12/9/2019 to 9/4/2020, 4 TAE treatments, than follow-up with CT scan every six months. After liver progression in 2022, she was enrolled in a phase II trial with belzutifan (HIF-2α inhibitor). The disease remained radiologically stable (SD RECIST) for >2 years under reduced-dose therapy (40 mg/day since 2024).
+In early 2025, mild hepatic progression was observed, and evaluation by transplant surgery considered potential liver transplantation due to liver-only disease. Exploratory laparoscopy confirmed no peritoneal spread. 
+Current Clinical Status: ECOG PS 0. The patient reports mild, migratory bone pain.
+Physical examination: unremarkable overall; no signs of motor or sensory deficits in the upper limbs.
+Question for Tumorboard:
+Feasibility of liver transplantation in a patient with long-term stable, liver-only metastatic pancreatic NET under belzutifan therapy.
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Summary**
+The patient is a 51-year-old female with a metastatic well-differentiated pancreatic neuroendocrine tumor (Pan-NET), Grade 2, with a Ki-67 index of 15%. She has a history of synchronous bilobar liver metastases diagnosed in 2018. The primary tumor was resected (total gastrectomy, splenectomy, distal pancreatectomy) in September 2018. She has been heavily pre-treated with somatostatin analogs (lanreotide), tyrosine kinase inhibitors (sunitinib), and liver-directed therapies (TAE). Most recently, she achieved stable disease (SD) for >2 years on the HIF-2α inhibitor belzutifan (40 mg/day) within a clinical trial but is now experiencing mild hepatic progression.
+
+**Assessment of Liver Transplantation Feasibility**
+Based on the **ESMO Clinical Practice Guidelines (2020)**, liver transplantation (LT) is a valid option only in *very selected* patients. The assessment of this patient against the specific ESMO criteria for LT is as follows:
+
+*   **Criteria Met:**
+    *   **Age:** The patient is 51 years old, meeting the criterion of age <60 years.
+    *   **Primary Tumor Resection:** The primary tumor was removed in 2018.
+    *   **Extrahepatic Disease:** Current evaluation (including exploratory laparoscopy) indicates liver-only disease.
+
+*   **Criteria Not Met / Areas of Concern:**
+    *   **Tumor Grade/Proliferation:** The patient's Ki-67 index is 15%. The ESMO guidelines explicitly state that LT criteria include histological confirmation of a well-differentiated NET with **Ki-67 <10%**. This patient falls outside this strict selection criterion.
+    *   **Disease Stability:** The guidelines require stable disease in response to therapy for at least 6 months *before* transplant consideration. While the patient had long-term stability on belzutifan, she is currently presenting with "mild hepatic progression," which conflicts with the requirement for pre-transplant stability.
+    *   **Tumor Burden:** The guidelines require metastatic diffusion <50% of the total liver volume. The specific liver tumor burden percentage is not provided in the patient information and requires calculation to determine eligibility.
+
+**Diagnostic Assessment and Discrepancies**
+*   **Bone Pain vs. Liver-Only Status:** The patient reports "mild, migratory bone pain," yet is classified as having "liver-only disease." The ESMO guidelines note that CT sensitivity for bone metastases is poor (61%, range 46%–80%). Since the patient has been followed up with CT scans, occult bone metastases cannot be ruled out based on the provided history.
+*   **Imaging Recommendations:** To confirm the "absence of extrahepatic disease" required for LT consideration, and to investigate the reported bone pain, **SST-PET/CT** (or MRI for bone/liver) is indicated. ENETS 2023 guidelines recommend SST-PET/CT for whole-body staging and note it is superior to CT for skeletal lesions.
+
+**Assessment of Current Therapy and Alternatives**
+*   **Belzutifan:** The patient is progressing on belzutifan. The ENETS 2023 guidelines note that while belzutifan is approved for VHL-associated Pan-NETs, its value in metastatic Pan-NET outside of VHL is currently "unclear."
+*   **PRRT Assessment:** If LT is deemed unfeasible due to the Ki-67 index (15%) or progression, Peptide Receptor Radionuclide Therapy (PRRT) is a potential consideration for progressive disease. However, eligibility requires confirmation of sufficient uptake on SST-imaging. It must be acknowledged that PRRT eligibility requires DOTATATE/DOTATOC PET uptake higher than liver background in all primary tumor lesions and metastases. If lesions show heterogeneous or low uptake, PRRT is generally not indicated.
+*   **Chemotherapy:** According to ESMO guidelines, systemic chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is recommended in progressive G2 Pan-NETs, particularly when there is bulky disease or progression on other therapies.
+
+**Conclusion**
+While the patient meets the age and primary resection criteria for liver transplantation, she does not meet the strict ESMO guideline criteria regarding Ki-67 index (<10% required; patient is 15%) and current disease stability (patient is progressing). Furthermore, the reported bone pain necessitates urgent exclusion of extrahepatic bone metastases via high-sensitivity imaging (SST-PET/CT) before any definitive decision on "liver-only" procedures can be made.
+
+Trial Search Recommendations:
+  - ** To confirm the "absence of extrahepatic disease" required for LT consideration
+  - and to investigate the reported bone pain
+  - **SST-PET/CT** (or MRI for bone/liver) is indicated. ENETS 2023 guidelines recommend SST-PET/CT for whole-body staging and note it is superior to CT for skeletal lesions.
+  - *Assessment of Current Therapy and Alternatives**
+  - **Belzutifan:** The patient is progressing on belzutifan. The ENETS 2023 guidelines note that while belzutifan is approved for VHL-associated Pan-NETs, its value in metastatic Pan-NET outside of VHL is currently "unclear."
+	•	Question for Tumorboard: Feasibility of liver transplantation in a patient with long-term stable, liver-only metastatic pancreatic NET under belzutifan therapy.
+
+### STUDY DATA
+	•	NCT-ID: NCT01782443
+	•	Title: Ziv-Aflibercept for Advanced Progressive Carcinoid Tumors
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Ziv-aflibercept
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Histologically confirmed well differentiated or moderately differentiated neuroendocrine tumor from either a primary or metastatic site
+* Must have disease that is not amenable to curative resection
+* Must have evidence of disease progression within 12 months prior to study entry
+* Must have measurable disease (RECIST 1.1)
+* Prior chemoembolization of local ablative therapies are allowed, provided there is measurable disease outside of the area treated, or documented evidence of progression at the site of prior treatment
+* No limit to number of prior treatments. Prior bevacizumab allowed unless discontinued due to unacceptable toxicity. Prior TKI targeting VEGF receptors allowed
+* Treatment with a somatostatin analog required for all subjects
+* Subjects with history of hypertension must be adequately controlled
+* Therapeutic anticoagulation is allowed. Must be on a stable dose of anticoagulant medication
+* Must agree to use adequate contraception prior to study entry, for the duration of study participation and for 3 months after last administration of study drug
+
+Exclusion Criteria:
+
+* Prior treatment including chemoembolization within 4 weeks of study entry
+* Major surgery within 4 weeks of study entry or minor surgery within 2 weeks of study entry
+* Pregnant or breastfeeding
+* Poorly differentiated carcinoma, high grade neuroendocrine tumor or small cell carcinoma
+* Prior treatment with Ziv-aflibercept
+* Pancreatic neuroendocrine tumor (islet cell carcinoma)will be excluded from this study. All non functional and functional islet cell carcinomas such as insulinoma, glucagonoma, gastrinoma, VIPoma will be excluded.
+* Not adequately recovered from toxicity of previous therapy
+* Known untreated brain or other central nervous system metastases
+* Known allergy to any of the study agents or to compounds of similar chemical or biologic composition
+* History of congestive heart failure
+* Symptomatic peripheral arterial disease
+* Unhealed wounds, ulcers or bone fractures
+* HIV positive or active Hepatitis infection
+* History of abdominal fistula, GI perforation, intra abdominal abscess, uncontrolled GI bleeding, diverticulitis within 6 months of study entry
+* History of arterial thrombotic events such as myocardial infarction, unstable angina pectoris or any ischemic or hemorrhagic cerebrovascular accident within the past 6 months
+* No history of pulmonary embolism, DVT or vascular access related thrombosis if not also receiving adequate anticoagulation at a stable dose.
+* No history of prior or synchronous malignancy except if treated with curative intent at least 3 years prior to study entry, or adequately treated non-melanoma skin cancer, cervical carcinoma in situ, or prostate intraepithelial neoplasia without evidence of prostate cancer
+* Uncontrolled non-malignant illness that may increase the risks associated with study participation or may interfere with the conduct of the study or interpretation of study results
+* Uncontrolled psychiatric illness or social situations that would limit compliance with study requirements *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This research study is a Phase II clinical trial, which tests the safety and effectiveness of an investigational drug to learn whether the drug works in treating a specific cancer. "Investigational" means that the drug, Ziv-aflibercept, is being studied. It also means that the FDA has not yet approved Ziv-aflibercept for use in patients with your type of cancer.
+
+Every person has molecules in their bloodstream called vascular endothelial growth factors (VEGFs). These molecules help grow and sustain new blood vessels needed by the human body. Cancer tumors hijack this mechanism because they need new blod vessels and oxygen to grow. Ziv-aflibercept is an antibody. Antibodies are proteins that are produced naturally in our bodies and help to recognize foreign substances in our body. Ziv-aflibercept is a "targeted therapy" called a "VEGF Trap", that "traps" (binds) these VEGFs and prevents the cancer from using them to grow.
+
+Though Ziv-aflibercept has not yet been FDA approved for the treatment of carcinoid tumors, it has recently been approved for patients with treatment-resistant colorectal cancer.
+
+In this research study, we will use Ziv-aflibercept in combination with standard octreotide therapy to see if it slows the growth or spread of your carcinoid tumor. Standard octreotide (sandostatin) therapy is currently approved for treating symptoms of carcinoid tumors, such as those caused by carcinoid syndrome. Carcinoid syndrome is caused by hormones and other substances released by carcinoid tumors into the bloodstream. One of these secreted substances is serotonin, one of the body's natural chemical messengers. When excess serotonin secreted by the carcinoid tumors reaches the body's tissues, it is thought to cause diarrhea and redness (flushing) of the face, chest or back. Excess serotonin may also cause changes in the structure of the heart valves, which can impair the heart's function. Octreotide works by binding to receptors found on carcinoid tumors and prevents the release of hormones from the tumor.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/36395401/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Perez K, Kulke MH, Horick NK, Regan E, Graham C, Scheutz S, Stonely D, Enzinger PC, Fuchs CS, Allen JN, Enzinger AC, Clark JW, Chan JA. A Phase II Study of Ziv-Aflibercept in Patients With Advanced Extrapancreatic Neuroendocrine Tumors. Pancreas. 2022 Aug 1;51(7):763-768. doi: 10.1097/MPA.0000000000002099.
+• A Phase II Study of Ziv-Aflibercept in Patients With Advanced Extrapancreatic Neuroendocrine Tumors. (PMID: 36395401)
+• Current clinical trials of targeted agents for well-differentiated neuroendocrine tumors [Google Scholar]
+• A Phase IIstudyof ziv-aflibercept in patients with advanced extrapancreatic neuroendocrine tumors [Google Scholar]
+• Currentclinical trialsof targeted agents for well-differentiated neuroendocrine tumors [Google Scholar]
+• A Phase II study of ziv-aflibercept in patients with advanced extrapancreatic neuroendocrine tumors [Google Scholar]
+• [PDF][PDF]Expanding treatment options for diverse neuroendocrine tumors [Google Scholar]
+• [HTML][HTML]The landscape and clinical application of the tumor microenvironment in Gastroenteropancreatic neuroendocrine neoplasms [Google Scholar]
+• [HTML][HTML]The landscape andclinicalapplication of the tumor microenvironment in Gastroenteropancreatic neuroendocrine neoplasms [Google Scholar]
+• Advanced neuroendocrine tumours of the small intestine and pancreas: clinical developments, controversies, and future strategies [Google Scholar]
+• Advanced neuroendocrine tumours of the small intestine and pancreas:clinicaldevelopments, controversies, and future strategies [Google Scholar]
+• Current protein-based anti-angiogenic therapeutics [Google Scholar]
+	•	Key findings from publications: PubMed Abstract: Neuroendocrine tumors (NETs) are characterized by their expression of vascular endothelial growth factor (VEGF). This trial investigated the activity of Ziv-aflibercept, a recombinant protein that binds to and inhibits the activity of VEGF, in patients with advanced NETs (NCT01782443).
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Objectives: Neuroendocrine tumors (NETs) are characterized by their expression of vascular endothelial growth factor (VEGF). This trial investigated the activity of Ziv-aflibercept, a recombinant protein that binds to and inhibits the activity of VEGF, in patients with advanced NETs ( NCT01782443 ). Methods: A single-arm, phase II trial enrolling patients with advanced, progressive extrapancreatic NET. Patients were treated with Ziv-aflibercept 4 mg/kg intravenously on day 1 and 15 of a 28-day cycle; the starting dose was reduced to 2 mg/kg on days 1 and 15 of a 28-day cycle because of hypertension-related events. The primary end point was progression-free survival. Results: The trial enrolled 19 patients (13 male:6 female). Patients received a median of 7 cycles (range, 1-18 cycles). The median progression free survival was 11.8 months (95% confidence interval, 3.2-16.1 months), and the median overall survival was 36.4 months (95% confidence interval, 16.1-not reached). Best responses by Response Evaluation Criteria in Solid Tumors 1.1 are as follows: 1 (5%) partial response, 13 (68%) stable disease, 2 (10%) with progressive disease, and 3 (15%) unevaluable. Hypertension occurred in 18 patients (95%), including grade 3-4 hypertension in 12 patients (63%). Conclusions: Although the progression free survival is similar to other VEGF inhibitors in NET, toxicity may preclude further investigation. Copyright © 2022 Wolters Kluwer Health, Inc. All rights reserved. PubMed Disclaimer Conflict of interest statement K.P. received a 1-time consulting/scientific advisory board fee from Lantheus (2/2022) and Helsinn/QED (5/2021). P.C.E. is/has been a consultant for and has received honoraria from ALX oncology, Arcus Bioscience, Astellas, AstraZeneca, Blueprint Medicines, Bristol-Myers Squibb, Chimeric Therapeutics, Celgene, Coherus, Daiichi-Sankyo, Five Prime, Ideaya, Istari, Legend, Lily, Loxo, Merck, Novartis, Ono, Servier, Taiho, Takeda, Turning Point Therapeutics, Xencor, and Zymeworks. C.S.F. is employed by Roche and Genentech. J.A.C. has received consulting fees from Advanced Accelerator Applications, Crinetics, Ipsen, Lexicon, and Novartis (spouse has consulted for Bayer and Pfizer), has received royalties from UpToDate, and has stock in Merck. The rest of the authors declare no conflict of interest. Similar articles NCI 8628: A randomized phase 2 study of ziv-aflibercept and high-dose interleukin 2 or high-dose interleukin 2 alone for inoperable stage III or IV melanoma. Tarhini AA, Frankel P, Ruel C, Ernstoff MS, Kuzel TM, Logan TF, Khushalani NI, Tawbi HA, Margolin KA, Awasthi S, Butterfield LH, McDermott D, Chen A, Lara PN, Kirkwood JM. Tarhini AA, et al. Cancer. 2018 Nov 15;124(22):4332-4341. doi: 10.1002/cncr.31734. Epub 2018 Oct 10. Cancer. 2018. PMID: 30303516 Free PMC article. Clinical Trial. Aflibercept and Docetaxel versus Docetaxel alone after platinum failure in patients with advanced or metastatic non-small-cell lung cancer: a randomized, controlled phase III trial. Ramlau R, Gorbunova V, Ciuleanu TE, Novello S, Ozguroglu M, Goksel T, Baldotto C, Bennouna J, Shepherd FA, Le-Guennec S, Rey A, Miller V, Thatcher N, Scagliotti G. Ramlau R, et al. J Clin Oncol. 2012 Oct 10;30(29):3640-7. doi: 10.1200/JCO.2012.42.6932. Epub 2012 Sep 10. J Clin Oncol. 2012. PMID: 22965962 Clinical Trial. A Phase II Trial of Ziv-Aflibercept in Patients With Advanced Pancreatic Neuroendocrine Tumors. Halperin DM, Lee JJ, Ng CS, Strosberg JR, Estrella JS, Dagohoy CG, Dasari A, Yao JC. Halperin DM, et al. Pancreas. 2019 Mar;48(3):381-386. doi: 10.1097/MPA.0000000000001258. Pancreas. 2019. PMID: 30768575 Free PMC article. Clinical Trial. Ziv-aflibercept: a novel angiogenesis inhibitor for the treatment of metastatic colorectal cancer. Chung C, Pherwani N. Chung C, et al. Am J Health Syst Pharm. 2013 Nov 1;70(21):1887-96. doi: 10.2146/ajhp130143. Am J Health Syst Pharm. 2013. PMID: 24128964 Review. Everolimus, lutetium-177 DOTATATE and sunitinib for advanced, unresectable or metastatic neuroendocrine tumours with disease progression: a systematic review and cost-effectiveness analysis. Mujica-Mota R, Varley-Campbell J, Tikhonova I, Cooper C, Griffin E, Haasova M, Peters J, Lucherini S, Talens-Bou J, Long L, Sherriff D, Napier M, Ramage J, Hoyle M. Mujica-Mota R, et al. Health Technol Assess. 2018 Sep;22(49):1-326. doi: 10.3310/hta22490. Health Technol Assess. 2018. PMID: 30209002 Free PMC article. See all similar articles Cited by A phase II study of ramucirumab and somatostatin analog therapy in patients with advanced neuroendocrine tumors. Perez K, Kulke MH, Zheng H, Allen J, Clark J, Enzinger AC, Enzinger PC, Johnson BE, McCleary NJ, Parikh A, Patel A, Rubinson D, Yurgelun MB, Ramsey K, Johnson E, Graham C, Chan JA. Perez K, et al. Oncologist. 2025 Jan 17;30(1):oyae364. doi: 10.1093/oncolo/oyae364. Oncologist. 2025. PMID: 39834129 Free PMC article. Clinical Trial. Theranostic role of 89 Zr- and 177 Lu-labeled aflibercept in breast cancer. Yang Q, Chen Z, Qiu Y, Huang W, Wang T, Song L, Sun X, Li C, Xu X, Kang L. Yang Q, et al. Eur J Nucl Med Mol Imaging. 2024 Apr;51(5):1246-1260. doi: 10.1007/s00259-023-06575-9. Epub 2023 Dec 23. Eur J Nucl Med Mol Imaging. 2024. PMID: 38135849 References Zhang J, Jia Z, Li Q, et al. Elevated expression of vascular endothelial growth factor correlates with increased angiogenesis and decreased progression-free survival among patients with low-grade neuroendocrine tumors. Cancer . 2007;109:1478–1486. Bergsland EK, Mahoney MR, Asmis TR, et al. Prospective randomized phase II trial of pazopanib versus placebo in patients with progressive carcinoid tumors (CARC) (Alliance A021202). J Clin Oncol . 2019;37(15 suppl):abstract 4005. Capdevila J, Fazio N, Lopez C, et al. Lenvatinib in patients with advanced grade 1/2 pancreatic and gastrointestinal neuroendocrine tumors: results of the phase II TALENT trial (GETNE1509). J Clin Oncol . 2021;39:2304–2312. Chan JA, Faris JE, Murphy JE, et al. Phase II trial of cabozantinib in patients with carcinoid and pancreatic neuroendocrine tumors (pNET). J Clin Oncol . 2017;35(4 suppl):abstract 228. Xu J, Shen L, Zhou Z, et al. Surufatinib in advanced extrapancreatic neuroendocrine tumours (SANET-ep): a randomised, double-blind, placebo-controlled, phase 3 study. Lancet Oncol . 2020;21:1500–1512. Show all 18 references Publication types Clinical Trial, Phase II Actions Search in PubMed Search in MeSH Add to Search MeSH terms Antineoplastic Combined Chemotherapy Protocols / therapeutic use Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Hypertension* / chemically induced Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / pathology Actions Search in PubMed Search in MeSH Add to Search Vascular Endothelial Growth Factor A Actions Search in PubMed Search in MeSH Add to Search Substances aflibercept Actions Search in PubMed Search in MeSH Add to Search Vascular Endothelial Growth Factor A Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT01782443 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen LinkOut - more resources Full Text Sources Ovid Technologies, Inc. Wolters Kluwer Medical ClinicalTrials.gov MedlinePlus Health Information
+
+Google Scholar Abstract (Current clinical trials of targeted agents for well-differentiated neuroendocrine tumors): … data, the CLARINETtrialwas a phase IIItrialwith interimresultsrecently reported. Thisstudy…NCT01782443is a phase IIstudydesigned totestthe safety and efficacy of ziv-aflibercept …
+
+Google Scholar Abstract (A Phase IIstudyof ziv-aflibercept in patients with advanced extrapancreatic neuroendocrine tumors): … Thistrialinvestigated the activity of Ziv-aflibercept, a … of VEGF, in patients with advancedNETs (NCT01782443). … NET, we conducted aclinicalstudyto determine theclinicalefficacy and …
+
+Google Scholar Abstract (Currentclinical trialsof targeted agents for well-differentiated neuroendocrine tumors): …Clinicaltrialdesign and disease management of these tumors pose a significant challengebecause of the heterogeneousclinical…NCT01782443is a phase IIstudydesigned to test the …
+
+Google Scholar Abstract (A Phase II study of ziv-aflibercept in patients with advanced extrapancreatic neuroendocrine tumors): … This trial investigated the activity of Ziv-aflibercept, a recombinant protein that binds toand inhibits the activity of VEGF, in patients with advanced NETs (NCT01782443). …
+
+Google Scholar Abstract ([PDF][PDF]Expanding treatment options for diverse neuroendocrine tumors): … thestudyauthors attribute to the high rate of crossover from the placebo arm after progression.More recently, theresultsof the RADIANT-4trial… , theresultsof a single-arm phase 2trialof …
+
+Google Scholar Abstract ([HTML][HTML]The landscape and clinical application of the tumor microenvironment in Gastroenteropancreatic neuroendocrine neoplasms): … A tyrosine kinase inhibitor vorolanib showedsafetoxicity and antitumorefficacywhenused in combination with everolimus [119]. Bevacizumab and temsirolimus confirmed good …
+
+Google Scholar Abstract ([HTML][HTML]The landscape andclinicalapplication of the tumor microenvironment in Gastroenteropancreatic neuroendocrine neoplasms): … efficacy of immune checkpoint inhibitors, adoptive cell therapy, and oncolytic virusesremains to be further discussed inclinicaltrials. Moreover, combination therapy is feasible for …
+
+Google Scholar Abstract (Advanced neuroendocrine tumours of the small intestine and pancreas: clinical developments, controversies, and future strategies): … We describe advances in genetics, blood-based biomarkers, functional imaging, andsystemic therapy of advanced NETs and discussresultsof recent phase 3studies, systemic …
+
+Google Scholar Abstract (Advanced neuroendocrine tumours of the small intestine and pancreas:clinicaldevelopments, controversies, and future strategies): … 2 and 3trials, and they might haveclinicalpurpose in the future, as reviewed by Pavel andSers. Examples of drugs that are being tested in ongoingclinicaltrialsinclude regorafenib (…
+
+Google Scholar Abstract (Current protein-based anti-angiogenic therapeutics): … Several anti-angiogenic drugs have been developed and many more are currently indifferent phases ofclinicaltrials, which target various angiogenesis-inducing agents including …
+	•	Additional evidence from online sources: Primary outcome: Progression Free Survival
+Secondary outcomes: Evaluation of Disease Response; Evaluation of Biochemical Response - Number of Patients With Greater Than 50% Drop in Chromogranin A From Baseline; Biochemical Response - Number of Patients With Greater Than 50% Drop in 24hr Urine 5-HIAA From Baseline
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'A Phase II Study of Ziv-Aflibercept in Patients With Advanced Extrapancreatic Neuroendocrine Tumors.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/36395401/', 'pmid': '36395401', 'content_scraped': True, 'content_length': 7677}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/36395401/
+Analysis notes: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:15:06.378262
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Treatment Context or Evidence Relevance criteria for this patient. The patient has locally advanced pancreatic NET with direct invasion into the stomach and spleen but explicitly has **no distant metastases** (no liver disease). The LUTIA trial specifically investigates **intra-arterial administration** of Lutetium-177-dotatate into the hepatic artery to treat **bulky, bilobar liver metastases**. Since the patient lacks the specific disease burden (liver metastases) targeted by this technical intervention, the study's findings regarding hepatic biodistribution and intra-arterial delivery efficacy are not applicable. While the tumor grade (G2) aligns, the specific therapeutic approach (hepatic intra-arterial PRRT) offers no actionable insights for a patient with exclusively locally invasive disease."
+}

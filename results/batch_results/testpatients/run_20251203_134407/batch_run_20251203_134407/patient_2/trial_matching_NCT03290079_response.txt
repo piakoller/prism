@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:27:15.171718
+Trial: 51/86
+NCT ID: NCT03290079
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient for several key reasons. First, the study explicitly excludes pancreatic neuroendocrine tumors (PanNETs), which is this patient's specific diagnosis; PanNETs are biologically distinct from the lung and gastrointestinal NETs included in this trial. Second, the study requires patients to have received at least two prior lines of systemic treatment, whereas this patient is treatment-naïve and seeking first-line therapy. Finally, the provided data indicates that no results have been published yet, meaning there is no efficacy or safety data available to inform clinical decision-making."
+}

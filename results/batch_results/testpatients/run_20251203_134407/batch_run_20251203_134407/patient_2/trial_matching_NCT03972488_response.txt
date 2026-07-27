@@ -1,0 +1,10 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:41:45.759857
+Trial: 75/86
+NCT ID: NCT03972488
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The NETTER-2 study is highly relevant as it establishes the efficacy of first-line 177Lu-Dotatate (PRRT) specifically for Grade 2 (Ki-67 10-20%) and Grade 3 well-differentiated GEP-NETs, directly matching this patient's diagnosis (PanNET G2, Ki-67 15%) and treatment-naive status. The study demonstrated a significant progression-free survival benefit (22.8 vs 8.5 months) and high response rates compared to high-dose octreotide, providing the primary evidence base for considering PRRT in this higher-proliferation setting. While the patient exhibits SSTR heterogeneity (low uptake in the primary tumor, SUV 3) which would strictly exclude them under the trial's

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:41:21.721697
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study is relevant because it evaluates the efficacy and survival predictors of Lu-DOTATATE PRRT in patients with well-differentiated neuroendocrine tumors, aligning with the patient's G2 duodenal NET. While the patient previously received PRRT (2017–2018), the study protocol explicitly includes a cohort (\"Group B\") for patients who have received prior radionuclide therapy, making the evidence applicable to the PRRT re-treatment scenario currently being considered. The published results provide actionable prognostic factors—such as liver tumor burden (<50% vs. >50%), presence of ascites, and skeletal metastases—that allow the tumor board to risk-stratify the patient. Assuming a new SSTR-PET confirms avid disease (a necessary clinical assumption for re-treatment), these data help determine whether PRRT re-challenge offers a favorable benefit profile compared to alternatives like everolimus or locoregional therapies for her liver-dominant progression."
+}

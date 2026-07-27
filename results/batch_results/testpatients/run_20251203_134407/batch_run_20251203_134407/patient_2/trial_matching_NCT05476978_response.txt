@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:09:32.276664
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Treatment Context and Evidence Relevance criteria. While the study involves pancreatic solid lesions including NETs (Disease Alignment), it evaluates a diagnostic artificial intelligence model for Endoscopic Ultrasound (EUS) to differentiate lesion types. The patient already has a confirmed histological diagnosis of Grade 2 Pan-NET via biopsy and is currently seeking recommendations for first-line systemic therapy (e.g., chemotherapy vs. PRRT). As this is a diagnostic accuracy study, it provides no data on treatment efficacy, safety, or therapeutic outcomes, rendering it irrelevant for guiding the specific therapeutic decision-making required for this patient's metastatic disease management."
+}

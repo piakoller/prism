@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:05:39.559339
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not currently provide meaningful clinical evidence to guide treatment for this patient. While the patient's diagnosis (Pancreatic NET G3, Ki-67 25%) aligns perfectly with Cohort 6 of the CABATEN trial and the treatment context (progression on chemotherapy and sunitinib) makes the cabozantinib plus atezolizumab combination a relevant investigational approach, the criterion for Evidence Quality and Relevance is not met. The provided published results are limited to the Adrenocortical Carcinoma (ACC) cohort or appear in review articles describing the trial's existence. There are no reported efficacy or safety data for the Neuroendocrine Tumor (NET) or Pancreatic NET cohorts in the provided inputs. Without specific outcomes for the relevant tumor type, the study cannot inform therapeutic recommendations for this patient beyond potential trial enrollment."
+}

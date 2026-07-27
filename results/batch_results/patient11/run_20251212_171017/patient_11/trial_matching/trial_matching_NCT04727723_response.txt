@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:15:26.570082
+Trial: 6/86
+NCT ID: NCT04727723
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a pancreatic Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, representing a poorly differentiated, highly aggressive malignancy. In contrast, the REAL-LU study evaluates 177Lu-DOTATATE exclusively in patients with well-differentiated (G1 and G2) GEP-NETs. This constitutes a fundamental biological mismatch, as evidence from indolent or moderately proliferative well-differentiated NETs cannot be extrapolated to high-grade NECs. Additionally, the Treatment Context is not applicable; PRRT is generally not indicated for NECs with Ki-67 >55% due to likely insufficient SSTR expression and the need for cytotoxic control, rendering the study's intervention irrelevant for this patient's consolidation strategy."
+}

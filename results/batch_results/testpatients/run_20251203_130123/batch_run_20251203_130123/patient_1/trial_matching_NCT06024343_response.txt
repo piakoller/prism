@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:09:58.851113
+Trial: 5/86
+NCT ID: NCT06024343
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates minimally invasive pancreatic enucleation, a parenchyma-sparing surgical technique reserved for small, benign, or low-grade tumors that are not invasive. This patient presents with a massive (10–12 cm) Grade 2 PanNET with extensive locoregional infiltration into the stomach, spleen, and adrenal gland, along with splenic vein occlusion. This clinical presentation (T4 stage) mandates radical oncologic resection (e.g., distal pancreatectomy with en-bloc multi-visceral resection) or systemic therapy, making enucleation technically impossible and oncologically contraindicated. Consequently, evidence regarding the safety or outcomes of enucleation is not applicable to this patient's management in any relevant clinical scenario (current locally advanced state or potential resectability)."
+}
+```

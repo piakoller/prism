@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:41:40.278212
+Trial: 72/86
+NCT ID: NCT03034200
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Disease/Biology Alignment or Evidence Relevance for this patient. The patient has a metastatic well-differentiated Pancreatic NET (Pan-NET) G2. The study (NCT03034200) investigates ONC201 primarily in Pheochromocytoma-Paraganglioma (PC-PG) and Desmoplastic Small Round Cell Tumor (DSRCT). Although the inclusion criteria mention \"PNET,\" the context (grouped with Ewing Sarcoma) and the mechanism (DRD2 antagonism, relevant for catecholamine-secreting tumors) align with Primitive Neuroectodermal Tumors or neural crest-derived tumors rather than epithelial Pancreatic NETs. Furthermore, the published results indicate clinical benefit was concentrated in PC-PG and DSRCT, with no specific efficacy data reported for Pancreatic NETs in the 'other neuroendocrine tumors' cohort. Consequently, this study does not provide actionable evidence to guide first-line systemic treatment for a patient with a bulky, FDG-positive Pancreatic NET."
+}

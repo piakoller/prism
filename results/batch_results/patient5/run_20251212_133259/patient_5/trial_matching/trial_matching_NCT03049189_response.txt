@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:40:04.313125
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90% (small-cell type). In contrast, the COMPETE trial specifically evaluates 177Lu-edotreotide PRRT versus Everolimus in patients with well-differentiated, Grade 1 or 2 gastroenteropancreatic neuroendocrine tumors (GEP-NETs). There is a fundamental biological distinction between well-differentiated NETs and poorly differentiated NECs; the latter are aggressive malignancies typically treated with platinum-based chemotherapy (as this patient received) rather than PRRT or mTOR inhibitors. Even if SSTR expression were present, evidence from G1/G2 NETs cannot be clinically extrapolated to a NEC with Ki-67 90%, rendering the study results inapplicable to this patient's treatment planning."
+}

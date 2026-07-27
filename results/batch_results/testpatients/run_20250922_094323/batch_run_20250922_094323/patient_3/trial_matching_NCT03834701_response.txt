@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T11:05:36.793767
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient. The primary reason is a fundamental mismatch in both disease stage and treatment context (Criteria 1 & 2). The study investigates EUS-guided radiofrequency ablation, a local therapy, exclusively for patients with small (15-25 mm), localized, non-metastatic pancreatic NETs. In stark contrast, the patient has advanced, widely metastatic disease with a large (90 mm) primary tumor and extensive liver metastases, requiring second-line systemic therapy. The study's intervention is therefore not applicable to any clinical scenario for this patient, whose core problem is controlling systemic disease. Furthermore, the evidence quality is insufficient (Criterion 3), as the provided publication is an editorial with no abstract or reported efficacy or safety data from the trial. Consequently, the study fails on all three criteria: it does not align with the patient's disease biology/stage, its treatment context is irrelevant, and it provides no actionable evidence."
+}
+```

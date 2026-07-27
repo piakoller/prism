@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:35:06.250082
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence to guide treatment for this patient primarily due to the lack of published results (Criterion 3 not met). The provided data indicates the study is completed but lists no publications reporting efficacy or safety outcomes; the citations are general reviews or discuss other tumor types (e.g., meningioma). Furthermore, regarding clinical applicability (Criterion 2), the patient presents with discordant disease (FDG-positive/Ga68-negative peritoneal carcinomatosis). PRRT (90Y-DOTATOC) relies on SSTR expression, and the lack of uptake in the peritoneal metastases suggests this therapy would be ineffective for that disease compartment. Without actionable outcome data and given the biological mismatch regarding SSTR expression in the peritoneal lesions, this study cannot inform the choice of first-line systemic therapy for this patient's bulky, aggressive PanNET."
+}

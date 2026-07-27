@@ -1,0 +1,68 @@
+=== VALIDATION ITERATION 2 ===
+
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 7
+Timestamp: 2025-12-09T10:56:06.402353
+Overall Status: FAILED
+Requires Regeneration: YES
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 3
+Trials available: 15
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: RECONSIDER
+Status: FAIL
+Critical Issues:
+  ❌ **Evidence Hallucination (Trials):** The recommendation cites three specific trials/studies that are **not** present in the provided "Trial Analysis Summary":
+  ❌ **TELESTAR trial**
+  ❌ **RADIANT-4 trial**
+  ❌ **NCT03223428** (Real-world evidence for Telotristat)
+  ❌ **Evidence Hallucination (Data):** The recommendation cites specific Progression-Free Survival (PFS) data for the CABINET trial ("median PFS 8.4 months vs 3.9 months"). The provided "Trial Analysis Summary" lists the CABINET trial (NCT03375320) but does **not** contain these specific statistical results in the text provided.
+Warnings:
+  ⚠️  **Relevance of Included Trials:** The recommendation correctly identifies Cabozantinib (CABINET) as a future option, which is in the included list. However, it fails to utilize other included trials that might be relevant (e.g., NCT02795858 Ramucirumab) while hallucinating external ones.
+  ⚠️  **Guideline Citation:** While the clinical logic for Telotristat and Everolimus is sound and likely based on the "ESMO Clinical Practice Guidelines" (which are included), the recommendation incorrectly attributes this directly to the missing trials rather than the guidelines.
+
+Detailed Reasoning:
+**1. Accuracy & Evidence Adherence:**
+The primary reason for the "RECONSIDER" decision is the citation of external evidence not provided in the context. In a strict validation workflow, the AI must rely on the retrieved documents ("Trial Analysis Summary" and "Guidelines Summary").
+- The recommendation explicitly cites **NCT03223428**, **TELESTAR**, and **RADIANT-4** under "Future Therapeutic Options". None of these are listed in the "Included Trials" section of the prompt.
+- While these are real and clinically relevant trials, the system is hallucinating their presence in the provided analysis. This creates a risk of citing retracted or irrelevant data if the system is not grounded in the specific retrieved context.
+- Similarly, the specific PFS numbers for **CABINET** are not visible in the provided source text.
+
+**2. Clinical Safety & Consistency (Passed):**
+- The clinical core of the recommendation (Maintenance Lanreotide, Surveillance, Perioperative Octreotide) is **SAFE**, **CONSISTENT**, and **COMPLETE**.
+- The management of the patient's specific risk factors (hypotensive episode, functional disease) is excellent.
+- The protocol for PRRT preparation (stopping short-acting SSA) is consistent with standard safety guidelines.
+
+**3. Actionability (Passed):**
+- The recommendation provides clear, specific protocols for surveillance and perioperative management.
+
+**Conclusion:**
+The recommendation is clinically sound but procedurally flawed because it hallucinates sources. To pass validation, the recommendation must ground its claims in the *provided* evidence list (e.g., citing the ESMO Guidelines for standard therapies like Everolimus/Telotristat) rather than citing trials that were not part of the provided analysis.
+
+Recommendations for Improvement:
+1. **Remove citations to TELESTAR, RADIANT-4, and NCT03223428** as these are not in the provided evidence list.
+2. **Rephrase the "Future Therapeutic Options" section:**
+   - For **Cabozantinib**, ensure the recommendation relies only on the information available in the provided trial list (NCT03375320). If specific PFS numbers are not in the source text, describe the benefit qualitatively (e.g., "demonstrated benefit") or remove the specific numbers.
+   - For **Telotristat Ethyl** and **Everolimus**, cite the **"ESMO Clinical Practice Guidelines"** (which are in the provided Guidelines Summary) as the basis for these standard-of-care options, rather than citing the missing trials.
+3. **Verify all NCT numbers** in the final output match exactly with the "Included Trials" list provided in the prompt.
+
+======================================================================
+⚠️  REGENERATION REQUIRED
+======================================================================
+Reasons:
+  • Semantic: **Evidence Hallucination (Trials):** The recommendation cites three specific trials/studies that are **not** present in the provided "Trial Analysis Summary":
+  • Semantic: **TELESTAR trial**
+  • Semantic: **RADIANT-4 trial**
+  • Semantic: **NCT03223428** (Real-world evidence for Telotristat)
+  • Semantic: **Evidence Hallucination (Data):** The recommendation cites specific Progression-Free Survival (PFS) data for the CABINET trial ("median PFS 8.4 months vs 3.9 months"). The provided "Trial Analysis Summary" lists the CABINET trial (NCT03375320) but does **not** contain these specific statistical results in the text provided.

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:16:11.505585
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for relevance because the provided published results (PMID: 37429302) are exclusively focused on the **sarcoma** cohort (e.g., chordoma, alveolar soft part sarcoma) and do not report outcomes for the neuroendocrine tumor cohort. Consequently, there is no applicable efficacy or safety evidence to inform treatment for a patient with a well-differentiated Pancreatic NET G2. Furthermore, regarding clinical applicability, the trial design targets heavily pre-treated patients (requiring resistance to 4 lines of therapy for well-differentiated tumors), which does not align with this patient's need for first-line systemic therapy. Without results specific to the NET cohort, the evidence is biologically mismatched and offers no actionable insights."
+}

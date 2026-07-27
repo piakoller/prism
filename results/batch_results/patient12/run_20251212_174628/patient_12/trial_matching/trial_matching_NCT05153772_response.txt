@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:57:27.681863
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant for this patient due to a critical lack of biological alignment regarding target expression. The patient presents with discordant metastatic disease, specifically FDG-positive/Ga68-negative peritoneal carcinomatosis, indicating a lack of somatostatin receptor (SSTR) expression in this compartment. The study evaluates 212Pb-DOTAMTATE, a targeted alpha therapy that relies on SSTR binding for its mechanism of action and explicitly requires SSTR positivity on all lesions for eligibility. Because the patient has documented SSTR-negative metastatic sites, the study's efficacy results (56% ORR in purely SSTR-positive populations) are not transferable, as the SSTR-negative lesions would likely not respond to the targeted therapy. While the liver metastases are SSTR-positive, the presence of aggressive SSTR-negative disease necessitates a systemic treatment capable of addressing receptor-negative clones (e.g., chemotherapy), making this SSTR-targeted monotherapy study clinically inapplicable for the patient's holistic treatment needs."
+}
+```

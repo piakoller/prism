@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:42:15.631606
+Trial: 70/86
+NCT ID: NCT02609737
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful clinical evidence supporting Peptide Receptor Radionuclide Therapy (PRRT) as a therapeutic alternative for this patient. The patient has a progressive, well-differentiated G2 Pancreatic NET and is currently failing belzutifan; while liver transplantation is being queried, she likely does not meet strict criteria (Ki-67 15% > 10% limit, active progression), making systemic options like PRRT the standard next line of care. The study evaluates 177Lu-satoreotide tetraxetan (an SSTR antagonist), with published results indicating positive safety and efficacy in metastatic Pan-NETs. This evidence reinforces the viability of PRRT as a robust non-surgical treatment path. Furthermore, the study's theranostic approach using 68Ga-DOTA-JR11 PET is clinically relevant for this patient, who requires high-sensitivity imaging to investigate new bone pain and rule out extrahepatic disease, a critical step in her management. I am assuming the patient's tumor is SSTR-positive, consistent with her G2 differentiation and prior response to somatostatin analogs."
+}

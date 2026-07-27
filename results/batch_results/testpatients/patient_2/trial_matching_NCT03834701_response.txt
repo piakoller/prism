@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T11:39:31.099775
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient. The primary reasons are a complete lack of alignment in disease biology, clinical context, and the type of evidence presented. Firstly, the study fails the **Disease/Biology Alignment** criterion; it exclusively enrolls patients with localized, non-metastatic, asymptomatic G1/G2 pancreatic NETs with a Ki-67 of ≤5%. In stark contrast, the patient has widely metastatic (liver, lung, bone), symptomatic G2 disease with a much higher Ki-67 of 15%. Secondly, it fails the **Treatment Context/Clinical Applicability** criterion. The patient's clinical need is for first-line systemic therapy to control high-burden metastatic disease. The study investigates EUS-guided radiofrequency ablation, a local therapy for a single pancreatic lesion, which is irrelevant for managing this patient's widespread disease in any conceivable scenario. Finally, the study fails the **Evidence Quality and Relevance** criterion, as the provided publication is a commentary without primary data on efficacy or safety, offering no actionable insights. Therefore, the study's evidence is inapplicable to this patient's therapeutic decisions."
+}
+```

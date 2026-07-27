@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:17:02.351273
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet Criterion 1 (Disease/Biology Alignment) or Criterion 3 (Evidence Quality and Relevance) based on the provided published results. Although the trial protocol (NCT03012620) includes a cohort for rare neuroendocrine tumors, the specific publication provided (PMID: 37429302) exclusively reports outcomes for the rare sarcoma cohort (e.g., chordomas, alveolar soft part sarcomas). No efficacy or safety data for neuroendocrine neoplasms are presented in the provided text. Consequently, the evidence regarding pembrolizumab in sarcomas cannot be clinically extrapolated to guide treatment for this patient's high-grade pancreatic neuroendocrine carcinoma (NEC, Ki-67 95%), rendering the study results irrelevant for her consolidation strategy."
+}

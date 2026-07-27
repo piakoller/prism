@@ -1,0 +1,6 @@
+=== RECOMMENDATION VALIDATION RESPONSE ===
+Timestamp: 2025-12-04T12:05:34.098677
+Patient ID: 1
+Model: google/gemini-3-pro-preview
+==================================================
+

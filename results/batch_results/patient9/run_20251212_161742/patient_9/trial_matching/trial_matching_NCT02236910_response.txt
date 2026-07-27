@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T16:33:32.870552
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence to guide treatment for this specific patient due to critical differences in clinical status and safety profiles. While the disease biology (well-differentiated pNET) aligns, the patient has significant renal impairment (eGFR 38 ml/min) and has already progressed after prior PRRT. The study evaluates Lu-177 DOTATATE in patients with preserved renal function (inclusion criteria requires GFR ≥50 ml/min) and focuses on identifying prognostic factors (e.g., bone metastases, ascites) rather than establishing safety or efficacy for retreatment in patients with renal failure. Given that PRRT is renally cleared and the patient's renal function is below the study's safety threshold, the evidence cannot support a recommendation for this therapy in her current fragile state."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:48:49.841996
+Trial: 36/86
+NCT ID: NCT03217097
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This randomized phase II study is relevant because it evaluates the efficacy of alkylating agents versus oxaliplatin-based chemotherapy in advanced neuroendocrine tumors, explicitly including \"duodeno-pancreatic\" NETs in the inclusion criteria. The patient has a G2 duodenal NET and has progressed on multiple standard lines (SSA, PRRT, TKIs), making systemic chemotherapy a potential salvage option to consider despite her low Ki-67. The study provides actionable evidence that MGMT deficiency predicts a significantly higher response rate to alkylating agents (52.9% vs 11.5% in proficient tumors), whereas oxaliplatin efficacy was independent of MGMT status. This offers a biomarker-driven approach to selecting the next line of systemic therapy for this heavily pre-treated patient."
+}

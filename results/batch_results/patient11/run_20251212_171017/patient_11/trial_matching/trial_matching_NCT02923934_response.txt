@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:22:00.179961
+Trial: 23/86
+NCT ID: NCT02923934
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The provided published results from the CA209-538 trial (Klein et al., JAMA Oncol 2020) report outcomes exclusively for the **biliary tract cancer** subgroup. The patient has a hepatic recurrence of a **pancreatic neuroendocrine carcinoma (NEC)** (MiNEN, Ki-67 95%). Evidence derived from biliary tract cancers cannot be clinically extrapolated to pancreatic NEC due to fundamental biological differences between these tumor types. While the study protocol included neuroendocrine tumors and a separate publication regarding the neuroendocrine cohort is listed in the citations, the specific efficacy and safety data (e.g., response rates, survival) for the neuroendocrine population are not provided in the input text. Without the results specific to the neuroendocrine or pancreatic NEC cohort, the provided evidence is insufficient to inform therapeutic decision-making for this patient."
+}

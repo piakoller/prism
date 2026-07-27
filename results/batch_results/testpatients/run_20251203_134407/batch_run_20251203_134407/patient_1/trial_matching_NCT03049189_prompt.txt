@@ -1,0 +1,156 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-03T13:53:00.452491
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 52-year-old man with no significant medical history presented in January 2025 with massive upper gastrointestinal bleeding and hemorrhagic shock. He required ICU admission and arterial embolization (gastric, splenic, and pancreatic branches). An incidental pulmonary embolism was also detected. He started first-line treatment with FOLFIRINOX (Cycle 1: Feb 11, 2025; Cycle 7: May 21, 2025).
+•	FDG-PET (Jan 2025): Hypermetabolic pancreatic mass (SUV 16) with a central photopenic area suggestive of necrosis and locoregional infiltration. No distant disease.
+•	CT scan (Apr 2025): Stable heterogeneous abdominal mass with necrotic areas up to 12 cm, infiltrating the pancreatic tail, splenic hilum, gastric fundus, and left adrenal. Complete splenic vein occlusion with tumor thrombus.
+•	CT scan (May 20, 2025): 10 cm pancreatic mass with similar locoregional infiltration and signs of splenic infarctions.
+2.	Current Clinical Status
+Referred to our center in June 2025. Pathology review reclassified the tumor as a Grade 2 NET with Ki67 19%. Admitted in June 2025 due to a new episode of upper GI bleeding (Hb 7.1 g/dL). Gastroscopy showed a 4 cm area of tumor infiltration without active bleeding.
+Question for Tumorboard:
+After clinical stabilization of the current GI bleeding episode, what should be the next therapeutic step in disease management?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Diagnostic Classification and Prognostic Factors**
+The patient presents with a locally advanced pancreatic mass, recently reclassified via pathology review as a Grade 2 Neuroendocrine Tumor (NET) with a Ki-67 index of 19%. According to ENETS 2023 and ESMO guidelines, this places the tumor at the upper limit of Grade 2 (cutoff <20%), bordering on Grade 3. The initial FDG-PET scan from January 2025 demonstrated a hypermetabolic mass with an SUV of 16. According to ENETS guidelines (Section 2.5.1), high FDG uptake is a strong poor prognostic factor and correlates with a higher grade and aggressive biological behavior. The presence of a central photopenic area suggestive of necrosis further supports the aggressive nature of this neoplasm.
+
+**Staging and Locoregional Extent**
+The disease is characterized as locally advanced (T4 equivalent per ENETS/AJCC staging due to invasion of adjacent structures). CT imaging from April and May 2025 confirms a large heterogeneous mass (10–12 cm) infiltrating the pancreatic tail, splenic hilum, left adrenal gland, and notably the gastric fundus. There is vascular involvement with complete splenic vein occlusion and tumor thrombus, resulting in splenic infarctions. There is currently no evidence of distant metastatic disease.
+
+**Clinical Status and Complications**
+The patient's clinical course is dominated by life-threatening upper gastrointestinal bleeding (Hb 7.1 g/dL), necessitating ICU admission and embolization. The gastroscopy in June 2025 confirmed that the bleeding source is direct tumor infiltration (4 cm area) into the stomach. This represents a symptomatic, bulky, and locally invasive disease burden.
+
+**Treatment History and Response Assessment**
+The patient received 7 cycles of FOLFIRINOX between February and May 2025. While FOLFIRINOX is not a standard regimen for Grade 2 NETs (typically reserved for pancreatic ductal adenocarcinoma or potentially high-grade neuroendocrine carcinomas), the CT comparison between April and May 2025 suggests the mass has remained stable or slightly decreased (from 12 cm to 10 cm). This indicates that the tumor has not progressed under platinum/fluoropyrimidine-based chemotherapy, despite the regimen not being the standard guideline recommendation for Grade 2 NETs (which usually involves Temozolomide/Capecitabine or Streptozotocin/5-FU per ENETS Q7 and ESMO).
+
+**Missing Diagnostic Information for Therapeutic Decision Making**
+A critical gap in the current assessment is the lack of Somatostatin Receptor Imaging (SRI), such as 68Ga-DOTATATE PET/CT.
+*   **Guideline Requirement:** ENETS guidelines (Section 2.5.1) and ESMO guidelines recommend SSTR-PET/CT for definitive staging and theranostic evaluation.
+*   **PRRT Eligibility:** To consider Peptide Receptor Radionuclide Therapy (PRRT) as a neoadjuvant or systemic option (ENETS 3.1.3, 3.2), the tumor must demonstrate sufficient SSTR expression. Specifically, uptake on SSTR-PET must be higher than the liver background (typically SUVmax ~6–7) in the primary tumor.
+*   **FDG/SSTR Mismatch Risk:** Given the high FDG uptake (SUV 16), there is a risk of an "FDG-positive/SSTR-negative" phenotype or heterogeneous expression, which would make the patient a poor candidate for PRRT and Somatostatin Analogs (SSAs).
+
+**Summary for Tumor Board Deliberation**
+The patient has a bulky, aggressive (FDG-avid, Ki-67 19%), locally advanced Grade 2 Pan-NET causing life-threatening hemorrhage via gastric invasion. While the disease appears stable on FOLFIRINOX, the management must now shift to NET-specific strategies. The immediate clinical priority is the management of the bleeding risk in the context of a potentially resectable but complex locally invasive tumor.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+	•	Question for Tumorboard: After clinical stabilization of the current GI bleeding episode, what should be the next therapeutic step in disease management?
+
+### STUDY DATA
+	•	NCT-ID: NCT03049189
+	•	Title: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients
+	•	Phase: PHASE3, Status: ACTIVE_NOT_RECRUITING
+	•	Intervention: 177Lu-edotreotide PRRT; Everolimus; Amino-Acid Solution
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Histologically confirmed diagnosis of well-differentiated neuro-endocrine tumour of non-functional gastroenteric origin (GE-NET) or both functional or non-functional pancreatic origin (P-NET)
+* Measurable disease per RECIST 1.1
+* Somatostatin receptor positive (SSTR+) disease
+* Progressive disease based on RECIST 1.1. criteria as evidenced by two morphological imaging examinations made with the same imaging method (either CT or MRI)
+
+Exclusion Criteria:
+
+* Known hypersensitivity to edotreotide or everolimus
+* Known hypersensitivity to DOTA, lutetium-177, or any excipient of edotreotide or everolimus or any other Rapamycin derivative
+* Prior exposure to any peptide receptor radionuclide therapy (PRRT)
+* Prior therapy with mTor inhibitors
+* Prior EFR (external field radiation) to GEP-NET lesions within 90 days before randomisation or radioembolisation therapy
+* Therapy with an investigational compound and/or medical device within 30 days prior to randomisation
+* Indication for surgical lesion removal with curative potential
+* Planned alternative therapy (for the period of study participation)
+* Serious non-malignant disease
+* Clinically relevant renal, hepatic, cardiovascular, or haematological organ dysfunction, potentially interfering with the safety of the study treatments
+* Pregnant or breast-feeding women
+* Subjects not able to declare meaningful informed consent on their own (e.g. with legal guardian for mental disorders) or any other vulnerable population to that sense (e.g. persons institutionalised, incarcerated etc.). *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The purpose of the study is to evaluate efficacy and safety of Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-Edotreotide compared to targeted molecular therapy with Everolimus in patients with inoperable, progressive, somatostatin receptor-positive (SSTR+), neuroendocrine tumours of gastroenteric or pancreatic origin (GEP-NET).
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 Onclive articles (1 scraped)
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • 177Lu-edotreotide Radiopharmaceutical Therapy … (https://www.onclive.com/view/177lu-edotreotide-radiopharmaceutical-therapy-prolongs-pfs-vs-everolimus-in-sstr-gep-nets) [Onclive]
+	•	Key findings from publications: Onclive Article (177Lu-edotreotide Radiopharmaceutical Therapy …): Pancreatic Cancer | Image Credit: © Crystal light - stock.adobe.com The phase 3 COMPETE trial (NCT03049189) met its primary end point of clinically and statistically significant progression-free survival (PFS) improvement with non-carrier–added 177 Lutetium edotreotide ( 177 Lu-edotreotide; ITM-11) vs everolimus (Afinitor) in patients with grade 1 or 2 somatostatin receptor (SSTR)–positive gastroenteropancreatic neuroendocrine tumors (GEP-NETs). 1 Topline data from the trial, which were presented at the 22nd Annual European Neuroendocrine Tumor Society 2025 Conference, showed that the median PFS was 23.9 months with the targeted radiopharmaceutical therapy 177 Lu-edotreotide (n = 207) compared with 14.1 months with standard-of-care (SOC) everolimus (n = 102; HR, 0.67; 95% CI, 0.48-0.95; P = .022). “COMPETE is the first pivotal trial comparing a radiopharmaceutical drug candidate [with] a targeted molecular therapy without the routine use of accompanying somatostatin analogues in this [population of patients with] GEP-NETs,” presenting investigator Jaume Capdevila, MD, PhD, who is also a senior medical oncologist at Vall d’Hebron University Hospital in Barcelona, stated in a news release. “These data show unequivocal support for 177 Lu-edotreotide’s potential benefit in extending PFS. Additionally, 177 Lu-edotreotide’s convenient dosing schedule and favorable safety results reinforce its potential as a compelling new treatment option.” The prospective, randomized, controlled, open-label COMPETE trial enrolled 309 patients with inoperable, progressive, grade 1 or 2 SSTR-positive NETs of pancreatic or gastroenteric origin across Europe, the United States, Australia, and South Africa. Patients were randomly assigned 2:1 to receive either 7.5 GBq of 177 Lu-edotreotide with a nephroprotective amino acid solution every 3 months for up to 4 cycles, or everolimus at 10 mg daily for a maximum of 30 months or until disease progression. Patients were stratified by primary tumor origin (gastroenteric NETs vs pancreatic NETs), and by prior lines of medical therapy (1 st line vs 2 nd line). Patients were excluded if they had a known hypersensitivity to edotreotide, everolimus, DOTA, lutetium-177, any excipient of edotreotide or everolimus, or any other Rapamycin derivative; prior exposure to any peptide receptor radionuclide therapy; prior exposure to mTOR inhibitors; received prior treatment with external field radiation to GEP-NET lesions within 90 days before randomization or radioembolization therapy; received prior therapy with an investigational compound and/or medical device within 30 days prior to randomization; an indication for potentially curative surgical lesion removal; planned alternative therapy during the study participation period; serious nonmalignant disease; or clinically relevant renal, hepatic, cardiovascular, or hematological organ dysfunction, that had the potential to interfere with the safety of the study treatments. 2 Notably, 177 Lu-edotreotide consists of non-carrier–­added Lutetium-177—which is a therapeutic β-emitting radioisotope that has a higher isotopic purity than carrier-added lutetium—and the SSTR agonist edotreotide. 1177 Lu-edotreotide is the first non-carrier–added lutetium radiopharmaceutical to be investigated in patients with GEP-NETs, according to ITM Isotope Technologies, the drug’s developer. Additional topline data showed that, as of January 21, 2025, the interim median overall survival (OS) was numerically higher, although not conclusive, for 177 Lu-edotreotide compared with everolimus, at 63.4 months vs 58.7 months, respectively (HR, 0.78; 95% CI, 0.5-1.1; P = .206). These OS data will continue to mature. Of note, patients who progressed on study treatment were allowed to initiate an alternative therapy, which may confound the OS data. “The COMPETE results represent a major step forward in the development of new treatment options for people living with progressive, inoperable GEP-NETs,” Jonathan Strosberg, MD, past president of the North American Neuroendocrine Tumor Society and chair of the GI Research Program at Moffitt Cancer Center and Research Institute in Tampa, Florida, added in the news release. “By extending PFS by almost 10 months compared [with] SOC in this trial, 177 Lu-edotreotide showed the potential to significantly improve the treatment paradigm for physicians and their patients.” Regarding safety, the rate of treatment-emergent adverse effects (TEAEs) related to study treatment was lower in the 177 Lu-edotreotide arm vs the everolimus arm, at 82.5% vs 97.0%, respectively. Notably, 1 serious TEAE of grade 2 myelodysplastic syndrome was reported in the 177 Lu-edotreotide arm and deemed related to 177 Lu-edotreotide treatment. Overall, no unforeseen TEAS were observed. Additional data from the trial, including overall response rate, subgroup analysis findings, quality of life data, and dosimetry, are under evaluation and are planned to be submitted for presentation at future medical conferences. Moreover, ITM Isotope Technologies, the developer of 177 Lu-edotreotide, plans to submit a new drug application (NDA) to the FDA in 2025. “These successful results validate our decision to design a pivotal phase 3 trial directly comparing a targeted radiopharmaceutical against a targeted molecular therapy in Grade 1/2 GEP-NETS, underscoring our commitment to improving the lives of people living with this challenging cancer,” Andrew Cavey, MD, PhD, chief executive officer of ITM Isotope Technologies, concluded in the news release. “With this successful readout, 177 Lu-edotreotide becomes the first drug candidate in ITM’s broad portfolio of early- to late-stage radiopharmaceuticals to deliver positive phase 3 results and progress towards NDA submission and commercial launch preparations. Together, with our global isotopes manufacturing business, robust supply chain, and experienced clinical and commercial team, we believe we are uniquely positioned as a standout leader in the fast-growing radiopharmaceutical industry .” References ITM presents positive topline phase 3 COMPETE trial data with n.c.a. 177 Lu-edotreotide (ITM-11), a targeted radiopharmaceutical therapy, in patients with grade 1 or 2 gastroenteropancreatic neuroendocrine tumors at the ENETS 2025 Conference. News release. ITM Isotope Technologies Munich SE. March 6, 2025. Accessed March 6, 2025. https://www.itm-radiopharma.com/news/press-releases/press-releases-detail/itm-presents-positive-topline-phase-3-compete-trial-data-with-nca-177lu-edotreotide-itm-11-a-targeted-radiopharmaceutical-therapy-in-patients-with-grade-1-or-2-gastroenteropancreatic-neuroendocrine-tumors-at-the-enets-2025-conference-688/ Efficacy and safety of 177Lu-edotreotide PRRT in GEP-NET patients (COMPETE). ClinicalTrials.gov. Updated November 20, 2023. Accessed March 6, 2025. https://clinicaltrials.gov/study/NCT03049189
+	•	Additional evidence from online sources: Primary outcome: progression-free survival (PFS)
+Secondary outcomes: objective response rates (ORR); overall survival (OS)
+Web search summary: 1 Onclive articles (1 scraped)
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 1, 'items': [{'title': '177Lu-edotreotide Radiopharmaceutical Therapy …', 'url': 'https://www.onclive.com/view/177lu-edotreotide-radiopharmaceutical-therapy-prolongs-pfs-vs-everolimus-in-sstr-gep-nets', 'content_scraped': True, 'content_length': 6920}], 'scraped': 1}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 Onclive articles (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

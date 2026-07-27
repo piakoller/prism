@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:36:22.544939
+Trial: 70/86
+NCT ID: NCT02609737
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because it evaluates Peptide Receptor Radionuclide Therapy (PRRT) using somatostatin antagonists specifically for **well-differentiated** neuroendocrine tumors (NETs), whereas the patient has a **poorly differentiated** neuroendocrine carcinoma (NEC) with a Ki-67 index of 95%. These are biologically distinct entities; high-grade NECs typically lack the somatostatin receptor (SSTR) expression required for PRRT and exhibit aggressive kinetics requiring cytotoxic chemotherapy rather than receptor-targeted radionuclide therapy. The study's inclusion criteria explicitly require well-differentiated histology and SSTR uptake, which aligns with the biology of NETs but contradicts the patient's diagnosis of NEC. Even considering alternative scenarios, PRRT is rarely effective or indicated for Ki-67 >55% tumors due to rapid proliferation outpacing the treatment's radiobiological effect. Therefore, evidence from this well-differentiated population cannot meaningfully inform treatment decisions for this patient's high-grade carcinoma."
+}

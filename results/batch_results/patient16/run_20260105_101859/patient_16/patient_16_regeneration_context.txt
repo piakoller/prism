@@ -1,0 +1,74 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - CUMULATIVE VALIDATION ISSUES
+================================================================================
+
+⚠️  ATTENTION: This is a REGENERATION with cumulative feedback from ALL previous attempts.
+The issues below include BOTH new issues AND unresolved issues from prior iterations.
+You MUST address EVERY issue listed - not just the newest ones.
+
+================================================================================
+PREVIOUS RECOMMENDATION THAT FAILED VALIDATION
+================================================================================
+
+Based on the patient's diagnosis of a locally advanced, Grade 1 (Ki-67 2%), SSTR2-positive nonfunctioning pancreatic neuroendocrine tumor (NF-Pan-NET) with oligometastatic liver and lymph node involvement, the recommended therapy is a **neoadjuvant approach using Peptide Receptor Radionuclide Therapy (PRRT)** with **177Lu-DOTATATE/Edotreotide**, followed by re-evaluation for **curative-intent surgical resection**.
+
+Concurrently, the patient should initiate **Somatostatin Analogue (SSA)** therapy (e.g., **Lanreotide** or **Octreotide**) for immediate antiproliferative control and symptom management.
+
+**Key Clinical Trial Evidence Supporting This Recommendation:**
+*   **NCT02754297 (Personalized PRRT of Neuroendocrine Tumors):** This Phase 2 trial provides the primary evidence for the neoadjuvant strategy in this specific patient population. The study demonstrated that personalized PRRT dosimetry resulted in high response rates, specifically reporting that **84.6% (11 of 13) of patients with pancreatic NETs achieved a partial or minor response**. This high rate of tumor shrinkage is critical for this patient to facilitate downstaging of the pancreatic head lesion (currently contacting the portal vein) and to address the oligometastatic disease prior to surgery.
+*   **NCT01842165 (Prediction Using Multimodality Imaging):** This completed study validates that high uptake on SSTR-PET/CT—which this patient exhibits with "intense accumulation"—is a reliable predictor of favorable treatment outcome with 177Lu-octreotate, confirming her suitability for this modality.
+*   **NCT03049189 (COMPETE Trial):** This Phase 3 trial supports the therapeutic positioning of **177Lu-edotreotide PRRT** as a superior consideration over targeted agents (such as everolimus) for SSTR-positive GEP-NETs, reinforcing the selection of PRRT in the treatment sequence.
+*   **NCT02730104 (Lanreotide Real-World Study):** This observational study confirms the real-world effectiveness and safety of Lanreotide in GEP-NETs, supporting its use as a standard first-line option for antiproliferative control and symptom management alongside PRRT.
+
+**Surgical Re-evaluation Plan:**
+Following the induction course of PRRT (typically evaluated after 2-4 cycles), the patient should undergo full restaging. If sufficient downstaging is achieved to allow for an R0 resection (clear margins) of the primary tumor and the retroperitoneal lymph nodes, a **pancreaticoduodenectomy** combined with **resection or ablation of the liver metastases** is recommended.
+
+⚠️  The above recommendation had validation issues. Review it carefully and
+correct the specific problems identified below while preserving correct sections.
+
+================================================================================
+ALL VALIDATION ISSUES (CUMULATIVE)
+================================================================================
+
+📊 Total issues to address: 1
+
+### ACCURACY ISSUES:
+  ❌ Semantic: **Unverifiable Evidence / Hallucination:** The recommendation cites specific numerical results (e.g., "84.6% (11 of 13) of patients... achieved a partial or minor response") for trial **NCT02754297**. The provided "Trial Analysis Summary" lists only the trial titles and relevance, not the abstracts or results data. The recommendation relies on data not present in the provided source text.
+
+================================================================================
+SPECIFIC GUIDANCE FOR REGENERATION (FROM ALL ITERATIONS)
+================================================================================
+
+--- From Iteration 0 ---
+1.  **Correct the Evidence Citation:** Remove the reference to **NCT05153772 (AlphaMedix)** in the rationale for 177Lu-DOTATATE efficacy. Instead, rely primarily on **NCT02754297 (P-PRRT)**, which provides direct evidence of high response rates (84.6% partial/minor) in Pancreatic NETs using the specific isotope (177Lu) recommended.
+2.  **Address Surgical Alternatives:** Briefly acknowledge that while upfront resection at an expert center is a consideration (as per assessment), the neoadjuvant approach is recommended to improve the likelihood of curative (R0) resection given the vascular contact and nodal involvement.
+3.  **Refine COMPETE Trial Reference:** Ensure the reference to NCT03049189 reflects that it supports the strategy (based on design/rationale) but avoid implying that final results are presented in the dossier if they are not.
+
+--- From Iteration 1 ---
+1. **Prioritize Upfront Surgery:** Change the primary recommendation to **Upfront Surgical Resection** (Pancreaticoduodenectomy + management of liver metastases). The assessment confirms the patient is a candidate ("can be performed safely"), has a G1 tumor (less likely to shrink with PRRT), and has mechanical symptoms (vomiting) that require resolution.
+2. **Remove Unverified Data:** Delete specific percentage claims (e.g., "84.6%") unless the text of the trial results is explicitly added to the input. Reference trials only by their intent or general applicability as supported by the provided titles/relevance.
+3. **Address Symptoms:** Explicitly address the management of the vomiting/duct dilation. If surgery is not performed immediately, mention the potential need for endoscopic stenting.
+4. **Correct SSA/PRRT Protocol:** If PRRT is mentioned (e.g., as a second-line or adjuvant option), specify that long-acting SSAs should be paused prior to treatment cycles.
+5. **Reframe PRRT:** Position PRRT as an option for *unresectable* disease or *adjuvant* therapy after surgery, rather than the primary neoadjuvant choice, unless the recommendation can strongly justify why the "safe" surgical option in the assessment is being rejected.
+
+--- Current Iteration ---
+1. **Prioritize Upfront Surgery:** Change the primary recommendation to **Upfront Surgical Resection** (Pancreaticoduodenectomy + management of liver metastases). The assessment confirms the patient is a candidate ("can be performed safely"), has a G1 tumor (less likely to shrink with PRRT), and has mechanical symptoms (vomiting) that require resolution.
+2. **Remove Unverified Data:** Delete specific percentage claims (e.g., "84.6%") unless the text of the trial results is explicitly added to the input. Reference trials only by their intent or general applicability as supported by the provided titles/relevance.
+3. **Address Symptoms:** Explicitly address the management of the vomiting/duct dilation. If surgery is not performed immediately, mention the potential need for endoscopic stenting.
+4. **Correct SSA/PRRT Protocol:** If PRRT is mentioned (e.g., as a second-line or adjuvant option), specify that long-acting SSAs should be paused prior to treatment cycles.
+5. **Reframe PRRT:** Position PRRT as an option for *unresectable* disease or *adjuvant* therapy after surgery, rather than the primary neoadjuvant choice, unless the recommendation can strongly justify why the "safe" surgical option in the assessment is being rejected.
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above - both new and persisting issues
+2. Base all recommendations on the evidence provided (trials, guidelines, assessment)
+3. Only cite trials and data that appear in the evidence sections above
+4. For standard therapies without trial evidence, cite the relevant guidelines
+5. Ensure clinical safety and appropriateness for this specific patient
+6. Maintain consistency with the patient's clinical status and history
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

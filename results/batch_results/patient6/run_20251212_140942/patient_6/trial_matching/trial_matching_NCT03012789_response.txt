@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:19:46.468215
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence to guide the specific therapeutic recommendations for this patient. While the disease biology (well-differentiated GEP-NET) and context (surgical intervention) align, the study is designed to validate a biomarker (NETest) for monitoring disease status and recurrence post-surgery, rather than evaluating the efficacy or safety of a therapeutic intervention itself. The patient's primary clinical dilemma involves determining the feasibility of liver transplantation versus systemic alternatives (e.g., PRRT, chemotherapy) given her Ki-67 index (15%) and recent progression, which conflict with standard transplant criteria. Evidence regarding the utility of a blood-based transcript assay does not address these specific biological contraindications or inform the comparative effectiveness of transplantation versus other active therapies."
+}

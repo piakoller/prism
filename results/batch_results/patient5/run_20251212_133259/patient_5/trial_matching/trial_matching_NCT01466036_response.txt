@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:00:31.875630
+Trial: 69/86
+NCT ID: NCT01466036
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90% (small-cell type). The study (NCT01466036) evaluates Cabozantinib specifically in well- or moderately-differentiated neuroendocrine tumors (NETs) and explicitly excludes patients with poorly differentiated neuroendocrine carcinomas or high-grade tumors. The biological behavior and therapeutic targets of high-grade NECs (treated similarly to small-cell lung cancer) differ fundamentally from well-differentiated NETs. Therefore, evidence regarding Cabozantinib efficacy in well-differentiated disease is not clinically transferable or relevant to this patient's aggressive, high-grade malignancy."
+}

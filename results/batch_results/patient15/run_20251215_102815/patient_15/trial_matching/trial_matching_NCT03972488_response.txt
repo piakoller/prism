@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:58:24.611194
+Trial: 75/86
+NCT ID: NCT03972488
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful clinical evidence to guide therapy for this patient. Biologically, the patient has a well-differentiated Pancreatic NET G3 with strong SSTR expression (DOTATOC +++), which aligns with the NETTER-2 study population of SSTR-positive GEP-NETs G2/G3. Although the patient's Ki-67 (70%) exceeds the study's upper limit of 55% and they are in a salvage setting (heavily pre-treated) rather than the study's first-line setting, the evidence is clinically transferable. NETTER-2 is the first Phase 3 trial to demonstrate significant efficacy (median PFS 22.8 months) of 177Lu-Dotatate in Grade 3 NETs, validating the biological rationale that high-grade, well-differentiated tumors respond to PRRT. Given the patient has exhausted standard options (chemotherapy, SSAs, targeted therapy) and retains the target receptor, this study provides the necessary evidence to support PRRT as a viable next step for disease consolidation, despite the likely lower expected PFS due to the higher Ki-67 and later line of therapy."
+}

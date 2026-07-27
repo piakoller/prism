@@ -1,0 +1,141 @@
+=== TRIAL ANALYSIS REASONING REPORT ===
+Timestamp: 2025-12-12T14:07:38.807703
+Patient ID: 5
+Analysis Status: success
+============================================================
+
+ANALYSIS SUMMARY:
+- Trials analyzed: 7
+- Trials included: 7
+- Trials excluded: 0
+- Analysis complete: True
+
+DETAILED TRIAL ANALYSES:
+==================================================
+
+TRIAL 1: NCT03278379
+Name: Avelumab in G2-3 NET
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 2: NCT03728361
+Name: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 3: NCT02820857
+Name: Assessment of the Efficacy of Bevacizumab in Combination With Folfiri as Second-line Treatment in Patients Suffering From an Advanced Inoperable Poorly Differentiated Neuroendocrine Carcinoma of an Unknown or Gastroentero-pancreatic Primary Cancer
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 4: NCT02834013
+Name: Nivolumab and Ipilimumab in Treating Patients With Rare Tumors
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 5: NCT03837977
+Name: Second-line Therapy for Patients With Progressive Poorly Differentiated Extra-pulmonary Neuroendocrine Carcinoma
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 6: NCT03896503
+Name: Randomized Trial of Topotecan With M6620, an ATR Kinase Inhibitor, in Small Cell Lung Cancers and Small Cell Cancers Outside of the Lungs
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 7: NCT03136055
+Name: Pembrolizumab-based Therapy in Previously Treated High Grade Neuroendocrine Carcinomas
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+RAW ANALYSIS RESPONSE:
+==================================================
+<trial_analysis>
+**NCT NUMBER:** NCT03278379
+**TRIAL NAME:** Avelumab in G2-3 NET
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial provides evidence regarding the efficacy of single-agent PD-L1 inhibition (avelumab) in Grade 2-3 neuroendocrine neoplasms. The results demonstrated limited antitumor activity (0% ORR), which informs the recommendation to avoid single-agent checkpoint inhibitors in this setting.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03728361
+**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial evaluates the combination of nivolumab and temozolomide in advanced neuroendocrine carcinoma. The published results indicate a promising objective response rate (32.1%), supporting this combination as a potential second-line consideration for the patient's neuroendocrine carcinoma component upon recurrence.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02820857
+**TRIAL NAME:** Assessment of the Efficacy of Bevacizumab in Combination With Folfiri as Second-line Treatment in Patients Suffering From an Advanced Inoperable Poorly Differentiated Neuroendocrine Carcinoma of an Unknown or Gastroentero-pancreatic Primary Cancer
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial (PRODIGE 41-BEVANEC) is highly relevant as it establishes FOLFIRI as a standard second-line chemotherapy option for gastroenteropancreatic neuroendocrine carcinoma (GEP-NEC) after platinum-etoposide failure. The results also demonstrate that adding bevacizumab does not improve survival, guiding the recommendation against its use.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02834013
+**TRIAL NAME:** Nivolumab and Ipilimumab in Treating Patients With Rare Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** The DART trial (Phase 2) includes a specific cohort for high-grade neuroendocrine neoplasms. Published results showed a 44% overall response rate in non-pancreatic high-grade NEC, providing strong evidence for dual checkpoint inhibition (nivolumab plus ipilimumab) as a potential salvage therapy for this patient's high-grade disease.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03837977
+**TRIAL NAME:** Second-line Therapy for Patients With Progressive Poorly Differentiated Extra-pulmonary Neuroendocrine Carcinoma
+**DECISION:** INCLUDE
+**RATIONALE:** The NET-02 Phase 2 trial directly compares second-line chemotherapy options (liposomal irinotecan/5-FU vs. docetaxel) for progressive poorly differentiated extra-pulmonary NEC. The results support liposomal irinotecan/5-FU as an active regimen (meeting the primary endpoint) while indicating docetaxel was less effective, directly informing chemotherapy selection upon recurrence.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03896503
+**TRIAL NAME:** Randomized Trial of Topotecan With M6620, an ATR Kinase Inhibitor, in Small Cell Lung Cancers and Small Cell Cancers Outside of the Lungs
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial evaluates topotecan (a standard second-line option for small cell carcinomas) combined with an ATR inhibitor. Given the patient's "small-cell type" morphology, evidence regarding topotecan-based regimens is clinically relevant for management planning, even though the primary recruitment was SCLC.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03136055
+**TRIAL NAME:** Pembrolizumab-based Therapy in Previously Treated High Grade Neuroendocrine Carcinomas
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial investigates pembrolizumab alone or with chemotherapy in extrapulmonary poorly differentiated NEC. The published results showed the treatment was largely ineffective (ORR ~5-7%), providing crucial negative evidence that helps exclude these specific regimens from recommended future treatment plans.
+---
+</trial_analysis>
+
+<summary>
+**TOTAL TRIALS ANALYZED:** 7
+**TRIALS TO INCLUDE:** 7
+**TRIALS TO EXCLUDE:** 0
+</summary>

@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:39:13.359312
+Trial: 72/86
+NCT ID: NCT03034200
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient. The primary failing criterion is the lack of disease/biology alignment and, consequently, a lack of relevant evidence. The patient has a well-differentiated Grade 2 pancreatic neuroendocrine tumor (pNET). The study (NCT03034200) investigated ONC201, a DRD2 antagonist, across a heterogeneous group of neuroendocrine neoplasms. The published results in Clinical Cancer Research show clinical benefit almost exclusively in pheochromocytoma-paraganglioma (PC-PG) and desmoplastic small round cell tumor (DSRCT), which are biologically distinct from pNETs. The cohort of \"other neuroendocrine tumors\" (n=12), which would include this patient's histology, showed no partial responses and only two cases of stable disease (in a DSRCT and a neuroblastoma). Given the patient's aggressive, symptomatic, and locally advanced disease requiring a robust and rapid response, the lack of any efficacy signal for pNETs in the study makes this evidence irrelevant for informing his treatment, whether in the current unresectable scenario or as a potential neoadjuvant therapy."
+}
+```

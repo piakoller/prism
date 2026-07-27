@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:47:51.365151
+Trial: 85/86
+NCT ID: NCT02842749
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "While the study aligns biologically (G2 pancreatic NET) and the intervention (everolimus) is a clinically relevant systemic therapy option for this patient who has progressed on sunitinib and belzutifan, the study fails the evidence quality criterion. The provided data explicitly indicates that no publications or detailed results are available for this completed Phase IV trial. Without accessible efficacy or safety outcomes, this specific study record provides no actionable clinical evidence to inform treatment decision-making or to weigh the benefits of everolimus against liver transplantation or other therapies in this specific case."
+}

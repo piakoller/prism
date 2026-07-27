@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:54:30.972096
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient for several reasons. First, the provided data indicates no published results are available; the citations are merely reviews mentioning the trial design, offering no efficacy or safety data to guide treatment decisions (Criterion 3). Second, there is a significant biological mismatch (Criterion 1). The patient has a Mixed Neuroendocrine-Non-neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated small-cell NEC component with a Ki-67 of 90%. PRRT (90Y-DOTATOC) is primarily indicated for well-differentiated, SSTR-positive NETs. The clinical assumption of SSTR positivity provided in the instructions applies to G1-G2 NETs, not high-grade NECs, which rarely express SSTRs sufficiently for PRRT. Finally, the patient is currently in clinical remission with a negative biopsy, whereas the study targets patients with measurable, progressive disease not amenable to standard therapy."
+}

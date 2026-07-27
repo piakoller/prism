@@ -1,0 +1,51 @@
+=== THERAPY RECOMMENDATION RAW RESPONSE ===
+Timestamp: 2025-09-29T17:27:59.669309
+Patient ID: 1
+Model: google/gemini-2.5-pro
+==================================================
+
+<therapy_recommendation>
+After clinical stabilization of the current gastrointestinal bleeding episode, we recommend the following staged management plan:
+
+1.  **Essential Staging and Assessment:**
+    *   The immediate next step is to perform a **68Ga-DOTATATE PET/CT**. This is critical to definitively assess for distant metastatic disease and to determine the tumor's somatostatin receptor (SSTR) expression status.
+    *   Concurrently, the patient must be evaluated by a multidisciplinary team at a high-volume center, including an experienced hepatopancreatobiliary (HPB) surgeon, to assess the technical feasibility and risks of a complex, curative-intent multivisceral resection.
+
+2.  **Definitive Therapeutic Strategy (Contingent on Staging and Surgical Assessment):**
+
+    *   **Scenario A: If the tumor is deemed technically resectable and the 68Ga-DOTATATE PET/CT shows no distant metastases:**
+        *   We recommend proceeding with **upfront multivisceral resection** (including distal pancreatectomy, splenectomy, partial gastrectomy, and left adrenalectomy). This is the most direct approach to achieve definitive local control of the life-threatening bleeding and offers the only potential for cure.
+
+    *   **Scenario B: If the tumor is deemed borderline resectable, or resectable but with prohibitive operative risk:**
+        *   We recommend **neoadjuvant (conversion) therapy** to downstage the tumor, followed by surgical re-evaluation. The preferred regimen is **chemotherapy with capecitabine and temozolomide (CAPTEM)**.
+        *   If the 68Ga-DOTATATE PET/CT demonstrates high and homogenous SSTR expression (uptake in all tumor lesions significantly higher than liver background), **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE** can be considered as an alternative neoadjuvant approach.
+
+    *   **Scenario C: If the 68Ga-DOTATATE PET/CT reveals unresectable distant metastases:**
+        *   The goal of therapy becomes palliative. We recommend initiating systemic therapy with **CAPTEM**.
+        *   Local palliative measures for bleeding, such as targeted radiation therapy or further arterial embolization, should be considered in parallel.
+
+</therapy_recommendation>
+
+<rationale>
+This recommendation is based on a comprehensive evaluation of the patient's urgent clinical need for local control, the tumor's aggressive biological features, and current evidence-based guidelines.
+
+**1. Prioritization of Local Control and Definitive Staging:**
+The patient's recurrent, life-threatening GI hemorrhage from direct tumor invasion is the most critical clinical issue. Therefore, the therapeutic plan must prioritize achieving definitive local control.
+
+*   **68Ga-DOTATATE PET/CT:** This is the mandatory next step. Both ESMO 2020 and ENETS 2023 guidelines identify SSTR-based imaging as the standard of care for staging, prognostication, and determining PRRT eligibility (ESMO 2020, Staging section; ENETS 2023, Sec 2.5.2). The high FDG uptake (SUV 16) is a poor prognostic sign and raises the possibility of low SSTR expression, making this assessment crucial before considering PRRT.
+
+**2. Rationale for Surgical Consideration (Scenario A):**
+For locally advanced disease without distant metastases, surgery offers the only chance of a cure.
+*   The **ENETS 2023 guidelines** explicitly state that "Patients with locally advanced NF-Pan-NET (stage T3 and T4) can be resected safely... in expert centres" and that "Radical local resection (R0) including portal-venous resection could be considered" (Sec 3.1.4, Rec 1 & 2, Grade A recommendation).
+*   The **ESMO 2020 guidelines** concur, stating that "Pancreatectomy with vascular resection is associated with improved outcomes and it should be carefully considered in the presence of portal and/or superior mesenteric vein invasion."
+Given the ongoing bleeding risk, upfront surgery is a compelling option to resolve the immediate threat and treat the cancer simultaneously.
+
+**3. Rationale for Neoadjuvant Therapy (Scenario B):**
+The tumor's high-risk features (10 cm size, Ki-67 19%, high FDG-avidity) warrant consideration of a neoadjuvant approach to improve the safety and efficacy of a subsequent resection, as suggested by ESMO 2020 guidelines for high-risk patients.
+
+*   **Chemotherapy (CAPTEM):** This is our preferred neoadjuvant option. The patient's tumor has aggressive features (high-end G2, high FDG uptake) that are often associated with a better response to chemotherapy. The randomized phase II **ECOG-ACRIN E2211** trial provides the strongest evidence for this approach, demonstrating that CAPTEM resulted in a significantly longer progression-free survival (PFS) compared to temozolomide alone (22.7 vs 14.4 months, HR 0.58) in patients with advanced G1/G2 Pan-NETs (ESMO 2020, Systemic ChT section; ENETS 2023, Sec 3.4). The patient's prior disease stabilization on FOLFIRINOX further suggests the tumor is not chemo-refractory.
+*   **PRRT:** While ENETS 2023 guidelines mention neoadjuvant PRRT as a possibility for SSTR-positive tumors (Sec 3.1.4, Rec 4), its eligibility is currently unknown. Furthermore, ESMO 2020 guidelines position PRRT after failure of other approved therapies for Pan-NETs due to the lack of randomized trial data in this specific setting (ESMO 2020, PRRT section). Therefore, CAPTEM is a more evidence-supported choice for achieving tumor shrinkage in this high-risk G2 patient.
+
+**4. Rationale for Palliative Therapy (Scenario C):**
+If metastatic disease is confirmed, the treatment goal shifts to palliation and disease control.
+*   **CAPTEM** remains the recommended systemic therapy based on its proven efficacy in the **ECOG-ACRIN E2211** trial and the tumor's aggressive profile, which suggests a need for a treatment with a higher objective response rate than targeted agents or somatostatin analogues.

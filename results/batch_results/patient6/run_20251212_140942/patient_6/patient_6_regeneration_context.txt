@@ -1,0 +1,80 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - CUMULATIVE VALIDATION ISSUES
+================================================================================
+
+⚠️  ATTENTION: This is a REGENERATION with cumulative feedback from ALL previous attempts.
+The issues below include BOTH new issues AND unresolved issues from prior iterations.
+You MUST address EVERY issue listed - not just the newest ones.
+
+================================================================================
+PREVIOUS RECOMMENDATION THAT FAILED VALIDATION
+================================================================================
+
+Based on the patient's clinical assessment, current progression on belzutifan, and specific tumor characteristics (G2, Ki-67 15%), the following management strategy is recommended:
+
+**1. Diagnostic Work-up (Urgent):**
+Perform a **Somatostatin Receptor (SSTR) PET/CT** (e.g., 68Ga-DOTATATE or 68Ga-DOTATOC) immediately.
+*   **Purpose:** To investigate the reported "migratory bone pain" and rule out extrahepatic bone metastases, which are poorly detected by CT (sensitivity ~61%), and to confirm high SSTR expression (uptake > liver background) required for PRRT eligibility.
+
+**2. Liver Transplantation (LT) Feasibility:**
+**Liver transplantation is NOT recommended** for this patient at this time.
+*   **Reasoning:** The patient does not meet the strict ESMO Clinical Practice Guidelines criteria for LT, specifically:
+    *   **Tumor Biology:** Her Ki-67 index is **15%**, which exceeds the guideline threshold of **<10%** for LT eligibility.
+    *   **Disease Stability:** She has active hepatic progression; guidelines require stable disease for at least 6 months prior to transplant consideration.
+    *   **Extrahepatic Risk:** The uninvestigated bone pain presents a significant risk of occult extrahepatic disease, which is an absolute contraindication.
+
+**3. Systemic Therapy Recommendation:**
+Upon confirmation of SSTR-positive disease and absence of extrahepatic spread, the recommended therapy is **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-Dotatate**.
+
+*   **Primary Evidence (NETTER-2, NCT03972488):** This Phase 3 trial specifically evaluated 177Lu-Dotatate in patients with G2 (Ki-67 10–20%) and G3 GEP-NETs. The trial demonstrated a statistically significant improvement in **median Progression-Free Survival (PFS) of 22.8 months** for the 177Lu-Dotatate arm compared to 8.5 months for the high-dose octreotide arm (HR 0.276; p<0.0001). This patient's Ki-67 of 15% places her directly within the population that derived substantial benefit in this trial.
+*   **Supporting Evidence (NCT03049189):** This Phase 3 trial supports the superiority of PRRT (177Lu-edotreotide) over everolimus regarding PFS in GEP-NETs, reinforcing PRRT as the preferred class over switching to an mTOR inhibitor.
+
+**4. Alternative Therapy (if SSTR-negative or PRRT contraindicated):**
+Initiate **Cabozantinib** (60 mg daily).
+*   **Evidence (CABINET, NCT03375320):** This Phase 3 trial demonstrated that Cabozantinib significantly improved **median PFS to 13.8 months** versus 4.4 months with placebo (HR 0.23) in patients with progressive pancreatic NETs who had received prior targeted therapy.
+
+**5. Therapies to Exclude:**
+*   **Immunotherapy (PD-L1 blockade):** Based on trial **NCT03278379** (Avelumab), single-agent PD-L1 blockade showed limited antitumor activity (ORR 0%) in G2-3 NETs and is not recommended.
+
+⚠️  The above recommendation had validation issues. Review it carefully and
+correct the specific problems identified below while preserving correct sections.
+
+================================================================================
+ALL VALIDATION ISSUES (CUMULATIVE)
+================================================================================
+
+📊 Total issues to address: 3
+
+### ACCURACY ISSUES:
+  ❌ Semantic: **Why this is critical:** This condition is clinically incorrect and potentially harmful. "Absence of extrahepatic spread" is a criterion for *Liver Transplantation*, not PRRT. PRRT is a systemic therapy specifically indicated for metastatic (including extrahepatic) disease. If the urgent PET/CT confirms the suspected bone metastases (extrahepatic spread), the current wording implies PRRT should *not* be given, effectively withholding the standard of care for a patient with metastatic progression.
+  ❌ Semantic: **Hallucination of Evidence (NCT03049189):** The recommendation cites trial NCT03049189 (COMPETE) as supporting evidence, claiming it "supports the superiority of PRRT... over everolimus regarding PFS."
+  ❌ Semantic: **Why this is critical:** The "Trial Analysis Summary" provided in the input lists this trial with **"(Relevance: N/A)"** and does not contain any results or data summaries for it. The recommendation has fabricated or hallucinated results that were not present in the provided source text. Validation must rely strictly on the provided evidence.
+
+================================================================================
+SPECIFIC GUIDANCE FOR REGENERATION (FROM ALL ITERATIONS)
+================================================================================
+
+--- From Iteration 0 ---
+1. **Correct the PRRT Indication:** Remove the phrase "and absence of extrahepatic spread" from the PRRT recommendation. The condition for PRRT should be "Upon confirmation of SSTR-positive disease (uptake > liver background)." Explicitly state that PRRT is the recommended systemic therapy regardless of whether the disease is liver-only or extrahepatic, provided SSTR expression is sufficient.
+2. **Remove Unsupported Evidence:** Delete the bullet point regarding **NCT03049189** (COMPETE trial) unless the specific results are added to the input text. Rely primarily on **NETTER-2 (NCT03972488)** which is well-supported by the provided details and directly relevant to the patient's Ki-67 (15%).
+3. **Clarify Next Steps:** In the "Actionable" section or rationale, clarify that if bone metastases are found (extrahepatic disease), the patient shifts definitively to the Systemic Therapy pathway (PRRT), whereas if disease remains liver-limited, PRRT is still preferred over LT due to the high Ki-67.
+
+--- Current Iteration ---
+1. **Correct the PRRT Indication:** Remove the phrase "and absence of extrahepatic spread" from the PRRT recommendation. The condition for PRRT should be "Upon confirmation of SSTR-positive disease (uptake > liver background)." Explicitly state that PRRT is the recommended systemic therapy regardless of whether the disease is liver-only or extrahepatic, provided SSTR expression is sufficient.
+2. **Remove Unsupported Evidence:** Delete the bullet point regarding **NCT03049189** (COMPETE trial) unless the specific results are added to the input text. Rely primarily on **NETTER-2 (NCT03972488)** which is well-supported by the provided details and directly relevant to the patient's Ki-67 (15%).
+3. **Clarify Next Steps:** In the "Actionable" section or rationale, clarify that if bone metastases are found (extrahepatic disease), the patient shifts definitively to the Systemic Therapy pathway (PRRT), whereas if disease remains liver-limited, PRRT is still preferred over LT due to the high Ki-67.
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above - both new and persisting issues
+2. Base all recommendations on the evidence provided (trials, guidelines, assessment)
+3. Only cite trials and data that appear in the evidence sections above
+4. For standard therapies without trial evidence, cite the relevant guidelines
+5. Ensure clinical safety and appropriateness for this specific patient
+6. Maintain consistency with the patient's clinical status and history
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

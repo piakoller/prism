@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T10:12:27.400321
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for the patient's current treatment planning. While the disease biology (GI NET) aligns, the clinical context is fundamentally different. The study evaluates the diagnostic utility of intraoperative ultrasound (IOUS) in patients classified as cM0 (no liver metastases) preoperatively to detect occult disease. The patient, however, has established, biopsy-proven metastatic liver disease (Stage IV) diagnosed in 2019 and has already undergone multiple lines of therapy including surgery, TAE, and PRRT. Evidence regarding the detection of occult metastases in clinically localized patients does not inform therapeutic decisions for a patient with known, extensive metastatic burden. Furthermore, the study addresses diagnostic staging rather than the efficacy of systemic or liver-directed therapies relevant to the patient's current questions regarding PRRT maintenance and symptom control."
+}

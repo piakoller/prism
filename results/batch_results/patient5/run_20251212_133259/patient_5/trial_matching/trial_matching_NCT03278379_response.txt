@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:36:51.018926
+Trial: 1/86
+NCT ID: NCT03278379
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant because the provided published results include data from the NET-001 cohort, which investigated avelumab in G3 poorly differentiated neuroendocrine carcinomas (NECs), directly aligning with the aggressive small-cell NEC component driving this patient's MiNEN. Although the specific NCT protocol text provided (NCT03278379/NET-002) focuses on well-differentiated NETs and excludes NECs, the combined publication offers transferable evidence for the patient's high-grade biology. While the patient is currently in remission, the high risk of recurrence (Ki-67 90%) makes evidence regarding second-line systemic therapy options clinically applicable for future treatment planning. The study provides meaningful negative evidence (0% ORR, median PFS 3.3 months), informing therapy recommendations by indicating that single-agent PD-L1 blockade is ineffective in this population and should likely be avoided in favor of standard chemotherapy or alternative combinations upon progression."
+}

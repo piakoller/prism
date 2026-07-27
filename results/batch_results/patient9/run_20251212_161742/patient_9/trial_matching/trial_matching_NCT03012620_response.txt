@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T16:28:37.157971
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient primarily because the published results provided (PMID: 37429302) are exclusively for the **sarcoma** cohort, not the neuroendocrine tumor cohort. Evidence regarding efficacy and safety in sarcomas cannot be biologically extrapolated to inform treatment for a well-differentiated pancreatic NET (G2). Furthermore, even if NET results were available, the patient has significant clinical contraindications that align with the study's exclusion criteria: an EGFR of 38 ml/min (study requires ≥50 ml/min) and Sjogren's syndrome (autoimmune disease is a relative contraindication for checkpoint inhibitors due to toxicity risks). Consequently, the provided evidence offers no actionable data on the efficacy of pembrolizumab for this patient's specific tumor type."
+}

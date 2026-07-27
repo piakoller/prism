@@ -1,0 +1,95 @@
+{
+  "status": "success",
+  "analysis_complete": true,
+  "trials_analyzed": 10,
+  "trials_included": 7,
+  "trials_excluded": 3,
+  "expected_trial_count": 10,
+  "trial_analyses": [
+    {
+      "nct_number": "NCT02730104",
+      "trial_name": "Community-based Neuroendocrine Tumor (NET) Research Study",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This observational study confirms the real-world effectiveness and safety of Lanreotide in GEP-NETs. It supports the use of Somatostatin Analogues (SSAs) as a standard first-line option for antiproliferative control and symptom management in this patient."
+    },
+    {
+      "nct_number": "NCT03049189",
+      "trial_name": "Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 3 trial provides high-quality evidence that PRRT (177Lu-edotreotide) improves progression-free survival compared to targeted therapy (everolimus) in G1/G2 GEP-NETs. It strongly supports PRRT as a superior therapeutic consideration for this patient."
+    },
+    {
+      "nct_number": "NCT05153772",
+      "trial_name": "Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This Phase 2 trial demonstrates a high Objective Response Rate (ORR ~56%) with alpha-emitter PRRT in treatment-naïve patients. This is highly relevant for a neoadjuvant strategy where tumor shrinkage is required to facilitate surgical resection."
+    },
+    {
+      "nct_number": "NCT02236910",
+      "trial_name": "An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This registry study provides valuable data on survival predictors and efficacy of standard PRRT in well-differentiated NETs. It reinforces the utility of PRRT for this patient's profile (SSTR+ G1 NET)."
+    },
+    {
+      "nct_number": "NCT03074513",
+      "trial_name": "Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "Immunotherapy is not a standard first-line treatment for Grade 1 well-differentiated NETs, and the response rates (20%) are lower than other available options (e.g., PRRT). It does not address the patient's immediate need for standard antiproliferative or neoadjuvant therapy."
+    },
+    {
+      "nct_number": "NCT02754297",
+      "trial_name": "Personalized PRRT of Neuroendocrine Tumors",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This study shows that personalized PRRT dosimetry can safely increase tumor absorbed dose and achieve high response rates (particularly in pancreatic NETs). This informs the recommendation for optimizing PRRT if a neoadjuvant approach is selected."
+    },
+    {
+      "nct_number": "NCT03217097",
+      "trial_name": "MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "While this trial guides chemotherapy selection, cytotoxic chemotherapy is generally reserved for higher-grade (G2/G3) or rapidly progressive disease. Given the patient's Grade 1 status (Ki-67 2%) and stable disease, chemotherapy is not the primary evidence-based recommendation compared to SSAs or PRRT."
+    },
+    {
+      "nct_number": "NCT01842165",
+      "trial_name": "177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This prospective Phase 2 study validates the efficacy of PRRT and identifies imaging parameters that predict response. It confirms that the patient's high SSTR uptake makes her a strong candidate for this therapy."
+    },
+    {
+      "nct_number": "NCT01253161",
+      "trial_name": "Study of Pasireotide Long Acting Release (LAR) in Patients With Metastatic Neuroendocrine Tumors (NETs)",
+      "decision": "EXCLUDE",
+      "recommendation": "EXCLUDE",
+      "rationale": "Although Pasireotide is effective, the study highlights a high rate of hyperglycemia. Standard SSAs (Lanreotide/Octreotide) are preferred for first-line treatment due to a better safety profile, making this trial less relevant for the initial recommendation."
+    },
+    {
+      "nct_number": "NCT03289741",
+      "trial_name": "A Study to Evaluate Patient Experience in the Therapy of Neuroendocrine Tumors Treated With Octreotide Long Acting Release Versus Lanreotide",
+      "decision": "INCLUDE",
+      "recommendation": "INCLUDE",
+      "rationale": "This trial compares patient experience and preference between the two standard SSAs (Octreotide vs. Lanreotide). It provides practical evidence to guide the selection of the specific SSA agent for this patient's chronic management."
+    }
+  ],
+  "summary": {},
+  "validation_warnings": [],
+  "raw_response": "Based on the patient's profile (G1 SSTR+ Pancreatic NET, locally advanced/oligometastatic, stable but symptomatic) and the available trial evidence, here is the analysis of the clinical trials for the final therapy recommendation.\n\n<trial_analysis>\n**NCT NUMBER:** NCT02730104\n**TRIAL NAME:** Community-based Neuroendocrine Tumor (NET) Research Study\n**DECISION:** INCLUDE\n**RATIONALE:** This observational study confirms the real-world effectiveness and safety of Lanreotide in GEP-NETs. It supports the use of Somatostatin Analogues (SSAs) as a standard first-line option for antiproliferative control and symptom management in this patient.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03049189\n**TRIAL NAME:** Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 3 trial provides high-quality evidence that PRRT (177Lu-edotreotide) improves progression-free survival compared to targeted therapy (everolimus) in G1/G2 GEP-NETs. It strongly supports PRRT as a superior therapeutic consideration for this patient.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT05153772\n**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients\n**DECISION:** INCLUDE\n**RATIONALE:** This Phase 2 trial demonstrates a high Objective Response Rate (ORR ~56%) with alpha-emitter PRRT in treatment-naïve patients. This is highly relevant for a neoadjuvant strategy where tumor shrinkage is required to facilitate surgical resection.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02236910\n**TRIAL NAME:** An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours\n**DECISION:** INCLUDE\n**RATIONALE:** This registry study provides valuable data on survival predictors and efficacy of standard PRRT in well-differentiated NETs. It reinforces the utility of PRRT for this patient's profile (SSTR+ G1 NET).\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03074513\n**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** Immunotherapy is not a standard first-line treatment for Grade 1 well-differentiated NETs, and the response rates (20%) are lower than other available options (e.g., PRRT). It does not address the patient's immediate need for standard antiproliferative or neoadjuvant therapy.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT02754297\n**TRIAL NAME:** Personalized PRRT of Neuroendocrine Tumors\n**DECISION:** INCLUDE\n**RATIONALE:** This study shows that personalized PRRT dosimetry can safely increase tumor absorbed dose and achieve high response rates (particularly in pancreatic NETs). This informs the recommendation for optimizing PRRT if a neoadjuvant approach is selected.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03217097\n**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors\n**DECISION:** EXCLUDE\n**RATIONALE:** While this trial guides chemotherapy selection, cytotoxic chemotherapy is generally reserved for higher-grade (G2/G3) or rapidly progressive disease. Given the patient's Grade 1 status (Ki-67 2%) and stable disease, chemotherapy is not the primary evidence-based recommendation compared to SSAs or PRRT.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01842165\n**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs\n**DECISION:** INCLUDE\n**RATIONALE:** This prospective Phase 2 study validates the efficacy of PRRT and identifies imaging parameters that predict response. It confirms that the patient's high SSTR uptake makes her a strong candidate for this therapy.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT01253161\n**TRIAL NAME:** Study of Pasireotide Long Acting Release (LAR) in Patients With Metastatic Neuroendocrine Tumors (NETs)\n**DECISION:** EXCLUDE\n**RATIONALE:** Although Pasireotide is effective, the study highlights a high rate of hyperglycemia. Standard SSAs (Lanreotide/Octreotide) are preferred for first-line treatment due to a better safety profile, making this trial less relevant for the initial recommendation.\n---\n</trial_analysis>\n\n<trial_analysis>\n**NCT NUMBER:** NCT03289741\n**TRIAL NAME:** A Study to Evaluate Patient Experience in the Therapy of Neuroendocrine Tumors Treated With Octreotide Long Acting Release Versus Lanreotide\n**DECISION:** INCLUDE\n**RATIONALE:** This trial compares patient experience and preference between the two standard SSAs (Octreotide vs. Lanreotide). It provides practical evidence to guide the selection of the specific SSA agent for this patient's chronic management.\n---\n</trial_analysis>\n\n<summary>\n**TOTAL TRIALS ANALYZED:** 10\n**TRIALS TO INCLUDE:** 7\n**TRIALS TO EXCLUDE:** 3\n</summary>",
+  "metadata": {
+    "timestamp": "2026-01-05T09:54:30.687864",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 16,
+    "input_trial_count": 10,
+    "cache_reused": false,
+    "cached_at": null,
+    "prompt_file": "batch_results/run_20260105_092226\\patient_16\\patient_16_trial_analysis_prompt.txt",
+    "results_file": "batch_results/run_20260105_092226\\patient_16\\patient_16_trial_analysis.json",
+    "response_file": "batch_results/run_20260105_092226\\patient_16\\patient_16_trial_analysis_raw_response.txt",
+    "summary_file": "batch_results/run_20260105_092226\\patient_16\\patient_16_trial_analysis_summary.txt"
+  }
+}

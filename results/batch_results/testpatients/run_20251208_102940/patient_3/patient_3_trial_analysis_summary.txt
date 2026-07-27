@@ -1,0 +1,33 @@
+TRIAL ANALYSIS SUMMARY - PATIENT 3
+==================================================
+Analysis Status: success
+Analysis Complete: True
+Trials Analyzed: 12
+Trials to Include: 0
+Trials to Exclude: 12
+
+TRIALS TO EXCLUDE FROM RECOMMENDATION:
+  ❌ NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients
+     Rationale: The trial is not recruiting (Active, not recruiting). Furthermore, the patient's significant renal impairment (Creatinine 2.24 mg/dL) is a major safety concern for Peptide Receptor Radionuclide Therapy (PRRT) and would likely contraindicate enrollment due to the risk of nephrotoxicity.
+  ❌ NCT02568267: Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+     Rationale: The trial is not recruiting. Additionally, there is no clinical evidence provided that the patient's tumor harbors the specific NTRK, ROS1, or ALK gene fusions required for eligibility, which are extremely rare in pancreatic neuroendocrine tumors.
+  ❌ NCT05153772: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients
+     Rationale: The trial is not recruiting. Moreover, the patient's worsening renal function (Creatinine 2.24 mg/dL) poses a significant risk for radionuclide therapy, making him a poor candidate for this investigational alpha-emitter PRRT.
+  ❌ NCT02236910: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+     Rationale: The trial is not recruiting. The patient's renal insufficiency (Creatinine 2.24 mg/dL) is a relative contraindication for 177Lu-DOTATATE due to the potential for renal retention and further toxicity.
+  ❌ NCT03870399: Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression
+     Rationale: The trial is completed and not available for enrollment.
+  ❌ NCT03074513: Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+     Rationale: The trial is not recruiting (Active, not recruiting).
+  ❌ NCT02754297: Personalized PRRT of Neuroendocrine Tumors
+     Rationale: The trial is not recruiting. Additionally, the patient's renal impairment (Creatinine 2.24 mg/dL) would likely exclude him from a study focused on optimizing PRRT dosimetry, as renal function is the dose-limiting factor.
+  ❌ NCT03728361: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+     Rationale: The trial is not recruiting. Clinically, this immunotherapy/chemotherapy combination is typically targeted at high-grade neuroendocrine carcinomas or small-cell lung cancer, which does not align with this patient's Grade 1 well-differentiated tumor biology.
+  ❌ NCT03217097: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents
+     Rationale: The trial is completed and not available for enrollment.
+  ❌ NCT01842165: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+     Rationale: The trial is completed and not available for enrollment.
+  ❌ NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+     Rationale: The trial is not recruiting (Active, not recruiting). While the trial results (CABINET) demonstrate efficacy for Cabozantinib in this population and could inform an off-label treatment recommendation, the patient cannot enroll in the trial itself.
+  ❌ NCT01466036: Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+     Rationale: The trial is completed and not available for enrollment.

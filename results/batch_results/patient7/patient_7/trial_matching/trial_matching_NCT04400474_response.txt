@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T10:41:11.662822
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "While the study includes a relevant cohort (Cohort 5) for well-differentiated digestive NETs (G1-G2) that aligns with the patient's diagnosis (ileal NET G2) and clinical setting (post-SSA and PRRT), the criterion for Evidence Quality and Relevance is not met. The provided published results are exclusively focused on the Adrenocortical Carcinoma (ACC) cohort. No efficacy or safety data are provided for the neuroendocrine tumor cohort. Without specific outcomes for the NET population, this study cannot currently provide meaningful evidence to guide therapeutic decision-making for this patient."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:58:41.840184
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 2 study provides meaningful clinical evidence for this patient with a locally advanced, Grade 2 pancreatic NET. Assuming the patient demonstrates SSTR positivity on imaging (a reasonable assumption for G2 NETs per instructions), the study's investigation of 212Pb-DOTAMTATE (Targeted Alpha Therapy) addresses a critical treatment scenario. The published results demonstrate an Objective Response Rate (ORR) of 56.8% in PRRT-naive patients, which is substantially higher than historical controls for standard beta-emitting PRRT (177Lu-DOTATATE). Given the patient's bulky, infiltrative tumor causing life-threatening bleeding, a therapy with a high probability of tumor shrinkage (objective response) is clinically prioritized over stabilization alone. While the patient received upfront chemotherapy due to visceral crisis rather than progressing on somatostatin analogs (a strict trial eligibility criterion), the evidence of superior response rates with alpha-emitters is directly transferable and supports considering this modality to achieve downstaging or effective symptom control in the next line of therapy."
+}

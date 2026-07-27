@@ -1,0 +1,287 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2026-01-05T09:44:59.287870
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Brief Clinical History: 65-year-old woman with a well-differentiated metastatic (hepatic, 
+lymphatic) neuroendocrine tumor of the pancreas (G1, ki-67 2%, SSTR2 positive). The 
+diagnosis was made on the basis of investigations due to abdominal pain and intermittent 
+vomiting, with MRI of the abdomen showing a lesion of the pancreatic head (41x51x35 
+mm) with dilation of the distal pancreatic duct, as well as lesions of the liver in segment 
+VIII (10 mm) and segment VI (5 mm). An endosonography-guided fine needle biopsy 
+revealed evidence of a NET. The subsequent DOTATOC PET/CT showed intense 
+accumulation in the pancreatic lesions, several intense DOTATOC-avid liver lesions, and 
+suspected small lymph node metastasis retroperitoneally paraaortally on the left with 
+intense accumulation and suspicion of one further lymph node metastasis perihepatically 
+adjacent to liver segment III. 
+A CT scan 2 months after initial diagnosis showed a stable lesion in the pancreatic head 
+without infiltration of adjacent vessels. The arterial vessels were well contrasted. The 
+portal vein and superior mesenteric vein with close contact with the pancreatic lesion over 
+a length of 3 cm, without signs of stenosis or thrombosis.  
+Current Clinical Status: ECOG 0 
+Question for Tumorboard:
+Recommended therapy? 
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Profile and Tumor Biology**
+The patient is a 65-year-old woman with an ECOG performance status of 0, presenting with a metastatic neuroendocrine tumor (NET) of the pancreas.
+*   **Classification:** The tumor is well-differentiated and classified as Grade 1 (G1) based on a Ki-67 proliferation index of 2%.
+*   **Functionality:** There is no evidence of a hormonal syndrome provided in the history; thus, the clinical assessment aligns with a nonfunctioning pancreatic NET (NF-Pan-NET).
+*   **Receptor Status:** The tumor is SSTR2 positive, confirmed by immunohistochemistry and intense accumulation on DOTATOC PET/CT.
+
+**Anatomical Extent and Staging**
+*   **Primary Tumor:** A large lesion (41x51x35 mm) is located in the pancreatic head.
+*   **Local Complications:** The mass causes dilation of the distal pancreatic duct, which correlates with the patient's symptoms of abdominal pain and intermittent vomiting.
+*   **Vascular Involvement:** There is close contact with the portal vein and superior mesenteric vein over a length of 3 cm. However, arterial vessels are well contrasted, and there are no signs of venous stenosis or thrombosis. This presentation suggests a locally advanced or borderline resectable primary tumor.
+*   **Metastatic Disease:** The patient has oligometastatic liver disease with two small lesions (Segment VIII: 10 mm; Segment VI: 5 mm) and lymph node involvement (retroperitoneal paraaortic left and perihepatic adjacent to segment III).
+*   **Disease Stability:** A CT scan 2 months post-diagnosis indicates stable disease.
+
+**Guideline-Based Clinical Considerations**
+
+**1. Surgical Considerations:**
+*   **Primary Tumor:** According to ENETS guidelines, surgery is strongly recommended for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation. This patient meets both criteria. The vascular contact (3 cm) requires careful evaluation; however, ENETS guidelines note that radical local resection including portal-venous resection can be performed safely in expert centers.
+*   **Metastatic Context:** ESMO guidelines state that a surgical approach is indicated in selected stage IV patients with exclusive or predominant liver involvement. Given the small size of the liver metastases (10 mm and 5 mm), they may be amenable to resection or ablation. However, the presence of retroperitoneal lymph node metastasis requires evaluation regarding the feasibility of curative (R0) resection.
+
+**2. Systemic and Neoadjuvant Considerations:**
+*   **Somatostatin Analogues (SSAs):** For antiproliferative control, ESMO and ENETS guidelines recommend SSAs (e.g., lanreotide or octreotide) as first-line therapy for SSTR-positive, well-differentiated (G1/G2) NF-Pan-NETs with slow growth (Ki-67 <10%).
+*   **Neoadjuvant Approaches:** ENETS guidelines suggest that preoperative treatment with Peptide Receptor Radionuclide Therapy (PRRT) or chemotherapy may be considered in selected cases of locally advanced or oligometastatic SSTR-positive G1/G2 NF-Pan-NETs to facilitate R0 resection or downstaging.
+*   **Chemotherapy:** While chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is an option for bulky or progressive disease, the patient currently has stable disease on CT.
+
+**3. Functional Imaging and PRRT Eligibility:**
+*   The DOTATOC PET/CT shows "intense accumulation" in pancreatic lesions, liver lesions, and lymph nodes.
+*   **Assessment for PRRT:** While "intense" accumulation suggests high SSTR expression, strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed, this patient is a potential candidate for PRRT, either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.
+
+**Summary of Clinical Status:**
+The patient presents with a symptomatic, G1, SSTR-positive NF-Pan-NET with limited hepatic and nodal metastases. The primary tumor is locally advanced with venous contact but no occlusion. The clinical scenario requires a multidisciplinary decision regarding upfront resection (pancreaticoduodenectomy + liver management) versus neoadjuvant therapy (PRRT or systemic) to improve resectability, given the favorable tumor biology (G1) and high SSTR expression.
+
+Trial Search Recommendations:
+  - ** While "intense" accumulation suggests high SSTR expression
+  - strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed
+  - this patient is a potential candidate for PRRT
+  - either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.
+  - *Summary of Clinical Status:**
+	•	Question for Tumorboard: Recommended therapy? 
+
+### STUDY DATA
+	•	NCT-ID: NCT03375320
+	•	Title: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+	•	Phase: PHASE3, Status: ACTIVE_NOT_RECRUITING
+	•	Intervention: Biospecimen Collection; Cabozantinib S-malate; Computed Tomography; Magnetic Resonance Imaging; Placebo Administration; Quality-of-Life Assessment; X-Ray Imaging
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Documentation of Disease:
+
+  * Histologic Documentation: Well- or moderately-differentiated neuroendocrine tumors of pancreatic and non-pancreatic (i.e. carcinoid) origin by local pathology
+
+    * The pathology report must state ONE of the following: 1) well- or moderately-differentiated neuroendocrine tumor, 2) low- or intermediate-grade neuroendocrine tumor, or 3) carcinoid tumor or atypical carcinoid tumor; documentation of histology from a primary or metastatic site is allowed
+    * Patients with poorly differentiated neuroendocrine carcinoma, high-grade neuroendocrine carcinoma without specification of differentiation status, adenocarcinoid tumor, or goblet cell carcinoid tumor are not eligible. Patients with well-differentiated grade 3 neuroendocrine tumor are eligible
+  * Stage: Locally advanced/unresectable or metastatic disease
+  * Tumor Site: Histological documentation of neuroendocrine tumor of pancreatic, gastrointestinal (GI), lung, thymus, other, or unknown primary site; GI, lung, thymus, other, and unknown primary NETs will enroll in the carcinoid tumor cohort of the study
+
+    * Functional (i.e., associated with symptoms or clinical syndrome related to hormone secretion by tumor) or nonfunctional tumors are allowed
+  * Radiologic Evaluation: Target lesions must have shown evidence of disease progression by Response Evaluation Criteria in Solid Tumors (RECIST) version (v)1.1 criteria in the 12 months prior to registration; the radiologic images, imaging reports, and clinic notes indicating growth of existing lesions, development of new lesions, or treatment changes must be submitted
+* Measurable Disease
+
+  * Patients must have measurable disease per RECIST 1.1 by computer tomography (CT) scan or magnetic resonance imaging (MRI)
+  * Lesions must be accurately measured in at least one dimension (longest diameter to be recorded) as \>= 1 cm with CT or MRI (or \>= 1.5 cm for lymph nodes); non-measurable disease includes disease smaller than these dimensions or lesions considered truly non-measurable including: leptomeningeal disease, ascites, pleural or pericardial effusion, lymphangitic involvement of skin or lung
+* Prior Treatment
+
+  * Patient must have experienced disease progression after receiving or intolerance leading to treatment discontinuation of at least one Food and Drug Administration (FDA)-approved line of therapy (except somatostatin analogs); prior lines of therapy must include one of the following: everolimus, sunitinib, or lutetium Lu 177 dotatate in patients with pancreatic NET; everolimus in patients with lung NET; everolimus or lutetium Lu 177 dotatate in patients with gastrointestinal NET
+  * Prior treatment (except somatostatin analogs) with biologic therapy, immunotherapy, chemotherapy, investigational agent for malignancy, and/or radiation must be completed at least 28 days prior to registration
+  * Prior treatment with somatostatin analogs is allowed, and continuation of treatment with somatostatin analogs while on cabozantinib/placebo is allowed provided that the patient has been on a stable dose for at least two months
+  * Prior systemic treatment with radionuclide therapy must be completed at least 6 weeks prior to registration
+  * Prior treatment with hepatic artery embolization (including bland embolization, chemoembolization, and selective internal radiation therapy) or ablative therapies is allowed if measurable disease remains outside of the treated area or if there is documented disease progression in a treated site; prior liver-directed or other ablative treatment must be completed at least 28 days prior to registration
+  * Prior treatment with cabozantinib is not allowed
+  * Patients should have resolution of any toxic effects of prior therapy (except alopecia and fatigue) to National Cancer Institute (NCI) CTCAE, version 5.0, grade 1 or less
+  * Patients must have completed any major surgery at least 12 weeks prior to registration and any minor surgery (including uncomplicated tooth extractions) at least 28 days prior to registration; complete wound healing from major surgery must have occurred at least 28 days prior to registration, and complete wound healing from minor surgery must have occurred at least 10 days prior to registration
+* Patient History
+
+  * No class III or IV congestive heart failure (CHF) within 6 months of registration
+  * No clinically significant cardiac arrhythmia within 6 months of registration
+  * No unstable angina or myocardial infarction (MI) within 6 months of registration
+  * No thromboembolic events within 6 months of registration (including \[incl.\] stroke, transient ischemic attack \[TIA\], deep vein thrombosis \[DVT\], \& pulmonary embolism \[PE\])
+  * No known history of congenital long QT syndrome
+  * No uncontrolled hypertension within 14 days of registration (defined as systolic blood pressure \[SBP\] \>= 150 mmHg and/or diastolic blood pressure \[DBP\] \>= 90 mmHg despite optimal medical management)
+  * No clinically significant GI bleeding within 6 months of registration
+  * No clinically significant gastrointestinal abnormalities that may increase the risk for gastrointestinal bleeding within 6 months of registration including, but not limited to: active peptic ulcer, known endoluminal metastatic lesion(s) with history of bleeding, inflammatory bowel disease, or other gastrointestinal conditions with increased risk of perforation
+  * No GI perforation within 6 months of registration
+  * No known tumor with invasion into the GI tract from the outside causing increased risk of perforation or bleeding within 28 days of registration
+  * No radiologic or clinical evidence of pancreatitis
+  * No known cavitary lung lesions
+  * No known endobronchial lesions involving the main or lobar bronchi and/or lesions infiltrating major pulmonary vessels that increase the risk of pulmonary hemorrhage; (CT with contrast is recommended to evaluate such lesions)
+  * No hemoptysis greater than 1/2 teaspoon (2.5 mL) or any other signs of pulmonary hemorrhage within the 3 months prior to registration
+  * No known tumor invading or encasing any major blood vessels
+  * No history of non-healing wounds or ulcers within 28 days of registration
+  * No history of fracture within 28 days of registration
+  * No brain metastases or cranial epidural disease unless adequately treated, stable, and off steroid support for at least 4 weeks prior to registration
+  * No known medical condition causing an inability to swallow oral formulations of agents
+  * No history of allergic reaction attributed to compounds of similar chemical or biological composition to cabozantinib/placebo
+  * No "currently active" second malignancy other than non-melanoma skin cancers or cervical carcinoma in situ; patients are not considered to have a "currently active" malignancy if they have completed therapy and are free of disease for \>= 3 years
+* Concomitant Medications
+
+  * Other planned concurrent investigational agents or other tumor directed therapies (chemotherapy, radiation) are not allowed while on this study
+  * Concurrent use of somatostatin analogs while on cabozantinib/placebo is allowed provided that the patient has been on a stable dose for at least two months
+  * Full dose oral anticoagulation/antiplatelet therapy is not permitted; low dose aspirin =\< 81 mg/day is allowed; anticoagulation with therapeutic doses of low molecular weight heparin (LMWH) is allowed in patients who are on a stable dose of LMWH for at least 6 weeks prior to registration; treatment with warfarin is not allowed; anticoagulation in patients with brain metastases is not permitted
+  * Chronic concomitant treatment with strong inhibitors of CYP3A4 is not allowed; patients must discontinue the drug at least 14 days prior to registration on the study
+  * Chronic concomitant treatment with strong CYP3A4 inducers is not allowed; patients must discontinue the drug at least 14 days prior to registration on the study
+* Not pregnant and not nursing
+
+  * Women of childbearing potential must have a negative pregnancy test done =\< 14 days prior to registration
+  * A female of childbearing potential is a sexually mature female who: 1) has not undergone a hysterectomy or bilateral oophorectomy; or 2) has not been naturally postmenopausal for at least 12 consecutive months (i.e. has had menses at any time in the preceding 12 consecutive months)
+* Age \>= 18 years
+* Eastern Cooperative Oncology Group (ECOG) performance status: 0-2
+* Absolute neutrophil count (ANC) \>= 1,500/mm\^3
+* Hemoglobin \>= 9 g/dL
+* Platelet count \>= 100,000/mm\^3
+* Prothrombin time (PT)/ international normalized ratio (INR), partial thromboplastin time (PTT) \< 1.3 x upper limit of normal (ULN)
+* Aspartate aminotransferase (AST)/ alanine aminotransferase (ALT) =\< 3 x ULN
+* Total bilirubin =\< 1.5 x ULN
+
+  * Except in the case of Gilbert disease, in which case total bilirubin must be =\< 3 x ULN
+* Creatinine =\< 1.5 mg/dL OR creatinine clearance \>= 45 mL/min
+* Albumin \>= 2.8 g/dL
+* Potassium within normal limits (WNL)
+
+  * Supplementation is acceptable to achieve a value WNL; in patients with low albumin levels, a corrected calcium value WNL is acceptable; in patients with abnormal thyroid stimulating hormone (TSH), if free T4 is normal and patient is clinically euthyroid, patient is eligible
+* Phosphorus WNL
+
+  * Supplementation is acceptable to achieve a value WNL; in patients with low albumin levels, a corrected calcium value WNL is acceptable; in patients with abnormal TSH, if free T4 is normal and patient is clinically euthyroid, patient is eligible
+* Calcium WNL
+
+  * Supplementation is acceptable to achieve a value WNL; in patients with low albumin levels, a corrected calcium value WNL is acceptable; in patients with abnormal TSH, if free T4 is normal and patient is clinically euthyroid, patient is eligible
+* Magnesium WNL
+
+  * Supplementation is acceptable to achieve a value WNL; in patients with low albumin levels, a corrected calcium value WNL is acceptable; in patients with abnormal TSH, if free T4 is normal and patient is clinically euthyroid, patient is eligible
+* Urine protein to creatinine (UPC) ratio =\< 1
+* QT interval corrected for heart rate using Fridericia's formula (QTcF) =\< 500 msec
+* TSH WNL
+
+  * Supplementation is acceptable to achieve a value WNL; in patients with low albumin levels, a corrected calcium value WNL is acceptable; in patients with abnormal TSH, if free T4 is normal and patient is clinically euthyroid, patient is eligible *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This phase III trial studies cabozantinib to see how well it works compared with placebo in treating patients with neuroendocrine or carcinoid tumors that may have spread from where it first started to nearby tissue, lymph nodes, or distant parts of the body (advanced). Cabozantinib is a chemotherapy drug known as a tyrosine kinase inhibitor, and it targets specific tyrosine kinase receptors, that when blocked, may slow tumor growth.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Online search performed; Found 2 additional publication(s) via online search; Web search details: 2 PubMed publications (2 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/39282913/, pubmed: https://pubmed.ncbi.nlm.nih.gov/33152282/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Kunz PL. Angiogenesis inhibitors in neuroendocrine tumours: finally coming of age. Lancet Oncol. 2020 Nov;21(11):1395-1397. doi: 10.1016/S1470-2045(20)30560-X. No abstract available.
+• Phase 3 Trial of Cabozantinib to Treat Advanced Neuroendocrine Tumors. (PMID: 39282913)
+• Angiogenesis inhibitors in neuroendocrine tumours: finally coming of age. (PMID: 33152282)
+• Efficacyandsafetyof cabozantinib for advanced gastrointestinal (GI) neuroendocrine tumors (NET) after progression on prior therapy: Subgroup analysis of the phase … [Google Scholar]
+• … of cabozantinib for advanced gastrointestinal (GI) neuroendocrine tumors (NET) after progression on prior therapy: Subgroup analysis of the phase 3 CABINETtrial… [Google Scholar]
+• Lenvatinib in patients with advanced grade 1/2 pancreatic and gastrointestinal neuroendocrine tumors: results of the phase II TALENT trial (GETNE1509) [Google Scholar]
+• Health-related quality of life (HRQOL) in the phase 3trialof cabozantinib vs placebo for advanced neuroendocrine tumors (NET) after progression on prior therapy … [Google Scholar]
+• … placebo for advanced neuroendocrine tumors (NET) after progression on prior therapy (CABINETTrial/Alliance A021602): Updatedresultsincluding progression free … [Google Scholar]
+• 1141O Cabozantinib versus placebo for advanced neuroendocrine tumors (NET) after progression on prior therapy (CABINETTrial/Alliance A021602): Updated … [Google Scholar]
+• Cabozantinib Efficacy Leads to Unblinding of Advanced Pancreatic NETsTrial. [Google Scholar]
+• Cabozantinib Improves PFS Vs Placebo in Advanced Neuroenocrine Tumors. [Google Scholar]
+• Assessing thesafetyand activity of cabozantinib combined with lanreotide in gastroenteropancreatic and thoracic neuroendocrine tumors: rationale and protocol of … [Google Scholar]
+• Therapy sequencing in patients with advanced neuroendocrine neoplasms [Google Scholar]
+• LBA53 Alliance A021602: Phase III, double-blinded study of cabozantinib versus placebo for advanced neuroendocrine tumors (NET) after progression on prior … [Google Scholar]
+	•	Key findings from publications: PubMed Abstract: Treatment options for patients with advanced neuroendocrine tumors are limited. The efficacy of cabozantinib in the treatment of previously treated, progressive extrapancreatic or pancreatic neuroendocrine tumors is unclear.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: Treatment options for patients with advanced neuroendocrine tumors are limited. The efficacy of cabozantinib in the treatment of previously treated, progressive extrapancreatic or pancreatic neuroendocrine tumors is unclear. Methods: We enrolled two independent cohorts of patients - those with extrapancreatic neuroendocrine tumors and those with pancreatic neuroendocrine tumors - who had received peptide receptor radionuclide therapy or targeted therapy or both. Patients were randomly assigned in a 2:1 ratio to receive cabozantinib at a dose of 60 mg daily or placebo. The primary end point was progression-free survival as assessed by blinded independent central review. Key secondary end points included objective response, overall survival, and safety. Results: In the cohort of 203 patients with extrapancreatic neuroendocrine tumors, the median progression-free survival with cabozantinib was 8.4 months, as compared with 3.9 months with placebo (stratified hazard ratio for progression or death, 0.38; 95% confidence interval [CI], 0.25 to 0.59; P<0.001). In the cohort of 95 patients with pancreatic neuroendocrine tumors, the median progression-free survival with cabozantinib was 13.8 months, as compared with 4.4 months with placebo (stratified hazard ratio, 0.23; 95% CI, 0.12 to 0.42; P<0.001). The incidence of confirmed objective response with cabozantinib was 5% and 19% among patients with extrapancreatic and pancreatic neuroendocrine tumors, respectively, as compared with 0% with placebo. Grade 3 or higher adverse events were noted in 62 to 65% of the patients treated with cabozantinib, as compared with 23 to 27% of the patients who received placebo. Common treatment-related adverse events of grade 3 or higher included hypertension, fatigue, diarrhea, and thromboembolic events. Conclusions: Cabozantinib, as compared with placebo, significantly improved progression-free survival in patients with previously treated, progressive advanced extrapancreatic or pancreatic neuroendocrine tumors. Adverse events were consistent with the known safety profile of cabozantinib. (Funded by the National Cancer Institute and others; CABINET ClinicalTrials.gov number, NCT03375320 .). Copyright © 2024 Massachusetts Medical Society. PubMed Disclaimer Figures Figure 1.. Progression-free Survival by Blinded Independent… Figure 1.. Progression-free Survival by Blinded Independent Central Review and Overall Survival of Patients Enrolled… Figure 1.. Progression-free Survival by Blinded Independent Central Review and Overall Survival of Patients Enrolled in the Extra-pancreatic NET Cohort Panel A demonstrates the results of progression-free survival (PFS), as assessed retrospectively per RECIST 1.1 criteria by blinded independent central review (BICR), for patients enrolled in the epNET cohort. For the comparison between treatment groups, two-sided stratified log-rank P-value <0.001. Panel B demonstrates the results of overall survival of patients enrolled in the epNET cohort. Panel C demonstrates the results of PFS according to stratification factors and selected clinical subgroups of patients enrolled in the epNET cohort. For the Tumor Grade subgroup analysis, the “Unknown” subgroup is not displayed in the figure due to having zero PFS events in at least one treatment arm. Figure 1.. Progression-free Survival by Blinded Independent… Figure 1.. Progression-free Survival by Blinded Independent Central Review and Overall Survival of Patients Enrolled… Figure 1.. Progression-free Survival by Blinded Independent Central Review and Overall Survival of Patients Enrolled in the Extra-pancreatic NET Cohort Panel A demonstrates the results of progression-free survival (PFS), as assessed retrospectively per RECIST 1.1 criteria by blinded independent central review (BICR), for patients enrolled in the epNET cohort. For the comparison between treatment groups, two-sided stratified log-rank P-value <0.001. Panel B demonstrates the results of overall survival of patients enrolled in the epNET cohort. Panel C demonstrates the results of PFS according to stratification factors and selected clinical subgroups of patients enrolled in the epNET cohort. For the Tumor Grade subgroup analysis, the “Unknown” subgroup is not displayed in the figure due to having zero PFS events in at least one treatment arm. Figure 1.. Progression-free Survival by Blinded Independent… Figure 1.. Progression-free Survival by Blinded Independent Central Review and Overall Survival of Patients Enrolled… Figure 1.. Progression-free Survival by Blinded Independent Central Review and Overall Survival of Patients Enrolled in the Extra-pancreatic NET Cohort Panel A demonstrates the results of progression-free survival (PFS), as assessed retrospectively per RECIST 1.1 criteria by blinded independent central review (BICR), for patients enrolled in the epNET cohort. For the comparison between treatment groups, two-sided stratified log-rank P-value <0.001. Panel B demonstrates the results of overall survival of patients enrolled in the epNET cohort. Panel C demonstrates the results of PFS according to stratification factors and selected clinical subgroups of patients enrolled in the epNET cohort. For the Tumor Grade subgroup analysis, the “Unknown” subgroup is not displayed in the figure due to having zero PFS events in at least one treatment arm. Figure 2:. Progression-free Survival According to Blinded… Figure 2:. Progression-free Survival According to Blinded Independent Central Review and Overall Survival of Patients… Figure 2:. Progression-free Survival According to Blinded Independent Central Review and Overall Survival of Patients Enrolled in the Pancreatic NET Cohort Panel A demonstrates the results of progression-free survival (PFS), as assessed retrospectively per RECIST 1.1 criteria by blinded independent central review (BICR), for patients enrolled in the pNET cohort. For the comparison between treatment groups, two-sided stratified log-rank P-value <0.001. Panel B demonstrates the results of overall survival of patients enrolled in the pNET cohort. Panel C demonstrates the results of PFS according to stratification factors and selected clinical subgroups of patients enrolled in the pNET cohort. For the Histologic Differentiation subgroup analysis, “Moderately differentiated” and “Not specified” subgroups are not displayed in the figure due to having zero PFS events in at least one treatment arm. Figure 2:. Progression-free Survival According to Blinded… Figure 2:. Progression-free Survival According to Blinded Independent Central Review and Overall Survival of Patients… Figure 2:. Progression-free Survival According to Blinded Independent Central Review and Overall Survival of Patients Enrolled in the Pancreatic NET Cohort Panel A demonstrates the results of progression-free survival (PFS), as assessed retrospectively per RECIST 1.1 criteria by blinded independent central review (BICR), for patients enrolled in the pNET cohort. For the comparison between treatment groups, two-sided stratified log-rank P-value <0.001. Panel B demonstrates the results of overall survival of patients enrolled in the pNET cohort. Panel C demonstrates the results of PFS according to stratification factors and selected clinical subgroups of patients enrolled in the pNET cohort. For the Histologic Differentiation subgroup analysis, “Moderately differentiated” and “Not specified” subgroups are not displayed in the figure due to having zero PFS events in at least one treatment arm. Figure 2:. Progression-free Survival According to Blinded… Figure 2:. Progression-free Survival According to Blinded Independent Central Review and Overall Survival of Patients… Figure 2:. Progression-free Survival According to Blinded Independent Central Review and Overall Survival of Patients Enrolled in the Pancreatic NET Cohort Panel A demonstrates the results of progression-free survival (PFS), as assessed retrospectively per RECIST 1.1 criteria by blinded independent central review (BICR), for patients enrolled in the pNET cohort. For the comparison between treatment groups, two-sided stratified log-rank P-value <0.001. Panel B demonstrates the results of overall survival of patients enrolled in the pNET cohort. Panel C demonstrates the results of PFS according to stratification factors and selected clinical subgroups of patients enrolled in the pNET cohort. For the Histologic Differentiation subgroup analysis, “Moderately differentiated” and “Not specified” subgroups are not displayed in the figure due to having zero PFS events in at least one treatment arm. See this image and copyright information in PMC Comment in Cabozantinib in Advanced Neuroendocrine Tumors. Tsilimigras DI. Tsilimigras DI. N Engl J Med. 2025 May 8;392(18):1869. doi: 10.1056/NEJMc2503524. N Engl J Med. 2025. PMID: 40334169 No abstract available. Cabozantinib in Advanced Neuroendocrine Tumors. Reply. Chan JA, Geyer S, Meyerhardt JA. Chan JA, et al. N Engl J Med. 2025 May 8;392(18):1869-1870. doi: 10.1056/NEJMc2503524. N Engl J Med. 2025. PMID: 40334170 No abstract available. Similar articles Sunitinib malate for the treatment of pancreatic neuroendocrine tumors. Raymond E, Dahan L, Raoul JL, Bang YJ, Borbath I, Lombard-Bohas C, Valle J, Metrakos P, Smith D, Vinik A, Chen JS, Hörsch D, Hammel P, Wiedenmann B, Van Cutsem E, Patyna S, Lu DR, Blanckmeister C, Chao R, Ruszniewski P. Raymond E, et al. N Engl J Med. 2011 Feb 10;364(6):501-13. doi: 10.1056/NEJMoa1003825. N Engl J Med. 2011. PMID: 21306237 Clinical Trial. Cabozantinib in Patients with Advanced and Progressing Hepatocellular Carcinoma. Abou-Alfa GK, Meyer T, Cheng AL, El-Khoueiry AB, Rimassa L, Ryoo BY, Cicin I, Merle P, Chen Y, Park JW, Blanc JF, Bolondi L, Klümpen HJ, Chan SL, Zagonel V, Pressiani T, Ryu MH, Venook AP, Hessel C, Borgman-Hagey AE, Schwab G, Kelley RK. Abou-Alfa GK, et al. N Engl J Med. 2018 Jul 5;379(1):54-63. doi: 10.1056/NEJMoa1717002. N Engl J Med. 2018. PMID: 29972759 Free PMC article. Clinical Trial. Everolimus for advanced pancreatic neuroendocrine tumors. Yao JC, Shah MH, Ito T, Bohas CL, Wolin EM, Van Cutsem E, Hobday TJ, Okusaka T, Capdevila J, de Vries EG, Tomassetti P, Pavel ME, Hoosen S, Haas T, Lincy J, Lebwohl D, Öberg K; RAD001 in Advanced Neuroendocrine Tumors, Third Trial (RADIANT-3) Study Group. Yao JC, et al. N Engl J Med. 2011 Feb 10;364(6):514-23. doi: 10.1056/NEJMoa1009290. N Engl J Med. 2011. PMID: 21306238 Free PMC article. Clinical Trial. Cabozantinib in the Treatment of Neuroendocrine Neoplasms: Insights across Different Tumor Origins. Vitale G, Rybinska I, Arrivi G, Marotta V, Di Iasi G, Filice A, Nardi C, Colao A, Faggiano A; NIKE Group. Vitale G, et al. Neuroendocrinology. 2025;115(5):460-479. doi: 10.1159/000543953. Epub 2025 Feb 4. Neuroendocrinology. 2025. PMID: 39904331 Review. Newly emerging tyrosine kinase inhibitors for the treatment of neuroendocrine neoplasms. Fazio N, La Salvia A. Fazio N, et al. Expert Opin Emerg Drugs. 2025 Jun;30(2):149-157. doi: 10.1080/14728214.2025.2508994. Epub 2025 Jun 1. Expert Opin Emerg Drugs. 2025. PMID: 40439196 Review. See all similar articles Cited by Select updates from ASCO and ESMO 2024 for gastrointestinal cancer care. Jang T, Kim GP, George TJ. Jang T, et al. Oncologist. 2025 Feb 6;30(2):oyaf020. doi: 10.1093/oncolo/oyaf020. Oncologist. 2025. PMID: 39998903 Free PMC article. Review. Treatment of Pancreatic Neuroendocrine Tumors: Beyond Traditional Surgery and Targeted Therapy. Bidani K, Marinovic AG, Moond V, Harne P, Broder A, Thosani N. Bidani K, et al. J Clin Med. 2025 May 13;14(10):3389. doi: 10.3390/jcm14103389. J Clin Med. 2025. PMID: 40429384 Free PMC article. Review. Eastern Canadian Gastrointestinal Cancer Consensus Conference 2024. Leigh J, Ahmed A, Aubin F, Berry S, Boucher M, Campeau MP, Colwell B, Connors S, Corbett J, Dadwal S, Dudani S, Elimova E, Falkson C, Galvis L, Goel R, Gotfrit J, Hyde A, Febbraro M, Laidley DT, Locke G, Mahmud A, Baccili Cury Megid T, Michael J, Nair VJ, Quigley S, Ramjeesingh R, Samimi S, Seal M, Snow S, Spadafora S, Stuckless T, Wilson B, Asmis T, Goodwin R, Vickers M. Leigh J, et al. Curr Oncol. 2025 Mar 18;32(3):175. doi: 10.3390/curroncol32030175. Curr Oncol. 2025. PMID: 40136379 Free PMC article. CABINET presents cabozantinib as a new treatment option for NETs. Killock D. Killock D. Nat Rev Clin Oncol. 2024 Nov;21(11):766. doi: 10.1038/s41571-024-00949-0. Nat Rev Clin Oncol. 2024. PMID: 39317817 No abstract available. Delta-like ligand 3 expression and functional imaging in gastroenteropancreatic neuroendocrine neoplasms. Thummalapalli R, Tendler S, Chou JF, Tarcan ZC, Porfido C, Willner J, Linkov I, Bhanot U, Cooper AJ, Xu J, Harding JJ, Rekhtman N, Tang LH, Rudin CM, Janjigian YY, Schöder H, Porier JT, Shia J, Basturk O, Reidy-Lagunes D, Capanu M, Lewis JS, Bodei L, Dunphy MP, Raj N. Thummalapalli R, et al. medRxiv [Preprint]. 2025 Jun 25:2025.06.24.25330227. doi: 10.1101/2025.06.24.25330227. medRxiv. 2025. PMID: 40666328 Free PMC article. Preprint. See all "Cited by" articles References Dasari A, Shen C, Halperin D, et al. Trends in the Incidence, Prevalence, and Survival Outcomes in Patients With Neuroendocrine Tumors in the United States. JAMA Oncol 2017;3(10):1335–1342. DOI: 10.1001/jamaoncol.2017.0589. - DOI - PMC - PubMed Caplin ME, Pavel M, Ćwikła JB, et al. Lanreotide in metastatic enteropancreatic neuroendocrine tumors. N Engl J Med 2014;371(3):224–33. (In eng). DOI: 10.1056/NEJMoa1316158. - DOI - PubMed Rinke A, Müller HH, Schade-Brittinger C, et al. Placebo-controlled, double-blind, prospective, randomized study on the effect of octreotide LAR in the control of tumor growth in patients with metastatic neuroendocrine midgut tumors: a report from the PROMID Study Group. J Clin Oncol 2009;27(28):4656–63. (In eng). DOI: 10.1200/jco.2009.22.8510. - DOI - PubMed Strosberg J, El-Haddad G, Wolin E, et al. Phase 3 Trial of (177)Lu-Dotatate for Midgut Neuroendocrine Tumors. N Engl J Med 2017;376(2):125–135. (In eng). DOI: 10.1056/NEJMoa1607427. - DOI - PMC - PubMed Brabander T, van der Zwan WA, Teunissen JJM, et al. Long-Term Efficacy, Survival, and Safety of [(177)Lu-DOTA(0),Tyr(3)]octreotate in Patients with Gastroenteropancreatic and Bronchial Neuroendocrine Tumors. Clin Cancer Res 2017;23(16):4617–4624. (In eng). DOI: 10.1158/1078-0432.Ccr-16-2743. - DOI - PubMed Show all 31 references Publication types Randomized Controlled Trial Actions Search in PubMed Search in MeSH Add to Search Clinical Trial, Phase III Actions Search in PubMed Search in MeSH Add to Search Multicenter Study Actions Search in PubMed Search in MeSH Add to Search MeSH terms Adult Actions Search in PubMed Search in MeSH Add to Search Aged Actions Search in PubMed Search in MeSH Add to Search Aged, 80 and over Actions Search in PubMed Search in MeSH Add to Search Anilides Actions Search in PubMed Search in MeSH Add to Search Antineoplastic Agents* / administration & dosage Actions Search in PubMed Search in MeSH Add to Search Antineoplastic Agents* / adverse effects Actions Search in PubMed Search in MeSH Add to Search Diarrhea / chemically induced Actions Search in PubMed Search in MeSH Add to Search Diarrhea / epidemiology Actions Search in PubMed Search in MeSH Add to Search Double-Blind Method Actions Search in PubMed Search in MeSH Add to Search Fatigue / chemically induced Actions Search in PubMed Search in MeSH Add to Search Fatigue / epidemiology Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Hypertension / chemically induced Actions Search in PubMed Search in MeSH Add to Search Hypertension / epidemiology Actions Search in PubMed Search in MeSH Add to Search Kaplan-Meier Estimate Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Neoplasm Grading Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / diagnosis Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / mortality Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / radiotherapy Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms* / diagnosis Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms* / mortality Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms* / radiotherapy Actions Search in PubMed Search in MeSH Add to Search Progression-Free Survival Actions Search in PubMed Search in MeSH Add to Search Pyridines Actions Search in PubMed Search in MeSH Add to Search Thromboembolism / chemically induced Actions Search in PubMed Search in MeSH Add to Search Thromboembolism / epidemiology Actions Search in PubMed Search in MeSH Add to Search Treatment Outcome Actions Search in PubMed Search in MeSH Add to Search Tyrosine Kinase Inhibitors* / administration & dosage Actions Search in PubMed Search in MeSH Add to Search Tyrosine Kinase Inhibitors* / adverse effects Actions Search in PubMed Search in MeSH Add to Search Substances Antineoplastic Agents Actions Search in PubMed Search in MeSH Add to Search cabozantinib Actions Search in PubMed Search in MeSH Add to Search Tyrosine Kinase Inhibitors Actions Search in PubMed Search in MeSH Add to Search Anilides Actions Search in PubMed Search in MeSH Add to Search Pyridines Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT03375320 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen PubChem Compound (MeSH Keyword) Grants and funding UG1 CA233329/CA/NCI NIH HHS/United States U10 CA180821/CA/NCI NIH HHS/United States U10CA180820/CA/NCI NIH HHS/United States U10CA180821 and U10CA180882/CA/NCI NIH HHS/United States UG1CA233329, UG1CA233331/CA/NCI NIH HHS/United States U10 CA180882/CA/NCI NIH HHS/United States U10 CA180820/CA/NCI NIH HHS/United States U10 CA180888/CA/NCI NIH HHS/United States U10 CA180868/CA/NCI NIH HHS/United States U10CA180888/CA/NCI NIH HHS/United States UG1 CA233290/CA/NCI NIH HHS/United States UG1 CA233331/CA/NCI NIH HHS/United States UG1 CA189804/CA/NCI NIH HHS/United States UG1 CA189856/CA/NCI NIH HHS/United States UG1 CA232760/CA/NCI NIH HHS/United States U10CA180868/CA/NCI NIH HHS/United States UG1 CA233180/CA/NCI NIH HHS/United States UG1CA189856, UG1CA232760, UG1CA233180, UG1CA233290/CA/NCI NIH HHS/United States Show all 18 grants LinkOut - more resources Full Text Sources Atypon Ovid Technologies, Inc. PubMed Central Medical ClinicalTrials.gov MedlinePlus Health Information
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID No abstract available PubMed Disclaimer Similar articles The role of angiogenesis in neuroendocrine tumors. Lyons J 3rd, Anthony CT, Woltering EA. Lyons J 3rd, et al. Endocrinol Metab Clin North Am. 2010 Dec;39(4):839-52. doi: 10.1016/j.ecl.2010.08.006. Endocrinol Metab Clin North Am. 2010. PMID: 21095549 Review. Sprouting strategies and dead ends in anti-angiogenic targeting of NETs. Carrasco P, Zuazo-Gaztelu I, Casanovas O. Carrasco P, et al. J Mol Endocrinol. 2017 Jul;59(1):R77-R91. doi: 10.1530/JME-17-0029. Epub 2017 May 3. J Mol Endocrinol. 2017. PMID: 28469004 Review. [Angiogenesis]. L'Allemain G, Soria JC. L'Allemain G, et al. Bull Cancer. 2007 Jul;94 Spec No:S159. Bull Cancer. 2007. PMID: 17845999 French. No abstract available. Angiogenesis -- SMi conference. Foley P. Foley P. IDrugs. 2004 Jun;7(6):551-3. IDrugs. 2004. PMID: 15197658 No abstract available. Autophagy Inhibition Improves Sunitinib Efficacy in Pancreatic Neuroendocrine Tumors via a Lysosome-dependent Mechanism. Wiedmer T, Blank A, Pantasis S, Normand L, Bill R, Krebs P, Tschan MP, Marinoni I, Perren A. Wiedmer T, et al. Mol Cancer Ther. 2017 Nov;16(11):2502-2515. doi: 10.1158/1535-7163.MCT-17-0136. Epub 2017 Jul 20. Mol Cancer Ther. 2017. PMID: 28729403 See all similar articles Cited by Molecular Imaging of Tumor Progression and Angiogenesis by Dual Bioluminescence. Liu Y, Huang Z, Li Z. Liu Y, et al. Methods Mol Biol. 2022;2524:457-469. doi: 10.1007/978-1-0716-2453-1_34. Methods Mol Biol. 2022. PMID: 35821492 Comparison of Linear vs. Cyclic RGD Pentapeptide Interactions with Integrin α v β 3 by Molecular Dynamics Simulations. Li N, Qiu S, Fang Y, Wu J, Li Q. Li N, et al. Biology (Basel). 2021 Jul 20;10(7):688. doi: 10.3390/biology10070688. Biology (Basel). 2021. PMID: 34356543 Free PMC article. MeSH terms Angiogenesis Inhibitors / therapeutic use* Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Neovascularization, Pathologic / genetics* Actions Search in PubMed Search in MeSH Add to Search Neovascularization, Pathologic / pathology Actions Search in PubMed Search in MeSH Add to Search Neovascularization, Pathologic / therapy Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / epidemiology Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / genetics Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / pathology Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / therapy* Actions Search in PubMed Search in MeSH Add to Search Substances Angiogenesis Inhibitors Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT01744249 Actions Search in PubMed Search in ClinicalTrials.gov ClinicalTrials.gov/NCT03375320 Actions Search in PubMed Search in ClinicalTrials.gov LinkOut - more resources Full Text Sources ClinicalKey Elsevier Science Medical ClinicalTrials.gov
+
+Google Scholar Abstract (Efficacyandsafetyof cabozantinib for advanced gastrointestinal (GI) neuroendocrine tumors (NET) after progression on prior therapy: Subgroup analysis of the phase …): 666 Background: In the phase 3 CABINET trial (NCT03375320), cabozantinib (CABO)significantly prolonged median progression-free survival (PFS) compared to placebo (PB) in …
+
+Google Scholar Abstract (… of cabozantinib for advanced gastrointestinal (GI) neuroendocrine tumors (NET) after progression on prior therapy: Subgroup analysis of the phase 3 CABINETtrial…): 666 Background: In the phase 3 CABINETtrial(NCT03375320), cabozantinib (CABO)significantly prolonged median progression-free survival (PFS) compared to placebo (PB) in …
+
+Google Scholar Abstract (Lenvatinib in patients with advanced grade 1/2 pancreatic and gastrointestinal neuroendocrine tumors: results of the phase II TALENT trial (GETNE1509)): … NETs (ClinicalTrials.gov identifier:NCT03375320) is ongoing. Finally, positive results for …In terms ofsafetyoutcomes with lenvatinib, our findings are consistent with previous reports. …
+
+Google Scholar Abstract (Health-related quality of life (HRQOL) in the phase 3trialof cabozantinib vs placebo for advanced neuroendocrine tumors (NET) after progression on prior therapy …): …trial(NCT03375320). Here we present HRQOL data from CABINET. Methods: Pts withpreviously treated unresectable, locally advanced or metastatic epNET or pNET were randomized …
+
+Google Scholar Abstract (… placebo for advanced neuroendocrine tumors (NET) after progression on prior therapy (CABINETTrial/Alliance A021602): Updatedresultsincluding progression free …): … phase 3trialincluding previously treated patients (pts) with advanced NET (NCT03375320).Thestudywas stopped early and unblinded per DSMB recommendations based on interim …
+
+Google Scholar Abstract (1141O Cabozantinib versus placebo for advanced neuroendocrine tumors (NET) after progression on prior therapy (CABINETTrial/Alliance A021602): Updated …): … placebo (PB) in a phase 3trialincluding previously treated patients (pts) with advanced NET(NCT03375320). Thestudywas stopped early and unblinded per DSMB recommendations …
+
+Google Scholar Abstract (Cabozantinib Efficacy Leads to Unblinding of Advanced Pancreatic NETsTrial.): … Investigators will unblind and suspend the phase 3 CABINETtrial(NCT03375320) aftertreatment with cabozantinib (Cabometyx) produced a considerable improvement in efficacy …
+
+Google Scholar Abstract (Cabozantinib Improves PFS Vs Placebo in Advanced Neuroenocrine Tumors.): … following prior therapy, according to results from the phase 3 CABINETtrial(NCT03375320)presented at the 2023 European Society forMedicalOncology Congress (ESMO). …
+
+Google Scholar Abstract (Assessing thesafetyand activity of cabozantinib combined with lanreotide in gastroenteropancreatic and thoracic neuroendocrine tumors: rationale and protocol of …): … and this agent is currently being investigated in patients with advanced NETsprogressing on prior therapy in the phase III randomized placebo-controlled CABINET trial (NCT03375320)…
+
+Google Scholar Abstract (Therapy sequencing in patients with advanced neuroendocrine neoplasms): … The ongoing phase III CABINET trial (ClinicalTrials.gov identifier:NCT03375320) comparescabozantinib 60 mg once daily with placebo in patients with GEP NENs previously treated …
+
+Google Scholar Abstract (LBA53 Alliance A021602: Phase III, double-blinded study of cabozantinib versus placebo for advanced neuroendocrine tumors (NET) after progression on prior …): …Efficacyanalyses in both cohorts noted significantly improved PFS for pts receiving CABOvs placebo (Table). No newsafetysignals were noted. DSMB voted to terminate accrual and …
+	•	Additional evidence from online sources: Primary outcome: Progression-free Survival (PFS)
+Secondary outcomes: Overall Survival (OS); Number of Patients Experiencing Grade 3+ Adverse Events (AEs) Graded According to the Common Terminology Criteria for Adverse Events (CTCAE) and Patient-Reported Outcomes Version of the Common Terminology Criteria for Adverse Events (PRO-CTCAE); Radiographic Response Rate
+Web search summary: 2 PubMed publications (2 scraped)
+Sources checked: {'pubmed': {'count': 2, 'items': [{'title': 'Phase 3 Trial of Cabozantinib to Treat Advanced Neuroendocrine Tumors.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/39282913/', 'pmid': '39282913', 'content_scraped': True, 'content_length': 19049}, {'title': 'Angiogenesis inhibitors in neuroendocrine tumours: finally coming of age.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/33152282/', 'pmid': '33152282', 'content_scraped': True, 'content_length': 3063}], 'scraped': 2}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/39282913/, pubmed: https://pubmed.ncbi.nlm.nih.gov/33152282/
+Analysis notes: Found 1 listed publication(s); Online search performed; Found 2 additional publication(s) via online search; Web search details: 2 PubMed publications (2 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

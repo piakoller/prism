@@ -1,0 +1,42 @@
+=== THERAPY RECOMMENDATION RAW RESPONSE ===
+Timestamp: 2026-01-05T10:23:27.394944
+Patient ID: 16
+Model: google/gemini-3-pro-preview
+==================================================
+
+Based on the patient's clinical presentation and the provided evidence, here is the therapy recommendation.
+
+<therapy_recommendation>
+**Primary Recommendation: Upfront Curative-Intent Surgical Resection**
+Given the patient's ECOG 0 status, the presence of a symptomatic Grade 1 (G1) neuroendocrine tumor (vomiting, abdominal pain, duct dilation), and resectable oligometastatic disease, the recommended primary therapy is **surgical resection** performed at an expert center. The surgical plan should include:
+1.  **Pancreaticoduodenectomy (Whipple procedure)** with regional lymphadenectomy to remove the primary pancreatic head lesion (41x51x35 mm) and involved retroperitoneal/perihepatic lymph nodes.
+2.  **Concurrent management of liver metastases** (Segment VIII and VI) via parenchymal-sparing resection or intraoperative radiofrequency ablation (RFA), as the lesions are small (10 mm and 5 mm).
+
+**Concurrent Systemic Therapy: Somatostatin Analogues (SSA)**
+Initiate **Lanreotide** (e.g., 120 mg deep s.c. every 4 weeks) or **Octreotide LAR** (e.g., 30 mg i.m. every 4 weeks) for antiproliferative control.
+*   **Evidence:** **NCT02730104** (Community-based NET Research Study) supports the real-world effectiveness and safety of Lanreotide in GEP-NETs.
+
+**Symptom Management**
+Immediate management of the mechanical obstruction causing vomiting is required. If surgery is not performed immediately, endoscopic stenting of the pancreatic/biliary duct should be considered to relieve symptoms.
+
+**Alternative/Adjuvant Consideration: Peptide Receptor Radionuclide Therapy (PRRT)**
+If intraoperative findings preclude R0 resection, or if the patient is deemed unresectable upon further surgical review, **PRRT with 177Lu-DOTATATE/Edotreotide** is the recommended second-line option given the intense SSTR uptake.
+*   **Evidence:** **NCT02754297** (Personalized PRRT) and **NCT01842165** (Prediction Using Multimodality Imaging).
+*   *Protocol Note:* If PRRT is initiated, long-acting SSAs must be paused for at least 4 weeks prior to each cycle.
+</therapy_recommendation>
+
+<rationale>
+**Surgical Justification:**
+*   **Guideline Alignment:** ENETS Guidelines (Guideline 1) strongly recommend surgery for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation. This patient meets both criteria (41 mm tumor, distal duct dilation).
+*   **Symptom Resolution:** The patient suffers from intermittent vomiting and abdominal pain, likely due to the mass effect and duct dilation. Surgical resection provides the most reliable resolution for these mechanical symptoms.
+*   **Feasibility:** Although there is vascular contact (3 cm with PV/SMV), the assessment notes no stenosis or thrombosis, and ENETS guidelines confirm that radical resection with vascular reconstruction is safe in expert centers.
+*   **Metastatic Context:** ESMO Guidelines (Guideline 2) indicate that surgery is appropriate for stage IV patients with exclusive or predominant liver involvement. The liver metastases are small (oligometastatic) and amenable to local ablation or resection.
+*   **Tumor Biology:** The tumor is Grade 1 (Ki-67 2%). Well-differentiated G1 tumors typically have lower response rates to cytotoxic chemotherapy and may shrink less rapidly with neoadjuvant therapies compared to higher-grade tumors, making upfront mechanical removal the preferred curative strategy.
+
+**Systemic Therapy Rationale:**
+*   **Somatostatin Analogues:** SSAs are the standard first-line antiproliferative therapy for SSTR-positive, well-differentiated G1/G2 Pan-NETs (ENETS/ESMO Guidelines). **NCT02730104** provides prospective observational evidence confirming the safety and effectiveness of Lanreotide in this setting. **NCT03289741** suggests patient experience is comparable between Octreotide and Lanreotide, allowing for either choice.
+
+**PRRT Positioning:**
+*   While the patient has high SSTR uptake (confirmed by **NCT01842165** as a predictor of response), PRRT is positioned here as an alternative or future option rather than neoadjuvant because the patient is currently a candidate for curative surgery.
+*   However, should the disease prove unresectable, **NCT02754297** (P-PRRT trial) provides relevant evidence for Pan-NETs. The publication associated with this trial (Del Prete et al., 2019) reported that a high proportion of patients with pancreatic NETs achieved partial or minor responses with personalized dosimetry, supporting its utility if downstaging becomes necessary. **NCT03049189** (COMPETE) further supports PRRT over targeted agents like everolimus for SSTR+ disease.
+</rationale>

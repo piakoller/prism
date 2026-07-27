@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:45:09.691481
+Trial: 78/86
+NCT ID: NCT01253161
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient's treatment because it evaluates Pasireotide LAR exclusively in a **treatment-naïve, first-line setting**, explicitly excluding patients with prior systemic therapy or somatostatin analog (SSA) use. The patient is heavily pre-treated, having already progressed on a standard SSA (lanreotide), as well as sunitinib and belzutifan. Clinical evidence of efficacy in treatment-naïve patients is not transferable to a refractory, fourth-line setting, particularly for cytostatic agents where cross-resistance or lack of potency in advanced disease is a major concern. Furthermore, the study reported a high rate of hyperglycemia (79%), making it an unattractive experimental salvage option compared to standard alternatives like PRRT or chemotherapy (e.g., capecitabine/temozolomide) which are indicated for this patient's progressive G2 Pan-NET."
+}

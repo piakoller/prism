@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T11:50:17.861347
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence to inform therapy recommendations. The primary reason is the failure to meet the \"Evidence Quality and Relevance\" criterion, as there are no published results with efficacy or safety data. While the study's focus on PRRT for SSTR-positive tumors aligns with the patient's disease biology (metastatic, SSTR-positive G2 PNET), and the treatment context is applicable for a future line of therapy, the provided information explicitly states \"No publications with results found.\" The available abstracts only mention the trial's existence and design without presenting any outcomes. Without data on response rates, progression-free survival, or toxicity, it is impossible to assess the clinical value of 90Y-DOTATOC for this patient. Therefore, the study offers no actionable insights that could guide treatment decisions in any clinical scenario."
+}
+```

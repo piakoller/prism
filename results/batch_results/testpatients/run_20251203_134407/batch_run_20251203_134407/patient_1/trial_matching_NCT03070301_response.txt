@@ -1,0 +1,7 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:29:00.069795
+Trial: 64/86
+NCT ID: NCT03070301
+Model: google/gemini-3-pro-preview
+==================================================
+

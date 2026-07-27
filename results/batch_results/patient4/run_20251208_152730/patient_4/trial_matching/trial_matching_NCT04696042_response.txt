@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:42:59.667891
+Trial: 25/86
+NCT ID: NCT04696042
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context/Clinical Applicability. This observational study evaluates Lanreotide Autogel in Asian patients with GEP-NETs who are largely SSA-naïve (exclusion criteria prohibits prior SSA use). The patient is heavily pre-treated, having initiated Octreotide in 2013 and subsequently progressed through multiple lines of therapy including PRRT and two tyrosine kinase inhibitors (Surufatinib, Sunitinib). Evidence regarding the efficacy of standard-dose Lanreotide in an early-line, SSA-naïve population does not provide actionable insights for a patient with documented resistance to the SSA class and late-stage refractory disease. Clinical management in this scenario requires data on salvage therapies (e.g., chemotherapy, novel trials, or locoregional options) rather than a re-challenge with a standard-dose analogue she failed over a decade ago."
+}

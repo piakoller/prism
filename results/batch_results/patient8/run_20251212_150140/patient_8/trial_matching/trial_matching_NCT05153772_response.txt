@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:14:00.778909
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant because it evaluates Targeted Alpha Therapy (212Pb-DOTAMTATE) in patients with SSTR-positive GEP-NETs, specifically including a cohort for those who have previously received standard Beta-PRRT (Lu-177). While the patient is currently responding to Lu-177 PRRT (Partial Response) and is being considered for cytoreductive surgery, she has Stage IV disease (pM1) and will likely face disease progression requiring further systemic therapy in the future. The study provides meaningful clinical evidence of efficacy (ORR ~55%) in the post-PRRT setting, which is superior to historical controls and identifies a viable salvage therapy option. This evidence is crucial for long-term treatment planning for a young patient (39 years old) who will eventually exhaust standard lines of therapy. Although she does not currently meet the inclusion criterion of 'progression' (due to current response) and is being evaluated for surgery (exclusion criterion if curative), the study's insights are biologically aligned and clinically applicable for the inevitable scenario of PRRT refractoriness or recurrence post-surgery."
+}
+```

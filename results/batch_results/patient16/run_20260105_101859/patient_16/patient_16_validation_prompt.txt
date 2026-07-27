@@ -1,0 +1,170 @@
+=== RECOMMENDATION VALIDATION PROMPT ===
+Timestamp: 2026-01-05T10:23:27.522809
+Patient ID: 16
+Model: google/gemini-3-pro-preview
+==================================================
+
+You are a clinical validation expert reviewing a therapy recommendation for quality assurance.
+
+Your task is to CRITICALLY EVALUATE whether the therapy recommendation is:
+1. COMPLETE - addresses all clinical needs identified in the patient assessment
+2. ACCURATE - correctly cites and interprets evidence from trials and guidelines  
+3. CONSISTENT - doesn't contradict itself or the patient assessment
+4. SAFE - considers contraindications and patient-specific risk factors
+5. ACTIONABLE - provides clear next steps
+
+**IMPORTANT**: Be thorough and critical. If you find ANY issues that could compromise patient care, you must flag them.
+
+=== PATIENT ASSESSMENT SUMMARY ===
+=== DETAILED CLINICAL ASSESSMENT ===
+
+**Patient Profile and Tumor Biology**
+The patient is a 65-year-old woman with an ECOG performance status of 0, presenting with a metastatic neuroendocrine tumor (NET) of the pancreas.
+*   **Classification:** The tumor is well-differentiated and classified as Grade 1 (G1) based on a Ki-67 proliferation index of 2%.
+*   **Functionality:** There is no evidence of a hormonal syndrome provided in the history; thus, the clinical assessment aligns with a nonfunctioning pancreatic NET (NF-Pan-NET).
+*   **Receptor Status:** The tumor is SSTR2 positive, confirmed by immunohistochemistry and intense accumulation on DOTATOC PET/CT.
+
+**Anatomical Extent and Staging**
+*   **Primary Tumor:** A large lesion (41x51x35 mm) is located in the pancreatic head.
+*   **Local Complications:** The mass causes dilation of the distal pancreatic duct, which correlates with the patient's symptoms of abdominal pain and intermittent vomiting.
+*   **Vascular Involvement:** There is close contact with the portal vein and superior mesenteric vein over a length of 3 cm. However, arterial vessels are well contrasted, and there are no signs of venous stenosis or thrombosis. This presentation suggests a locally advanced or borderline resectable primary tumor.
+*   **Metastatic Disease:** The patient has oligometastatic liver disease with two small lesions (Segment VIII: 10 mm; Segment VI: 5 mm) and lymph node involvement (retroperitoneal paraaortic left and perihepatic adjacent to segment III).
+*   **Disease Stability:** A CT scan 2 months post-diagnosis indicates stable disease.
+
+**Guideline-Based Clinical Considerations**
+
+**1. Surgical Considerations:**
+*   **Primary Tumor:** According to ENETS guidelines, surgery is strongly recommended for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation. This patient meets both criteria. The vascular contact (3 cm) requires careful evaluation; however, ENETS guidelines note that radical local resection including portal-venous resection can be performed safely in expert centers.
+*   **Metastatic Context:** ESMO guidelines state that a surgical approach is indicated in selected stage IV patients with exclusive or predominant liver involvement. Given the small size of the liver metastases (10 mm and 5 mm), they may be amenable to resection or ablation. However, the presence of retroperitoneal lymph node metastasis requires evaluation regarding the feasibility of curative (R0) resection.
+
+**2. Systemic and Neoadjuvant Considerations:**
+*   **Somatostatin Analogues (SSAs):** For antiproliferative control, ESMO and ENETS guidelines recommend SSAs (e.g., lanreotide or octreotide) as first-line therapy for SSTR-positive, well-differentiated (G1/G2) NF-Pan-NETs with slow growth (Ki-67 <10%).
+*   **Neoadjuvant Approaches:** ENETS guidelines suggest that preoperative treatment with Peptide Receptor Radionuclide Therapy (PRRT) or chemotherapy may be considered in selected cases of locally advanced or oligometastatic SSTR-positive G1/G2 NF-Pan-NETs to facilitate R0 resection or downstaging.
+*   **Chemotherapy:** While chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is an option for bulky or progressive disease, the patient currently has stable disease on CT.
+
+**3. Functional Imaging and PRRT Eligibility:**
+*   The DOTATOC PET/CT shows "intense accumulation" in pancreatic lesions, liver lesions, and lymph nodes.
+*   **Assessment for PRRT:** While "intense" accumulation suggests high SSTR expression, strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed, this patient is a potential candidate for PRRT, either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.
+
+**Summary of Clinical Status:**
+The patient presents with a symptomatic, G1, SSTR-positive NF-Pan-NET with limited hepatic and nodal metastases. The primary tumor is locally advanced with venous contact but no occlusion. The clinical scenario requires a multidisciplinary decision regarding upfront resection (pancreaticoduodenectomy + liver management) versus neoadjuvant therapy (PRRT or systemic) to improve resectability, given the favorable tumor biology (G1) and high SSTR expression.
+
+Urgency Level: medium
+Assessment Confidence: medium
+
+=== TRIAL ANALYSIS SUMMARY ===
+Total Trials Analyzed: 10
+Trials Marked for INCLUSION: 7
+Trials Marked for EXCLUSION: 3
+
+INCLUDED TRIALS:
+  - NCT02730104: Community-based Neuroendocrine Tumor (NET) Research Study (Relevance: N/A)
+  - NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE) (Relevance: N/A)
+  - NCT05153772: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (Relevance: N/A)
+  - NCT02236910: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours (Relevance: N/A)
+  - NCT02754297: Personalized PRRT of Neuroendocrine Tumors (Relevance: N/A)
+  - NCT01842165: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs (Relevance: N/A)
+  - NCT03289741: A Study to Evaluate Patient Experience in the Therapy of Neuroendocrine Tumors Treated With Octreotide Long Acting Release Versus Lanreotide (Relevance: N/A)
+
+=== GUIDELINES SUMMARY ===
+Matched Guidelines: 2
+
+  - Nonfunctioning pancreatic neuroendocrine tumours (Relevance: 1.0)
+  - Gastroenteropancreatic neuroendocrine neoplasms: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up [y] (Relevance: 1.0)
+
+=== THERAPY RECOMMENDATION TO VALIDATE ===
+
+RECOMMENDATION:
+**Primary Recommendation: Upfront Curative-Intent Surgical Resection**
+Given the patient's ECOG 0 status, the presence of a symptomatic Grade 1 (G1) neuroendocrine tumor (vomiting, abdominal pain, duct dilation), and resectable oligometastatic disease, the recommended primary therapy is **surgical resection** performed at an expert center. The surgical plan should include:
+1.  **Pancreaticoduodenectomy (Whipple procedure)** with regional lymphadenectomy to remove the primary pancreatic head lesion (41x51x35 mm) and involved retroperitoneal/perihepatic lymph nodes.
+2.  **Concurrent management of liver metastases** (Segment VIII and VI) via parenchymal-sparing resection or intraoperative radiofrequency ablation (RFA), as the lesions are small (10 mm and 5 mm).
+
+**Concurrent Systemic Therapy: Somatostatin Analogues (SSA)**
+Initiate **Lanreotide** (e.g., 120 mg deep s.c. every 4 weeks) or **Octreotide LAR** (e.g., 30 mg i.m. every 4 weeks) for antiproliferative control.
+*   **Evidence:** **NCT02730104** (Community-based NET Research Study) supports the real-world effectiveness and safety of Lanreotide in GEP-NETs.
+
+**Symptom Management**
+Immediate management of the mechanical obstruction causing vomiting is required. If surgery is not performed immediately, endoscopic stenting of the pancreatic/biliary duct should be considered to relieve symptoms.
+
+**Alternative/Adjuvant Consideration: Peptide Receptor Radionuclide Therapy (PRRT)**
+If intraoperative findings preclude R0 resection, or if the patient is deemed unresectable upon further surgical review, **PRRT with 177Lu-DOTATATE/Edotreotide** is the recommended second-line option given the intense SSTR uptake.
+*   **Evidence:** **NCT02754297** (Personalized PRRT) and **NCT01842165** (Prediction Using Multimodality Imaging).
+*   *Protocol Note:* If PRRT is initiated, long-acting SSAs must be paused for at least 4 weeks prior to each cycle.
+
+RATIONALE:
+**Surgical Justification:**
+*   **Guideline Alignment:** ENETS Guidelines (Guideline 1) strongly recommend surgery for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation. This patient meets both criteria (41 mm tumor, distal duct dilation).
+*   **Symptom Resolution:** The patient suffers from intermittent vomiting and abdominal pain, likely due to the mass effect and duct dilation. Surgical resection provides the most reliable resolution for these mechanical symptoms.
+*   **Feasibility:** Although there is vascular contact (3 cm with PV/SMV), the assessment notes no stenosis or thrombosis, and ENETS guidelines confirm that radical resection with vascular reconstruction is safe in expert centers.
+*   **Metastatic Context:** ESMO Guidelines (Guideline 2) indicate that surgery is appropriate for stage IV patients with exclusive or predominant liver involvement. The liver metastases are small (oligometastatic) and amenable to local ablation or resection.
+*   **Tumor Biology:** The tumor is Grade 1 (Ki-67 2%). Well-differentiated G1 tumors typically have lower response rates to cytotoxic chemotherapy and may shrink less rapidly with neoadjuvant therapies compared to higher-grade tumors, making upfront mechanical removal the preferred curative strategy.
+
+**Systemic Therapy Rationale:**
+*   **Somatostatin Analogues:** SSAs are the standard first-line antiproliferative therapy for SSTR-positive, well-differentiated G1/G2 Pan-NETs (ENETS/ESMO Guidelines). **NCT02730104** provides prospective observational evidence confirming the safety and effectiveness of Lanreotide in this setting. **NCT03289741** suggests patient experience is comparable between Octreotide and Lanreotide, allowing for either choice.
+
+**PRRT Positioning:**
+*   While the patient has high SSTR uptake (confirmed by **NCT01842165** as a predictor of response), PRRT is positioned here as an alternative or future option rather than neoadjuvant because the patient is currently a candidate for curative surgery.
+*   However, should the disease prove unresectable, **NCT02754297** (P-PRRT trial) provides relevant evidence for Pan-NETs. The publication associated with this trial (Del Prete et al., 2019) reported that a high proportion of patients with pancreatic NETs achieved partial or minor responses with personalized dosimetry, supporting its utility if downstaging becomes necessary. **NCT03049189** (COMPETE) further supports PRRT over targeted agents like everolimus for SSTR+ disease.
+
+=== YOUR VALIDATION TASK ===
+
+Carefully review the therapy recommendation against the evidence provided above.
+
+Check for the following issues:
+
+1. COMPLETENESS ISSUES:
+   - Does the recommendation address ALL clinical needs identified in the patient assessment?
+   - Are important clinical considerations (disease grade, symptoms, biomarkers, prior treatments) adequately addressed?
+   - Are alternative options discussed if the primary recommendation isn't feasible?
+
+2. ACCURACY ISSUES:
+   - Are all trial citations (NCT numbers) correctly used?
+   - Are the claimed trial outcomes/findings accurate based on the trial analysis?
+   - Are guideline recommendations correctly interpreted?
+   - Is there any evidence of fabricated or misrepresented data?
+
+3. CONSISTENCY ISSUES:
+   - Does the recommendation align with the urgency level from the patient assessment?
+   - Are there any internal contradictions in the recommendation?
+   - Does the rationale actually support the recommendation given?
+   - Are trials marked for EXCLUSION incorrectly being recommended?
+
+4. SAFETY ISSUES:
+   - Are known contraindications from the patient assessment respected?
+   - Are patient-specific risk factors (organ function, performance status) considered?
+   - Are monitoring requirements mentioned for high-risk therapies?
+
+5. ACTIONABILITY ISSUES:
+   - Are next steps clearly defined?
+   - Is the recommendation specific enough to be implemented?
+   - Are follow-up timelines provided?
+
+Provide your validation in the following format:
+
+<validation_decision>
+[State clearly: PASS or RECONSIDER]
+</validation_decision>
+
+<critical_issues>
+[List any critical issues that make the recommendation incomplete, wrong, or unsafe. Be specific about what is missing or incorrect. If none, write "None identified."]
+</critical_issues>
+
+<warnings>
+[List any non-critical concerns or areas for improvement. If none, write "None identified."]
+</warnings>
+
+<detailed_reasoning>
+[Provide detailed reasoning for your validation decision. Explain:
+- What you checked in each validation category
+- Specific examples of issues you found (quote relevant parts)
+- Why each issue is problematic for patient care
+- What would need to be corrected for the recommendation to pass validation
+Be thorough and specific - this reasoning will guide the regeneration process.]
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+[If you marked as RECONSIDER, provide specific actionable guidance on what should be corrected or added in the regenerated recommendation. If PASS, write "No improvements needed."]
+</recommendations_for_improvement>
+
+Remember: Patient safety is paramount. If in doubt, mark as RECONSIDER and explain your concerns in detail.

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:17:30.087046
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a poorly differentiated Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95% (part of a MiNEN), whereas the study specifically recruits patients with well-differentiated Neuroendocrine Tumors (NETs). Biologically, high-grade NECs differ significantly from well-differentiated NETs, and the genomic biomarker (NETest) evaluated in this study is primarily validated for well-differentiated disease. Consequently, evidence regarding the utility of this biomarker for predicting recurrence after surgery in NETs cannot be reasonably extrapolated to guide consolidation decisions for a patient with aggressive NEC."
+}

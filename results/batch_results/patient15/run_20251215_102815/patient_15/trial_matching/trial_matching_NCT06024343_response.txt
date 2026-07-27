@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:32:28.640618
+Trial: 5/86
+NCT ID: NCT06024343
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails all criteria for relevance to this patient. First, regarding disease alignment, the patient has metastatic, high-grade (G3, Ki-67 70%) pancreatic NET with diffuse liver involvement, whereas the study focuses on solitary benign or low-grade malignant tumors suitable for localized enucleation. Second, regarding treatment context, the patient is explicitly noted as not suitable for local therapies due to diffuse disease and requires systemic therapy (e.g., PRRT) to control progression; a study on a specific surgical technique (enucleation with duct repair) for localized primary tumors is clinically inapplicable to a patient with unresectable metastatic disease who underwent primary surgery years ago. Finally, the evidence concerning surgical complications (e.g., pancreatic fistula) and quality of life following enucleation offers no actionable insights for managing aggressive, metastatic G3 neuroendocrine neoplasms."
+}

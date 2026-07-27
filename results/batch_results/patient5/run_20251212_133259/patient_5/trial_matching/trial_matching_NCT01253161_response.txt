@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:03:14.766413
+Trial: 78/86
+NCT ID: NCT01253161
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90% and small-cell morphology. In contrast, this study evaluates Pasireotide LAR specifically in patients with well or moderately differentiated neuroendocrine tumors (NETs) and explicitly excludes patients with poorly differentiated carcinomas or small cell carcinomas. Biologically, high-grade NECs behave differently from well-differentiated NETs and are typically treated with cytotoxic chemotherapy (as this patient received) rather than somatostatin analogs, which are indicated for slower-growing, SSTR-positive NETs. Consequently, the evidence regarding the antiproliferative efficacy of Pasireotide in low-grade NETs is not clinically transferable or relevant to this patient's aggressive, high-grade disease context."
+}

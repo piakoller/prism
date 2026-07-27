@@ -1,0 +1,153 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-15T10:42:29.626661
+Trial: 32/86
+NCT ID: NCT03852693
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Patient: 61-year-old man, ECOG 0, asymptomatic
+Initial diagnosis: Pancreatic NET grade 2, Ki-67 12% (2009)
+Became metastatic in 2023: liver-only disease, grade 3, Ki-67 70%
+Low hepatic tumor burden; no extrahepatic disease
+DOTATOC +++, FDG positive, no mismatch
+Sporadic
+
+Extensive previous treatments (2009–2024): surgery, RFA, multiple chemoembolizations, sunitinib, 5-FU/dacarbazine, radiotherapy (hilar nodes, rib, liver), somatostatin analogs, everolimus, RFA, capecitabine–temozolomide, GEMOX, temozolomide monotherapy, long-term Somatuline since June 2024
+
+Sept 2025: hepatic progression over 6 months; lesions 28 mm and 13 mm; diffuse liver disease; not suitable for local therapy
+Question for Tumorboard:
+What would be next step to consolidate the response?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Tumor Biology**
+The patient is a 61-year-old male with an ECOG performance status of 0, currently asymptomatic. He presents with a sporadic Pancreatic Neuroendocrine Tumor (Pan-NET) that has evolved from an initial Grade 2 diagnosis (Ki-67 12%) in 2009 to a metastatic Grade 3 disease (Ki-67 70%) in 2023. The disease is currently limited to the liver but is diffuse, with progressing lesions measuring 28 mm and 13 mm.
+
+**Histopathological and Molecular Classification**
+According to the provided **ESMO** and **ENETS** guidelines, the patient's tumor profile—specifically the history of a lower-grade precursor and the strong somatostatin receptor positivity (DOTATOC +++)—indicates a **well-differentiated NET G3** rather than a poorly differentiated neuroendocrine carcinoma (NEC), despite the high Ki-67 index of 70%. The patient demonstrates a "double-positive" status on functional imaging (DOTATOC +++ and FDG positive) with no mismatch. **ESMO guidelines** note that high FDG uptake correlates with higher grade and is a strong poor prognostic factor, yet the retention of SSTR expression is a key biological feature for therapeutic decision-making.
+
+**Treatment History and Refractoriness**
+The patient is heavily pre-treated and considered refractory to multiple standard lines of systemic therapy recommended for Pan-NETs:
+*   **Somatostatin Analogs (SSAs):** Progression on Somatuline.
+*   **Targeted Therapies:** Progression on both sunitinib and everolimus (standard options for progressive Pan-NETs per **ENETS Recommendation 3.3.1**).
+*   **Chemotherapy:** The patient has progressed on multiple regimens including alkylating agents (temozolomide monotherapy, capecitabine-temozolomide) and oxaliplatin-based regimens (GEMOX), as well as 5-FU/dacarbazine.
+*   **Local Therapies:** The patient is currently not suitable for local therapies (RFA, embolization) due to diffuse liver disease.
+
+**Clinical Assessment for Next Steps**
+1.  **Chemotherapy Assessment:** The patient has exhausted the standard chemotherapy options for Pan-NET (TEM/CAPTEM, STZ/5-FU). While **ESMO guidelines** recommend cisplatin/etoposide for NEC G3, they explicitly state that for **NET G3**, response rates to cisplatin/etoposide are low and the use of this combination is **not recommended**.
+2.  **Peptide Receptor Radionuclide Therapy (PRRT) Assessment:**
+    *   **Eligibility:** The patient shows strong SSTR expression (DOTATOC +++), fulfilling the primary requirement for PRRT.
+    *   **Guideline Evidence for G3:** **ENETS guidelines** (Section 3.2) and **ESMO guidelines** indicate that PRRT may be considered in patients with NET G3. However, **ENETS** cites studies (Zhang et al., Thang et al.) noting that while promising response rates exist, efficacy is generally lower in patients with a Ki-67 > 55% (median PFS approx. 4–6 months) compared to those with lower proliferation indices.
+    *   **Current Status:** As the patient has not received PRRT (history lists "radiotherapy" to nodes/rib/liver, likely external beam, but not peptide receptor radionuclide therapy), this modality represents a potential remaining line of systemic therapy supported by guidelines for SSTR-positive disease.
+3.  **Prognostic Considerations:** The combination of Ki-67 70% and FDG positivity suggests aggressive biological behavior. While the patient is currently asymptomatic and ECOG 0, the hepatic progression over 6 months indicates a need for disease control to prevent symptomatic deterioration.
+
+**Summary**
+The patient presents with progressive, liver-dominant, well-differentiated Pan-NET G3 (Ki-67 70%) that is refractory to standard chemotherapy and targeted agents. Based on **ESMO** and **ENETS guidelines**, the strong DOTATOC uptake makes the patient a candidate for evaluation for PRRT, although the high Ki-67 (>55%) and FDG positivity are negative prognostic markers that may limit the duration of response compared to lower-grade tumors.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+	•	Question for Tumorboard: What would be next step to consolidate the response?
+
+### STUDY DATA
+	•	NCT-ID: NCT03852693
+	•	Title: Distant Metastases and Long-Term Survival After Complete Resection of Neuroendocrine Tumors of the Appendix
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: Histopathological review
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* The investigators will include all patients with aNET measuring 1 - 2 cm and complete resection between 01.01.2005 and 31.12.2010 of the primary tumor.
+
+Exclusion Criteria:
+
+- *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The aim of the present project is to evaluate the frequency of distant metastases and clinically relevant relapse and mortality, respectively, of aNEN (Neuroendocrine Neoplasms of the Appendix) measuring 1 - 2 cm.
+
+The investigators hypothesize that the mortality rate of aNET (Neuroendocrine Tumors of the Appendix) measuring 1 - 2cm is less than 1%. Furthermore, the investigators hypothesize that regional lymph node metastases of aNET measuring 1 - 2 cm are clinically not relevant and are not associated with reduced survival. The investigators therefore hypothesize that oncological right-sided hemicolectomy has no impact on long-term survival after complete resection of aNET measuring 1 - 2 cm and that the malignant potential quo ad vitam of these tumors is lower than the risk of oncological hemicolectomy.
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/36640790/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Hemicolectomy versus appendectomy for patients with appendiceal neuroendocrine tumours 1-2 cm in size: a retrospective, Europe-wide, pooled cohort study. (PMID: 36640790)
+	•	Key findings from publications: PubMed Abstract: Awareness of the potential global overtreatment of patients with appendiceal neuroendocrine tumours (NETs) of 1-2 cm in size by performing oncological resections is increasing, but the rarity of this tumour has impeded clear recommendations to date. We aimed to assess the malignant potential of appendiceal NETs of 1-2 cm in size in patients with or without right-sided hemicolectomy.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: Awareness of the potential global overtreatment of patients with appendiceal neuroendocrine tumours (NETs) of 1-2 cm in size by performing oncological resections is increasing, but the rarity of this tumour has impeded clear recommendations to date. We aimed to assess the malignant potential of appendiceal NETs of 1-2 cm in size in patients with or without right-sided hemicolectomy. Methods: In this retrospective cohort study, we pooled data from 40 hospitals in 15 European countries for patients of any age and Eastern Cooperative Oncology Group performance status with a histopathologically confirmed appendiceal NET of 1-2 cm in size who had a complete resection of the primary tumour between Jan 1, 2000, and Dec 31, 2010. Patients either had an appendectomy only or an appendectomy with oncological right-sided hemicolectomy or ileocecal resection. Predefined primary outcomes were the frequency of distant metastases and tumour-related mortality. Secondary outcomes included the frequency of regional lymph node metastases, the association between regional lymph node metastases and histopathological risk factors, and overall survival with or without right-sided hemicolectomy. Cox proportional hazards regression was used to estimate the relative all-cause mortality hazard associated with right-sided hemicolectomy compared with appendectomy alone. This study is registered with ClinicalTrials.gov, NCT03852693 . Findings: 282 patients with suspected appendiceal tumours were identified, of whom 278 with an appendiceal NET of 1-2 cm in size were included. 163 (59%) had an appendectomy and 115 (41%) had a right-sided hemicolectomy, 110 (40%) were men, 168 (60%) were women, and mean age at initial surgery was 36·0 years (SD 18·2). Median follow-up was 13·0 years (IQR 11·0-15·6). After centralised histopathological review, appendiceal NETs were classified as a possible or probable primary tumour in two (1%) of 278 patients with distant peritoneal metastases and in two (1%) 278 patients with distant metastases in the liver. All metastases were diagnosed synchronously with no tumour-related deaths during follow-up. Regional lymph node metastases were found in 22 (20%) of 112 patients with right-sided hemicolectomy with available data. On the basis of histopathological risk factors, we estimated that 12·8% (95% CI 6·5 -21·1) of patients undergoing appendectomy probably had residual regional lymph node metastases. Overall survival was similar between patients with appendectomy and right-sided hemicolectomy (adjusted hazard ratio 0·88 [95% CI 0·36-2·17]; p=0·71). Interpretation: This study provides evidence that right-sided hemicolectomy is not indicated after complete resection of an appendiceal NET of 1-2 cm in size by appendectomy, that regional lymph node metastases of appendiceal NETs are clinically irrelevant, and that an additional postoperative exclusion of metastases and histopathological evaluation of risk factors is not supported by the presented results. These findings should inform consensus best practice guidelines for this patient cohort. Funding: Swiss Cancer Research foundation. Copyright © 2023 Elsevier Ltd. All rights reserved. PubMed Disclaimer Conflict of interest statement Declaration of interests MBe reports funding from Novartis, Pfizer, and Ipsen; payment or honoraria for lectures, presentations, speaker bureaus, manuscript writing, or educational events from Novartis, Pfizer, Ipsen, and Advanced Accelerator Applications (AAA); support for attending meetings or travel from Novartis, Pfizer, and Ipsen; and participation on data safety monitoring board or advisory boards from Pfizer and AAA. IB reports payment or honoraria for lectures, presentations, speaker bureaus, manuscript writing, or educational events from Bristol Myers Squibb (BMS) and Bayer Vital and support for attending meetings or travel for European Musculo-Skeletal Oncology Society 2022 conference from PharmaMar. RG-C reports funding of investigator-initiated clinical trials from Pfizer, BMS, and MSD, and an real-world data project from Servier; consulting fees from AAA/Novartis, Advanz Pharma, Amgen, Bayer, BMS, Boehringer (Ingelheim), Esteve, Hutchmed, Ipsen, Merck, Midatech Pharma, MSD, PharmaMar, and Pierre Fabre; and payment or honoraria for lectures, presentations, speaker bureaus, manuscript writing, or educational events from Roche. GC reports grants or contracts from AAA; consulting fees from AAA; payments or honoraria for lectures, presentations, speaker bureaus, manuscript writing, or educational events from AAA, Ipsen, and Keocyt; and support for attending meetings or travel from AAA, Ipsen, and Keocyt. MPa reports payments for advisory boards or lectures from AAA and Novartis; payments for advisory boards, consultancy, or lectures from Ipsen; payment for lectures from Boehringer Ingelheim, MSD, Lilly, and Recordati; payment for advisory boards from Riemser; payment for services (radiological review of phase 3 study) from Hutchmed; payment for travel for participation in study steering committee meeting from Rayzebio; payment to institution from Crinetics and AAA; and unpaid roles as ENETS vice president, European Society for Medical Oncology (ESMO) Education Committee, ESMO scientific steering committee NET track, advisor on the International Neuroendocrine Cancer Alliance board, and advisor for German patient support group. GR reports payments for speaker bureaus from AAA. AR reports being an ENETS Advisory Board member. TV reports payment or honoraria for lectures, presentations, speaker bureaus, manuscript writing, or educational events from Ipsen; support for attending meetings or travel from Ipsen; and an unpaid position as secretary in the Dutch Belgian Neuroendocrine Tumor Society. All other authors declare no competing interests. Comment in Are hemicolectomies justified for appendiceal neuroendocrine tumours smaller than 2 cm? Strosberg JR, Al-Toubah T. Strosberg JR, et al. Lancet Oncol. 2023 Feb;24(2):121-122. doi: 10.1016/S1470-2045(22)00764-1. Epub 2023 Jan 11. Lancet Oncol. 2023. PMID: 36640791 No abstract available. Omitting hemicolectomy for patients with appendiceal neuroendocrine tumours of 1-2 cm. Lamberti G, Andrini E, Ricci C, Campana D. Lamberti G, et al. Lancet Oncol. 2023 May;24(5):e187. doi: 10.1016/S1470-2045(23)00059-1. Lancet Oncol. 2023. PMID: 37142375 No abstract available. Omitting hemicolectomy for patients with appendiceal neuroendocrine tumours of 1-2 cm. Aktas MK, Aytac E, Yildiz I, Ozer L. Aktas MK, et al. Lancet Oncol. 2023 May;24(5):e188. doi: 10.1016/S1470-2045(23)00098-0. Lancet Oncol. 2023. PMID: 37142376 No abstract available. Omitting hemicolectomy for patients with appendiceal neuroendocrine tumours of 1-2 cm. Halfdanarson TR, Grotz TE, Gudmundsdottir H, Cleary SP. Halfdanarson TR, et al. Lancet Oncol. 2023 May;24(5):e189. doi: 10.1016/S1470-2045(23)00122-5. Lancet Oncol. 2023. PMID: 37142377 No abstract available. Omitting hemicolectomy for patients with appendiceal neuroendocrine tumours of 1-2 cm - Authors' reply. Kaderli RM, Nesti C, Bräutigam K, Zwahlen M, Perren A. Kaderli RM, et al. Lancet Oncol. 2023 May;24(5):e190-e191. doi: 10.1016/S1470-2045(23)00114-6. Lancet Oncol. 2023. PMID: 37142378 No abstract available. Hemicolectomy versus appendectomy alone for appendiceal neuroendocrine tumours between 1-2 cm in size-are we overtreating? Bachiri S, van Amstel P, Koppen IJN, van der Weide MC, Raphael MF, Gorter RR. Bachiri S, et al. Transl Cancer Res. 2023 Sep 30;12(9):2420-2424. doi: 10.21037/tcr-23-655. Epub 2023 Aug 17. Transl Cancer Res. 2023. PMID: 37859747 Free PMC article. No abstract available. Treatment of appendiceal neuroendocrine tumour: a controversial treatment for a misunderstood neoplasm in a mysterious organ. Petroianu A. Petroianu A. Transl Cancer Res. 2024 Aug 31;13(8):3940-3943. doi: 10.21037/tcr-23-510. Epub 2024 Aug 23. Transl Cancer Res. 2024. PMID: 39262471 Free PMC article. No abstract available. Similar articles Lymph node metastases are more frequent in paediatric appendiceal NET ≥1.5 cm but without impact on outcome - Data from the German MET studies. Kuhlen M, Kunstreich M, Pape UF, Seitz G, Lessel L, Vokuhl C, Frühwald MC, Vorwerk P, Redlich A. Kuhlen M, et al. Eur J Surg Oncol. 2024 Apr;50(4):108051. doi: 10.1016/j.ejso.2024.108051. Epub 2024 Feb 27. Eur J Surg Oncol. 2024. PMID: 38430702 Do Appendiceal Neuroendocrine Tumors Metastasize Post Appendectomy or Right Hemicolectomy? Al-Toubah T, Haider M, Pelle E, Maratta MG, Strosberg J. Al-Toubah T, et al. J Natl Compr Canc Netw. 2024 Dec 20;23(1):e247069. doi: 10.6004/jnccn.2024.7069. J Natl Compr Canc Netw. 2024. PMID: 39705801 The impact of lymph node metastases and right hemicolectomy on outcomes in appendiceal neuroendocrine tumours (aNETs). Alabraba E, Pritchard DM, Griffin R, Diaz-Nieto R, Banks M, Cuthbertson DJ, Fenwick S. Alabraba E, et al. Eur J Surg Oncol. 2021 Jun;47(6):1332-1338. doi: 10.1016/j.ejso.2020.09.012. Epub 2020 Sep 16. Eur J Surg Oncol. 2021. PMID: 33004273 An Update on Appendiceal Neuroendocrine Tumors. Andrini E, Lamberti G, Alberici L, Ricci C, Campana D. Andrini E, et al. Curr Treat Options Oncol. 2023 Jul;24(7):742-756. doi: 10.1007/s11864-023-01093-0. Epub 2023 May 4. Curr Treat Options Oncol. 2023. PMID: 37140773 Free PMC article. Review. Paediatric appendiceal neuroendocrine tumours: a review of 33 cases from a single center. Yalçın B, Karnak İ, Orhan D, Oğuz B, Aydın B, Kurucu N, Varan A, Kutluk T. Yalçın B, et al. ANZ J Surg. 2022 Apr;92(4):742-746. doi: 10.1111/ans.17284. Epub 2021 Oct 18. ANZ J Surg. 2022. PMID: 34664383 Review. See all similar articles Cited by Characteristics and Management of Children with Appendiceal Neuroendocrine Neoplasms: A Single-Center Study. Mastrangelo S, Attinà G, Rindi G, Romano A, Maurizi P, Ruggiero A. Mastrangelo S, et al. Cancers (Basel). 2024 Oct 10;16(20):3440. doi: 10.3390/cancers16203440. Cancers (Basel). 2024. PMID: 39456535 Free PMC article. Treatment and management of duodenal gangliocytic paraganglioma: A case report. Xiao N, Zhu S, Liu H, Li L, Shi L. Xiao N, et al. Exp Ther Med. 2024 Sep 19;28(6):435. doi: 10.3892/etm.2024.12723. eCollection 2024 Dec. Exp Ther Med. 2024. PMID: 39355522 Free PMC article. Gastroenteropancreatic neuroendocrine neoplasms: epidemiology, genetics, and treatment. Tan B, Zhang B, Chen H. Tan B, et al. Front Endocrinol (Lausanne). 2024 Sep 30;15:1424839. doi: 10.3389/fendo.2024.1424839. eCollection 2024. Front Endocrinol (Lausanne). 2024. PMID: 39411312 Free PMC article. Review. Relation between WHO Classification and Location- and Functionality-Based Classifications of Neuroendocrine Neoplasms of the Digestive Tract. Helderman NC, Suerink M, Kilinç G, van den Berg JG, Nielsen M, Tesselaar MET. Helderman NC, et al. Neuroendocrinology. 2024;114(2):120-133. doi: 10.1159/000534035. Epub 2023 Sep 8. Neuroendocrinology. 2024. PMID: 37690447 Free PMC article. Review. Utility of histopathological revision in the management of gastro-entero-pancreatic neuroendocrine neoplasia. Marasco M, Magi L, Rogges E, Dell'Unto E, Rinzivillo M, Pilozzi E, Annibale B, Panzuto F. Marasco M, et al. Endocrine. 2023 Nov;82(2):435-441. doi: 10.1007/s12020-023-03418-3. Epub 2023 Jun 20. Endocrine. 2023. PMID: 37338723 Free PMC article. See all "Cited by" articles Publication types Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search MeSH terms Adult Actions Search in PubMed Search in MeSH Add to Search Appendectomy / adverse effects Actions Search in PubMed Search in MeSH Add to Search Appendectomy / methods Actions Search in PubMed Search in MeSH Add to Search Appendiceal Neoplasms* / diagnosis Actions Search in PubMed Search in MeSH Add to Search Appendiceal Neoplasms* / pathology Actions Search in PubMed Search in MeSH Add to Search Appendiceal Neoplasms* / surgery Actions Search in PubMed Search in MeSH Add to Search Cohort Studies Actions Search in PubMed Search in MeSH Add to Search Colectomy / adverse effects Actions Search in PubMed Search in MeSH Add to Search Europe Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Intestinal Neoplasms Actions Search in PubMed Search in MeSH Add to Search Lymphatic Metastasis Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / pathology Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / surgery Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms Actions Search in PubMed Search in MeSH Add to Search Retrospective Studies Actions Search in PubMed Search in MeSH Add to Search Stomach Neoplasms Actions Search in PubMed Search in MeSH Add to Search Supplementary concepts Gastro-enteropancreatic neuroendocrine tumor Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT03852693 Actions Search in PubMed Search in ClinicalTrials.gov Related information Cited in Books MedGen LinkOut - more resources Full Text Sources ClinicalKey Elsevier Science Other Literature Sources H1 Connect - Access expert opinions and insights on biomedical research. Medical ClinicalTrials.gov Research Materials NCI CPTC Antibody Characterization Program
+	•	Additional evidence from online sources: Primary outcome: Clinically relevant relapse of aNET measuring 1 - 2 cm in a population based manner; Clinically relevant mortality of aNET measuring 1 - 2 cm in a population based manner; Frequency of distant metastases in aNET measuring 1-2 cm
+Secondary outcomes: Association of histological risk factors in aNET measuring 1 - 2 cm and qualifying for oncological right-sided hemicolectomy according to ENETS guidelines with the occurrence of regional lymph node and distant metastases; Relationship between regional lymph node metastasis and survival in patients with aNET measuring 1 - 2 cm; Long-term survival after complete resection of aNET measuring 1 - 2 cm with or without oncological right-sided hemicolectomy
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Hemicolectomy versus appendectomy for patients with appendiceal neuroendocrine tumours 1-2 cm in size: a retrospective, Europe-wide, pooled cohort study.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/36640790/', 'pmid': '36640790', 'content_scraped': True, 'content_length': 13532}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/36640790/
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:42:42.980529
+Trial: 32/86
+NCT ID: NCT03852693
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Disease/Biology Alignment and Treatment Context criteria. The patient has a metastatic, high-grade (G3, Ki-67 70%) pancreatic neuroendocrine tumor (Pan-NET) requiring systemic therapy for progressive liver disease. In contrast, the study (NCT03852693) focuses exclusively on localized appendiceal neuroendocrine tumors (aNETs) measuring 1-2 cm, evaluating the surgical extent (appendectomy vs. right-sided hemicolectomy). The biological behavior, primary site, and clinical management of localized appendiceal NETs are distinct from metastatic high-grade pancreatic NETs. Furthermore, the study's intervention is surgical, offering no evidence regarding systemic treatments (such as PRRT or chemotherapy) relevant to this patient's refractory, metastatic context."
+}

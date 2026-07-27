@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T10:46:53.441595
+Trial: 43/86
+NCT ID: NCT05246319
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context or Evidence Relevance. The patient has a previously resected duodenal NET and currently presents with progressive metastatic disease (liver and lymph nodes) requiring a decision on systemic therapy escalation (SSA vs. PRRT/Everolimus). The study (NCT05246319) and its associated publications focus on the diagnostic accuracy of preoperative imaging to guide lymph node dissection during the initial resection of small bowel NETs or reintervention for locoregional mesenteric disease. This evidence is not applicable to a patient who has already undergone a pancreatoduodenectomy and requires management for distant metastatic progression. Furthermore, the study does not provide therapeutic efficacy data to inform the choice between continuing somatostatin analogues or escalating to other systemic therapies."
+}

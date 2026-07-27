@@ -1,0 +1,87 @@
+=== TRIAL ANALYSIS RAW RESPONSE ===
+Timestamp: 2025-12-03T16:54:34.411281
+Patient ID: 3
+Model: google/gemini-3-pro-preview
+==================================================
+
+Based on the patient's profile—specifically the **progressive, high-burden Grade 1 Pan-NET** and the **significant renal impairment (Creatinine 2.24 mg/dL)**—the analysis of the clinical trials focuses on identifying therapeutic options that offer efficacy while minimizing nephrotoxicity.
+
+<trial_analysis>
+**NCT NUMBER:** NCT03049189
+**TRIAL NAME:** Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)
+**DECISION:** EXCLUDE
+**RATIONALE:** This trial evaluates PRRT (177Lu-edotreotide). The patient's significant renal impairment (Creatinine 2.24 mg/dL) is a major safety concern and likely an exclusion criterion for standard PRRT due to the risk of radiation-induced nephrotoxicity.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02568267
+**TRIAL NAME:** Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+**DECISION:** EXCLUDE
+**RATIONALE:** Entrectinib targets specific gene fusions (NTRK/ROS1/ALK) which are extremely rare in pancreatic neuroendocrine tumors. There is no evidence in the patient summary suggesting these molecular alterations are present.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT05153772
+**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients
+**DECISION:** EXCLUDE
+**RATIONALE:** Similar to other PRRT modalities, Alpha-emitter therapy (212Pb-DOTAMTATE) carries a risk of renal toxicity. Given the patient's worsening renal function and baseline creatinine of 2.24 mg/dL, enrollment in an experimental radiopharmaceutical trial is unsafe.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02236910
+**TRIAL NAME:** An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+**DECISION:** EXCLUDE
+**RATIONALE:** This registry tracks standard PRRT outcomes. As with other PRRT options, the patient's renal insufficiency is a strong contraindication for standard 177Lu-DOTATATE therapy without specialized dosimetry, which this registry does not specifically provide as an intervention.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03870399
+**TRIAL NAME:** Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression
+**DECISION:** EXCLUDE
+**RATIONALE:** Tamoxifen is not a standard therapy for Pan-NETs and requires hormone receptor positivity, which has not been assessed. Furthermore, the trial results indicate only "modest antitumor effects," which is insufficient for this patient's extensive, progressive, and bulky disease.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03074513
+**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** While the trial showed some activity in pNETs, the patient has hypertension and significant renal impairment. Bevacizumab is associated with proteinuria and hypertension, which could further deteriorate the patient's compromised renal function.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02754297
+**TRIAL NAME:** Personalized PRRT of Neuroendocrine Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** Although personalized dosimetry is the only theoretical way to safely administer PRRT to a patient with renal impairment, the trial is not recruiting. Furthermore, a creatinine of 2.24 mg/dL is severe enough that even personalized regimens may not be feasible or safe compared to non-radioactive alternatives.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03217097
+**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents
+**DECISION:** INCLUDE
+**RATIONALE:** This trial supports the use of alkylating agents (such as Temozolomide) versus Oxaliplatin based on MGMT status. Temozolomide is primarily cleared hepatically and is a safer chemotherapy option for this patient's renal profile compared to Streptozotocin or high-dose renal-cleared agents, addressing the need for cytoreduction in high-burden disease.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01466036
+**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** While Cabozantinib is a potential option, the provided trial text does not include specific results to validate its efficacy for this recommendation. Additionally, as a VEGF inhibitor, it carries risks of hypertension and proteinuria, which are concerning given the patient's comorbidities.
+---
+</trial_analysis>
+
+### SUMMARY
+
+**TOTAL TRIALS ANALYZED:** 9
+**TRIALS TO INCLUDE:** 1
+**TRIALS TO EXCLUDE:** 8
+
+**Conclusion:** The final therapy recommendation is derived from **NCT03217097 (MGMT-NET)**. Given the patient's high tumor burden and progressive disease, chemotherapy is a guideline-supported option. However, his significant renal impairment (Creatinine 2.24 mg/dL) limits the use of nephrotoxic agents (like Streptozotocin) or those with heavy renal clearance. **NCT03217097** provides evidence for using **Alkylating agents (specifically Temozolomide)**, which have a favorable renal safety profile, as an effective second-line therapy. All PRRT trials were excluded due to the high risk of nephrotoxicity, and other targeted/immunotherapy trials were excluded due to safety concerns (VEGF-related renal risks) or lack of robust efficacy in Grade 1 tumors.

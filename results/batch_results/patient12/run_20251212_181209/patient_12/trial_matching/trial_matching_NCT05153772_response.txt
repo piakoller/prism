@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:21:19.813364
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because the patient's disease biology fundamentally misaligns with the therapeutic mechanism evaluated. The patient presents with **FDG-positive/Ga68-negative peritoneal carcinomatosis**, indicating a significant volume of SSTR-negative, aggressive disease. The study evaluates 212Pb-DOTAMTATE (AlphaMedix), a targeted alpha therapy that strictly requires Somatostatin Receptor (SSTR) expression on all metastatic lesions to be effective. Since the patient lacks the therapeutic target in the peritoneal compartment, the study's promising efficacy results (ORR 56.8% in SSTR-positive patients) are not transferable to her mixed-phenotype disease. Treating this patient with the studied intervention would likely result in the progression of the non-targeted, aggressive peritoneal lesions. Therefore, the evidence does not support this therapy as a viable option for her current clinical scenario."
+}

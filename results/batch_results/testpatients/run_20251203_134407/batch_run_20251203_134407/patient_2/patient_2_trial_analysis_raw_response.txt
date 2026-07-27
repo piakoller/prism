@@ -1,0 +1,6 @@
+=== TRIAL ANALYSIS RAW RESPONSE ===
+Timestamp: 2025-12-03T15:48:53.593893
+Patient ID: 2
+Model: google/gemini-3-pro-preview
+==================================================
+

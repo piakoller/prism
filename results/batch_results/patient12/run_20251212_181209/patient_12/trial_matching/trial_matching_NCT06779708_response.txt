@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:15:23.968033
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because it fails the Treatment Context and Evidence Relevance criteria. The study evaluates the diagnostic accuracy of intraoperative ultrasound (IOUS) specifically in patients classified as cM0 (non-metastatic) on preoperative imaging to detect occult liver metastases during curative-intent surgery. In contrast, this patient has overt, bulky metastatic disease (cM1) with 150 mm liver metastases and peritoneal carcinomatosis, rendering her unresectable and outside the study's surgical context. Furthermore, the patient's critical need is for first-line systemic therapy recommendations (e.g., chemotherapy for high-burden G2 PanNET), while this study focuses solely on surgical staging techniques and offers no evidence regarding systemic treatment efficacy, safety, or outcomes for advanced, unresectable disease."
+}

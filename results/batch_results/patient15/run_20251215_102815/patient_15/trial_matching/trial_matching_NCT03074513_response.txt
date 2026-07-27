@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:41:20.076908
+Trial: 27/86
+NCT ID: NCT03074513
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient primarily due to a lack of **Disease / Biology Alignment**. The patient has a metastatic well-differentiated NET G3 with a Ki-67 of 70%, indicating an aggressive, highly proliferative tumor biology. In contrast, the study (NCT03074513) exclusively enrolled and reported results for patients with Grade 1 and 2 NETs (Ki-67 <20%), a population characterized by significantly more indolent disease. While both the patient and study population have well-differentiated histology, the massive disparity in proliferation rates (70% vs <20%) makes the study's efficacy outcomes (e.g., PFS of ~15 months) biologically inapplicable and non-transferable to the patient's aggressive disease state. Furthermore, in the **Treatment Context**, the patient is SSTR-positive (DOTATOC +++) and PRRT-naïve; established guidelines support PRRT for SSTR-positive NET G3, whereas this study evaluates an investigational immunotherapy/VEGF inhibitor combination in a lower-grade setting without evidence of efficacy in high-grade, high-Ki-67 tumors."
+}
+```

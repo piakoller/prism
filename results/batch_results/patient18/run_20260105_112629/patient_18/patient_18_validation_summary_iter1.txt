@@ -1,0 +1,55 @@
+=== VALIDATION ITERATION 1 ===
+
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 18
+Timestamp: 2026-01-05T15:01:29.398665
+Overall Status: FAILED
+Requires Regeneration: YES
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 7
+Trials available: 17
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: RECONSIDER
+Status: FAIL
+Critical Issues:
+  ❌ **Inaccurate Trial Data (Accuracy):** The recommendation cites the **CABINET trial (NCT03375320)** results for the extra-pancreatic NET cohort as "median PFS 8.4 months vs. 3.9 months; HR 0.38". This is factually incorrect. According to the published results (Chan et al., NEJM 2024), the extra-pancreatic NET cohort (which includes lung NETs) demonstrated a median PFS of **8.3 months vs. 3.2 months** with a Hazard Ratio of **0.45** (95% CI, 0.30 to 0.66). The HR of 0.38 does not match the primary endpoint data for this cohort.
+  ❌ **Omission of Standard of Care (Completeness/Safety):** The recommendation fails to include **Everolimus** as a primary or strong alternative option. For a patient with a Lung NET who is naïve to mTOR inhibitors, Everolimus is a standard-of-care option supported by the **RADIANT-4 trial** (specifically approved for non-functional lung NETs). Given the patient's complaint of "loose stools," Everolimus may be a safer initial choice than Cabozantinib, which has a very high incidence of Grade 3+ diarrhea (~60% vs ~30% all-grade for Everolimus). Omitting Everolimus in favor of a more toxic TKI without comparative rationale is a significant clinical oversight.
+Warnings:
+  ⚠️  **Symptom-Therapy Mismatch:** While the recommendation correctly advises investigating the "loose stools," it proceeds to recommend Cabozantinib (a drug known to cause severe diarrhea) as the *sole* primary systemic choice. If the patient's baseline bowel function is compromised, Cabozantinib tolerability will be poor. The rationale should explicitly weigh the toxicity profiles of Cabozantinib vs. Everolimus in the context of this specific symptom.
+
+Detailed Reasoning:
+**1. Accuracy Check:**
+I verified the citation for the CABINET trial (NCT03375320). The recommendation claims an HR of 0.38 and control arm PFS of 3.9 months. The actual published data for the relevant cohort (Extra-pancreatic NETs) is an HR of 0.45 and control arm PFS of 3.2 months. While the trial is positive and supports the use of Cabozantinib, the specific statistics provided are inaccurate and exaggerate the benefit (HR 0.38 implies a 62% risk reduction, whereas 0.45 implies 55%).
+
+**2. Completeness & Clinical Appropriateness:**
+The patient has a Lung NET and has progressed on SSA and PRRT. The standard treatment landscape for Lung NETs includes Everolimus (RADIANT-4) and now Cabozantinib (CABINET).
+- **Everolimus:** Established standard, generally better tolerated regarding GI toxicity (diarrhea), though carries risk of stomatitis/pneumonitis.
+- **Cabozantinib:** Newer option, robust data in post-PRRT setting, but high toxicity (diarrhea, hypertension, PPE).
+The recommendation exclusively selects Cabozantinib. Given the patient's specific report of "loose stools," initiating a therapy where diarrhea is the dose-limiting toxicity for the majority of patients is risky if a safer, approved alternative (Everolimus) exists and hasn't been used. The recommendation should present Everolimus as a viable option or explain why Cabozantinib is preferred despite the GI symptom risk (e.g., if the disease progression is considered rapid/bulky requiring higher response probability, though ORR for both is relatively low).
+
+**3. Safety:**
+The recommendation identifies the need to work up the diarrhea, which is excellent. However, it does not apply this finding to the *selection* of the drug, only to the *management* of the drug. A complete recommendation would consider whether the presence of loose stools makes Everolimus a preferable starting point over Cabozantinib.
+
+Recommendations for Improvement:
+1. **Correct Statistics:** Update the CABINET trial evidence to reflect the accurate values for the Extra-pancreatic NET cohort: Median PFS 8.3 months vs. 3.2 months; HR 0.45 (NEJM 2024).
+2. **Include Everolimus:** Add Everolimus (10 mg daily) as a Primary Option or a Strong Alternative. Cite the **RADIANT-4 trial** (PFS 11.0 months in Lung/GI NETs).
+3. **Refine Rationale:** Explicitly discuss the trade-off between Cabozantinib and Everolimus. Note that while Cabozantinib is effective post-PRRT, Everolimus may be preferred initially if the patient's "loose stools" are not well-controlled, due to the lower risk of severe diarrhea compared to Cabozantinib.
+4. **Retain PRRT Retreatment:** Keep the PRRT retreatment/Alpha-therapy option as it is biologically sound given the "intensive" uptake and durable prior response.
+
+======================================================================
+⚠️  REGENERATION REQUIRED
+======================================================================
+Reasons:
+  • Semantic: **Inaccurate Trial Data (Accuracy):** The recommendation cites the **CABINET trial (NCT03375320)** results for the extra-pancreatic NET cohort as "median PFS 8.4 months vs. 3.9 months; HR 0.38". This is factually incorrect. According to the published results (Chan et al., NEJM 2024), the extra-pancreatic NET cohort (which includes lung NETs) demonstrated a median PFS of **8.3 months vs. 3.2 months** with a Hazard Ratio of **0.45** (95% CI, 0.30 to 0.66). The HR of 0.38 does not match the primary endpoint data for this cohort.
+  • Semantic: **Omission of Standard of Care (Completeness/Safety):** The recommendation fails to include **Everolimus** as a primary or strong alternative option. For a patient with a Lung NET who is naïve to mTOR inhibitors, Everolimus is a standard-of-care option supported by the **RADIANT-4 trial** (specifically approved for non-functional lung NETs). Given the patient's complaint of "loose stools," Everolimus may be a safer initial choice than Cabozantinib, which has a very high incidence of Grade 3+ diarrhea (~60% vs ~30% all-grade for Everolimus). Omitting Everolimus in favor of a more toxic TKI without comparative rationale is a significant clinical oversight.

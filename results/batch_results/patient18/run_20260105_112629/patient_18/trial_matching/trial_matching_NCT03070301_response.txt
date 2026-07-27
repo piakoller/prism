@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:50:06.424482
+Trial: 64/86
+NCT ID: NCT03070301
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study is relevant because it specifically evaluates patients with well-differentiated foregut NETs (including lung/bronchopulmonary primaries) with Ki-67 ≤30%, which perfectly matches this patient's profile (Lung NET, G2, Ki-67 5%). In the context of a patient progressing after PRRT who is a candidate for everolimus (based on RADIANT-4), this Phase 2 study provides critical evidence regarding the combination of everolimus with the CDK4/6 inhibitor ribociclib. The published results (Raj et al., 2021) demonstrated significant toxicity (92% grade ≥2 myelosuppression), no objective responses, and insufficient activity to warrant further investigation. This negative evidence is clinically actionable as it guides the tumor board to avoid this specific combination and likely proceed with standard everolimus monotherapy or alternative standard options, preventing exposure to an ineffective and toxic regimen."
+}

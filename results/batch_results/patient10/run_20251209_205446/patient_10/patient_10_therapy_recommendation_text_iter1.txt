@@ -1,0 +1,17 @@
+=== REGENERATION ITERATION 1 - THERAPY RECOMMENDATION ===
+Timestamp: 2025-12-09T21:33:09.869065
+Patient ID: 10
+================================================================================
+
+**Primary Recommendation: Cabozantinib (Tyrosine Kinase Inhibitor)**
+*   **Evidence Basis:** **NCT03375320 (CABINET Phase 3 Trial)**.
+*   **Dosing Strategy:** Initiate at a **reduced starting dose** (e.g., 40 mg or 20 mg daily) rather than the standard 60 mg.
+    *   *Justification:* The patient is fragile and demonstrated intolerance (asthenia, Grade 2 thrombocytopenia) to Sunitinib, a prior TKI. A reduced dose is essential to balance the significant efficacy benefit demonstrated in the CABINET trial against the risk of recurrent toxicity.
+*   **Efficacy Data:** In the Phase 3 CABINET trial (NCT03375320), patients with advanced pancreatic neuroendocrine tumors (pNETs) who had progressed after prior therapy treated with Cabozantinib achieved a **median progression-free survival (PFS) of 13.8 months** compared to 4.4 months with placebo (Stratified HR 0.23; 95% CI, 0.12 to 0.42; P<0.001). The confirmed objective response rate was **19%**.
+
+**Alternative Recommendation: Peptide Receptor Radionuclide Therapy (PRRT) Retreatment**
+*   **Evidence Basis:** **ENETS 2023 Guidance Paper (Section Q5)** and **ESMO Clinical Practice Guidelines**.
+*   **Regimen:** 177Lu-DOTATATE (2-4 cycles).
+*   **Prerequisites for Eligibility:**
+    1.  **Somatostatin Receptor Imaging (SRI):** A new **68Ga-DOTATATE/TOC PET/CT** must confirm high tracer uptake (SUVmax > liver background) in all metastatic liver lesions.
+    2.  **Bone Marrow Reserve:** Given the patient's persistent Grade 1 thrombocytopenia and prior Grade 2 toxicity, a thorough hematological assessment is required to rule out myelodysplasia or insufficient reserve, as guidelines warn of potential long-term bone marrow toxicity (3-4%).

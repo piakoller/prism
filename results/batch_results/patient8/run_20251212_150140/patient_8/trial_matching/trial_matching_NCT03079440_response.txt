@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:12:24.551482
+Trial: 17/86
+NCT ID: NCT03079440
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a well-differentiated G2 neuroendocrine tumor (NET) with a low Ki-67 index (2-6%), whereas this study (TEMCAP) specifically targets patients with Grade 3 tumors (Ki-67 >20%). Clinical evidence from Grade 3 populations is not transferable to Grade 2 disease due to significant differences in biological aggressiveness and chemosensitivity. Furthermore, the patient has a midgut (ileal) primary, a subtype where capecitabine/temozolomide chemotherapy typically shows limited efficacy compared to pancreatic NETs, making the intervention clinically inapplicable to her current decision between surgery and PRRT."
+}

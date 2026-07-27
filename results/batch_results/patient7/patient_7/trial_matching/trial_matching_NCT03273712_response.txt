@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T10:34:25.505304
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for evidence quality and relevance because no specific published results regarding efficacy or safety are provided in the input; the citations are general reviews or discuss other conditions (e.g., meningioma) without reporting outcomes for this specific trial. Without data on tumor response or toxicity, the study cannot inform treatment recommendations. Furthermore, regarding clinical applicability, the patient has recently completed a full course of Lu-177-based PRRT, and this study explicitly excludes patients with prior PRRT (90Y or 177Lu), making the specific intervention (90Y-DOTATOC in a PRRT-naive setting) less relevant to the patient's current post-PRRT status."
+}

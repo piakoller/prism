@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:44:37.465077
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for this patient due to fundamental differences in disease biology and anatomical setting. The study evaluates EUS-guided radiofrequency ablation specifically for low-grade (G1/G2), well-differentiated pancreatic neuroendocrine neoplasms (PanNENs), explicitly excluding G3 tumors. In contrast, the patient has a colonic MiNEN with a poorly differentiated, high-grade NEC component (Ki-67 90%), which is biologically aggressive and requires systemic management rather than focal ablation of indolent primary tumors. Furthermore, the intervention (EUS-RFA) targets primary pancreatic lesions to avoid major pancreatic surgery, whereas the patient has a residual pararenal mass following colectomy. The evidence regarding the safety and efficacy of ablating small, low-grade pancreatic tumors cannot be extrapolated to guide the management of a high-grade, extra-pancreatic metastatic residue."
+}

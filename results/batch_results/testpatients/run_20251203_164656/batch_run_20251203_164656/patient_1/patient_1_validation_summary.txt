@@ -1,0 +1,27 @@
+======================================================================
+THERAPY RECOMMENDATION VALIDATION REPORT
+======================================================================
+Patient ID: 1
+Timestamp: 2025-12-04T12:04:41.373494
+Overall Status: PASSED
+Requires Regeneration: NO
+
+--- STRUCTURAL VALIDATION ---
+Status: PASS
+  ✅ No issues found
+
+--- EVIDENCE CONSISTENCY VALIDATION ---
+Status: PASS
+Trials cited: 4
+Trials available: 11
+Hallucinated citations: 0
+  ✅ No issues found
+
+--- SEMANTIC VALIDATION (LLM-BASED) ---
+Decision: RECONSIDER
+Status: FAIL
+  ✅ No issues found
+
+======================================================================
+✅ VALIDATION PASSED - NO REGENERATION NEEDED
+======================================================================

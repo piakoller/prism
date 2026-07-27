@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:15:13.634454
+Trial: 69/86
+NCT ID: NCT01466036
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 2 study (NCT01466036) provides meaningful clinical evidence supporting Cabozantinib as a therapeutic option for this patient. Biologically, the patient's well-differentiated duodenal NET aligns with the study's \"carcinoid\" cohort (non-pancreatic NETs). Clinically, the patient has progressive disease on somatostatin analogues and requires therapy escalation; the study specifically enrolled patients with progressive, well-differentiated NETs, matching the patient's current scenario. While the patient is also a candidate for PRRT or Everolimus, Cabozantinib represents a relevant alternative or subsequent systemic therapy, particularly given the study's published Phase 2 results (referenced in the input) which demonstrated efficacy and led to subsequent Phase 3 confirmation (CABINET). The evidence is directly transferable to the decision-making process for escalating systemic therapy in a patient with progressive, metastatic GI-NET."
+}

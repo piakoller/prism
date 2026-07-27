@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:12:28.541918
+Trial: 7/86
+NCT ID: NCT06557408
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates pancreatic fistula risks specifically following minimally invasive enucleation (MIEN), a parenchyma-sparing surgery reserved for small, superficial, non-invasive lesions. This evidence is not applicable to the patient, who presents with a massive (10–12 cm), locally advanced T4 PanNET infiltrating the stomach, spleen, and adrenal gland with vascular occlusion. Due to the tumor's size and invasive nature, enucleation is contraindicated; the patient requires radical resection (e.g., distal pancreatectomy with en bloc organ resection) or systemic therapy. Consequently, risk models for enucleation-related complications provide no actionable insights for this patient's management in any relevant clinical scenario (current or post-surgical)."
+}

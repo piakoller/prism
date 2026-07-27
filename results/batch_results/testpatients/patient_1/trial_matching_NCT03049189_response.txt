@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T12:18:04.188617
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for this patient. First, the disease and biology align well; the patient has a Grade 2 pancreatic NET (Ki-67 19%), which fits the study's population of G1/G2 GEP-NETs. Second, the treatment context is highly applicable. The central clinical question is managing a locally advanced, symptomatic tumor that is borderline resectable or inoperable. The COMPETE trial evaluates systemic therapy in precisely this 'inoperable' setting. Assuming the patient's SSTR-PET scan will be positive (a reasonable assumption for a G2 NET), the study's interventions—PRRT and everolimus—are standard treatment considerations. The evidence is relevant for deciding on systemic therapy, either as a definitive treatment for unresectable disease or as a neoadjuvant/conversion therapy to enable future surgery. Third, the evidence quality is high and relevant. The study is a Phase 3 RCT showing that 177Lu-edotreotide PRRT provides a clinically meaningful progression-free survival benefit over everolimus (23.9 vs 14.1 months) with a more favorable safety profile. This provides a strong, evidence-based rationale to recommend PRRT over everolimus as the next therapeutic step for this patient."
+}
+```

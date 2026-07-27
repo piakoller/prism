@@ -1,0 +1,164 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-15T10:03:43.011604
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Patient: 82-year-old woman, ECOG 1, no cognitive impairment
+Bronchial NET (atypical carcinoid), operated in 2019, Ki-67 11%
+Metastatic since 2020: liver, bone, lymph nodes, pituitary
+Tumor burden: low to moderate
+Functional imaging: DOTATOC +++, FDG low uptake, no mismatch
+Non-secreting, likely sporadic
+
+Previous treatments:
+- 2020: Second thoracic surgery with mediastinal dissection (Ki-67 25%)
+- Jan 2021: Clavicle and lumbar radiotherapy
+- Everolimus (Mar–Nov 2021): poor tolerance, stable disease
+- Temozolomide (Jan–Aug 2022): partial hepatic response; discontinued for grade 3 thrombocytopenia
+- FOLFOX (Dec 2022–Jan 2023): very poor tolerance; discontinued
+- PRRT via CPC (Apr–Oct 2023): excellent tolerance; prolonged partial hepatic response
+- Somatostatin analogs (June 2025)
+- Oct 2025: hepatic RECIST progression; no option for local therapy
+Question for Tumorboard:
+What would be next step to consolidate the response?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Disease Biology**
+The patient is an 82-year-old woman with an ECOG performance status of 1 and no cognitive impairment, presenting with a metastatic bronchial neuroendocrine tumor (atypical carcinoid). The disease course is characterized by metastatic spread to the liver, bone, lymph nodes, and pituitary since 2020.
+
+Biologically, the tumor demonstrates heterogeneity and grade progression over time, with Ki-67 increasing from 11% (2019) to 25% (2020). According to the *ESMO Clinical Practice Guidelines for GEP-NENs*, a Ki-67 >20% classifies the tumor within the G3 category. However, the functional imaging profile—DOTATOC +++ and low FDG uptake with no mismatch—indicates a well-differentiated phenotype (NET G3) rather than a poorly differentiated neuroendocrine carcinoma (NEC), as high SSTR expression is generally inversely related to glucose metabolism in low-grade tumors. The strong SSTR expression (DOTATOC +++) confirms the target presence required for peptide receptor radionuclide therapy (PRRT).
+
+**Treatment History and Tolerance Analysis**
+The patient has exhausted multiple lines of standard systemic therapy, significantly limited by intolerance and toxicity:
+*   **mTOR Inhibitors:** Everolimus (approved for lung NETs per RADIANT-4 trial data referenced in the guidelines) resulted in poor tolerance.
+*   **Chemotherapy:** Temozolomide yielded a partial hepatic response but was discontinued due to Grade 3 thrombocytopenia. FOLFOX was discontinued due to very poor tolerance.
+*   **Radiotherapy:** Prior clavicle and lumbar radiotherapy (Jan 2021).
+*   **PRRT:** Treatment with PRRT via CPC (Apr–Oct 2023) resulted in a prolonged partial hepatic response with excellent tolerance, distinguishing it as the most favorable modality in terms of the therapeutic index for this specific patient.
+
+**Current Clinical Status**
+The patient currently exhibits hepatic RECIST progression as of October 2025 while on Somatostatin analogs. There are no options for local therapy.
+
+**Assessment per Guidelines**
+Based on the *ESMO Clinical Practice Guidelines*, the following factors are relevant for the tumor board's consideration:
+1.  **PRRT Eligibility:** The guidelines recommend PRRT for progressive SSTR-positive NETs. While the guidelines primarily discuss midgut and pancreatic NETs, they reference efficacy in bronchial neuroendocrine tumors (Ref 97). The patient's imaging (DOTATOC +++) satisfies the requirement for homogenous SSTR expression.
+2.  **High-Grade (G3) Consideration:** The guidelines acknowledge that PRRT may be considered in patients with NET G3 (Ki-67 >20%), citing disease control rates between 30% and 80% in retrospective studies, particularly for patients with Ki-67 <55%. This patient (Ki-67 25%) falls within this range.
+3.  **Therapeutic Options:**
+    *   **Chemotherapy:** While systemic chemotherapy (e.g., Temozolomide or platinum-based regimens) is recommended for NEN G3, this patient has demonstrated severe intolerance (FOLFOX) and Grade 3 hematological toxicity (Temozolomide), making re-challenge high risk.
+    *   **Targeted Therapy:** Re-introduction of Everolimus is likely not feasible due to prior poor tolerance.
+    *   **PRRT Re-treatment/Consolidation:** Given the "excellent tolerance" and "prolonged partial hepatic response" to the previous PRRT course, and the persistence of high SSTR uptake (DOTATOC +++), the clinical assessment points toward the potential utility of further PRRT.
+
+**Conclusion**
+The patient presents with a progressive, SSTR-avid (DOTATOC +++) metastatic bronchial NET G3 (Ki-67 25%). She is refractory or intolerant to standard chemotherapy and mTOR inhibitors. The assessment highlights that PRRT has been the only modality providing disease control with acceptable tolerability. Consequently, evaluating the feasibility of consolidating the response with further PRRT is the most clinically supported consideration, provided bone marrow reserve is adequate given the history of Grade 3 thrombocytopenia.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: What would be next step to consolidate the response?
+
+### STUDY DATA
+	•	NCT-ID: NCT05476978
+	•	Title: Artificial Intelligence in EUS for Diagnosing Pancreatic Solid Lesions
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: EUS-AI model
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Patients who underwent EUS using a curved line array echoendoscope (GF-UCT260; Olympus Medical Systems) since 2014 in our affiliation.
+* For each patient, all available native EUS pictures are included.
+* Patients' diagnosis are validated by surgical outcomes or fine-needle aspiration (FNA) findings and have a compatible clinical course with a follow-up period of more than 6 months.
+
+Exclusion Criteria:
+
+* The image is of poor quality.
+* The images contain unique marks which can potentially bias the model, such as the biopsy needle. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: We aim to develop an EUS-AI model which can facilitate clinical diagnosis by analyzing EUS pictures and clinical parameters of patients.
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/39028670/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Diagnosing Solid Lesions in the Pancreas With Multimodal Artificial Intelligence: A Randomized Crossover Trial. (PMID: 39028670)
+	•	Key findings from publications: PubMed Abstract: Diagnosing solid lesions in the pancreas via endoscopic ultrasonographic (EUS) images is challenging. Artificial intelligence (AI) has the potential to help with such diagnosis, but existing AI models focus solely on a single modality.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Importance: Diagnosing solid lesions in the pancreas via endoscopic ultrasonographic (EUS) images is challenging. Artificial intelligence (AI) has the potential to help with such diagnosis, but existing AI models focus solely on a single modality. Objective: To advance the clinical diagnosis of solid lesions in the pancreas through developing a multimodal AI model integrating both clinical information and EUS images. Design, setting, and participants: In this randomized crossover trial conducted from January 1 to June 30, 2023, from 4 centers across China, 12 endoscopists of varying levels of expertise were randomly assigned to diagnose solid lesions in the pancreas with or without AI assistance. Endoscopic ultrasonographic images and clinical information of 439 patients from 1 institution who had solid lesions in the pancreas between January 1, 2014, and December 31, 2022, were collected to train and validate the joint-AI model, while 189 patients from 3 external institutions were used to evaluate the robustness and generalizability of the model. Intervention: Conventional or AI-assisted diagnosis of solid lesions in the pancreas. Main outcomes and measures: In the retrospective dataset, the performance of the joint-AI model was evaluated internally and externally. In the prospective dataset, diagnostic performance of the endoscopists with or without the AI assistance was compared. Results: The retrospective dataset included 628 patients (400 men [63.7%]; mean [SD] age, 57.7 [27.4] years) who underwent EUS procedures. A total of 130 patients (81 men [62.3%]; mean [SD] age, 58.4 [11.7] years) were prospectively recruited for the crossover trial. The area under the curve of the joint-AI model ranged from 0.996 (95% CI, 0.993-0.998) in the internal test dataset to 0.955 (95% CI, 0.940-0.968), 0.924 (95% CI, 0.888-0.955), and 0.976 (95% CI, 0.942-0.995) in the 3 external test datasets, respectively. The diagnostic accuracy of novice endoscopists was significantly enhanced with AI assistance (0.69 [95% CI, 0.61-0.76] vs 0.90 [95% CI, 0.83-0.94]; P < .001), and the supplementary interpretability information alleviated the skepticism of the experienced endoscopists. Conclusions and relevance: In this randomized crossover trial of diagnosing solid lesions in the pancreas with or without AI assistance, the joint-AI model demonstrated positive human-AI interaction, which suggested its potential to facilitate a clinical diagnosis. Nevertheless, future randomized clinical trials are warranted. Trial registration: ClinicalTrials.gov Identifier: NCT05476978 . PubMed Disclaimer Conflict of interest statement Conflict of Interest Disclosures: Dr W. Wang and Mr X. Li reported being employed by Wuhan EndoAngel Medical Technology Co outside the submitted work. No other disclosures were reported. Figures Figure 1.. Flow Diagram for the Crossover… Figure 1.. Flow Diagram for the Crossover Trial AI indicates artificial intelligence; and EUS, endoscopic… Figure 1.. Flow Diagram for the Crossover Trial AI indicates artificial intelligence; and EUS, endoscopic ultrasonography. Figure 2.. Performance of the Artificial Intelligence… Figure 2.. Performance of the Artificial Intelligence Models in Differentiating Carcinoma and Noncancerous Lesions AUC… Figure 2.. Performance of the Artificial Intelligence Models in Differentiating Carcinoma and Noncancerous Lesions AUC indicates area under the curve; BJFH, Beijing Friendship Hospital; NJDTH, Nanjing Drum Tower Hospital; and PUMCH, Peking Union Medical College Hospital. Figure 3.. Diagnostic Performance of Endoscopists and… Figure 3.. Diagnostic Performance of Endoscopists and Artificial Intelligence Models in the Crossover Trial AUC… Figure 3.. Diagnostic Performance of Endoscopists and Artificial Intelligence Models in the Crossover Trial AUC indicates area under the curve. See this image and copyright information in PMC Similar articles Enhancing detection of various pancreatic lesions on endoscopic ultrasound through artificial intelligence: a basis for computer-aided detection systems. Konikoff T, Loebl N, Benson AA, Green O, Sandler H, Gingold-Belfer R, Levi Z, Perl L, Dotan I, Shamah S. Konikoff T, et al. J Gastroenterol Hepatol. 2025 Jan;40(1):235-240. doi: 10.1111/jgh.16814. Epub 2024 Nov 13. J Gastroenterol Hepatol. 2025. PMID: 39538430 Validation of a real-time biliopancreatic endoscopic ultrasonography analytical device in China: a prospective, single-centre, randomised, controlled trial. Wu HL, Yao LW, Shi HY, Wu LL, Li X, Zhang CX, Chen BR, Zhang J, Tan W, Cui N, Zhou W, Zhang JX, Xiao B, Gong RR, Ding Z, Yu HG. Wu HL, et al. Lancet Digit Health. 2023 Nov;5(11):e812-e820. doi: 10.1016/S2589-7500(23)00160-7. Epub 2023 Sep 27. Lancet Digit Health. 2023. PMID: 37775472 Clinical Trial. Artificial intelligence-aided colonoscopic differential diagnosis between Crohn's disease and gastrointestinal tuberculosis. Park K, Lim J, Shin SH, Ryu M, Shin H, Lee M, Hong SW, Hwang SW, Park SH, Yang DH, Ye BD, Myung SJ, Yang SK, Kim N, Byeon JS. Park K, et al. J Gastroenterol Hepatol. 2025 Jan;40(1):115-122. doi: 10.1111/jgh.16788. Epub 2024 Nov 4. J Gastroenterol Hepatol. 2025. PMID: 39496468 Artificial intelligence assisted endoscopic ultrasound for detection of pancreatic space-occupying lesion: a systematic review and meta-analysis. Dhali A, Kipkorir V, Srichawla BS, Kumar H, Rathna RB, Ongidi I, Chaudhry T, Morara G, Nurani K, Cheruto D, Biswas J, Chieng LR, Dhali GK. Dhali A, et al. Int J Surg. 2023 Dec 1;109(12):4298-4308. doi: 10.1097/JS9.0000000000000717. Int J Surg. 2023. PMID: 37800594 Free PMC article. Application of artificial intelligence in the diagnosis of subepithelial lesions using endoscopic ultrasonography: a systematic review and meta-analysis. Liu XY, Song W, Mao T, Zhang Q, Zhang C, Li XY. Liu XY, et al. Front Oncol. 2022 Aug 15;12:915481. doi: 10.3389/fonc.2022.915481. eCollection 2022. Front Oncol. 2022. PMID: 36046054 Free PMC article. See all similar articles Cited by Use machine learning to predict bone metastasis of esophageal cancer: A population-based study. Wan J, Zhou J. Wan J, et al. Digit Health. 2025 Apr 1;11:20552076251325960. doi: 10.1177/20552076251325960. eCollection 2025 Jan-Dec. Digit Health. 2025. PMID: 40177122 Free PMC article. Informatics strategies for early detection and risk mitigation in pancreatic cancer patients. Jin D, Khan NU, Gu W, Lei H, Goel A, Chen T. Jin D, et al. Neoplasia. 2025 Feb;60:101129. doi: 10.1016/j.neo.2025.101129. Epub 2025 Jan 21. Neoplasia. 2025. PMID: 39842383 Free PMC article. Review. Role of Endoscopy in Clinical Management of Intraductal Papillary Mucinous Neoplasms. Hamada T, Oyama H, Takahara N, Nakai Y, Fujishiro M. Hamada T, et al. J Gastroenterol Hepatol. 2025 May;40(5):1045-1058. doi: 10.1111/jgh.16938. Epub 2025 Mar 31. J Gastroenterol Hepatol. 2025. PMID: 40159838 Free PMC article. Review. Unlocking the Potential of AI in EUS and ERCP: A Narrative Review for Pancreaticobiliary Disease. Araújo CC, Frias J, Mendes F, Martins M, Mota J, Almeida MJ, Ribeiro T, Macedo G, Mascarenhas M. Araújo CC, et al. Cancers (Basel). 2025 Mar 28;17(7):1132. doi: 10.3390/cancers17071132. Cancers (Basel). 2025. PMID: 40227709 Free PMC article. Review. Diagnostic performance of AI-assisted endoscopy diagnosis of digestive system tumors: an umbrella review. Huang C, Song Y, Dong J, Yang F, Guo J, Sun S. Huang C, et al. Front Oncol. 2025 Apr 3;15:1519144. doi: 10.3389/fonc.2025.1519144. eCollection 2025. Front Oncol. 2025. PMID: 40248201 Free PMC article. See all "Cited by" articles References Cai J, Chen H, Lu M, et al. . Advances in the epidemiology of pancreatic cancer: trends, risk factors, screening, and prognosis. Cancer Lett. 2021;520:1-11. doi:10.1016/j.canlet.2021.06.027 - DOI - PubMed Kitano M, Yoshida T, Itonaga M, Tamura T, Hatamaru K, Yamashita Y. Impact of endoscopic ultrasonography on diagnosis of pancreatic cancer. J Gastroenterol. 2019;54(1):19-32. doi:10.1007/s00535-018-1519-2 - DOI - PMC - PubMed Mizrahi JD, Surana R, Valle JW, Shroff RT. Pancreatic cancer. Lancet. 2020;395(10242):2008-2020. doi:10.1016/S0140-6736(20)30974-0 - DOI - PubMed Singh VK, Yadav D, Garg PK. Diagnosis and management of chronic pancreatitis: a review. JAMA. 2019;322(24):2422-2434. doi:10.1001/jama.2019.19411 - DOI - PubMed Nista EC, De Lucia SS, Manilla V, et al. . Autoimmune pancreatitis: from pathogenesis to treatment. Int J Mol Sci. 2022;23(20):12667. doi:10.3390/ijms232012667 - DOI - PMC - PubMed Show all 30 references Publication types Randomized Controlled Trial Actions Search in PubMed Search in MeSH Add to Search Multicenter Study Actions Search in PubMed Search in MeSH Add to Search Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search MeSH terms Adult Actions Search in PubMed Search in MeSH Add to Search Aged Actions Search in PubMed Search in MeSH Add to Search Artificial Intelligence* Actions Search in PubMed Search in MeSH Add to Search China Actions Search in PubMed Search in MeSH Add to Search Cross-Over Studies* Actions Search in PubMed Search in MeSH Add to Search Endosonography / methods Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Pancreas / diagnostic imaging Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms / diagnosis Actions Search in PubMed Search in MeSH Add to Search Pancreatic Neoplasms / diagnostic imaging Actions Search in PubMed Search in MeSH Add to Search Retrospective Studies Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT05476978 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen LinkOut - more resources Full Text Sources Ovid Technologies, Inc. PubMed Central Silverchair Information Systems Medical ClinicalTrials.gov
+	•	Additional evidence from online sources: Primary outcome: The model's ability to differentiate pancreatic cancer from other pancreatic solid lesion
+Secondary outcomes: The model's ability to specify the pancreatic solid lesions such as pancreatic cancer, CP, AIP and NET
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Diagnosing Solid Lesions in the Pancreas With Multimodal Artificial Intelligence: A Randomized Crossover Trial.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/39028670/', 'pmid': '39028670', 'content_scraped': True, 'content_length': 10186}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/39028670/
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

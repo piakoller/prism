@@ -1,0 +1,74 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**1. First-Line Systemic Therapy: Somatostatin Analogues (SSAs)**\nInitiate **Lanreotide Autogel (120 mg)** or **Octreotide LAR (30 mg)** every 4 weeks for antiproliferative control.\n*   **Evidence:** The prospective observational study **NCT02730104** (Paulson et al.) demonstrated a **24-month progression-free survival (PFS) rate of 73.7%** in patients with GEP-NETs treated with Lanreotide, confirming its effectiveness and safety in a real-world setting.\n*   **Guideline Support:** ENETS and ESMO guidelines recommend SSAs as the standard first-line therapy for SSTR-positive, well-differentiated (G1) NF-Pan-NETs with slow growth (Ki-67 <10%).\n\n**2. Evaluation for Peptide Receptor Radionuclide Therapy (PRRT)**\nEvaluate the patient for **177Lu-DOTATATE PRRT**, potentially as a neoadjuvant strategy to facilitate downstaging or as a second-line option if the disease progresses.\n*   **Evidence:**\n    *   **NCT02754297:** In the P-PRRT trial (Del Prete et al.), personalized PRRT achieved a **partial or minor response in 84.6% (11 of 13)** of patients with pancreatic NETs. This high response rate supports the utility of PRRT for tumor shrinkage (downstaging) in locally advanced cases.\n    *   **NCT02236910:** A registry study (Swiha et al.) reported a **median PFS of 34.1 months** in patients with well-differentiated NETs treated with 177Lu-DOTATATE, supporting its long-term efficacy.\n*   **Condition:** Eligibility requires confirming that uptake in the paraaortic lymph nodes and liver metastases exceeds normal liver background, which is suggested by the \"intense accumulation\" on PET/CT.\n\n**3. Surgical Consultation**\nRefer to a high-volume pancreatic surgery center to assess the feasibility of **pancreaticoduodenectomy with venous resection** and lymphadenectomy.\n*   **Caveat:** The presence of **retroperitoneal paraaortic lymph nodes** may represent extra-regional disease (M1), potentially precluding curative (R0) resection. If R0 resection is not currently feasible due to these nodes or the vascular contact, proceed with the systemic/PRRT strategies above to attempt downstaging.",
+  "rationale_text": "The patient presents with a Grade 1 (Ki-67 2%), SSTR-positive non-functioning pancreatic NET. While the primary tumor is locally advanced (3 cm vascular contact) and there is oligometastatic liver disease, the most significant challenge to curative surgery is the presence of retroperitoneal paraaortic lymph nodes, which may prevent R0 resection.\n\n**Somatostatin Analogues (SSAs)** are the recommended first-line therapy for antiproliferative control in G1 SSTR-positive Pan-NETs (ENETS/ESMO Guidelines). The **NCT02730104** study (Paulson et al.) provides prospective evidence of high 24-month PFS rates (73.7%) with Lanreotide in this population, aligning with the patient's stable disease status.\n\n**PRRT** is a strong consideration given the \"intense\" SSTR uptake. While typically second-line, it is increasingly considered for neoadjuvant downstaging. The **NCT02754297** trial (Del Prete et al.) showed promising response rates (partial/minor response in ~85% of Pan-NETs), which is crucial if the goal is to shrink the tumor away from the portal vein or clear lymph nodes to facilitate surgery. **NCT02236910** further supports the long-term efficacy (median PFS 34.1 months) of this modality.\n\n**Surgery** remains the only curative option but carries high risk due to vascular involvement and nodal spread. ENETS guidelines support aggressive resection in expert centers, but only if R0 is achievable. Therefore, a strategy prioritizing SSAs or PRRT to assess biology and achieve downstaging is recommended before attempting high-morbidity resection.",
+  "recommendation_summary": {
+    "primary_recommendation": "**1",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02730104",
+      "nct_id": "NCT02730104",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02754297",
+      "nct_id": "NCT02754297",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02236910",
+      "nct_id": "NCT02236910",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT02730104",
+        "trial_name": "Trial NCT02730104",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02754297",
+        "trial_name": "Trial NCT02754297",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02236910",
+        "trial_name": "Trial NCT02236910",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**1. First-Line Systemic Therapy: Somatostatin Analogues (SSAs)**\nInitiate **Lanreotide Autogel (120 mg)** or **Octreotide LAR (30 mg)** every 4 weeks for antiproliferative control.\n*   **Evidence:** The prospective observational study **NCT02730104** (Paulson et al.) demonstrated a **24-month progression-free survival (PFS) rate of 73.7%** in patients with GEP-NETs treated with Lanreotide, confirming its effectiveness and safety in a real-world setting.\n*   **Guideline Support:** ENETS and ESMO guidelines recommend SSAs as the standard first-line therapy for SSTR-positive, well-differentiated (G1) NF-Pan-NETs with slow growth (Ki-67 <10%).\n\n**2. Evaluation for Peptide Receptor Radionuclide Therapy (PRRT)**\nEvaluate the patient for **177Lu-DOTATATE PRRT**, potentially as a neoadjuvant strategy to facilitate downstaging or as a second-line option if the disease progresses.\n*   **Evidence:**\n    *   **NCT02754297:** In the P-PRRT trial (Del Prete et al.), personalized PRRT achieved a **partial or minor response in 84.6% (11 of 13)** of patients with pancreatic NETs. This high response rate supports the utility of PRRT for tumor shrinkage (downstaging) in locally advanced cases.\n    *   **NCT02236910:** A registry study (Swiha et al.) reported a **median PFS of 34.1 months** in patients with well-differentiated NETs treated with 177Lu-DOTATATE, supporting its long-term efficacy.\n*   **Condition:** Eligibility requires confirming that uptake in the paraaortic lymph nodes and liver metastases exceeds normal liver background, which is suggested by the \"intense accumulation\" on PET/CT.\n\n**3. Surgical Consultation**\nRefer to a high-volume pancreatic surgery center to assess the feasibility of **pancreaticoduodenectomy with venous resection** and lymphadenectomy.\n*   **Caveat:** The presence of **retroperitoneal paraaortic lymph nodes** may represent extra-regional disease (M1), potentially precluding curative (R0) resection. If R0 resection is not currently feasible due to these nodes or the vascular contact, proceed with the systemic/PRRT strategies above to attempt downstaging.\n</therapy_recommendation>\n\n<rationale>\nThe patient presents with a Grade 1 (Ki-67 2%), SSTR-positive non-functioning pancreatic NET. While the primary tumor is locally advanced (3 cm vascular contact) and there is oligometastatic liver disease, the most significant challenge to curative surgery is the presence of retroperitoneal paraaortic lymph nodes, which may prevent R0 resection.\n\n**Somatostatin Analogues (SSAs)** are the recommended first-line therapy for antiproliferative control in G1 SSTR-positive Pan-NETs (ENETS/ESMO Guidelines). The **NCT02730104** study (Paulson et al.) provides prospective evidence of high 24-month PFS rates (73.7%) with Lanreotide in this population, aligning with the patient's stable disease status.\n\n**PRRT** is a strong consideration given the \"intense\" SSTR uptake. While typically second-line, it is increasingly considered for neoadjuvant downstaging. The **NCT02754297** trial (Del Prete et al.) showed promising response rates (partial/minor response in ~85% of Pan-NETs), which is crucial if the goal is to shrink the tumor away from the portal vein or clear lymph nodes to facilitate surgery. **NCT02236910** further supports the long-term efficacy (median PFS 34.1 months) of this modality.\n\n**Surgery** remains the only curative option but carries high risk due to vascular involvement and nodal spread. ENETS guidelines support aggressive resection in expert centers, but only if R0 is achievable. Therefore, a strategy prioritizing SSAs or PRRT to assess biology and achieve downstaging is recommended before attempting high-morbidity resection.\n</rationale>",
+  "metadata": {
+    "timestamp": "2026-01-05T09:59:24.433209",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 16,
+    "trials_considered": 10,
+    "trials_included": 7,
+    "trials_excluded": 3,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20260105_092226\\patient_16\\patient_16_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20260105_092226\\patient_16\\patient_16_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20260105_092226\\patient_16\\patient_16_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20260105_092226\\patient_16\\patient_16_therapy_recommendation_reasoning.txt"
+  }
+}

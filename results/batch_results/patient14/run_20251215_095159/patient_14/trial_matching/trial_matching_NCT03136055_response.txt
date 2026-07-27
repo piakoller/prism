@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:14:03.131028
+Trial: 59/86
+NCT ID: NCT03136055
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet Criterion 1 (Disease / Biology Alignment). The patient has a well-differentiated bronchial neuroendocrine tumor (NET) G3 (Ki-67 25%, SSTR-positive, FDG-low), whereas the study specifically evaluates poorly differentiated neuroendocrine carcinomas (NEC) and explicitly excludes well-differentiated G3 NETs and bronchial carcinoids. These are biologically distinct entities; NET G3s typically have different driver mutations and immune landscapes compared to NECs. Consequently, the study's findings regarding the inefficacy of pembrolizumab in NECs cannot be meaningfully extrapolated to guide treatment for this patient's well-differentiated disease."
+}

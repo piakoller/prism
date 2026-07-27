@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:34:41.458722
+Trial: 12/86
+NCT ID: NCT03049189
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient due to significant discordance in disease biology and treatment context. First, the patient has a Grade 3 NET with a very high Ki-67 index (70%), whereas the COMPETE trial is strictly limited to Grade 1 and 2 GEP-NETs. The clinical behavior and expected outcomes for a Ki-67 70% tumor are vastly different from the indolent G1/G2 tumors studied (median PFS 23.9 months in the trial vs. expected 4-6 months for high-grade G3), making the efficacy data non-transferable. Second, the patient has already progressed on everolimus, which was the comparator arm in this study, and the trial explicitly excluded patients with prior mTOR inhibitor exposure. While the patient is a candidate for PRRT due to SSTR positivity, evidence from a G1/G2 trial comparing PRRT to a drug the patient has already failed does not provide actionable insights for a high-grade, heavily pre-treated G3 population."
+}

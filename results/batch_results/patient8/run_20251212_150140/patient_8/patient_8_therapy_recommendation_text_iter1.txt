@@ -1,0 +1,13 @@
+=== REGENERATION ITERATION 1 - THERAPY RECOMMENDATION ===
+Timestamp: 2025-12-12T15:42:09.717748
+Patient ID: 8
+================================================================================
+
+The recommended therapeutic strategy is to **proceed with the proposed cytoreductive surgery** (resection of the ileal primary, regional lymphadenectomy, and resection/debulking of liver and peritoneal metastases).
+
+The clinical decision to initiate **Peptide Receptor Radionuclide Therapy (PRRT)** directly upon disease progression in 2024, rather than performing upfront surgery, was appropriate and evidence-based. The patient should now transition to the surgical phase of this multimodal approach.
+
+**Key Evidence Supporting this Recommendation:**
+*   **ENETS 2024 Guidelines (Recommendation A-1b & Section 7):** Support PRRT as the standard second-line treatment for SSA-refractory Si-NETs and note that delayed locoregional surgery (>6 months from diagnosis) offers similar overall survival to upfront surgery.
+*   **NCT04727723:** An observational study supporting the effectiveness of **Lutathera** in Grade 2 GEP-NET patients in clinical practice.
+*   **NCT05448157:** Supports the use of a **68Ga-DOTATOC radio-guided intraoperative probe** to improve the detection and resection of NET lesions, which is relevant for this patient with DOTATOC-avid disease.

@@ -1,0 +1,93 @@
+=== TRIAL ANALYSIS RAW RESPONSE ===
+Timestamp: 2026-01-05T09:54:30.690145
+Patient ID: 16
+Model: google/gemini-3-pro-preview
+==================================================
+
+Based on the patient's profile (G1 SSTR+ Pancreatic NET, locally advanced/oligometastatic, stable but symptomatic) and the available trial evidence, here is the analysis of the clinical trials for the final therapy recommendation.
+
+<trial_analysis>
+**NCT NUMBER:** NCT02730104
+**TRIAL NAME:** Community-based Neuroendocrine Tumor (NET) Research Study
+**DECISION:** INCLUDE
+**RATIONALE:** This observational study confirms the real-world effectiveness and safety of Lanreotide in GEP-NETs. It supports the use of Somatostatin Analogues (SSAs) as a standard first-line option for antiproliferative control and symptom management in this patient.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03049189
+**TRIAL NAME:** Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 3 trial provides high-quality evidence that PRRT (177Lu-edotreotide) improves progression-free survival compared to targeted therapy (everolimus) in G1/G2 GEP-NETs. It strongly supports PRRT as a superior therapeutic consideration for this patient.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT05153772
+**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial demonstrates a high Objective Response Rate (ORR ~56%) with alpha-emitter PRRT in treatment-naïve patients. This is highly relevant for a neoadjuvant strategy where tumor shrinkage is required to facilitate surgical resection.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02236910
+**TRIAL NAME:** An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+**DECISION:** INCLUDE
+**RATIONALE:** This registry study provides valuable data on survival predictors and efficacy of standard PRRT in well-differentiated NETs. It reinforces the utility of PRRT for this patient's profile (SSTR+ G1 NET).
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03074513
+**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** Immunotherapy is not a standard first-line treatment for Grade 1 well-differentiated NETs, and the response rates (20%) are lower than other available options (e.g., PRRT). It does not address the patient's immediate need for standard antiproliferative or neoadjuvant therapy.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02754297
+**TRIAL NAME:** Personalized PRRT of Neuroendocrine Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** This study shows that personalized PRRT dosimetry can safely increase tumor absorbed dose and achieve high response rates (particularly in pancreatic NETs). This informs the recommendation for optimizing PRRT if a neoadjuvant approach is selected.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03217097
+**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** While this trial guides chemotherapy selection, cytotoxic chemotherapy is generally reserved for higher-grade (G2/G3) or rapidly progressive disease. Given the patient's Grade 1 status (Ki-67 2%) and stable disease, chemotherapy is not the primary evidence-based recommendation compared to SSAs or PRRT.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01842165
+**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+**DECISION:** INCLUDE
+**RATIONALE:** This prospective Phase 2 study validates the efficacy of PRRT and identifies imaging parameters that predict response. It confirms that the patient's high SSTR uptake makes her a strong candidate for this therapy.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01253161
+**TRIAL NAME:** Study of Pasireotide Long Acting Release (LAR) in Patients With Metastatic Neuroendocrine Tumors (NETs)
+**DECISION:** EXCLUDE
+**RATIONALE:** Although Pasireotide is effective, the study highlights a high rate of hyperglycemia. Standard SSAs (Lanreotide/Octreotide) are preferred for first-line treatment due to a better safety profile, making this trial less relevant for the initial recommendation.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03289741
+**TRIAL NAME:** A Study to Evaluate Patient Experience in the Therapy of Neuroendocrine Tumors Treated With Octreotide Long Acting Release Versus Lanreotide
+**DECISION:** INCLUDE
+**RATIONALE:** This trial compares patient experience and preference between the two standard SSAs (Octreotide vs. Lanreotide). It provides practical evidence to guide the selection of the specific SSA agent for this patient's chronic management.
+---
+</trial_analysis>
+
+<summary>
+**TOTAL TRIALS ANALYZED:** 10
+**TRIALS TO INCLUDE:** 7
+**TRIALS TO EXCLUDE:** 3
+</summary>

@@ -1,0 +1,74 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Recommendation:** Re-treatment (Salvage) with **Peptide Receptor Radionuclide Therapy (PRRT)** using **177Lu-DOTATATE**.\n\n**Key Evidence Support:**\n*   **NCT03972488 (NETTER-2, Phase 3):** While this trial evaluated first-line treatment in GEP-NETs, it provides the critical **biological rationale** that 177Lu-DOTATATE is highly effective in Grade 2 and 3 (Ki-67 10–55%) well-differentiated SSTR-positive tumors (median PFS 22.8 months vs 8.5 months; HR 0.276). This supports targeting the patient's specific tumor biology (Ki-67 25%, G3 well-differentiated), although efficacy in the *re-treatment* setting and for *bronchial* primaries is extrapolated.\n*   **NCT02236910 (Registry Study):** Provides real-world evidence for the utility of 177Lu-DOTATATE in progressive, well-differentiated NETs. This registry data supports the clinical decision to use PRRT in progressive disease, serving as a basis for re-treatment consideration in the absence of Phase 3 salvage trials.\n*   **NCT02754297 (Personalized PRRT):** Investigates personalized dosimetry to optimize tumor dose while limiting organ toxicity. This approach is highly recommended for this patient to mitigate the risks of cumulative myelotoxicity given her age (82) and history of Grade 3 thrombocytopenia.\n\n**Alternative Option (if PRRT is not feasible):** **Cabozantinib**.\n*   **NCT03375320 (CABINET, Phase 3):** Demonstrated a significant PFS benefit in previously treated extra-pancreatic NETs (median PFS 8.4 months vs 3.9 months; HR 0.38). This represents the strongest Level 1 evidence for a systemic therapy alternative. However, it is a secondary recommendation due to the high rate of Grade 3-4 adverse events (62–65%), which presents a substantial safety risk for this elderly patient with a history of poor tolerance to targeted therapies (Everolimus).",
+  "rationale_text": "**Clinical Justification for Re-treatment with PRRT:**\nThe patient presents with a progressive, SSTR-avid (DOTATOC +++) bronchial NET G3 (Ki-67 25%). The recommendation for PRRT re-treatment is based on the \"excellent tolerance\" and \"prolonged partial hepatic response\" observed during her initial course in 2023. In a patient who has exhausted standard chemotherapy (intolerant to FOLFOX, thrombocytopenia with Temozolomide) and targeted therapy (intolerant to Everolimus), re-challenging with the modality that provided the best therapeutic index is clinically sound.\n\n**Evidence Synthesis and Extrapolation:**\n*   **Biological Rationale (NETTER-2):** The NETTER-2 trial (NCT03972488) confirmed that high-grade (G2/G3) well-differentiated NETs are responsive to PRRT. Although the patient has a bronchial primary and is being considered for re-treatment (scenarios not covered in NETTER-2), the trial validates the biological plausibility of treating a Ki-67 25% tumor with radioligand therapy.\n*   **Re-treatment Evidence:** High-level randomized evidence for PRRT re-treatment is currently lacking. The recommendation relies on registry data (NCT02236910) and clinical consensus (ESMO guidelines) supporting PRRT in progressive SSTR+ disease.\n*   **Bronchial NETs:** While major trials focus on GEP-NETs, guidelines acknowledge efficacy in bronchial NETs based on SSTR expression similarities and retrospective data.\n\n**Safety and Risk Management:**\n*   **Cumulative Toxicity:** Re-treatment carries a risk of cumulative bone marrow toxicity, particularly relevant given the patient's age (82) and prior Grade 3 thrombocytopenia on Temozolomide. The use of personalized dosimetry (NCT02754297) is critical to ensure safety.\n*   **Cabozantinib Risk:** While the CABINET trial (NCT03375320) provides robust evidence for efficacy in extra-pancreatic NETs, the toxicity profile (fatigue, hypertension, diarrhea) is likely prohibitive for this specific patient who has demonstrated poor tolerance to similar agents (Everolimus). Thus, it is reserved as a fallback option.\n*   **Immunotherapy Exclusion:** Trials such as DART (NCT02834013) and the Avelumab study (NCT03278379) demonstrated 0% response rates in well-differentiated G2-3 NETs, supporting the exclusion of checkpoint inhibitors for this patient.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Recommendation:** Re-treatment (Salvage) with **Peptide Receptor Radionuclide Therapy (PRRT)** using **177Lu-DOTATATE**",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03972488",
+      "nct_id": "NCT03972488",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02236910",
+      "nct_id": "NCT02236910",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02754297",
+      "nct_id": "NCT02754297",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03972488",
+        "trial_name": "Trial NCT03972488",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02236910",
+        "trial_name": "Trial NCT02236910",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02754297",
+        "trial_name": "Trial NCT02754297",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**Primary Recommendation:** Re-treatment (Salvage) with **Peptide Receptor Radionuclide Therapy (PRRT)** using **177Lu-DOTATATE**.\n\n**Key Evidence Support:**\n*   **NCT03972488 (NETTER-2, Phase 3):** While this trial evaluated first-line treatment in GEP-NETs, it provides the critical **biological rationale** that 177Lu-DOTATATE is highly effective in Grade 2 and 3 (Ki-67 10–55%) well-differentiated SSTR-positive tumors (median PFS 22.8 months vs 8.5 months; HR 0.276). This supports targeting the patient's specific tumor biology (Ki-67 25%, G3 well-differentiated), although efficacy in the *re-treatment* setting and for *bronchial* primaries is extrapolated.\n*   **NCT02236910 (Registry Study):** Provides real-world evidence for the utility of 177Lu-DOTATATE in progressive, well-differentiated NETs. This registry data supports the clinical decision to use PRRT in progressive disease, serving as a basis for re-treatment consideration in the absence of Phase 3 salvage trials.\n*   **NCT02754297 (Personalized PRRT):** Investigates personalized dosimetry to optimize tumor dose while limiting organ toxicity. This approach is highly recommended for this patient to mitigate the risks of cumulative myelotoxicity given her age (82) and history of Grade 3 thrombocytopenia.\n\n**Alternative Option (if PRRT is not feasible):** **Cabozantinib**.\n*   **NCT03375320 (CABINET, Phase 3):** Demonstrated a significant PFS benefit in previously treated extra-pancreatic NETs (median PFS 8.4 months vs 3.9 months; HR 0.38). This represents the strongest Level 1 evidence for a systemic therapy alternative. However, it is a secondary recommendation due to the high rate of Grade 3-4 adverse events (62–65%), which presents a substantial safety risk for this elderly patient with a history of poor tolerance to targeted therapies (Everolimus).\n</therapy_recommendation>\n\n<rationale>\n**Clinical Justification for Re-treatment with PRRT:**\nThe patient presents with a progressive, SSTR-avid (DOTATOC +++) bronchial NET G3 (Ki-67 25%). The recommendation for PRRT re-treatment is based on the \"excellent tolerance\" and \"prolonged partial hepatic response\" observed during her initial course in 2023. In a patient who has exhausted standard chemotherapy (intolerant to FOLFOX, thrombocytopenia with Temozolomide) and targeted therapy (intolerant to Everolimus), re-challenging with the modality that provided the best therapeutic index is clinically sound.\n\n**Evidence Synthesis and Extrapolation:**\n*   **Biological Rationale (NETTER-2):** The NETTER-2 trial (NCT03972488) confirmed that high-grade (G2/G3) well-differentiated NETs are responsive to PRRT. Although the patient has a bronchial primary and is being considered for re-treatment (scenarios not covered in NETTER-2), the trial validates the biological plausibility of treating a Ki-67 25% tumor with radioligand therapy.\n*   **Re-treatment Evidence:** High-level randomized evidence for PRRT re-treatment is currently lacking. The recommendation relies on registry data (NCT02236910) and clinical consensus (ESMO guidelines) supporting PRRT in progressive SSTR+ disease.\n*   **Bronchial NETs:** While major trials focus on GEP-NETs, guidelines acknowledge efficacy in bronchial NETs based on SSTR expression similarities and retrospective data.\n\n**Safety and Risk Management:**\n*   **Cumulative Toxicity:** Re-treatment carries a risk of cumulative bone marrow toxicity, particularly relevant given the patient's age (82) and prior Grade 3 thrombocytopenia on Temozolomide. The use of personalized dosimetry (NCT02754297) is critical to ensure safety.\n*   **Cabozantinib Risk:** While the CABINET trial (NCT03375320) provides robust evidence for efficacy in extra-pancreatic NETs, the toxicity profile (fatigue, hypertension, diarrhea) is likely prohibitive for this specific patient who has demonstrated poor tolerance to similar agents (Everolimus). Thus, it is reserved as a fallback option.\n*   **Immunotherapy Exclusion:** Trials such as DART (NCT02834013) and the Avelumab study (NCT03278379) demonstrated 0% response rates in well-differentiated G2-3 NETs, supporting the exclusion of checkpoint inhibitors for this patient.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-15T10:26:18.516566",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 14,
+    "trials_considered": 13,
+    "trials_included": 9,
+    "trials_excluded": 4,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251215_095159\\patient_14\\patient_14_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251215_095159\\patient_14\\patient_14_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251215_095159\\patient_14\\patient_14_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251215_095159\\patient_14\\patient_14_therapy_recommendation_reasoning.txt"
+  }
+}

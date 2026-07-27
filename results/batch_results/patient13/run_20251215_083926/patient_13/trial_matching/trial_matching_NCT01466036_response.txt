@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:06:59.724980
+Trial: 69/86
+NCT ID: NCT01466036
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This Phase 2 study provides meaningful clinical evidence supporting the efficacy of cabozantinib in advanced, progressive pancreatic neuroendocrine tumors (PanNETs), a setting directly matching the patient's need for salvage therapy after failing sunitinib and chemotherapy. Although the study excluded \"high-grade\" tumors, the patient's well-differentiated Grade 3 tumor (Ki-67 25%) shares significant biological overlap with the Grade 1-2 tumors studied, allowing for reasonable clinical extrapolation of the anti-angiogenic and MET-inhibiting effects of cabozantinib. The study's positive outcomes (referenced in the provided abstracts) established cabozantinib as an active agent in PanNETs, offering a viable therapeutic alternative to consolidate response or control progression in this refractory setting, particularly given the patient's preserved performance status and need for non-cross-resistant systemic options."
+}
+```

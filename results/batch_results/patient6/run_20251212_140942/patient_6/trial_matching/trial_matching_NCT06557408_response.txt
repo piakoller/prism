@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:16:40.491561
+Trial: 7/86
+NCT ID: NCT06557408
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Treatment Context and Evidence Relevance criteria. While the disease biology (low-grade pancreatic tumor) aligns, the study evaluates postoperative pancreatic fistula risks specifically following minimally invasive enucleation (MIEN) of primary tumors. This patient underwent a total gastrectomy and distal pancreatectomy in 2018, meaning her primary tumor has already been resected via a standard oncological resection, not enucleation. Furthermore, her current clinical need involves managing metastatic liver progression (evaluating liver transplantation vs. systemic therapies like PRRT or chemotherapy). Evidence regarding surgical complications of a primary tumor procedure she is not a candidate for (and has already bypassed) offers no actionable insights for her current metastatic disease management."
+}

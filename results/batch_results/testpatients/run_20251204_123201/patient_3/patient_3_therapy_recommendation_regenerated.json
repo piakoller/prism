@@ -1,0 +1,48 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Recommendation:** Systemic chemotherapy with **Temozolomide monotherapy**.\n\n**Biomarker Testing:** Prior to initiation, assessment of **MGMT promoter methylation status** is recommended to predict response probability, based on evidence from trial **NCT03217097**.\n\n**Safety & Contraindications (Crucial):**\n*   **Capecitabine is CONTRAINDICATED:** The patient’s serum creatinine of 2.24 mg/dL corresponds to an estimated Creatinine Clearance (CrCl) of ~27 mL/min (Cockcroft-Gault). Capecitabine is strictly contraindicated in patients with severe renal impairment (CrCl < 30 mL/min) due to the risk of severe toxicity.\n*   **Streptozotocin is NOT RECOMMENDED:** Due to its known nephrotoxicity profile, Streptozotocin poses an unacceptable risk of further deteriorating the patient's already compromised renal function.\n*   **PRRT (177Lu-DOTATATE):** Currently **deferred/not recommended** due to severe renal impairment (risk of radiation nephrotoxicity) and lack of mandatory SSTR-PET/CT staging.\n\n**Alternative Options (Targeted Therapy):**\nIf chemotherapy is deemed inappropriate due to frailty or patient preference, **Everolimus** or **Sunitinib** are valid second-line options (ENETS/ESMO guidelines), as they are primarily hepatically cleared. However, careful monitoring is required for diabetes (Everolimus) and hypertension (Sunitinib).",
+  "rationale_text": "**Clinical Reasoning:**\nThe patient presents with a progressive, well-differentiated (G1) NF-Pan-NET with a **high tumor burden** (8 cm primary, >25 liver metastases). While the tumor biology is indolent (Ki67 2%), the bulky and progressive nature of the disease often necessitates a treatment capable of inducing tumor shrinkage (cytoreduction) rather than just stabilization.\n\n**Renal Impairment and Drug Selection:**\nThe critical limiting factor is the patient's severe renal impairment (Creatinine 2.24 mg/dL; CrCl ~27 mL/min).\n*   **Chemotherapy:** Standard regimens for Pan-NETs often involve Capecitabine or Streptozotocin. However, **Capecitabine** is contraindicated in severe renal failure (CrCl < 30 mL/min), and **Streptozotocin** is nephrotoxic. **Temozolomide** is primarily cleared via hepatic metabolism and spontaneous hydrolysis, with minimal renal excretion of the unchanged drug, making it the safest cytotoxic option for this patient.\n*   **PRRT:** While effective for Pan-NETs, the patient's renal function is a major safety concern for **177Lu-DOTATATE** (excreted renally), and the mandatory SSTR-PET/CT to confirm receptor density (uptake > liver background) has not been performed.\n\n**Trial Evidence (NCT03217097 - MGMT-NET):**\nThe **MGMT-NET trial (NCT03217097)** provides prospective evidence supporting the use of alkylating agents (like Temozolomide) in advanced neuroendocrine tumors.\n*   **Key Findings:** The trial and associated analyses indicate that alkylating agents demonstrate objective response rates of 30–40% and are particularly effective in tumors with **MGMT deficiency** (methylated promoter).\n*   **Relevance:** This trial supports using Temozolomide as a monotherapy, which aligns with the patient's need for a renal-sparing cytotoxic regimen. The trial analysis explicitly highlights Temozolomide as a safer alternative to Streptozotocin or high-dose renal-cleared agents for patients with this specific renal profile.\n\n**Guideline Alignment:**\n*   **ESMO 2020:** Recommends Temozolomide alone or in combination with Capecitabine for advanced Pan-NETs (Level II, B). Given the contraindication for Capecitabine, monotherapy remains the guideline-compliant choice.\n*   **ENETS 2023:** Supports the use of Temozolomide in advanced Pan-NETs, noting that MGMT status may predict response, though it is not yet a standard mandatory test in all settings.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Recommendation:** Systemic chemotherapy with **Temozolomide monotherapy**",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03217097",
+      "nct_id": "NCT03217097",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03217097",
+        "trial_name": "Trial NCT03217097",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**Primary Recommendation:** Systemic chemotherapy with **Temozolomide monotherapy**.\n\n**Biomarker Testing:** Prior to initiation, assessment of **MGMT promoter methylation status** is recommended to predict response probability, based on evidence from trial **NCT03217097**.\n\n**Safety & Contraindications (Crucial):**\n*   **Capecitabine is CONTRAINDICATED:** The patient’s serum creatinine of 2.24 mg/dL corresponds to an estimated Creatinine Clearance (CrCl) of ~27 mL/min (Cockcroft-Gault). Capecitabine is strictly contraindicated in patients with severe renal impairment (CrCl < 30 mL/min) due to the risk of severe toxicity.\n*   **Streptozotocin is NOT RECOMMENDED:** Due to its known nephrotoxicity profile, Streptozotocin poses an unacceptable risk of further deteriorating the patient's already compromised renal function.\n*   **PRRT (177Lu-DOTATATE):** Currently **deferred/not recommended** due to severe renal impairment (risk of radiation nephrotoxicity) and lack of mandatory SSTR-PET/CT staging.\n\n**Alternative Options (Targeted Therapy):**\nIf chemotherapy is deemed inappropriate due to frailty or patient preference, **Everolimus** or **Sunitinib** are valid second-line options (ENETS/ESMO guidelines), as they are primarily hepatically cleared. However, careful monitoring is required for diabetes (Everolimus) and hypertension (Sunitinib).\n</therapy_recommendation>\n\n<rationale>\n**Clinical Reasoning:**\nThe patient presents with a progressive, well-differentiated (G1) NF-Pan-NET with a **high tumor burden** (8 cm primary, >25 liver metastases). While the tumor biology is indolent (Ki67 2%), the bulky and progressive nature of the disease often necessitates a treatment capable of inducing tumor shrinkage (cytoreduction) rather than just stabilization.\n\n**Renal Impairment and Drug Selection:**\nThe critical limiting factor is the patient's severe renal impairment (Creatinine 2.24 mg/dL; CrCl ~27 mL/min).\n*   **Chemotherapy:** Standard regimens for Pan-NETs often involve Capecitabine or Streptozotocin. However, **Capecitabine** is contraindicated in severe renal failure (CrCl < 30 mL/min), and **Streptozotocin** is nephrotoxic. **Temozolomide** is primarily cleared via hepatic metabolism and spontaneous hydrolysis, with minimal renal excretion of the unchanged drug, making it the safest cytotoxic option for this patient.\n*   **PRRT:** While effective for Pan-NETs, the patient's renal function is a major safety concern for **177Lu-DOTATATE** (excreted renally), and the mandatory SSTR-PET/CT to confirm receptor density (uptake > liver background) has not been performed.\n\n**Trial Evidence (NCT03217097 - MGMT-NET):**\nThe **MGMT-NET trial (NCT03217097)** provides prospective evidence supporting the use of alkylating agents (like Temozolomide) in advanced neuroendocrine tumors.\n*   **Key Findings:** The trial and associated analyses indicate that alkylating agents demonstrate objective response rates of 30–40% and are particularly effective in tumors with **MGMT deficiency** (methylated promoter).\n*   **Relevance:** This trial supports using Temozolomide as a monotherapy, which aligns with the patient's need for a renal-sparing cytotoxic regimen. The trial analysis explicitly highlights Temozolomide as a safer alternative to Streptozotocin or high-dose renal-cleared agents for patients with this specific renal profile.\n\n**Guideline Alignment:**\n*   **ESMO 2020:** Recommends Temozolomide alone or in combination with Capecitabine for advanced Pan-NETs (Level II, B). Given the contraindication for Capecitabine, monotherapy remains the guideline-compliant choice.\n*   **ENETS 2023:** Supports the use of Temozolomide in advanced Pan-NETs, noting that MGMT status may predict response, though it is not yet a standard mandatory test in all settings.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-04T12:35:15.762826",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 3,
+    "trials_considered": 9,
+    "trials_included": 1,
+    "trials_excluded": 8,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251204_123201\\patient_3\\patient_3_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251204_123201\\patient_3\\patient_3_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251204_123201\\patient_3\\patient_3_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251204_123201\\patient_3\\patient_3_therapy_recommendation_reasoning.txt"
+  }
+}

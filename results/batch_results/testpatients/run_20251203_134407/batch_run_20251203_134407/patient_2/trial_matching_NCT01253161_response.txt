@@ -1,0 +1,10 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:43:03.805455
+Trial: 78/86
+NCT ID: NCT01253161
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant as it evaluates Pasireotide LAR in treatment-naive metastatic NETs, aligning with the patient's diagnosis (PanNET G2, Ki-67 15%) and first-line setting. Although the patient has heterogeneous SSTR uptake (low in primary) where Pasireotide's broader receptor profile (SSTR1-3, 5) might theoretically offer advantages over standard SSAs, the study provides crucial evidence regarding efficacy and safety. Specifically, the reported objective response

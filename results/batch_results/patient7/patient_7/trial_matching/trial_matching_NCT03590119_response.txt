@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T10:29:26.261811
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study aligns with the patient's disease biology (G1-G2 NET with liver metastases) and treatment history (PRRT with Lu-177-DOTATATE), addressing the relevant clinical scenario of optimizing therapy for liver-dominant disease. However, the provided study data consists solely of the clinical trial protocol (Ebbers et al., 2020) outlining the design and objectives, without reporting the actual trial results, efficacy data, or safety outcomes. Criterion 3 (Evidence Quality and Relevance) is not met because a protocol description alone does not provide actionable clinical evidence to inform treatment decisions or suggest that intra-arterial administration is superior to the standard intravenous PRRT the patient has already received."
+}

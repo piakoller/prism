@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T09:47:27.603094
+Trial: 10/86
+NCT ID: NCT03562091
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence to inform therapy recommendations. While the patient's disease aligns with the study population (Criterion 1: G2 Pan-NET vs G1/G2 GEP-NET) and the studied treatment, lanreotide, is a potential option in an unresectable scenario (Criterion 2), the study fails on evidence quality and relevance (Criterion 3). The published results from the OPERA study (PMID: 37542470) focus exclusively on patients' perception of information and quality of life, finding no significant changes over 6 months. The study is non-interventional and provides no data on treatment efficacy, such as tumor response rates, progression-free survival, or safety profiles. For this patient with aggressive, locally advanced disease causing life-threatening bleeding, the critical decision is between high-risk surgery and effective systemic therapy. This study offers no actionable clinical evidence to guide that choice or to evaluate the anti-tumor potential of lanreotide in this specific, high-risk context."
+}
+```

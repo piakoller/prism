@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:24:57.279102
+Trial: 32/86
+NCT ID: NCT03852693
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Disease/Biology Alignment and Treatment Context criteria. The patient has a metastatic, high-grade pancreatic neuroendocrine carcinoma (NEC) with a Ki-67 of 95%, whereas the study evaluates surgical extent (appendectomy vs. hemicolectomy) for localized, small (1-2 cm) appendiceal neuroendocrine tumors (NETs), which are biologically distinct, typically low-grade, and indolent. The clinical question for the patient involves consolidation strategies (surgery or maintenance) for metastatic high-grade disease after chemotherapy, while the study addresses surgical de-escalation for a completely different primary tumor type in a localized setting. There is no biological or clinical overlap that would allow the transfer of evidence from localized appendiceal NETs to metastatic pancreatic NECs."
+}

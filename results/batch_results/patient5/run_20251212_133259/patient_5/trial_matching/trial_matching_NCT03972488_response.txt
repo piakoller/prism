@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:02:16.804029
+Trial: 75/86
+NCT ID: NCT03972488
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a Mixed Neuroendocrine–Non-Neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90%. The NETTER-2 trial specifically evaluated 177Lu-Dotatate in patients with well-differentiated Grade 2 and Grade 3 gastroenteropancreatic neuroendocrine tumors (GEP-NETs) with a Ki-67 index limited to ≤55%. There is a fundamental biological distinction between well-differentiated NETs and poorly differentiated NECs (especially with Ki-67 >55%), which have different natural histories and treatment responses (platinum-based chemotherapy vs. PRRT). Consequently, the efficacy and safety data from NETTER-2 cannot be meaningfully extrapolated to guide treatment for a patient with a high-grade NEC component of 90% proliferation, regardless of SSTR status."
+}

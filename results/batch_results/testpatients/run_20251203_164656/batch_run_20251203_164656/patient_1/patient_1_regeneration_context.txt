@@ -1,0 +1,28 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - PREVIOUS RECOMMENDATION HAD ISSUES
+================================================================================
+
+The previous therapy recommendation did not pass validation and requires regeneration.
+You MUST address ALL of the issues identified below.
+
+================================================================================
+VALIDATION ISSUES IDENTIFIED
+================================================================================
+
+### SAFETY ISSUES:
+  ❌ Semantic: **Contraindication for Cabozantinib (Safety):** The recommendation suggests Cabozantinib as an alternative therapy. The patient has a history of recent "life-threatening upper gastrointestinal bleeding" (June 2025) due to direct tumor invasion. Cabozantinib is a VEGF inhibitor associated with a high risk of gastrointestinal perforation, fistulas, and hemorrhage. Most trials (including CABINET) and prescribing information exclude patients with recent significant GI bleeding or tumor invasion of the GI tract carrying a risk of perforation. Recommending this agent in this specific patient context is unsafe.
+  ❌ Semantic: **High Risk of Perforation with PRRT (Safety):** The patient has a large (10-12 cm) tumor with direct, transmural infiltration (4 cm area) into the gastric fundus. The recommendation cites the high Objective Response Rate (43%) from NETTER-2 as a benefit. However, in the context of transmural gastric invasion, rapid tumor shrinkage/necrosis induced by PRRT poses a severe risk of gastric perforation and recurrent massive hemorrhage. The recommendation dismisses this risk too easily ("stabilization... allows for initiation"). This specific anatomical risk requires multidisciplinary (surgical) evaluation *before* initiating high-efficacy systemic therapy.
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above
+2. Be explicit about safety considerations and contraindications
+3. Provide clear rationale for any high-risk interventions
+4. Ensure all trial citations are accurate and from the evidence provided
+5. Maintain consistency with the patient assessment
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:48:51.184517
+Trial: 7/86
+NCT ID: NCT06557408
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context/Clinical Applicability. It evaluates outcomes (pancreatic fistula) following minimally invasive enucleation, a parenchyma-sparing surgery reserved for small, benign, or low-grade lesions. The patient presents with a massive (10–12 cm), locally advanced Grade 2 Pan-NET infiltrating the stomach, spleen, and adrenal gland. This clinical scenario mandates radical oncological resection (e.g., distal pancreatectomy with en-bloc multivisceral resection) or systemic therapy, making enucleation oncologically and technically inappropriate. Therefore, evidence regarding complications of enucleation provides no actionable insights for this patient's treatment planning."
+}

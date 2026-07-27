@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:39:06.179749
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a poorly differentiated pancreatic Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, whereas the study evaluates Somatostatin Analogs (SSAs)—Octreotide and Lanreotide—exclusively in patients with well-differentiated Neuroendocrine Tumors (WDNET). Biologically, these are distinct entities; SSAs are standard for indolent, well-differentiated tumors but are not an effective treatment for aggressive, high-grade NECs (Ki-67 >55%), which typically lack sufficient SSTR expression and require cytotoxic chemotherapy. Even under the assumption of potential SSTR positivity, the antiproliferative effect of SSAs is clinically insufficient for a Ki-67 95% malignancy. Therefore, evidence regarding patient preference between two SSAs provides no actionable insight for consolidating the response in this high-grade NEC patient."
+}

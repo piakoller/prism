@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:17:45.800285
+Trial: 45/86
+NCT ID: NCT05448157
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Treatment Context and Evidence Relevance criteria. The patient presents with symptomatic, bulky metastatic Pancreatic NET (liver, lung, bone metastases) requiring first-line systemic therapy (e.g., chemotherapy vs. PRRT). The study investigates a surgical intervention (radio-guided surgery with a beta-probe) to improve intraoperative lesion detection, primarily in patients undergoing curative or cytoreductive resection. Given the patient's extensive metastatic burden and the specific tumor board question regarding systemic treatment selection, evidence regarding the sensitivity of a surgical probe does not provide actionable insights for the current decision-making process. Furthermore, the primary published results focus on Small Intestine NETs (SI-NETs), limiting biological transferability to this patient's Pancreatic NET, particularly given the heterogeneous SSTR expression in the primary tumor."
+}

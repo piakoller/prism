@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:27:38.198078
+Trial: 34/86
+NCT ID: NCT03728361
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful evidence for a relevant salvage therapy option for this patient with a metastatic G2 pancreatic NET progressing on belzutifan. The trial evaluated nivolumab combined with temozolomide in advanced neuroendocrine neoplasms (G1-3) of any origin, reporting a clinically significant objective response rate of 32.1% and a median PFS of 8.8 months. Since the patient is temozolomide-naïve and currently experiencing disease progression, this chemo-immunotherapy combination represents a viable alternative to standard chemotherapy (e.g., capecitabine/temozolomide) or PRRT (assuming SSTR-PET positivity). The patient aligns with the study's inclusion criteria (progression within 12 months, no prior temozolomide), making the published efficacy and safety data directly applicable to guiding decision-making for her next line of systemic treatment."
+}

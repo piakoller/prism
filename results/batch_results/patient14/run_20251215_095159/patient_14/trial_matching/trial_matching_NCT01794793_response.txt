@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:19:59.036637
+Trial: 76/86
+NCT ID: NCT01794793
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not meet the criteria for clinical relevance. First, the Disease/Biology Alignment is mismatched; the study and its published results focus exclusively on patients with Cushing's Disease and Acromegaly (pituitary disorders), whereas the patient has a metastatic bronchial neuroendocrine tumor. While the patient has a pituitary metastasis, the primary biology and treatment intent differ significantly. Second, the Treatment Context is not applicable; this is a rollover/extension study specifically for patients already enrolled and benefiting from pasireotide in prior Novartis-sponsored trials, which does not apply to this patient who is not in a parent study. Finally, the Evidence Quality provides long-term safety data for pituitary conditions, offering no actionable insights for treating a progressive bronchial NET, particularly one that has already progressed on standard somatostatin analogs."
+}

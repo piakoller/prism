@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:00:55.618312
+Trial: 51/86
+NCT ID: NCT03290079
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient for two primary reasons. First, the study explicitly excludes pancreatic neuroendocrine tumors (Pan-NETs), enrolling only lung, thymic, small bowel, and colorectal NETs. Pan-NETs are biologically distinct from these subtypes, often responding differently to systemic therapies (e.g., higher sensitivity to alkylating agents and TKIs), making extrapolation of evidence problematic without specific data. Second, the provided input indicates that while the study is completed, no specific efficacy results (ORR, PFS) are available in the provided text; the citations only offer background information or recruitment status. Without published outcomes demonstrating the efficacy of Pembrolizumab plus Lenvatinib in a relevant population, and given the explicit exclusion of the patient's disease subtype, this study cannot inform the treatment decision for this patient."
+}

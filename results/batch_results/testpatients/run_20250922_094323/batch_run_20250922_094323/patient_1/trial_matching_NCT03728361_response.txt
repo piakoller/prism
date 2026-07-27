@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T09:56:10.030136
+Trial: 34/86
+NCT ID: NCT03728361
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for this patient. The three criteria are met. 1) **Disease/Biology Alignment:** The patient's high-end Grade 2 (Ki-67 19%) pancreatic NET aligns with the study's inclusion of advanced, unresectable G1-G3 neuroendocrine neoplasms. The patient's aggressive features (high Ki-67, high FDG uptake) make a temozolomide-based regimen a rational consideration. 2) **Treatment Context/Clinical Applicability:** The evidence is highly applicable to the likely clinical scenario where the patient's locally advanced tumor is deemed unresectable. In this situation, systemic therapy would be the primary treatment. The study's intervention, nivolumab plus temozolomide, is a relevant option, as the patient is temozolomide- and immunotherapy-naive. 3) **Evidence Quality/Relevance:** The Phase 2 trial's published results (PMID: 36255391) provide actionable data, showing an overall response rate of 32.1% and a median PFS of 8.8 months. For a patient with a large, symptomatic tumor causing life-threatening bleeding, achieving a significant tumor response is a key goal. This evidence allows for an informed discussion, weighing this chemo-immunotherapy combination against other systemic options like CAPTEM or PRRT (assuming SSTR-PET is positive)."
+}
+```

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:18:34.927252
+Trial: 15/86
+NCT ID: NCT02568267
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 2 basket study is relevant because it evaluates entrectinib in solid tumors harboring NTRK, ROS1, or ALK fusions, providing evidence for a highly actionable targeted therapy. Although the patient's fusion status is currently unknown, the study's published results (e.g., Doebele et al., 2020; Sigal et al., 2017) explicitly demonstrate efficacy in pancreatic tumors and neuroendocrine neoplasms, including a specific case report of a responder with an NTRK-fusion NET. Given the patient's young age (35) and aggressive, bulky disease phenotype (FDG-avid, Ki-67 20%), identifying a potent oncogenic driver is a critical alternative treatment scenario. While NTRK fusions are rare in pancreatic NETs, the high efficacy (ORR ~57%) and tissue-agnostic approval make this study clinically significant for determining whether to pursue molecular profiling. If testing reveals a fusion, this study provides the direct evidence basis for selecting entrectinib over or alongside standard cytotoxic chemotherapy."
+}

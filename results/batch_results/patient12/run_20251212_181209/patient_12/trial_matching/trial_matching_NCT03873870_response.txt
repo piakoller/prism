@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:25:41.792785
+Trial: 29/86
+NCT ID: NCT03873870
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context or Evidence Relevance regarding the patient's specific clinical question. This is a diagnostic study evaluating the utility of 68Ga-DOTATATE PET/CT for detecting neuroendocrine tumors and influencing management changes. The patient has already undergone this specific imaging modality, which revealed discordant findings (FDG-positive/Ga68-negative peritoneal disease). Consequently, evidence supporting the diagnostic yield of the scan is not actionable for her current care. The clinical priority is determining the optimal first-line systemic therapy (e.g., chemotherapy vs. SSAs) for a bulky, symptomatic, G2 pancreatic NET with aggressive features. As this study does not evaluate therapeutic efficacy, safety, or treatment outcomes, it cannot guide the selection of systemic treatment."
+}

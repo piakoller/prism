@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:24:57.280587
+Trial: 49/86
+NCT ID: NCT03902951
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study (NCT03902951/SATURN) evaluates antiandrogen therapy (leuprolide, abiraterone, apalutamide) combined with SBRT for oligometastatic prostate adenocarcinoma. This fails the Disease/Biology Alignment criterion as the patient has a well-differentiated ileal neuroendocrine tumor (Si-NET), a completely different malignancy with distinct biological drivers and treatment paradigms compared to prostate cancer. Consequently, the Treatment Context is inapplicable; antiandrogen therapy is not indicated for female patients with NETs, and the study's endpoints (PSA response, eugonadal PFS) are irrelevant to the patient's disease monitoring. No clinical assumptions can bridge the gap between prostate adenocarcinoma and neuroendocrine neoplasms."
+}

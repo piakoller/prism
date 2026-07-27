@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T10:21:33.662924
+Trial: 27/86
+NCT ID: NCT03074513
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase II study provides meaningful evidence for a potential subsequent line of therapy for this patient. Biologically, the patient's well-differentiated ileal NET (G2, Ki-67 3%) aligns perfectly with the study's 'extrapancreatic NET' (epNET) cohort, which enrolled Grade 1-2 tumors. Clinically, while the patient is currently stable following PRRT, the disease is metastatic and progressive by nature. Having exhausted standard SSA and liver-directed therapies, and currently being post-PRRT, the patient will eventually require further systemic treatment. The study results demonstrate a clinically relevant Progression-Free Survival (PFS) of 14.2 months and an Objective Response Rate (ORR) of 15% in the epNET cohort treated with Atezolizumab and Bevacizumab. This evidence is highly relevant for informing future treatment sequencing (e.g., as an alternative to or after everolimus) once the patient experiences disease progression, offering a data-driven option in a setting with limited standard therapies."
+}

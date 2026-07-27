@@ -1,0 +1,244 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-08T16:05:17.522673
+Trial: 65/86
+NCT ID: NCT04400474
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+A 68-year-old woman with a well-differentiated (G2, Ki-67 3–5%) functional duodenal neuroendocrine tumor diagnosed in 2013 with synchronous liver metastases. In October 2013 she started octreotide LAR therapy. From December 17, 2013, to March 5, 2014, three TAE sessions and resection of duodenal neoplasm and segmentectomy of S1, S3, and wedge of 6-7 in November 17, 2014. Due to liver progression of the disease, subsequent treatments included PRRT (2017–2018) and multiple loco-regional therapies. In 2022 she started surufatinib within a phase II trial, achieving long-term disease control (>40 cycles), later continued on compassionate use with dose reductions due to diarrhea and hypertension.
+In June 2025, CT showed mild progression of hepatic lesions. Sunitinib was initiated, achieving stable disease for several months. In October 2025, imaging revealed further hepatic progression (RECIST PD confirmed).
+
+Current Clinical Status: ECOG PS 0, good treatment tolerance, and no relevant clinical symptoms.
+Question for Tumorboard:
+Management of disease progression after long-term surufatinib and ongoing sunitinib treatment in a patient with liver-only G2 NET.
+Source: AD
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Disease Status**
+The patient is a 68-year-old female with a well-differentiated, Grade 2 (Ki-67 3–5%) functional duodenal neuroendocrine tumor (NET), initially diagnosed in 2013. The disease course is characterized by synchronous liver metastases and a long natural history (12 years). The patient presents with liver-only disease progression (confirmed by RECIST PD in October 2025) following a sequence of extensive multimodal treatments.
+
+**Treatment History and Resistance Profile**
+The patient is heavily pre-treated and has demonstrated disease progression on multiple therapeutic lines:
+1.  **Somatostatin Analogues (SSA):** Progressed after initial control (started 2013).
+2.  **Locoregional and Surgical Therapy:** Underwent TAE, resection of the primary duodenal neoplasm, and liver resection (2013–2014), followed by multiple subsequent locoregional therapies.
+3.  **Peptide Receptor Radionuclide Therapy (PRRT):** Administered in 2017–2018 due to liver progression.
+4.  **Tyrosine Kinase Inhibitors (TKIs):**
+    *   **Surufatinib:** Achieved long-term control (>40 cycles) within a phase II trial but eventually progressed.
+    *   **Sunitinib:** Initiated in June 2025 for mild hepatic progression; resulted in stable disease initially but failed by October 2025 (RECIST PD).
+
+**Current Clinical Assessment**
+Despite radiological progression, the patient maintains an excellent performance status (ECOG PS 0) and is currently asymptomatic ("no relevant clinical symptoms"), suggesting a dissociation between tumor growth and clinical deterioration. The tumor remains well-differentiated with a relatively low proliferative index (Ki-67 3–5%).
+
+**Guideline-Based Assessment of Management Options**
+Based on the *ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up*, the following factors are relevant for the tumor board's assessment:
+
+*   **Systemic Therapy (mTOR Inhibitors):** The patient has progressed on TKIs (Surufatinib and Sunitinib). The guidelines recommend Everolimus for the treatment of advanced, non-functional neuroendocrine tumors of the gastrointestinal tract (RADIANT-4 trial). While the patient's tumor was originally functional, she is currently asymptomatic. The guidelines note that Everolimus should be used in patients with clearly progressive GI NETs.
+*   **Chemotherapy:** The guidelines state that results with systemic chemotherapy for advanced well-differentiated G1/G2 GI NETs are poor (ORR 11.5%) and generally "cannot be recommended." Chemotherapy is typically reserved for rapidly progressive tumors or those with higher Ki-67 (e.g., 15–20%). Given this patient's Ki-67 of 3–5% and long disease history, chemotherapy may have limited utility.
+*   **Locoregional Therapy:** As the patient presents with liver-only progression, the guidelines suggest that vascular and ablative locoregional modalities (e.g., embolization, ablation) can be considered as an alternative or adjunct to systemic therapy in patients with liver-limited disease.
+*   **PRRT Re-treatment Consideration:** The patient received PRRT 7–8 years ago. While the guidelines primarily discuss PRRT as a second-line therapy after SSA failure, they acknowledge it as a therapeutic option in progressive SSTR-positive NETs. Re-evaluation of Somatostatin Receptor (SSTR) status is essential.
+    *   *Crucial Constraint:* Eligibility for any further PRRT consideration requires confirmation via [68]Ga/[64]Cu-SSTR-PET-CT that uptake in all metastatic lesions is significantly higher than the liver background. If lesions show low or heterogeneous uptake, PRRT is generally not indicated.
+*   **Surufatinib Context:** The guidelines acknowledge recent data (SANET-ep) indicating activity of Surufatinib in extra-pancreatic NETs, consistent with the patient's prior response, though she has now developed resistance to this class.
+
+**Diagnostic Requirements**
+To finalize the management plan, updated staging and molecular imaging are necessary to characterize the metabolic activity and receptor status of the progressing hepatic lesions, specifically to distinguish between slow progression suitable for locoregional control versus systemic progression requiring a switch in drug class (e.g., to an mTOR inhibitor).
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: Management of disease progression after long-term surufatinib and ongoing sunitinib treatment in a patient with liver-only G2 NET.
+
+### STUDY DATA
+	•	NCT-ID: NCT04400474
+	•	Title: Trial of Cabozantinib Plus Atezolizumab in Advanced and Progressive Neoplasms of the Endocrine System. The CABATEN Study
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Cabozantinib 40 mg
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+1. Male or female subjects ≥ 18 years old.
+2. Willingness to participate in the study by signing informed consent form (ICF) approved by the trial Central Ethic Committee (CEIm).
+3. Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1.
+4. Measurable disease per RECIST 1.1 as determined by the investigator.
+5. Patients with an histopathologically confirmed disease (as per local pathology report), meeting one of the following (according to WHO 2010 classification):
+
+   1. Cohort 1: Well-differentiated neuroendocrine tumours of the lung and thymus (WHO grade 1 and 2, typical and atypical carcinoids) after progression to somatostatin analogs, targeted agents, PRRT, and/or chemotherapy.
+   2. Cohort 2: Anaplastic thyroid cancer in first-line or after progression to chemotherapy or investigational drugs. Primary tumour can be resected or not but risk of aerodigestive compression or bleeding should be ruled out.
+   3. Cohort 3: Adrenocortical carcinoma after progression to chemotherapy and/or mitotane.
+   4. Cohort 4: Pheochromocytoma and paraganglioma after progression to peptide receptor radionuclide therapy (PRRT) if indicated. Prior chemotherapy and biological therapy, such as somatostatin analogs, are allowed.
+   5. Cohort 5: Well-differentiated neuroendocrine tumours of digestive system (WHO grade 1 and 2) after progression to somatostatin analogs, targeted agents, PRRT, and/or chemotherapy.
+   6. Cohort 6: Grade 3 neuroendocrine neoplasm (WHO grade 3, including neuroendocrine (NET) and neuroendocrine carcinomas (NEC) G3) of any origin, excluding small cell lung cancer, after progression to chemotherapy or targeted agents/PRRT.
+6. Recovery from toxicity related to any prior treatments to ≤ Grade 1, unless the adverse events (AEs) are clinically non-significant and/or stable on supportive therapy.
+7. Ability to swallow tablets.
+8. Adequate normal organ and marrow function as defined below:
+
+   1. Haemoglobin ≥ 9.0 g/dL.
+   2. Absolute neutrophil count (ANC) \> 1500 per mm.
+   3. Platelet count ≥ 100,000 per mm.
+   4. Serum bilirubin ≤ 1.5x institutional upper limit of normal (ULN) unless liver metastases are present, in which case it must be ≤ 2X ULN. This will not apply to patients with confirmed Gilbert's syndrome (persistent or recurrent hyperbilirubinemia that is predominantly unconjugated in the absence of haemolysis or hepatic pathology); however, they will be allowed only in consultation with their physician.
+   5. Aspartate Transaminase (AST) (SGOT)/Alanine aminotransferase (ALT) (SGPT) ≤ 2.5x institutional upper limit of normal unless liver metastases are present, in which case it must be ≤ 3x ULN.
+   6. Measured creatinine clearance (CL) \> 40 mL/min or Calculated creatinine CL \> 40 mL/min by the Cockcroft-Gault formula (Cockcroft and Gault 1976) or by 24-hour urine collection for the determination of creatinine clearance.
+9. Female subjects of childbearing potential (not surgically sterile or at least 2 years postmenopausal) must provide a negative urine pregnancy test at Screening, and use a medically accepted double barrier method of contraception (i.e condom with spermicide + IUD or cervical caps). In addition, they must agree to continue the use of this double barrier method for the duration of the study and for 4 months after participation in the study.
+10. Males should agree to abstain from sexual intercourse with a female partner or agree to use a double barrier method of contraception (i.e.condom with spermicide, in addition to having their female partner use some contraceptive measures such as, intrauterine device (IUD) or cervical caps), for the duration of the study and for 4 months after participation in the study.
+11. Willingness and ability of patients to comply with the protocol for the duration of the study including undergoing treatment as well as availability for scheduled visits and examinations including follow up.
+
+Exclusion Criteria:
+
+1. Prior treatment with cabozantinib or any immune checkpoint inhibitor therapy (e.g, CTLA4, PD-1, or PD-L1 targeting agent).
+2. Receipt of any type of small molecule kinase inhibitor (including investigational kinase inhibitor) within 2 weeks or 5 half-lives of the agent, whichever is longer. Patients should have been out of mitotane for at least 4 weeks.
+3. Receipt of any type of anticancer antibody (including investigational antibody) or systemic chemotherapy within 2 weeks before starting treatment.
+4. Current or prior use of immunosuppressive medication within 2 weeks before the first dose of cabozantinib and atezolizumab, with the exceptions of intranasal and inhaled corticosteroids or systemic corticosteroids at physiological doses, which are not to exceed 10 mg/day of prednisone, or an equivalent corticosteroid.
+5. Active or prior documented autoimmune disease within the past 2 years. Note: Subjects with vitiligo, Grave's disease, or psoriasis not requiring systemic treatment (within the past 2 years) are not excluded.
+6. Active or prior documented inflammatory bowel disease (e.g., Crohn's disease and ulcerative colitis).
+7. History of allogeneic organ transplant.
+8. Subjects having a diagnosis of immunodeficiency or are receiving systemic steroid therapy or any other form of immunosuppressive therapy within 28 days prior to the first dose of trial treatment.
+9. Receipt of radiation therapy for bone metastasis within 2 weeks or any other radiation therapy within 4 weeks before inclusion. Subjects with clinically relevant ongoing complications from prior radiation therapy that have not completely resolved are not eligible (e.g, radiation esophagitis or other inflammation of the viscera).
+10. Known brain metastases or cranial epidural disease unless adequately treated with radiotherapy and/or surgery (including radiosurgery) and stable for at least 4 weeks before inclusion. Eligible subjects must be neurologically asymptomatic and without corticosteroid treatment at the time of study treatment.
+11. Concomitant anticoagulation with oral anticoagulants (e.g, warfarin, direct thrombin and factor Xa inhibitors) or platelet inhibitors (e.g, clopidogrel), except for the following allowed anticoagulants:
+
+    * Low-dose aspirin for cardioprotection (per local applicable guidelines) and low-dose low molecular weight heparins (LMWH).
+    * Anticoagulation with therapeutic doses of LMWH in subjects without known brain metastases and who are on a stable dose of LMWH for at least 6 weeks before inclusion and who have had no clinically significant hemorrhagic complications from the anticoagulation regimen or the tumour.
+12. The subject has uncontrolled, significant intercurrent or recent illness including, but not limited to, the following conditions:
+
+    a. Cardiovascular disorders: i. Class 3 or 4 congestive heart failure as defined by the New York Heart Association, unstable angina pectoris, and serious cardiac arrhythmias.
+
+    ii. Uncontrolled hypertension defined as sustained blood press \> 150 mm hg systolic or \> 100 mm hg diastolic despite optimal antihypertensive treatment.
+
+    iii. Stroke, including transient ischemic attack (TIA), myocardial infarction, other ischemic event, or thromboembolic event, e.g, deep venous thrombosis (DVT) and pulmonary embolism) within 6 months before inclusion. Subjects with a more recent diagnosis of DVT are allowed if stable, asymptomatic, and treated with LMWH for at least 6 weeks before study treatment.
+
+    b. Gastrointestinal disorders (e.g, malabsorption syndrome or gastric outlet obstruction) including those associated with a high risk of perforation or fistula formulation: i. Tumours invading the GI tract, active peptic ulcer disease, inflammatory bowel disease, ulcerative colitis, diverticulitis, cholecystitis, symptomatic cholangitis or appendicitis, acute pancreatitis or acute obstruction of the pancreatic or biliary duct, or gastric outlet obstruction. ii. Abdominal fistula, GI perforation, bowel obstruction, or intra-abdominal abscess within 6 months before inclusion. Note: complete healing of an intra-abdominal abscess must be confirmed prior to start of the treatment.
+
+    c. Clinically significant hematemesis or hemoptysis of \> 0.5 teaspoon (\> 2.5 ml) of red blood or history of other significant bleeding within 3 months before treatment.
+
+    d. Cavitating pulmonary lesion(s) or known endobronchial disease manifestation. e. Lesions invading major pulmonary blood vessels. f. Other clinically significant disorders such as: i. Active infection requiring systemic treatment, infection with human immunodeficiency virus or acquired immunodeficiency syndrome-related illness, or chronic hepatitis B or C infection.
+
+    ii. Serious non-healing wound/ulcer/bone fracture. iii. Moderate to severe hepatic impairment (child-pugh B or C). iv. Requirement for hemodialysis or peritoneal dialysis. v. Uncontrolled diabetes mellitus. vi. History of solid organ transplantation.
+13. Major surgery (e.g, GI surgery and removal or biopsy of brain metastasis) within 8 weeks before inclusion. Complete wound healing from major surgery must have occurred 4 weeks before study treatment and from minor surgery (e.g, simple excision, tooth extraction) at least 10 days before study treatment. Subjects with clinically relevant ongoing complications from prior surgery are not eligible.
+14. Corrected QT interval calculated by the Fridericia formula (QTcf) \> 500 ms within 28 days before study treatment.
+
+    Note: if a single ECG shows a QTCf with an absolute value \> 500 ms, two additional ECGs at intervals of approximately 3 min must be performed within 30 min after the initial ECG, and the average of these 3 consecutive results for qtcf will be used to determine eligibility.
+15. Pregnant or lactating females.
+16. Inability to swallow tablets.
+17. Previously identified allergy or hypersensitivity to components of the study treatment formulations.
+18. Diagnosis of another malignancy within 3 years before study treatment, except for superficial skin cancers, or localized, low grade tumors deemed cured and not treated with systemic therapy. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: CABATEN is a multicohort phase II study of cabozantinib plus atezolizumab in advanced and progressive tumors from endocrine system.
+
+The primary objective is to assess the efficacy of cabozantinib plus atezolizumab combination by means of radiological objective response rate (ORR) evaluated following RECIST v1.1 criteria in advanced endocrine tumors.
+
+Endocrine tumors from different origins (thyroid, lung, pancreas and digestive tract, adrenal gland and paraganglia) are characterized by being remarkably vascular and expressing several growth factors including vascular endothelial growth factor (VEGF), platelet-derived growth factor (PDGF), insulin-like growth factor 1 (IGF-1), basic fibroblast growth factor (BFGF), and transforming growth factor (TGF)-α and -β. The (over) expression of some of these factors has been linked to poor prognosis. Cabozaninib, a VEGF inhibitor, in combination with atezolizumab, an inhibitor of PD-L1, may be active in endocrine tumors by overcoming the resistance to prior antiangiogenic drugs.
+
+The trial will include patients with advanced and refractory tumors of endocrine system and patients would be allocated to six different cohorts according to the following tumor types.
+	•	Publications: Analysis: Online search performed; Web search details: No additional publications found; No publications with results found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • [HTML][HTML]Immunotherapy in adrenocortical carcinoma: predictors of response,efficacy,safety, and mechanisms of resistance [Google Scholar]
+• Current status of medical treatment for gastroenteropancreatic neuroendocrine neoplasms and future perspectives [Google Scholar]
+• Targeted therapies in pheochromocytoma and paraganglioma [Google Scholar]
+• Clinical utility of cabozantinib in the treatment of locally advanced or metastatic differentiated thyroid carcinoma: Patient selection and reportedoutcomes [Google Scholar]
+• Immunotherapy for endocrine tumours: A clinician's perspective [Google Scholar]
+• Cabozantinib plus atezolizumab in locally advanced/metastatic adrenocortical carcinoma:Resultsfrom a multi-cohort basket phase IItrial, CABATEN/GETNE-T1914. [Google Scholar]
+• Progress in immunotherapy for neuroendocrine neoplasm of the digestive system [Google Scholar]
+• Cabozantinib plus atezolizumab in locally advanced/metastatic adrenocortical carcinoma: Results from a multi-cohort basket phase IItrial, CABATEN/GETNE-T1914. [Google Scholar]
+• A systematic review of publishedclinical trialsin the systemic treatment of adrenocortical carcinoma: an initiative led on behalf of the global society of rare … [Google Scholar]
+• Current and future of immunotherapy for thyroid cancer based on bibliometrics andclinical trials [Google Scholar]
+• [HTML][HTML]Emerging therapies in pheochromocytoma and paraganglioma: immune checkpoint inhibitors in the starting blocks [Google Scholar]
+	•	Key findings from publications: Google Scholar Abstract ([HTML][HTML]Immunotherapy in adrenocortical carcinoma: predictors of response,efficacy,safety, and mechanisms of resistance): … Drugs to combine that are currently under research act at different pathways, such asVEGFR-driven TKI (cabozantinib) in the CABATEN trial (NCT04400474) or PI3K/Akt pathway …
+
+Google Scholar Abstract (Current status of medical treatment for gastroenteropancreatic neuroendocrine neoplasms and future perspectives): … have been conducted to investigate theefficacyandsafetyof various therapeutic optionsfor … have also been used for the treatment of advanced and progressive NETs (NCT04400474). …
+
+Google Scholar Abstract (Targeted therapies in pheochromocytoma and paraganglioma): … option which has been investigated in a randomized placebo-controlledclinicaltrial. It is …, is currently recruiting, and may provide importantclinicaldata (CABATEN,NCT04400474). …
+
+Google Scholar Abstract (Clinical utility of cabozantinib in the treatment of locally advanced or metastatic differentiated thyroid carcinoma: Patient selection and reportedoutcomes): … One of these is atrialof cabozantinib plus atezolizumab in advanced and progressive …study(NCT04400474), Citation35 which has a cohort of patients with DTC. The othertrialis …
+
+Google Scholar Abstract (Immunotherapy for endocrine tumours: A clinician's perspective): … Thus, alternatively, therapy with ICIs has already been studied in a fewclinicaltrials, and the…NCT04400474(The CABATENStudy) Phase IItrialof atezolizumab plus cabozantinib in …
+
+Google Scholar Abstract (Cabozantinib plus atezolizumab in locally advanced/metastatic adrenocortical carcinoma:Resultsfrom a multi-cohort basket phase IItrial, CABATEN/GETNE-T1914.): … Thestudyempowered a Simon II stage design, requiring 1 response out of 9 patients at 1st… in the 2nd stage to consider thestudypositive for the cohort.Results: From October 2020 to …
+
+Google Scholar Abstract (Progress in immunotherapy for neuroendocrine neoplasm of the digestive system): … theefficacyandsafetyof these combination therapies. Therefore, the purpose of this reviewis to provide a comprehensive summary of the clinical progress of immunotherapy in NENs …
+
+Google Scholar Abstract (Cabozantinib plus atezolizumab in locally advanced/metastatic adrenocortical carcinoma: Results from a multi-cohort basket phase IItrial, CABATEN/GETNE-T1914.): 1 Background: Adrenocortical carcinoma (ACC) is a rare malignancy with a poor prognosisand limited therapeutic options. Immunotherapy and targeted therapy showed limited activity …
+
+Google Scholar Abstract (A systematic review of publishedclinical trialsin the systemic treatment of adrenocortical carcinoma: an initiative led on behalf of the global society of rare …): … with the multi-drugregimen. Sixclinicaltrialsof immunotherapy and sevenstudiesof targeted… , with modest activity and no phase 3trialswere identified. Treatment recommendations of …
+
+Google Scholar Abstract (Current and future of immunotherapy for thyroid cancer based on bibliometrics andclinical trials): … In theclinicaltrialpart of ourstudy, 7clinicaltrialsrelated to ipilimumab were included, …Further, there are 16clinicaltrialsused pembrolizumab in ourstudywhich was approved by FDA …
+
+Google Scholar Abstract ([HTML][HTML]Emerging therapies in pheochromocytoma and paraganglioma: immune checkpoint inhibitors in the starting blocks): … Thisstudyis currently recruiting, but noresultis available yet. Nonetheless, its conceptioncertainly draws further attention to the possible role of immune-checkpoint blocking molecules …
+	•	Additional evidence from online sources: Primary outcome: Objective Response Rate (ORR)
+Secondary outcomes: Safety Profile Number of Adverse Events Reactions (TRAEs); Safety Profile Number of Adverse Events Reactions (TRAEs) Related With Atezolizumab; Duration of Response (DoR); Progression-free Survival (PFS); Overall Survival (OS)
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Online search performed; Web search details: No additional publications found; No publications with results found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

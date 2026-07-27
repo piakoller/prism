@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:13:53.726189
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "While the study meets the disease alignment criterion, as both the patient and study population have well-differentiated, locally advanced neuroendocrine tumors (Criterion 1), and the treatment context is potentially applicable, as somatostatin analogs (SSAs) are a standard therapy for this disease (Criterion 2), the study fails to provide meaningful evidence to guide the critical therapeutic decision for this patient (Criterion 3). The patient has a large, aggressive, high-end G2 tumor causing life-threatening bleeding, and the primary clinical question is whether to pursue surgical resection or an alternative systemic therapy with significant anti-tumor effect. This study (NCT03289741) is a Phase 4 trial comparing patient experience and preference between two standard SSAs, octreotide and lanreotide. Its focus is on patient-reported outcomes like pain and preference, not on comparative anti-tumor efficacy (e.g., response rate, progression-free survival). Therefore, its published results do not offer the actionable evidence needed to decide on the best therapeutic strategy (e.g., surgery vs. PRRT vs. chemotherapy vs. SSA) to control this patient's aggressive disease and bleeding."
+}
+```

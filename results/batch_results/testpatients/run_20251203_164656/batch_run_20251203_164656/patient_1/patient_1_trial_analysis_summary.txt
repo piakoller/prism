@@ -1,0 +1,33 @@
+TRIAL ANALYSIS SUMMARY - PATIENT 1
+==================================================
+Analysis Status: success
+Analysis Complete: True
+Trials Analyzed: 11
+Trials to Include: 6
+Trials to Exclude: 5
+
+TRIALS TO INCLUDE IN RECOMMENDATION:
+  ✅ NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)
+     Rationale: This trial demonstrates the efficacy of PRRT (177Lu-edotreotide) compared to targeted therapy (Everolimus) in GEP-NETs. It supports the consideration of PRRT as a superior systemic option if the patient's missing SSTR-PET scan confirms sufficient receptor expression.
+  ✅ NCT05153772: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (AlphaMedix)
+     Rationale: This trial evaluates Targeted Alpha Therapy (212Pb-DOTAMTATE), which may be more effective for bulky, large-volume tumors (10-12 cm) than standard beta-emitter PRRT. It represents a potential option if the patient is SSTR-positive but considered high-risk for standard PRRT resistance due to tumor bulk.
+  ✅ NCT03728361: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+     Rationale: This trial investigates a chemo-immunotherapy combination (Nivolumab + Temozolomide) in neuroendocrine cancers. Given the patient's high FDG uptake and aggressive features (necrosis, invasion), this combination offers a relevant alternative strategy if the patient is found to be SSTR-negative or refractory to standard therapies.
+  ✅ NCT03217097: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents
+     Rationale: This trial compares alkylating agents (standard for Pan-NETs) versus oxaliplatin-based regimens based on MGMT status. Since the patient has already received FOLFIRINOX (oxaliplatin-based), this study helps determine whether to switch to an alkylating agent (like Temozolomide) or continue oxaliplatin-based therapy.
+  ✅ NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+     Rationale: This Phase 3 trial demonstrated significant progression-free survival benefits for Cabozantinib in advanced Pan-NETs. It establishes Cabozantinib as a key systemic therapy option (Tyrosine Kinase Inhibitor) for this patient if chemotherapy or PRRT are not feasible or effective.
+  ✅ NCT03972488: Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET (NETTER-2)
+     Rationale: This is the most critical trial for this patient, as it specifically validated the use of 177Lu-DOTATATE in Grade 2 and Grade 3 (Ki-67 10-55%) GEP-NETs. It supports using PRRT as a first-line systemic option for this patient's high-proliferation profile (Ki-67 19%), provided SSTR uptake is confirmed.
+
+TRIALS TO EXCLUDE FROM RECOMMENDATION:
+  ❌ NCT03278379: Avelumab in G2-3 NET
+     Rationale: This trial evaluated Avelumab monotherapy in G2-3 NETs and demonstrated limited antitumor activity with an objective response rate of 0%. Given the negative results, this therapy does not provide a viable treatment option for the patient.
+  ❌ NCT02568267: Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+     Rationale: This trial targets specific gene fusions (NTRK, ROS1, ALK) which are extremely rare in pancreatic neuroendocrine tumors (<1%). There is no evidence in the patient assessment indicating these molecular alterations are present.
+  ❌ NCT02236910: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+     Rationale: While this registry supports the safety and efficacy of Lu-DOTA-TATE, the randomized Phase 3 data from NETTER-2 and COMPETE provide higher-level evidence specifically relevant to decision-making for this patient's G2/G3 profile.
+  ❌ NCT02754297: Personalized PRRT of Neuroendocrine Tumors
+     Rationale: This study focuses on personalized dosimetry optimization rather than the primary efficacy of the therapeutic modality itself. The immediate clinical need is to establish the appropriateness of PRRT versus other systemic therapies, which is better addressed by the other included trials.
+  ❌ NCT02609737: Theranostics of Radiolabeled Somatostatin Antagonists 68Ga-DOTA-JR11 and 177Lu-DOTA-JR11 in Patients With Neuroendocrine Tumors
+     Rationale: This study evaluates somatostatin *antagonists*, which are currently experimental compared to the standard *agonists* (DOTATATE). While potentially useful, it is a niche consideration secondary to establishing eligibility for standard-of-care PRRT.

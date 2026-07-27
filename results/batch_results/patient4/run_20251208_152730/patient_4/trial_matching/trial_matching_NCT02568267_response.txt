@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:38:29.345668
+Trial: 15/86
+NCT ID: NCT02568267
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant because it provides evidence for the efficacy of entrectinib in solid tumors harboring NTRK fusions, with specific published results demonstrating a durable response in a patient with a neuroendocrine tumor (Sigal et al., 2017). Although the patient's current NTRK status is unknown, she has progressed on multiple standard lines of therapy (SSA, PRRT, surufatinib, sunitinib) and requires a new systemic option. Under the assumption that molecular profiling could be performed to identify actionable targets in this heavily pre-treated setting, the study evidence supports the recommendation to screen for NTRK fusions. If a fusion is detected, the study data confirms that entrectinib provides meaningful clinical benefit, offering a targeted alternative to mTOR inhibitors or chemotherapy."
+}

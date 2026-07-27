@@ -1,0 +1,154 @@
+=== RECOMMENDATION VALIDATION PROMPT ===
+Timestamp: 2025-12-04T11:38:08.393339
+Patient ID: 1
+Model: google/gemini-3-pro-preview
+==================================================
+
+You are a clinical validation expert reviewing a therapy recommendation for quality assurance.
+
+Your task is to CRITICALLY EVALUATE whether the therapy recommendation is:
+1. COMPLETE - addresses all clinical needs identified in the patient assessment
+2. ACCURATE - correctly cites and interprets evidence from trials and guidelines  
+3. CONSISTENT - doesn't contradict itself or the patient assessment
+4. SAFE - considers contraindications and patient-specific risk factors
+5. ACTIONABLE - provides clear next steps
+
+**IMPORTANT**: Be thorough and critical. If you find ANY issues that could compromise patient care, you must flag them.
+
+=== PATIENT ASSESSMENT SUMMARY ===
+=== DETAILED CLINICAL ASSESSMENT ===
+
+**Diagnostic Classification and Prognostic Factors**
+The patient presents with a locally advanced pancreatic mass, recently reclassified via pathology review as a Grade 2 Neuroendocrine Tumor (NET) with a Ki-67 index of 19%. According to ENETS 2023 and ESMO guidelines, this places the tumor at the upper limit of Grade 2 (cutoff <20%), bordering on Grade 3. The initial FDG-PET scan from January 2025 demonstrated a hypermetabolic mass with an SUV of 16. According to ENETS guidelines (Section 2.5.1), high FDG uptake is a strong poor prognostic factor and correlates with a higher grade and aggressive biological behavior. The presence of a central photopenic area suggestive of necrosis further supports the aggressive nature of this neoplasm.
+
+**Staging and Locoregional Extent**
+The disease is characterized as locally advanced (T4 equivalent per ENETS/AJCC staging due to invasion of adjacent structures). CT imaging from April and May 2025 confirms a large heterogeneous mass (10–12 cm) infiltrating the pancreatic tail, splenic hilum, left adrenal gland, and notably the gastric fundus. There is vascular involvement with complete splenic vein occlusion and tumor thrombus, resulting in splenic infarctions. There is currently no evidence of distant metastatic disease.
+
+**Clinical Status and Complications**
+The patient's clinical course is dominated by life-threatening upper gastrointestinal bleeding (Hb 7.1 g/dL), necessitating ICU admission and embolization. The gastroscopy in June 2025 confirmed that the bleeding source is direct tumor infiltration (4 cm area) into the stomach. This represents a symptomatic, bulky, and locally invasive disease burden.
+
+**Treatment History and Response Assessment**
+The patient received 7 cycles of FOLFIRINOX between February and May 2025. While FOLFIRINOX is not a standard regimen for Grade 2 NETs (typically reserved for pancreatic ductal adenocarcinoma or potentially high-grade neuroendocrine carcinomas), the CT comparison between April and ...
+[Assessment text truncated for validation prompt]
+
+Urgency Level: medium
+Assessment Confidence: medium
+
+=== TRIAL ANALYSIS SUMMARY ===
+Total Trials Analyzed: 11
+Trials Marked for INCLUSION: 6
+Trials Marked for EXCLUSION: 5
+
+INCLUDED TRIALS:
+  - NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE) (Relevance: N/A)
+  - NCT05153772: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (AlphaMedix) (Relevance: N/A)
+  - NCT03728361: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer (Relevance: N/A)
+  - NCT03217097: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents (Relevance: N/A)
+  - NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET) (Relevance: N/A)
+  - NCT03972488: Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET (NETTER-2) (Relevance: N/A)
+
+=== GUIDELINES SUMMARY ===
+Matched Guidelines: 2
+
+  - Nonfunctioning pancreatic neuroendocrine tumours (Relevance: 1.0)
+  - Gastroenteropancreatic neuroendocrine neoplasms: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up [y] (Relevance: 1.0)
+
+=== THERAPY RECOMMENDATION TO VALIDATE ===
+
+RECOMMENDATION:
+**Primary Recommendation:**
+Perform **68Ga-DOTATATE PET/CT** (or equivalent Somatostatin Receptor Imaging) immediately to confirm Somatostatin Receptor (SSTR) expression.
+
+**If SSTR-positive** (uptake > liver background):
+Initiate **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE** (Lutathera) in combination with **Octreotide LAR 30 mg**.
+*   **Supporting Evidence:** **NETTER-2 (NCT03972488)**.
+*   **Key Trial Findings:** In patients with Grade 2 and Grade 3 GEP-NETs (Ki-67 10–55%), 177Lu-DOTATATE plus Octreotide LAR significantly extended **median Progression-Free Survival (PFS) to 22.8 months** compared to 8.5 months with high-dose Octreotide alone (HR 0.276; p<0.0001). Crucially for this patient with bulky disease (10 cm), the **Objective Response Rate (ORR) was 43%** in the PRRT arm versus 9% in the control arm.
+
+**If SSTR-negative or discordant** (FDG-avid/SSTR-negative):
+Switch systemic therapy to a **Temozolomide-based chemotherapy regimen** (e.g., Temozolomide + Capecitabine).
+*   **Supporting Evidence:** **MGMT-NET (NCT03217097)** and **ENETS Guidelines**.
+*   **Key Findings:** The MGMT-NET trial supports the use of alkylating agents (like Temozolomide) in Pan-NETs. Since the patient has already received an oxaliplatin-based regimen (FOLFIRINOX), switching to an alkylating agent is the standard alternative sequence.
+*   **Alternative:** **Cabozantinib** (60 mg daily).
+    *   **Supporting Evidence:** **CABINET (NCT03375320)**.
+    *   **Key Trial Findings:** Cabozantinib significantly improved **median PFS to 13.8 months** vs. 4.4 months with placebo (HR 0.23) in patients with advanced Pan-NETs who progressed on prior therapy.
+
+RATIONALE:
+**1. Diagnostic Prerequisite (SSTR-PET/CT):**
+The patient has a Grade 2 Pan-NET with a **Ki-67 index of 19%** and high FDG uptake (SUV 16). While high FDG uptake indicates aggressive biology and poor prognosis (ENETS 2.5.1), it does not preclude PRRT eligibility *unless* there is a mismatch (SSTR-negative). PRRT eligibility strictly requires confirmation that tumor uptake on SSTR-PET is higher than liver background (SUVmax ~6–7). Without this, PRRT cannot be administered.
+
+**2. Justification for 177Lu-DOTATATE (NETTER-2):**
+Assuming SSTR positivity, PRRT is the optimal next step for this patient for several reasons:
+*   **Proliferation Match:** The patient's Ki-67 is 19%. The **NETTER-2 trial (NCT03972488)** specifically validated 177Lu-DOTATATE as a superior first-line systemic treatment for G2/G3 NETs (Ki-67 10–55%), demonstrating a substantial PFS benefit (22.8 months).
+*   **Tumor Shrinkage (Debulking):** The patient has a bulky 10 cm mass causing gastric infiltration and bleeding. The **ORR of 43%** observed in NETTER-2 suggests PRRT has a high probability of achieving significant tumor shrinkage, which is critical for alleviating the mass effect and potentially facilitating future resection (neoadjuvant intent per ENETS 3.1.3).
+*   **Comparison to Alternatives:** While the patient was stable on FOLFIRINOX, this regimen is not standard for G2 NETs. PRRT offers a more targeted approach with a proven benefit for this specific grade. The **COMPETE trial (NCT03049189)** further supports PRRT over targeted therapies (like Everolimus) in SSTR+ GEP-NETs.
+
+**3. Alternatives for SSTR-Negative Disease:**
+If the high FDG uptake represents dedifferentiation with loss of SSTR expression:
+*   **Chemotherapy:** The patient has already received oxaliplatin (FOLFIRINOX). The **MGMT-NET trial (NCT03217097)** and ENETS guidelines suggest alkylating agents (Temozolomide/Capecitabine) as the primary alternative chemotherapy class.
+*   **Targeted Therapy:** **Cabozantinib** is a robust option based on the **CABINET trial (NCT03375320)**, which showed a strong PFS benefit (13.8 months) in pre-treated Pan-NETs, offering a viable salvage therapy if chemotherapy is contraindicated or ineffective.
+*   **Immunotherapy:** The combination of **Nivolumab and Temozolomide (NCT03728361)** showed an ORR of 32.1% in neuroendocrine neoplasms and could be considered for aggressive, FDG-avid disease if standard lines fail.
+
+**4. Safety Considerations:**
+Given the gastric infiltration and recent bleeding, tumor shrinkage is necessary, but rapid necrosis could pose a risk of perforation. However, the stabilization of the bleeding allows for the initiation of systemic therapy. PRRT's high response rate makes it the most effective tool for downstaging this locally advanced T4 tumor.
+
+=== YOUR VALIDATION TASK ===
+
+Carefully review the therapy recommendation against the evidence provided above.
+
+Check for the following issues:
+
+1. COMPLETENESS ISSUES:
+   - Does the recommendation address ALL clinical needs identified in the patient assessment?
+   - Are important clinical considerations (disease grade, symptoms, biomarkers, prior treatments) adequately addressed?
+   - Are alternative options discussed if the primary recommendation isn't feasible?
+
+2. ACCURACY ISSUES:
+   - Are all trial citations (NCT numbers) correctly used?
+   - Are the claimed trial outcomes/findings accurate based on the trial analysis?
+   - Are guideline recommendations correctly interpreted?
+   - Is there any evidence of fabricated or misrepresented data?
+
+3. CONSISTENCY ISSUES:
+   - Does the recommendation align with the urgency level from the patient assessment?
+   - Are there any internal contradictions in the recommendation?
+   - Does the rationale actually support the recommendation given?
+   - Are trials marked for EXCLUSION incorrectly being recommended?
+
+4. SAFETY ISSUES:
+   - Are known contraindications from the patient assessment respected?
+   - Are patient-specific risk factors (organ function, performance status) considered?
+   - Are monitoring requirements mentioned for high-risk therapies?
+
+5. ACTIONABILITY ISSUES:
+   - Are next steps clearly defined?
+   - Is the recommendation specific enough to be implemented?
+   - Are follow-up timelines provided?
+
+Provide your validation in the following format:
+
+<validation_decision>
+[State clearly: PASS or RECONSIDER]
+</validation_decision>
+
+<critical_issues>
+[List any critical issues that make the recommendation incomplete, wrong, or unsafe. Be specific about what is missing or incorrect. If none, write "None identified."]
+</critical_issues>
+
+<warnings>
+[List any non-critical concerns or areas for improvement. If none, write "None identified."]
+</warnings>
+
+<detailed_reasoning>
+[Provide detailed reasoning for your validation decision. Explain:
+- What you checked in each validation category
+- Specific examples of issues you found (quote relevant parts)
+- Why each issue is problematic for patient care
+- What would need to be corrected for the recommendation to pass validation
+Be thorough and specific - this reasoning will guide the regeneration process.]
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+[If you marked as RECONSIDER, provide specific actionable guidance on what should be corrected or added in the regenerated recommendation. If PASS, write "No improvements needed."]
+</recommendations_for_improvement>
+
+Remember: Patient safety is paramount. If in doubt, mark as RECONSIDER and explain your concerns in detail.

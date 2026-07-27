@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T15:57:03.704164
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide evidence to support a therapeutic recommendation for this patient. While the DART trial (NCT02834013) included a cohort for non-pancreatic neuroendocrine neoplasms, the published results (Patel et al., Clin Cancer Res 2020) explicitly stratified outcomes by tumor grade, reporting an objective response rate (ORR) of 44% in high-grade neuroendocrine carcinomas but 0% (0/14 patients) in low/intermediate-grade tumors. This patient has a well-differentiated G2 NET with a low Ki-67 (3–5%), which is biologically distinct from the high-grade carcinomas that derived benefit. Consequently, the study demonstrates that dual anti-CTLA-4 and anti-PD-1 blockade is ineffective for this specific disease subtype, failing to offer a viable treatment option for the patient's current scenario of progression after TKI therapy."
+}
+```

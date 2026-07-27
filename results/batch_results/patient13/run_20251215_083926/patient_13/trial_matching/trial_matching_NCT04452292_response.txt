@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:05:56.362999
+Trial: 66/86
+NCT ID: NCT04452292
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a well-differentiated Grade 3 Pancreatic Neuroendocrine Tumor (NET G3), characterized by SSTR positivity and distinct biology (e.g., DAXX/ATRX mutations), whereas the study focuses on High-Grade Neuroendocrine Carcinoma (HG-NEC), specifically Large Cell Neuroendocrine Carcinoma (LCNEC). These are separate pathological entities with different genetic drivers (NECs often harbor TP53/RB1 mutations) and treatment paradigms. The study's approach of stratifying chemotherapy (Platinum/Etoposide vs. Gemcitabine/Taxane) based on NEC-specific genomic profiles is not clinically applicable to a well-differentiated NET G3. Additionally, the provided publication is a systematic review of genomic prevalence in LCNEC rather than clinical efficacy data from the trial, offering no actionable evidence to guide therapy for this patient's specific disease subtype."
+}

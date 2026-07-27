@@ -1,0 +1,107 @@
+=== TRIAL ANALYSIS RAW RESPONSE ===
+Timestamp: 2025-12-08T12:13:25.923524
+Patient ID: 3
+Model: google/gemini-3-pro-preview
+==================================================
+
+<trial_analysis>
+**NCT NUMBER:** NCT03049189
+**TRIAL NAME:** Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE)
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 3 trial provides high-quality evidence comparing PRRT (177Lu-edotreotide) directly against Everolimus, a standard targeted therapy. It establishes the efficacy superiority (PFS) of PRRT in GEP-NETs, which is crucial for weighing the benefits of attempting PRRT despite the patient's renal risks versus switching to a targeted agent.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02568267
+**TRIAL NAME:** Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions) (STARTRK-2)
+**DECISION:** EXCLUDE
+**RATIONALE:** This trial targets NTRK/ROS1/ALK fusions, which are extremely rare in pancreatic neuroendocrine tumors (<1%). There is no evidence provided that this patient harbors these specific genomic alterations, making this targeted therapy irrelevant to his current treatment plan.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT05153772
+**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (ALPHAMEDIX02)
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial evaluates Alpha-emitter PRRT (212Pb-DOTAMTATE), reporting a favorable safety profile with low incidence of renal toxicity. Given the patient's significant renal impairment (Creatinine 2.24 mg/dL), evidence of a potentially less nephrotoxic PRRT alternative is highly relevant for treatment planning.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02236910
+**TRIAL NAME:** An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+**DECISION:** INCLUDE
+**RATIONALE:** This registry study identifies high liver tumor burden (>50% volume) as a predictor of poor overall survival with PRRT. Since the patient has extensive liver metastases (>25 lesions), this real-world evidence is valuable for prognosticating outcomes and managing expectations regarding PRRT efficacy.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03870399
+**TRIAL NAME:** Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression (HORMONET)
+**DECISION:** EXCLUDE
+**RATIONALE:** This Phase 2 trial investigates Tamoxifen in hormone-receptor-positive NETs, a non-standard biomarker not typically assessed in Pan-NETs. With modest reported efficacy and the availability of more robust, standard-of-care options (e.g., Cabozantinib, Everolimus), this experimental approach is not a priority for the current recommendation.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03074513
+**TRIAL NAME:** Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial demonstrates clinical activity of the Atezolizumab/Bevacizumab combination specifically in pancreatic NETs. It provides evidence for an immunotherapy-based alternative, which is valuable if standard targeted therapies or PRRT are contraindicated due to the patient's comorbidities.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02754297
+**TRIAL NAME:** Personalized PRRT of Neuroendocrine Tumors (P-PRRT)
+**DECISION:** INCLUDE
+**RATIONALE:** This trial investigates personalized dosimetry for PRRT to optimize tumor dose while limiting renal toxicity. This is critically important for this patient, whose renal impairment (Cr 2.24 mg/dL) might otherwise contraindicate standard fixed-dose PRRT; this evidence supports the feasibility of a dosimetry-guided approach.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03728361
+**TRIAL NAME:** Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial evaluates Nivolumab plus Temozolomide. Since Temozolomide is hepatically metabolized and generally safer for kidneys than other chemotherapies (like Capecitabine or Cisplatin), this combination represents a renal-sparing systemic option for this patient.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03217097
+**TRIAL NAME:** MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents
+**DECISION:** INCLUDE
+**RATIONALE:** This trial compares alkylating agents (Temozolomide) vs. Oxaliplatin based on MGMT status. It provides evidence for selecting the optimal chemotherapy regimen; notably, Oxaliplatin carries renal risks, so data supporting Temozolomide (an alkylating agent) efficacy is particularly relevant for this patient's safety profile.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01842165
+**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs (LUMEN)
+**DECISION:** INCLUDE
+**RATIONALE:** Similar to the P-PRRT trial, this study focuses on dosimetry and safety, confirming a lack of severe nephrotoxicity in its cohort. It reinforces the evidence base for using dosimetry to safely administer PRRT, addressing the primary barrier to treatment for this patient.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03375320
+**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (CABINET)
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 3 trial provides high-level evidence that Cabozantinib significantly improves progression-free survival in progressive pancreatic NETs. As a potent TKI with a different profile than Everolimus, it represents a strong, evidence-based second-line or subsequent treatment option for this patient.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01466036
+**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** This is an older Phase 2 trial for Cabozantinib. Since the definitive Phase 3 CABINET trial (NCT03375320) has published results demonstrating efficacy in the same population, this Phase 2 evidence is superseded and less impactful for the final recommendation.
+---
+</trial_analysis>
+
+<summary>
+**TOTAL TRIALS ANALYZED:** 12
+**TRIALS TO INCLUDE:** 9
+**TRIALS TO EXCLUDE:** 3
+</summary>

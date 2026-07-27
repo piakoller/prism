@@ -1,0 +1,150 @@
+=== RECOMMENDATION VALIDATION PROMPT ===
+Timestamp: 2025-12-04T13:45:18.011167
+Patient ID: 3
+Model: google/gemini-3-pro-preview
+==================================================
+
+You are a clinical validation expert reviewing a therapy recommendation for quality assurance.
+
+Your task is to CRITICALLY EVALUATE whether the therapy recommendation is:
+1. COMPLETE - addresses all clinical needs identified in the patient assessment
+2. ACCURATE - correctly cites and interprets evidence from trials and guidelines  
+3. CONSISTENT - doesn't contradict itself or the patient assessment
+4. SAFE - considers contraindications and patient-specific risk factors
+5. ACTIONABLE - provides clear next steps
+
+**IMPORTANT**: Be thorough and critical. If you find ANY issues that could compromise patient care, you must flag them.
+
+=== PATIENT ASSESSMENT SUMMARY ===
+=== DETAILED CLINICAL ASSESSMENT ===
+
+**Patient Summary and Oncological Status**
+The patient is a 78-year-old male with a well-differentiated, non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET), Grade 1 (Ki67 2%). He presents with extensive metastatic disease involving the liver (at least 25 lesions), a large primary mass in the pancreatic uncinate process (8 cm), and a mesenteric root mass. Following first-line treatment with Lanreotide Autogel (April 2021 to July 2025), the patient exhibits radiological evidence of progressive disease (PD) based on the MRI from July 2025. Specifically, the largest liver lesions have increased (segment I: 55 mm to 58 mm; right hepatic lobe: 65 mm to 68 mm), and the mesenteric root mass has enlarged from 82×40 mm to 90×49 mm. The patient remains asymptomatic regarding the tumor, with an ECOG performance status of 0–1.
+
+**Comorbidities and Safety Considerations**
+A critical factor in the clinical assessment is the patient's renal function. He has a history of chronic kidney disease with a baseline creatinine of 1.6–1.8 mg/dL, which has deteriorated to a current level of 2.24 mg/dL. Additional comorbidities include Type 2 diabetes mellitus (10-year duration), hypertension, dyslipidemia, and a history of malignant external otitis. The worsening renal function (Creatinine 2.24 mg/dL) necessitates careful evaluation of potential nephrotoxicity associated with second-line systemic therapies.
+
+**Guideline-Based Assessment of Second-Line Options**
+According to the ENETS 2023 and ESMO 2020 guidelines, the following considerations apply to the selection of second-line treatment for a patient with progressive NF-Pan-NET G1:
+
+1.  **Targeted Therapies (Everolimus/Sunitinib):**
+    *   The ENETS guidelines (Section 3.3, Q6) and ESMO guidelines recommend Everolimus and Sunitinib for patients with progressive advanced Pan-NETs.
+    *   These agents are established options for G1/G2 tumors after the failure of somatostatin analogs.
+    *   Given the patient's renal impairment,...
+[Assessment text truncated for validation prompt]
+
+Urgency Level: medium
+Assessment Confidence: medium
+
+=== TRIAL ANALYSIS SUMMARY ===
+Total Trials Analyzed: 9
+Trials Marked for INCLUSION: 1
+Trials Marked for EXCLUSION: 8
+
+INCLUDED TRIALS:
+  - NCT03217097: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents (Relevance: N/A)
+
+=== GUIDELINES SUMMARY ===
+Matched Guidelines: 2
+
+  - Nonfunctioning pancreatic neuroendocrine tumours (Relevance: 1.0)
+  - Gastroenteropancreatic neuroendocrine neoplasms: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up [y] (Relevance: 1.0)
+
+=== THERAPY RECOMMENDATION TO VALIDATE ===
+
+RECOMMENDATION:
+**1. Mandatory Imaging:**
+Perform **68Ga-DOTATATE PET/CT** (or equivalent SSTR-PET/CT) immediately. This is required to confirm somatostatin receptor status, which is a prerequisite for potential future Peptide Receptor Radionuclide Therapy (PRRT), although current renal function poses a significant barrier to this modality.
+
+**2. Primary Systemic Therapy Recommendation:**
+Initiate **Targeted Therapy** with either **Everolimus** (10 mg daily) or **Sunitinib** (37.5 mg daily).
+*   **Selection:** Given the patient's severe renal impairment (Creatinine 2.24 mg/dL, estimated CrCl < 30 mL/min), these agents are preferred over standard chemotherapy or PRRT because they are primarily metabolized by the liver and do not require significant renal dose adjustments.
+*   **Specific Safety Monitoring:**
+    *   **Everolimus:** Monitor blood glucose closely due to the patient's history of Type 2 Diabetes Mellitus, as Everolimus can induce hyperglycemia.
+    *   **Sunitinib:** Monitor blood pressure closely due to the patient's history of hypertension.
+
+**3. Alternative Option (If Cytoreduction is Urgent):**
+Consider **Temozolomide Monotherapy**.
+*   **Evidence:** Trial **NCT03217097 (MGMT-NET)** demonstrates that alkylating agents (such as Temozolomide) are effective in neuroendocrine tumors, with the trial reporting response rates of 30–40% for alkylating-based regimens.
+*   **Safety & Contraindications (CRITICAL):**
+    *   **Capecitabine is CONTRAINDICATED:** Do **NOT** administer the standard CAPTEM regimen (Capecitabine + Temozolomide). The patient's estimated Creatinine Clearance is likely below 30 mL/min (approx. 27–30 mL/min based on Age 78 and Cr 2.24 mg/dL). Capecitabine is strictly contraindicated in severe renal impairment.
+    *   **Streptozotocin is CONTRAINDICATED:** Avoid Streptozotocin-based regimens due to the high risk of nephrotoxicity, which could precipitate renal failure in this patient.
+    *   Temozolomide is primarily cleared hepatically, making it the only viable chemotherapy option for this renal profile.
+
+**4. PRRT Consideration:**
+**177Lu-DOTATATE** is currently **not recommended** as the immediate next line due to the high risk of radiation-induced nephrotoxicity in the setting of baseline Creatinine 2.24 mg/dL. It may only be considered if SSTR-PET/CT shows strong uptake (higher than liver background) AND specific kidney dosimetry confirms safety, likely requiring a reduced dose or nephrological clearance.
+
+RATIONALE:
+**Clinical Status and Progression:**
+The patient has a Grade 1 NF-Pan-NET with extensive metastatic burden (>25 liver lesions) and documented radiological progression (PD) after first-line Lanreotide. According to **ENETS 2023** and **ESMO 2020** guidelines, second-line options include targeted therapies, chemotherapy, or PRRT.
+
+**Safety-Based Selection (Renal Impairment):**
+The critical determinant for this patient is the worsening renal function (Creatinine 2.24 mg/dL).
+*   **Targeted Therapies (Recommended):** Guidelines support **Everolimus** (RADIANT-3 trial data cited in guidelines: PFS 11.0 months vs 4.6 placebo) and **Sunitinib** (Pivotal trial data cited in guidelines: PFS 11.4 months vs 5.5 placebo) for progressive Pan-NETs. Both drugs are metabolized via the liver (CYP3A4) and minimal renal excretion makes them the safest options for this patient. The choice between them depends on managing comorbidities (Diabetes for Everolimus vs Hypertension for Sunitinib).
+*   **Chemotherapy (Conditional):** While the high tumor burden suggests a need for cytoreduction, standard regimens are unsafe. **Streptozotocin** is nephrotoxic. **Capecitabine** requires renal clearance and is contraindicated in severe renal failure (CrCl < 30 mL/min). Therefore, **Temozolomide monotherapy** is the only feasible chemotherapy option. This is supported by trial **NCT03217097**, which validates the efficacy of alkylating agents in NETs and notes that MGMT status may predict response, offering a potential cytoreductive option that spares renal function.
+*   **PRRT (Restricted):** While effective (NETTER-1 data cited in guidelines), the patient's renal insufficiency is a major relative contraindication. Guidelines warn of renal toxicity; administering standard activity 177Lu-DOTATATE could lead to permanent renal failure.
+
+**Conclusion:**
+Targeted therapy represents the best balance of efficacy and safety. Temozolomide monotherapy is a valid alternative if tumor shrinkage is prioritized, provided Capecitabine is strictly avoided.
+
+=== YOUR VALIDATION TASK ===
+
+Carefully review the therapy recommendation against the evidence provided above.
+
+Check for the following issues:
+
+1. COMPLETENESS ISSUES:
+   - Does the recommendation address ALL clinical needs identified in the patient assessment?
+   - Are important clinical considerations (disease grade, symptoms, biomarkers, prior treatments) adequately addressed?
+   - Are alternative options discussed if the primary recommendation isn't feasible?
+
+2. ACCURACY ISSUES:
+   - Are all trial citations (NCT numbers) correctly used?
+   - Are the claimed trial outcomes/findings accurate based on the trial analysis?
+   - Are guideline recommendations correctly interpreted?
+   - Is there any evidence of fabricated or misrepresented data?
+
+3. CONSISTENCY ISSUES:
+   - Does the recommendation align with the urgency level from the patient assessment?
+   - Are there any internal contradictions in the recommendation?
+   - Does the rationale actually support the recommendation given?
+   - Are trials marked for EXCLUSION incorrectly being recommended?
+
+4. SAFETY ISSUES:
+   - Are known contraindications from the patient assessment respected?
+   - Are patient-specific risk factors (organ function, performance status) considered?
+   - Are monitoring requirements mentioned for high-risk therapies?
+
+5. ACTIONABILITY ISSUES:
+   - Are next steps clearly defined?
+   - Is the recommendation specific enough to be implemented?
+   - Are follow-up timelines provided?
+
+Provide your validation in the following format:
+
+<validation_decision>
+[State clearly: PASS or RECONSIDER]
+</validation_decision>
+
+<critical_issues>
+[List any critical issues that make the recommendation incomplete, wrong, or unsafe. Be specific about what is missing or incorrect. If none, write "None identified."]
+</critical_issues>
+
+<warnings>
+[List any non-critical concerns or areas for improvement. If none, write "None identified."]
+</warnings>
+
+<detailed_reasoning>
+[Provide detailed reasoning for your validation decision. Explain:
+- What you checked in each validation category
+- Specific examples of issues you found (quote relevant parts)
+- Why each issue is problematic for patient care
+- What would need to be corrected for the recommendation to pass validation
+Be thorough and specific - this reasoning will guide the regeneration process.]
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+[If you marked as RECONSIDER, provide specific actionable guidance on what should be corrected or added in the regenerated recommendation. If PASS, write "No improvements needed."]
+</recommendations_for_improvement>
+
+Remember: Patient safety is paramount. If in doubt, mark as RECONSIDER and explain your concerns in detail.

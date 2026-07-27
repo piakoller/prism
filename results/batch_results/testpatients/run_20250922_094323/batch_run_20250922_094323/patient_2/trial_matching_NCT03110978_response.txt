@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:30:25.621885
+Trial: 24/86
+NCT ID: NCT03110978
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful clinical evidence for this patient. The primary reason is a fundamental mismatch in all three core criteria. First, for **Disease/Biology Alignment**, the patient has a widely metastatic (Stage IV) Grade 2 pancreatic neuroendocrine tumor (PanNET), while the study (NCT03110978) investigates localized (Stage I-IIA), node-negative non-small cell lung cancer (NSCLC), which may include atypical lung carcinoids. This represents a different primary site, histology, and, most critically, disease stage. Second, the **Treatment Context/Clinical Applicability** is entirely different. The patient's clinical need is for a first-line systemic therapy to control multi-organ metastatic disease. The study evaluates a local treatment (SBRT) with or without nivolumab for early-stage, non-metastatic lung cancer, a scenario irrelevant to this patient's widespread disease. Finally, the **Evidence Quality and Relevance** is not transferable; the published results on event-free survival with SBRT plus immunotherapy in early-stage lung cancer provide no actionable insights for selecting a systemic therapy (e.g., chemotherapy, PRRT, targeted agents) for metastatic PanNET. Therefore, the study fails to meet any of the required criteria for clinical relevance."
+}
+```

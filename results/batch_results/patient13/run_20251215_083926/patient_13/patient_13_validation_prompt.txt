@@ -1,0 +1,169 @@
+=== RECOMMENDATION VALIDATION PROMPT ===
+Timestamp: 2025-12-15T09:19:44.122815
+Patient ID: 13
+Model: google/gemini-3-pro-preview
+==================================================
+
+You are a clinical validation expert reviewing a therapy recommendation for quality assurance.
+
+Your task is to CRITICALLY EVALUATE whether the therapy recommendation is:
+1. COMPLETE - addresses all clinical needs identified in the patient assessment
+2. ACCURATE - correctly cites and interprets evidence from trials and guidelines  
+3. CONSISTENT - doesn't contradict itself or the patient assessment
+4. SAFE - considers contraindications and patient-specific risk factors
+5. ACTIONABLE - provides clear next steps
+
+**IMPORTANT**: Be thorough and critical. If you find ANY issues that could compromise patient care, you must flag them.
+
+=== PATIENT ASSESSMENT SUMMARY ===
+=== DETAILED CLINICAL ASSESSMENT ===
+
+**Patient Clinical Status and Tumor Biology**
+The patient is a 53-year-old with a good performance status (ECOG 0–1) presenting with a metastatic, non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET). The tumor is classified as Grade 3 (well-differentiated) based on a Ki-67 index of 25% (Oct 2023). The disease is sporadic (no MEN1) and characterized by a high hepatic tumor burden, with additional metastases in lymph nodes, bone, and lungs (low–moderate burden).
+
+**Imaging Assessment**
+Functional imaging reveals a "dual-positive" status:
+1.  **DOTATOC-positive:** Indicates high expression of somatostatin receptors (SSTR), which is a prerequisite for Peptide Receptor Radionuclide Therapy (PRRT).
+2.  **FDG-positive:** Indicates high metabolic activity, which correlates with the Grade 3 histology and generally predicts a more aggressive clinical course compared to FDG-negative disease.
+3.  **No mismatch:** The absence of mismatch implies that the metabolically active (FDG-positive) lesions retain SSTR expression. According to ENETS and ESMO guidelines, SSTR-PET/CT is the first-line functional imaging method, and FDG-PET provides complementary prognostic information. High FDG uptake is a strong poor prognostic factor.
+
+**Treatment History and Refractoriness**
+The patient has demonstrated disease progression following multiple lines of systemic therapy, indicating a refractory disease state:
+*   **Chemotherapy:** The patient achieved a partial response to FOLFOX but progressed after an initial response to 5-FU + dacarbazine. As dacarbazine is an alkylating agent similar to temozolomide, the patient has effectively progressed on both oxaliplatin-based and alkylating/antimetabolite regimens.
+*   **Somatostatin Analogs (SSA):** Used for maintenance.
+*   **Targeted Therapy:** The patient has progressed on Sunitinib (Tyrosine Kinase Inhibitor) as of July 2025.
+
+**Guideline-Based Assessment for Next Steps**
+Given the hepatic and overall progression in a Grade 3 NF-Pan-NET (Ki-67 25%), the following clinical considerations are derived from the ENETS 2023 and ESMO 2020 guidelines:
+
+1.  **Peptide Receptor Radionuclide Therapy (PRRT):**
+    *   **Eligibility:** The patient is DOTATOC-positive. ESMO guidelines state PRRT is approved for Pan-NETs and may be considered in NET G3 patients, though careful selection is required. ENETS notes promising results in G3 patients with Ki-67 < 55%.
+    *   **Uptake Requirement:** For PRRT eligibility, it is clinically mandatory that DOTATOC PET uptake is higher than liver background (typically SUVmax ~6–7) in all primary tumor lesions and metastases. The "no mismatch" finding supports eligibility, provided the intensity of uptake meets this threshold.
+    *   **Clinical Context:** ENETS guidelines mention that PRRT can be considered as a second-line treatment or in selected G3 cases (often within clinical trials like NETTER-2 or COMPOSE). The high liver burden requires careful evaluation of liver function and toxicity risks.
+
+2.  **Targeted Molecular Therapy (mTOR Inhibitors):**
+    *   **Everolimus:** According to ENETS and ESMO guidelines, Everolimus is recommended in progressive G1 and G2 NF-Pan-NETs and could be considered in progressive G3 NF-Pan-NETs (Ki-67 < 55%). The patient has failed Sunitinib but has not yet received Everolimus. There is no cross-resistance defined between TKIs (Sunitinib) and mTOR inhibitors (Everolimus).
+
+3.  **Chemotherapy Considerations:**
+    *   ESMO recommends systemic chemotherapy (e.g., Streptozotocin/5-FU or Temozolomide/Capecitabine) for progressive Pan-NETs. However, this patient has already progressed on 5-FU + dacarbazine. While ENETS mentions Temozolomide + Capecitabine for G3, the prior failure on a dacarbazine-containing regimen (an analog of temozolomide) suggests potential resistance to alkylating agents.
+
+4.  **Locoregional Therapies:**
+    *   Given the "high burden" of liver metastases, ESMO guidelines suggest locoregional therapies (e.g., embolization) could be considered in selected cases, potentially in combination with systemic therapy, though the presence of extrahepatic disease (bone, lungs) necessitates systemic control.
+
+**Summary**
+The patient presents with a progressive, heavily pre-treated Grade 3 NF-Pan-NET. The clinical assessment identifies the patient as a candidate for further systemic therapy. Based on the preserved SSTR expression (DOTATOC-positive) and failure of prior chemotherapy and Sunitinib, the primary guideline-based considerations for the tumor board involve evaluating the suitability for PRRT (confirming uptake intensity > liver background) or switching to a different targeted agent class such as Everolimus.
+
+Urgency Level: medium
+Assessment Confidence: medium
+
+=== TRIAL ANALYSIS SUMMARY ===
+Total Trials Analyzed: 15
+Trials Marked for INCLUSION: 11
+Trials Marked for EXCLUSION: 4
+
+INCLUDED TRIALS:
+  - NCT03278379: Avelumab in G2-3 NET (Relevance: N/A)
+  - NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (COMPETE) (Relevance: N/A)
+  - NCT05153772: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients (Relevance: N/A)
+  - NCT02236910: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours (Relevance: N/A)
+  - NCT02754297: Personalized PRRT of Neuroendocrine Tumors (Relevance: N/A)
+  - NCT01842165: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs (Relevance: N/A)
+  - NCT03728361: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer (Relevance: N/A)
+  - NCT02834013: Nivolumab and Ipilimumab in Treating Patients With Rare Tumors (Relevance: N/A)
+  - NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (Relevance: N/A)
+  - NCT03972488: Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET (Relevance: N/A)
+
+=== GUIDELINES SUMMARY ===
+Matched Guidelines: 2
+
+  - Nonfunctioning pancreatic neuroendocrine tumours (Relevance: 1.0)
+  - Gastroenteropancreatic neuroendocrine neoplasms: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up [y] (Relevance: 1.0)
+
+=== THERAPY RECOMMENDATION TO VALIDATE ===
+
+RECOMMENDATION:
+The recommended therapy is **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE**.
+
+**Key Clinical Trial Evidence:**
+*   **NCT03972488 (NETTER-2):** This Phase 3 trial specifically evaluated 177Lu-DOTATATE in patients with Grade 2 and Grade 3 (Ki-67 10–55%) advanced GEP-NETs. The trial demonstrated that 177Lu-DOTATATE plus long-acting octreotide significantly extended median progression-free survival (PFS) to **22.8 months** compared to **8.5 months** with high-dose octreotide (stratified hazard ratio **0.276**; p<0.0001). This provides high-level evidence supporting PRRT for this patient's specific Grade 3 tumor biology.
+*   **NCT02754297 (P-PRRT):** This Phase 2 trial reported a high objective response rate in pancreatic NETs (84.6% partial or minor response) treated with personalized 177Lu-octreotate, reinforcing the utility of PRRT for pancreatic primaries.
+*   **NCT03049189 (COMPETE):** Emerging topline results from this Phase 3 trial indicate a statistically significant improvement in PFS with 177Lu-edotreotide compared to everolimus in SSTR-positive GEP-NETs, supporting the prioritization of PRRT over mTOR inhibitors.
+
+**Safety Prerequisites:**
+*   **Liver Function:** Given the patient's "high hepatic tumor burden," it is critical to **confirm preserved liver function (bilirubin/albumin) prior to initiation** due to the risk of hepatotoxicity. Trial **NCT02236910** identifies high hepatic tumor burden as a predictor of outcomes and toxicity risks.
+*   **Uptake:** Eligibility requires confirmation that DOTATOC PET uptake is higher than liver background in all target lesions.
+*   **Monitoring:** While the patient is SSTR-positive, the concurrent FDG-positive status implies a more aggressive biology; therefore, close monitoring for early progression is warranted despite the efficacy of PRRT.
+
+**Alternative Therapy:**
+If PRRT is not feasible or contraindicated, **Cabozantinib** is a recommended alternative. The Phase 3 **CABINET trial (NCT03375320)** demonstrated that Cabozantinib significantly improved progression-free survival in patients with progressive pancreatic neuroendocrine tumors (Median PFS **11.4 months** vs. **3.0 months**; HR 0.27). **Everolimus** is another guideline-supported option, though the combination of Ribociclib and Everolimus should be avoided as it showed insufficient activity (0% ORR) in trial **NCT03070301**.
+
+RATIONALE:
+The patient presents with a progressive, Grade 3 (Ki-67 25%) pancreatic neuroendocrine tumor that is refractory to multiple lines of systemic therapy (FOLFOX, Somatostatin Analogs, 5-FU/Dacarbazine, Sunitinib). The "dual-positive" imaging status (DOTATOC-positive, FDG-positive) presents a therapeutic challenge, but the strong SSTR expression makes PRRT a viable and evidence-based option.
+
+**Efficacy:** The **NETTER-2 trial (NCT03972488)** provides the most relevant Level 1 evidence, specifically validating the use of 177Lu-DOTATATE in Grade 3 GEP-NETs (Ki-67 10-55%) with a substantial PFS benefit (HR 0.276). This directly addresses the patient's tumor grade. Additionally, the **P-PRRT trial (NCT02754297)** demonstrated particularly high response rates in pancreatic NETs.
+
+**Safety and Patient Selection:** The patient's high hepatic burden is a specific risk factor identified in the registry study **NCT02236910**. Therefore, verifying liver function parameters is a mandatory safety step. The FDG-positive status, while a negative prognostic marker, does not preclude PRRT provided SSTR uptake is sufficient (no mismatch), but it necessitates vigilant monitoring for discordant progression.
+
+**Alternatives:** **Cabozantinib** is the strongest alternative based on the **CABINET trial (NCT03375320)**, which showed a robust PFS benefit in pre-treated Pan-NETs. While **Everolimus** is an option per ENETS guidelines, the emerging data from **COMPETE (NCT03049189)** suggests PRRT may offer superior PFS. The combination of Ribociclib and Everolimus is not recommended due to lack of efficacy in **NCT03070301**. Immunotherapy (e.g., Nivolumab/Ipilimumab) was considered based on **NCT02834013 (DART)**, but given the lower Ki-67 (25%) compared to the DART high-grade cohort (median Ki-67 80%) and ENETS guidelines stating lack of significant activity in unselected Pan-NETs, PRRT and Cabozantinib are prioritized.
+
+=== YOUR VALIDATION TASK ===
+
+Carefully review the therapy recommendation against the evidence provided above.
+
+Check for the following issues:
+
+1. COMPLETENESS ISSUES:
+   - Does the recommendation address ALL clinical needs identified in the patient assessment?
+   - Are important clinical considerations (disease grade, symptoms, biomarkers, prior treatments) adequately addressed?
+   - Are alternative options discussed if the primary recommendation isn't feasible?
+
+2. ACCURACY ISSUES:
+   - Are all trial citations (NCT numbers) correctly used?
+   - Are the claimed trial outcomes/findings accurate based on the trial analysis?
+   - Are guideline recommendations correctly interpreted?
+   - Is there any evidence of fabricated or misrepresented data?
+
+3. CONSISTENCY ISSUES:
+   - Does the recommendation align with the urgency level from the patient assessment?
+   - Are there any internal contradictions in the recommendation?
+   - Does the rationale actually support the recommendation given?
+   - Are trials marked for EXCLUSION incorrectly being recommended?
+
+4. SAFETY ISSUES:
+   - Are known contraindications from the patient assessment respected?
+   - Are patient-specific risk factors (organ function, performance status) considered?
+   - Are monitoring requirements mentioned for high-risk therapies?
+
+5. ACTIONABILITY ISSUES:
+   - Are next steps clearly defined?
+   - Is the recommendation specific enough to be implemented?
+   - Are follow-up timelines provided?
+
+Provide your validation in the following format:
+
+<validation_decision>
+[State clearly: PASS or RECONSIDER]
+</validation_decision>
+
+<critical_issues>
+[List any critical issues that make the recommendation incomplete, wrong, or unsafe. Be specific about what is missing or incorrect. If none, write "None identified."]
+</critical_issues>
+
+<warnings>
+[List any non-critical concerns or areas for improvement. If none, write "None identified."]
+</warnings>
+
+<detailed_reasoning>
+[Provide detailed reasoning for your validation decision. Explain:
+- What you checked in each validation category
+- Specific examples of issues you found (quote relevant parts)
+- Why each issue is problematic for patient care
+- What would need to be corrected for the recommendation to pass validation
+Be thorough and specific - this reasoning will guide the regeneration process.]
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+[If you marked as RECONSIDER, provide specific actionable guidance on what should be corrected or added in the regenerated recommendation. If PASS, write "No improvements needed."]
+</recommendations_for_improvement>
+
+Remember: Patient safety is paramount. If in doubt, mark as RECONSIDER and explain your concerns in detail.

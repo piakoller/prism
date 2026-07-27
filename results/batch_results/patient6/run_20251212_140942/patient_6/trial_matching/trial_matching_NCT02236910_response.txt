@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:23:24.311958
+Trial: 21/86
+NCT ID: NCT02236910
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for the patient's potential next line of therapy. The patient has a progressive, well-differentiated G2 Pancreatic NET (Ki-67 15%), which aligns with the study's inclusion criteria (well-differentiated NETs, Ki-67 <20%). While the patient is currently being evaluated for liver transplantation, she is progressing on belzutifan, making Peptide Receptor Radionuclide Therapy (PRRT) with Lu-177 DOTATATE a clinically relevant alternative or subsequent option, as noted in the assessment. Assuming SSTR-PET positivity (typical for G2 NETs), the study is highly applicable. The published results are particularly relevant because they identify specific survival predictors—such as the presence of ≥5 bone metastases and high liver tumor burden (>50%)—that correlate with poor outcomes. Given the patient's reported bone pain and need for liver burden assessment, these findings offer actionable prognostic information to guide the decision between PRRT, chemotherapy, or continued pursuit of surgical options."
+}
+```

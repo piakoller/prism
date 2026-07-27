@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:46:26.260286
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient for two key reasons. First, the provided publication is a study protocol (LUTIA trial) describing the design and methodology without reporting clinical results, efficacy, or safety data (Criterion 3 not met). Without outcomes, the study cannot inform therapeutic choices. Second, there is a significant biological mismatch: the study is strictly limited to well-differentiated NETs with Ki-67 ≤20% (Grade 1-2), whereas the patient has a high-grade NET G3 with a Ki-67 of 70% (Criterion 1 not met). While the patient is SSTR-positive and a candidate for PRRT, extrapolating an intra-arterial administration strategy from low-grade indolent tumors to a rapidly proliferating high-grade malignancy is not clinically justified without specific evidence, as the treatment goals and tumor biology differ substantially."
+}

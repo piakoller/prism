@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:25:20.262017
+Trial: 33/86
+NCT ID: NCT02754297
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates personalized Peptide Receptor Radionuclide Therapy (PRRT) for Neuroendocrine Tumors (NETs) requiring Somatostatin Receptor (SSTR) overexpression. This patient has a poorly differentiated Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, a biologically distinct entity from the NETs studied. High-grade NECs (especially with Ki-67 >55%) rarely express sufficient SSTRs for PRRT and are typically treated with platinum-based chemotherapy, as reflected in the patient's history. The instruction to assume SSTR positivity applies only to well-differentiated G1-G2 NETs, not high-grade NECs. Due to the fundamental discordance in tumor biology (NEC vs. NET) and the extremely low likelihood of SSTR target expression in a Ki-67 95% tumor, the evidence from this NET-focused study is not transferable or clinically relevant for guiding treatment in this high-grade NEC case."
+}

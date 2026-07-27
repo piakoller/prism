@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T13:53:39.660598
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence to guide therapy recommendations for this patient. While the disease biology (G1-G3 GEP-NETs) aligns with the patient's Grade 2 Pan-NET, the study is observational and focuses on validating a biomarker (NETest) to assess surgical completeness and predict recurrence, rather than evaluating the efficacy or safety of a therapeutic intervention. The patient requires a decision regarding the next line of active treatment (e.g., complex resection vs. PRRT vs. alternative systemic therapy) to manage a locally advanced, bleeding tumor. Evidence regarding the diagnostic utility of a liquid biopsy for post-surgical monitoring does not address the immediate clinical question of which therapeutic modality to select. Therefore, the study fails the criteria for treatment context and evidence relevance regarding therapy selection."
+}

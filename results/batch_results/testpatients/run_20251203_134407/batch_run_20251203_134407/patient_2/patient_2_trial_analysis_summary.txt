@@ -1,0 +1,10 @@
+TRIAL ANALYSIS SUMMARY - PATIENT 2
+==================================================
+Analysis Status: success
+Analysis Complete: False
+Trials Analyzed: 0
+Trials to Include: 0
+Trials to Exclude: 0
+
+VALIDATION WARNINGS:
+  ⚠️ Trial count mismatch: analyzed 0, expected 14

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:29:06.704162
+Trial: 46/86
+NCT ID: NCT01842165
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-octreotate in patients with Gastroenteropancreatic Neuroendocrine Tumors (GEP-NETs) who exhibit high Somatostatin Receptor (SSTR) expression. This does not align with the patient's diagnosis of a high-grade Neuroendocrine Carcinoma (NEC) with a Ki-67 index of 95%. Biologically, NECs with such high proliferation rates are distinct from the well-differentiated NETs typically included in PRRT trials and rarely express SSTRs at therapeutic levels (confirmed by the patient's FDG-avidity and lack of SSTR data). The specific clinical assumption to assume SSTR-positivity applies only to well-differentiated G1-G2 NETs, not G3 NECs. Therefore, evidence regarding PRRT efficacy and dosimetry from this study is not biologically transferable or clinically applicable to guiding consolidation therapy for a patient with platinum-sensitive, high-grade NEC."
+}

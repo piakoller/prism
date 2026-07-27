@@ -1,0 +1,227 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-09T10:33:57.177696
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+2019 hypotensive episode, flushing and diarrea
+CT scan: liver lesions, 2 ileal lesions and lymph nodes
+	Liver biopsy with SSA preparation: Liver met, G1, Ki 67 1%, possible GEP origin
+	He started Lanreotide 120/28 days
+	EnteroCT + PET/CT Ga-68-DOTATOC (combined): 3 ileal lesions, UPPSALA T2; uptake in liver, in the bowel and in one lymphnode
+Heart ultrasound: non carcinoid cardiopathy
+	2020: Multidisciplinary discussion: surgery was proposed
+Sugery: ileal NET, Ki 67 3%, well differentiated, G2, pT3m pN1
+5HIAA: 24.2 mg/24h
+	Syndrome not well controlled: proposed TAE
+2021: TAE (2 times) with good radiological results
+5HIAA: 11.2 mg/24 H
+2024 radiological PD; increase in 5HIAA (36)  PET/CT with Ga-68-DOTATOC  PRRT as clinical practice (4 cycles of Lu-177-DOTApeptides)
+Preparation before and after PRRT
+Increase in flushing after 1st and 2nd cycles
+The evaluation after 3 months the last cycle of PRRT has demonstrated a stabilization of the disease; non more flushing, 5HIAA: 8
+2.	Current Clinical Status
+Good clinical conditions; no more flushing and diarrea; no heart carcinoid cardiopathy
+Question for Tumorboard:
+Should we prepare the patient with short acting SSA before liver biopsy and TAE?
+Should we prepare the patient with short acting SSA before and after PRRT?
+At what intervals should the heart be checked in the presence of a carcinoid syndrome?
+If there is not a radiological PD, but the syndrome is not well controlled, is PRRT indicated?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**1. Diagnostic and Pathological Classification**
+The patient presents with a well-differentiated neuroendocrine tumor (NET) of the ileum. Pathological evaluation reveals heterogeneity in grading: the initial liver biopsy (2019) indicated G1 (Ki-67 1%), while the surgical specimen (2020) resulted in reclassification to G2 (Ki-67 3%, pT3m pN1). The disease is functional, characterized by Carcinoid Syndrome (CS) manifesting as flushing, diarrhea, and a hypotensive episode in 2019.
+
+**2. Clinical Course and Treatment Response**
+The patient has demonstrated Refractory Carcinoid Syndrome (RCS). Despite treatment with Lanreotide (120 mg/28 days), the syndrome was not well controlled initially, necessitating Trans-Arterial Embolization (TAE) in 2021. While TAE initially reduced 5-HIAA levels (from 24.2 mg/24h to 11.2 mg/24h), the patient experienced radiological progressive disease (PD) and biochemical progression (5-HIAA increase to 36 mg/24h) in 2024.
+
+Following 4 cycles of PRRT (Lu-177-DOTApeptides), the patient achieved disease stabilization and a complete biochemical response (5-HIAA normalized to 8 mg/24h) with resolution of flushing and diarrhea. The increase in flushing observed after the 1st and 2nd PRRT cycles suggests a release of vasoactive hormones during therapy.
+
+**3. Assessment Regarding Tumor Board Questions**
+
+*   **Perioperative/Periprocedural Management (Biopsy and TAE):**
+    Based on the *ENETS 2022 Guidance Paper for Carcinoid Syndrome*, the patient's history of a hypotensive episode (2019) and active CS places them at risk for carcinoid crisis during invasive procedures. The guidelines assess that carcinoid crisis can be precipitated by tumor biopsy or cytolytic therapies like hepatic embolization. Therefore, prophylactic short-acting octreotide is recommended prior to and during these procedures (s.c. 100–500 µg q 6–8 h or i.v. infusion starting 12h pre-operatively) to maintain hemodynamic stability.
+
+*   **Management During PRRT:**
+    The patient experienced increased flushing during the initial PRRT cycles. According to *ENETS 2022* and *ENETS 2024* guidelines, carcinoid crisis can occur as a result of PRRT. For patients using short-acting somatostatin analogues (SSA) for symptom control, guidelines recommend continuing the short-acting SSA up to 8–24 hours prior to administration and restarting it 8–24 hours after PRRT to prevent hormonal exacerbation.
+
+*   **Cardiac Monitoring:**
+    Although the current status indicates "no heart carcinoid cardiopathy," the patient has a history of significantly elevated 5-HIAA (peak 36 mg/24h). The *ENETS 2022 Guidance* notes that carcinoid heart disease (CHD) can progress rapidly. Consequently, lifelong screening is required. The recommended interval for echocardiography and NT-proBNP measurement is every 6–12 months for patients with CS and/or elevated 5-HIAA.
+
+*   **Indication for PRRT in Refractory Syndrome:**
+    Regarding the indication of PRRT for syndrome control in the absence of radiological PD: The *ENETS 2022 Guidance* and *ENETS 2024 Guidance* identify PRRT as a valid therapeutic option for Refractory Carcinoid Syndrome (RCS). PRRT is documented to decrease diarrhea, pain, fatigue, and flushing, and reduce 5-HIAA levels (as evidenced by this patient's drop to 8 mg/24h). While often used in the setting of progressive disease (as was the case for this patient in 2024), guidelines support its use for symptom control in RCS where other modalities have failed, even if radiological stability is present, provided there is sufficient uptake on SSTR imaging.
+
+**4. Current Status and Follow-up**
+The patient is currently stable with normalized biomarkers. Continued monitoring of 5-HIAA and regular imaging are indicated. Given the G2 status (Ki-67 3%), *ESMO Guidelines* suggest imaging intervals of every 6 months may be appropriate, though the specific interval should be tailored to the growth rate and tumor burden.
+
+Trial Search Recommendations:
+  - Assess needed based on assessment
+  - Monitor needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: Should we prepare the patient with short acting SSA before liver biopsy and TAE?
+Should we prepare the patient with short acting SSA before and after PRRT?
+At what intervals should the heart be checked in the presence of a carcinoid syndrome?
+If there is not a radiological PD, but the syndrome is not well controlled, is PRRT indicated?
+
+### STUDY DATA
+	•	NCT-ID: NCT03273712
+	•	Title: Dosimetry-Guided, Peptide Receptor Radiotherapy (PRRT) With 90Y-DOTA- tyr3-Octreotide (90Y-DOTATOC)
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: 90Y-DOTA tyr3-Octreotide; 68Ga-DOTATOC PET Positron Emission Tomography (PET) whole body scan; Amino Acids
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+1. Disease not amenable to standard treatment (nonresectable or disease present after one or more surgeries and/or Sandostatin treatment) or subject has failed existing first line chemotherapy, biologic therapy, targeted agent therapy or radiation therapy.
+2. Participation in Iowa Neuroendocrine Tumor Registry.
+3. A pathologically confirmed (histology or cytology) malignant neoplasm with at least one target lesion that is confirmed by conventional imaging and is determined to express somatostatin receptors by 68Ga-DOTATOC (TATE) PET within 6 months prior to treatment with 90Y-DOTATOC.
+4. The target lesion is one that either has never received external beam radiation or has been previously irradiated and has since demonstrated progression. Any local irradiation of the target lesion or any non-target lesions via external beam, conformal or stereotactic radiation treatments must have occurred more than 4 weeks prior to study drug administration. Any full cranial-spinal radiation, whether or not a target lesion is included in the field, must have occurred more than 3 months prior to study drug administration.
+5. Life expectancy \> 2 months at the time of study drug administration.
+6. Archival tissue from a previous biopsy will be required.
+7. Age ≥ 6 months-90 years at the time of study drug administration.
+8. Performance status as determined by Karnofsky ≥ 60 or Lansky Play Scale ≥ 60% at the time of study drug administration.
+9. Completion of Norfolk Quality of Life Questionnaire.
+10. Within 7-10 days of study drug administration, patients must have normal organ and marrow function as defined below:
+
+    * absolute neutrophil count \>1000/mm3
+    * Platelets \>90,000/mm3
+    * total bilirubin \<3X ULN for age
+    * AST(SGOT) \& ALT(SGPT) \<10X institutional upper limit of normal for age
+    * Urinalysis no greater than 1+ hematuria or proteinuria
+    * Renal function\* Adults(age18 or \>): Serum creatinine ≤ 1.2 mg/dl; if serum creatinine is \>1.2 mg/dL, nuclear GFR will be measured. GFR will need to be ≥ 80 ml/min/1.73m2 for subjects ≤40 years old, ≥ 70 ml/min/1.73m2 for subjects between 41-50; ≥ 60 ml/min/1.73m2 for subjects between 51-60; ≥ 50 ml/min/1.73m2 for subjects \> 60 years old.
+
+    Children(age \<18): nuclear GFR ≥ 80 mL/min/1.73 m2
+
+    \* Renal function criteria based on our previous experience with 90Y-DOTATOC therapy and known changes in GFR with age13,21,33-35
+11. The effects of 90Y-DOTA-tyr3-Octreotide on the developing human fetus are unknown. For this reason and because Class C agents are known to be teratogenic, women and men of child-bearing potential must agree to use adequate contraception (hormonal or barrier method of birth control) prior to study entry and for the duration of study participation. Should a woman become pregnant or suspect she is pregnant while participating in this study, she should inform her treating physician immediately.
+12. Ability to understand and the willingness to sign a written informed consent document.
+
+Exclusion Criteria:
+
+1. Pregnant women are excluded from this study because 90Y-DOTATOC is a Class C agent with potential teratogenic or abortifacient effects.
+2. Because there is an unknown but potential risk for adverse events in nursing infants secondary to treatment of the mother with 90Y-DOTATOC, breastfeeding should be discontinued until 6 weeks after the last administration of study drug.
+3. Surgery within 4 weeks of study drug administration.
+4. External beam radiation to both kidneys (scatter doses of \<500 cGy to a single kidney or radiation to \< 50% of a single kidney is acceptable).
+5. Prior PRRT with 90Y-DOTATOC (TATE) or 177Lu-DOTATOC (TATE) or 131I-MIBG therapy for this malignancy.
+6. Another investigational drug within 4 weeks of study drug administration.
+7. Concurrent, malignant disease for which patient is on active therapy.
+8. Another significant medical, psychiatric, or surgical condition which is currently uncontrolled by treatment and which would likely affect the subject's ability to complete this protocol.
+9. Any subject for whom, in the opinion of their physician, a 12-hour discontinuation of somatostatin analogue therapy represents a health risk. Also subjects who have received SandostatinLAR in the past 28 days or long-acting lanreotide within the past 8 weeks are excluded. Subjects may be maintained on short acting octreotide during the time from last injection of long-acting somatostatin analogue until 12 hrs prior to injection of study drug. Known antibodies to Octreotide, Lanreotide, or DOTATOC or history of allergic reactions attributed to compounds of similar chemical or biologic composition to 90Y-DOTATOC.
+10. Patients who have had chemotherapy within 4 weeks (6 weeks for nitrosoureas or mitomycin C) of study drug administration or those who have not recovered from adverse events due to agents administered more than 4 weeks earlier.
+11. Uncontrolled illness including, but not limited to ongoing or active infection, symptomatic congestive heart failure, unstable angina pectoris, cardiac arrhythmia, or psychiatric illness/social situations that would limit compliance with study requirements.
+12. Subject weighs more than 450 pounds. (Subjects who weigh more than 450 pounds will not be able to fit inside the imaging machines.)
+13. Inability to lie still for the entire imaging time (due to cough, severe arthritis, etc.) *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This is a Phase 2 peptide receptor radionuclide therapy trial of 90Y-DOTATOC in patients with somatostatin receptor positive tumors.
+	•	Publications: Analysis: Online search performed; Web search details: No additional publications found; No publications with results found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • A brief overview of targeted radionuclide therapy trials in 2022 [Google Scholar]
+• A brief overview of targeted radionuclide therapytrialsin 2022 [Google Scholar]
+• Meningioma: not always a benign tumor. A review of advances in the treatment of meningiomas [Google Scholar]
+• Peptide receptor radionuclide therapy in advanced refractory meningiomas: efficacy and toxicity in a long follow-up [Google Scholar]
+• Radiopharmaceuticals for neuroendocrine tumors [Google Scholar]
+• Systemic treatment for lung carcinoids: from bench to bedside [Google Scholar]
+• Peptide receptor radionuclide therapy in advanced refractory meningiomas:efficacyand toxicity in a long follow-up [Google Scholar]
+• Peptide–drug conjugate-based novel molecular drug delivery system in cancer [Google Scholar]
+• Molecular targeting therapies for neuroblastoma: Progress and challenges [Google Scholar]
+• Peptide–drugconjugate-based novel moleculardrugdelivery system in cancer [Google Scholar]
+• Radioligand therapies in meningioma: Evidence and future directions [Google Scholar]
+	•	Key findings from publications: Google Scholar Abstract (A brief overview of targeted radionuclide therapy trials in 2022): … smallstudiesand case reports suggesting promisingresults… validate early phase clinicaltrialfindingsand ultimately inform/…NCT03273712is atrialdesigned to evaluate the safety and …
+
+Google Scholar Abstract (A brief overview of targeted radionuclide therapytrialsin 2022): … A few examples illustrating the spectrum of ongoingclinicaltrialsis given below.NCT03273712is atrialdesigned to evaluate the safety and efficacy of Dosimetry-Guided, Peptide …
+
+Google Scholar Abstract (Meningioma: not always a benign tumor. A review of advances in the treatment of meningiomas): … characteristics of meningiomas, available treatment strategies and ongoingclinicaltrials. …NCT03971461, NCT04082520,NCT03273712). Ongoingclinicaltrialsof systemic therapies in …
+
+Google Scholar Abstract (Peptide receptor radionuclide therapy in advanced refractory meningiomas: efficacy and toxicity in a long follow-up): … , imatinib, and others have been tried, there is no clear evidence on the standard of care,and enrollment inclinicaltrialsis recommended in cases of disease progression (7,8). …
+
+Google Scholar Abstract (Radiopharmaceuticals for neuroendocrine tumors): … , phase IIStudyIB12B led to the …studiesare needed to refine patient selection, predict andassess therapy response, and optimize radiopharmaceutical delivery and clinicaloutcomes. …
+
+Google Scholar Abstract (Systemic treatment for lung carcinoids: from bench to bedside): … To date, an univocal treatment strategy has not been identified yet, thus tailored therapeuticalgorithms should consider treatmentefficacyas well assafetyprofiles. Several molecular …
+
+Google Scholar Abstract (Peptide receptor radionuclide therapy in advanced refractory meningiomas:efficacyand toxicity in a long follow-up): … The significant proportion of patients (83%) who had 4 uptake included in the presentstudy could condition theefficacyof the treatment and could be considered as a limitation. …
+
+Google Scholar Abstract (Peptide–drug conjugate-based novel molecular drug delivery system in cancer): … design is suggested to improve their clinicalefficacyandsafetyin cancer patients [8]. … frommolecular drug delivery systems maximizes the clinicalefficacyandsafetyin cancer patients. …
+
+Google Scholar Abstract (Molecular targeting therapies for neuroblastoma: Progress and challenges): … Further, we discuss the future directions that would help identify novel targets and therapeuticsand improve the currently available therapies, enhancing the treatmentoutcomesand …
+
+Google Scholar Abstract (Peptide–drugconjugate-based novel moleculardrugdelivery system in cancer): … Currently, two fusion proteins are inclinicaltrialsas peptide–drugconjugates: NGR-humantumor necrosis factor (hTNF) and truncated tissue factor (tTF)-NGR [44]. A Phase III …
+
+Google Scholar Abstract (Radioligand therapies in meningioma: Evidence and future directions): … This review aims to explore the available evidence of radionuclide treatments and ongoingclinicaltrialinitiatives in meningioma. Moreover, we discuss optimalclinicaltrialdesign and …
+	•	Additional evidence from online sources: Primary outcome: Frequency of Tumor Response at 9 Months After Last Treatment; Percentage of Patients With Grade 4 or Higher Renal Adverse Event.; Percentage of Patients With Grade 4 or Higher Irreversible Adverse Events
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Online search performed; Web search details: No additional publications found; No publications with results found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

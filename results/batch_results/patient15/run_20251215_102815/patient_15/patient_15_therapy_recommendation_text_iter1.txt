@@ -1,0 +1,21 @@
+=== REGENERATION ITERATION 1 - THERAPY RECOMMENDATION ===
+Timestamp: 2025-12-15T11:05:47.335889
+Patient ID: 15
+================================================================================
+
+**Primary Recommendation: Cabozantinib**
+*   **Therapy:** Cabozantinib 60 mg orally once daily.
+*   **Evidence:** The Phase 3 **CABINET trial (NCT03375320)** provides high-level evidence for this patient population (advanced Pan-NETs progressing after prior systemic therapy). In the Pancreatic NET cohort, cabozantinib demonstrated a significant improvement in progression-free survival (PFS) compared to placebo.
+*   **Key Efficacy Data:** According to the primary results (Chan et al., NEJM 2024 / ESMO 2023 LBA), the median PFS for the Pancreatic NET cohort was **11.4 months** with cabozantinib versus **3.0 months** with placebo (Hazard Ratio **0.27**; 95% CI, 0.14 to 0.50; P<0.001).
+*   **Dosing & Management:** The standard starting dose is 60 mg daily. Dose reductions (to 40 mg or 20 mg) may be required to manage adverse events such as hypertension, fatigue, and diarrhea.
+
+**Alternative Consideration: Peptide Receptor Radionuclide Therapy (PRRT)**
+*   **Therapy:** 177Lu-DOTATATE (Lutathera).
+*   **Context:** This is a viable alternative given the patient's strong SSTR positivity (DOTATOC +++), but requires strict safety validation.
+*   **Evidence:** The Phase 3 **NETTER-2 trial (NCT03972488)** established the efficacy of 177Lu-DOTATATE in G2 and G3 GEP-NETs (Ki-67 10–55%), showing a median PFS of **22.8 months**. Although this patient's Ki-67 (70%) exceeds the trial's inclusion cap, **ENETS guidelines** suggest PRRT may be considered for G3 NETs with high SSTR uptake.
+*   **CRITICAL SAFETY CAVEAT:** The patient has a history of **radiotherapy to the liver** and presents with **diffuse liver disease**. This significantly increases the risk of radioembolization-induced liver disease (REILD) or cumulative hepatotoxicity. PRRT should **only** be pursued after a rigorous evaluation of liver function and, if available, predictive dosimetry to ensure the cumulative radiation dose to the healthy liver parenchyma remains within safe limits.
+
+**Follow-up and Monitoring Plan**
+*   **Clinical Assessment:** Monitor for toxicity (hypertension, hand-foot syndrome, diarrhea for cabozantinib; hematotoxicity for PRRT) every 2 weeks for the first 2 months, then monthly.
+*   **Imaging:** Perform multiphasic CT or MRI of the abdomen/pelvis and CT chest every 3 months to assess response per RECIST 1.1 criteria.
+*   **Biochemistry:** Monitor liver function tests (bilirubin, albumin, INR) and renal function closely given the hepatic tumor burden and prior therapies.

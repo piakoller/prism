@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:59:48.386251
+Trial: 80/86
+NCT ID: NCT04711135
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient. The patient is a 61-year-old male with a high-grade (G3, Ki-67 70%) pancreatic NET, whereas the NETTER-P study is a Phase II trial specifically evaluating safety and dosimetry in adolescents (12–17 years old) with low-grade (G1–G2) tumors. The study fails on Disease/Biology Alignment because it excludes G3 tumors, which have distinct biological behavior compared to the G1/G2 population studied. It also fails on Clinical Applicability and Evidence Relevance because the patient is an adult; established adult data (e.g., NETTER-1, NETTER-2) already guide PRRT use in this demographic, rendering pediatric safety/dosimetry findings clinically irrelevant for his treatment planning."
+}

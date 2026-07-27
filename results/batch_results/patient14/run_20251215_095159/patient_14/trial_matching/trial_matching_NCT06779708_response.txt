@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:56:12.654891
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for clinical relevance. First, the Disease/Biology Alignment is poor: the patient has a bronchial NET with established metastatic disease (liver, bone, pituitary), whereas the study focuses on gastrointestinal or pancreatic NETs in patients classified as cM0 (non-metastatic) preoperatively. Second, the Treatment Context is inapplicable: the patient is explicitly stated to have 'no option for local therapy' and is seeking systemic consolidation (likely PRRT), while the study intervention is intraoperative ultrasound (IOUS) during surgical resection to detect occult metastases. Finally, the Evidence Quality/Relevance is low for this case because data on the diagnostic accuracy of IOUS for occult liver metastases in surgical candidates does not inform the management of a patient with known, progressive, unresectable metastatic disease."
+}

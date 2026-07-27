@@ -1,0 +1,165 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-12T14:24:26.324157
+Trial: 25/86
+NCT ID: NCT04696042
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+A 51-year-old woman with a well-differentiated (G2, Ki-67 15%) pancreatic neuroendocrine tumor with synchronous bilobar liver metastases diagnosed in 2018. In September 2018 underwent total gastrectomy, splenectomy, and distal pancreatectomy. From November 2018, start of therapy with sunitinib 37.5 mg/day and lanreotide 120 mg every 28 days, best response PR, suspended for liver disease debulking program with arterial embolization. From 12/9/2019 to 9/4/2020, 4 TAE treatments, than follow-up with CT scan every six months. After liver progression in 2022, she was enrolled in a phase II trial with belzutifan (HIF-2α inhibitor). The disease remained radiologically stable (SD RECIST) for >2 years under reduced-dose therapy (40 mg/day since 2024).
+In early 2025, mild hepatic progression was observed, and evaluation by transplant surgery considered potential liver transplantation due to liver-only disease. Exploratory laparoscopy confirmed no peritoneal spread. 
+Current Clinical Status: ECOG PS 0. The patient reports mild, migratory bone pain.
+Physical examination: unremarkable overall; no signs of motor or sensory deficits in the upper limbs.
+Question for Tumorboard:
+Feasibility of liver transplantation in a patient with long-term stable, liver-only metastatic pancreatic NET under belzutifan therapy.
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Summary**
+The patient is a 51-year-old female with a metastatic well-differentiated pancreatic neuroendocrine tumor (Pan-NET), Grade 2, with a Ki-67 index of 15%. She has a history of synchronous bilobar liver metastases diagnosed in 2018. The primary tumor was resected (total gastrectomy, splenectomy, distal pancreatectomy) in September 2018. She has been heavily pre-treated with somatostatin analogs (lanreotide), tyrosine kinase inhibitors (sunitinib), and liver-directed therapies (TAE). Most recently, she achieved stable disease (SD) for >2 years on the HIF-2α inhibitor belzutifan (40 mg/day) within a clinical trial but is now experiencing mild hepatic progression.
+
+**Assessment of Liver Transplantation Feasibility**
+Based on the **ESMO Clinical Practice Guidelines (2020)**, liver transplantation (LT) is a valid option only in *very selected* patients. The assessment of this patient against the specific ESMO criteria for LT is as follows:
+
+*   **Criteria Met:**
+    *   **Age:** The patient is 51 years old, meeting the criterion of age <60 years.
+    *   **Primary Tumor Resection:** The primary tumor was removed in 2018.
+    *   **Extrahepatic Disease:** Current evaluation (including exploratory laparoscopy) indicates liver-only disease.
+
+*   **Criteria Not Met / Areas of Concern:**
+    *   **Tumor Grade/Proliferation:** The patient's Ki-67 index is 15%. The ESMO guidelines explicitly state that LT criteria include histological confirmation of a well-differentiated NET with **Ki-67 <10%**. This patient falls outside this strict selection criterion.
+    *   **Disease Stability:** The guidelines require stable disease in response to therapy for at least 6 months *before* transplant consideration. While the patient had long-term stability on belzutifan, she is currently presenting with "mild hepatic progression," which conflicts with the requirement for pre-transplant stability.
+    *   **Tumor Burden:** The guidelines require metastatic diffusion <50% of the total liver volume. The specific liver tumor burden percentage is not provided in the patient information and requires calculation to determine eligibility.
+
+**Diagnostic Assessment and Discrepancies**
+*   **Bone Pain vs. Liver-Only Status:** The patient reports "mild, migratory bone pain," yet is classified as having "liver-only disease." The ESMO guidelines note that CT sensitivity for bone metastases is poor (61%, range 46%–80%). Since the patient has been followed up with CT scans, occult bone metastases cannot be ruled out based on the provided history.
+*   **Imaging Recommendations:** To confirm the "absence of extrahepatic disease" required for LT consideration, and to investigate the reported bone pain, **SST-PET/CT** (or MRI for bone/liver) is indicated. ENETS 2023 guidelines recommend SST-PET/CT for whole-body staging and note it is superior to CT for skeletal lesions.
+
+**Assessment of Current Therapy and Alternatives**
+*   **Belzutifan:** The patient is progressing on belzutifan. The ENETS 2023 guidelines note that while belzutifan is approved for VHL-associated Pan-NETs, its value in metastatic Pan-NET outside of VHL is currently "unclear."
+*   **PRRT Assessment:** If LT is deemed unfeasible due to the Ki-67 index (15%) or progression, Peptide Receptor Radionuclide Therapy (PRRT) is a potential consideration for progressive disease. However, eligibility requires confirmation of sufficient uptake on SST-imaging. It must be acknowledged that PRRT eligibility requires DOTATATE/DOTATOC PET uptake higher than liver background in all primary tumor lesions and metastases. If lesions show heterogeneous or low uptake, PRRT is generally not indicated.
+*   **Chemotherapy:** According to ESMO guidelines, systemic chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is recommended in progressive G2 Pan-NETs, particularly when there is bulky disease or progression on other therapies.
+
+**Conclusion**
+While the patient meets the age and primary resection criteria for liver transplantation, she does not meet the strict ESMO guideline criteria regarding Ki-67 index (<10% required; patient is 15%) and current disease stability (patient is progressing). Furthermore, the reported bone pain necessitates urgent exclusion of extrahepatic bone metastases via high-sensitivity imaging (SST-PET/CT) before any definitive decision on "liver-only" procedures can be made.
+
+Trial Search Recommendations:
+  - ** To confirm the "absence of extrahepatic disease" required for LT consideration
+  - and to investigate the reported bone pain
+  - **SST-PET/CT** (or MRI for bone/liver) is indicated. ENETS 2023 guidelines recommend SST-PET/CT for whole-body staging and note it is superior to CT for skeletal lesions.
+  - *Assessment of Current Therapy and Alternatives**
+  - **Belzutifan:** The patient is progressing on belzutifan. The ENETS 2023 guidelines note that while belzutifan is approved for VHL-associated Pan-NETs, its value in metastatic Pan-NET outside of VHL is currently "unclear."
+	•	Question for Tumorboard: Feasibility of liver transplantation in a patient with long-term stable, liver-only metastatic pancreatic NET under belzutifan therapy.
+
+### STUDY DATA
+	•	NCT-ID: NCT04696042
+	•	Title: Asian Investigation of Lanreotide Autogel® in the Management of GEP-NETs
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: Lanreotide autogel
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Written informed consent
+* Male or female subject aged ≥18 years and legally capable to provide informed consent
+* Functioning or non-functioning gastroenteropancreatic (GEP)-neuroendocrine tumor (NET) or unknown primary-NET
+* Well differentiated tumor
+* Grade (G) 1, G2 according to the 2017 World Health Organization (WHO) criteria
+* Subject already treated with Lanreotide Autogel® for the period up to 5 months, according to local standard of care, prior to documentation into this study
+* Use of Lanreotide autogel® monotherapy by local label (SmPC).
+* Concomitant locoregional therapy such as surgery, RFA or TAE is allowed.
+
+Exclusion Criteria:
+
+* Parallel participation in an interventional study
+* Lanreotide treatment for more than 5 months prior inclusion into the study
+* Prior anti-proliferative medication with somatostatin analogue (e.g. Octreotide LAR).
+* Concomitant anti-proliferative systemic medication/therapies for GEP-NET are not allowed. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: Lanreotide Autogel® has been established as a standard of care for patients with locally advanced or metastatic GEP-NETs based on the success of CLARINET trial. However, only few patients with Asian ethnicity were included in the trial.
+
+According to the nationwide comprehensive study of patients with GEP-NET in Korea, hindgut primary NETs(Rectal) occured more frequently than western countries. However, small intestine or lung primary NET is relatively rare compared with western countries.1) Considering the clinical characteristics of GEP-NETs are distinct between the patients in Asian and Western countries, further evaluation on the efficacy and safety of Lanreotide Autogel® in Asian patients with GEP-NETs is needed.
+	•	Publications: 5 publication(s) found; Analysis: Found 5 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Gastrointestinal Pathology Study Group of Korean Society of Pathologists; Cho MY, Kim JM, Sohn JH, Kim MJ, Kim KM, Kim WH, Kim H, Kook MC, Park DY, Lee JH, Chang H, Jung ES, Kim HK, Jin SY, Choi JH, Gu MJ, Kim S, Kang MS, Cho CH, Park MI, Kang YK, Kim YW, Yoon SO, Bae HI, Joo M, Moon WS, Kang DY, Chang SJ. Current Trends of the Incidence and Pathological Diagnosis of Gastroenteropancreatic Neuroendocrine Tumors (GEP-NETs) in Korea 2000-2009: Multicenter Study. Cancer Res Treat. 2012 Sep;44(3):157-65. doi: 10.4143/crt.2012.44.3.157. Epub 2012 Sep 30.
+• Kim SJ, Kim JW, Oh DY, Han SW, Lee SH, Kim DW, Im SA, Kim TY, Heo DS, Bang YJ. Clinical course of neuroendocrine tumors with different origins (the pancreas, gastrointestinal tract, and lung). Am J Clin Oncol. 2012 Dec;35(6):549-56. doi: 10.1097/COC.0b013e31821dee0f.
+• Pavel M, O'Toole D, Costa F, Capdevila J, Gross D, Kianmanesh R, Krenning E, Knigge U, Salazar R, Pape UF, Oberg K; Vienna Consensus Conference participants. ENETS Consensus Guidelines Update for the Management of Distant Metastatic Disease of Intestinal, Pancreatic, Bronchial Neuroendocrine Neoplasms (NEN) and NEN of Unknown Primary Site. Neuroendocrinology. 2016;103(2):172-85. doi: 10.1159/000443167. Epub 2016 Jan 5. No abstract available.
+• Kang J, Yoo C, Hwang HS, Hong SM, Kim KP, Kim SY, Hong YS, Kim TW, Ryoo BY. Efficacy and safety of lanreotide in Korean patients with metastatic, well-differentiated gastroenteropancreatic-neuroendocrine tumors: a retrospective analysis. Invest New Drugs. 2019 Aug;37(4):763-770. doi: 10.1007/s10637-018-0710-x. Epub 2018 Dec 10.
+• Caplin ME, Pavel M, Cwikla JB, Phan AT, Raderer M, Sedlackova E, Cadiot G, Wolin EM, Capdevila J, Wall L, Rindi G, Langley A, Martinez S, Blumberg J, Ruszniewski P; CLARINET Investigators. Lanreotide in metastatic enteropancreatic neuroendocrine tumors. N Engl J Med. 2014 Jul 17;371(3):224-33. doi: 10.1056/NEJMoa1316158.
+	•	Key findings from publications: No detailed findings available
+	•	Additional evidence from online sources: Primary outcome: Progression-free survival rate at 2 years
+Secondary outcomes: Progression-free survival; Response rates; Disease control rates; Overall survival; Chromogranin A response
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Found 5 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

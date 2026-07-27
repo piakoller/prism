@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:42:14.058790
+Trial: 16/86
+NCT ID: NCT02724540
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Disease/Biology Alignment or Treatment Context. The patient has a poorly differentiated Neuroendocrine Carcinoma (NEC) with a Ki-67 of 90% (part of a MiNEN), whereas the RETNET trial evaluates liver embolization techniques for Neuroendocrine Tumors (NETs), which are biologically distinct entities typically characterized by lower grades and more indolent courses. Clinically, embolization is a standard consideration for liver-dominant well-differentiated NETs, but not for high-grade NECs where systemic chemotherapy is the mainstay due to rapid dissemination risk. Furthermore, the patient currently has no evidence of active liver metastases (the residual lesion is pararenal and biopsy-negative), making a study focused on liver-directed therapy for liver-dominant disease inapplicable to the current decision regarding surveillance versus local treatment of a retroperitoneal site."
+}

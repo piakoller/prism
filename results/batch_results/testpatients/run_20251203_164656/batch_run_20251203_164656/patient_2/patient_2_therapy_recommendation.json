@@ -1,0 +1,61 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "Based on the patient's symptomatic presentation, significant tumor burden, and Grade 2 Pancreatic Neuroendocrine Tumor (Pan-NET) status with a Ki-67 of 15%, the most appropriate first-line systemic treatment is **systemic chemotherapy**, specifically a regimen combining **Temozolomide and Capecitabine (CAPTEM)** or **Streptozotocin and 5-Fluorouracil (STZ/5-FU)**.\n\nThis recommendation is supported by the **MGMT-NET trial (NCT03217097)**, which demonstrated that alkylating agent-based chemotherapy can achieve high objective response rates (ORR), particularly in tumors with MGMT deficiency (ORR up to 52.9%), making it highly suitable for achieving the necessary tumor shrinkage to alleviate this patient's symptoms.\n\n**Cabozantinib** represents a viable alternative or subsequent line of therapy, supported by the Phase 3 **CABINET trial (NCT03375320)**, which showed a significant progression-free survival benefit (median 13.8 months vs. 4.4 months for placebo) and an objective response rate of 19% in patients with advanced pancreatic neuroendocrine tumors.\n\n**Peptide Receptor Radionuclide Therapy (PRRT)** is **not recommended** as the first-line systemic treatment for this specific patient due to the heterogeneous Somatostatin Receptor (SSTR) expression, specifically the low uptake in the primary pancreatic lesion (SUV 3).",
+  "rationale_text": "The rationale for this recommendation is based on the following integration of clinical assessment, trial evidence, and guidelines:\n\n1.  **Need for Cytoreduction (Tumor Shrinkage):**\n    The patient is symptomatic with progressive weight loss (-5 kg) and has a high tumor burden involving the liver, lungs, and bones. According to **ENETS 2023 Guidelines (Question 7)** and **ESMO Guidelines**, chemotherapy is the preferred first-line approach for bulky, symptomatic, or progressive Grade 2 Pan-NETs (Ki-67 10–20%) where the therapeutic goal is tumor shrinkage rather than just stabilization.\n\n2.  **Evidence for Chemotherapy Efficacy:**\n    The **MGMT-NET trial (NCT03217097)** provides prospective evidence supporting the use of alkylating chemotherapy. The trial reported objective response rates (ORR) of up to **52.9%** in MGMT-deficient tumors treated with alkylating agents. Given the patient's need for symptom relief through tumor regression, a regimen with a high response potential (30–50%) is superior to agents that primarily induce stability. While MGMT status is not provided in the assessment, chemotherapy remains a standard of care for G2 Pan-NETs with this clinical profile.\n\n3.  **Evidence for Cabozantinib:**\n    The **CABINET trial (NCT03375320)** provides high-level Phase 3 evidence for Cabozantinib in advanced Pan-NETs, demonstrating a significant improvement in progression-free survival (HR 0.23) and an ORR of **19%**. While this response rate is clinically meaningful, it is generally lower than that of cytotoxic chemotherapy. Therefore, Cabozantinib is an excellent option should chemotherapy be contraindicated or fail, but chemotherapy is prioritized for immediate symptom control.\n\n4.  **Contraindication for First-Line PRRT:**\n    The patient's **Ga-68 PET/CT** shows significant intra-patient heterogeneity. While metastases are avid (SUV 9–12), the primary pancreatic lesion has an **SUV of 3**. Effective PRRT requires homogenous SSTR expression with uptake significantly higher than the liver background (typically SUV ~6–7). The \"cold\" primary tumor (SUV 3) suggests it would not be effectively targeted by 177Lu-labeled somatostatin analogs, leading to a high risk of primary tumor progression. Consequently, PRRT is not suitable as a first-line strategy in this setting.\n\n5.  **Safety Considerations:**\n    The patient has a history of ischemic heart disease (stent in 2004). While 5-Fluorouracil and Capecitabine carry a risk of coronary vasospasm, they are standard components of the recommended regimens. Careful cardiac monitoring is advised. If the cardiac risk is deemed too high for fluoropyrimidines, Temozolomide monotherapy (supported by the alkylating arm of NCT03217097) or Cabozantinib (with hypertension management) could be considered alternatives.",
+  "recommendation_summary": {
+    "primary_recommendation": "Based on the patient's symptomatic presentation, significant tumor burden, and Grade 2 Pancreatic Neuroendocrine Tumor (Pan-NET) status with a Ki-67 of 15%, the most appropriate first-line systemic tr...",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03217097",
+      "nct_id": "NCT03217097",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03217097",
+        "trial_name": "Trial NCT03217097",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\nBased on the patient's symptomatic presentation, significant tumor burden, and Grade 2 Pancreatic Neuroendocrine Tumor (Pan-NET) status with a Ki-67 of 15%, the most appropriate first-line systemic treatment is **systemic chemotherapy**, specifically a regimen combining **Temozolomide and Capecitabine (CAPTEM)** or **Streptozotocin and 5-Fluorouracil (STZ/5-FU)**.\n\nThis recommendation is supported by the **MGMT-NET trial (NCT03217097)**, which demonstrated that alkylating agent-based chemotherapy can achieve high objective response rates (ORR), particularly in tumors with MGMT deficiency (ORR up to 52.9%), making it highly suitable for achieving the necessary tumor shrinkage to alleviate this patient's symptoms.\n\n**Cabozantinib** represents a viable alternative or subsequent line of therapy, supported by the Phase 3 **CABINET trial (NCT03375320)**, which showed a significant progression-free survival benefit (median 13.8 months vs. 4.4 months for placebo) and an objective response rate of 19% in patients with advanced pancreatic neuroendocrine tumors.\n\n**Peptide Receptor Radionuclide Therapy (PRRT)** is **not recommended** as the first-line systemic treatment for this specific patient due to the heterogeneous Somatostatin Receptor (SSTR) expression, specifically the low uptake in the primary pancreatic lesion (SUV 3).\n</therapy_recommendation>\n\n<rationale>\nThe rationale for this recommendation is based on the following integration of clinical assessment, trial evidence, and guidelines:\n\n1.  **Need for Cytoreduction (Tumor Shrinkage):**\n    The patient is symptomatic with progressive weight loss (-5 kg) and has a high tumor burden involving the liver, lungs, and bones. According to **ENETS 2023 Guidelines (Question 7)** and **ESMO Guidelines**, chemotherapy is the preferred first-line approach for bulky, symptomatic, or progressive Grade 2 Pan-NETs (Ki-67 10–20%) where the therapeutic goal is tumor shrinkage rather than just stabilization.\n\n2.  **Evidence for Chemotherapy Efficacy:**\n    The **MGMT-NET trial (NCT03217097)** provides prospective evidence supporting the use of alkylating chemotherapy. The trial reported objective response rates (ORR) of up to **52.9%** in MGMT-deficient tumors treated with alkylating agents. Given the patient's need for symptom relief through tumor regression, a regimen with a high response potential (30–50%) is superior to agents that primarily induce stability. While MGMT status is not provided in the assessment, chemotherapy remains a standard of care for G2 Pan-NETs with this clinical profile.\n\n3.  **Evidence for Cabozantinib:**\n    The **CABINET trial (NCT03375320)** provides high-level Phase 3 evidence for Cabozantinib in advanced Pan-NETs, demonstrating a significant improvement in progression-free survival (HR 0.23) and an ORR of **19%**. While this response rate is clinically meaningful, it is generally lower than that of cytotoxic chemotherapy. Therefore, Cabozantinib is an excellent option should chemotherapy be contraindicated or fail, but chemotherapy is prioritized for immediate symptom control.\n\n4.  **Contraindication for First-Line PRRT:**\n    The patient's **Ga-68 PET/CT** shows significant intra-patient heterogeneity. While metastases are avid (SUV 9–12), the primary pancreatic lesion has an **SUV of 3**. Effective PRRT requires homogenous SSTR expression with uptake significantly higher than the liver background (typically SUV ~6–7). The \"cold\" primary tumor (SUV 3) suggests it would not be effectively targeted by 177Lu-labeled somatostatin analogs, leading to a high risk of primary tumor progression. Consequently, PRRT is not suitable as a first-line strategy in this setting.\n\n5.  **Safety Considerations:**\n    The patient has a history of ischemic heart disease (stent in 2004). While 5-Fluorouracil and Capecitabine carry a risk of coronary vasospasm, they are standard components of the recommended regimens. Careful cardiac monitoring is advised. If the cardiac risk is deemed too high for fluoropyrimidines, Temozolomide monotherapy (supported by the alkylating arm of NCT03217097) or Cabozantinib (with hypertension management) could be considered alternatives.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-03T16:52:07.082014",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 2,
+    "trials_considered": 14,
+    "trials_included": 2,
+    "trials_excluded": 12,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_2\\patient_2_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_2\\patient_2_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_2\\patient_2_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_2\\patient_2_therapy_recommendation_reasoning.txt"
+  }
+}

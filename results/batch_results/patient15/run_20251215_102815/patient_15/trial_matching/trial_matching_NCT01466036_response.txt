@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:55:17.915241
+Trial: 69/86
+NCT ID: NCT01466036
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant because it evaluates cabozantinib in well-differentiated pancreatic neuroendocrine tumors (pNETs), aligning with the patient's diagnosis and \"well-differentiated\" biology despite the progression to Grade 3 (Ki-67 70%). While the study excluded high-grade tumors, the evidence of cabozantinib's efficacy in pNETs is clinically transferable as a potential salvage therapy for this patient, who is refractory to standard tyrosine kinase inhibitors (sunitinib) and mTOR inhibitors (everolimus). Cabozantinib targets MET and AXL pathways, which are mechanisms of resistance to prior anti-angiogenic therapies, providing a biological rationale for its application in this refractory setting. Given the patient's exhaustion of standard chemotherapy and targeted options, the Phase II efficacy data from this study offers meaningful evidence to support cabozantinib as a therapeutic consideration for disease control."
+}

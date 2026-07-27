@@ -1,0 +1,188 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-15T09:58:21.188662
+Trial: 16/86
+NCT ID: NCT02724540
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Patient: 82-year-old woman, ECOG 1, no cognitive impairment
+Bronchial NET (atypical carcinoid), operated in 2019, Ki-67 11%
+Metastatic since 2020: liver, bone, lymph nodes, pituitary
+Tumor burden: low to moderate
+Functional imaging: DOTATOC +++, FDG low uptake, no mismatch
+Non-secreting, likely sporadic
+
+Previous treatments:
+- 2020: Second thoracic surgery with mediastinal dissection (Ki-67 25%)
+- Jan 2021: Clavicle and lumbar radiotherapy
+- Everolimus (Mar–Nov 2021): poor tolerance, stable disease
+- Temozolomide (Jan–Aug 2022): partial hepatic response; discontinued for grade 3 thrombocytopenia
+- FOLFOX (Dec 2022–Jan 2023): very poor tolerance; discontinued
+- PRRT via CPC (Apr–Oct 2023): excellent tolerance; prolonged partial hepatic response
+- Somatostatin analogs (June 2025)
+- Oct 2025: hepatic RECIST progression; no option for local therapy
+Question for Tumorboard:
+What would be next step to consolidate the response?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Disease Biology**
+The patient is an 82-year-old woman with an ECOG performance status of 1 and no cognitive impairment, presenting with a metastatic bronchial neuroendocrine tumor (atypical carcinoid). The disease course is characterized by metastatic spread to the liver, bone, lymph nodes, and pituitary since 2020.
+
+Biologically, the tumor demonstrates heterogeneity and grade progression over time, with Ki-67 increasing from 11% (2019) to 25% (2020). According to the *ESMO Clinical Practice Guidelines for GEP-NENs*, a Ki-67 >20% classifies the tumor within the G3 category. However, the functional imaging profile—DOTATOC +++ and low FDG uptake with no mismatch—indicates a well-differentiated phenotype (NET G3) rather than a poorly differentiated neuroendocrine carcinoma (NEC), as high SSTR expression is generally inversely related to glucose metabolism in low-grade tumors. The strong SSTR expression (DOTATOC +++) confirms the target presence required for peptide receptor radionuclide therapy (PRRT).
+
+**Treatment History and Tolerance Analysis**
+The patient has exhausted multiple lines of standard systemic therapy, significantly limited by intolerance and toxicity:
+*   **mTOR Inhibitors:** Everolimus (approved for lung NETs per RADIANT-4 trial data referenced in the guidelines) resulted in poor tolerance.
+*   **Chemotherapy:** Temozolomide yielded a partial hepatic response but was discontinued due to Grade 3 thrombocytopenia. FOLFOX was discontinued due to very poor tolerance.
+*   **Radiotherapy:** Prior clavicle and lumbar radiotherapy (Jan 2021).
+*   **PRRT:** Treatment with PRRT via CPC (Apr–Oct 2023) resulted in a prolonged partial hepatic response with excellent tolerance, distinguishing it as the most favorable modality in terms of the therapeutic index for this specific patient.
+
+**Current Clinical Status**
+The patient currently exhibits hepatic RECIST progression as of October 2025 while on Somatostatin analogs. There are no options for local therapy.
+
+**Assessment per Guidelines**
+Based on the *ESMO Clinical Practice Guidelines*, the following factors are relevant for the tumor board's consideration:
+1.  **PRRT Eligibility:** The guidelines recommend PRRT for progressive SSTR-positive NETs. While the guidelines primarily discuss midgut and pancreatic NETs, they reference efficacy in bronchial neuroendocrine tumors (Ref 97). The patient's imaging (DOTATOC +++) satisfies the requirement for homogenous SSTR expression.
+2.  **High-Grade (G3) Consideration:** The guidelines acknowledge that PRRT may be considered in patients with NET G3 (Ki-67 >20%), citing disease control rates between 30% and 80% in retrospective studies, particularly for patients with Ki-67 <55%. This patient (Ki-67 25%) falls within this range.
+3.  **Therapeutic Options:**
+    *   **Chemotherapy:** While systemic chemotherapy (e.g., Temozolomide or platinum-based regimens) is recommended for NEN G3, this patient has demonstrated severe intolerance (FOLFOX) and Grade 3 hematological toxicity (Temozolomide), making re-challenge high risk.
+    *   **Targeted Therapy:** Re-introduction of Everolimus is likely not feasible due to prior poor tolerance.
+    *   **PRRT Re-treatment/Consolidation:** Given the "excellent tolerance" and "prolonged partial hepatic response" to the previous PRRT course, and the persistence of high SSTR uptake (DOTATOC +++), the clinical assessment points toward the potential utility of further PRRT.
+
+**Conclusion**
+The patient presents with a progressive, SSTR-avid (DOTATOC +++) metastatic bronchial NET G3 (Ki-67 25%). She is refractory or intolerant to standard chemotherapy and mTOR inhibitors. The assessment highlights that PRRT has been the only modality providing disease control with acceptable tolerability. Consequently, evaluating the feasibility of consolidating the response with further PRRT is the most clinically supported consideration, provided bone marrow reserve is adequate given the history of Grade 3 thrombocytopenia.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: What would be next step to consolidate the response?
+
+### STUDY DATA
+	•	NCT-ID: NCT02724540
+	•	Title: Randomized Embolization Trial for NeuroEndocrine Tumor Metastases to the Liver
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Bland Embolization; Transarterial chemoembolization; Drug Eluting Beads Embolization
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Participants 18 years and older;
+* Biopsy-proven neuroendocrine tumor.
+* Measurable metastasis to liver with at least one dimension ≥ 1.0 cm.
+* Tumor burden dominant in the liver AND liver tumor burden less than or equal to 70% of the total liver volume by visual estimate.
+* Not a candidate for surgical resection based on unresectability, anatomy, anesthesia risk, patient preference.
+* Symptoms uncontrolled by somatostatin analogues OR morphologically progressive tumor by RECIST 1.1 criteria in the liver OR baseline tumor burden \>25% of the liver volume.
+* There must be no plans for the patient to receive other concomitant therapy while on this protocol treatment (other than somatostatin analogs or bone-strengthening agents).
+* Performance status 0-2 on Zubrod/ECOG Performance Scale;
+* Serum creatinine \< 2.0 mg/dL;
+* Serum Bilirubin ≤ 2.0 mg/dL
+* Serum albumin ≥ 3.0 g/dL
+* Platelet count \> 50 thousands/uL (corrected if needed)
+* INR ≤ 1.5 (corrected if needed)
+* All patients must be informed of the investigational nature of this study and must sign a study specific informed consent in accordance with institutional and federal guidelines prior to study entry.
+
+Exclusion Criteria:
+
+* Pregnant or lactating women may not participate due to the embryotoxic effects of protocol treatment. Women/men of reproductive potential may not participate unless they have agreed to use an effective contraceptive method.
+* Prior hepatic arterial therapy or hepatic radiation therapy. Prior surgical resection or ablation of liver metastases is acceptable. Patients must be at least one month beyond prior chemotherapy, PRRT, ablation or surgery, and have recovered from all therapy-associated toxicities.
+* Active infection (Symptomatic bacterial and fungal infection - newly diagnosed and/or requiring treatment);
+* Choledochoenteric anastomosis; transpapillary biliary stent, or sphincterotomy of duodenal papilla
+* Absolute contraindication to intravenous iodinated contrast (Hx of significant previous contrast reaction, not mitigated by appropriate pre-medication).
+* Contraindications to arteriography and selective visceral catheterization:
+
+  1. severe allergy or intolerance to contrast media, narcotics, sedatives, or atropine.
+  2. bleeding diathesis not correctable by usual forms of therapy.
+  3. severe peripheral vascular disease precluding catheterization.
+* Contraindications to hepatic artery embolization:
+
+  1. portal vein occlusion without hepatopedal collateral flow demonstrated by angiography; or portal hypertension with hepatofugal flow.
+  2. hepatic encephalopathy. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: The primary aim of this trial is to estimate the duration of hepatic progression-free survival (HPFS) in participants treated with bland embolization (BE), transcatheter arterial Lipiodol chemoembolization (TACE), and embolization by drug-eluting beads (DEB). The primary hypothesis is that chemoembolization will be nearly twice as durable as bland embolization; thatis, the hazard ratio for HPFS will be 1.76 or better.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/30016989/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Chen JX, Wileyto EP, Soulen MC. Randomized Embolization Trial for NeuroEndocrine Tumor Metastases to the Liver (RETNET): study protocol for a randomized controlled trial. Trials. 2018 Jul 17;19(1):390. doi: 10.1186/s13063-018-2782-5.
+• Randomized Embolization Trial for NeuroEndocrine Tumor Metastases to the Liver (RETNET): study protocol for a randomized controlled trial. (PMID: 30016989)
+	•	Key findings from publications: PubMed Abstract: Neuroendocrine tumors (NETs) are the second most common gastrointestinal malignancy after colon cancer. Up to 90% of patients with NETs develop liver metastases, which are a major determinant of symptoms and survival. Current guidelines recommend embolotherapy for progressive or symptomatic NET liver metastases, but the optimal technique among bland embolization, lipiodol chemoembolization, and dr...
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: Neuroendocrine tumors (NETs) are the second most common gastrointestinal malignancy after colon cancer. Up to 90% of patients with NETs develop liver metastases, which are a major determinant of symptoms and survival. Current guidelines recommend embolotherapy for progressive or symptomatic NET liver metastases, but the optimal technique among bland embolization, lipiodol chemoembolization, and drug-eluting bead chemoembolization remains unknown and controversial. Methods/design: A prospective, open-label, multicenter randomized controlled trial will be conducted in patients with progressive or symptomatic unresectable NET liver metastases. Patients will be randomized to treatment with bland embolization, lipiodol chemoembolization, or drug-eluting microsphere chemoembolization, with 60 enrollees per arm. The primary endpoint will be hepatic progression-free survival (HPFS) following initial embolotherapy by RECIST criteria. The sample size is powered to detect an HR of 1.78 for HPFS following chemoembolization compared with bland embolization, which was estimated on the basis of existing retrospective studies. Secondary endpoints include overall progression-free survival, duration of symptom control, quality of life, rate of adverse events, and interval between embolotherapy cycles. Interim safety analyses will be performed at 10 and 30 patients per arm. Discussion: The RETNET trial is a prospective, multicenter randomized controlled trial designed to determine the optimal embolotherapy technique for NET liver metastases. Trial registration: ClinicalTrials.gov, NCT02724540 . Registered on March 31, 2016. Keywords: Chemoembolization; Embolization; Liver metastases; Neuroendocrine tumor. PubMed Disclaimer Conflict of interest statement Ethics approval and consent to participate This study was approved by the University of Pennsylvania Institutional Review Board (IRB) and the IRB or corresponding ethics committee at each participating site. Consent for publication Not applicable. Competing interests MCS has received research funding from Guerbet LLC and BTG international and is a consultant for Guerbet LLC, Merit Medical, Terumo Medical, and Bayer/Onyx. The remaining authors declare that they have no competing interests. Publisher’s Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. Figures Fig. 1 Study flowchart. CT Computed tomography,… Fig. 1 Study flowchart. CT Computed tomography, MRI Magnetic resonance imaging, QOL Quality of life,… Fig. 1 Study flowchart. CT Computed tomography, MRI Magnetic resonance imaging, QOL Quality of life, Sx symptom Fig. 2 Standard Protocol Items: Recommendations for… Fig. 2 Standard Protocol Items: Recommendations for Interventional Trials (SPIRIT) figure. CT Computed tomography, MRI… Fig. 2 Standard Protocol Items: Recommendations for Interventional Trials (SPIRIT) figure. CT Computed tomography, MRI Magnetic resonance imaging See this image and copyright information in PMC Similar articles Degradable starch microspheres versus ethiodol and doxorubicin in transarterial chemoembolization of hepatocellular carcinoma. Niessen C, Unterpaintner E, Goessmann H, Schlitt HJ, Mueller-Schilling M, Wohlgemuth WA, Stroszczynski C, Wiggermann P. Niessen C, et al. J Vasc Interv Radiol. 2014 Feb;25(2):240-7. doi: 10.1016/j.jvir.2013.10.007. Epub 2013 Nov 28. J Vasc Interv Radiol. 2014. PMID: 24291001 Safety and efficacy of doxorubicin drug-eluting bead transarterial chemoembolization in patients with advanced hepatocellular carcinoma. Prajapati HJ, Dhanasekaran R, El-Rayes BF, Kauh JS, Maithel SK, Chen Z, Kim HS. Prajapati HJ, et al. J Vasc Interv Radiol. 2013 Mar;24(3):307-15. doi: 10.1016/j.jvir.2012.11.026. Epub 2013 Jan 29. J Vasc Interv Radiol. 2013. PMID: 23375519 Embolotherapy for Neuroendocrine Tumor Liver Metastases: Prognostic Factors for Hepatic Progression-Free Survival and Overall Survival. Chen JX, Rose S, White SB, El-Haddad G, Fidelman N, Yarmohammadi H, Hwang W, Sze DY, Kothary N, Stashek K, Wileyto EP, Salem R, Metz DC, Soulen MC. Chen JX, et al. Cardiovasc Intervent Radiol. 2017 Jan;40(1):69-80. doi: 10.1007/s00270-016-1478-z. Epub 2016 Oct 13. Cardiovasc Intervent Radiol. 2017. PMID: 27738818 Treatment options for unresectable neuroendocrine liver metastases. John BJ, Davidson BR. John BJ, et al. Expert Rev Gastroenterol Hepatol. 2012 Jun;6(3):357-69. doi: 10.1586/egh.11.60. Expert Rev Gastroenterol Hepatol. 2012. PMID: 22646257 Review. Interventional Liver-Directed Therapy for Neuroendocrine Metastases: Current Status and Future Directions. D'Souza D, Golzarian J, Young S. D'Souza D, et al. Curr Treat Options Oncol. 2020 May 23;21(6):52. doi: 10.1007/s11864-020-00751-x. Curr Treat Options Oncol. 2020. PMID: 32447461 Review. See all similar articles Cited by Liver-Directed Therapy for Neuroendocrine Tumor Liver Metastases in the Era of Peptide Receptor Radionuclide Therapy. Lehrman ED, Fidelman N. Lehrman ED, et al. Semin Intervent Radiol. 2020 Dec;37(5):499-507. doi: 10.1055/s-0040-1720951. Epub 2020 Dec 11. Semin Intervent Radiol. 2020. PMID: 33328706 Free PMC article. Review. Metastatic well differentiated serotonin-producing pancreatic neuroendocrine tumor with carcinoid heart disease: a case report. Kudelka MR, Abou-Alfa GK, O'Reilly EM, Foote MB, Sirohi B, Elias R, Shamseddine A, Paroder V, Moussa AM, Cohen P, Ganesh K. Kudelka MR, et al. J Gastrointest Oncol. 2023 Aug 31;14(4):1878-1886. doi: 10.21037/jgo-22-909. Epub 2023 Aug 23. J Gastrointest Oncol. 2023. PMID: 37720425 Free PMC article. Liver-Directed Therapies for Neuroendocrine Neoplasms. Clift AK, Frilling A. Clift AK, et al. Curr Oncol Rep. 2021 Mar 15;23(4):44. doi: 10.1007/s11912-021-01030-0. Curr Oncol Rep. 2021. PMID: 33721122 Review. Comparison of transarterial bland and chemoembolization for neuroendocrine tumours: a systematic review and meta-analysis. Tai E, Kennedy S, Farrell A, Jaberi A, Kachura J, Beecroft R. Tai E, et al. Curr Oncol. 2020 Dec;27(6):e537-e546. doi: 10.3747/co.27.6205. Epub 2020 Dec 1. Curr Oncol. 2020. PMID: 33380868 Free PMC article. Risk factors affecting prognosis in metachronous liver metastases from WHO classification G1 and G2 gastroenteropancreatic neuroendocrine tumors after initial R0 surgical resection. Lv Y, Han X, Xu XF, Ji Y, Zhou YH, Sun HC, Zhou J, Fan J, Lou WH, Huang C. Lv Y, et al. BMC Cancer. 2019 Apr 8;19(1):335. doi: 10.1186/s12885-019-5457-z. BMC Cancer. 2019. PMID: 30961559 Free PMC article. See all "Cited by" articles References Yao JC, Hassan M, Phan A, Dagohoy C, Leary C, Mares JE, Abdalla EK, Fleming JB, Vauthey JN, Rashid A, Evans DB. One hundred years after “carcinoid”: epidemiology of and prognostic factors for neuroendocrine tumors in 35,825 cases in the United States. J Clin Oncol. 2008;26:3063–3072. doi: 10.1200/JCO.2007.15.4377. - DOI - PubMed Chamberlain RS, Canes D, Brown KT, Saltz L, Jarnagin W, Fong Y, Blumgart LH. Hepatic neuroendocrine metastases: does intervention alter outcomes? J Am Coll Surg. 2000;190:432–445. doi: 10.1016/S1072-7515(00)00222-2. - DOI - PubMed Barbier CE, Garske-Roman U, Sandstrom M, Nyman R, Granberg D. Selective internal radiation therapy in patients with progressive neuroendocrine liver metastases. Eur J Nucl Med Mol Imaging. 2016;43:1425–1431. doi: 10.1007/s00259-015-3264-6. - DOI - PubMed Dong XD, Carr BI. Hepatic artery chemoembolization for the treatment of liver metastases from neuroendocrine tumors: a long-term follow-up in 123 patients. Med Oncol. 2011;28(Suppl 1):S286–S290. doi: 10.1007/s12032-010-9750-6. - DOI - PubMed Fiore F, Del Prete M, Franco R, Marotta V, Ramundo V, Marciello F, Di Sarno A, Carratu AC, de Luca di Roseto C, Colao A, Faggiano A. Transarterial embolization (TAE) is equally effective and slightly safer than transarterial chemoembolization (TACE) to manage liver metastases in neuroendocrine tumors. Endocrine. 2014;47:177–182. doi: 10.1007/s12020-013-0130-9. - DOI - PubMed Show all 27 references Publication types Clinical Trial Protocol Actions Search in PubMed Search in MeSH Add to Search MeSH terms Antibiotics, Antineoplastic / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Antibiotics, Antineoplastic / adverse effects Actions Search in PubMed Search in MeSH Add to Search Argentina Actions Search in PubMed Search in MeSH Add to Search Australia Actions Search in PubMed Search in MeSH Add to Search Canada Actions Search in PubMed Search in MeSH Add to Search Chemoembolization, Therapeutic* / adverse effects Actions Search in PubMed Search in MeSH Add to Search Chemoembolization, Therapeutic* / mortality Actions Search in PubMed Search in MeSH Add to Search Doxorubicin / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Doxorubicin / adverse effects Actions Search in PubMed Search in MeSH Add to Search Drug Carriers Actions Search in PubMed Search in MeSH Add to Search Embolization, Therapeutic* / adverse effects Actions Search in PubMed Search in MeSH Add to Search Embolization, Therapeutic* / mortality Actions Search in PubMed Search in MeSH Add to Search Ethiodized Oil / administration & dosage* Actions Search in PubMed Search in MeSH Add to Search Ethiodized Oil / adverse effects Actions Search in PubMed Search in MeSH Add to Search France Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Liver Neoplasms / diagnostic imaging Actions Search in PubMed Search in MeSH Add to Search Liver Neoplasms / mortality Actions Search in PubMed Search in MeSH Add to Search Liver Neoplasms / secondary* Actions Search in PubMed Search in MeSH Add to Search Liver Neoplasms / therapy* Actions Search in PubMed Search in MeSH Add to Search Microspheres Actions Search in PubMed Search in MeSH Add to Search Multicenter Studies as Topic Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / diagnostic imaging Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / mortality Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / secondary* Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors / therapy* Actions Search in PubMed Search in MeSH Add to Search Progression-Free Survival Actions Search in PubMed Search in MeSH Add to Search Prospective Studies Actions Search in PubMed Search in MeSH Add to Search Quality of Life Actions Search in PubMed Search in MeSH Add to Search Randomized Controlled Trials as Topic Actions Search in PubMed Search in MeSH Add to Search Time Factors Actions Search in PubMed Search in MeSH Add to Search Treatment Outcome Actions Search in PubMed Search in MeSH Add to Search United States Actions Search in PubMed Search in MeSH Add to Search Substances Antibiotics, Antineoplastic Actions Search in PubMed Search in MeSH Add to Search Drug Carriers Actions Search in PubMed Search in MeSH Add to Search Ethiodized Oil Actions Search in PubMed Search in MeSH Add to Search Doxorubicin Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT02724540 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen PubChem Compound (MeSH Keyword) Grants and funding P30 CA016520/CA/NCI NIH HHS/United States LinkOut - more resources Full Text Sources BioMed Central Europe PubMed Central PubMed Central Other Literature Sources scite Smart Citations Medical ClinicalTrials.gov MedlinePlus Health Information
+	•	Additional evidence from online sources: Primary outcome: Abdominal MRI/Triple Phase CT
+Secondary outcomes: Number of Adverse Events
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Randomized Embolization Trial for NeuroEndocrine Tumor Metastases to the Liver (RETNET): study protocol for a randomized controlled trial.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/30016989/', 'pmid': '30016989', 'content_scraped': True, 'content_length': 11676}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/30016989/
+Analysis notes: Found 1 listed publication(s); Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

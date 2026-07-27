@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T10:49:11.071392
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study (SWOG S1609/DART) does not support a therapy recommendation for this patient due to a lack of biological alignment for treatment efficacy. While the trial included non-pancreatic neuroendocrine tumors (NETs), the published results (Patel SP et al., Clin Cancer Res 2020, PMID: 31969335) explicitly demonstrated a dichotomy in response based on tumor grade: high-grade neuroendocrine carcinomas achieved an objective response rate (ORR) of 44%, whereas low/intermediate-grade tumors showed a 0% ORR (0/14 patients). This patient has a well-differentiated duodenal NET with a low proliferation index (Ki-67 2-3%), which aligns with the non-responding cohort. Consequently, the evidence indicates that Ipilimumab plus Nivolumab is ineffective for this specific indolent biology. Clinical decision-making should instead prioritize guideline-recommended escalation strategies for SSTR-positive, well-differentiated NETs, such as Peptide Receptor Radionuclide Therapy (PRRT) or Everolimus, rather than immunotherapy."
+}
+```

@@ -1,0 +1,65 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - CUMULATIVE VALIDATION ISSUES
+================================================================================
+
+⚠️  ATTENTION: This is a REGENERATION with cumulative feedback from ALL previous attempts.
+The issues below include BOTH new issues AND unresolved issues from prior iterations.
+You MUST address EVERY issue listed - not just the newest ones.
+
+================================================================================
+PREVIOUS RECOMMENDATION THAT FAILED VALIDATION
+================================================================================
+
+Based on the patient's progression on multiple standard lines of therapy (somatostatin analogs, sunitinib, everolimus, and chemotherapy) and the high-level evidence from the Phase 3 **CABINET trial (NCT03375320)**, the recommended next step is **Cabozantinib**.
+
+**Primary Recommendation: Cabozantinib**
+*   **Evidence:** The Phase 3 **CABINET trial (NCT03375320)** demonstrated that cabozantinib significantly improved progression-free survival (PFS) in patients with advanced pancreatic neuroendocrine tumors (Pan-NETs) who had progressed after prior systemic therapy. The median PFS was **13.8 months** with cabozantinib compared to **4.4 months** with placebo (HR 0.23; 95% CI, 0.12 to 0.42; P<0.001).
+*   **Dosage:** The standard starting dose in the trial was 60 mg daily, though dose adjustments may be required based on tolerability.
+
+**Alternative Consideration: Peptide Receptor Radionuclide Therapy (PRRT)**
+*   **Context:** Given the patient's strong somatostatin receptor expression (DOTATOC +++), PRRT is a viable alternative, particularly as the patient is PRRT-naïve.
+*   **Evidence:**
+    *   **NETTER-2 (NCT03972488):** This Phase 3 trial showed a median PFS of **22.8 months** with first-line 177Lu-DOTATATE in G2 and G3 GEP-NETs (Ki-67 10–55%). While this patient's Ki-67 (70%) exceeds the trial's inclusion cap, the strong SSTR positivity supports the mechanism of action.
+    *   **Alpha-PRRT (NCT05153772):** Given the high Ki-67 (70%), the patient may benefit from enrollment in a trial using alpha-emitters like **212Pb-DOTAMTATE**, which may offer superior efficacy in high-proliferation tumors compared to beta-emitters.
+
+⚠️  The above recommendation had validation issues. Review it carefully and
+correct the specific problems identified below while preserving correct sections.
+
+================================================================================
+ALL VALIDATION ISSUES (CUMULATIVE)
+================================================================================
+
+📊 Total issues to address: 2
+
+### ACCURACY ISSUES:
+  ❌ Semantic: **ACCURACY (Data Hallucination):** The recommendation cites incorrect efficacy data for the **CABINET trial (NCT03375320)**. It claims a median PFS of **13.8 months vs 4.4 months** with a Hazard Ratio of **0.23**.
+  ❌ Semantic: *Actual Data:* According to the primary results (Chan et al., NEJM 2024 / ESMO 2023 LBA), the median PFS for the Pancreatic NET cohort was **11.4 months** (Cabozantinib) vs **3.0 months** (Placebo), with a Hazard Ratio of **0.27**. The numbers cited in the recommendation do not match the Pan-NET or Extra-pancreatic cohorts and appear to be hallucinated or misattributed.
+
+================================================================================
+SPECIFIC GUIDANCE FOR REGENERATION (FROM ALL ITERATIONS)
+================================================================================
+
+--- From Iteration 0 ---
+1. **Correct CABINET Trial Data:** Update the text to reflect the correct Pan-NET cohort results: Median PFS 11.4 months vs 3.0 months (HR 0.27).
+2. **Add Safety Caveat for PRRT:** In the "Alternative Consideration" section, explicitly state that the patient's history of liver radiotherapy and diffuse liver disease requires a strict safety evaluation (liver function, dosimetry) before PRRT can be confirmed as an option, due to hepatotoxicity risks.
+3. **Include Follow-up Plan:** Add a section defining the monitoring schedule (e.g., clinical assessment for toxicity every 2 weeks for the first 2 months; imaging every 3 months).
+
+--- Current Iteration ---
+1. **Correct CABINET Trial Data:** Update the text to reflect the correct Pan-NET cohort results: Median PFS 11.4 months vs 3.0 months (HR 0.27).
+2. **Add Safety Caveat for PRRT:** In the "Alternative Consideration" section, explicitly state that the patient's history of liver radiotherapy and diffuse liver disease requires a strict safety evaluation (liver function, dosimetry) before PRRT can be confirmed as an option, due to hepatotoxicity risks.
+3. **Include Follow-up Plan:** Add a section defining the monitoring schedule (e.g., clinical assessment for toxicity every 2 weeks for the first 2 months; imaging every 3 months).
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above - both new and persisting issues
+2. Base all recommendations on the evidence provided (trials, guidelines, assessment)
+3. Only cite trials and data that appear in the evidence sections above
+4. For standard therapies without trial evidence, cite the relevant guidelines
+5. Ensure clinical safety and appropriateness for this specific patient
+6. Maintain consistency with the patient's clinical status and history
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

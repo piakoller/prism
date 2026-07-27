@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:56:25.375729
+Trial: 58/86
+NCT ID: NCT03896503
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful evidence for a likely future treatment scenario for this patient. Biologically, the patient's colonic MiNEN with a poorly differentiated small-cell NEC component (Ki-67 90%) is treated similarly to Small Cell Lung Cancer (SCLC) and fits the study's inclusion of extrapulmonary small cell cancers. Although the patient is currently in remission (NED) after first-line platinum-etoposide, the high risk of recurrence associated with high-grade NEC makes the identification of effective second-line therapies clinically critical. The published Phase 2 results (PMID: 37824137) demonstrate a significant Overall Survival benefit (8.9 vs 5.4 months) with the addition of Berzosertib to Topotecan in relapsed small cell carcinoma. This evidence informs the choice of salvage therapy should the patient relapse, a standard alternative scenario considered in oncologic planning for aggressive NECs."
+}
+```

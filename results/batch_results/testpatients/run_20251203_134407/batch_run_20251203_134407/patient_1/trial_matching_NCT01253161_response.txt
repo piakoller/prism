@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T14:38:12.343983
+Trial: 78/86
+NCT ID: NCT01253161
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criteria for Treatment Context and Clinical Applicability. The trial evaluates Pasireotide LAR as a first-line systemic therapy in treatment-naïve patients, whereas this patient has already received and stabilized on aggressive chemotherapy (FOLFIRINOX) for a bulky, locally advanced tumor. Evidence regarding the efficacy of an SSA in a treatment-naïve, generally more indolent population is not transferable to guide decision-making for a patient with high-risk features (Ki-67 19%, FDG-avid, necrosis) requiring second-line management or maintenance after chemotherapy. Additionally, the study results indicate a high rate of hyperglycemia (79%), limiting the clinical utility of Pasireotide compared to standard SSAs (e.g., lanreotide/octreotide) which would be the preferred consideration if de-escalation to maintenance therapy were chosen."
+}
+```

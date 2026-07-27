@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:37:27.514217
+Trial: 27/86
+NCT ID: NCT03074513
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful evidence for this patient. 1) **Disease Alignment:** The patient has a progressive, metastatic well-differentiated Lung NET (G2, Ki-67 5%). The study specifically enrolled patients with progressive Grade 1-2 extrapancreatic NETs (epNETs), explicitly including lung carcinoids in the inclusion criteria. 2) **Treatment Context:** The patient has progressed on standard SSA and PRRT and requires a subsequent line of systemic therapy. The study evaluates Atezolizumab combined with Bevacizumab in patients with progressive disease, a relevant scenario for a patient who has exhausted primary radionuclide and hormonal options. 3) **Evidence Relevance:** The published Phase II results (Halperin et al., JAMA Oncol 2022) reported a 15% objective response rate and a median progression-free survival of 14.2 months in the epNET cohort. This provides actionable clinical evidence that dual VEGF and PD-L1 inhibition has activity in this specific population, offering a potential therapeutic strategy (via trial or off-label access) distinct from standard options like everolimus."
+}
+```

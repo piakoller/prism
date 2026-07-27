@@ -1,0 +1,35 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - PREVIOUS RECOMMENDATION HAD ISSUES
+================================================================================
+
+The previous therapy recommendation did not pass validation and requires regeneration.
+You MUST address ALL of the issues identified below.
+
+================================================================================
+VALIDATION ISSUES IDENTIFIED
+================================================================================
+
+### CONSISTENCY ISSUES:
+  ❌ Semantic: **CONSISTENCY & ACCURACY (Tumor Functionality):** The Patient Assessment explicitly defines the tumor as a "functional duodenal neuroendocrine tumor." However, the therapy recommendation for the alternative option (Everolimus) cites the RADIANT-4 trial and states it is a guideline-recommended option for "non-functional GI NETs." This creates a direct contradiction. RADIANT-4 specifically excluded patients with functional tumors (carcinoid syndrome). While Everolimus can be used for functional tumors (supported by RADIANT-2), applying RADIANT-4 evidence to a "functional" patient without qualification is clinically inaccurate and contradicts the patient's profile.
+
+================================================================================
+SPECIFIC GUIDANCE FOR REGENERATION
+================================================================================
+
+1. **Correct the Everolimus Rationale:** Acknowledge the patient's "functional" status. If recommending Everolimus, cite appropriate evidence (e.g., RADIANT-2 or clinical practice patterns) rather than mislabeling the patient as "non-functional" to fit the RADIANT-4 criteria.
+2. **Address SSA Continuation:** Explicitly state whether Somatostatin Analogues should be continued for symptom control in this functional tumor, regardless of the new systemic therapy chosen.
+3. **Clarify Evidence Source:** Ensure the recommendation reflects the evidence provided or generalizes the findings if exact trial numbers are not available in the source text.
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above
+2. Be explicit about safety considerations and contraindications
+3. Provide clear rationale for any high-risk interventions
+4. Ensure all trial citations are accurate and from the evidence provided
+5. Maintain consistency with the patient assessment
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

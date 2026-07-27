@@ -1,0 +1,209 @@
+=== TRIAL ANALYSIS REASONING REPORT ===
+Timestamp: 2025-12-15T11:05:47.257998
+Patient ID: 15
+Analysis Status: success
+============================================================
+
+ANALYSIS SUMMARY:
+- Trials analyzed: 11
+- Trials included: 9
+- Trials excluded: 2
+- Analysis complete: True
+
+DETAILED TRIAL ANALYSES:
+==================================================
+
+TRIAL 1: NCT03278379
+Name: Avelumab in G2-3 NET
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 2: NCT02568267
+Name: Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 3: NCT05153772
+Name: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 4: NCT02923934
+Name: A Phase II Trial of Ipilimumab and Nivolumab for the Treatment of Rare Cancers
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 5: NCT02754297
+Name: Personalized PRRT of Neuroendocrine Tumors
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 6: NCT01842165
+Name: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 7: NCT02834013
+Name: Nivolumab and Ipilimumab in Treating Patients With Rare Tumors
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 8: NCT03375320
+Name: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 9: NCT01466036
+Name: Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+Relevance Score: Unknown
+Recommendation: EXCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 10: NCT03972488
+Name: Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+TRIAL 11: NCT03980925
+Name: Platinum-doublet Chemotherapy and Nivolumab for the Treatment of Subjects With Neuroendocrine Neoplasms (NENs) of the Gastroenteropancreatic (GEP) Tract or of Unknown (UK) Origin.
+Relevance Score: Unknown
+Recommendation: INCLUDE
+Reasoning:
+No reasoning provided
+Justification: No justification provided
+----------------------------------------
+
+RAW ANALYSIS RESPONSE:
+==================================================
+<trial_analysis>
+**NCT NUMBER:** NCT03278379
+**TRIAL NAME:** Avelumab in G2-3 NET
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial has published results evaluating avelumab (anti-PD-L1) in G2-3 NETs. The results showed limited antitumor activity (0% ORR), which provides important negative evidence to counsel against using single-agent PD-L1 inhibitors for this patient, despite his high-grade disease.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02568267
+**TRIAL NAME:** Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+**DECISION:** EXCLUDE
+**RATIONALE:** This trial targets specific genomic fusions (NTRK, ROS1, ALK). The patient's clinical profile describes a sporadic Pan-NET with no evidence of these rare molecular alterations; thus, the evidence from this trial is not applicable to his treatment planning without a confirmed target.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT05153772
+**TRIAL NAME:** Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial investigates 212Pb-DOTAMTATE (Alpha-PRRT) and has results presented at ASCO 2024. It is highly relevant as the patient is SSTR-positive and PRRT-naïve but has a high Ki-67 (70%), a scenario where alpha-emitters may offer superior efficacy compared to standard beta-emitters.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02923934
+**TRIAL NAME:** A Phase II Trial of Ipilimumab and Nivolumab for the Treatment of Rare Cancers
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial has published results (CA209-538) supporting the activity of dual checkpoint inhibition (nivolumab + ipilimumab) in rare cancers, including neuroendocrine tumors. This informs the consideration of immunotherapy for this patient with refractory high-grade disease.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02754297
+**TRIAL NAME:** Personalized PRRT of Neuroendocrine Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial has published results demonstrating the feasibility and safety of personalized 177Lu-Octreotate dosimetry. This evidence supports optimizing PRRT delivery, which is a relevant consideration for this patient with high tumor burden and aggressive biology.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01842165
+**TRIAL NAME:** 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial (LUMEN) has published results validating the use of multimodality imaging and dosimetry to predict outcomes with 177Lu-Octreotate. This evidence supports the use of PRRT in SSTR-positive refractory patients and aids in prognostication.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT02834013
+**TRIAL NAME:** Nivolumab and Ipilimumab in Treating Patients With Rare Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** This large Phase 2 basket trial (DART) has published results showing a 44% ORR in high-grade non-pancreatic neuroendocrine carcinomas. This provides key evidence for the potential efficacy of dual immunotherapy (ipilimumab + nivolumab) in high-grade neuroendocrine neoplasms, relevant to this patient's G3 status.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03375320
+**TRIAL NAME:** Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 3 trial (CABINET) has published results (NEJM 2024) demonstrating that cabozantinib significantly improves progression-free survival in patients with advanced Pan-NETs who have progressed on prior therapies. This provides high-level evidence for cabozantinib as a next-line standard of care for this patient.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT01466036
+**TRIAL NAME:** Cabozantinib in Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+**DECISION:** EXCLUDE
+**RATIONALE:** This Phase 2 trial has no published results listed and has been superseded by the Phase 3 CABINET trial (NCT03375320), which provides definitive evidence for the same intervention in this patient population.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03972488
+**TRIAL NAME:** Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 3 trial (NETTER-2) has published results establishing the efficacy of 177Lu-DOTATATE in G2 and G3 (Ki-67 up to 55%) GEP-NETs. Although the patient's Ki-67 (70%) exceeds the trial's inclusion cap, the study provides critical evidence supporting PRRT in well-differentiated G3 tumors.
+---
+</trial_analysis>
+
+<trial_analysis>
+**NCT NUMBER:** NCT03980925
+**TRIAL NAME:** Platinum-doublet Chemotherapy and Nivolumab for the Treatment of Subjects With Neuroendocrine Neoplasms (NENs) of the Gastroenteropancreatic (GEP) Tract or of Unknown (UK) Origin.
+**DECISION:** INCLUDE
+**RATIONALE:** This Phase 2 trial (NICE-NEC) has published results showing a 12-month overall survival rate of 54.1% with nivolumab plus platinum-doublet chemotherapy in G3 NENs. This offers evidence for an aggressive chemo-immunotherapy approach, which may be relevant given the patient's high Ki-67 and refractory status.
+---
+</trial_analysis>
+
+<summary>
+**TOTAL TRIALS ANALYZED:** 11
+**TRIALS TO INCLUDE:** 9
+**TRIALS TO EXCLUDE:** 2
+</summary>

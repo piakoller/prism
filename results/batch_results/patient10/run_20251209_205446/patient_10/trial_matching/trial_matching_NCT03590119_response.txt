@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:13:46.987901
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails to meet the criterion for evidence quality and relevance because the provided data consists solely of a study protocol without published results. While the disease biology (G2 NET with liver metastases) and treatment context (optimizing PRRT for liver-dominant disease) align with the patient's scenario of potential PRRT retreatment, the input text only describes the trial design and objectives (e.g., \"aims to increase tumor-absorbed dose,\" \"will be conducted\"). It does not report efficacy or safety outcomes indicating whether intra-arterial administration is superior to standard intravenous PRRT. Without actionable results, this study cannot currently inform therapy recommendations."
+}

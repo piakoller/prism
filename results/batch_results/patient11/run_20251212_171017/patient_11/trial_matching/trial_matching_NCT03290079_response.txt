@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:30:39.295657
+Trial: 51/86
+NCT ID: NCT03290079
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a high-grade pancreatic Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, representing an aggressive, poorly differentiated biology. In contrast, this Phase II study (NCT03290079) specifically evaluates Pembrolizumab and Lenvatinib in *well-differentiated* Neuroendocrine Tumors (NETs) of lung, thymic, or gastrointestinal origin. Crucially, the study explicitly excludes both poorly differentiated neuroendocrine carcinomas and pancreatic neuroendocrine tumors, which are the exact characteristics of this patient's disease. Evidence derived from indolent, well-differentiated NETs is not biologically or clinically transferable to the management of aggressive, high-grade NECs, which typically require platinum-based chemotherapy rather than the targeted/immune approaches used in low-grade disease."
+}

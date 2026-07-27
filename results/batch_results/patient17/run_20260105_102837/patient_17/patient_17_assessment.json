@@ -1,0 +1,54 @@
+{
+  "assessment_text": "**Patient Summary and Clinical Status**\nThe patient is a 34-year-old male with a well-differentiated neuroendocrine tumor (NET) of the duodenum, initially diagnosed in 2016 (pT2 pN1, Ki-67 2-3%). The clinical course is characterized by recurrent metastatic spread to the liver despite multiple surgical interventions (pylorus-preserving partial duodeno-pancreatectomy in 2016, central liver resection in 2018, and resection of liver metastases in 2023). The patient has a good performance status (ECOG 0).\n\n**Assessment of Disease Progression**\nCurrent imaging (Gallium DOTATATE-PET/CT, August 2025) demonstrates disease progression with the appearance of two new liver metastases and suspicion of two lymph node metastases in the upper abdomen. This progression has occurred while the patient was under treatment with a Somatostatin analogue (SSA), which was continued after the 2023 surgery.\n\n**Tumor Biology and Receptor Status**\nThe tumor was initially characterized as well-differentiated with a low proliferation index (Ki-67 2-3%). The detection of new metastases via Gallium DOTATATE-PET/CT confirms the expression of somatostatin receptors (SSTR) in the new lesions.\n\n**Guideline-Based Clinical Assessment**\n\n1.  **Systemic Therapy Escalation:**\n    *   According to the **ESMO Clinical Practice Guidelines (2020)**, the goal of systemic therapy is to control tumor growth. Since the patient has shown radiological progression on SSA therapy, the guidelines suggest escalating treatment.\n    *   **Peptide Receptor Radionuclide Therapy (PRRT):** Both **ENETS (2023)** and **ESMO (2020)** guidelines identify PRRT as a valid therapeutic option for progressive, SSTR-positive NETs. ESMO specifically notes that PRRT is recommended in patients with disease progression on SSAs. The patient's positive Gallium DOTATATE-PET/CT suggests potential eligibility. However, it must be clinically verified that the uptake in all tumor lesions (both liver and lymph nodes) exceeds the uptake of normal liver parenchyma (liver SUVmax is typically ~6–7) to confirm suitability for PRRT.\n    *   **Targeted Molecular Therapy:** **ESMO (2020)** guidelines recommend Everolimus for patients with clearly progressive gastrointestinal NETs (based on the RADIANT-4 trial). **ENETS (2023)** also lists Everolimus as a therapeutic option for widespread metastatic gastroduodenal NETs, though it notes the evidence is limited compared to other sites.\n    *   **Chemotherapy:** Systemic chemotherapy is generally not recommended for well-differentiated, slowly growing GI-NETs (Ki-67 <10%) according to **ESMO (2020)**, unless the tumor is rapidly progressive or the grade has increased.\n\n2.  **Surgical Considerations:**\n    *   **ENETS (2023)** guidelines state that surgery with curative intent for metastatic gastroduodenal NETs should be performed if a complete tumor resection (R0) seems feasible.\n    *   **ESMO (2020)** recommends that a surgical approach for stage IV disease be considered in selected patients with exclusive or predominant liver involvement.\n    *   Given the patient's history of two prior liver resections (2018, 2023) and the recurrence of disease within two years of the last surgery, along with new suspected extra-hepatic nodal involvement, the feasibility and benefit of a third liver resection must be weighed against the high likelihood of further systemic recurrence.\n\n3.  **Re-evaluation of Tumor Grade:**\n    *   While the initial Ki-67 was 2-3%, **ESMO (2020)** guidelines suggest that a re-biopsy may be considered in the follow-up of metastatic disease to exclude dedifferentiation (progression to higher grade), although the current slow progression over 9 years is consistent with a well-differentiated phenotype.\n\n**Conclusion**\nThe patient presents with progressive, SSTR-positive metastatic disease while on maintenance SSA therapy. The clinical picture aligns with guideline criteria for escalating systemic therapy (switching to PRRT or Everolimus) or considering further surgical resection if technically feasible and oncologically sound.",
+  "clinical_summary": {
+    "disease_status": "Not specified",
+    "stage": "Not specified",
+    "key_features": []
+  },
+  "clinical_needs": {
+    "primary_needs": [
+      "Treatment needed based on assessment",
+      "Therapy needed based on assessment",
+      "Assessment needed based on assessment"
+    ],
+    "urgency_level": "medium"
+  },
+  "evidence_priorities": {
+    "high_priority": [
+      "** **ESMO (2020)** guidelines recommend Everolimus for patients with clearly progressive gastrointestinal NETs (based on the RADIANT-4 trial). **ENETS (2023)** also lists Everolimus as a therapeutic option for widespread metastatic gastroduodenal NETs",
+      "though it notes the evidence is limited compared to other sites.",
+      "**Chemotherapy:** Systemic chemotherapy is generally not recommended for well-differentiated, slowly growing GI-NETs (Ki-67 <10%) according to **ESMO (2020)**, unless the tumor is rapidly progressive or the grade has increased.",
+      "**Surgical Considerations:**",
+      "**ENETS (2023)** guidelines state that surgery with curative intent for metastatic gastroduodenal NETs should be performed if a complete tumor resection (R0) seems feasible."
+    ],
+    "trial_types_needed": [
+      "clinical trials addressing current management gaps"
+    ]
+  },
+  "trial_eligibility": {
+    "favorable_factors": [],
+    "potential_barriers": []
+  },
+  "recommendations_for_trial_search": [
+    "Consider needed based on assessment",
+    "Assess needed based on assessment",
+    "Follow needed based on assessment"
+  ],
+  "assessment_confidence": "medium",
+  "raw_response": "<assessment>\n**Patient Summary and Clinical Status**\nThe patient is a 34-year-old male with a well-differentiated neuroendocrine tumor (NET) of the duodenum, initially diagnosed in 2016 (pT2 pN1, Ki-67 2-3%). The clinical course is characterized by recurrent metastatic spread to the liver despite multiple surgical interventions (pylorus-preserving partial duodeno-pancreatectomy in 2016, central liver resection in 2018, and resection of liver metastases in 2023). The patient has a good performance status (ECOG 0).\n\n**Assessment of Disease Progression**\nCurrent imaging (Gallium DOTATATE-PET/CT, August 2025) demonstrates disease progression with the appearance of two new liver metastases and suspicion of two lymph node metastases in the upper abdomen. This progression has occurred while the patient was under treatment with a Somatostatin analogue (SSA), which was continued after the 2023 surgery.\n\n**Tumor Biology and Receptor Status**\nThe tumor was initially characterized as well-differentiated with a low proliferation index (Ki-67 2-3%). The detection of new metastases via Gallium DOTATATE-PET/CT confirms the expression of somatostatin receptors (SSTR) in the new lesions.\n\n**Guideline-Based Clinical Assessment**\n\n1.  **Systemic Therapy Escalation:**\n    *   According to the **ESMO Clinical Practice Guidelines (2020)**, the goal of systemic therapy is to control tumor growth. Since the patient has shown radiological progression on SSA therapy, the guidelines suggest escalating treatment.\n    *   **Peptide Receptor Radionuclide Therapy (PRRT):** Both **ENETS (2023)** and **ESMO (2020)** guidelines identify PRRT as a valid therapeutic option for progressive, SSTR-positive NETs. ESMO specifically notes that PRRT is recommended in patients with disease progression on SSAs. The patient's positive Gallium DOTATATE-PET/CT suggests potential eligibility. However, it must be clinically verified that the uptake in all tumor lesions (both liver and lymph nodes) exceeds the uptake of normal liver parenchyma (liver SUVmax is typically ~6–7) to confirm suitability for PRRT.\n    *   **Targeted Molecular Therapy:** **ESMO (2020)** guidelines recommend Everolimus for patients with clearly progressive gastrointestinal NETs (based on the RADIANT-4 trial). **ENETS (2023)** also lists Everolimus as a therapeutic option for widespread metastatic gastroduodenal NETs, though it notes the evidence is limited compared to other sites.\n    *   **Chemotherapy:** Systemic chemotherapy is generally not recommended for well-differentiated, slowly growing GI-NETs (Ki-67 <10%) according to **ESMO (2020)**, unless the tumor is rapidly progressive or the grade has increased.\n\n2.  **Surgical Considerations:**\n    *   **ENETS (2023)** guidelines state that surgery with curative intent for metastatic gastroduodenal NETs should be performed if a complete tumor resection (R0) seems feasible.\n    *   **ESMO (2020)** recommends that a surgical approach for stage IV disease be considered in selected patients with exclusive or predominant liver involvement.\n    *   Given the patient's history of two prior liver resections (2018, 2023) and the recurrence of disease within two years of the last surgery, along with new suspected extra-hepatic nodal involvement, the feasibility and benefit of a third liver resection must be weighed against the high likelihood of further systemic recurrence.\n\n3.  **Re-evaluation of Tumor Grade:**\n    *   While the initial Ki-67 was 2-3%, **ESMO (2020)** guidelines suggest that a re-biopsy may be considered in the follow-up of metastatic disease to exclude dedifferentiation (progression to higher grade), although the current slow progression over 9 years is consistent with a well-differentiated phenotype.\n\n**Conclusion**\nThe patient presents with progressive, SSTR-positive metastatic disease while on maintenance SSA therapy. The clinical picture aligns with guideline criteria for escalating systemic therapy (switching to PRRT or Everolimus) or considering further surgical resection if technically feasible and oncologically sound.\n</assessment>",
+  "parsing_method": "XML",
+  "metadata": {
+    "timestamp": "2026-01-05T10:31:10.763949",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 17,
+    "guidelines_provided": true,
+    "matched_guidelines_used": true,
+    "matched_guidelines_count": 2,
+    "matched_trials_used": false,
+    "matched_trials_count": 0,
+    "prompt_file": "batch_results/run_20260105_102837\\patient_17\\patient_17_assessment_prompt.txt",
+    "response_file": "batch_results/run_20260105_102837\\patient_17\\patient_17_assessment_raw_response.txt",
+    "cache_reused": false,
+    "cached_at": null
+  }
+}

@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:29:31.868848
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This Phase II trial (DART, SWOG S1609) provides meaningful evidence for the patient's condition. The patient has a high-grade pancreatic neuroendocrine carcinoma (NEC) with a Ki-67 of 95%. The study includes a specific cohort (Cohort 52) for High-Grade Neuroendocrine Carcinomas, and published results (Patel et al., Cancer 2021) demonstrate an objective response rate (ORR) of 26% with durable responses in this population. Although the patient is currently responding to first-line platinum-etoposide, the aggressive biology implies a high risk of recurrence. This study provides critical evidence for Ipilimumab plus Nivolumab as a viable second-line therapeutic option upon progression, directly informing the long-term management strategy and offering an alternative to standard chemotherapy in the refractory setting."
+}
+```

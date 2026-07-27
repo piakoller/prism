@@ -1,0 +1,10 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T16:10:17.674770
+Trial: 34/86
+NCT ID: NCT03728361
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant as it evaluates Nivolumab plus Temozolomide in patients with advanced neuroendocrine neoplasms (NENs) of any grade, including the patient's G1 Pan-NET. Biologically, the study population aligns with the patient's diagnosis, and the exclusion of prior temozolomide fits the patient's history (progression on Lanreotide only). Clinically, this regimen is

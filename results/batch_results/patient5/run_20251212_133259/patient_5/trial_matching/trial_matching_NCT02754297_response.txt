@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T13:47:57.980569
+Trial: 33/86
+NCT ID: NCT02754297
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates personalized peptide receptor radionuclide therapy (PRRT) with 177Lu-Octreotate for patients with Neuroendocrine Tumors (NETs), primarily focusing on well-differentiated subtypes. The patient, however, has a Mixed Neuroendocrine–Non-neuroendocrine Neoplasm (MiNEN) driven by a poorly differentiated neuroendocrine carcinoma (NEC) component with a Ki-67 of 90% and small-cell morphology. This constitutes a fundamental biological mismatch (Criterion 1 not met). Poorly differentiated NECs with such high proliferation indices are biologically distinct from NETs, typically lack sufficient somatostatin receptor expression, and require cytotoxic chemotherapy rather than PRRT. Evidence derived from NET populations cannot be reasonably extrapolated to guide treatment for high-grade NECs, making the study results clinically inapplicable to this patient's management."
+}

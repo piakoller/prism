@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:25:03.826579
+Trial: 26/86
+NCT ID: NCT03870399
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase II study provides meaningful evidence for a biomarker-driven treatment option in well-differentiated neuroendocrine tumors. The patient aligns with the study population (metastatic G2 PanNET, progressive disease), and although her Estrogen/Progesterone Receptor (ER/PR) status is currently unknown, the study establishes that ~30% of NETs express these receptors. Given the patient is heavily pre-treated (SSA, Sunitinib, TAE, Belzutifan) and likely ineligible for liver transplantation due to progression and Ki-67 >10%, she requires salvage therapy options. The study demonstrates that Tamoxifen is safe and yields a disease control rate of 56.5% with a median PFS of 7.9 months in ER/PR-positive patients. This evidence supports a clinical recommendation to perform IHC staining for ER/PR on her tumor tissue; if positive, Tamoxifen offers a viable, low-toxicity alternative to systemic chemotherapy or PRRT."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:02:37.698437
+Trial: 82/86
+NCT ID: NCT02893930
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient because it evaluated Sapanisertib specifically in patients with rapalog-resistant (mTOR inhibitor-refractory) pNETs, whereas this patient is mTOR-inhibitor naïve (has not received everolimus). Consequently, the specific biological context of reversing mTOR resistance does not apply to her current clinical state. Furthermore, the Phase II trial was terminated early due to a lack of objective responses (0% response rate in stage 1), demonstrating that the intervention was ineffective. Given the negative results and the mismatch in prior treatment history, this study does not offer an actionable therapeutic option or relevant data to guide decision-making for this patient, who requires standard subsequent lines of therapy (e.g., everolimus or sunitinib) adapted for her significant renal impairment."
+}

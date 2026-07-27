@@ -1,0 +1,74 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**1. Immediate Management of Hemorrhagic Risk (Surgical Intervention):**\nThe patient requires urgent **multidisciplinary surgical evaluation for en bloc resection** (distal pancreatectomy, splenectomy, and partial gastrectomy) to control the life-threatening upper gastrointestinal bleeding caused by direct tumor invasion into the gastric fundus.\n*   **Contraindication for Immediate Systemic Therapy:** Immediate initiation of high-efficacy systemic therapies such as Peptide Receptor Radionuclide Therapy (PRRT) or Tyrosine Kinase Inhibitors (TKIs) is **currently unsafe**.\n    *   **PRRT Risk:** While **NETTER-2 (NCT03972488)** demonstrates high efficacy (ORR 43%) for Grade 2/3 NETs, rapid tumor shrinkage and necrosis in the context of transmural gastric invasion (4 cm area) poses a severe risk of gastric perforation and recurrent massive hemorrhage.\n    *   **Cabozantinib Contraindication:** **Cabozantinib (CABINET, NCT03375320)** is **contraindicated** due to the patient's recent life-threatening hemorrhage and GI invasion. VEGF inhibitors are associated with a high risk of fistulas and GI perforation in this anatomical context.\n\n**2. Diagnostic Workup (Post-Stabilization):**\nPerform **68Ga-DOTATATE PET/CT** (SSTR-PET) immediately following surgical stabilization to confirm Somatostatin Receptor (SSTR) expression.\n*   *Requirement:* Uptake in the residual tumor/metastases must be significantly higher than liver background (Krenning score 3-4, SUVmax > liver background) to qualify for PRRT.\n\n**3. Systemic Therapy Recommendation (Post-Surgery):**\n*   **Scenario A: SSTR-Positive (Uptake > Liver):** Initiate **177Lu-DOTATATE (Lutathera)** combined with Octreotide LAR.\n    *   *Evidence:* **NETTER-2 (NCT03972488)**. This Phase 3 trial specifically validated 177Lu-DOTATATE as a first-line systemic option for Grade 2 and Grade 3 GEP-NETs (Ki-67 10–55%). The patient’s Ki-67 of 19% falls directly into this high-efficacy group. The trial demonstrated a significant improvement in Progression-Free Survival (median 22.8 months vs. 8.5 months) and a high Objective Response Rate (43%) compared to high-dose octreotide.\n    *   *Note:* Ensure the gastric invasion site is healed/resected prior to dosing to mitigate perforation risk.\n\n*   **Scenario B: SSTR-Negative or Surgical Resection Not Feasible:** Initiate **Capecitabine and Temozolomide (TEMCAP)**.\n    *   *Evidence:* Supported by **MGMT-NET (NCT03217097)** and ENETS guidelines (Section 3.4) for bulky, symptomatic Pan-NETs. This regimen serves as an alternative to the FOLFIRINOX previously received, offering a standard-of-care alkylating option for Grade 2 NETs if PRRT is not viable.",
+  "rationale_text": "**Clinical Context and Safety:**\nThe patient presents with a \"locally advanced\" Grade 2 Pan-NET (Ki-67 19%) with aggressive features (FDG-avid, SUV 16) and a critical complication: life-threatening GI bleeding from gastric invasion.\n*   **Safety Priority:** The immediate threat to life is hemorrhage. Systemic therapies that induce rapid necrosis (PRRT) or inhibit angiogenesis (Cabozantinib) carry unacceptable risks of perforation and worsening bleeding in the presence of transmural gastric invasion. Therefore, surgical control of the bleeding source is the prerequisite for any systemic treatment.\n*   **Cabozantinib Exclusion:** While the **CABINET trial (NCT03375320)** showed PFS benefits in advanced Pan-NETs, the mechanism of action (VEGF inhibition) and side effect profile (hemorrhage, perforation) make it dangerous for this specific patient.\n\n**Trial Evidence Application:**\n*   **NETTER-2 (NCT03972488):** This is the most relevant trial for the patient's biological profile (Ki-67 19%, bordering G3). It provides Level 1 evidence for using 177Lu-DOTATATE in this proliferation range, offering superior disease control compared to SSAs alone. However, its application is contingent on SSTR positivity and the resolution of the perforation risk.\n*   **COMPETE (NCT03049189):** Supports the efficacy of PRRT over targeted therapies (like Everolimus) in SSTR+ GEP-NETs, reinforcing the choice of PRRT as the primary systemic option post-surgery.\n*   **MGMT-NET (NCT03217097):** Validates the use of alkylating agents (Temozolomide) as a standard approach. Since the patient had stable disease on FOLFIRINOX (oxaliplatin-based), but FOLFIRINOX is not standard for G2 NETs, switching to TEMCAP (if PRRT is not an option) aligns with guidelines for bulky, progressive disease.\n\n**Guideline Alignment:**\n*   **ENETS 2023:** Recommends SSTR-PET for staging (Section 2.5.1) and supports resection of locally advanced T4 tumors in selected cases (Section 3.1.4) to manage complications. It also identifies high FDG uptake as a poor prognostic factor, justifying the shift to aggressive therapies like PRRT or chemotherapy rather than SSAs alone.",
+  "recommendation_summary": {
+    "primary_recommendation": "**1",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03972488",
+      "nct_id": "NCT03972488",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03972488",
+      "nct_id": "NCT03972488",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03972488",
+        "trial_name": "Trial NCT03972488",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03972488",
+        "trial_name": "Trial NCT03972488",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**1. Immediate Management of Hemorrhagic Risk (Surgical Intervention):**\nThe patient requires urgent **multidisciplinary surgical evaluation for en bloc resection** (distal pancreatectomy, splenectomy, and partial gastrectomy) to control the life-threatening upper gastrointestinal bleeding caused by direct tumor invasion into the gastric fundus.\n*   **Contraindication for Immediate Systemic Therapy:** Immediate initiation of high-efficacy systemic therapies such as Peptide Receptor Radionuclide Therapy (PRRT) or Tyrosine Kinase Inhibitors (TKIs) is **currently unsafe**.\n    *   **PRRT Risk:** While **NETTER-2 (NCT03972488)** demonstrates high efficacy (ORR 43%) for Grade 2/3 NETs, rapid tumor shrinkage and necrosis in the context of transmural gastric invasion (4 cm area) poses a severe risk of gastric perforation and recurrent massive hemorrhage.\n    *   **Cabozantinib Contraindication:** **Cabozantinib (CABINET, NCT03375320)** is **contraindicated** due to the patient's recent life-threatening hemorrhage and GI invasion. VEGF inhibitors are associated with a high risk of fistulas and GI perforation in this anatomical context.\n\n**2. Diagnostic Workup (Post-Stabilization):**\nPerform **68Ga-DOTATATE PET/CT** (SSTR-PET) immediately following surgical stabilization to confirm Somatostatin Receptor (SSTR) expression.\n*   *Requirement:* Uptake in the residual tumor/metastases must be significantly higher than liver background (Krenning score 3-4, SUVmax > liver background) to qualify for PRRT.\n\n**3. Systemic Therapy Recommendation (Post-Surgery):**\n*   **Scenario A: SSTR-Positive (Uptake > Liver):** Initiate **177Lu-DOTATATE (Lutathera)** combined with Octreotide LAR.\n    *   *Evidence:* **NETTER-2 (NCT03972488)**. This Phase 3 trial specifically validated 177Lu-DOTATATE as a first-line systemic option for Grade 2 and Grade 3 GEP-NETs (Ki-67 10–55%). The patient’s Ki-67 of 19% falls directly into this high-efficacy group. The trial demonstrated a significant improvement in Progression-Free Survival (median 22.8 months vs. 8.5 months) and a high Objective Response Rate (43%) compared to high-dose octreotide.\n    *   *Note:* Ensure the gastric invasion site is healed/resected prior to dosing to mitigate perforation risk.\n\n*   **Scenario B: SSTR-Negative or Surgical Resection Not Feasible:** Initiate **Capecitabine and Temozolomide (TEMCAP)**.\n    *   *Evidence:* Supported by **MGMT-NET (NCT03217097)** and ENETS guidelines (Section 3.4) for bulky, symptomatic Pan-NETs. This regimen serves as an alternative to the FOLFIRINOX previously received, offering a standard-of-care alkylating option for Grade 2 NETs if PRRT is not viable.\n</therapy_recommendation>\n\n<rationale>\n**Clinical Context and Safety:**\nThe patient presents with a \"locally advanced\" Grade 2 Pan-NET (Ki-67 19%) with aggressive features (FDG-avid, SUV 16) and a critical complication: life-threatening GI bleeding from gastric invasion.\n*   **Safety Priority:** The immediate threat to life is hemorrhage. Systemic therapies that induce rapid necrosis (PRRT) or inhibit angiogenesis (Cabozantinib) carry unacceptable risks of perforation and worsening bleeding in the presence of transmural gastric invasion. Therefore, surgical control of the bleeding source is the prerequisite for any systemic treatment.\n*   **Cabozantinib Exclusion:** While the **CABINET trial (NCT03375320)** showed PFS benefits in advanced Pan-NETs, the mechanism of action (VEGF inhibition) and side effect profile (hemorrhage, perforation) make it dangerous for this specific patient.\n\n**Trial Evidence Application:**\n*   **NETTER-2 (NCT03972488):** This is the most relevant trial for the patient's biological profile (Ki-67 19%, bordering G3). It provides Level 1 evidence for using 177Lu-DOTATATE in this proliferation range, offering superior disease control compared to SSAs alone. However, its application is contingent on SSTR positivity and the resolution of the perforation risk.\n*   **COMPETE (NCT03049189):** Supports the efficacy of PRRT over targeted therapies (like Everolimus) in SSTR+ GEP-NETs, reinforcing the choice of PRRT as the primary systemic option post-surgery.\n*   **MGMT-NET (NCT03217097):** Validates the use of alkylating agents (Temozolomide) as a standard approach. Since the patient had stable disease on FOLFIRINOX (oxaliplatin-based), but FOLFIRINOX is not standard for G2 NETs, switching to TEMCAP (if PRRT is not an option) aligns with guidelines for bulky, progressive disease.\n\n**Guideline Alignment:**\n*   **ENETS 2023:** Recommends SSTR-PET for staging (Section 2.5.1) and supports resection of locally advanced T4 tumors in selected cases (Section 3.1.4) to manage complications. It also identifies high FDG uptake as a poor prognostic factor, justifying the shift to aggressive therapies like PRRT or chemotherapy rather than SSAs alone.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-04T12:04:41.305432",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 1,
+    "trials_considered": 11,
+    "trials_included": 6,
+    "trials_excluded": 5,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_1\\patient_1_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_1\\patient_1_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_1\\patient_1_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_1\\patient_1_therapy_recommendation_reasoning.txt"
+  }
+}

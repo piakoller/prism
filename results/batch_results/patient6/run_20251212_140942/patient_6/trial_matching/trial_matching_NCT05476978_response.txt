@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:26:53.040465
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Treatment Context and Evidence Relevance criteria. It evaluates a diagnostic tool (AI-assisted Endoscopic Ultrasound) for characterizing solid pancreatic lesions, whereas the patient has a confirmed, long-standing diagnosis of Pan-NET (G2) with a previously resected primary tumor. The patient's current clinical need involves therapeutic decision-making for metastatic progression (assessing feasibility of liver transplantation vs. PRRT vs. chemotherapy) and staging of potential extrahepatic disease (bone). A diagnostic study focused on identifying primary pancreatic lesions does not provide actionable evidence to guide these therapeutic choices or management strategies for metastatic disease."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:39:31.023820
+Trial: 23/86
+NCT ID: NCT02923934
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase II trial (NCT02923934) is clinically relevant as it evaluates ipilimumab and nivolumab in rare cancers, explicitly including a cohort for neuroendocrine tumors (NETs) as defined in the inclusion criteria and confirmed by the associated publication (Klein et al., Clin Cancer Res 2020) listed in the study data. Although the detailed abstract provided describes the biliary tract cancer subgroup, the study's NET cohort provides directly applicable evidence for this patient. The patient has a well-differentiated but high-grade (G3, Ki-67 70%) Pancreatic NET and is refractory to all standard lines of therapy (SSAs, targeted agents, chemotherapy). Given the aggressive biology (Ki-67 70%, FDG-positive) and lack of remaining standard options, the study's investigation of dual checkpoint inhibition offers meaningful evidence for a potential salvage therapy strategy. The patient meets key eligibility criteria (ECOG 0, measurable disease, prior therapy allowed), making the treatment approach clinically applicable."
+}

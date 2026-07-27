@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:52:40.660027
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 3 CABINET trial (NCT03375320) provides highly relevant evidence for this patient with a progressive, well-differentiated pancreatic NET G3. Biologically, the patient aligns with the study population, which explicitly included well-differentiated Grade 3 tumors and excluded poorly differentiated carcinomas. Clinically, the patient is heavily pre-treated and refractory to standard targeted therapies (sunitinib, everolimus), matching the trial's eligibility requirement for progression on prior FDA-approved lines. The published results demonstrate a significant progression-free survival benefit with cabozantinib compared to placebo in the pancreatic NET cohort (13.8 vs. 4.4 months; HR 0.23). Although the patient has a high Ki-67 (70%), the retained SSTR expression and well-differentiated morphology support the applicability of these findings. This study offers high-quality evidence for cabozantinib as a viable next-line systemic therapy option, particularly given the patient's exhaustion of other standard treatments."
+}

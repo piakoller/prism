@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T09:11:05.073437
+Trial: 81/86
+NCT ID: NCT03289741
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the Treatment Context and Evidence Relevance criteria. While the patient has a well-differentiated NET, they have already received and progressed on Somatostatin Analogs (SSAs), as well as multiple lines of systemic therapy (FOLFOX, 5-FU/Dacarbazine, Sunitinib). This Phase 4 study evaluates patient preference and injection pain between Octreotide and Lanreotide in patients initiating SSA therapy for the first time. Evidence regarding the administration experience of first-line maintenance agents does not provide actionable clinical insights for a refractory Grade 3 PanNET patient with high tumor burden who requires potent salvage therapy (such as PRRT or Everolimus) rather than a choice between standard SSAs."
+}

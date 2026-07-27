@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:31:39.564724
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The patient has a well-differentiated lung neuroendocrine tumor (NET). While the overall basket trial (AcSé Pembrolizumab) protocol included a cohort for rare NETs, the provided published results (PMID: 37429302) are exclusively restricted to the sarcoma cohort (e.g., chordoma, alveolar soft part sarcoma). No efficacy or safety data for the neuroendocrine tumor cohort are provided in the input. Evidence derived solely from sarcoma patients cannot be biologically extrapolated to inform treatment decisions for a well-differentiated NET due to distinct tumor biology and immunogenic profiles. Therefore, the criterion for disease alignment and evidence relevance is not met."
+}

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T16:33:50.994352
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for clinical applicability or evidence relevance for this patient. While the tumor histology (pNET G2) aligns, the study evaluates EUS-guided radiofrequency ablation specifically for small, localized pancreatic tumors (15-25mm) in patients without distant metastases. The patient presents with advanced, progressive metastatic disease involving the liver and lymph nodes. The study explicitly excludes patients with metastatic disease (positive PET/CT for LN/liver). Evidence regarding local ablation of a primary pancreatic lesion does not address this patient's critical need for systemic disease control or management of progressive metastases. Consequently, the study's findings on local control in early-stage disease cannot meaningfully inform therapeutic decisions for a patient requiring management of significant metastatic burden."
+}

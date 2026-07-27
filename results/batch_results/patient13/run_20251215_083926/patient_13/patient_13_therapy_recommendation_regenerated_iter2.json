@@ -1,0 +1,75 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "The recommended therapy is **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE**.\n\n**Key Clinical Trial Evidence:**\n*   **NCT03972488 (NETTER-2):** This Phase 3 trial specifically evaluated 177Lu-DOTATATE in patients with Grade 2 and Grade 3 (Ki-67 10–55%) advanced GEP-NETs. The trial demonstrated that 177Lu-DOTATATE plus long-acting octreotide significantly extended median progression-free survival (PFS) to **22.8 months** compared to **8.5 months** with high-dose octreotide (stratified hazard ratio **0.276**; p<0.0001). This provides high-level evidence supporting PRRT for this patient's specific Grade 3 tumor biology.\n*   **NCT02754297 (P-PRRT):** This Phase 2 trial reported a high objective response rate in pancreatic NETs (84.6% partial or minor response) treated with personalized 177Lu-octreotate, reinforcing the utility of PRRT for pancreatic primaries.\n*   **NCT03049189 (COMPETE):** Emerging topline results from this Phase 3 trial indicate a statistically significant improvement in PFS with 177Lu-edotreotide compared to everolimus in SSTR-positive GEP-NETs, supporting the prioritization of PRRT over mTOR inhibitors.\n\n**Safety Prerequisites:**\n*   **Liver Function:** Given the patient's \"high hepatic tumor burden,\" it is critical to **confirm preserved liver function (bilirubin/albumin) prior to initiation** due to the risk of hepatotoxicity. Trial **NCT02236910** identifies high hepatic tumor burden as a predictor of outcomes and toxicity risks.\n*   **Uptake:** Eligibility requires confirmation that DOTATOC PET uptake is higher than liver background in all target lesions.\n*   **Monitoring:** While the patient is SSTR-positive, the concurrent FDG-positive status implies a more aggressive biology; therefore, close monitoring for early progression is warranted despite the efficacy of PRRT.\n\n**Alternative Therapy:**\nIf PRRT is not feasible or contraindicated, **Cabozantinib** is a recommended alternative. The Phase 3 **CABINET trial (NCT03375320)** demonstrated that Cabozantinib significantly improved progression-free survival in patients with progressive pancreatic neuroendocrine tumors (Median PFS **11.4 months** vs. **3.0 months**; HR 0.27). **Everolimus** is another guideline-supported option, though the combination of Ribociclib and Everolimus should be avoided as it showed insufficient activity (0% ORR) in trial **NCT03070301**.",
+  "rationale_text": "The patient presents with a progressive, Grade 3 (Ki-67 25%) pancreatic neuroendocrine tumor that is refractory to multiple lines of systemic therapy (FOLFOX, Somatostatin Analogs, 5-FU/Dacarbazine, Sunitinib). The \"dual-positive\" imaging status (DOTATOC-positive, FDG-positive) presents a therapeutic challenge, but the strong SSTR expression makes PRRT a viable and evidence-based option.\n\n**Efficacy:** The **NETTER-2 trial (NCT03972488)** provides the most relevant Level 1 evidence, specifically validating the use of 177Lu-DOTATATE in Grade 3 GEP-NETs (Ki-67 10-55%) with a substantial PFS benefit (HR 0.276). This directly addresses the patient's tumor grade. Additionally, the **P-PRRT trial (NCT02754297)** demonstrated particularly high response rates in pancreatic NETs.\n\n**Safety and Patient Selection:** The patient's high hepatic burden is a specific risk factor identified in the registry study **NCT02236910**. Therefore, verifying liver function parameters is a mandatory safety step. The FDG-positive status, while a negative prognostic marker, does not preclude PRRT provided SSTR uptake is sufficient (no mismatch), but it necessitates vigilant monitoring for discordant progression.\n\n**Alternatives:** **Cabozantinib** is the strongest alternative based on the **CABINET trial (NCT03375320)**, which showed a robust PFS benefit in pre-treated Pan-NETs. While **Everolimus** is an option per ENETS guidelines, the emerging data from **COMPETE (NCT03049189)** suggests PRRT may offer superior PFS. The combination of Ribociclib and Everolimus is not recommended due to lack of efficacy in **NCT03070301**. Immunotherapy (e.g., Nivolumab/Ipilimumab) was considered based on **NCT02834013 (DART)**, but given the lower Ki-67 (25%) compared to the DART high-grade cohort (median Ki-67 80%) and ENETS guidelines stating lack of significant activity in unselected Pan-NETs, PRRT and Cabozantinib are prioritized.",
+  "recommendation_summary": {
+    "primary_recommendation": "The recommended therapy is **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE**",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03972488",
+      "nct_id": "NCT03972488",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02754297",
+      "nct_id": "NCT02754297",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03049189",
+      "nct_id": "NCT03049189",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03972488",
+        "trial_name": "Trial NCT03972488",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02754297",
+        "trial_name": "Trial NCT02754297",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03049189",
+        "trial_name": "Trial NCT03049189",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\nThe recommended therapy is **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-DOTATATE**.\n\n**Key Clinical Trial Evidence:**\n*   **NCT03972488 (NETTER-2):** This Phase 3 trial specifically evaluated 177Lu-DOTATATE in patients with Grade 2 and Grade 3 (Ki-67 10–55%) advanced GEP-NETs. The trial demonstrated that 177Lu-DOTATATE plus long-acting octreotide significantly extended median progression-free survival (PFS) to **22.8 months** compared to **8.5 months** with high-dose octreotide (stratified hazard ratio **0.276**; p<0.0001). This provides high-level evidence supporting PRRT for this patient's specific Grade 3 tumor biology.\n*   **NCT02754297 (P-PRRT):** This Phase 2 trial reported a high objective response rate in pancreatic NETs (84.6% partial or minor response) treated with personalized 177Lu-octreotate, reinforcing the utility of PRRT for pancreatic primaries.\n*   **NCT03049189 (COMPETE):** Emerging topline results from this Phase 3 trial indicate a statistically significant improvement in PFS with 177Lu-edotreotide compared to everolimus in SSTR-positive GEP-NETs, supporting the prioritization of PRRT over mTOR inhibitors.\n\n**Safety Prerequisites:**\n*   **Liver Function:** Given the patient's \"high hepatic tumor burden,\" it is critical to **confirm preserved liver function (bilirubin/albumin) prior to initiation** due to the risk of hepatotoxicity. Trial **NCT02236910** identifies high hepatic tumor burden as a predictor of outcomes and toxicity risks.\n*   **Uptake:** Eligibility requires confirmation that DOTATOC PET uptake is higher than liver background in all target lesions.\n*   **Monitoring:** While the patient is SSTR-positive, the concurrent FDG-positive status implies a more aggressive biology; therefore, close monitoring for early progression is warranted despite the efficacy of PRRT.\n\n**Alternative Therapy:**\nIf PRRT is not feasible or contraindicated, **Cabozantinib** is a recommended alternative. The Phase 3 **CABINET trial (NCT03375320)** demonstrated that Cabozantinib significantly improved progression-free survival in patients with progressive pancreatic neuroendocrine tumors (Median PFS **11.4 months** vs. **3.0 months**; HR 0.27). **Everolimus** is another guideline-supported option, though the combination of Ribociclib and Everolimus should be avoided as it showed insufficient activity (0% ORR) in trial **NCT03070301**.\n</therapy_recommendation>\n\n<rationale>\nThe patient presents with a progressive, Grade 3 (Ki-67 25%) pancreatic neuroendocrine tumor that is refractory to multiple lines of systemic therapy (FOLFOX, Somatostatin Analogs, 5-FU/Dacarbazine, Sunitinib). The \"dual-positive\" imaging status (DOTATOC-positive, FDG-positive) presents a therapeutic challenge, but the strong SSTR expression makes PRRT a viable and evidence-based option.\n\n**Efficacy:** The **NETTER-2 trial (NCT03972488)** provides the most relevant Level 1 evidence, specifically validating the use of 177Lu-DOTATATE in Grade 3 GEP-NETs (Ki-67 10-55%) with a substantial PFS benefit (HR 0.276). This directly addresses the patient's tumor grade. Additionally, the **P-PRRT trial (NCT02754297)** demonstrated particularly high response rates in pancreatic NETs.\n\n**Safety and Patient Selection:** The patient's high hepatic burden is a specific risk factor identified in the registry study **NCT02236910**. Therefore, verifying liver function parameters is a mandatory safety step. The FDG-positive status, while a negative prognostic marker, does not preclude PRRT provided SSTR uptake is sufficient (no mismatch), but it necessitates vigilant monitoring for discordant progression.\n\n**Alternatives:** **Cabozantinib** is the strongest alternative based on the **CABINET trial (NCT03375320)**, which showed a robust PFS benefit in pre-treated Pan-NETs. While **Everolimus** is an option per ENETS guidelines, the emerging data from **COMPETE (NCT03049189)** suggests PRRT may offer superior PFS. The combination of Ribociclib and Everolimus is not recommended due to lack of efficacy in **NCT03070301**. Immunotherapy (e.g., Nivolumab/Ipilimumab) was considered based on **NCT02834013 (DART)**, but given the lower Ki-67 (25%) compared to the DART high-grade cohort (median Ki-67 80%) and ENETS guidelines stating lack of significant activity in unselected Pan-NETs, PRRT and Cabozantinib are prioritized.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-15T09:19:44.025770",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 13,
+    "trials_considered": 15,
+    "trials_included": 11,
+    "trials_excluded": 4,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251215_083926\\patient_13\\patient_13_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251215_083926\\patient_13\\patient_13_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251215_083926\\patient_13\\patient_13_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251215_083926\\patient_13\\patient_13_therapy_recommendation_reasoning.txt"
+  },
+  "regeneration_iteration": 2
+}

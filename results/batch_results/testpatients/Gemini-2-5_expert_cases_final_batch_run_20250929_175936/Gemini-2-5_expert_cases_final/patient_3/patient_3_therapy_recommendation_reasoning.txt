@@ -1,0 +1,42 @@
+=== LLM THERAPY RECOMMENDATION REASONING ===
+Timestamp: 2025-09-29T18:03:04.731630
+Patient ID: 3
+Model: google/gemini-2.5-pro
+============================================================
+
+PURPOSE: This file captures the LLM's reasoning about therapy recommendations
+based on the pre-analyzed trial data.
+
+LLM'S THERAPY RECOMMENDATION:
+==================================================
+**Primary Recommendation:**
+Initiate second-line systemic therapy with **cabozantinib** at a starting dose of 60 mg daily.
+
+**Contingent Recommendation / Actionable Next Step:**
+Concurrently, we recommend performing **O6-methylguanine-DNA methyltransferase (MGMT) promoter methylation analysis** on the archival liver biopsy tissue. If the tumor is found to be MGMT-deficient (methylated), the combination of **capecitabine and temozolomide (CAPTEM)** should be strongly considered as an alternative to or as a subsequent therapy after cabozantinib, given its potential for a high objective response rate.
+
+**Supportive Care and Monitoring:**
+-   Given the patient's pre-existing hypertension and the known side effects of cabozantinib, blood pressure must be closely monitored and antihypertensive therapy optimized.
+-   The patient's grade 1 diarrhea may be exacerbated; proactive management should be planned.
+-   Renal function must be monitored closely, although cabozantinib has a more favorable renal safety profile than other options.
+-   If everolimus were to be considered in the future, the patient's type 2 diabetes would require vigilant glycemic control.
+
+❌ NO EXPLICIT TRIAL SELECTION REASONING PROVIDED
+The LLM did not provide explicit reasoning about trial selection.
+This may indicate the prompt needs to be updated to enforce this requirement.
+
+FULL THERAPY RECOMMENDATION CONTEXT:
+==================================================
+THERAPY RECOMMENDATION:
+**Primary Recommendation:**
+Initiate second-line systemic therapy with **cabozantinib** at a starting dose of 60 mg daily.
+
+**Contingent Recommendation / Actionable Next Step:**
+Concurrently, we recommend performing **O6-methylguanine-DNA methyltransferase (MGMT) promoter methylation analysis** on the archival liver biopsy tissue. If the tumor is found to be MGMT-deficient (methylated), the combination of **capecitabine and temozolomide (CAPTEM)** should be strongly considered as an alternative to or as a subsequent therapy after cabozantinib, given its potential for a high objective response rate.
+
+**Supportive Care and Monitoring:**
+-   Given the patient's pre-existing hypertension and the known side effects of cabozantinib, blood pressure must be closely monitored and antihypertensive therapy optimized.
+-   The patient's grade 1 diarrhea may be exacerbated; proactive management should be planned.
+-   Renal function must be monitored closely, although cabozantinib has a more favorable renal safety profile than other options.
+-   If everolimus were to be considered in the future, the patient's type 2 diabetes would require vigilant glycemic control.
+

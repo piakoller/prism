@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-08T10:33:59.846047
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for Treatment Context/Clinical Applicability or Evidence Quality regarding the specific clinical question. While the disease biology (GEP-NET) aligns, the study focuses on validating a biomarker (NETest) to assess outcomes following surgical intervention. The patient has extensive, progressive metastatic disease (>25 liver lesions) and requires a recommendation for second-line systemic therapy (e.g., targeted therapy, PRRT, or chemotherapy), not surgical resection or biomarker validation. Consequently, the study results do not provide actionable evidence to guide the selection of the next therapeutic agent."
+}

@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T11:11:14.981601
+Trial: 38/86
+NCT ID: NCT02630654
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence to inform a therapy recommendation. While the patient's disease aligns with the study population (Criterion 1: metastatic G1 Pan-NET), the study fails on clinical applicability and evidence relevance (Criteria 2 and 3). The patient's clinical question is the choice of a second-line systemic therapy after progression on a somatostatin analogue. This is an observational, non-interventional study, and the provided publication focuses exclusively on the development of a multi-biomarker panel for the initial *diagnosis* of small intestinal NETs. The published results offer no data on treatment efficacy, safety, or outcomes for any therapeutic intervention. Therefore, the evidence does not provide any actionable insights to help decide between potential second-line options like CAPTEM, everolimus, or sunitinib for this patient's current clinical scenario of progressive metastatic disease."
+}
+```

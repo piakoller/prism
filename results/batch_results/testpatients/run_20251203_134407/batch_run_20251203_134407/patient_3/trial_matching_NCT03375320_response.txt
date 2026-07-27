@@ -1,0 +1,10 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T16:25:01.646757
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study provides meaningful clinical evidence for this patient with a progressive pancreatic neuroendocrine tumor (pNET). The CABINET trial (Phase 3) demonstrated a significant progression-free survival benefit (13.8 vs 4.4 months) with Caboz

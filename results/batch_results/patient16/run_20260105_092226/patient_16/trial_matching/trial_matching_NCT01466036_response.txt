@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T09:48:01.570654
+Trial: 69/86
+NCT ID: NCT01466036
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant for this patient's current treatment planning. While the disease biology (pancreatic NET) aligns, the provided input does not contain specific published efficacy or safety results (e.g., response rates, progression-free survival) necessary to evaluate the clinical benefit of cabozantinib. Furthermore, the clinical context is mismatched: the patient has stable, indolent (G1, Ki-67 2%) disease and is currently a candidate for surgery or first-line somatostatin analogs, whereas the study inclusion criteria require progressive disease. Cabozantinib is a tyrosine kinase inhibitor typically reserved for later-line therapy in progressive tumors; without evidence of efficacy from the provided text and given the patient's stable status and availability of less toxic first-line options (SSAs, PRRT), this study does not provide actionable evidence for the current therapeutic decision."
+}

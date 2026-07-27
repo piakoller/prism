@@ -1,0 +1,207 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-03T15:56:14.705572
+Trial: 11/86
+NCT ID: NCT03012620
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 78-year-old patient with no active malignancy and medical history of:
+•	Type 2 diabetes mellitus (on oral antidiabetic drugs for 10 years)
+•	Hypertension and dyslipidemia
+•	Chronic kidney disease (baseline creatinine 1.6–1.8 mg/dL)
+•	Malignant external otitis with secondary osteomyelitis in January 2019 (malaritis); incidental finding of pituitary macroadenoma
+•	Benign prostatic hyperplasia (treated with prostatectomy in 2012)
+•	Glaucoma under ophthalmologic follow-up
+•	Jan–Mar 2021: Incidental elevation of GGT, with liver metastases detected on abdominal ultrasound.
+•	Thoracoabdominal CT: 8 cm mass in the pancreatic uncinate process with internal calcifications. Mesenteric vessels displaced but not infiltrated. Subcentimetric peripancreatic and retroperitoneal lymph nodes. Multiple liver metastases.
+•	Liver biopsy: Well-differentiated NET G1 with Ki67 2%. IHC: chromogranin A+, synaptophysin+, CD56+, CAM5.2+; CK20–, CK7–.
+•	The patient received first-line treatment with Lanreotide Autogel from April 2021 to July 2025.
+2.	Current Clinical Status
+•	Mild toxicity: grade 1 diarrhea
+•	No tumor-related symptoms
+•	ECOG performance status: 0–1
+•	Lab tests: Creatinine 2.24 mg/dL; other parameters unremarkable
+•	MRI (July 2025): Stable liver metastases (at least 25 lesions); largest increased from 55 mm to 58 mm in segment I, and from 65 mm to 68 mm in the right hepatic lobe. Mesenteric root mass increased from 82×40 mm to 90×49 mm.
+Question for Tumorboard:
+What would be the most appropriate second-line systemic treatment?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Summary and Oncological Status**
+The patient is a 78-year-old male with a well-differentiated, non-functioning pancreatic neuroendocrine tumor (NF-Pan-NET), Grade 1 (Ki67 2%). He presents with extensive metastatic disease involving the liver (at least 25 lesions), a large primary mass in the pancreatic uncinate process (8 cm), and a mesenteric root mass. Following first-line treatment with Lanreotide Autogel (April 2021 to July 2025), the patient exhibits radiological evidence of progressive disease (PD) based on the MRI from July 2025. Specifically, the largest liver lesions have increased (segment I: 55 mm to 58 mm; right hepatic lobe: 65 mm to 68 mm), and the mesenteric root mass has enlarged from 82×40 mm to 90×49 mm. The patient remains asymptomatic regarding the tumor, with an ECOG performance status of 0–1.
+
+**Comorbidities and Safety Considerations**
+A critical factor in the clinical assessment is the patient's renal function. He has a history of chronic kidney disease with a baseline creatinine of 1.6–1.8 mg/dL, which has deteriorated to a current level of 2.24 mg/dL. Additional comorbidities include Type 2 diabetes mellitus (10-year duration), hypertension, dyslipidemia, and a history of malignant external otitis. The worsening renal function (Creatinine 2.24 mg/dL) necessitates careful evaluation of potential nephrotoxicity associated with second-line systemic therapies.
+
+**Guideline-Based Assessment of Second-Line Options**
+According to the ENETS 2023 and ESMO 2020 guidelines, the following considerations apply to the selection of second-line treatment for a patient with progressive NF-Pan-NET G1:
+
+1.  **Targeted Therapies (Everolimus/Sunitinib):**
+    *   The ENETS guidelines (Section 3.3, Q6) and ESMO guidelines recommend Everolimus and Sunitinib for patients with progressive advanced Pan-NETs.
+    *   These agents are established options for G1/G2 tumors after the failure of somatostatin analogs.
+    *   Given the patient's renal impairment, the metabolic clearance profiles of these drugs make them relevant considerations, though careful monitoring of comorbidities (e.g., diabetes with Everolimus) is required.
+
+2.  **Peptide Receptor Radionuclide Therapy (PRRT):**
+    *   ENETS (Section 3.2, Q5) and ESMO guidelines list PRRT (specifically 177Lu-DOTATATE) as a valid therapeutic option for progressive Pan-NETs.
+    *   **Prerequisites:** Eligibility strictly requires confirmation of strong somatostatin receptor expression via SSTR-PET/CT (e.g., 68Ga-DOTATATE). Uptake must be higher than liver background in all primary tumor lesions and metastases. The patient information does not currently provide SSTR-PET/CT results; this imaging is mandatory before PRRT can be considered.
+    *   **Renal Contraindication:** The patient's current creatinine of 2.24 mg/dL poses a significant safety concern. Guidelines warn that renal dysfunction is a potential adverse event of PRRT. The ESMO guidelines note that mild renal toxicity can occur, and ENETS highlights the need to screen for renal dysfunction. This level of renal impairment may contraindicate PRRT or require specific dosimetry and nephrological clearance.
+
+3.  **Chemotherapy:**
+    *   ENETS (Section 3.4, Q7) and ESMO guidelines mention chemotherapy (Temozolomide/Capecitabine or Streptozotocin/5-FU) for progressive Pan-NETs, particularly when tumor burden is high.
+    *   While the patient has a high tumor burden (bulky primary and >25 liver metastases), the indolent biology (G1, Ki67 2%) and significant renal impairment (Cr 2.24 mg/dL) complicate the use of regimens containing renal-cleared agents like Streptozotocin or Capecitabine.
+
+**Conclusion**
+The patient has progressive, high-burden, well-differentiated G1 NF-Pan-NET. While guidelines support Targeted Therapies, PRRT, or Chemotherapy as second-line options, the clinical assessment is heavily influenced by the patient's renal insufficiency (Creatinine 2.24 mg/dL). SSTR-PET/CT imaging is required to determine receptor status; however, even if SSTR-positive, the renal function may limit PRRT eligibility.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Monitor needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: What would be the most appropriate second-line systemic treatment?
+
+### STUDY DATA
+	•	NCT-ID: NCT03012620
+	•	Title: Secured Access to Pembrolizumab for Patients With Selected Rare Cancer Types
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Pembrolizumab
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+1. Patient information sheet and written informed consent form signed.
+2. Histologically confirmed diagnosis of a pathology corresponding to one of the following selected cancer types:
+
+   * Rare sarcoma: Alveolar soft part sarcoma, Chordoma, Dedifferentiated chondrosarcoma, epithelioid sarcoma, sarcoma with loss of INI1, malignant rhabdoid tumours, myxoid liposarcoma, angiosarcoma of the scalp, radiation induced sarcomas.From the 51st patient included in this cohort, only the following histological types will be selected: Alveolar soft part sarcoma, Chordoma, SMARCA4-malignant rhabdoid tumours and Desmoplastic small-round-cell tumor.
+   * Rare ovarian cancer: recurrent or relapsed; sex cord tumour, germ cell tumour (immature teratoma, non seminomatous germ cell \& dysgerminoma), low-grade serous carcinoma, mucinous carcinoma, clear cell adenocarcinoma, small cell carcinoma, and carcinosarcoma - with histological confirmation following review by members of the Tumeurs Malignes Rares Gynécologiques (TMRG) network (French rare gynaecological tumour group).From the 51st patient included in this cohort, only the following histological types will be selected: teratoma, low-grade serous carcinoma and ovarian small cell carcinoma hypercalcemic type (SCOOHT).
+   * Primary central nervous system lymphoma (PCNSL): refractory primary intraocular and CNS lymphoma.From the 51st patient included in this cohort, only CNS lymphoma will be selected.
+   * Rare thyroid cancer: differentiated thyroid carcinoma (Papillary, follicular, Hurthle cell (oncocytic), poorly differentiated thyroid carcinoma), medullary thyroid carcinoma, anaplastic thyroid carcinoma.
+   * Rare malignant neuroendocrine tumour: poorly differentiated tumours refractory after 2 lines of chemotherapy, well differentiated tumours refractory after 4 lines of treatment, carcinoid tumours after 2 lines of treatment.
+   * Germ-cell cancer progressing after standard therapy.
+   * Natural killer T-cell lymphoma: extranodal NK/T-cell lymphoma regardless of localization that is resistant or refractory to prior L-asparaginase therapy.
+3. Metastatic disease or unresectable locally advanced malignancy that is resistant or refractory to standard therapy or for which standard therapy does not exist or is not considered appropriate by the Investigator.
+4. Aged ≥18 years old for cohort 2 to 7 and aged ≥15 years old for patients included in cohort 1 (rare sarcoma).
+5. Measurable disease according to RECIST v1.1 guidelines for solid tumours; or International primary central nervous system lymphoma cooperative group (IPCG) response criteria for patients in the PCNSL cohort. For patients with germ-cell cancer measurable disease is defined as measurable according to RECIST v1.1 and / or abnormal levels of alpha-fetoprotein (AFP), human chorionic gonadotropin (hCG) and lactate dehydrogenase (LDH). For patients with NK/T-cell lymphoma measurable disease is defined as focal uptake in at least one nodal or extra-nodal site with a Lugano 5-PS score of 4 or 5.
+6. Able to provide a Formalin-fixed/paraffin-embedded (FFPE) biopsy sample of a metastatic site or primitive tumour tissue.
+
+   Note: Patients for whom suitable archived biopsy material is not available must be willing to undergo a biopsy of a tumour lesion prior to study entry, unless this is medically contraindicated (e.g. site inaccessible or patient safety concerns).
+7. Patients must have a mandatory treatment-free interval of at least 21 days following previous systemic anti-cancer treatments.
+8. Patients who have received previous systemic anticancer treatment and/or radiotherapy should have recovered from any treatment related toxicity, to a level of ≤ grade 1 (according to NCI-CTCAE criteria, v 4.0) with the exception of Grade 2 alopecia.
+9. Adequate hematologic function (absolute neutrophil count (ANC) ≥1.0 x10⁹/L, platelets ≥100 x10⁹/L, haemoglobin ≥9 g/L) measured within 14 days of treatment initiation.
+10. Adequate renal function (creatinine clearance ≥50 mL/min using the Modification of Diet in Renal Disease (MDRD) or CKI EPI method) measured within 14 days of treatment initiation.
+11. Adequate hepatic function (serum bilirubin ≤1.5 x the reference upper limit of normal (ULN) unless due to Gilbert's syndrome; aspartate aminotransferase(ASAT) and alanine aminotransferase (ALAT) ≤2.5 x ULN) measured within 14 days of treatment initiation. For patients with documented liver metastasis ASAT/ALAT ≤ 5 x ULN is acceptable.
+12. Strictly normal blood levels of calcium and magnesium, measured within 14 days of treatment initiation.
+13. Eastern Cooperative Oncology Group (ECOG) Performance Status of ≤1.
+14. Estimated life expectancy ≥90 days.
+15. Patients who are sexually active must agree to use a medically accepted method of contraception (e.g. implants, injectables, combined oral contraceptives, some intrauterine devices or vasectomized partner, for participating women; condoms for participating men) or practice complete abstinence, beginning 14 days before the first administration of the investigational product (IP), while on treatment and for at least 5 months after the last administration of IP for female patients, and 7 months after the last administration of IP for male patients.
+16. Women of childbearing potential must have a negative urine or serum pregnancy test within 72 hours prior to the first administration of IP. If urine test results are positive or cannot be confirmed as negative, a serum pregnancy test will be required.
+17. Women who are breastfeeding should discontinue nursing prior to the first administration of IP and for at least 120 days after the last administration of IP.
+18. Patients must be affiliated to a Social Security System or equivalent.
+
+Exclusion Criteria:
+
+1. Prior treatment with an anti-PD1 or anti-PD-L1 antibody
+2. Eligible, and willing, to participate in a clinical trial of an alternative anticancer therapy targeting their disease which is open to accrual in France.
+3. Concurrent steroid medication at a dose greater than prednisone 10 mg/day or equivalent. For patients with PCNSL or germ-cell cancer, concurrent steroid medication at a dose greater than prednisone 20 mg/day or equivalent.
+4. Has active autoimmune disease that has required systemic treatment in the past 2 years (i.e. with use of disease modifying agents, corticosteroids or immunosuppressive drugs). Replacement therapy (eg., thyroxine, insulin, or physiologic corticosteroid replacement therapy for adrenal or pituitary insufficiency, etc.) is not considered a form of systemic treatment.
+5. History of (non-infectious) pneumonitis that required steroids, or current pneumonitis.
+6. History of severe hypersensitivity reaction to any monoclonal antibody therapy
+7. Radiotherapy (except for brain and extremities) within 21 days prior to the first administration of IP.
+8. Treatment with other investigational drugs or participation in another clinical trial within 21 days prior to the first administration of IP or concomitantly with the trial.
+9. Has known symptomatic central nervous system (CNS) metastases. Patients with previously treated brain metastases may participate provided they are stable (without evidence of progression by imaging for at least four weeks prior to the first dose of trial treatment and any neurologic symptoms have returned to baseline), have no evidence of new or enlarging brain metastases, and are not using steroids for at least 7 days prior to trial treatment.
+10. Has known carcinomatous meningitis or a history of leptomeningeal disease, except for patients with primary CNS lymphoma.
+11. Serum creatinine \>1.5 x ULN or glomerular filtration rate (GFR) \<50 ml/min.
+12. Other malignancies within the past 5 years other than basal cell skin cancer or in situ carcinoma of the cervix.
+13. Active serious infections in particular if requiring systemic antibiotic or antimicrobial therapy.
+14. Active or chronic hepatitis B, hepatitis C and/or human immunodeficiency virus (HIV) infection (HIV 1/2 antibodies), or a known history of active Tuberculosis bacillus.
+15. Has received a live vaccine within 30 days of planned start of study treatment. Note: Seasonal influenza vaccines for injection are generally inactivated vaccines and are allowed.
+16. Active alcohol or drug abuse.
+17. Psychological, familial, sociological or geographical factors potentially hampering compliance with the study protocol and follow-up schedule.
+18. Any condition which in the Investigator's opinion makes it undesirable for the subject to participate in the trial or which would jeopardize compliance with the protocol. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This is a Phase 2, non-randomised, open-label, multicentric study to investigate the efficacy and safety of pembrolizumab monotherapy in 7 cohorts of patients with specific rare cancers who have unresectable locally advanced or metastatic disease, which is resistant or refractory to standard therapy, or for which standard therapy does not exist, or is not considered appropriate, and for which no other experimental treatment options are available, in order to identify subsets of patients that may benefit from treatment
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/37429302/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Pembrolizumab in patients with rare and ultra-rare sarcomas (AcSé Pembrolizumab): analysis of a subgroup from a non-randomised, open-label, phase 2, basket trial. (PMID: 37429302)
+	•	Key findings from publications: PubMed Abstract: Sarcoma is a heterogeneous group of diseases with few treatment options. Immunotherapy has shown little activity in studies including unselected sarcomas, but immune checkpoint blockers have shown activity in specific histotypes. We evaluated the activity of pembrolizumab in rare and ultra-rare sarcomas.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Erratum in Correction to Lancet Oncol 2023; 24: 892-902. [No authors listed] [No authors listed] Lancet Oncol. 2023 Oct;24(10):e405. doi: 10.1016/S1470-2045(23)00458-8. Lancet Oncol. 2023. PMID: 37797643 No abstract available. Abstract Background: Sarcoma is a heterogeneous group of diseases with few treatment options. Immunotherapy has shown little activity in studies including unselected sarcomas, but immune checkpoint blockers have shown activity in specific histotypes. We evaluated the activity of pembrolizumab in rare and ultra-rare sarcomas. Methods: AcSé Pembrolizumab is an ongoing phase 2, basket, multitumour study investigating the activity of pembrolizumab monotherapy in rare cancers. Here, we report the results obtained in patients with selected histotypes of rare sarcomas (incidence of less than one case per 1 000 000 people per year) recruited at 24 French hospitals. Key inclusion criteria were age 15 years or older, Eastern Cooperative Oncology Group performance status of 0-1, and advanced disease that was untreated and resistant to treatment. Patients were given pembrolizumab 200 mg intravenously on day 1 of every 21-day cycle for a maximum of 24 months. The primary endpoint was objective response rate at week 12 using Response Evaluation Criteria in Solid Tumours version 1.1, assessed by local investigators. The primary endpoint and safety were analysed in the intention-to-treat population. The AcSé Pembrolizumab study is registered with ClinicalTrials.gov, NCT03012620 . Findings: Between Sept 4, 2017, and Dec 29, 2020, 98 patients were enrolled, of whom 97 received treatment and were included in analyses (median age 51 years [IQR 35-65]; 53 [55%] were male; 44 [45%] were female; no data were collected on race or ethnicity). 34 (35%) patients had chordomas, 14 (14%) had alveolar soft part sarcomas, 12 (12%) had SMARCA4-deficient sarcomas or malignant rhabdoid tumours, eight (8%) had desmoplastic small round cell tumours, six (6%) had epithelioid sarcomas, four (4%) had dendritic cell sarcomas, three (3%) each had clear cell sarcomas, solitary fibrous tumours, and myxoid liposarcomas, and ten (10%) had other ultra-rare histotypes. As of data cutoff (April 11, 2022), median follow-up was 13·1 months (range 0·1-52·8; IQR 4·3-19·7). At week 12, objective response rate was 6·2% (95% CI 2·3-13·0), with no complete responses and six partial responses in the 97 patients. The most common grade 3-4 adverse events were anaemia (eight [8%] of 97), alanine aminotransferase and aspartate aminotransferase increase (six [6%]), and dyspnoea (five [5%]). 86 serious adverse events were reported in 37 patients. Five deaths due to adverse events were reported, none of which were determined to be related to treatment (two due to disease progression, two due to cancer, and one due to unknown cause). Interpretation: Our data show the activity and manageable toxicity of pembrolizumab in some rare and ultra-rare sarcoma histotypes, and support the PD-1/PD-L1 pathway as a potential therapeutic target in selected histotypes. The completion of the basket study will provide further evidence regarding the activity and toxicity of pembrolizumab in identified rare types of cancer. Funding: The Ligue contre le cancer, INCa, MSD. Translation: For the French translation of the abstract see Supplementary Materials section. Copyright © 2023 Elsevier Ltd. All rights reserved. PubMed Disclaimer Conflict of interest statement Declaration of interests J-YB received support for the present research from INCa (Institut National du Cancer; French National Cancer Institute), Unicancer, Fondation ARC, and MSD (drug supply) as well as research support from MSD Avenir Foundation for unrelated research. ALC reports personal fees from Pharmamar and Deciphera. CE received consulting fees from BMS, MSD, Novartis, F Star therapeutics, and Merck Serono, as well as grant support from MSD and Merck Serono. CM was principal investigator or investigator of clinical trials for Abbvie, Aduro, Agios, Amgen, Argen-x, Astex, AstraZeneca, Aveo pharmaceuticals, Bayer, Beigene, Blueprint, BMS, Boeringer Ingelheim, Celgene, Chugai, Clovis, Daiichi Sankyo, Debiopharm, Eisai, Eos, Exelixis, Forma, Gamamabs, Genentech, Gortec, GSK, H3 biomedecine, Incyte, Innate Pharma, Janssen, Kura,Oncology, Kyowa, Lilly, Loxo, Lysarc, Lytix,Biopharma, Medimmune, Menarini, Merus, MSD, Nanobiotix, Nektar Therapeutics, Novartis, Octimet, Oncoethix, Oncopeptides AB, Orion, Pfizer, Pharmamar, Pierre Fabre, Roche, Sanofi, Servier, Sierra Oncology, Taiho, Takeda, Tesaro, and Xencor; received payment or honoraria for lectures, presentations, speakers bureaus, manuscript writing, or educational events from Amgen, Astellas, AstraZeneca, Bayer, BeiGene, BMS, Celgene, Debiopharm, Genentech, Ipsen, Janssen, Lilly, MedImmune, MSD, Novartis, Pfizer, Roche, Sanofi, and Orion; and travel grants from Janssen and AstraZeneca. PBR received consulting fees from Ipsen and travel grants from Pharmamar and Pfizer. MC reported support for attending meetings or travel from Ipsen, Janssen, Pfizer, Amgen, MSD, Biogaran, and Novartis. All other authors declare no competing interests. Similar articles Axitinib plus pembrolizumab in patients with advanced sarcomas including alveolar soft-part sarcoma: a single-centre, single-arm, phase 2 trial. Wilky BA, Trucco MM, Subhawong TK, Florou V, Park W, Kwon D, Wieder ED, Kolonias D, Rosenberg AE, Kerr DA, Sfakianaki E, Foley M, Merchan JR, Komanduri KV, Trent JC. Wilky BA, et al. Lancet Oncol. 2019 Jun;20(6):837-848. doi: 10.1016/S1470-2045(19)30153-6. Epub 2019 May 8. Lancet Oncol. 2019. PMID: 31078463 Clinical Trial. Pembrolizumab in paediatric patients with advanced melanoma or a PD-L1-positive, advanced, relapsed, or refractory solid tumour or lymphoma (KEYNOTE-051): interim analysis of an open-label, single-arm, phase 1-2 trial. Geoerger B, Kang HJ, Yalon-Oren M, Marshall LV, Vezina C, Pappo A, Laetsch TW, Petrilli AS, Ebinger M, Toporski J, Glade-Bender J, Nicholls W, Fox E, DuBois SG, Macy ME, Cohn SL, Pathiraja K, Diede SJ, Ebbinghaus S, Pinto N. Geoerger B, et al. Lancet Oncol. 2020 Jan;21(1):121-133. doi: 10.1016/S1470-2045(19)30671-0. Epub 2019 Dec 4. Lancet Oncol. 2020. PMID: 31812554 Clinical Trial. Pembrolizumab in advanced soft-tissue sarcoma and bone sarcoma (SARC028): a multicentre, two-cohort, single-arm, open-label, phase 2 trial. Tawbi HA, Burgess M, Bolejack V, Van Tine BA, Schuetze SM, Hu J, D'Angelo S, Attia S, Riedel RF, Priebat DA, Movva S, Davis LE, Okuno SH, Reed DR, Crowley J, Butterfield LH, Salazar R, Rodriguez-Canales J, Lazar AJ, Wistuba II, Baker LH, Maki RG, Reinke D, Patel S. Tawbi HA, et al. Lancet Oncol. 2017 Nov;18(11):1493-1501. doi: 10.1016/S1470-2045(17)30624-1. Epub 2017 Oct 4. Lancet Oncol. 2017. PMID: 28988646 Free PMC article. Clinical Trial. Ramucirumab plus pembrolizumab in patients with previously treated advanced non-small-cell lung cancer, gastro-oesophageal cancer, or urothelial carcinomas (JVDF): a multicohort, non-randomised, open-label, phase 1a/b trial. Herbst RS, Arkenau HT, Santana-Davila R, Calvo E, Paz-Ares L, Cassier PA, Bendell J, Penel N, Krebs MG, Martin-Liberal J, Isambert N, Soriano A, Wermke M, Cultrera J, Gao L, Widau RC, Mi G, Jin J, Ferry D, Fuchs CS, Petrylak DP, Chau I. Herbst RS, et al. Lancet Oncol. 2019 Aug;20(8):1109-1123. doi: 10.1016/S1470-2045(19)30458-9. Epub 2019 Jul 10. Lancet Oncol. 2019. PMID: 31301962 Clinical Trial. Clinical utility of pembrolizumab in the management of advanced solid tumors: an evidence-based review on the emerging new data. du Rusquec P, de Calbiac O, Robert M, Campone M, Frenel JS. du Rusquec P, et al. Cancer Manag Res. 2019 May 15;11:4297-4312. doi: 10.2147/CMAR.S151023. eCollection 2019. Cancer Manag Res. 2019. PMID: 31190995 Free PMC article. Review. See all similar articles Cited by Desmoplastic small round cell tumor: from genomics to targets, potential paths to future therapeutics. Magrath JW, Espinosa-Cotton M, Flinchum DA, Sampath SS, Cheung NK, Lee SB. Magrath JW, et al. Front Cell Dev Biol. 2024 Jul 30;12:1442488. doi: 10.3389/fcell.2024.1442488. eCollection 2024. Front Cell Dev Biol. 2024. PMID: 39139449 Free PMC article. Review. Chordoma Genetic Aberrations and Targeted Therapies Panorama: A Systematic Literature Review. Agosti E, Antonietti S, Zeppieri M, Ius T, Fiorindi A, Tel A, Robiony M, Panciani PP, Fontanella MM. Agosti E, et al. J Clin Med. 2024 May 5;13(9):2711. doi: 10.3390/jcm13092711. J Clin Med. 2024. PMID: 38731241 Free PMC article. Review. Systemic Treatment in Soft Tissue Sarcomas: Are We Making a Difference? Paudel A, Chattopadhyay P, Rose B, Watson A, D'Amato G, Trent J, Bialick S, Jonczak E. Paudel A, et al. Cancers (Basel). 2025 Mar 5;17(5):889. doi: 10.3390/cancers17050889. Cancers (Basel). 2025. PMID: 40075735 Free PMC article. Review. First-in-human study of FAZ053, an anti-programmed death-ligand 1 (anti-PD-L1) monoclonal antibody, alone and in combination with spartalizumab (anti-PD-1), in patients with advanced malignancies. Janku F, Tan DSP, Martin-Liberal J, Takahashi S, Geva R, Gucalp A, Razak A, Kan R, Reiners R, Mataraza J, Szpakowski S, Subramanian K, Chen X, Lai C, Bedard PL. Janku F, et al. ESMO Open. 2025 Jun;10(6):105051. doi: 10.1016/j.esmoop.2025.105051. Epub 2025 May 16. ESMO Open. 2025. PMID: 40381383 Free PMC article. Clinical Trial. Translational Aspects of Epithelioid Sarcoma: Current Consensus. Grünewald TGP, Postel-Vinay S, Nakayama RT, Berlow NE, Bolzicco A, Cerullo V, Dermawan JK, Frezza AM, Italiano A, Jin JX, Le Loarer F, Martin-Broto J, Pecora A, Perez-Martinez A, Tam YB, Tirode F, Trama A, Pasquali S, Vescia M, Wortmann L, Wortmann M, Yoshida A, Webb K, Huang PH, Keller C, Antonescu CR. Grünewald TGP, et al. Clin Cancer Res. 2024 Mar 15;30(6):1079-1092. doi: 10.1158/1078-0432.CCR-23-2174. Clin Cancer Res. 2024. PMID: 37916971 Free PMC article. Review. See all "Cited by" articles Publication types Clinical Trial, Phase II Actions Search in PubMed Search in MeSH Add to Search Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search MeSH terms Adolescent Actions Search in PubMed Search in MeSH Add to Search Antibodies, Monoclonal, Humanized / adverse effects Actions Search in PubMed Search in MeSH Add to Search Antineoplastic Combined Chemotherapy Protocols / adverse effects Actions Search in PubMed Search in MeSH Add to Search DNA Helicases Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Nuclear Proteins Actions Search in PubMed Search in MeSH Add to Search Response Evaluation Criteria in Solid Tumors Actions Search in PubMed Search in MeSH Add to Search Sarcoma, Alveolar Soft Part* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Soft Tissue Neoplasms* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Soft Tissue Neoplasms* / pathology Actions Search in PubMed Search in MeSH Add to Search Transcription Factors Actions Search in PubMed Search in MeSH Add to Search Substances pembrolizumab Actions Search in PubMed Search in MeSH Add to Search Antibodies, Monoclonal, Humanized Actions Search in PubMed Search in MeSH Add to Search SMARCA4 protein, human Actions Search in PubMed Search in MeSH Add to Search DNA Helicases Actions Search in PubMed Search in MeSH Add to Search Nuclear Proteins Actions Search in PubMed Search in MeSH Add to Search Transcription Factors Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT03012620 Actions Search in PubMed Search in ClinicalTrials.gov Related information Cited in Books MedGen PubChem Compound (MeSH Keyword) LinkOut - more resources Full Text Sources ClinicalKey Elsevier Science Medical ClinicalTrials.gov Research Materials NCI CPTC Antibody Characterization Program Miscellaneous NCI CPTAC Assay Portal
+	•	Additional evidence from online sources: Primary outcome: Objective response rate
+Secondary outcomes: Progression-free survival; Overall survival; Best response; Response duration; Time to response; Frequency and severity of adverse events; Objective response rate in subgroups of subjects with high versus low expression (cutoff set at the median for the population measured) of different immune markers (PD-L1, CD4+, FOXP3+, Fas-L, OX40, VEGF, CD31; CD34); Progression-free survival in subgroups of subjects with high versus low expression (cutoff set at the median for the population measured) of different immune markers (PD-L1, CD4+, FOXP3+, Fas-L, OX40, VEGF, CD31; CD34); Overall survival in subgroups of subjects with high versus low expression (cutoff set at the median for the population measured) of different immune markers (PD-L1, CD4+, FOXP3+, Fas-L, OX40, VEGF, CD31; CD34)
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Pembrolizumab in patients with rare and ultra-rare sarcomas (AcSé Pembrolizumab): analysis of a subgroup from a non-randomised, open-label, phase 2, basket trial.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/37429302/', 'pmid': '37429302', 'content_scraped': True, 'content_length': 12218}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/37429302/
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

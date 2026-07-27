@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:44:46.230638
+Trial: 47/86
+NCT ID: NCT02834013
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The DART trial (SWOG S1609) provides meaningful, albeit negative, clinical evidence for this patient. The study evaluated ipilimumab plus nivolumab in rare tumors, including a specific cohort for non-pancreatic neuroendocrine neoplasms. Published results (Patel et al., Clin Cancer Res 2020) stratified outcomes by histology and grade, demonstrating a 44% objective response rate (ORR) in high-grade neuroendocrine carcinomas but a **0% ORR in low/intermediate-grade tumors** (0/14 patients). The patient has a well-differentiated lung NET (typical carcinoid history, Ki-67 5%), which biologically aligns with the low/intermediate-grade cohort that showed no benefit. While the patient is in a salvage setting where novel therapies are considered, this prospective evidence strongly suggests that dual checkpoint inhibition is ineffective for unselected low-grade NETs. Therefore, the study is clinically relevant as it informs the Tumorboard to **exclude** this immunotherapy regimen from the treatment plan, preventing futile toxicity and guiding the focus toward guideline-supported options like everolimus or PRRT retreatment."
+}

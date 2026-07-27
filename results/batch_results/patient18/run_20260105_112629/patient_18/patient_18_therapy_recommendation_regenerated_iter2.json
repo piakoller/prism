@@ -1,0 +1,75 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Systemic Therapy Recommendation:**\n**Everolimus** (10 mg orally once daily).\n*   **Evidence:** The **RADIANT-4 trial** (Phase 3) demonstrated a significant progression-free survival (PFS) benefit for Everolimus compared to placebo in non-functional lung and GI NETs (Median PFS **11.0 months** vs. 3.9 months; HR 0.48; P<0.001). The **LUNA trial (NCT01563354)** specifically evaluated Everolimus in lung and thymus NETs, confirming its activity (33.3% of patients progression-free at 9 months).\n*   **Clinical Context:** Given the patient's current symptom of \"loose stools,\" Everolimus is preferred as the initial choice over Cabozantinib, which has a significantly higher incidence of Grade 3-4 diarrhea (~62% in CABINET vs. lower rates with Everolimus).\n\n**Strong Alternative Systemic Therapy:**\n**Cabozantinib** (60 mg orally once daily).\n*   **Evidence:** The Phase 3 **CABINET trial (NCT03375320)** provides high-level evidence for patients with advanced extrapancreatic NETs (including lung) who have progressed after prior therapy (including PRRT). In the extra-pancreatic NET cohort, Cabozantinib demonstrated a median PFS of **8.3 months** vs. 3.2 months with placebo (Hazard Ratio **0.45**; 95% CI, 0.30 to 0.66).\n*   **Usage Note:** This is a potent option, particularly if the patient tolerates Everolimus poorly or progresses. However, the etiology of the patient's \"loose stools\" must be controlled first, as Cabozantinib is likely to exacerbate diarrhea.\n\n**SSTR-Targeted Therapy Consideration (Retreatment or Alpha-Therapy):**\n**PRRT Retreatment (177Lu-DOTATATE)** or **Targeted Alpha-Therapy (212Pb-DOTAMTATE)**.\n*   **Evidence:** The patient achieved a **durable response** to prior PRRT (stability from ~2022 to March 2025, >2 years). Combined with the \"intensive\" tracer activity on the current DOTATOC PET/CT, the tumor biology remains highly SSTR-driven.\n    *   **NCT02236910 (Registry):** Supports the utility of 177Lu-DOTATATE in patients with progressive NETs, particularly those with prior benefit.\n    *   **NCT05153772 (AlphaMedix):** A Phase 2 trial of the alpha-emitter 212Pb-DOTAMTATE reported an Objective Response Rate (ORR) of ~55% in patients who had progressed on prior PRRT, offering a high-potency option for refractory disease.\n\n**Symptom Management & Supportive Care:**\n**Investigate and Treat \"Loose Stools\":**\n*   **If Carcinoid Syndrome (CS) is confirmed:** Initiate **Telotristat ethyl** (250 mg three times daily) as an add-on to SSA. The real-world study **NCT03223428** and pivotal trials confirm its efficacy in reducing bowel movement frequency in refractory CS.\n*   **If Non-CS (e.g., SSA-induced steatorrhea):** Optimize pancreatic enzyme replacement.\n*   **Note:** Clarifying this is essential before initiating Cabozantinib to avoid compounding toxicity.\n\n**Therapies to AVOID:**\n*   **Single-agent Immunotherapy (PD-1/PD-L1 inhibitors):** Do not use single-agent Nivolumab or Avelumab.\n    *   **Evidence:** The **DART trial (NCT02834013)** showed a **0% ORR** in low/intermediate-grade NETs treated with Ipilimumab plus Nivolumab. **NCT03278379** showed **0% ORR** with Avelumab in G2-3 NETs.\n*   **Ribociclib + Everolimus:** Do not use this combination.\n    *   **Evidence:** **NCT03070301** demonstrated insufficient activity and significant toxicity in foregut NETs.",
+  "rationale_text": "**Clinical Status and Treatment History:**\nThe patient is a 67-year-old male with a metastatic, well-differentiated lung NET (G2, Ki-67 5%). He has progressed after first-line Somatostatin Analogues (SSA) and a completed course of PRRT (4 cycles). Notably, he achieved a **durable clinical benefit** from his prior PRRT, maintaining disease stability from 2022 until progression in March 2025. Current imaging confirms widespread progression (liver, bone, nodal) but retains \"intensive\" SSTR uptake, indicating the tumor phenotype has not dedifferentiated.\n\n**Selection of Systemic Therapy:**\n1.  **Everolimus vs. Cabozantinib:** Both agents are supported by Phase 3 evidence for this setting.\n    *   **Everolimus** is recommended as the primary choice because it is a standard-of-care for lung NETs (RADIANT-4, LUNA) and has a safety profile that is generally more compatible with the patient's current complaint of \"loose stools.\" While Everolimus can cause stomatitis and pneumonitis, it is less likely to cause the severe, high-grade diarrhea associated with Cabozantinib.\n    *   **Cabozantinib** is a strong alternative based on the **CABINET trial**, which specifically included patients progressing after prior therapies like PRRT. The PFS benefit (HR 0.45) is robust. However, Grade 3+ diarrhea occurred in 62% of patients in the trial. Given the patient's baseline GI symptoms, Cabozantinib poses a risk of significant toxicity unless the \"loose stools\" are first characterized and managed.\n\n2.  **Role of PRRT Retreatment:**\n    *   The patient's progression is not \"shortly after\" PRRT; rather, he experienced a progression-free interval of approximately 2-3 years (2022–2025). This durability, combined with the persistent \"intensive\" uptake on PET/CT, strongly supports the biological rationale for **PRRT retreatment** or enrollment in a **Targeted Alpha-Therapy** trial (e.g., **NCT05153772**). This approach utilizes the proven target (SSTR) which remains overexpressed.\n\n**Symptom Management:**\nThe \"loose stools\" must be differentiated between carcinoid syndrome (functional diarrhea) and other causes (e.g., steatorrhea from SSA). If functional, **Telotristat ethyl** is the guideline-recommended add-on therapy (ESMO guidelines, **NCT03223428**). If steatorrhea, pancreatic enzymes are indicated. Optimizing bowel function is a prerequisite for safe administration of subsequent systemic therapies, particularly tyrosine kinase inhibitors.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Systemic Therapy Recommendation:**\n**Everolimus** (10 mg orally once daily)",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT01563354",
+      "nct_id": "NCT01563354",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02236910",
+      "nct_id": "NCT02236910",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT01563354",
+        "trial_name": "Trial NCT01563354",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02236910",
+        "trial_name": "Trial NCT02236910",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**Primary Systemic Therapy Recommendation:**\n**Everolimus** (10 mg orally once daily).\n*   **Evidence:** The **RADIANT-4 trial** (Phase 3) demonstrated a significant progression-free survival (PFS) benefit for Everolimus compared to placebo in non-functional lung and GI NETs (Median PFS **11.0 months** vs. 3.9 months; HR 0.48; P<0.001). The **LUNA trial (NCT01563354)** specifically evaluated Everolimus in lung and thymus NETs, confirming its activity (33.3% of patients progression-free at 9 months).\n*   **Clinical Context:** Given the patient's current symptom of \"loose stools,\" Everolimus is preferred as the initial choice over Cabozantinib, which has a significantly higher incidence of Grade 3-4 diarrhea (~62% in CABINET vs. lower rates with Everolimus).\n\n**Strong Alternative Systemic Therapy:**\n**Cabozantinib** (60 mg orally once daily).\n*   **Evidence:** The Phase 3 **CABINET trial (NCT03375320)** provides high-level evidence for patients with advanced extrapancreatic NETs (including lung) who have progressed after prior therapy (including PRRT). In the extra-pancreatic NET cohort, Cabozantinib demonstrated a median PFS of **8.3 months** vs. 3.2 months with placebo (Hazard Ratio **0.45**; 95% CI, 0.30 to 0.66).\n*   **Usage Note:** This is a potent option, particularly if the patient tolerates Everolimus poorly or progresses. However, the etiology of the patient's \"loose stools\" must be controlled first, as Cabozantinib is likely to exacerbate diarrhea.\n\n**SSTR-Targeted Therapy Consideration (Retreatment or Alpha-Therapy):**\n**PRRT Retreatment (177Lu-DOTATATE)** or **Targeted Alpha-Therapy (212Pb-DOTAMTATE)**.\n*   **Evidence:** The patient achieved a **durable response** to prior PRRT (stability from ~2022 to March 2025, >2 years). Combined with the \"intensive\" tracer activity on the current DOTATOC PET/CT, the tumor biology remains highly SSTR-driven.\n    *   **NCT02236910 (Registry):** Supports the utility of 177Lu-DOTATATE in patients with progressive NETs, particularly those with prior benefit.\n    *   **NCT05153772 (AlphaMedix):** A Phase 2 trial of the alpha-emitter 212Pb-DOTAMTATE reported an Objective Response Rate (ORR) of ~55% in patients who had progressed on prior PRRT, offering a high-potency option for refractory disease.\n\n**Symptom Management & Supportive Care:**\n**Investigate and Treat \"Loose Stools\":**\n*   **If Carcinoid Syndrome (CS) is confirmed:** Initiate **Telotristat ethyl** (250 mg three times daily) as an add-on to SSA. The real-world study **NCT03223428** and pivotal trials confirm its efficacy in reducing bowel movement frequency in refractory CS.\n*   **If Non-CS (e.g., SSA-induced steatorrhea):** Optimize pancreatic enzyme replacement.\n*   **Note:** Clarifying this is essential before initiating Cabozantinib to avoid compounding toxicity.\n\n**Therapies to AVOID:**\n*   **Single-agent Immunotherapy (PD-1/PD-L1 inhibitors):** Do not use single-agent Nivolumab or Avelumab.\n    *   **Evidence:** The **DART trial (NCT02834013)** showed a **0% ORR** in low/intermediate-grade NETs treated with Ipilimumab plus Nivolumab. **NCT03278379** showed **0% ORR** with Avelumab in G2-3 NETs.\n*   **Ribociclib + Everolimus:** Do not use this combination.\n    *   **Evidence:** **NCT03070301** demonstrated insufficient activity and significant toxicity in foregut NETs.\n</therapy_recommendation>\n\n<rationale>\n**Clinical Status and Treatment History:**\nThe patient is a 67-year-old male with a metastatic, well-differentiated lung NET (G2, Ki-67 5%). He has progressed after first-line Somatostatin Analogues (SSA) and a completed course of PRRT (4 cycles). Notably, he achieved a **durable clinical benefit** from his prior PRRT, maintaining disease stability from 2022 until progression in March 2025. Current imaging confirms widespread progression (liver, bone, nodal) but retains \"intensive\" SSTR uptake, indicating the tumor phenotype has not dedifferentiated.\n\n**Selection of Systemic Therapy:**\n1.  **Everolimus vs. Cabozantinib:** Both agents are supported by Phase 3 evidence for this setting.\n    *   **Everolimus** is recommended as the primary choice because it is a standard-of-care for lung NETs (RADIANT-4, LUNA) and has a safety profile that is generally more compatible with the patient's current complaint of \"loose stools.\" While Everolimus can cause stomatitis and pneumonitis, it is less likely to cause the severe, high-grade diarrhea associated with Cabozantinib.\n    *   **Cabozantinib** is a strong alternative based on the **CABINET trial**, which specifically included patients progressing after prior therapies like PRRT. The PFS benefit (HR 0.45) is robust. However, Grade 3+ diarrhea occurred in 62% of patients in the trial. Given the patient's baseline GI symptoms, Cabozantinib poses a risk of significant toxicity unless the \"loose stools\" are first characterized and managed.\n\n2.  **Role of PRRT Retreatment:**\n    *   The patient's progression is not \"shortly after\" PRRT; rather, he experienced a progression-free interval of approximately 2-3 years (2022–2025). This durability, combined with the persistent \"intensive\" uptake on PET/CT, strongly supports the biological rationale for **PRRT retreatment** or enrollment in a **Targeted Alpha-Therapy** trial (e.g., **NCT05153772**). This approach utilizes the proven target (SSTR) which remains overexpressed.\n\n**Symptom Management:**\nThe \"loose stools\" must be differentiated between carcinoid syndrome (functional diarrhea) and other causes (e.g., steatorrhea from SSA). If functional, **Telotristat ethyl** is the guideline-recommended add-on therapy (ESMO guidelines, **NCT03223428**). If steatorrhea, pancreatic enzymes are indicated. Optimizing bowel function is a prerequisite for safe administration of subsequent systemic therapies, particularly tyrosine kinase inhibitors.\n</rationale>",
+  "metadata": {
+    "timestamp": "2026-01-05T15:03:45.304987",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 18,
+    "trials_considered": 17,
+    "trials_included": 13,
+    "trials_excluded": 4,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20260105_112629\\patient_18\\patient_18_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20260105_112629\\patient_18\\patient_18_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20260105_112629\\patient_18\\patient_18_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20260105_112629\\patient_18\\patient_18_therapy_recommendation_reasoning.txt"
+  },
+  "regeneration_iteration": 2
+}

@@ -1,0 +1,175 @@
+=== RECOMMENDATION VALIDATION PROMPT ===
+Timestamp: 2025-12-12T14:52:43.468985
+Patient ID: 6
+Model: google/gemini-3-pro-preview
+==================================================
+
+You are a clinical validation expert reviewing a therapy recommendation for quality assurance.
+
+Your task is to CRITICALLY EVALUATE whether the therapy recommendation is:
+1. COMPLETE - addresses all clinical needs identified in the patient assessment
+2. ACCURATE - correctly cites and interprets evidence from trials and guidelines  
+3. CONSISTENT - doesn't contradict itself or the patient assessment
+4. SAFE - considers contraindications and patient-specific risk factors
+5. ACTIONABLE - provides clear next steps
+
+**IMPORTANT**: Be thorough and critical. If you find ANY issues that could compromise patient care, you must flag them.
+
+=== PATIENT ASSESSMENT SUMMARY ===
+=== DETAILED CLINICAL ASSESSMENT ===
+
+**Patient Clinical Summary**
+The patient is a 51-year-old female with a metastatic well-differentiated pancreatic neuroendocrine tumor (Pan-NET), Grade 2, with a Ki-67 index of 15%. She has a history of synchronous bilobar liver metastases diagnosed in 2018. The primary tumor was resected (total gastrectomy, splenectomy, distal pancreatectomy) in September 2018. She has been heavily pre-treated with somatostatin analogs (lanreotide), tyrosine kinase inhibitors (sunitinib), and liver-directed therapies (TAE). Most recently, she achieved stable disease (SD) for >2 years on the HIF-2α inhibitor belzutifan (40 mg/day) within a clinical trial but is now experiencing mild hepatic progression.
+
+**Assessment of Liver Transplantation Feasibility**
+Based on the **ESMO Clinical Practice Guidelines (2020)**, liver transplantation (LT) is a valid option only in *very selected* patients. The assessment of this patient against the specific ESMO criteria for LT is as follows:
+
+*   **Criteria Met:**
+    *   **Age:** The patient is 51 years old, meeting the criterion of age <60 years.
+    *   **Primary Tumor Resection:** The primary tumor was removed in 2018.
+    *   **Extrahepatic Disease:** Current evaluation (including exploratory laparoscopy) indicates liver-only disease.
+
+*   **Criteria Not Met / Areas of Concern:**
+    *   **Tumor Grade/Proliferation:** The patient's Ki-67 index is 15%. The ESMO guidelines explicitly state that LT criteria include histological confirmation of a well-differentiated NET with **Ki-67 <10%**. This patient falls outside this strict selection criterion.
+    *   **Disease Stability:** The guidelines require stable disease in response to therapy for at least 6 months *before* transplant consideration. While the patient had long-term stability on belzutifan, she is currently presenting with "mild hepatic progression," which conflicts with the requirement for pre-transplant stability.
+    *   **Tumor Burden:** The guidelines require metastatic diffusion <50% of the total liver volume. The specific liver tumor burden percentage is not provided in the patient information and requires calculation to determine eligibility.
+
+**Diagnostic Assessment and Discrepancies**
+*   **Bone Pain vs. Liver-Only Status:** The patient reports "mild, migratory bone pain," yet is classified as having "liver-only disease." The ESMO guidelines note that CT sensitivity for bone metastases is poor (61%, range 46%–80%). Since the patient has been followed up with CT scans, occult bone metastases cannot be ruled out based on the provided history.
+*   **Imaging Recommendations:** To confirm the "absence of extrahepatic disease" required for LT consideration, and to investigate the reported bone pain, **SST-PET/CT** (or MRI for bone/liver) is indicated. ENETS 2023 guidelines recommend SST-PET/CT for whole-body staging and note it is superior to CT for skeletal lesions.
+
+**Assessment of Current Therapy and Alternatives**
+*   **Belzutifan:** The patient is progressing on belzutifan. The ENETS 2023 guidelines note that while belzutifan is approved for VHL-associated Pan-NETs, its value in metastatic Pan-NET outside of VHL is currently "unclear."
+*   **PRRT Assessment:** If LT is deemed unfeasible due to the Ki-67 index (15%) or progression, Peptide Receptor Radionuclide Therapy (PRRT) is a potential consideration for progressive disease. However, eligibility requires confirmation of sufficient uptake on SST-imaging. It must be acknowledged that PRRT eligibility requires DOTATATE/DOTATOC PET uptake higher than liver background in all primary tumor lesions and metastases. If lesions show heterogeneous or low uptake, PRRT is generally not indicated.
+*   **Chemotherapy:** According to ESMO guidelines, systemic chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is recommended in progressive G2 Pan-NETs, particularly when there is bulky disease or progression on other therapies.
+
+**Conclusion**
+While the patient meets the age and primary resection criteria for liver transplantation, she does not meet the strict ESMO guideline criteria regarding Ki-67 index (<10% required; patient is 15%) and current disease stability (patient is progressing). Furthermore, the reported bone pain necessitates urgent exclusion of extrahepatic bone metastases via high-sensitivity imaging (SST-PET/CT) before any definitive decision on "liver-only" procedures can be made.
+
+Urgency Level: medium
+Assessment Confidence: medium
+
+=== TRIAL ANALYSIS SUMMARY ===
+Total Trials Analyzed: 18
+Trials Marked for INCLUSION: 5
+Trials Marked for EXCLUSION: 13
+
+INCLUDED TRIALS:
+  - NCT03278379: Avelumab in G2-3 NET (Relevance: N/A)
+  - NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients (Relevance: N/A)
+  - NCT03217097: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents (Relevance: N/A)
+  - NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors (Relevance: N/A)
+  - NCT03972488: Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET (Relevance: N/A)
+
+=== GUIDELINES SUMMARY ===
+Matched Guidelines: 2
+
+  - Nonfunctioning pancreatic neuroendocrine tumours (Relevance: 1.0)
+  - Gastroenteropancreatic neuroendocrine neoplasms: ESMO Clinical Practice Guidelines for diagnosis, treatment and follow-up [y] (Relevance: 1.0)
+
+=== THERAPY RECOMMENDATION TO VALIDATE ===
+
+RECOMMENDATION:
+Based on the patient's clinical status (progressive G2 Pan-NET, Ki-67 15%) and the analyzed trial evidence, the following management strategy is recommended:
+
+**1. Diagnostic Work-up (Urgent)**
+*   **Action:** Perform a **Somatostatin Receptor (SSTR) PET/CT** (e.g., 68Ga-DOTATATE or 68Ga-DOTATOC) immediately.
+*   **Purpose:** To evaluate the reported "migratory bone pain" for bone metastases (which are poorly detected by CT) and to confirm SSTR expression levels for PRRT eligibility.
+
+**2. Liver Transplantation (LT) Feasibility**
+*   **Recommendation:** **Liver transplantation is NOT recommended** for this patient.
+*   **Reasoning:** The patient does not meet the strict ESMO Clinical Practice Guidelines criteria for LT:
+    *   **Tumor Biology:** Her Ki-67 index is **15%**, which exceeds the absolute threshold of **<10%** required for LT eligibility.
+    *   **Disease Stability:** She has active hepatic progression; guidelines require stable disease for at least 6 months prior to transplant consideration.
+    *   **Extrahepatic Risk:** The uninvestigated bone pain presents a high risk of extrahepatic disease, which is an absolute contraindication for LT.
+
+**3. Systemic Therapy Recommendation (Primary)**
+*   **Recommendation:** Initiate **Peptide Receptor Radionuclide Therapy (PRRT) with 177Lu-Dotatate**.
+*   **Condition:** This therapy is indicated upon confirmation of SSTR-positive disease, defined as uptake in tumor lesions significantly higher than the liver background (Krenning score 3 or 4).
+*   **Evidence (NETTER-2, NCT03972488):** This Phase 3 trial specifically evaluated 177Lu-Dotatate in patients with G2 (Ki-67 10–55%) and G3 GEP-NETs. The trial demonstrated a statistically significant improvement in **median Progression-Free Survival (PFS) to 22.8 months** compared to 8.5 months with high-dose octreotide (HR 0.276; p<0.0001).
+*   **Relevance:** This patient’s specific tumor proliferation index (Ki-67 15%) places her directly within the population that derived substantial benefit in this trial. PRRT is the recommended systemic treatment regardless of whether the disease is liver-limited or involves the bones, provided SSTR expression is sufficient.
+
+**4. Alternative Therapy (if SSTR-negative)**
+*   **Recommendation:** Initiate **Cabozantinib** (60 mg daily).
+*   **Evidence (CABINET, NCT03375320):** This Phase 3 trial demonstrated that Cabozantinib significantly improved **median PFS to 13.8 months** versus 4.4 months with placebo (HR 0.23) in patients with progressive pancreatic NETs, including those who had received prior targeted therapy. This serves as a strong evidence-based alternative if PRRT is not feasible.
+
+**5. Therapies to Exclude**
+*   **Immunotherapy (PD-L1 blockade):** Based on trial **NCT03278379** (Avelumab), single-agent PD-L1 blockade showed limited antitumor activity (ORR 0%) in G2-3 NETs and is not recommended.
+
+RATIONALE:
+**Diagnostic Urgency:**
+The patient reports "migratory bone pain," but her surveillance has relied on CT scans, which have poor sensitivity (approx. 61%) for bone metastases. The ESMO guidelines highlight this limitation. An SSTR-PET/CT is mandatory to rule out extrahepatic bone disease (which would definitively exclude liver transplantation) and to confirm eligibility for PRRT.
+
+**Liver Transplantation Contraindication:**
+While the patient meets the age (<60) and primary resection criteria, she fails two critical ESMO selection criteria for liver transplantation:
+1.  **Tumor Grade:** Her Ki-67 is 15%. Guidelines strictly limit LT to well-differentiated NETs with Ki-67 <10%.
+2.  **Progression:** LT requires at least 6 months of stable disease pre-transplant. This patient is currently progressing on belzutifan.
+Therefore, LT is not a feasible option, and the focus must shift to systemic disease control.
+
+**Therapy Selection:**
+*   **PRRT (177Lu-Dotatate):** The **NETTER-2 trial (NCT03972488)** provides high-level Phase 3 evidence specifically for patients with higher Ki-67 G2 NETs (10–55%). With a Ki-67 of 15%, this patient is the ideal candidate for this therapy, which offered a median PFS of 22.8 months in the trial. This is superior to the historical performance of other available agents in this setting. PRRT is indicated for metastatic disease, making it appropriate whether the patient has liver-only disease or confirmed bone metastases.
+*   **Cabozantinib:** If the patient's tumor does not express SSTRs (making PRRT impossible), **Cabozantinib** is the best alternative based on the **CABINET trial (NCT03375320)**, which showed a robust PFS benefit in pre-treated pNETs.
+*   **Chemotherapy:** While alkylating chemotherapy (e.g., Temozolomide) is an option for G2 Pan-NETs (supported by **NCT03217097** and guidelines), the specific Phase 3 evidence for PRRT in the Ki-67 10-55% population (NETTER-2) and Cabozantinib in progressive pNETs (CABINET) provides a stronger evidence basis for sequencing these therapies first in this patient, unless rapid debulking is required.
+*   **Immunotherapy:** Excluded due to lack of efficacy in G2-3 NETs (NCT03278379).
+
+=== YOUR VALIDATION TASK ===
+
+Carefully review the therapy recommendation against the evidence provided above.
+
+Check for the following issues:
+
+1. COMPLETENESS ISSUES:
+   - Does the recommendation address ALL clinical needs identified in the patient assessment?
+   - Are important clinical considerations (disease grade, symptoms, biomarkers, prior treatments) adequately addressed?
+   - Are alternative options discussed if the primary recommendation isn't feasible?
+
+2. ACCURACY ISSUES:
+   - Are all trial citations (NCT numbers) correctly used?
+   - Are the claimed trial outcomes/findings accurate based on the trial analysis?
+   - Are guideline recommendations correctly interpreted?
+   - Is there any evidence of fabricated or misrepresented data?
+
+3. CONSISTENCY ISSUES:
+   - Does the recommendation align with the urgency level from the patient assessment?
+   - Are there any internal contradictions in the recommendation?
+   - Does the rationale actually support the recommendation given?
+   - Are trials marked for EXCLUSION incorrectly being recommended?
+
+4. SAFETY ISSUES:
+   - Are known contraindications from the patient assessment respected?
+   - Are patient-specific risk factors (organ function, performance status) considered?
+   - Are monitoring requirements mentioned for high-risk therapies?
+
+5. ACTIONABILITY ISSUES:
+   - Are next steps clearly defined?
+   - Is the recommendation specific enough to be implemented?
+   - Are follow-up timelines provided?
+
+Provide your validation in the following format:
+
+<validation_decision>
+[State clearly: PASS or RECONSIDER]
+</validation_decision>
+
+<critical_issues>
+[List any critical issues that make the recommendation incomplete, wrong, or unsafe. Be specific about what is missing or incorrect. If none, write "None identified."]
+</critical_issues>
+
+<warnings>
+[List any non-critical concerns or areas for improvement. If none, write "None identified."]
+</warnings>
+
+<detailed_reasoning>
+[Provide detailed reasoning for your validation decision. Explain:
+- What you checked in each validation category
+- Specific examples of issues you found (quote relevant parts)
+- Why each issue is problematic for patient care
+- What would need to be corrected for the recommendation to pass validation
+Be thorough and specific - this reasoning will guide the regeneration process.]
+</detailed_reasoning>
+
+<recommendations_for_improvement>
+[If you marked as RECONSIDER, provide specific actionable guidance on what should be corrected or added in the regenerated recommendation. If PASS, write "No improvements needed."]
+</recommendations_for_improvement>
+
+Remember: Patient safety is paramount. If in doubt, mark as RECONSIDER and explain your concerns in detail.

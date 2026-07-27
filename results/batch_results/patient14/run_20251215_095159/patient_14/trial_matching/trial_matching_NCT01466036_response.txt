@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:17:26.328525
+Trial: 69/86
+NCT ID: NCT01466036
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 2 study is relevant as it evaluates cabozantinib in patients with advanced carcinoid tumors, aligning with the patient's diagnosis of a metastatic bronchial neuroendocrine tumor. Although the study's exclusion of \"high grade\" tumors might technically exclude this patient's Ki-67 of 25% (G3), her well-differentiated biology (SSTR-positive, low FDG) and clinical course are more consistent with the studied NET population than with poorly differentiated carcinoma. Consequently, the evidence regarding cabozantinib's efficacy is clinically transferable and highly relevant for decision-making. In the current clinical scenario, where the patient has progressed on PRRT and is intolerant to both chemotherapy (temozolomide, FOLFOX) and mTOR inhibitors (everolimus), she has exhausted standard lines of therapy. This study provides evidence for a distinct therapeutic mechanism (VEGF/MET/RET inhibition) that could serve as a viable salvage option to consolidate disease control."
+}

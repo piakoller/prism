@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-22T10:32:50.769535
+Trial: 31/86
+NCT ID: NCT05476978
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for therapy recommendations. The primary reason is the failure to meet the criteria for Treatment Context/Clinical Applicability and Evidence Quality/Relevance. The patient has a confirmed diagnosis of a metastatic Grade 2 pancreatic NET, and the clinical question is about the optimal first-line systemic treatment. The study (NCT05476978) evaluates a diagnostic tool—an EUS-AI model—to improve the accuracy of diagnosing solid pancreatic lesions. While the study population includes patients with NETs, its purpose is purely diagnostic. The published results focus on the model's diagnostic accuracy and its ability to assist endoscopists. This evidence has no bearing on therapeutic decisions for a patient whose disease has already been histologically confirmed and staged. The study provides no data on treatment efficacy, safety, or outcomes that could inform the choice between chemotherapy, PRRT, or other systemic options in any clinical scenario for this patient."
+}
+```

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T10:50:44.595171
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails Criterion 3 (Evidence Quality and Relevance). Although the patient's disease (SSTR-positive well-differentiated NET) and the treatment context (escalation to PRRT after progression on SSA) align perfectly with the study's design (Criteria 1 and 2), the provided data indicates that no published results are available. The citations listed are review articles that mention the trial as an ongoing initiative or describe its design, rather than reporting specific efficacy or safety outcomes. Without published data on tumor response rates or toxicity profiles for 90Y-DOTATOC in this setting, the study does not provide actionable evidence to guide the tumor board's decision regarding therapy escalation."
+}

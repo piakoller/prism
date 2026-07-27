@@ -1,0 +1,75 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Recommendation:**\nInitiation of **Cabozantinib** (60 mg orally once daily) combined with continuation of **Somatostatin Analogue (SSA)** therapy.\n\n**Evidence Support:**\nThis recommendation is supported by the Phase 3 **CABINET trial (NCT03375320)**, which demonstrated a significant improvement in progression-free survival (PFS) for patients with advanced extrapancreatic neuroendocrine tumors (epNETs) who had progressed on prior targeted therapy.\n*   **Key Findings:** In the epNET cohort, Cabozantinib extended median PFS to **8.4 months** compared to 3.9 months with placebo (HR 0.38; 95% CI, 0.25 to 0.59; P<0.001).\n\n**Alternative Options:**\n1.  **Everolimus (mTOR Inhibitor):**\n    *   Consider switching to Everolimus (10 mg daily) combined with SSA.\n    *   **Evidence:** While the **RADIANT-4** trial established Everolimus efficacy in *non-functional* GI NETs (median PFS 11.0 months), the **RADIANT-2** trial evaluated Everolimus plus Octreotide in *functional* NETs. Although RADIANT-2 narrowly missed statistical significance for its primary endpoint, it showed a trend toward improved PFS (16.4 vs 11.3 months) and supports clinical use in this setting.\n2.  **PRRT Re-treatment:**\n    *   Consider re-treatment with Peptide Receptor Radionuclide Therapy (PRRT) or novel alpha-emitter therapy (e.g., **212Pb-DOTAMTATE**), provided the patient meets strict imaging criteria.\n    *   **Evidence:** The **AlphaMedix trial (NCT05153772)** reported an Objective Response Rate (ORR) of approximately 55% in patients refractory to prior PRRT.\n    *   **Prerequisite:** Re-staging with [68]Ga-SSTR-PET/CT is mandatory. Uptake in all metastatic liver lesions must be significantly higher than liver background (Krenning score 3-4).\n\n**Contraindications & Exclusions:**\n*   **Immunotherapy (Single Agent):** Not recommended. The Phase 2 trial of **Avelumab (NCT03278379)** in G2-3 NETs demonstrated an ORR of 0%, indicating a lack of efficacy for single-agent PD-L1 blockade in this population.\n*   **Chemotherapy:** Generally not recommended for well-differentiated G2 GI NETs with low Ki-67 (3–5%) due to low response rates (ORR ~11.5%) and potential toxicity, as per ESMO guidelines.\n\n**Safety & Management:**\n*   **SSA Continuation:** Due to the patient's history of a **functional** duodenal tumor, concurrent SSA therapy (e.g., Octreotide LAR or Lanreotide) must be continued to maintain symptom control and prevent carcinoid crisis, even though the patient is currently asymptomatic.\n*   **Cabozantinib Toxicity:** Monitor for hypertension, fatigue, diarrhea, and palmar-plantar erythrodysesthesia. Dose reductions may be required.",
+  "rationale_text": "**Clinical Context and Treatment Selection:**\nThe patient presents with a well-differentiated, functional duodenal NET (G2, Ki-67 3–5%) with liver-only metastases that have progressed after multiple lines of therapy, including SSAs, locoregional therapies, PRRT, and two Tyrosine Kinase Inhibitors (Surufatinib and Sunitinib). The patient is currently asymptomatic (ECOG PS 0), indicating a dissociation between radiological progression and clinical symptoms.\n\n**Rationale for Cabozantinib (Primary Recommendation):**\nGiven the progression on prior TKIs (Sunitinib and Surufatinib), the patient requires a therapy with proven efficacy in the refractory setting. The **CABINET trial (NCT03375320)** provides the most robust, high-level evidence for this specific clinical scenario. It specifically enrolled patients with progressive extrapancreatic NETs who had received prior targeted therapy (including Sunitinib and Everolimus). The substantial PFS benefit (8.4 months vs. 3.9 months) makes Cabozantinib the logical next line of systemic therapy.\n\n**Rationale for Everolimus (Alternative):**\nEverolimus is a guideline-recommended option for progressive GI NETs. However, the specific evidence basis requires careful application to this patient's **functional** status.\n*   **RADIANT-4** excluded functional tumors but demonstrated efficacy in non-functional GI NETs.\n*   **RADIANT-2** included functional tumors (carcinoid syndrome) and compared Everolimus + Octreotide vs. Placebo + Octreotide. While it technically missed significance (p=0.026 vs threshold 0.024), the clinical trend supports activity in functional disease.\n*   Since the patient is currently asymptomatic, the distinction between functional and non-functional regarding *antiproliferative* efficacy is less distinct, but SSA continuation is mandatory to prevent symptom recurrence.\n\n**Rationale for PRRT Re-treatment:**\nThe patient received PRRT 7–8 years ago. Re-treatment is a viable consideration for patients with good prior response and preserved organ function. The **AlphaMedix trial (NCT05153772)** offers promising data (ORR ~55%) for PRRT-refractory patients using targeted alpha therapy (212Pb-DOTAMTATE). However, eligibility hinges strictly on high SSTR expression on a new PET/CT scan. If lesions have lost receptor expression (dedifferentiation), this option is invalid.\n\n**Rationale for Excluding Chemotherapy and Immunotherapy:**\n*   **Chemotherapy:** ESMO guidelines advise against systemic chemotherapy for G2 GI NETs with low Ki-67 (3–5%) due to poor response rates.\n*   **Immunotherapy:** The **NCT03278379** trial showed no objective responses with Avelumab in G2-3 NETs, supporting the exclusion of single-agent checkpoint inhibitors. While the combination of Atezolizumab/Bevacizumab (NCT03074513) showed modest activity, Cabozantinib has stronger Phase 3 evidence in this setting.\n\n**Symptom Management:**\nAlthough the patient reports \"no relevant clinical symptoms,\" the tumor is biologically functional. Discontinuation of SSAs poses a risk of symptom recurrence or carcinoid crisis. Therefore, SSAs should be maintained as a backbone therapy regardless of the antiproliferative agent chosen.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Recommendation:**\nInitiation of **Cabozantinib** (60 mg orally once daily) combined with continuation of **Somatostatin Analogue (SSA)** therapy",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT05153772",
+      "nct_id": "NCT05153772",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03278379",
+      "nct_id": "NCT03278379",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT05153772",
+        "trial_name": "Trial NCT05153772",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT03278379",
+        "trial_name": "Trial NCT03278379",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**Primary Recommendation:**\nInitiation of **Cabozantinib** (60 mg orally once daily) combined with continuation of **Somatostatin Analogue (SSA)** therapy.\n\n**Evidence Support:**\nThis recommendation is supported by the Phase 3 **CABINET trial (NCT03375320)**, which demonstrated a significant improvement in progression-free survival (PFS) for patients with advanced extrapancreatic neuroendocrine tumors (epNETs) who had progressed on prior targeted therapy.\n*   **Key Findings:** In the epNET cohort, Cabozantinib extended median PFS to **8.4 months** compared to 3.9 months with placebo (HR 0.38; 95% CI, 0.25 to 0.59; P<0.001).\n\n**Alternative Options:**\n1.  **Everolimus (mTOR Inhibitor):**\n    *   Consider switching to Everolimus (10 mg daily) combined with SSA.\n    *   **Evidence:** While the **RADIANT-4** trial established Everolimus efficacy in *non-functional* GI NETs (median PFS 11.0 months), the **RADIANT-2** trial evaluated Everolimus plus Octreotide in *functional* NETs. Although RADIANT-2 narrowly missed statistical significance for its primary endpoint, it showed a trend toward improved PFS (16.4 vs 11.3 months) and supports clinical use in this setting.\n2.  **PRRT Re-treatment:**\n    *   Consider re-treatment with Peptide Receptor Radionuclide Therapy (PRRT) or novel alpha-emitter therapy (e.g., **212Pb-DOTAMTATE**), provided the patient meets strict imaging criteria.\n    *   **Evidence:** The **AlphaMedix trial (NCT05153772)** reported an Objective Response Rate (ORR) of approximately 55% in patients refractory to prior PRRT.\n    *   **Prerequisite:** Re-staging with [68]Ga-SSTR-PET/CT is mandatory. Uptake in all metastatic liver lesions must be significantly higher than liver background (Krenning score 3-4).\n\n**Contraindications & Exclusions:**\n*   **Immunotherapy (Single Agent):** Not recommended. The Phase 2 trial of **Avelumab (NCT03278379)** in G2-3 NETs demonstrated an ORR of 0%, indicating a lack of efficacy for single-agent PD-L1 blockade in this population.\n*   **Chemotherapy:** Generally not recommended for well-differentiated G2 GI NETs with low Ki-67 (3–5%) due to low response rates (ORR ~11.5%) and potential toxicity, as per ESMO guidelines.\n\n**Safety & Management:**\n*   **SSA Continuation:** Due to the patient's history of a **functional** duodenal tumor, concurrent SSA therapy (e.g., Octreotide LAR or Lanreotide) must be continued to maintain symptom control and prevent carcinoid crisis, even though the patient is currently asymptomatic.\n*   **Cabozantinib Toxicity:** Monitor for hypertension, fatigue, diarrhea, and palmar-plantar erythrodysesthesia. Dose reductions may be required.\n</therapy_recommendation>\n\n<rationale>\n**Clinical Context and Treatment Selection:**\nThe patient presents with a well-differentiated, functional duodenal NET (G2, Ki-67 3–5%) with liver-only metastases that have progressed after multiple lines of therapy, including SSAs, locoregional therapies, PRRT, and two Tyrosine Kinase Inhibitors (Surufatinib and Sunitinib). The patient is currently asymptomatic (ECOG PS 0), indicating a dissociation between radiological progression and clinical symptoms.\n\n**Rationale for Cabozantinib (Primary Recommendation):**\nGiven the progression on prior TKIs (Sunitinib and Surufatinib), the patient requires a therapy with proven efficacy in the refractory setting. The **CABINET trial (NCT03375320)** provides the most robust, high-level evidence for this specific clinical scenario. It specifically enrolled patients with progressive extrapancreatic NETs who had received prior targeted therapy (including Sunitinib and Everolimus). The substantial PFS benefit (8.4 months vs. 3.9 months) makes Cabozantinib the logical next line of systemic therapy.\n\n**Rationale for Everolimus (Alternative):**\nEverolimus is a guideline-recommended option for progressive GI NETs. However, the specific evidence basis requires careful application to this patient's **functional** status.\n*   **RADIANT-4** excluded functional tumors but demonstrated efficacy in non-functional GI NETs.\n*   **RADIANT-2** included functional tumors (carcinoid syndrome) and compared Everolimus + Octreotide vs. Placebo + Octreotide. While it technically missed significance (p=0.026 vs threshold 0.024), the clinical trend supports activity in functional disease.\n*   Since the patient is currently asymptomatic, the distinction between functional and non-functional regarding *antiproliferative* efficacy is less distinct, but SSA continuation is mandatory to prevent symptom recurrence.\n\n**Rationale for PRRT Re-treatment:**\nThe patient received PRRT 7–8 years ago. Re-treatment is a viable consideration for patients with good prior response and preserved organ function. The **AlphaMedix trial (NCT05153772)** offers promising data (ORR ~55%) for PRRT-refractory patients using targeted alpha therapy (212Pb-DOTAMTATE). However, eligibility hinges strictly on high SSTR expression on a new PET/CT scan. If lesions have lost receptor expression (dedifferentiation), this option is invalid.\n\n**Rationale for Excluding Chemotherapy and Immunotherapy:**\n*   **Chemotherapy:** ESMO guidelines advise against systemic chemotherapy for G2 GI NETs with low Ki-67 (3–5%) due to poor response rates.\n*   **Immunotherapy:** The **NCT03278379** trial showed no objective responses with Avelumab in G2-3 NETs, supporting the exclusion of single-agent checkpoint inhibitors. While the combination of Atezolizumab/Bevacizumab (NCT03074513) showed modest activity, Cabozantinib has stronger Phase 3 evidence in this setting.\n\n**Symptom Management:**\nAlthough the patient reports \"no relevant clinical symptoms,\" the tumor is biologically functional. Discontinuation of SSAs poses a risk of symptom recurrence or carcinoid crisis. Therefore, SSAs should be maintained as a backbone therapy regardless of the antiproliferative agent chosen.\n</rationale>",
+  "metadata": {
+    "timestamp": "2025-12-08T16:20:51.342843",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 4,
+    "trials_considered": 15,
+    "trials_included": 7,
+    "trials_excluded": 8,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20251208_152730\\patient_4\\patient_4_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20251208_152730\\patient_4\\patient_4_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20251208_152730\\patient_4\\patient_4_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20251208_152730\\patient_4\\patient_4_therapy_recommendation_reasoning.txt"
+  },
+  "regeneration_iteration": 2
+}

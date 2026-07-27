@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T21:01:36.568597
+Trial: 15/86
+NCT ID: NCT02568267
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase 2 basket trial (STARTRK-2) provides meaningful evidence for a potential late-line salvage therapy, contingent on molecular testing results. Although NTRK fusions are rare in pancreatic neuroendocrine tumors (Pan-NETs), the study explicitly demonstrates efficacy in NTRK fusion-positive solid tumors, including a published case of a neuroendocrine cancer patient achieving a rapid response (Sigal et al., 2017). For this 70-year-old fragile patient who has exhausted seven lines of standard therapy (including SSAs, PRRT, Everolimus, Sunitinib, and chemotherapy), identifying an actionable molecular driver is a critical next step. The study provides the clinical evidence to justify performing Next-Generation Sequencing (NGS) to screen for NTRK fusions. If a fusion is detected (a potential scenario as more information becomes available), Entrectinib would offer a highly active, targeted systemic option with a likely more favorable toxicity profile for a fragile patient compared to further cytotoxic chemotherapy. Thus, the study informs the recommendation to screen for this alteration to potentially access this therapy."
+}

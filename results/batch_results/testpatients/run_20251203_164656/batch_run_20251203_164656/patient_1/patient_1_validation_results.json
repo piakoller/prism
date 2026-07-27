@@ -1,0 +1,58 @@
+{
+  "patient_id": 1,
+  "timestamp": "2025-12-04T12:04:41.373494",
+  "validation_steps": {
+    "structural": {
+      "status": "pass",
+      "critical_issues": [],
+      "warnings": [],
+      "checks_performed": [
+        "Required sections present",
+        "Minimum content length",
+        "Urgency alignment",
+        "Trial discussion completeness",
+        "Metadata completeness"
+      ]
+    },
+    "evidence_consistency": {
+      "status": "pass",
+      "critical_issues": [],
+      "warnings": [],
+      "evidence_stats": {
+        "trials_cited": 4,
+        "trials_available": 11,
+        "trials_included": 6,
+        "trials_excluded": 5,
+        "hallucinated_citations": 0
+      },
+      "checks_performed": [
+        "Trial citation accuracy",
+        "Hallucination detection",
+        "Inclusion/exclusion consistency",
+        "Coverage of included trials"
+      ]
+    },
+    "semantic": {
+      "status": "fail",
+      "decision": "RECONSIDER",
+      "critical_issues": [],
+      "warnings": [],
+      "detailed_reasoning": "",
+      "improvement_recommendations": "",
+      "raw_response": "",
+      "checks_performed": [
+        "Completeness validation",
+        "Accuracy validation",
+        "Consistency validation",
+        "Safety validation",
+        "Actionability validation"
+      ],
+      "prompt_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_1\\patient_1_validation_prompt.txt",
+      "response_file": "batch_results/run_20251203_164656\\batch_run_20251203_164656\\patient_1\\patient_1_validation_response.txt"
+    }
+  },
+  "overall_status": "passed",
+  "requires_regeneration": false,
+  "regeneration_reasons": [],
+  "validation_summary": "======================================================================\nTHERAPY RECOMMENDATION VALIDATION REPORT\n======================================================================\nPatient ID: 1\nTimestamp: 2025-12-04T12:04:41.373494\nOverall Status: PASSED\nRequires Regeneration: NO\n\n--- STRUCTURAL VALIDATION ---\nStatus: PASS\n  ✅ No issues found\n\n--- EVIDENCE CONSISTENCY VALIDATION ---\nStatus: PASS\nTrials cited: 4\nTrials available: 11\nHallucinated citations: 0\n  ✅ No issues found\n\n--- SEMANTIC VALIDATION (LLM-BASED) ---\nDecision: RECONSIDER\nStatus: FAIL\n  ✅ No issues found\n\n======================================================================\n✅ VALIDATION PASSED - NO REGENERATION NEEDED\n======================================================================"
+}

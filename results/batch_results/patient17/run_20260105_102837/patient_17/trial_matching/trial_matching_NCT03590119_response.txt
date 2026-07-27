@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T10:47:22.577841
+Trial: 44/86
+NCT ID: NCT03590119
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not provide meaningful evidence for this patient for two key reasons. First, the provided text is a study protocol (2020) outlining the design of the LUTIA trial, but it does not include the published efficacy or safety results required to inform treatment decisions (Criterion 3). Second, the clinical applicability is low; the trial investigates intra-arterial (IA) Lutetium-177-dotatate specifically for patients with bulky (>25% tumor load), liver-dominant metastases to improve uptake in large lesions. This patient presents with limited liver recurrence (two new metastases) and suspected extrahepatic (lymph node) disease, a scenario well-suited for standard intravenous PRRT rather than a specialized liver-directed intra-arterial approach designed for high-burden liver disease (Criterion 2)."
+}

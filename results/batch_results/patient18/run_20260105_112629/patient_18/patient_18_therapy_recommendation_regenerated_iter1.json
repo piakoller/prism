@@ -1,0 +1,75 @@
+{
+  "trial_selection_reasoning": "",
+  "therapy_recommendation_text": "**Primary Systemic Therapy Recommendation:**\n**Cabozantinib** (60 mg orally once daily).\n*   **Evidence:** The Phase 3 **CABINET trial (NCT03375320)** provides high-level evidence for this specific clinical scenario. In patients with advanced extrapancreatic neuroendocrine tumors (including lung NETs) who experienced disease progression after prior therapy (including PRRT), Cabozantinib demonstrated a statistically significant improvement in progression-free survival (PFS) compared to placebo (median PFS **8.4 months** vs. 3.9 months; HR 0.38; 95% CI, 0.25 to 0.59; P<0.001).\n\n**Strong Alternative / Clinical Trial Consideration:**\n**Targeted Alpha-Therapy (212Pb-DOTAMTATE)** or **PRRT Retreatment (177Lu-DOTATATE)**.\n*   **Evidence:** Given the patient's \"intensive\" SSTR uptake and durable response to prior PRRT (stability from ~2022 to March 2025), SSTR-targeted therapy remains a biologically sound approach. The Phase 2 trial **NCT05153772** evaluating **212Pb-DOTAMTATE (AlphaMedix)** in patients who progressed on prior PRRT reported an Objective Response Rate (ORR) of approximately 55%, offering a potent option for refractory disease. Alternatively, retreatment with 177Lu-DOTATATE is supported by registry data (**NCT02236910**) suggesting utility in patients with prior durable responses.\n\n**Symptom Management & Safety Pre-requisites:**\n**Investigate the etiology of \"loose stools\" prior to initiating Cabozantinib.**\n*   Differentiation is critical because Cabozantinib is associated with high rates of diarrhea (Grade 3+ in ~62-65% of patients in CABINET).\n*   **If Carcinoid Syndrome (CS) is confirmed:** Initiate **Telotristat ethyl** (250 mg three times daily) as an add-on to SSA. Evidence from the real-world study **NCT03223428** and pivotal trials confirms its efficacy in reducing bowel movement frequency in refractory CS.\n*   **If Non-CS (e.g., SSA-induced steatorrhea):** Manage with pancreatic enzyme replacement or anti-motility agents to ensure baseline bowel function is optimized before adding a diarrhea-inducing tyrosine kinase inhibitor.\n\n**Therapies to AVOID:**\n*   **Single-agent Immunotherapy (PD-1/PD-L1 inhibitors):** Do not use single-agent Nivolumab or Avelumab.\n    *   **Evidence:** The **DART trial (NCT02834013)** demonstrated a **0% ORR** in low/intermediate-grade NETs treated with Ipilimumab plus Nivolumab. Similarly, **NCT03278379** showed **0% ORR** with Avelumab in G2-3 NETs.\n*   **Ribociclib + Everolimus:** Do not use this combination.\n    *   **Evidence:** **NCT03070301** demonstrated insufficient activity and significant toxicity (myelosuppression) in foregut NETs.",
+  "rationale_text": "**Clinical Context and Evidence Selection:**\nThe patient presents with a metastatic typical carcinoid of the lung (G2, Ki-67 5%) with widespread progression (liver, bone, nodal) documented in March 2025. Assuming the patient maintains the reported ECOG 0-1 status, the primary decision involves selecting the most effective antiproliferative therapy following progression on SSA and a completed course of PRRT.\n\n**Justification for Cabozantinib:**\nCabozantinib is recommended as the primary systemic option based on the definitive Phase 3 **CABINET trial (NCT03375320)** results. This trial specifically addressed the patient's population (progressive extrapancreatic NETs after prior therapy) and demonstrated a robust PFS benefit (HR 0.38). This provides the highest level of evidence for a standard-of-care switch in this setting.\n\n**Justification for SSTR-Targeted Alternatives:**\nThe patient achieved disease stability from metastatic diagnosis in 2022 until March 2025 following PRRT. This represents a progression-free interval of approximately 2-3 years, which is clinically defined as a durable response. Combined with the PET/CT finding of \"intensive tracer activity\" in the new lesions, the tumor biology remains highly SSTR-driven. Therefore, unlike patients with rapid progression or loss of SSTR expression, this patient is an excellent candidate for **PRRT retreatment** or novel **Alpha-emitter therapy**. The **NCT05153772** trial for 212Pb-DOTAMTATE is particularly relevant as it targets patients who have progressed on prior PRRT, showing high response rates (ORR ~55%) that may exceed those of cytostatic TKIs.\n\n**Safety and Symptom Management:**\nThe patient reports \"loose stools.\" Clarifying the cause is a safety prerequisite for Cabozantinib therapy.\n1.  **Carcinoid Syndrome:** If the diarrhea is secretory (functional), **Telotristat ethyl** is indicated based on **NCT03223428** to control symptoms and improve quality of life.\n2.  **Drug Toxicity:** If the diarrhea is due to Cabozantinib toxicity later, dose reductions may be required.\n3.  **Steatorrhea:** If related to SSA use, pancreatic enzymes are indicated.\nInitiating Cabozantinib without controlling baseline diarrhea could lead to severe toxicity and early treatment discontinuation.\n\n**Exclusion of Immunotherapy:**\nDespite the success of immunotherapy in other lung cancers, trial evidence in low/intermediate grade neuroendocrine tumors is negative. The **DART trial (NCT02834013)** and **NCT03278379** consistently show a lack of response (0% ORR) in G2 NETs. Therefore, checkpoint inhibitors should be avoided in this patient unless combined with chemotherapy (e.g., Temozolomide) in a trial setting, though Cabozantinib currently offers a higher level of evidence for monotherapy.",
+  "recommendation_summary": {
+    "primary_recommendation": "**Primary Systemic Therapy Recommendation:**\n**Cabozantinib** (60 mg orally once daily)",
+    "recommendation_strength": "medium",
+    "evidence_level": "medium",
+    "urgency": "routine"
+  },
+  "therapy_recommendations": [
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT03375320",
+      "nct_id": "NCT03375320",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT05153772",
+      "nct_id": "NCT05153772",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    },
+    {
+      "option_type": "trial_participation",
+      "therapy_name": "Clinical trial NCT02236910",
+      "nct_id": "NCT02236910",
+      "rationale": "Based on therapy recommendation text",
+      "priority_level": "medium"
+    }
+  ],
+  "trial_opportunities": {
+    "recommended_trials": [
+      {
+        "nct_id": "NCT03375320",
+        "trial_name": "Trial NCT03375320",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT05153772",
+        "trial_name": "Trial NCT05153772",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      },
+      {
+        "nct_id": "NCT02236910",
+        "trial_name": "Trial NCT02236910",
+        "why_recommended": "Mentioned in therapy recommendation",
+        "potential_impact": "As described in recommendation text"
+      }
+    ],
+    "trial_search_suggestions": []
+  },
+  "evidence_confidence": "medium",
+  "raw_response": "<therapy_recommendation>\n**Primary Systemic Therapy Recommendation:**\n**Cabozantinib** (60 mg orally once daily).\n*   **Evidence:** The Phase 3 **CABINET trial (NCT03375320)** provides high-level evidence for this specific clinical scenario. In patients with advanced extrapancreatic neuroendocrine tumors (including lung NETs) who experienced disease progression after prior therapy (including PRRT), Cabozantinib demonstrated a statistically significant improvement in progression-free survival (PFS) compared to placebo (median PFS **8.4 months** vs. 3.9 months; HR 0.38; 95% CI, 0.25 to 0.59; P<0.001).\n\n**Strong Alternative / Clinical Trial Consideration:**\n**Targeted Alpha-Therapy (212Pb-DOTAMTATE)** or **PRRT Retreatment (177Lu-DOTATATE)**.\n*   **Evidence:** Given the patient's \"intensive\" SSTR uptake and durable response to prior PRRT (stability from ~2022 to March 2025), SSTR-targeted therapy remains a biologically sound approach. The Phase 2 trial **NCT05153772** evaluating **212Pb-DOTAMTATE (AlphaMedix)** in patients who progressed on prior PRRT reported an Objective Response Rate (ORR) of approximately 55%, offering a potent option for refractory disease. Alternatively, retreatment with 177Lu-DOTATATE is supported by registry data (**NCT02236910**) suggesting utility in patients with prior durable responses.\n\n**Symptom Management & Safety Pre-requisites:**\n**Investigate the etiology of \"loose stools\" prior to initiating Cabozantinib.**\n*   Differentiation is critical because Cabozantinib is associated with high rates of diarrhea (Grade 3+ in ~62-65% of patients in CABINET).\n*   **If Carcinoid Syndrome (CS) is confirmed:** Initiate **Telotristat ethyl** (250 mg three times daily) as an add-on to SSA. Evidence from the real-world study **NCT03223428** and pivotal trials confirms its efficacy in reducing bowel movement frequency in refractory CS.\n*   **If Non-CS (e.g., SSA-induced steatorrhea):** Manage with pancreatic enzyme replacement or anti-motility agents to ensure baseline bowel function is optimized before adding a diarrhea-inducing tyrosine kinase inhibitor.\n\n**Therapies to AVOID:**\n*   **Single-agent Immunotherapy (PD-1/PD-L1 inhibitors):** Do not use single-agent Nivolumab or Avelumab.\n    *   **Evidence:** The **DART trial (NCT02834013)** demonstrated a **0% ORR** in low/intermediate-grade NETs treated with Ipilimumab plus Nivolumab. Similarly, **NCT03278379** showed **0% ORR** with Avelumab in G2-3 NETs.\n*   **Ribociclib + Everolimus:** Do not use this combination.\n    *   **Evidence:** **NCT03070301** demonstrated insufficient activity and significant toxicity (myelosuppression) in foregut NETs.\n</therapy_recommendation>\n\n<rationale>\n**Clinical Context and Evidence Selection:**\nThe patient presents with a metastatic typical carcinoid of the lung (G2, Ki-67 5%) with widespread progression (liver, bone, nodal) documented in March 2025. Assuming the patient maintains the reported ECOG 0-1 status, the primary decision involves selecting the most effective antiproliferative therapy following progression on SSA and a completed course of PRRT.\n\n**Justification for Cabozantinib:**\nCabozantinib is recommended as the primary systemic option based on the definitive Phase 3 **CABINET trial (NCT03375320)** results. This trial specifically addressed the patient's population (progressive extrapancreatic NETs after prior therapy) and demonstrated a robust PFS benefit (HR 0.38). This provides the highest level of evidence for a standard-of-care switch in this setting.\n\n**Justification for SSTR-Targeted Alternatives:**\nThe patient achieved disease stability from metastatic diagnosis in 2022 until March 2025 following PRRT. This represents a progression-free interval of approximately 2-3 years, which is clinically defined as a durable response. Combined with the PET/CT finding of \"intensive tracer activity\" in the new lesions, the tumor biology remains highly SSTR-driven. Therefore, unlike patients with rapid progression or loss of SSTR expression, this patient is an excellent candidate for **PRRT retreatment** or novel **Alpha-emitter therapy**. The **NCT05153772** trial for 212Pb-DOTAMTATE is particularly relevant as it targets patients who have progressed on prior PRRT, showing high response rates (ORR ~55%) that may exceed those of cytostatic TKIs.\n\n**Safety and Symptom Management:**\nThe patient reports \"loose stools.\" Clarifying the cause is a safety prerequisite for Cabozantinib therapy.\n1.  **Carcinoid Syndrome:** If the diarrhea is secretory (functional), **Telotristat ethyl** is indicated based on **NCT03223428** to control symptoms and improve quality of life.\n2.  **Drug Toxicity:** If the diarrhea is due to Cabozantinib toxicity later, dose reductions may be required.\n3.  **Steatorrhea:** If related to SSA use, pancreatic enzymes are indicated.\nInitiating Cabozantinib without controlling baseline diarrhea could lead to severe toxicity and early treatment discontinuation.\n\n**Exclusion of Immunotherapy:**\nDespite the success of immunotherapy in other lung cancers, trial evidence in low/intermediate grade neuroendocrine tumors is negative. The **DART trial (NCT02834013)** and **NCT03278379** consistently show a lack of response (0% ORR) in G2 NETs. Therefore, checkpoint inhibitors should be avoided in this patient unless combined with chemotherapy (e.g., Temozolomide) in a trial setting, though Cabozantinib currently offers a higher level of evidence for monotherapy.\n</rationale>",
+  "metadata": {
+    "timestamp": "2026-01-05T15:01:29.285953",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 18,
+    "trials_considered": 17,
+    "trials_included": 13,
+    "trials_excluded": 4,
+    "assessment_confidence": "medium",
+    "analysis_complete": true,
+    "guidelines_provided": true,
+    "prompt_file": "batch_results/run_20260105_112629\\patient_18\\patient_18_therapy_recommendation_prompt.txt",
+    "response_file": "batch_results/run_20260105_112629\\patient_18\\patient_18_therapy_recommendation_raw_response.txt",
+    "reasoning_file": "batch_results/run_20260105_112629\\patient_18\\patient_18_trial_analysis_reasoning.txt",
+    "llm_reasoning_file": "batch_results/run_20260105_112629\\patient_18\\patient_18_therapy_recommendation_reasoning.txt"
+  },
+  "regeneration_iteration": 1
+}

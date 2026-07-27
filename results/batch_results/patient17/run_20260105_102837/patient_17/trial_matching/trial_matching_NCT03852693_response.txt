@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T10:42:41.963136
+Trial: 32/86
+NCT ID: NCT03852693
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study is not relevant because it focuses exclusively on the surgical management of localized appendiceal neuroendocrine tumors (aNETs) measuring 1-2 cm, specifically comparing appendectomy versus right-sided hemicolectomy to assess long-term outcomes. This does not align with the patient's diagnosis of a metastatic duodenal NET, nor does it address the clinical question of escalating systemic therapy (e.g., PRRT, everolimus) or managing progressive liver metastases. The biological behavior and treatment guidelines for small, localized appendiceal NETs are distinct from those for progressive, metastatic duodenal NETs. Consequently, the study's findings regarding the extent of primary tumor resection offer no actionable evidence for this patient's current scenario of systemic disease progression."
+}

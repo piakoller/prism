@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:20:35.493756
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study evaluates 212Pb-DOTAMTATE (Targeted Alpha Therapy) specifically in patients with SSTR-positive neuroendocrine tumors (NETs). This does not align with the patient's diagnosis of a high-grade Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95% (Criterion 1: Disease/Biology Alignment not met). Unlike well-differentiated NETs, NECs with such high proliferation indices typically lack sufficient somatostatin receptor expression for radionuclide therapy, and the provided clinical assessment explicitly notes that PRRT is likely unsuitable for this patient due to aggressive biology and FDG-avidity. Consequently, the study's efficacy results (ORR 56.8% in SSTR+ NETs) are not clinically transferable to this patient's scenario of consolidating a response in a poorly differentiated carcinoma (Criterion 2 not met). Without confirmed SSTR expression—which is clinically unlikely given the histology—this targeted therapy approach does not offer a viable treatment option."
+}

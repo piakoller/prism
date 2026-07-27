@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:10:28.755580
+Trial: 33/86
+NCT ID: NCT02754297
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "The study is relevant because it provides prospective evidence on the efficacy and safety of personalized Peptide Receptor Radionuclide Therapy (PRRT) in patients with progressive neuroendocrine tumors, specifically reporting a high response rate in pancreatic NETs (84.6% partial or minor response). This aligns well with the patient's diagnosis of a metastatic Grade 2 Pancreatic NET with a Ki-67 of 15%. Although the patient currently exhibits heterogeneous SSTR expression (low uptake in the primary, high in metastases) which complicates standard PRRT eligibility, the study's findings on maximizing tumor dose and achieving objective responses are clinically valuable for the Tumor Board. This evidence helps weigh the potential benefit of PRRT for the avid, bulky metastatic burden (liver, bone) against the limitations regarding the primary tumor, or supports considering PRRT as a subsequent line of therapy if chemotherapy (the likely first-line choice due to heterogeneity and symptoms) is used first or if the primary is locally controlled."
+}

@@ -1,0 +1,79 @@
+================================================================================
+CRITICAL: REGENERATION REQUIRED - CUMULATIVE VALIDATION ISSUES
+================================================================================
+
+⚠️  ATTENTION: This is a REGENERATION with cumulative feedback from ALL previous attempts.
+The issues below include BOTH new issues AND unresolved issues from prior iterations.
+You MUST address EVERY issue listed - not just the newest ones.
+
+================================================================================
+PREVIOUS RECOMMENDATION THAT FAILED VALIDATION
+================================================================================
+
+Based on the patient's clinical profile (symptomatic, G1, SSTR-positive NF-Pan-NET with oligometastatic liver and nodal disease) and the provided evidence, the recommended therapy is:
+
+**1. Primary Strategy: Surgical Resection (If R0 Feasible)**
+**Recommendation:** Proceed with **pancreaticoduodenectomy (Whipple procedure)** combined with **resection or ablation of liver metastases** and regional lymphadenectomy.
+*   **Condition:** This is indicated only if the multidisciplinary surgical team confirms that a curative (R0) resection is technically feasible, specifically addressing the 3 cm contact with the portal/superior mesenteric vein and the retroperitoneal paraaortic lymph nodes.
+*   **Guideline Support:** ENETS guidelines strongly recommend surgery for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation (both present here). The guidelines also state that radical resection including venous resection can be performed safely in expert centers.
+
+**2. Neoadjuvant Strategy: Peptide Receptor Radionuclide Therapy (PRRT) (If R0 Not Feasible)**
+**Recommendation:** If R0 resection is assessed as not immediately feasible due to the vascular contact or retroperitoneal nodal extent, administer **neoadjuvant PRRT with 177Lu-DOTATATE**.
+*   **Trial Evidence:**
+    *   **NCT02754297 (Personalized PRRT):** According to the publication abstract included in the trial evidence (Del Prete et al.), this Phase 2 trial demonstrated that personalized PRRT achieved a **partial or minor response in 84.6% (11 of 13)** of patients with pancreatic NETs. This high response rate supports the utility of PRRT for tumor shrinkage (downstaging) to facilitate future resection.
+    *   **NCT02236910:** This registry study reported a median progression-free survival (PFS) of **34.1 months** in well-differentiated NETs treated with 177Lu-DOTATATE, supporting its efficacy in this patient population.
+*   **Guideline Support:** ENETS guidelines explicitly suggest that preoperative treatment with PRRT may be considered in selected cases of locally advanced or oligometastatic SSTR-positive NF-Pan-NETs to facilitate R0 resection.
+*   **Eligibility:** The patient's DOTATOC PET/CT shows "intense accumulation," satisfying the requirement for high SSTR expression.
+
+**3. Systemic Therapy: Somatostatin Analogues (SSAs)**
+**Recommendation:** Initiate **Lanreotide Autogel (120 mg)** or **Octreotide LAR (30 mg)** every 4 weeks for antiproliferative control and symptom management.
+*   **Trial Evidence:**
+    *   **NCT02730104:** The prospective observational study by Paulson et al. demonstrated a **24-month PFS rate of 73.7%** in patients with GEP-NETs treated with Lanreotide, confirming its real-world effectiveness and safety profile.
+*   **Guideline Support:** ESMO and ENETS guidelines recommend SSAs as first-line antiproliferative therapy for SSTR-positive, well-differentiated (G1) NF-Pan-NETs.
+
+⚠️  The above recommendation had validation issues. Review it carefully and
+correct the specific problems identified below while preserving correct sections.
+
+================================================================================
+ALL VALIDATION ISSUES (CUMULATIVE)
+================================================================================
+
+📊 Total issues to address: 2
+
+### ACCURACY ISSUES:
+  ❌ Semantic: **Accuracy / Evidence Hallucination**: The recommendation cites specific numerical outcomes (e.g., "partial or minor response in 84.6%", "median PFS of 34.1 months", "24-month PFS rate of 73.7%") and attributes them to abstracts "included in the trial evidence." However, the **Trial Analysis Summary** provided in the prompt contains only trial titles and IDs with no results, abstracts, or data. The recommendation is citing evidence that is not present in the provided source material.
+  ❌ [Persisting from iter 0] Semantic: **Hallucination of Trial Data (Accuracy Issue):** The recommendation cites specific statistical outcomes (e.g., "84.6% partial or minor response" for NCT02754297) and specific efficacy claims for NCT03049189 and NCT02730104. These data points are **not present** in the provided "TRIAL ANALYSIS SUMMARY" or "PATIENT ASSESSMENT". The provided trial summary only lists titles with the tag "(Relevance: N/A)" and contains no results or abstracts. The recommendation relies on external knowledge or hallucination rather than the provided source text.
+
+================================================================================
+SPECIFIC GUIDANCE FOR REGENERATION (FROM ALL ITERATIONS)
+================================================================================
+
+--- From Iteration 0 ---
+1.  **Remove Unsupported Trial Data:** Delete specific statistical claims (e.g., "84.6%") and specific trial findings that are not included in the provided "TRIAL ANALYSIS SUMMARY".
+2.  **Base Rationale on Guidelines:** Support the recommendation using the "Guideline-Based Clinical Considerations" provided in the patient assessment (ENETS/ESMO guidelines) rather than citing empty trial references.
+3.  **Clarify Nodal Constraints:** Explicitly mention that the presence of paraaortic lymph nodes may preclude standard R0 resection, thereby strengthening the case for the Neoadjuvant PRRT strategy if the surgical team confirms these nodes cannot be safely resected.
+
+--- From Iteration 1 ---
+1. **Remove Unsupported Citations:** Delete specific numerical data (percentages, PFS months) unless they are explicitly present in the provided evidence text. If the evidence summary is empty of results, rely on the *Guidelines* (ENETS/ESMO) for general efficacy statements (e.g., "PRRT has demonstrated efficacy in PFS...") rather than citing specific trial numbers that are not in the input.
+2. **Refine Neoadjuvant Rationale:** Qualify the neoadjuvant PRRT recommendation. Acknowledge that while PRRT can induce shrinkage, objective response rates are typically moderate, and the primary goal may shift to disease control if significant downstaging is not achieved.
+3. **Address Paraaortic Nodes:** Add a specific caveat regarding the retroperitoneal paraaortic lymph nodes, noting that their involvement may represent extra-regional disease that significantly lowers the likelihood of R0 resection, potentially making systemic therapy (SSA or PRRT) the *de facto* primary treatment rather than just a fallback.
+
+--- Current Iteration ---
+1. **Remove Unsupported Citations:** Delete specific numerical data (percentages, PFS months) unless they are explicitly present in the provided evidence text. If the evidence summary is empty of results, rely on the *Guidelines* (ENETS/ESMO) for general efficacy statements (e.g., "PRRT has demonstrated efficacy in PFS...") rather than citing specific trial numbers that are not in the input.
+2. **Refine Neoadjuvant Rationale:** Qualify the neoadjuvant PRRT recommendation. Acknowledge that while PRRT can induce shrinkage, objective response rates are typically moderate, and the primary goal may shift to disease control if significant downstaging is not achieved.
+3. **Address Paraaortic Nodes:** Add a specific caveat regarding the retroperitoneal paraaortic lymph nodes, noting that their involvement may represent extra-regional disease that significantly lowers the likelihood of R0 resection, potentially making systemic therapy (SSA or PRRT) the *de facto* primary treatment rather than just a fallback.
+
+================================================================================
+REQUIREMENTS FOR THE REGENERATED RECOMMENDATION
+================================================================================
+
+1. Address EVERY issue listed above - both new and persisting issues
+2. Base all recommendations on the evidence provided (trials, guidelines, assessment)
+3. Only cite trials and data that appear in the evidence sections above
+4. For standard therapies without trial evidence, cite the relevant guidelines
+5. Ensure clinical safety and appropriateness for this specific patient
+6. Maintain consistency with the patient's clinical status and history
+
+================================================================================
+NOW GENERATE THE CORRECTED RECOMMENDATION
+================================================================================

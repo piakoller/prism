@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T14:23:41.161099
+Trial: 22/86
+NCT ID: NCT03834701
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for clinical applicability or disease alignment. The patient underwent a distal pancreatectomy in 2018, removing the primary tumor; therefore, there is no pancreatic lesion to target with the study intervention (EUS-guided radiofrequency ablation of pancreatic neoplasms). Furthermore, the study is designed for patients with localized, small (<25mm), low-grade (Ki-67 ≤5%) tumors without distant metastases. This contrasts sharply with the patient's status, which involves metastatic disease (bilobar liver metastases, possible bone involvement) and a higher Ki-67 index (15%). Evidence regarding local ablation of primary pancreatic tumors cannot inform the management of a patient with a resected primary and progressive metastatic disease."
+}

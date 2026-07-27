@@ -1,0 +1,174 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-15T10:16:41.047440
+Trial: 68/86
+NCT ID: NCT04986085
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Patient: 82-year-old woman, ECOG 1, no cognitive impairment
+Bronchial NET (atypical carcinoid), operated in 2019, Ki-67 11%
+Metastatic since 2020: liver, bone, lymph nodes, pituitary
+Tumor burden: low to moderate
+Functional imaging: DOTATOC +++, FDG low uptake, no mismatch
+Non-secreting, likely sporadic
+
+Previous treatments:
+- 2020: Second thoracic surgery with mediastinal dissection (Ki-67 25%)
+- Jan 2021: Clavicle and lumbar radiotherapy
+- Everolimus (Mar–Nov 2021): poor tolerance, stable disease
+- Temozolomide (Jan–Aug 2022): partial hepatic response; discontinued for grade 3 thrombocytopenia
+- FOLFOX (Dec 2022–Jan 2023): very poor tolerance; discontinued
+- PRRT via CPC (Apr–Oct 2023): excellent tolerance; prolonged partial hepatic response
+- Somatostatin analogs (June 2025)
+- Oct 2025: hepatic RECIST progression; no option for local therapy
+Question for Tumorboard:
+What would be next step to consolidate the response?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Clinical Profile and Disease Biology**
+The patient is an 82-year-old woman with an ECOG performance status of 1 and no cognitive impairment, presenting with a metastatic bronchial neuroendocrine tumor (atypical carcinoid). The disease course is characterized by metastatic spread to the liver, bone, lymph nodes, and pituitary since 2020.
+
+Biologically, the tumor demonstrates heterogeneity and grade progression over time, with Ki-67 increasing from 11% (2019) to 25% (2020). According to the *ESMO Clinical Practice Guidelines for GEP-NENs*, a Ki-67 >20% classifies the tumor within the G3 category. However, the functional imaging profile—DOTATOC +++ and low FDG uptake with no mismatch—indicates a well-differentiated phenotype (NET G3) rather than a poorly differentiated neuroendocrine carcinoma (NEC), as high SSTR expression is generally inversely related to glucose metabolism in low-grade tumors. The strong SSTR expression (DOTATOC +++) confirms the target presence required for peptide receptor radionuclide therapy (PRRT).
+
+**Treatment History and Tolerance Analysis**
+The patient has exhausted multiple lines of standard systemic therapy, significantly limited by intolerance and toxicity:
+*   **mTOR Inhibitors:** Everolimus (approved for lung NETs per RADIANT-4 trial data referenced in the guidelines) resulted in poor tolerance.
+*   **Chemotherapy:** Temozolomide yielded a partial hepatic response but was discontinued due to Grade 3 thrombocytopenia. FOLFOX was discontinued due to very poor tolerance.
+*   **Radiotherapy:** Prior clavicle and lumbar radiotherapy (Jan 2021).
+*   **PRRT:** Treatment with PRRT via CPC (Apr–Oct 2023) resulted in a prolonged partial hepatic response with excellent tolerance, distinguishing it as the most favorable modality in terms of the therapeutic index for this specific patient.
+
+**Current Clinical Status**
+The patient currently exhibits hepatic RECIST progression as of October 2025 while on Somatostatin analogs. There are no options for local therapy.
+
+**Assessment per Guidelines**
+Based on the *ESMO Clinical Practice Guidelines*, the following factors are relevant for the tumor board's consideration:
+1.  **PRRT Eligibility:** The guidelines recommend PRRT for progressive SSTR-positive NETs. While the guidelines primarily discuss midgut and pancreatic NETs, they reference efficacy in bronchial neuroendocrine tumors (Ref 97). The patient's imaging (DOTATOC +++) satisfies the requirement for homogenous SSTR expression.
+2.  **High-Grade (G3) Consideration:** The guidelines acknowledge that PRRT may be considered in patients with NET G3 (Ki-67 >20%), citing disease control rates between 30% and 80% in retrospective studies, particularly for patients with Ki-67 <55%. This patient (Ki-67 25%) falls within this range.
+3.  **Therapeutic Options:**
+    *   **Chemotherapy:** While systemic chemotherapy (e.g., Temozolomide or platinum-based regimens) is recommended for NEN G3, this patient has demonstrated severe intolerance (FOLFOX) and Grade 3 hematological toxicity (Temozolomide), making re-challenge high risk.
+    *   **Targeted Therapy:** Re-introduction of Everolimus is likely not feasible due to prior poor tolerance.
+    *   **PRRT Re-treatment/Consolidation:** Given the "excellent tolerance" and "prolonged partial hepatic response" to the previous PRRT course, and the persistence of high SSTR uptake (DOTATOC +++), the clinical assessment points toward the potential utility of further PRRT.
+
+**Conclusion**
+The patient presents with a progressive, SSTR-avid (DOTATOC +++) metastatic bronchial NET G3 (Ki-67 25%). She is refractory or intolerant to standard chemotherapy and mTOR inhibitors. The assessment highlights that PRRT has been the only modality providing disease control with acceptable tolerability. Consequently, evaluating the feasibility of consolidating the response with further PRRT is the most clinically supported consideration, provided bone marrow reserve is adequate given the history of Grade 3 thrombocytopenia.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: What would be next step to consolidate the response?
+
+### STUDY DATA
+	•	NCT-ID: NCT04986085
+	•	Title: Nutrition in Gastroenteropancreatic Neuroendocrine Tumor
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: 
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Patients diagnosed with a gastroenteropancreatic neuroendocrine tumor by histopathological study.
+* Legally capable patients ≥ 18 and ≤ 80 years of age.
+* Patients who have signed the informed consent for this study as specified in section 10.3.
+* Patients in active treatment: active treatment is considered to be those patients in an advanced stage and in any type of medical treatment (somatostatin analogues, molecular therapies, chemotherapy, radionuclides...), or locoregional therapies.
+
+Note: Decision was taken to treat the patient with an specific treatment prior and independently of patient inclusion in this non interventional study.
+
+Exclusion Criteria:
+
+* Patients \<18 or \> 80 years of age.
+* Female patients that are currently pregnant.
+* Patients with a gastroenteropancreatic neuroendocrine tumor lacking an histopathological diagnosis.
+* Patients in palliative treatment or terminal stage.
+* Patients who have not signed the informed consent or any situation or condition that compromises the giving of patient voluntary informed consent. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: It is well known that the prevalence of malnutrition or risk of malnutrition in cancer patients is high, as well as its impact on different parameters such as hospitalization, survival or response to certain treatments. In patients with gastroenteropancreatic (GEP) neuroendocrine tumors (NET), due to their heterogeneity and longer survival, it is expected that the prevalence of malnutrition is probably underdiagnosed, as well as the existence of a negative impact on different parameters (quality of life, survival). So far, the studies carried out on nutrition and NET are very scarce and none has been carried out so far in Spain.
+
+Before being able to carry out nutritional intervention studies on these patients, it is necessary to know the reality of the nutritional status of patients with NETs in Spain. The main motivation for the NUTRIGETNE study is to evaluate the epidemiological status of nutrition in NETs in the spanish population. In addition to know the epidemiological picture, it is intended to study the nutritional status from different points of view: analytical, clinical, anthropometric, etc. Besides, the study of nutritional status will allow us to closely monitor the patients who have a higher risk of malnutrition and to propose early interventions for those, as well as the impact of their nutritional status on different parameters: survival, hospitalization, quality of life or responses to the treatments.
+
+NUTRIGETNE is a cross-sectional, open and multicenter study in which the nutritional status of patients with GEP NET in Spain will be evaluated.
+	•	Publications: Analysis: Online search performed; Web search details: No additional publications found; No publications with results found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Nutritional status and quality of life of patients with advanced gastroenteropancreatic neuroendocrine neoplasms in Spain: the NUTRIGETNE (GETNE-S2109) study [Google Scholar]
+• Nutritional status and quality of life of patients with advanced gastroenteropancreatic neuroendocrine neoplasms in Spain: the NUTRIGETNE (GETNE-S2109)study [Google Scholar]
+	•	Key findings from publications: Google Scholar Abstract (Nutritional status and quality of life of patients with advanced gastroenteropancreatic neuroendocrine neoplasms in Spain: the NUTRIGETNE (GETNE-S2109) study): … Theefficacyandsafetyare assessed in all patients who underwent nutritional assessment.Data are analyzed using standard statistical methods. Continuous variables are summarized …
+
+Google Scholar Abstract (Nutritional status and quality of life of patients with advanced gastroenteropancreatic neuroendocrine neoplasms in Spain: the NUTRIGETNE (GETNE-S2109)study): … The authors thank all patients and families, investigators, andstudystaff involved in theNUTRIGETNEstudy; the MFARClinicalResearchteam for regulatory, monitoring, and quality …
+	•	Additional evidence from online sources: Primary outcome: Prevalence of Malnutrition in GEP NET; Risk of Malnutrition in GEP NET
+Secondary outcomes: Body Mass Index; Body Fat; Phase Angle; Nutritional Risk Screening (NRS) Rates; Subjective Global Assessment (SGA) Rates
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Online search performed; Web search details: No additional publications found; No publications with results found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

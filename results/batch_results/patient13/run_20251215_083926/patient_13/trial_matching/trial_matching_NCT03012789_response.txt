@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:45:48.434485
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for therapy recommendations for this patient. While the disease biology aligns (well-differentiated G3 GEP-NET), the study focuses on validating a biomarker (NETest) in the context of surgical resection to predict recurrence. This patient has progressive, high-burden metastatic disease with extrahepatic involvement (bone, lungs) and is currently refractory to multiple systemic lines. In this clinical scenario, the priority is selecting the next line of systemic therapy (e.g., PRRT, everolimus) rather than surgical intervention, which is generally not indicated for widespread extrahepatic disease. Evidence regarding a biomarker for surgical monitoring does not offer actionable insights to guide the choice of systemic treatment needed to control this patient's progressive disease."
+}

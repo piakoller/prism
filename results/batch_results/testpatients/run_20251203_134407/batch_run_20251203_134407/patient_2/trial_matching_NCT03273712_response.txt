@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-03T15:28:10.929155
+Trial: 53/86
+NCT ID: NCT03273712
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence to guide treatment decisions for this patient primarily because there are no published results available in the provided data. While the study aligns biologically (SSTR-positive tumors) and investigates a relevant modality (PRRT with 90Y-DOTATOC), the input explicitly states 'No publications with results found,' and the citations are review articles merely listing the trial as ongoing. Without efficacy or safety data, the study cannot inform clinical practice. Additionally, the patient's specific clinical scenario—heterogeneous SSTR uptake with a low-avidity primary tumor and a need for first-line cytoreduction—makes PRRT a controversial choice compared to chemotherapy, and the trial targets patients who have failed standard therapy, limiting its direct applicability."
+}

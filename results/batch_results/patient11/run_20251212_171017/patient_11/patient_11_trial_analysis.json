@@ -1,0 +1,26 @@
+{
+  "status": "success",
+  "analysis_complete": false,
+  "trials_analyzed": 0,
+  "trials_included": 0,
+  "trials_excluded": 0,
+  "expected_trial_count": 8,
+  "trial_analyses": [],
+  "summary": {},
+  "validation_warnings": [
+    "Trial count mismatch: analyzed 0, expected 8"
+  ],
+  "raw_response": "",
+  "metadata": {
+    "timestamp": "2025-12-12T17:42:21.832780",
+    "model_used": "google/gemini-3-pro-preview",
+    "patient_id": 11,
+    "input_trial_count": 8,
+    "cache_reused": false,
+    "cached_at": null,
+    "prompt_file": "batch_results/run_20251212_171017\\patient_11\\patient_11_trial_analysis_prompt.txt",
+    "results_file": "batch_results/run_20251212_171017\\patient_11\\patient_11_trial_analysis.json",
+    "response_file": "batch_results/run_20251212_171017\\patient_11\\patient_11_trial_analysis_raw_response.txt",
+    "summary_file": "batch_results/run_20251212_171017\\patient_11\\patient_11_trial_analysis_summary.txt"
+  }
+}

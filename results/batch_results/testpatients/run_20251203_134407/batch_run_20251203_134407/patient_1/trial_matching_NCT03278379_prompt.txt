@@ -1,0 +1,198 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2025-12-03T13:45:05.103882
+Trial: 1/86
+NCT ID: NCT03278379
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+1.	Brief Clinical History
+A 52-year-old man with no significant medical history presented in January 2025 with massive upper gastrointestinal bleeding and hemorrhagic shock. He required ICU admission and arterial embolization (gastric, splenic, and pancreatic branches). An incidental pulmonary embolism was also detected. He started first-line treatment with FOLFIRINOX (Cycle 1: Feb 11, 2025; Cycle 7: May 21, 2025).
+•	FDG-PET (Jan 2025): Hypermetabolic pancreatic mass (SUV 16) with a central photopenic area suggestive of necrosis and locoregional infiltration. No distant disease.
+•	CT scan (Apr 2025): Stable heterogeneous abdominal mass with necrotic areas up to 12 cm, infiltrating the pancreatic tail, splenic hilum, gastric fundus, and left adrenal. Complete splenic vein occlusion with tumor thrombus.
+•	CT scan (May 20, 2025): 10 cm pancreatic mass with similar locoregional infiltration and signs of splenic infarctions.
+2.	Current Clinical Status
+Referred to our center in June 2025. Pathology review reclassified the tumor as a Grade 2 NET with Ki67 19%. Admitted in June 2025 due to a new episode of upper GI bleeding (Hb 7.1 g/dL). Gastroscopy showed a 4 cm area of tumor infiltration without active bleeding.
+Question for Tumorboard:
+After clinical stabilization of the current GI bleeding episode, what should be the next therapeutic step in disease management?
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Diagnostic Classification and Prognostic Factors**
+The patient presents with a locally advanced pancreatic mass, recently reclassified via pathology review as a Grade 2 Neuroendocrine Tumor (NET) with a Ki-67 index of 19%. According to ENETS 2023 and ESMO guidelines, this places the tumor at the upper limit of Grade 2 (cutoff <20%), bordering on Grade 3. The initial FDG-PET scan from January 2025 demonstrated a hypermetabolic mass with an SUV of 16. According to ENETS guidelines (Section 2.5.1), high FDG uptake is a strong poor prognostic factor and correlates with a higher grade and aggressive biological behavior. The presence of a central photopenic area suggestive of necrosis further supports the aggressive nature of this neoplasm.
+
+**Staging and Locoregional Extent**
+The disease is characterized as locally advanced (T4 equivalent per ENETS/AJCC staging due to invasion of adjacent structures). CT imaging from April and May 2025 confirms a large heterogeneous mass (10–12 cm) infiltrating the pancreatic tail, splenic hilum, left adrenal gland, and notably the gastric fundus. There is vascular involvement with complete splenic vein occlusion and tumor thrombus, resulting in splenic infarctions. There is currently no evidence of distant metastatic disease.
+
+**Clinical Status and Complications**
+The patient's clinical course is dominated by life-threatening upper gastrointestinal bleeding (Hb 7.1 g/dL), necessitating ICU admission and embolization. The gastroscopy in June 2025 confirmed that the bleeding source is direct tumor infiltration (4 cm area) into the stomach. This represents a symptomatic, bulky, and locally invasive disease burden.
+
+**Treatment History and Response Assessment**
+The patient received 7 cycles of FOLFIRINOX between February and May 2025. While FOLFIRINOX is not a standard regimen for Grade 2 NETs (typically reserved for pancreatic ductal adenocarcinoma or potentially high-grade neuroendocrine carcinomas), the CT comparison between April and May 2025 suggests the mass has remained stable or slightly decreased (from 12 cm to 10 cm). This indicates that the tumor has not progressed under platinum/fluoropyrimidine-based chemotherapy, despite the regimen not being the standard guideline recommendation for Grade 2 NETs (which usually involves Temozolomide/Capecitabine or Streptozotocin/5-FU per ENETS Q7 and ESMO).
+
+**Missing Diagnostic Information for Therapeutic Decision Making**
+A critical gap in the current assessment is the lack of Somatostatin Receptor Imaging (SRI), such as 68Ga-DOTATATE PET/CT.
+*   **Guideline Requirement:** ENETS guidelines (Section 2.5.1) and ESMO guidelines recommend SSTR-PET/CT for definitive staging and theranostic evaluation.
+*   **PRRT Eligibility:** To consider Peptide Receptor Radionuclide Therapy (PRRT) as a neoadjuvant or systemic option (ENETS 3.1.3, 3.2), the tumor must demonstrate sufficient SSTR expression. Specifically, uptake on SSTR-PET must be higher than the liver background (typically SUVmax ~6–7) in the primary tumor.
+*   **FDG/SSTR Mismatch Risk:** Given the high FDG uptake (SUV 16), there is a risk of an "FDG-positive/SSTR-negative" phenotype or heterogeneous expression, which would make the patient a poor candidate for PRRT and Somatostatin Analogs (SSAs).
+
+**Summary for Tumor Board Deliberation**
+The patient has a bulky, aggressive (FDG-avid, Ki-67 19%), locally advanced Grade 2 Pan-NET causing life-threatening hemorrhage via gastric invasion. While the disease appears stable on FOLFIRINOX, the management must now shift to NET-specific strategies. The immediate clinical priority is the management of the bleeding risk in the context of a potentially resectable but complex locally invasive tumor.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+	•	Question for Tumorboard: After clinical stabilization of the current GI bleeding episode, what should be the next therapeutic step in disease management?
+
+### STUDY DATA
+	•	NCT-ID: NCT03278379
+	•	Title: Avelumab in G2-3 NET
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Avelumab
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Adults (males or females), aged 18 years or older with pathologically confirmed, advanced (unresectable or metastatic) neuroendocrine tumour from a gastroenteropancreatic or lung source. Both participants with functional NETs and those with nonfunctional NETs shall be eligible for this study.
+* Histologically confirmed, WHO Grade 2-3, well-differentiated NETs of gastroenteropancreatic or lung origin.
+* Has received 0,1 or 2 prior lines of systemic therapy (chemotherapy, PRRT, targeted therapies such as everolimus or sunitinib). Somatostatin analogues are not considered a line of therapy for the purposes of this criterion.
+* Radiological documentation of disease progression within 24 weeks of study enrolment. Disease progression must be demonstrated on two scans less than one year apart.
+
+  * Participants previously treated with any systemic therapies are eligible to enroll if disease progression is documented during or after their last treatment.
+* Measurable disease as assessed by CT scan of the chest, abdomen and pelvis which is suitable for accurate repeated measurements (according to RECIST v1.1).
+* ECOG performance status 0-2.
+* Adequate bone marrow function (ANC \> 1.5 x 109/L; Platelets \>100 x109/L; haemoglobin \> 90 g9/L).
+* Adequate liver function defined by a total bilirubin level ≤1.5xULN and AST and ALT levels ≤2.5xULN for participants (or AST and ALT levels ≤ 5xULN for participants with documented metastatic disease to the liver).
+* Adequate renal function defined by an estimated creatinine clearance ≥ 30 mL/min according to the Cockcroft-Gault formula (or local institutional standard method).
+* Willing and able to comply with all study requirements, including timing and/or nature of treatment and required assessments.
+* Signed, written informed consent.
+* Evidence of post-menopausal status, or negative urine or serum pregnancy test for female pre-menopausal participants (within approximately 14 days prior to enrolment). Women will be considered post-menopausal if they have been amenorrhoeic for 12 months without an alternative medical explanation.
+* Highly effective contraception for both male and female participants if the risk of conception exists (note: The effects of the IP on the developing human fetus are unknown; thus, women of childbearing potential and men able to father a child must agree to use 2 highly effective contraceptions, defined as methods with a failure rate of less than 1% per year. Highly effective contraception is required at least 28 days prior, throughout and for at least 60 days after avelumab treatment.)
+
+Exclusion Criteria:
+
+* Grade 1 NET or Grade 3 poorly-differentiated neuroendocrine carcinoma, or mixed adenoneuroendocrine carcinomas (MANEC)
+* NETs confirmed to be from primaries other than the gastrointestinal tract, pancreas, or lung
+* Prior use of PD-1, PD-L1 or CTLA-4 inhibitors
+* Life expectancy of ≤3 months
+* Concurrent treatment with other anticancer therapy (except somatostatin analogues for the purposes of functional control). Participants on somatostatin analogues for anti-proliferative therapy should have this therapy ceased, and would be eligible for enrolment if they have not received somatostatin analogues in the past 14 days.
+* Active autoimmune disease that might deteriorate when receiving an immunostimulatory agent, with exception to:
+* Subjects with diabetes type I, vitiligo, psoriasis, hypo- or hyperthyroid disease not requiring immunosuppressive treatment are eligible
+* Active infection requiring systemic therapy.
+* History of primary autoimmunodeficiency
+* Current use of immunosuppressive medication, EXCEPT for the following: a. intranasal, inhaled, topical steroids, or local steroid injection (e.g., intra-articular injection); b. Systemic corticosteroids at physiologic doses ≤ 10 mg/day of prednisone or equivalent; c. Steroids as premedication for hypersensitivity reactions (e.g., CT scan premedication).
+* Prior organ transplantation, including allogeneic stem cell transplantation
+* Clinically significant (i.e., active) cardiovascular disease: cerebral vascular accident/stroke (\< 6 months prior to enrollment), myocardial infarction (\< 6 months prior to enrollment), unstable angina, congestive heart failure (≥ New York Heart Association Classification Class II), or serious cardiac arrhythmia requiring medication.
+* Major surgery in the 2 weeks prior to randomization. Surgery with intent to debulk metastatic disease is allowed, as long as there is sufficient residual disease for RECIST measurements (see inclusion criteria 5).
+* Participants with prior or concurrent malignancy except for the following: adequately treated basal cell or squamous cell skin cancer, or other adequately treated in situ cancer, or any other cancer from which the patient has been disease free for three years.
+* All participants with brain metastases and any of the following:
+
+  * They have not received local treatment to known brain metastases
+  * They have been clinically unstable in the 2 weeks prior to enrolment
+  * Requirement for treatment with systemic steroids exceeding the equivalent of 10mg oral prednisone per day
+  * Ongoing neurological symptoms related to brain metastases
+  * Leptomeningeal metastases
+* Pregnancy, lactation, or inadequate contraception.
+* Significant acute or chronic infections including, among others:
+
+  * Known history of positive test for human immunodeficiency virus (HIV) or known acquired immunodeficiency syndrome (AIDS)
+  * Positive test for HBV surface antigen and / or confirmatory HCV RNA (if anti-HCV antibody tested positive)
+  * Active tuberculosis
+  * Testing for these diseases is not mandatory unless clinically indicated.
+* Known prior severe hypersensitivity to investigational product or any component in its formulations, including known severe hypersensitivity reactions to monoclonal antibodies (NCI CTCAE v4.03 Grade ≥ 3)
+* Persisting toxicity related to prior therapy of Grade \>1 NCI-CTCAE v 4.03; however, alopecia, sensory neuropathy Grade ≤ 2, or other Grade ≤ 2 not constituting a safety risk based on investigator's judgment are acceptable.
+* Known alcohol or drug abuse
+* Other severe acute or chronic medical conditions including colitis, inflammatory bowel disease, pneumonitis, pulmonary fibrosis or psychiatric conditions including recent (within the past year) or active suicidal ideation or behavior; or laboratory abnormalities that may increase the risk associated with study participation or study treatment administration or may interfere with the interpretation of study results and, in the judgment of the investigator, would make the patient inappropriate for entry into this study.
+* Any psychiatric condition that would prohibit the understanding or rendering of informed consent
+* Vaccination within 4 weeks of the first dose of avelumab and while on trial, except for administration of inactivated vaccines
+* Inability to obtain sufficient tumour tissue (whether archival or fresh) for PD-L1 testing. A core biopsy, endoscopic biopsy or surgical resection specimen shall be considered adequate tissue; a fine needle aspirate/biopsy will be considered insufficient tissue.
+* Prior treatment for study indication with:
+
+  * Peptide Receptor Radiouclide Therapy (PRRT) administered within 3 months of enrolment
+  * Hepatic intra-arterial embolization, radio-frequency ablation, or cryoablation within 4 weeks of enrolment *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This is a single-center, single-arm, open-label, phase II trial to evaluate the efficacy and safety of avelumab in subjects with unresectable or metastatic, Grade 2-3, well-differentiated neuroendocrine.tumour.
+	•	Publications: 1 publication(s) found; Analysis: Found 1 listed publication(s); Listed publications appear to contain results; Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/35504244/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Chan DL, Rodriguez-Freixinos V, Doherty M, Wasson K, Iscoe N, Raskin W, Hallet J, Myrehaug S, Law C, Thawer A, Nguyen K, Singh S. Avelumab in unresectable/metastatic, progressive, grade 2-3 neuroendocrine neoplasms (NENs): Combined results from NET-001 and NET-002 trials. Eur J Cancer. 2022 Jul;169:74-81. doi: 10.1016/j.ejca.2022.03.029. Epub 2022 May 2.
+• Avelumab in unresectable/metastatic, progressive, grade 2-3 neuroendocrine neoplasms (NENs): Combined results from NET-001 and NET-002 trials. (PMID: 35504244)
+	•	Key findings from publications: PubMed Abstract: Higher grade neuroendocrine neoplasm (NENs) continues to pose a treatment dilemma, with the optimal treatment undefined. Although immunotherapy has revolutionised the treatment of many cancers, its role in NENs remains unclear. We aimed to investigate the efficacy and safety of avelumab, a PD-L1-directed antibody, in patients with advanced unresectable/metastatic higher grade NENs.
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Background: Higher grade neuroendocrine neoplasm (NENs) continues to pose a treatment dilemma, with the optimal treatment undefined. Although immunotherapy has revolutionised the treatment of many cancers, its role in NENs remains unclear. We aimed to investigate the efficacy and safety of avelumab, a PD-L1-directed antibody, in patients with advanced unresectable/metastatic higher grade NENs. Methods: NET001 and NET002 are phase II studies investigating avelumab ( NCT03278405 and NCT03278379 ). Eligible patients had unresectable and/or metastatic WHO G2-3 NENs from a gastroenteropancreatic (GEP) source or a bronchial primary (excluding typical carcinoid) and 0-2 prior lines of systemic therapy (excluding SSAs). Patients were treated with avelumab 10 mg/kg intravenously every two weeks for 26 cycles. NET001 investigated G3 poorly differentiated GEP neuroendocrine carcinomas (NECs) and bronchial small/large cell NEC, whereas NET002 investigated G2-3 well-differentiated GEPNETs and bronchial atypical carcinoids. The primary endpoint in both trials was overall response rate (ORR) by RECIST v1.1; secondary endpoints included progression-free survival, overall survival, disease control rate at six months and toxicity. Results: Twenty-seven patients were enrolled (21 GEP, 6 lung; 10 in NET-001, 17 in NET-002); median age 64 (range 37-80), 30% ECOG PS 1-2 and 78% received 1+ lines of prior therapy. The median Ki-67 index was 35% (range 10-100). Twelve of the twenty-seven patients had died at the time of data lock. The median time on treatment was 85 days (seven cycles). No objective responses were observed. Stable disease was achieved in 33% of patients, and the disease control rate at 6 mo was 21%. The median PFS was 3.3 months (range 1.2-24.6), and the median OS was 14.2 months. Treatment-related adverse events (all grades) occurred in 58% of patients. Three patients had treatment-related grade 3-4 AEs leading to treatment discontinuation (immune-related hepatitis n = 2 and infusion-related reaction n = 1). Conclusion: Single-agent PD-L1 blockade with avelumab showed limited antitumour activity in patients with G2-3 NENs. Correlative studies are underway. Further studies are needed to explore the role of dual immunotherapy and other combinations in this population with few treatment alternatives. Keywords: Avelumab; Carcinoid; Clinical trial; Immunotherapy; Neuroendocrine neoplasms; Neuroendocrine tumour. Copyright © 2022 Elsevier Ltd. All rights reserved. PubMed Disclaimer Conflict of interest statement Conflict of interest statement The authors declare the following financial interests/personal relationships which may be considered as potential competing interests: DC: Honoraria: Ipsen, Novartis. Research funding: Merck KGaA, Novartis, VRF: Nil relevant, MD: Nil relevant, KW: Nil relevant, NI: Prior employment, stock ownership: Eli Lilly, WR: Honoraria, advisory board: Ipsen, JH: Honoraria: Ipsen, AAA and Bristol Myers Squibb, SM: Honoraria: Ipsen and AAA/Novartis, Research funding: Ipsen and AAA/Novartis, CL: Advisory board: Ipsen, AT: Nil relevant, KN: Nil relevant, SS: Honoraria: Ipsen, Research funding: Merck KGaA, AAA/Novartis Similar articles Sintilimab in Patients with Previously Treated Metastatic Neuroendocrine Neoplasms. Jia R, Li Y, Xu N, Jiang HP, Zhao CH, Liu RR, Shi Y, Zhang YY, Wang SY, Zhou H, Xu JM. Jia R, et al. Oncologist. 2022 Aug 5;27(8):e625-e632. doi: 10.1093/oncolo/oyac097. Oncologist. 2022. PMID: 35647908 Free PMC article. Clinical Trial. Immune Checkpoint Inhibitors in the Treatment of Patients with Neuroendocrine Neoplasia. Weber MM, Fottner C. Weber MM, et al. Oncol Res Treat. 2018;41(5):306-312. doi: 10.1159/000488996. Epub 2018 Apr 26. Oncol Res Treat. 2018. PMID: 29742518 Review. Nivolumab plus platinum-doublet chemotherapy in treatment-naive patients with advanced grade 3 Neuroendocrine Neoplasms of gastroenteropancreatic or unknown origin: The multicenter phase 2 NICE-NEC trial (GETNE-T1913). Riesco-Martinez MC, Capdevila J, Alonso V, Jimenez-Fonseca P, Teule A, Grande E, Sevilla I, Benavent M, Alonso-Gordoa T, Custodio A, Anton-Pascual B, Hernando J, Polo E, Castillo-Trujillo OA, Lamas-Paz A, Teijo A, Rodriguez-Gil Y, Soldevilla B, Garcia-Carbonero R. Riesco-Martinez MC, et al. Nat Commun. 2024 Aug 8;15(1):6753. doi: 10.1038/s41467-024-50969-8. Nat Commun. 2024. PMID: 39117670 Free PMC article. Clinical Trial. Neuroendocrine Tumor Heterogeneity Adds Uncertainty to the World Health Organization 2010 Classification: Real-World Data from the Spanish Tumor Registry (R-GETNE). Nuñez-Valdovinos B, Carmona-Bayonas A, Jimenez-Fonseca P, Capdevila J, Castaño-Pascual Á, Benavent M, Pi Barrio JJ, Teule A, Alonso V, Custodio A, Marazuela M, Segura Á, Beguiristain A, Llanos M, Martinez Del Prado MP, Diaz-Perez JA, Castellano D, Sevilla I, Lopez C, Alonso T, Garcia-Carbonero R. Nuñez-Valdovinos B, et al. Oncologist. 2018 Apr;23(4):422-432. doi: 10.1634/theoncologist.2017-0364. Epub 2018 Jan 12. Oncologist. 2018. PMID: 29330208 Free PMC article. Role of immunotherapy in gastro-enteropancreatic neuroendocrine neoplasms (gep-nens): Current advances and future directions. Fang L, Arvind D, Dowlati A, Mohamed A. Fang L, et al. J Neuroendocrinol. 2021 Mar;33(3):e12943. doi: 10.1111/jne.12943. J Neuroendocrinol. 2021. PMID: 33724586 Review. See all similar articles Cited by Combining anti-PD-1 antibodies with surufatinib for gastrointestinal neuroendocrine carcinoma: Two cases report and review of literature. Gao LL, Gao DN, Yuan HT, Chen WQ, Yang J, Peng JQ. Gao LL, et al. World J Clin Oncol. 2025 Apr 24;16(4):102297. doi: 10.5306/wjco.v16.i4.102297. World J Clin Oncol. 2025. PMID: 40290678 Free PMC article. Progress in immunotherapy for neuroendocrine neoplasm of the digestive system. Pan WX, Zhang XM, Hao SL, Han W. Pan WX, et al. World J Gastroenterol. 2023 Jul 14;29(26):4174-4185. doi: 10.3748/wjg.v29.i26.4174. World J Gastroenterol. 2023. PMID: 37475845 Free PMC article. Review. Current Status of Immunotherapy in Management of Small Bowel Neuroendocrine Tumors. Fields BC, Ayabe RI, Seo YD, Maxwell JE, Halperin DM. Fields BC, et al. Curr Oncol Rep. 2024 Nov;26(11):1530-1542. doi: 10.1007/s11912-024-01610-w. Epub 2024 Oct 28. Curr Oncol Rep. 2024. PMID: 39466478 Review. Regorafenib plus avelumab in advanced gastroenteropancreatic neuroendocrine neoplasms: a phase 2 trial and correlative analysis. Cousin S, Guégan JP, Palmieri LJ, Metges JP, Pernot S, Bellera CA, Assenat E, Korakis I, Cassier PA, Hollebecque A, Cantarel C, Kind M, Soubeyran I, Sokol H, Vanhersecke L, Bessede A, Italiano A. Cousin S, et al. Nat Cancer. 2025 Apr;6(4):584-594. doi: 10.1038/s43018-025-00916-3. Epub 2025 Apr 9. Nat Cancer. 2025. PMID: 40204996 Clinical Trial. Enhancing treatment strategies for small bowel cancer: a clinical review of targeted therapy and immunotherapy approaches. Ebrahimpour M, Hosseinzadeh H, Abedi F, Nodeh MM, Allahyari A, Sahebkar A, Arasteh O. Ebrahimpour M, et al. Naunyn Schmiedebergs Arch Pharmacol. 2024 Jul;397(7):4601-4614. doi: 10.1007/s00210-024-02992-1. Epub 2024 Feb 8. Naunyn Schmiedebergs Arch Pharmacol. 2024. PMID: 38329524 Review. See all "Cited by" articles Publication types Clinical Trial Actions Search in PubMed Search in MeSH Add to Search Research Support, Non-U.S. Gov't Actions Search in PubMed Search in MeSH Add to Search MeSH terms Antibodies, Monoclonal, Humanized / adverse effects Actions Search in PubMed Search in MeSH Add to Search B7-H1 Antigen Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Neoplasms, Second Primary* Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / pathology Actions Search in PubMed Search in MeSH Add to Search Response Evaluation Criteria in Solid Tumors Actions Search in PubMed Search in MeSH Add to Search Substances Antibodies, Monoclonal, Humanized Actions Search in PubMed Search in MeSH Add to Search B7-H1 Antigen Actions Search in PubMed Search in MeSH Add to Search avelumab Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT03278379 Actions Search in PubMed Search in ClinicalTrials.gov ClinicalTrials.gov/NCT03278405 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen LinkOut - more resources Full Text Sources Australian Centre for Disease Control ClinicalKey Elsevier Science Medical ClinicalTrials.gov Research Materials NCI CPTC Antibody Characterization Program
+	•	Additional evidence from online sources: Primary outcome: Overall response rate (ORR)
+Secondary outcomes: Disease control rate (DCR); Duration of response; Progression-free survival (PFS); Overall survival (OS); Rates of treatment-emergent adverse events as defined by National Cancer Institute Common Terminology Criteria for Adverse Events (NCI CTCAE) v4.03; ORR by irRECIST version 1.1; DCR by irRECIST version 1.1; Duration of response by irRECIST version 1.1; PFS by irRECIST version 1.1; OS at 1 year; OS at 2 years; PFS at 1 year; PFS at 2 years
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'Avelumab in unresectable/metastatic, progressive, grade 2-3 neuroendocrine neoplasms (NENs): Combined results from NET-001 and NET-002 trials.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/35504244/', 'pmid': '35504244', 'content_scraped': True, 'content_length': 8796}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/35504244/
+Analysis notes: Found 1 listed publication(s); Listed publications appear to contain results; Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

@@ -1,0 +1,14 @@
+=== REGENERATION ITERATION 1 - THERAPY RECOMMENDATION ===
+Timestamp: 2025-12-15T10:26:18.560098
+Patient ID: 14
+================================================================================
+
+**Primary Recommendation:** Re-treatment (Salvage) with **Peptide Receptor Radionuclide Therapy (PRRT)** using **177Lu-DOTATATE**.
+
+**Key Evidence Support:**
+*   **NCT03972488 (NETTER-2, Phase 3):** While this trial evaluated first-line treatment in GEP-NETs, it provides the critical **biological rationale** that 177Lu-DOTATATE is highly effective in Grade 2 and 3 (Ki-67 10–55%) well-differentiated SSTR-positive tumors (median PFS 22.8 months vs 8.5 months; HR 0.276). This supports targeting the patient's specific tumor biology (Ki-67 25%, G3 well-differentiated), although efficacy in the *re-treatment* setting and for *bronchial* primaries is extrapolated.
+*   **NCT02236910 (Registry Study):** Provides real-world evidence for the utility of 177Lu-DOTATATE in progressive, well-differentiated NETs. This registry data supports the clinical decision to use PRRT in progressive disease, serving as a basis for re-treatment consideration in the absence of Phase 3 salvage trials.
+*   **NCT02754297 (Personalized PRRT):** Investigates personalized dosimetry to optimize tumor dose while limiting organ toxicity. This approach is highly recommended for this patient to mitigate the risks of cumulative myelotoxicity given her age (82) and history of Grade 3 thrombocytopenia.
+
+**Alternative Option (if PRRT is not feasible):** **Cabozantinib**.
+*   **NCT03375320 (CABINET, Phase 3):** Demonstrated a significant PFS benefit in previously treated extra-pancreatic NETs (median PFS 8.4 months vs 3.9 months; HR 0.38). This represents the strongest Level 1 evidence for a systemic therapy alternative. However, it is a secondary recommendation due to the high rate of Grade 3-4 adverse events (62–65%), which presents a substantial safety risk for this elderly patient with a history of poor tolerance to targeted therapies (Everolimus).

@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:20:17.342367
+Trial: 85/86
+NCT ID: NCT02842749
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "This study does not provide meaningful evidence for the patient because no published results or findings are available (Criterion 3). Without efficacy or safety data, the study cannot inform the decision to escalate therapy. Additionally, the study is specific to pancreatic neuroendocrine tumors (pNETs), whereas the patient has a duodenal NET (Criterion 1). While Everolimus is a valid treatment option for progressive non-functional GI NETs (based on the RADIANT-4 trial), this specific Phase IV study focuses on a different primary site and population without providing any data to support clinical decision-making."
+}

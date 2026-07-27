@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T15:10:45.290947
+Trial: 13/86
+NCT ID: NCT03012789
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for evidence relevance regarding the specific therapeutic decision. While the disease biology aligns (well-differentiated GEP-NETs) and the context involves surgery, the study focuses on validating a biomarker (NETest) to assess the completeness of resection and predict recurrence, rather than evaluating the therapeutic efficacy or sequencing of surgery versus PRRT. The published results (Modlin et al.) demonstrate that NETest levels correlate with surgical extent, but they do not provide clinical outcome data (such as progression-free or overall survival) comparing surgical cytoreduction to systemic therapies like PRRT. Consequently, the study does not offer actionable evidence to resolve the tumor board's specific question regarding the indication or timing of surgery versus PRRT for this patient."
+}

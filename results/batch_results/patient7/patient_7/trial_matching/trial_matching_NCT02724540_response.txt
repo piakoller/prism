@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-09T10:16:29.215836
+Trial: 16/86
+NCT ID: NCT02724540
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study fails the evidence quality and relevance criterion because the provided data consists solely of a trial protocol without published efficacy or safety results. While the disease biology (G2 well-differentiated NET with liver metastases) and treatment context (liver-directed therapy/embolization) align with the patient's history of Trans-Arterial Embolization (TAE) and potential future needs, the input lacks the trial's outcomes comparing bland embolization, TACE, and DEB-TACE. Without these results, the study does not provide actionable evidence to inform the selection of the optimal embolization modality or guide therapeutic decision-making for this patient's specific clinical scenarios (e.g., re-treatment of liver metastases)."
+}

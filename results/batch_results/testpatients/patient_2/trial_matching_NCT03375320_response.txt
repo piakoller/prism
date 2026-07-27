@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-09-17T11:53:24.024051
+Trial: 62/86
+NCT ID: NCT03375320
+Model: google/gemini-2.5-pro
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful evidence for therapy recommendations. Criterion 1 (Disease/Biology Alignment) is met, as the study's pancreatic NET (pNET) cohort is an excellent match for this patient's metastatic, well-differentiated G2 pNET. Criterion 2 (Treatment Context/Applicability) is also met. Although the patient is treatment-naive and the CABINET trial studied a previously treated population, the evidence is highly relevant for planning the patient's overall treatment sequence. The tumor board's recommendation should consider not just the first-line therapy but also subsequent options. This study provides crucial information for a highly probable future clinical scenario: treatment after progression on first-line therapy. Finally, Criterion 3 (Evidence Quality/Relevance) is met. The phase 3 trial provides high-quality evidence of a clinically meaningful benefit, with cabozantinib significantly improving progression-free survival in pNETs (13.8 months vs. 4.4 months with placebo). This robust evidence establishes a powerful, evidence-based option for this patient's future care, which is a critical component of the current therapeutic discussion."
+}
+```

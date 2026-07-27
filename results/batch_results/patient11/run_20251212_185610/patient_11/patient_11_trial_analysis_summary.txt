@@ -1,0 +1,27 @@
+TRIAL ANALYSIS SUMMARY - PATIENT 11
+==================================================
+Analysis Status: success
+Analysis Complete: True
+Trials Analyzed: 8
+Trials to Include: 6
+Trials to Exclude: 2
+
+TRIALS TO INCLUDE IN RECOMMENDATION:
+  ✅ NCT03278379: Avelumab in G2-3 NET
+     Rationale: This trial evaluated Avelumab (PD-L1 inhibitor) in G2-3 Neuroendocrine Neoplasms, including poorly differentiated NECs (NET-001 cohort). The results demonstrated no objective responses, providing critical negative evidence that single-agent PD-L1 blockade is likely ineffective for this patient, guiding the recommendation away from this monotherapy.
+  ✅ NCT03728361: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+     Rationale: This trial demonstrated a 32% response rate in neuroendocrine neoplasms treated with Nivolumab plus Temozolomide. Given the patient's high Ki-67 (95%) mimicking small-cell biology, this combination represents a viable evidence-based option for second-line or intensification therapy.
+  ✅ NCT02820857: Assessment of the Efficacy of Bevacizumab in Combination With Folfiri as Second-line Treatment in Patients Suffering From an Advanced Inoperable Poorly Differentiated Neuroendocrine Carcinoma of an Unknown or Gastroentero-pancreatic Primary Cancer
+     Rationale: The PRODIGE 41-BEVANEC trial specifically addresses second-line treatment for GEP-NEC after platinum-etoposide failure. It established FOLFIRI as a standard second-line option and demonstrated that adding Bevacizumab does not improve survival, directly informing the choice of subsequent chemotherapy.
+  ✅ NCT02834013: Nivolumab and Ipilimumab in Treating Patients With Rare Tumors
+     Rationale: The DART trial's high-grade neuroendocrine neoplasm cohort showed a 26-44% objective response rate with dual checkpoint inhibition (Nivolumab + Ipilimumab). This provides strong evidence for using dual immunotherapy as a therapeutic strategy for high-grade NEC, particularly if chemotherapy options are exhausted or declined.
+  ✅ NCT03837977: Second-line Therapy for Patients With Progressive Poorly Differentiated Extra-pulmonary Neuroendocrine Carcinoma
+     Rationale: The NET-02 trial demonstrated that Liposomal Irinotecan (nal-IRI) plus 5-FU/Folinic Acid met the primary endpoint for progression-free survival in progressive PD-EP-NEC, whereas Docetaxel did not. This identifies a specific, evidence-based second-line chemotherapy regimen for this patient.
+  ✅ NCT03136055: Pembrolizumab-based Therapy in Previously Treated High Grade Neuroendocrine Carcinomas
+     Rationale: This study showed that Pembrolizumab, either alone or with chemotherapy, had minimal efficacy (ORR 5-7%) in extrapulmonary high-grade NEC. This is crucial negative evidence that helps rule out Pembrolizumab-based regimens in favor of more effective combinations (like Ipi/Nivo or Nivo/TMZ) for this patient.
+
+TRIALS TO EXCLUDE FROM RECOMMENDATION:
+  ❌ NCT02568267: Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+     Rationale: This trial targets tumors with specific gene fusions (NTRK/ROS1/ALK). There is no evidence in the patient file that she harbors these specific alterations, which are extremely rare in pancreatic NEC. The evidence is not applicable without a positive biomarker result.
+  ❌ NCT05168631: Multicenter Retrospective Database on Prognostic and Predictive Factors in Patients With Neuroendocrine Tumors
+     Rationale: This is a retrospective observational database study, not an interventional trial. While it may provide prognostic data, it does not provide level 1 clinical evidence regarding the efficacy of specific therapeutic regimens to inform a treatment recommendation.

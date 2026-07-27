@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T18:05:43.472653
+Trial: 41/86
+NCT ID: NCT02820857
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment criterion. The patient has a well-differentiated pancreatic neuroendocrine tumor (NET) G2 (Ki-67 20%), whereas the study (PRODIGE 41-BEVANEC) specifically enrolls patients with poorly differentiated neuroendocrine carcinomas (NEC) and explicitly excludes well-differentiated tumors. Biologically, NETs and NECs are distinct entities with different genetic drivers and treatment responses; evidence from NEC trials is not clinically transferable to well-differentiated NETs, even those with aggressive features like FDG avidity. Furthermore, the study investigates second-line therapy after platinum-etoposide failure, while the patient requires a recommendation for first-line systemic treatment. Consequently, the study's findings on FOLFIRI +/- Bevacizumab in NEC do not provide actionable evidence for this patient's care."
+}

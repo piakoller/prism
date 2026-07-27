@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:27:48.861720
+Trial: 41/86
+NCT ID: NCT02820857
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study is relevant because it provides high-quality prospective evidence defining the standard of care for second-line treatment in gastroenteropancreatic neuroendocrine carcinoma (GEP-NEC), a scenario this patient will likely face given the aggressive biology (Ki-67 95%). The PRODIGE 41-BEVANEC trial demonstrated that FOLFIRI is a feasible second-line option after platinum-etoposide failure, while the addition of bevacizumab offered no survival benefit. Although the patient currently has a partial response and is being considered for consolidation, the high risk of recurrence makes establishing the subsequent line of therapy essential for comprehensive treatment planning. While the patient's primary was a mixed tumor (MiNEN), the metastatic component is confirmed NEC, making the study's findings on GEP-NEC management clinically transferable to her situation upon progression."
+}

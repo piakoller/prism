@@ -1,0 +1,51 @@
+TRIAL ANALYSIS SUMMARY - PATIENT 2
+==================================================
+Analysis Status: success
+Analysis Complete: True
+Trials Analyzed: 20
+Trials to Include: 8
+Trials to Exclude: 12
+
+TRIALS TO INCLUDE IN RECOMMENDATION:
+  ✅ NCT02730104: Community-based Neuroendocrine Tumor (NET) Research Study
+     Rationale: This observational study on lanreotide (an SSA) confirms its antiproliferative effect in GEP-NETs. However, as noted in the patient assessment, SSA monotherapy is considered insufficient for this patient's high-burden, symptomatic disease with a Ki-67 of 15%, making a more aggressive first-line therapy necessary.
+  ✅ NCT03049189: Efficacy and Safety of 177Lu-edotreotide PRRT in GEP-NET Patients
+     Rationale: The COMPETE trial showed that PRRT was superior to everolimus in patients with SSTR-positive GEP-NETs, establishing it as an effective therapy. However, the patient's low SSTR avidity in the primary pancreatic tumor makes him a suboptimal candidate for first-line PRRT, supporting the decision to defer this treatment.
+  ✅ NCT02236910: An Open Label Registry Study of Lutetium-177 (DOTA0, TYR3) Octreotate (Lu-DOTA-TATE) Treatment in Patients with Somatostatin Receptor Positive Tumours
+     Rationale: This study on PRRT identifies high tumor burden as a negative prognostic factor, which is relevant to this patient. It reinforces that PRRT is an option for SSTR-positive disease but supports deferring it as a first-line choice due to the patient's high burden and, more critically, the low SSTR uptake in the primary tumor.
+  ✅ NCT03074513: Atezolizumab and Bevacizumab in Treating Patients With Rare Solid Tumors
+     Rationale: This trial demonstrated that the combination of atezolizumab and bevacizumab has clinical activity in pancreatic NETs (20% ORR, 14.9-month PFS). This evidence positions the combination as a potential second-line or later therapy, but it is less compelling than upfront chemotherapy for achieving initial tumor debulking.
+  ✅ NCT03728361: Nivolumab and Temozolomide in Treating Patients With Recurrent or Refractory Small-Cell Lung Cancer or Advanced Neuroendocrine Cancer
+     Rationale: This study showed promising activity for the combination of nivolumab and temozolomide in NENs. The positive signal for a temozolomide-based regimen supports the guideline-based recommendation for CAPTEM chemotherapy, while also suggesting a potential future combination strategy.
+  ✅ NCT03217097: MGMT-NET: O6-methylguanine-DNA Methyltransferase (MGMT) Status in Neuroendocrine Tumors: Predictive Factor of Response to Alkylating Agents
+     Rationale: This randomized trial provides strong evidence that deficient MGMT status predicts a significantly better response to alkylating agents like temozolomide in NETs. This is highly relevant and supports testing for MGMT to inform the expected efficacy of the recommended CAPTEM chemotherapy regimen.
+  ✅ NCT03375320: Testing Cabozantinib in Patients With Advanced Pancreatic Neuroendocrine and Carcinoid Tumors
+     Rationale: The CABINET trial demonstrated that cabozantinib significantly improves progression-free survival in patients with *previously treated*, progressive pancreatic NETs. This establishes cabozantinib as a valid second-line or later treatment option, supporting the decision to use a different agent first-line.
+  ✅ NCT03972488: Study to Evaluate the Efficacy and Safety of Lutathera in Patients With Grade 2 and Grade 3 Advanced GEP-NET
+     Rationale: The NETTER-2 trial is a landmark study establishing first-line PRRT as a standard of care for newly diagnosed, SSTR-positive, advanced G2/G3 GEP-NETs. While the patient fits the trial's demographic and grade criteria, his low SSTR avidity in the primary tumor makes him a poor candidate, strongly supporting the decision to prioritize chemotherapy over upfront PRRT.
+
+TRIALS TO EXCLUDE FROM RECOMMENDATION:
+  ❌ NCT03278379: Avelumab in G2-3 NET
+     Rationale: This trial of single-agent avelumab (an immunotherapy agent) in G2-3 neuroendocrine neoplasms showed limited to no antitumor activity, with no objective responses observed. Therefore, this is not a viable therapeutic option for the patient.
+  ❌ NCT02568267: Basket Study of Entrectinib (RXDX-101) for the Treatment of Patients With Solid Tumors Harboring NTRK 1/2/3 (Trk A/B/C), ROS1, or ALK Gene Rearrangements (Fusions)
+     Rationale: This trial is for patients with specific NTRK, ROS1, or ALK gene fusions. As the patient's molecular profile for these fusions is unknown, this targeted therapy is not applicable at this time and would require further genomic testing.
+  ❌ NCT05153772: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients
+     Rationale: This trial investigates an alpha-emitter PRRT (212Pb-DOTAMTATE), which showed a high response rate but still requires sufficient SSTR expression for efficacy. Given the patient's low SSTR avidity in the primary tumor, this is not a suitable first-line option.
+  ❌ NCT03870399: Study of Tamoxifen in Well Differentiated Neuroendocrine Tumors and Hormone Receptor Positive Expression
+     Rationale: This trial is for patients with hormone receptor-positive NETs, a status that is unknown for this patient. Furthermore, the study concluded that tamoxifen offers only modest antitumor effects, making it unsuitable for a patient with high-burden, symptomatic disease requiring a significant response.
+  ❌ NCT02754297: Personalized PRRT of Neuroendocrine Tumors
+     Rationale: This trial evaluates a personalized dosimetry method for PRRT to optimize radiation dose. However, the fundamental requirement is adequate SSTR expression, which is lacking in the patient's primary tumor, making any SSTR-targeted radionuclide therapy a poor first-line choice.
+  ❌ NCT04552847: Al18F-NOTA-octreotide PET Imaging in Neuroendocrine Tumors
+     Rationale: This trial evaluates a diagnostic imaging agent and does not inform therapeutic decision-making. The patient's disease has already been adequately staged with a standard Ga-68 PET/CT, making this study irrelevant to the immediate treatment plan.
+  ❌ NCT01842165: 177Lutetium-octreotate Treatment Prediction Using Multimodality Imaging in Refractory NETs
+     Rationale: The LUMEN study focuses on predicting PRRT outcomes using dosimetry and post-treatment imaging, which is not relevant for a treatment-naive patient. The decision to defer PRRT is based on the pre-treatment finding of low SSTR avidity in the primary tumor.
+  ❌ NCT02834013: Nivolumab and Ipilimumab in Treating Patients With Rare Tumors
+     Rationale: The DART trial of ipilimumab and nivolumab showed a 0% objective response rate in the cohort of patients with low/intermediate-grade non-pancreatic neuroendocrine tumors. This lack of efficacy in well-differentiated NETs makes this combination a poor choice for this patient.
+  ❌ NCT03070301: A Study of LEE011 With Everolimus in Patients With Advanced Neuroendocrine Tumors
+     Rationale: This trial combining ribociclib and everolimus was terminated due to insufficient activity and did not meet its primary endpoint in patients with foregut NETs. Therefore, this combination should not be considered a therapeutic option.
+  ❌ NCT01253161: Study of Pasireotide Long Acting Release (LAR) in Patients With Metastatic Neuroendocrine Tumors (NETs)
+     Rationale: This trial of pasireotide LAR showed modest antiproliferative effects (11-month median PFS) but was associated with a very high rate of hyperglycemia (79%). Given the significant toxicity and availability of better alternatives, it is not a recommended option.
+  ❌ NCT01563354: 3-arm Trial to Evaluate Pasireotide LAR/Everolimus Alone/in Combination in Patients With Lung/Thymus NET - LUNA Trial
+     Rationale: The LUNA trial exclusively enrolled patients with advanced carcinoids of the lung and thymus. Its results are not directly applicable to this patient, who has a neuroendocrine tumor of pancreatic origin.
+  ❌ NCT02893930: Sapanisertib in Treating Patients With Metastatic or Refractory Pancreatic Neuroendocrine Tumor That Cannot Be Removed by Surgery
+     Rationale: This trial of sapanisertib in patients with everolimus-resistant pNETs was terminated early for lack of efficacy. The drug showed no objective responses and is not a viable treatment option.

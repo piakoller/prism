@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:16:46.441405
+Trial: 10/86
+NCT ID: NCT03562091
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a high-grade pancreatic Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, representing aggressive biology distinct from the Grade 1 or 2 well-differentiated Neuroendocrine Tumors (NETs) included in the OPERA study. Lanreotide is indicated for indolent, SSTR-positive NETs and is not a standard treatment for NEC with such high proliferation (Ki-67 >55%), where platinum-based chemotherapy is the standard of care. Furthermore, the study is non-interventional and focuses on patient perception of information and quality of life rather than oncologic efficacy or survival outcomes. Consequently, the results provide no actionable evidence to guide the tumor board's decision regarding consolidation strategies (surgery vs. maintenance) for this patient's aggressive disease."
+}

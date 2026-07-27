@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2026-01-05T11:17:55.550924
+Trial: 76/86
+NCT ID: NCT01794793
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the Disease/Biology Alignment or Treatment Context criteria. This is a Phase 4 rollover study specifically designed to provide continued access to Pasireotide for patients with Cushing's Disease or Acromegaly who were previously enrolled in Novartis-sponsored parent trials. The patient has a well-differentiated duodenal neuroendocrine tumor (NET), a distinct malignancy from the pituitary disorders (Cushing's/Acromegaly) investigated in this study. Consequently, the published results focus on long-term safety and efficacy in pituitary conditions and do not provide transferable evidence regarding the efficacy of Pasireotide for progressive gastrointestinal NETs. While Pasireotide is a somatostatin analogue, the specific clinical data from this study cannot inform the decision to escalate therapy (e.g., to PRRT or Everolimus) for this patient with a progressive, SSTR-positive duodenal NET."
+}

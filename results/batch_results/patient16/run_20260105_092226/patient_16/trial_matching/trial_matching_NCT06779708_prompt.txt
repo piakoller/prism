@@ -1,0 +1,203 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2026-01-05T09:26:43.918990
+Trial: 8/86
+NCT ID: NCT06779708
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Brief Clinical History: 65-year-old woman with a well-differentiated metastatic (hepatic, 
+lymphatic) neuroendocrine tumor of the pancreas (G1, ki-67 2%, SSTR2 positive). The 
+diagnosis was made on the basis of investigations due to abdominal pain and intermittent 
+vomiting, with MRI of the abdomen showing a lesion of the pancreatic head (41x51x35 
+mm) with dilation of the distal pancreatic duct, as well as lesions of the liver in segment 
+VIII (10 mm) and segment VI (5 mm). An endosonography-guided fine needle biopsy 
+revealed evidence of a NET. The subsequent DOTATOC PET/CT showed intense 
+accumulation in the pancreatic lesions, several intense DOTATOC-avid liver lesions, and 
+suspected small lymph node metastasis retroperitoneally paraaortally on the left with 
+intense accumulation and suspicion of one further lymph node metastasis perihepatically 
+adjacent to liver segment III. 
+A CT scan 2 months after initial diagnosis showed a stable lesion in the pancreatic head 
+without infiltration of adjacent vessels. The arterial vessels were well contrasted. The 
+portal vein and superior mesenteric vein with close contact with the pancreatic lesion over 
+a length of 3 cm, without signs of stenosis or thrombosis.  
+Current Clinical Status: ECOG 0 
+Question for Tumorboard:
+Recommended therapy? 
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Profile and Tumor Biology**
+The patient is a 65-year-old woman with an ECOG performance status of 0, presenting with a metastatic neuroendocrine tumor (NET) of the pancreas.
+*   **Classification:** The tumor is well-differentiated and classified as Grade 1 (G1) based on a Ki-67 proliferation index of 2%.
+*   **Functionality:** There is no evidence of a hormonal syndrome provided in the history; thus, the clinical assessment aligns with a nonfunctioning pancreatic NET (NF-Pan-NET).
+*   **Receptor Status:** The tumor is SSTR2 positive, confirmed by immunohistochemistry and intense accumulation on DOTATOC PET/CT.
+
+**Anatomical Extent and Staging**
+*   **Primary Tumor:** A large lesion (41x51x35 mm) is located in the pancreatic head.
+*   **Local Complications:** The mass causes dilation of the distal pancreatic duct, which correlates with the patient's symptoms of abdominal pain and intermittent vomiting.
+*   **Vascular Involvement:** There is close contact with the portal vein and superior mesenteric vein over a length of 3 cm. However, arterial vessels are well contrasted, and there are no signs of venous stenosis or thrombosis. This presentation suggests a locally advanced or borderline resectable primary tumor.
+*   **Metastatic Disease:** The patient has oligometastatic liver disease with two small lesions (Segment VIII: 10 mm; Segment VI: 5 mm) and lymph node involvement (retroperitoneal paraaortic left and perihepatic adjacent to segment III).
+*   **Disease Stability:** A CT scan 2 months post-diagnosis indicates stable disease.
+
+**Guideline-Based Clinical Considerations**
+
+**1. Surgical Considerations:**
+*   **Primary Tumor:** According to ENETS guidelines, surgery is strongly recommended for NF-Pan-NETs >2 cm or those associated with main pancreatic duct dilation. This patient meets both criteria. The vascular contact (3 cm) requires careful evaluation; however, ENETS guidelines note that radical local resection including portal-venous resection can be performed safely in expert centers.
+*   **Metastatic Context:** ESMO guidelines state that a surgical approach is indicated in selected stage IV patients with exclusive or predominant liver involvement. Given the small size of the liver metastases (10 mm and 5 mm), they may be amenable to resection or ablation. However, the presence of retroperitoneal lymph node metastasis requires evaluation regarding the feasibility of curative (R0) resection.
+
+**2. Systemic and Neoadjuvant Considerations:**
+*   **Somatostatin Analogues (SSAs):** For antiproliferative control, ESMO and ENETS guidelines recommend SSAs (e.g., lanreotide or octreotide) as first-line therapy for SSTR-positive, well-differentiated (G1/G2) NF-Pan-NETs with slow growth (Ki-67 <10%).
+*   **Neoadjuvant Approaches:** ENETS guidelines suggest that preoperative treatment with Peptide Receptor Radionuclide Therapy (PRRT) or chemotherapy may be considered in selected cases of locally advanced or oligometastatic SSTR-positive G1/G2 NF-Pan-NETs to facilitate R0 resection or downstaging.
+*   **Chemotherapy:** While chemotherapy (e.g., streptozotocin/5-FU or temozolomide/capecitabine) is an option for bulky or progressive disease, the patient currently has stable disease on CT.
+
+**3. Functional Imaging and PRRT Eligibility:**
+*   The DOTATOC PET/CT shows "intense accumulation" in pancreatic lesions, liver lesions, and lymph nodes.
+*   **Assessment for PRRT:** While "intense" accumulation suggests high SSTR expression, strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed, this patient is a potential candidate for PRRT, either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.
+
+**Summary of Clinical Status:**
+The patient presents with a symptomatic, G1, SSTR-positive NF-Pan-NET with limited hepatic and nodal metastases. The primary tumor is locally advanced with venous contact but no occlusion. The clinical scenario requires a multidisciplinary decision regarding upfront resection (pancreaticoduodenectomy + liver management) versus neoadjuvant therapy (PRRT or systemic) to improve resectability, given the favorable tumor biology (G1) and high SSTR expression.
+
+Trial Search Recommendations:
+  - ** While "intense" accumulation suggests high SSTR expression
+  - strict eligibility for PRRT requires that uptake in all metastatic lesions and the primary tumor exceeds the uptake of the normal liver background. If confirmed
+  - this patient is a potential candidate for PRRT
+  - either in a neoadjuvant setting (as per ENETS recommendations for locally advanced/oligometastatic disease) or as a systemic therapy line.
+  - *Summary of Clinical Status:**
+	•	Question for Tumorboard: Recommended therapy? 
+
+### STUDY DATA
+	•	NCT-ID: NCT06779708
+	•	Title: The Role of Intraoperative Hepatic Ultrasonography in Gastrointestinal or Pancreatic Neuroendocrine Tumor
+	•	Phase: N/A, Status: COMPLETED
+	•	Intervention: 
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Patients undergoing open or minimally-invasive surgery for primary neuroendocrine gastro-intestinal or pancreatic tumor.
+* cM0 tumor at preoperative imaging
+* Preoperative staging including abdominal CT and DOTATOC PET-CT
+* Age ≥18 years
+* No other malignancies in the previous 5 years
+
+Exclusion Criteria:
+
+* Preoperative imaging performed \>60 days before surgery
+* Patient refusal to participate the study
+* Incomplete intraoperative hepatic staging (peri-hepatic adhesions, IOUs not available...) *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: Background: Liver metastases are common in patients with neuroendocrine neoplasms, but often underestimated by preoperative imaging. Intraoperative ultrasound (IOUS) is the reference standard for staging of primary and metastatic liver tumors, with a diagnostic accuracy superior to that of CT and MRI. Rationale: The present study aims to evaluate the contribution of IOUS to staging of liver disease in patients with neuroendocrine tumor candidates for primary tumor resection classified as cM0 at preoperative imaging.
+
+The study will collect a prospective series of 99 patients undegoing surgery for gastro-intestinal or pancreatic neuroendocrine tumor at the Humanitas Clinical Institute (coordinating centre) or at one of the participating centres in the period 2020-2023. All patients had to be cM0 tumor at preoperative imaging. Additional inclusion criteria: age\>18 years, ability to give the informed consent for study participation; no other malignancies in the previous 5 years; preoperative staging including abdominal CT and DOTATOC PET-CT performed ≤60 days before surgery.
+
+This prospective observational multicentre study aims to elucidate the proportion of patients with gastro-intestinal or pancreatic neuroendocrine tumor cM0 at preoperative imaging that have intraoperative detection of liver metastases at IOUS.
+
+Primary endpoint:
+
+- Performances of IOUS in identifying liver metastases in patients with neuroendocrine tumor classified as cM0 at preoperative imaging
+
+Secondary endpoints:
+
+* Impact of IOUS on the therapeutic strategy
+* Performances of preoperative imaging (CT, MRI and PET-CT) in comparison with those of IOUS
+
+The study will collect a prospective series of 99 patients undergoing surgery for gastro-intestinal or pancreatic neuroendocrine tumor at the Humanitas Clinical Institute (coordinating centre) or at one of the participating centres in the period 2020-2023.
+
+The study includes the following steps:
+
+Preoperative / enrollment: All patients candidates to resection of gastro-intestinal or pancreatic neuroendocrine tumor will be considered for the study. Only cM0 patients will be enrolled. All patients enrolled in the study must have performed a preoperative abdominal CT scan with contrast medium and a DOTATOC-PET-CT (both performed ≤60 days before surgery).
+
+Intraoperative: During surgery, the investigator will perform, as standard in our clinical practice, an accurate exploration of the liver by inspection, palpation and IOUS. The investigator will record the identification of any liver lesion. If one or more nodules suspect of being neuroendocrine liver metastases are identified, it will be necessary, whenever possible, as already routinely performed, to carry out a biopsy or to remove it (if superficial) for histological confirmation of the diagnosis. After completion of liver staging, the primary tumor will be resected.
+
+Postoperative / follow-up: Enrolled patients will have standard postoperative management.
+
+Standard statistical analyses will be performed. Per-patient and per-lesion analyses will be performed to asses performances of preoperative imaging modalities (CT, MRI, PET-CT) and of intraoperative ones (inspection, palpation, and IOUS).
+	•	Publications: 9 publication(s) found; Analysis: Found 9 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Vigano L, Ferrero A, Amisano M, Russolillo N, Capussotti L. Comparison of laparoscopic and open intraoperative ultrasonography for staging liver tumours. Br J Surg. 2013 Mar;100(4):535-42. doi: 10.1002/bjs.9025. Epub 2013 Jan 21.
+• Langella S, Ardito F, Russolillo N, Panettieri E, Perotti S, Mele C, Giuliante F, Ferrero A. Intraoperative Ultrasound Staging for Colorectal Liver Metastases in the Era of Liver-Specific Magnetic Resonance Imaging: Is It Still Worthwhile? J Oncol. 2019 Sep 22;2019:1369274. doi: 10.1155/2019/1369274. eCollection 2019.
+• Torzilli G, Botea F, Donadon M, Cimino M, Procopio F, Pedicini V, Poretti D, Montorsi M. Criteria for the selective use of contrast-enhanced intra-operative ultrasound during surgery for colorectal liver metastases. HPB (Oxford). 2014 Nov;16(11):994-1001. doi: 10.1111/hpb.12272. Epub 2014 May 15.
+• van Vledder MG, Pawlik TM, Munireddy S, Hamper U, de Jong MC, Choti MA. Factors determining the sensitivity of intraoperative ultrasonography in detecting colorectal liver metastases in the modern era. Ann Surg Oncol. 2010 Oct;17(10):2756-63. doi: 10.1245/s10434-010-1108-y. Epub 2010 Jun 2.
+• Elias D, Lefevre JH, Duvillard P, Goere D, Dromain C, Dumont F, Baudin E. Hepatic metastases from neuroendocrine tumors with a "thin slice" pathological examination: they are many more than you think.. Ann Surg. 2010 Feb;251(2):307-10. doi: 10.1097/SLA.0b013e3181bdf8cf.
+• Ruzzenente A, Bagante F, Bertuzzo F, Aldrighetti L, Campagnaro T, Ercolani G, Conci S, Giuliante F, Dore A, Ferrero A, Torzilli G, Grazi GL, Ratti F, Cucchetti A, De Rose AM, Russolillo N, Cimino M, Perri P, Guglielmi A, Iacono C. Liver Resection for Neuroendocrine Tumor Liver Metastases Within Milan Criteria for Liver Transplantation. J Gastrointest Surg. 2019 Jan;23(1):93-100. doi: 10.1007/s11605-018-3973-9. Epub 2018 Sep 21.
+• O'Toole D, Kianmanesh R, Caplin M. ENETS 2016 Consensus Guidelines for the Management of Patients with Digestive Neuroendocrine Tumors: An Update. Neuroendocrinology. 2016;103(2):117-8. doi: 10.1159/000443169. Epub 2016 Jan 6. No abstract available.
+• Hallet J, Law CH, Cukier M, Saskin R, Liu N, Singh S. Exploring the rising incidence of neuroendocrine tumors: a population-based analysis of epidemiology, metastatic presentation, and outcomes. Cancer. 2015 Feb 15;121(4):589-97. doi: 10.1002/cncr.29099. Epub 2014 Oct 13.
+• Frilling A, Modlin IM, Kidd M, Russell C, Breitenstein S, Salem R, Kwekkeboom D, Lau WY, Klersy C, Vilgrain V, Davidson B, Siegler M, Caplin M, Solcia E, Schilsky R; Working Group on Neuroendocrine Liver Metastases. Recommendations for management of patients with neuroendocrine liver metastases. Lancet Oncol. 2014 Jan;15(1):e8-21. doi: 10.1016/S1470-2045(13)70362-0.
+	•	Key findings from publications: No detailed findings available
+	•	Additional evidence from online sources: Primary outcome: Liver metastases
+Secondary outcomes: Impact on therapeutic strategies; Comparison with radiological preoperative evaluation
+Web search summary: No additional publications found
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Found 9 listed publication(s); Listed publications appear to contain results; Online search performed; Web search details: No additional publications found
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

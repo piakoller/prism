@@ -1,0 +1,192 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2026-01-05T10:38:03.465571
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Brief Clinical History: 34-year-old male patient with a well-differentiated neuroendocrine 
+tumor of the duodenum, initially pT2 pN1 (3/10) cM0, proliferation index 2-3%, first 
+diagnosed in 2016, followed by pylorus-preserving partial duodeno-pancreatectomy. After 
+detection of a liver metastasis in segment IV in DOTATATE PET/CT one year later and two 
+further liver metastases in abdominal MRI in 2018, a central liver resection (segment Iva/b) 
+was performed. In 2020, new liver metastases were detected in segments II, III, and V. Due 
+to progression of size under treatment with somatostatin analogue a laparotomy with 
+resection of the liver metastases was performed in 2023. Therapy with Somatostatin 
+analogue was continued. In august 2025, Gallium DOTATATE-PET/CT showed two new liver 
+metastases and suspicion of two lymph node metastases in the upper abdomen. 
+Current Clinical Status: ECOG 0 
+Question for Tumorboard:
+Continue therapy with Somatostatin analogue or escalate therapy? 
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Summary and Clinical Status**
+The patient is a 34-year-old male with a well-differentiated neuroendocrine tumor (NET) of the duodenum, initially diagnosed in 2016 (pT2 pN1, Ki-67 2-3%). The clinical course is characterized by recurrent metastatic spread to the liver despite multiple surgical interventions (pylorus-preserving partial duodeno-pancreatectomy in 2016, central liver resection in 2018, and resection of liver metastases in 2023). The patient has a good performance status (ECOG 0).
+
+**Assessment of Disease Progression**
+Current imaging (Gallium DOTATATE-PET/CT, August 2025) demonstrates disease progression with the appearance of two new liver metastases and suspicion of two lymph node metastases in the upper abdomen. This progression has occurred while the patient was under treatment with a Somatostatin analogue (SSA), which was continued after the 2023 surgery.
+
+**Tumor Biology and Receptor Status**
+The tumor was initially characterized as well-differentiated with a low proliferation index (Ki-67 2-3%). The detection of new metastases via Gallium DOTATATE-PET/CT confirms the expression of somatostatin receptors (SSTR) in the new lesions.
+
+**Guideline-Based Clinical Assessment**
+
+1.  **Systemic Therapy Escalation:**
+    *   According to the **ESMO Clinical Practice Guidelines (2020)**, the goal of systemic therapy is to control tumor growth. Since the patient has shown radiological progression on SSA therapy, the guidelines suggest escalating treatment.
+    *   **Peptide Receptor Radionuclide Therapy (PRRT):** Both **ENETS (2023)** and **ESMO (2020)** guidelines identify PRRT as a valid therapeutic option for progressive, SSTR-positive NETs. ESMO specifically notes that PRRT is recommended in patients with disease progression on SSAs. The patient's positive Gallium DOTATATE-PET/CT suggests potential eligibility. However, it must be clinically verified that the uptake in all tumor lesions (both liver and lymph nodes) exceeds the uptake of normal liver parenchyma (liver SUVmax is typically ~6–7) to confirm suitability for PRRT.
+    *   **Targeted Molecular Therapy:** **ESMO (2020)** guidelines recommend Everolimus for patients with clearly progressive gastrointestinal NETs (based on the RADIANT-4 trial). **ENETS (2023)** also lists Everolimus as a therapeutic option for widespread metastatic gastroduodenal NETs, though it notes the evidence is limited compared to other sites.
+    *   **Chemotherapy:** Systemic chemotherapy is generally not recommended for well-differentiated, slowly growing GI-NETs (Ki-67 <10%) according to **ESMO (2020)**, unless the tumor is rapidly progressive or the grade has increased.
+
+2.  **Surgical Considerations:**
+    *   **ENETS (2023)** guidelines state that surgery with curative intent for metastatic gastroduodenal NETs should be performed if a complete tumor resection (R0) seems feasible.
+    *   **ESMO (2020)** recommends that a surgical approach for stage IV disease be considered in selected patients with exclusive or predominant liver involvement.
+    *   Given the patient's history of two prior liver resections (2018, 2023) and the recurrence of disease within two years of the last surgery, along with new suspected extra-hepatic nodal involvement, the feasibility and benefit of a third liver resection must be weighed against the high likelihood of further systemic recurrence.
+
+3.  **Re-evaluation of Tumor Grade:**
+    *   While the initial Ki-67 was 2-3%, **ESMO (2020)** guidelines suggest that a re-biopsy may be considered in the follow-up of metastatic disease to exclude dedifferentiation (progression to higher grade), although the current slow progression over 9 years is consistent with a well-differentiated phenotype.
+
+**Conclusion**
+The patient presents with progressive, SSTR-positive metastatic disease while on maintenance SSA therapy. The clinical picture aligns with guideline criteria for escalating systemic therapy (switching to PRRT or Everolimus) or considering further surgical resection if technically feasible and oncologically sound.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: Continue therapy with Somatostatin analogue or escalate therapy? 
+
+### STUDY DATA
+	•	NCT-ID: NCT05153772
+	•	Title: Targeted Alpha-emitter Therapy of PRRT Naïve and Previous PRRT Neuroendocrine Tumor Patients
+	•	Phase: PHASE2, Status: ACTIVE_NOT_RECRUITING
+	•	Intervention: AlphaMedix
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Male or female ≥18 years old with unresectable or metastatic histologically confirmed NET
+* Subjects must have received and progressed following somatostatin analog administration
+* For PRRT naive subjects, documented progression of disease following previous therapy within 12 months prior to enrollment and the presence of at least 1 site of measurable disease per RECIST 1.1
+* Subjects who previously received PRRT must have documented progression of disease and at least 1 site of measurable disease per RECIST 1.1 after receiving up to 4 doses (≤ 880 mCi) of 177Lu-DOTATATE/DOTATOC and received their last dose at least 6 months prior to Day 1
+* Confirmed presence of somatostatin receptors on all lesions including the non-target and measurable lesions documented by CT/MRI scans, based on positive 68Ga-DOTATATE (NETSPOT®), 64Cu-DOTATATE (Detectnet™), or other Food and Drug Administration (FDA) approved SSTR PET/CT imaging within 6 weeks prior to enrollment. Follow up imaging should be performed with the same agent or modality used at baseline;
+
+  1. Target lesions must be positive (greater than grade 2 uptake Krenning Score) or must have a standardized uptake value of more than the normal liver background.
+  2. Lytic bone lesions, with an identifiable soft tissue component, evaluated by CT or MRI, can also be considered measurable lesions if the soft tissue component otherwise meets the definition of measurability according to RECIST 1.1.
+* Eastern Cooperative Oncology Group (ECOG) status 0-2;
+* Life expectancy of at least 12 weeks in the opinion of the investigator at the time of screening;
+* Sufficient bone marrow capacity and organ function in the recent blood tests within 3 weeks prior to Day 1, as defined by:
+
+  1. White blood cell (WBC) ≥2,500/ mm3;
+  2. Absolute neutrophil count (ANC) ≥1000/mm3;
+  3. Platelets ≥100,000/mm3;
+  4. Hemoglobin (HgB) ≥9.0 g/dL;
+  5. Alanine aminotransferase (ALT) and Aspartate aminotransferase (AST) ≤3 X upper limit of normal (ULN);
+  6. Total Bilirubin: ≤2 X ULN;
+  7. Serum creatinine ≤1.7 mg/dL for PRRT naïve subjects; ≤ ULN for previous PRRT subjects;
+  8. Serum albumin ≥3.0 g/L; if lower than 3.0 g/L requires normal range prothrombin time (PT) and international normalized ratio (INR), and
+* Be willing to practice the following medically acceptable methods of birth control (both women of childbearing potential (WOCBP) and men who have partners of childbearing potential) from the Screening Visit through 3 months after the final administration 212Pb-DOTAMTATE
+
+Exclusion Criteria:
+
+* Prior whole-body radiotherapy or PRRT using 177Lu/90Y/111In-DOTATATE/ DOTATOC or Targeted Alpha Therapy (TAT).
+* For subjects who previously received PRRT, prior treatment with: Prior treatment with 90Y- DOTATATE/ DOTATOC, 225Ac-DOTATATE/DOTATOC, and/or 111In-DOTATATE/ DOTATOC
+* Prior regional hepatic radionuclide therapy within 4 months prior to enrollment or prior nonradioactive regional hepatic therapy within 6 months prior to enrollment.
+* Known hypersensitivity to somatostatin analogues, Amino Acid infusion, or 212Pb-DOTAMTATE;
+* Therapeutic use of any somatostatin analogue, including Sandostatin® LAR (within 28 days) and Sandostatin® (within 1 day) prior to Cycle 1 Day 1;
+* History of myelodysplastic syndrome (MDS);
+* Female subjects who are pregnant or lactating;
+* Indication for surgical lesion removal with curative potential;
+* Known brain metastases, unless these metastases have been treated and/or stable for 6 months prior to enrollment;
+* Experimental cancer treatments or other investigational therapies within 6 weeks or five half-lives of the investigational medication prior to Day 1;
+* Uncontrolled congestive heart failure (NYHA II, III, IV);
+* Uncontrolled diabetes mellitus as defined by a hemoglobin A1C \>10.0;
+* Evidence of renal obstruction based on Tc-99m DTPA or TER for MAG3 renal scintigraphy or renal ultrasound.
+* Known or active human immunodeficiency virus (HIV) or hepatitis B or C virus unless cured;
+* Known or suspected active drug or alcohol abuse;
+* Participation in other interventional clinical studies within 30 days prior to Day 1;
+* Other known co-existing malignancies except non-melanoma skin cancer and carcinoma in situ of the uterine cervix, unless definitively treated and proven no evidence of recurrence for 5 years;
+* Any somatic or psychiatric disease/condition or abnormal laboratory test that in the opinion of the investigator, may interfere with the objectives and assessments of the study; or
+* Unable to comply with the requirements of the study protocol or be unsuitable for the study for any reason, in the opinion of the investigator. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: Multicenter Phase 2 study of 212Pb-DOTAMTATE enrolling adult subjects with positive somatostatin positive neuroendocrine tumors with either no prior history of peptide receptor radionuclide therapy (PRRT naive) or prior history of peptide receptor radionuclide therapy (Previous PRRT)
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 Onclive articles (1 scraped)
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • Dr Strosberg on 212Pb-DOTAMTATE in Unresectable/Metastatic … (https://www.onclive.com/view/dr-strosberg-on-212pb-dotamtate-in-unresectable-metastatic-sstr-gep-nets) [Onclive]
+	•	Key findings from publications: Onclive Article (Dr Strosberg on 212Pb-DOTAMTATE in Unresectable/Metastatic …): Jonathan Strosberg, MD, professor, Moffitt Cancer Center, discusses findings from the phase 2 ALPHAMEDIX02 trial (NCT05153772) evaluating the safety, tolerability, and efficacy of 212 Pb-DOTAMTATE in patients with somatostatin receptor (SSTR)–positive gastroenteropancreatic neuroendocrine tumors (GEP-NETs). This study included 2 cohorts: patients naive to peptide receptor radionuclide therapy (PRRT; cohort 1; n = 36) and patients refractory to PRRT (cohort 2; n = 30). All patients needed to have histologically confirmed, unresectable or metastatic, SSTR-positive GEP-NETs with at least 1 site of measurable disease per RECIST 1.1 criteria. Findings from cohort 1 presented at the 2024 ASCO Annual Meeting showed that evaluable patients not exposed to prior PRRT who received 212Pb-DOTAMTATE in the phase 1 ALPHAMEDIX01 trial (NCT03466216) or ALPHAMEDIX02 (n = 44) achieved an overall response rate (ORR) of 56.8% (95% CI, 42.2%-70.3%), which Strosberg notes is higher than ORRs typically observed in prior clinical trials investigating lutetium Lu 177 dotatate (Lutathera) in this patient population. In the phase 2 portion (n = 36), the ORR was 55.6% (95% CI, 39.6%-70.5%). Regarding safety, the targeted alpha therapy was generally tolerable, Strosberg explains. Notably, the incidences of hematologic and renal toxicities—common concerns with PRRT—were low for patients treated with 212Pb-DOTAMTATE, he continues. Any-grade alopecia was common, occurring in 93% of patients treated in phase 1 or 2 (n = 44), and Strosberg notes that this adverse effect (AE) was usually moderate and reversible. During the presentation at the ASCO Annual Meeting, he explained that SSTR is expressed on hair follicles. One AE that has stood out with 212Pb-DOTAMTATE is dysphagia, Strosberg continues. In evaluable patients treated during ALPHAMEDIX02 (n = 36), the rate of any-grade dysphagia was 42%, and grade 3 or 4 dysphagia was reported in 1 patient (3%). Despite normal colonoscopy findings, esophageal manometry indicated results consistent with achalasia, according to Strosberg, who adds that this AE was generally managed with palliative treatments such as Botox injections.
+	•	Additional evidence from online sources: Primary outcome: Measurement of the objective response rate by Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 criteria.; Number of patients with treatment-related adverse events as assessed by CTCAE v.4.0
+Secondary outcomes: Measurement of the Median Progression free survival (mPFS); Measurement of Overall Survival (OS); Measurement of Time to Tumor Progression (TTP); To evaluate health-related quality of life (HRQL) using ECOG performance status; To evaluate health-related quality of life (HRQL) using HRQL questionnaire EORTC QLQ-C30; To evaluate health-related quality of life (HRQL) using HRQL questionnaire EORTC QLQ-G.I.NET21
+Web search summary: 1 Onclive articles (1 scraped)
+Sources checked: {'pubmed': {'count': 0, 'items': [], 'scraped': 0}, 'onclive': {'count': 1, 'items': [{'title': 'Dr Strosberg on 212Pb-DOTAMTATE in Unresectable/Metastatic …', 'url': 'https://www.onclive.com/view/dr-strosberg-on-212pb-dotamtate-in-unresectable-metastatic-sstr-gep-nets', 'content_scraped': True, 'content_length': 2176}], 'scraped': 1}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 Onclive articles (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

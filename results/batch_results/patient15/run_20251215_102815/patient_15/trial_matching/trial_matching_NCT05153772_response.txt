@@ -1,0 +1,13 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:37:55.576579
+Trial: 20/86
+NCT ID: NCT05153772
+Model: google/gemini-3-pro-preview
+==================================================
+
+```json
+{
+  "relevant": "YES",
+  "explanation": "This study provides meaningful clinical evidence for the patient's current scenario. The patient has a progressive, SSTR-positive (DOTATOC +++) well-differentiated Pancreatic NET G3 (Ki-67 70%) and is refractory to all standard systemic therapies (chemotherapy, SSAs, targeted agents). The study evaluates 212Pb-DOTAMTATE (Targeted Alpha Therapy), a potent form of PRRT, in SSTR-positive GEP-NETs, specifically including a cohort of PRRT-naive patients which matches this patient's history. Published Phase 2 results demonstrate an Objective Response Rate (ORR) of 56.8% in PRRT-naive patients, which is notably higher than historical rates for standard beta-emitter PRRT (Lutetium-177). Given the patient's aggressive disease biology (high Ki-67, FDG positivity) and the clinical need for tumor shrinkage to consolidate response, the evidence of high efficacy from this alpha-emitter therapy is directly applicable. Even if the patient's high Ki-67 exceeds typical enrollment caps for some NET trials, the biological alignment (SSTR+) and the strong efficacy signal make this a highly relevant therapeutic consideration for a refractory patient needing potent systemic treatment."
+}
+```

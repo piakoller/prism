@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T08:46:27.306208
+Trial: 15/86
+NCT ID: NCT02568267
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This study is relevant because the patient is currently undergoing molecular profiling, and the study provides critical evidence for a potential targeted therapy option. The STARTRK-2 trial evaluates entrectinib in solid tumors with *NTRK*, *ROS1*, or *ALK* fusions and has published specific results demonstrating efficacy in neuroendocrine tumors (NETs) harboring *NTRK* fusions (e.g., Sigal et al., 2017). Although these fusions are rare in pancreatic NETs, the patient has refractory Grade 3 disease with ongoing profiling; if a fusion is detected, this study provides the direct clinical evidence to recommend entrectinib as a salvage therapy. The study aligns with the disease biology (solid tumor with potential fusion), the clinical context (need for new lines of therapy after progression on standard agents), and offers high-quality Phase 2 evidence guiding precision oncology decisions."
+}

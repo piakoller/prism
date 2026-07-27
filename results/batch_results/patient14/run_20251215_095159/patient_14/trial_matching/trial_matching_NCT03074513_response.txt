@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-15T10:02:52.342898
+Trial: 27/86
+NCT ID: NCT03074513
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "YES",
+  "explanation": "This Phase II study provides meaningful clinical evidence for the use of atezolizumab and bevacizumab in patients with advanced, progressive neuroendocrine tumors, specifically including an extrapancreatic cohort that allowed 'atypical carcinoid' of the lung. Although the patient's Ki-67 of 25% technically classifies her as G3 under GEP-NET criteria, her diagnosis of 'atypical carcinoid' with a well-differentiated phenotype (SSTR-positive, FDG-low) biologically aligns with the study population, which explicitly excluded poorly differentiated carcinomas but included atypical carcinoids. Given the patient's intolerance to standard systemic therapies (chemotherapy, everolimus) and progression on somatostatin analogs, this study offers relevant evidence for a non-cytotoxic systemic alternative. The reported objective response rate of 15% and progression-free survival of ~14 months in the extrapancreatic cohort suggest this combination could be a viable consideration for a patient with limited therapeutic options."
+}

@@ -1,0 +1,224 @@
+=== TRIAL MATCHING PROMPT ===
+Timestamp: 2026-01-05T11:12:42.147839
+Trial: 63/86
+NCT ID: NCT02795858
+Model: google/gemini-3-pro-preview
+==================================================
+
+# ROLE & GOAL
+
+You are an evidence-based medical oncologist specializing in neuroendocrine neoplasms (NENs), including well-differentiated NETs and poorly differentiated NECs. You will receive structured information about one patient and one study with published results. Your job is to identify whether this study provides meaningful clinical evidence that could inform therapy recommendations for this patient.
+
+**CRITICAL: This is NOT about trial enrollment eligibility.** You are evaluating whether the study's published evidence, outcomes, and treatment approach are clinically relevant and could guide therapeutic decision-making for this patient, regardless of strict inclusion/exclusion criteria.
+
+# SCOPE & SOURCES
+	•	Use only the structured fields below plus general clinical knowledge.
+	•	Focus on published results, treatment efficacy, safety profiles, and clinical outcomes.
+	•	Apply reasonable clinical assumptions for common missing data (see specific guidance below).
+	•	**Consider inclusion/exclusion criteria for context**, but don't reject studies solely based on strict eligibility requirements.
+	•	Prioritize studies that focus on treatments and that come from prospective studies.
+	•	Focus on whether the treatment approach and evidence could provide actionable insights for this patient's care, even if eligibility criteria are restrictive.
+
+# CLINICAL ASSUMPTIONS FOR MISSING DATA
+
+**SSTR-PET Imaging:** If SSTR-PET results are not available yet but the patient has a well-differentiated NET (G1-G2), assume the SSTR-PET would be positive and compatible with PRRT-based studies. This is clinically reasonable as >90% of well-differentiated NETs are SSTR-positive.
+
+**Treatment Scenarios:** Consider both current clinical state AND potential alternative treatment paths that might come up as more information about the patient gets available:
+e.g. resectability yes/no, SSTR-PET positive yes/no, etc., comorbidities that prevent a certain treatment, etc. 
+
+DECISION RULE: When does a study provide meaningful evidence for therapy recommendations?
+
+Answer YES if ALL THREE criteria are met; otherwise answer NO.
+
+	1.	**Disease / Biology Alignment** (should align reasonably)
+Core disease features should be reasonably concordant: differentiation (NET vs NEC), primary site/subtype, grade/Ki-67 range, stage (localized vs advanced/metastatic), functional status. The study population should be clinically similar enough that treatment insights are transferable.
+
+	•	"Reasonably concordant" allows clinically justified extrapolation (e.g., pancreatic NET G2 evidence may inform pancreatic NET G1-G2 treatment decisions, midgut NET evidence may apply to small bowel NET with similar characteristics).
+
+	2.	**Treatment Context / Clinical Applicability** (should be applicable in at least one clinical scenario)
+The study's treatment approach, setting, and patient population should provide meaningful evidence for at least one relevant clinical scenario for this patient. Consider:
+	•	**Current state:** Patient's actual clinical situation
+	•	**Alternative scenarios:** e.g. What if surgery is/isn't feasible? What if SSTR-PET is positive? Different treatment sequences?
+	•	**Treatment approach:** Is the studied intervention something that could be considered for this patient?
+	•	**Eligibility context:** While strict eligibility criteria shouldn't be a hard rejection, consider if the study population is reasonably similar to this patient.
+	•	**Evidence transferability:** Can the treatment insights from this study population be reasonably applied to this patient's situation?
+
+	3.	**Evidence Quality and Relevance** (should provide actionable clinical insights)
+The published results should offer meaningful evidence that could guide treatment decisions:
+	•	Study provides clear efficacy and/or safety data
+	•	Results are clinically meaningful (not just statistical significance)
+	•	Patient population studied is representative enough to inform decisions for this patient
+	•	**Eligibility considerations:** While the patient may not meet all inclusion criteria, the study population should be sufficiently similar that treatment insights are transferable
+	•	Evidence strength justifies consideration in treatment planning
+
+**IMPORTANT:** Publication quality is not a standalone criterion. Focus on whether the prospective clinical evidence (even from preliminary results or abstracts) provides meaningful insights for treatment decisions.
+
+If any of the three criteria cannot be verified as met from the provided fields AND reasonable clinical assumptions, respond NO.
+Apply clinical judgment when evaluating borderline cases - prioritize studies with strong biological rationale, meaningful clinical outcomes, and evidence that could realistically inform treatment decisions for this patient.
+
+## INPUTS
+
+### PATIENT DATA
+	•	Clinical Information: === ORIGINAL PATIENT DATA ===
+Clinical Information:
+Brief Clinical History: 34-year-old male patient with a well-differentiated neuroendocrine 
+tumor of the duodenum, initially pT2 pN1 (3/10) cM0, proliferation index 2-3%, first 
+diagnosed in 2016, followed by pylorus-preserving partial duodeno-pancreatectomy. After 
+detection of a liver metastasis in segment IV in DOTATATE PET/CT one year later and two 
+further liver metastases in abdominal MRI in 2018, a central liver resection (segment Iva/b) 
+was performed. In 2020, new liver metastases were detected in segments II, III, and V. Due 
+to progression of size under treatment with somatostatin analogue a laparotomy with 
+resection of the liver metastases was performed in 2023. Therapy with Somatostatin 
+analogue was continued. In august 2025, Gallium DOTATATE-PET/CT showed two new liver 
+metastases and suspicion of two lymph node metastases in the upper abdomen. 
+Current Clinical Status: ECOG 0 
+Question for Tumorboard:
+Continue therapy with Somatostatin analogue or escalate therapy? 
+
+=== ASSESSMENT RESULTS ===
+Clinical Assessment:
+**Patient Summary and Clinical Status**
+The patient is a 34-year-old male with a well-differentiated neuroendocrine tumor (NET) of the duodenum, initially diagnosed in 2016 (pT2 pN1, Ki-67 2-3%). The clinical course is characterized by recurrent metastatic spread to the liver despite multiple surgical interventions (pylorus-preserving partial duodeno-pancreatectomy in 2016, central liver resection in 2018, and resection of liver metastases in 2023). The patient has a good performance status (ECOG 0).
+
+**Assessment of Disease Progression**
+Current imaging (Gallium DOTATATE-PET/CT, August 2025) demonstrates disease progression with the appearance of two new liver metastases and suspicion of two lymph node metastases in the upper abdomen. This progression has occurred while the patient was under treatment with a Somatostatin analogue (SSA), which was continued after the 2023 surgery.
+
+**Tumor Biology and Receptor Status**
+The tumor was initially characterized as well-differentiated with a low proliferation index (Ki-67 2-3%). The detection of new metastases via Gallium DOTATATE-PET/CT confirms the expression of somatostatin receptors (SSTR) in the new lesions.
+
+**Guideline-Based Clinical Assessment**
+
+1.  **Systemic Therapy Escalation:**
+    *   According to the **ESMO Clinical Practice Guidelines (2020)**, the goal of systemic therapy is to control tumor growth. Since the patient has shown radiological progression on SSA therapy, the guidelines suggest escalating treatment.
+    *   **Peptide Receptor Radionuclide Therapy (PRRT):** Both **ENETS (2023)** and **ESMO (2020)** guidelines identify PRRT as a valid therapeutic option for progressive, SSTR-positive NETs. ESMO specifically notes that PRRT is recommended in patients with disease progression on SSAs. The patient's positive Gallium DOTATATE-PET/CT suggests potential eligibility. However, it must be clinically verified that the uptake in all tumor lesions (both liver and lymph nodes) exceeds the uptake of normal liver parenchyma (liver SUVmax is typically ~6–7) to confirm suitability for PRRT.
+    *   **Targeted Molecular Therapy:** **ESMO (2020)** guidelines recommend Everolimus for patients with clearly progressive gastrointestinal NETs (based on the RADIANT-4 trial). **ENETS (2023)** also lists Everolimus as a therapeutic option for widespread metastatic gastroduodenal NETs, though it notes the evidence is limited compared to other sites.
+    *   **Chemotherapy:** Systemic chemotherapy is generally not recommended for well-differentiated, slowly growing GI-NETs (Ki-67 <10%) according to **ESMO (2020)**, unless the tumor is rapidly progressive or the grade has increased.
+
+2.  **Surgical Considerations:**
+    *   **ENETS (2023)** guidelines state that surgery with curative intent for metastatic gastroduodenal NETs should be performed if a complete tumor resection (R0) seems feasible.
+    *   **ESMO (2020)** recommends that a surgical approach for stage IV disease be considered in selected patients with exclusive or predominant liver involvement.
+    *   Given the patient's history of two prior liver resections (2018, 2023) and the recurrence of disease within two years of the last surgery, along with new suspected extra-hepatic nodal involvement, the feasibility and benefit of a third liver resection must be weighed against the high likelihood of further systemic recurrence.
+
+3.  **Re-evaluation of Tumor Grade:**
+    *   While the initial Ki-67 was 2-3%, **ESMO (2020)** guidelines suggest that a re-biopsy may be considered in the follow-up of metastatic disease to exclude dedifferentiation (progression to higher grade), although the current slow progression over 9 years is consistent with a well-differentiated phenotype.
+
+**Conclusion**
+The patient presents with progressive, SSTR-positive metastatic disease while on maintenance SSA therapy. The clinical picture aligns with guideline criteria for escalating systemic therapy (switching to PRRT or Everolimus) or considering further surgical resection if technically feasible and oncologically sound.
+
+Trial Search Recommendations:
+  - Consider needed based on assessment
+  - Assess needed based on assessment
+  - Follow needed based on assessment
+	•	Question for Tumorboard: Continue therapy with Somatostatin analogue or escalate therapy? 
+
+### STUDY DATA
+	•	NCT-ID: NCT02795858
+	•	Title: A Phase II Study of Ramucirumab With Somatostatin Analog Therapy in Patients With Advanced, Progressive Carcinoid Tumors
+	•	Phase: PHASE2, Status: COMPLETED
+	•	Intervention: Ramucirumab; Somatostatin Analog
+	•	Inclusion/exclusion criteria: Inclusion Criteria:
+
+* Participants must have histologically or cytologically confirmed low- to intermediate-grade neuroendocrine tumor (carcinoid tumor).
+* Carcinoid tumors of any site are eligible. Patients with pancreatic neuroendocrine tumors are excluded.
+* Participants must have measurable disease, defined as at least one lesion that can be accurately measured in at least one dimension (longest diameter to be recorded for non-nodal lesions and short axis for nodal lesions) as ≥20 mm with conventional techniques or as ≥10 mm with spiral CT scan, MRI, or calipers by clinical exam. See Section 10 for the evaluation of measurable disease.
+* Locally advanced, unresectable or metastatic disease.
+* Patients must have evidence of radiographic disease progression within the past 12 months. Progressive disease by RECIST criteria is not required.
+* Age ≥ 18 years.
+* ECOG performance status 0-1 (see Appendix A).
+* Participants must have normal organ and marrow function as defined below:
+
+  * absolute neutrophil count ≥1,000/ mm3
+  * platelets ≥100,000/ mm3
+  * hemoglobin ≥ 9 g/dL
+  * total bilirubin ≤ 1.5 × institutional upper limit of normal
+  * AST(SGOT)/ALT(SGPT) ≤ 3 × institutional upper limit of normal, or ≤ 5× institutional upper limit of normal in the setting of liver metastases
+  * creatinine ≤ 1.5 × upper limit of normal
+  * urinary protein ≤ 1+ on dipstick or routine urinalysis (if urine dipstick or routine urinalysis is 2+, a 24-hour urine collection for protein must demonstrate \<1000 mg of protein in 24 hours)
+  * coagulation function Adequate coagulation function as defined by International Normalized Ratio (INR) ≤ 1.5 and a partial thromboplastin time (PTT) \< 1.5 x institutional upper limit of normal. Patients on full-dose anticoagulation must be on a stable dose (minimum duration 14 days) of oral anticoagulant or low molecular weight heparin.
+  * The effects of ramucirumab on the developing human fetus are unknown. For this reason and because anti-antiangiogenic agents are known to be teratogenic, women of child-bearing potential and men must agree to use adequate contraception (hormonal or barrier method of birth control; abstinence) prior to study entry and for the duration of study participation. Should a woman become pregnant or suspect she is pregnant while she or her partner is participating in this study, she should inform her treating physician immediately. Men treated or enrolled on this protocol must also agree to use adequate contraception prior to the study, for the duration of study participation, and 4 months after completion of Ramucirumab administration.
+* Ability to understand and the willingness to sign a written informed consent document.
+
+Exclusion Criteria:
+
+* Patients who have had chemotherapy or radiotherapy within 4 weeks prior to entering the study or those who have not recovered from adverse events due to agents administered more than 4 weeks earlier.
+* Patients who have undergone major surgery within 28 days or subcutaneous venous access device placement within 7 days prior to study enrollment.
+* Patients with elective or planned major surgery to be performed during the course of the clinical trial.
+* Patients who are receiving any other investigational agents.
+* Patients with any Grade 3-4 gastrointestinal bleeding within 3 months prior to enrollment.
+* Patients with a history of deep vein thrombosis, pulmonary embolism, or any other significant thromboembolism (venous port or catheter thrombosis or superficial venous thrombosis are not considered "significant") during the 3 months prior to registration.
+* Patients who have experienced any arterial thromboembolic events, including but not limited to myocardial infarction, transient ischemic attack, cerebrovascular accident, or unstable angina, within 6 months prior to enrollment.
+* Patients with uncontrolled or poorly-controlled hypertension (\>160 mmHg systolic or \> 100 mmHg diastolic for \>4 weeks) despite standard medical management.
+* Patients who have congestive heart failure (NYHA Class III or IV), sustained ventricular tachycardia, ventricular fibrillation, clinically significant bradycardia, advanced heart block within the six months preceding enrollment.
+* Patients who have cirrhosis at a level of Child-Pugh B (or worse) or cirrhosis (any degree) and a history of hepatic encephalopathy or clinically meaningful ascites resulting from cirrhosis.
+* Patients with a serious or nonhealing wound, ulcer, or bone fracture within 28 days prior to enrollment.
+* Patients receiving chronic antiplatelet therapy, including aspirin, nonsteroidal anti-inflammatory drugs (NSAIDs, including ibuprofen, naproxen, and others), dipyridamole or clopidogrel, or similar agents. Once-daily aspirin use (maximum dose 325 mg/day) is permitted.
+* Patients with uncontrolled brain or leptomeningeal metastases, including patients who continue to require glucocorticoids for brain or leptomeningeal metastases.
+* Patients with prior or concurrent malignancy except for the following: adequately treated basal cell or squamous cell skin cancer, or other adequately treated in situ cancer, or any other cancer from which the patient has been disease free for five years.
+* Patients with symptomatic cholelithiasis.
+* Patients who have any severe and/or uncontrolled medical conditions or other conditions that could affect their participation in the study such as:
+
+  * Severely impaired lung function
+  * Any active (acute or chronic) or uncontrolled infection/ disorders.
+  * Nonmalignant medical illnesses that are uncontrolled or whose control may be jeopardized by the treatment with the study therapy
+  * Psychiatric illness/social situations that would limit compliance with study requirement
+* History of allergic reactions attributed to compounds of similar chemical or biologic composition to ramucirumab .
+* Pregnant and breastfeeding women are excluded from this study because ramucirumab is associated with the potential for teratogenic or abortifacient effects. Because there is an unknown but potential risk for adverse events in nursing infants secondary to treatment of the mother with ramucirumab, breastfeeding should be discontinued if the mother is treated with ramucirumab. These potential risks may also apply to other agents used in this study. *(Note: Consider for context, but don't use as hard rejection criteria)*
+	•	Summary: This research study is evaluating the drug Ramucirumab as a possible treatment for Advanced, Progressive Carcinoid Tumors.
+	•	Publications: Analysis: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped); External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/39834129/
+
+### PUBLISHED RESULTS DATA
+	•	Publication citations: • A phase II study of ramucirumab and somatostatin analog therapy in patients with advanced neuroendocrine tumors. (PMID: 39834129)
+• The tumor microenvironment in neuroendocrine tumors: biology and therapeutic implications [Google Scholar]
+• Advanced neuroendocrine tumours of the small intestine and pancreas:clinicaldevelopments, controversies, and future strategies [Google Scholar]
+• A phase IIstudyof ramucirumab and somatostatin analog therapy in patients with advanced neuroendocrine tumors [Google Scholar]
+• A phase II study of ramucirumab and somatostatin analog therapy in patients with advanced neuroendocrine tumors [Google Scholar]
+• MEDICAL MANAGEMENT OF GEPNETS [Google Scholar]
+• Neuroendocrine neoplasms: Evolving and future treatments [Google Scholar]
+• Advanced neuroendocrine tumours of the small intestine and pancreas: clinical developments, controversies, and future strategies [Google Scholar]
+• Therapeutic strategies for patients with neuroendocrine neoplasms: current perspectives [Google Scholar]
+• MEDICALMANAGEMENT OF GEPNETS [Google Scholar]
+	•	Key findings from publications: PubMed Abstract: Well-differentiated neuroendocrine tumors (NET) are highly vascular tumors characterized by their expression of vascular endothelial growth factor (VEGF). This trial investigated the activity of ramucirumab, a monoclonal antibody that targets VEGF receptor-2 (VEGFR-2) and inhibits activity of VEGF, in combination with somatostatin analog therapy in patients (pts) with advanced extra-pancreatic NET...
+
+PubMed Full Content: Full text links Cite Display options Display options Format Abstract PubMed PMID Abstract Objectives: Well-differentiated neuroendocrine tumors (NET) are highly vascular tumors characterized by their expression of vascular endothelial growth factor (VEGF). This trial investigated the activity of ramucirumab, a monoclonal antibody that targets VEGF receptor-2 (VEGFR-2) and inhibits activity of VEGF, in combination with somatostatin analog therapy in patients (pts) with advanced extra-pancreatic NET. Methods: We conducted a single-arm phase II trial enrolling pts with advanced, progressive extra-pancreatic NET. Patients were treated with ramucirumab 8 mg/kg intravenously on days 1 and 15 of each 28-day cycle. The primary endpoint was progression-free survival (PFS). Secondary endpoints toxicity, radiographic and biochemical tumor response rate, and overall survival (OS). Results: The trial enrolled 43 patients. Primary tumor sites included small intestine 20 (46%), lung 10 (23%), thymus 3 (7%), rectum 1(2%), kidney 1(2%), and unknown primary 8(18%). Median PFS was 14.2 months (95% CI, 9.0-25.6 months), and median OS was 24.9 months (95% CI, 20.7-43.1 months). Best response by RECIST 1.1: partial response 5% (95% CI, 0.6%-15.8%). Chromogranin A levels dropped by at least 50% in 10% of the 37 patients who had elevated levels at baseline. Most common all-grade adverse events included fatigue (84%) and hypertension (84%). Conclusion: Ramucirumab demonstrated efficacy and safety in this single-arm phase II trial. These findings support the continued evaluation of angiogenesis inhibitors in the treatment of NET. Clinical trial registration: NCT02795858 . Keywords: carcinoid tumors; extrapancreatic neuroendocrine tumors; ramucirumab. © The Author(s) 2025. Published by Oxford University Press. PubMed Disclaimer Conflict of interest statement K.J.P.: The author provided a one-time advisory role with honoraria for Ipsen, Exelexis, and Novartis. M.H.K.: The author declares no conflict of interest. H.Z.: The author declares no conflict of interest. J.A.: The author declares no conflict of interest. J.C.: The author declares no conflict of interest. A.C.E.: The author declares research funding from Medtronic Inc. P.C.E.: The author is/has been a consultant for and has received honoraria from ALX oncology, Arcus Bioscience, Astellas, Astra-Zeneca, Blueprint Medicines, Bristol-Myers Squibb, Chimeric Therapeutics, Celgene, Coherus, Daiichi-Sankyo, Five Prime, Ideaya, Istari, Legend, Lily, Loxo, Merck, Novartis, Ono, Servier, Taiho, Takeda, Turning Point Therapeutics, Xencor, and Zymeworks. B.E.J.: Consulting or Advisory Role: Novartis, Daiichi Sankyo, Checkpoint Therapeutics, G1 Therapeutics, Jazz Pharmaceuticals, GlaxoSmithKline (GSK), Genentech, Astra Zeneca (AZ), Hummingbird Diagnostics, Bluedot Bio, Merus NV, Abdera, Simcere Pharmaceutical Company; Research Funding: Novartis (I), Novartis (Inst). N.J.M.: the author received funding to her institution for research from Bristol Myers Squibb. A.P.: The author reports a leadership role with Roche and Exelixis; a consulting or advisory role with Eli Lilly, Pfizer, Inivata, Biofidelity, Checkmate Pharmaceuticals, FMI, Guardant, Abbvie, Bayer, Delcath, Taiho, CVS, Value Analytics Lab, Seagen, Saga, AstraZeneca, Scare Inc, Illumina and Science For America; institutional research funding from PureTech, PMV Pharmaceuticals, Plexxicon, Takeda, BMS, Mirati, Novartis, Erasca, Genentech and Daiichi Sankyo; honoraria from Up to Date; travel accommodations/expenses from Karkinos Healthcare; and stock or stock options in C2i Genomics XGenomes Cadex and Parithera. A.P.—The author declares no conflict of interest. D.R.: the author receives research funding Axial Therapeutics, Boston Scientific, Instylla. M.B.Y.: the author is/has been a consultant for and has received honoraria from Janssen Pharmaceuticals and Nouscom. Research funding from Janssen Pharmaceuticals. Payments for peer review services from UpToDate. K.R.: the author declares no conflict of interest. E.J.: The author declares no conflict of interest. C.G.: The author declares no conflict of interest. J.A.C.: The author has received consulting fees from Advanced Accelerator Applications, Crinetics, Ipsen, Lexicon, and Novartis, (spouse has consulted for Bayer and Pfizer); has received royalties from UpToDate; and has stock in Merck. Figures Figure 1. Treatment duration. Figure 1. Treatment duration. Figure 1. Treatment duration. Figure 2. (A) Progression free survival (PFS)… Figure 2. (A) Progression free survival (PFS) and (B) Overall survival (OS). Figure 2. (A) Progression free survival (PFS) and (B) Overall survival (OS). See this image and copyright information in PMC Similar articles Phase II basket trial of Dual Anti-CTLA-4 and anti-PD-1 blockade in Rare Tumors (DART) SWOG S1609: pancreatic neuroendocrine neoplasm (PNEN) cohort. Patel SP, Fisher J, Chae YK, Soto LS, Kasi A, Konda B, Walshauser M, Parra E, Zhang J, Duault C, Gonzalez-Kozlova E, Manyam G, Zhang J, Chen H, Duose DY, Laberiano Fernandez C, Luthra R, Al-Atrash G, Kim-Schulze S, Maecker HT, Wistuba II, Gnjatic S, Lee JJ, Zhang J, Magner CM, Chen HX, Sharon E, Othus M, Ryan CW, Blanke C, Haymaker CL, Kurzrock R. Patel SP, et al. J Immunother Cancer. 2025 Jun 30;13(6):e011760. doi: 10.1136/jitc-2025-011760. J Immunother Cancer. 2025. PMID: 40588371 Free PMC article. Clinical Trial. Alternating gemcitabine plus nab-paclitaxel and gemcitabine alone versus continuous gemcitabine plus nab-paclitaxel after induction treatment of metastatic pancreatic cancer (ALPACA): a multicentre, randomised, open-label, phase 2 trial. Dorman K, Boeck S, Caca K, Reichert M, Ettrich TJ, Oettle H, Waidmann O, Modest DP, Müller L, Michl P, Kanzler S, Pink D, Reinacher-Schick A, Geißler M, Pelz H, Kunzmann V, Held S, Schichtl T, Heinemann V, Kullmann F. Dorman K, et al. Lancet Gastroenterol Hepatol. 2024 Oct;9(10):935-943. doi: 10.1016/S2468-1253(24)00197-3. Epub 2024 Aug 16. Lancet Gastroenterol Hepatol. 2024. PMID: 39159648 Clinical Trial. Durvalumab or placebo plus gemcitabine and cisplatin in participants with advanced biliary tract cancer (TOPAZ-1): updated overall survival from a randomised phase 3 study. Oh DY, He AR, Bouattour M, Okusaka T, Qin S, Chen LT, Kitano M, Lee CK, Kim JW, Chen MH, Suksombooncharoen T, Ikeda M, Lee MA, Chen JS, Potemski P, Burris HA 3rd, Ostwal V, Tanasanvimon S, Morizane C, Zaucha RE, McNamara MG, Avallone A, Cundom JE, Breder V, Tan B, Shimizu S, Tougeron D, Evesque L, Petrova M, Zhen DB, Gillmore R, Gupta VG, Dayyani F, Park JO, Buchschacher GL Jr, Rey F, Kim H, Wang J, Morgan C, Rokutanda N, Żotkiewicz M, Vogel A, Valle JW. Oh DY, et al. Lancet Gastroenterol Hepatol. 2024 Aug;9(8):694-704. doi: 10.1016/S2468-1253(24)00095-5. Epub 2024 May 29. Lancet Gastroenterol Hepatol. 2024. PMID: 38823398 Clinical Trial. Olaparib Monotherapy or in Combination with Abiraterone for the Treatment of Patients with Metastatic Castration-Resistant Prostate Cancer (mCRPC) and a BRCA Mutation. Saad F, Armstrong AJ, Shore N, George DJ, Oya M, Sugimoto M, McKay RR, Hussain M, Clarke NW. Saad F, et al. Target Oncol. 2025 May;20(3):445-466. doi: 10.1007/s11523-025-01146-4. Epub 2025 May 21. Target Oncol. 2025. PMID: 40397306 Free PMC article. Review. Antiproliferative effect of somatostatin analogs in advanced gastro-entero-pancreatic neuroendocrine tumors: a systematic review and meta-analysis. Merola E, Panzuto F, Delle Fave G. Merola E, et al. Oncotarget. 2017 Jul 11;8(28):46624-46634. doi: 10.18632/oncotarget.16686. Oncotarget. 2017. PMID: 28402955 Free PMC article. See all similar articles Cited by Narrative review: this or that?-uncommon challenges in mediastinal pathology. Mantilla JG, Moreira AL. Mantilla JG, et al. Mediastinum. 2025 Jun 18;9:13. doi: 10.21037/med-25-13. eCollection 2025. Mediastinum. 2025. PMID: 40666532 Free PMC article. Review. References Zhang J, Jia Z, Li Q, et al.Elevated expression of vascular endothelial growth factor correlates with increased angiogenesis and decreased progression-free survival among patients with low-grade neuroendocrine tumors. Cancer. 2007;109:1478-1486. https://doi.org/10.1002/cncr.22554 - DOI - PubMed Bergsland EK, Mahoney MR, Asmis TR, et al.Prospective randomized phase II trial of pazopanib versus placebo in patients with progressive carcinoid tumors (CARC) (Alliance A021202). J Clin Oncol. 2019;37:4005-4005. https://doi.org/10.1200/jco.2019.37.15_suppl.4005 - DOI Capdevila J, Fazio N, Lopez C, et al.Lenvatinib in patients with advanced grade 1/2 pancreatic and gastrointestinal neuroendocrine tumors: results of the phase II TALENT Trial (GETNE1509). J Clin Oncol. 2021;39:2304-2312. https://doi.org/10.1200/JCO.20.03368 - DOI - PubMed Chan JA, Faris JE, Murphy JE, et al.Phase II trial of cabozantinib in patients with carcinoid and pancreatic neuroendocrine tumors (pNET). J Clin Oncol. 2017;35:228-228. https://doi.org/10.1200/jco.2017.35.4_suppl.228 - DOI Garcia-Carbonero R, Benavent M, Jiménez Fonseca P, et al.The AXINET trial (GETNE1107): Axitinib plus octreotide LAR improves PFS by blinded central radiological assessment vs placebo plus octreotide LAR in G1-2 extrapancreatic NETs, in ESMO Congress. Ann Oncol. 2021;32:S907-S908. https://doi.org/10.1016/j.annonc.2021.08.179 - DOI Show all 19 references Publication types Clinical Trial, Phase II Actions Search in PubMed Search in MeSH Add to Search MeSH terms Adult Actions Search in PubMed Search in MeSH Add to Search Aged Actions Search in PubMed Search in MeSH Add to Search Antibodies, Monoclonal, Humanized Actions Search in PubMed Search in MeSH Add to Search Antineoplastic Combined Chemotherapy Protocols* / therapeutic use Actions Search in PubMed Search in MeSH Add to Search Female Actions Search in PubMed Search in MeSH Add to Search Humans Actions Search in PubMed Search in MeSH Add to Search Male Actions Search in PubMed Search in MeSH Add to Search Middle Aged Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / drug therapy Actions Search in PubMed Search in MeSH Add to Search Neuroendocrine Tumors* / pathology Actions Search in PubMed Search in MeSH Add to Search Ramucirumab Actions Search in PubMed Search in MeSH Add to Search Somatostatin* / administration & dosage Actions Search in PubMed Search in MeSH Add to Search Somatostatin* / analogs & derivatives Actions Search in PubMed Search in MeSH Add to Search Somatostatin* / therapeutic use Actions Search in PubMed Search in MeSH Add to Search Substances Antibodies, Monoclonal, Humanized Actions Search in PubMed Search in MeSH Add to Search Ramucirumab Actions Search in PubMed Search in MeSH Add to Search Somatostatin Actions Search in PubMed Search in MeSH Add to Search Associated data ClinicalTrials.gov/NCT02795858 Actions Search in PubMed Search in ClinicalTrials.gov Related information MedGen PubChem Compound (MeSH Keyword) Grants and funding Eli Lilly LinkOut - more resources Full Text Sources PubMed Central Silverchair Information Systems Medical ClinicalTrials.gov Research Materials NCI CPTC Antibody Characterization Program
+
+Google Scholar Abstract (The tumor microenvironment in neuroendocrine tumors: biology and therapeutic implications): … Although in the absence of direct evidence from functionalstudies, thesefindingssuggested … VEGFR2, is being currently investigated in a phase IIstudyof non-pNETs (NCT02795858). …
+
+Google Scholar Abstract (Advanced neuroendocrine tumours of the small intestine and pancreas:clinicaldevelopments, controversies, and future strategies): … 3trials, and they might haveclinicalpurpose in the future, as reviewed by Pavel and Sers.Examples of drugs that are being tested in ongoingclinicaltrials… (NCT02795858), nintedanib (…
+
+Google Scholar Abstract (A phase IIstudyof ramucirumab and somatostatin analog therapy in patients with advanced neuroendocrine tumors): … In randomized placebo-controlledtrials, pazopanib, surufatinib, and cabozantinib haveimproved progression-free survival in patients with extra-pancreatic NET. Additionally, …
+
+Google Scholar Abstract (A phase II study of ramucirumab and somatostatin analog therapy in patients with advanced neuroendocrine tumors): … Based on theefficacyof VEGF pathway inhibitors in NET, we conducted a phase II trial todetermine the clinicalefficacyandsafetyprofile of ramucirumab in patients with advanced extra…
+
+Google Scholar Abstract (MEDICAL MANAGEMENT OF GEPNETS): … Thesafetyandefficacyof lanreotide as well as its anti-tumor activity was further confirmedin the open label extension study. Lanreotide’s role in the control of carcinoid syndrome is …
+
+Google Scholar Abstract (Neuroendocrine neoplasms: Evolving and future treatments): Neuroendocrine neoplasms (NENs) are relatively rare neoplasms. Most NENs are slowlyprogressing malignancies with prolonged survival even in the presence of advanced …
+
+Google Scholar Abstract (Advanced neuroendocrine tumours of the small intestine and pancreas: clinical developments, controversies, and future strategies): … In thisReview, we discuss clinical developments and controversies in the treatment of … ofadvanced NETs and discussresultsof recent phase 3studies, systemic treatment of advanced …
+
+Google Scholar Abstract (Therapeutic strategies for patients with neuroendocrine neoplasms: current perspectives): … in the therapeutic algorithm, availableclinicaltrialsand major combinations. Furthermore,main currently recruitingclinicaltrialsevaluating therapeutic combinations are listed. …
+
+Google Scholar Abstract (MEDICALMANAGEMENT OF GEPNETS): … depot formulations of octreotide are in earlyclinicaltrialsand may add more therapyoptions in the future. Table 2 lists some ongoingclinicaltrialsof octreotide or lanreotide. …
+	•	Additional evidence from online sources: Primary outcome: Progression-Free Survival (PFS)
+Secondary outcomes: Overall Survival; Overall Radiographic Response; Biochemical Response (Chromogranin A)
+Web search summary: 1 PubMed publications (1 scraped)
+Sources checked: {'pubmed': {'count': 1, 'items': [{'title': 'A phase II study of ramucirumab and somatostatin analog therapy in patients with advanced neuroendocrine tumors.', 'url': 'https://pubmed.ncbi.nlm.nih.gov/39834129/', 'pmid': '39834129', 'content_scraped': True, 'content_length': 11170}], 'scraped': 1}, 'onclive': {'count': 0, 'items': [], 'scraped': 0}, 'congress_abstracts': {'count': 0, 'items': [], 'scraped': 0}, 'asco': {'count': 0, 'items': [], 'scraped': 0}, 'enets': {'count': 0, 'items': [], 'scraped': 0}, 'annals_oncology': {'count': 0, 'items': [], 'scraped': 0}, 'clinicaltrials_gov': {'count': 0, 'items': [], 'scraped': 0}}
+External sources: pubmed: https://pubmed.ncbi.nlm.nih.gov/39834129/
+Analysis notes: Online search performed; Found 1 additional publication(s) via online search; Web search details: 1 PubMed publications (1 scraped)
+
+### OUTPUT INSTRUCTIONS
+	•	Output JSON only in the exact schema below. No preamble, no trailing commentary.
+	•	Keep the explanation to one concise paragraph (≤200 words, increased from 150 to allow for scenario consideration).
+	•	Reference the provided fields including specific published results and findings when available.
+	•	Do not cite external sources beyond what is provided in the structured data.
+	•	State which criteria are met or not met with clinical reasoning.
+	•	**Focus on evidence relevance** for therapy recommendations - explain how the study evidence could inform treatment decisions.
+	•	**Consider eligibility criteria contextually** - note if patient meets criteria, but don't reject solely based on strict requirements.
+	•	**Explicitly mention which treatment scenario(s)** you considered (current state, resectable, unresectable, post-surgical).
+	•	**State any clinical assumptions** you made (e.g., "assuming SSTR-PET would be positive").
+	•	If answering YES, provide clear justification for how the study evidence supports treatment recommendations.
+	•	If answering NO, identify the key failing criterion/criteria that prevent the evidence from being clinically useful.
+
+{
+  "relevant": "YES" or "NO",
+  "explanation": "[One paragraph explaining your reasoning. Address: 1) disease/biology alignment with specific details and clinical rationale, 2) treatment context/clinical applicability including which clinical scenarios were considered (current/resectable/unresectable/post-surgical), 3) evidence quality and relevance for informing treatment decisions. Explicitly state any clinical assumptions made (e.g., SSTR-PET positivity, resectability scenarios). Consider inclusion/exclusion criteria for context but focus on whether study evidence could guide therapy recommendations. If patient doesn't meet some eligibility criteria, explain whether the evidence is still transferable. If answering NO, clearly state which specific criterion(ia) prevent the evidence from being clinically useful. If answering YES, explain how the study evidence supports meaningful treatment recommendations.]"
+}

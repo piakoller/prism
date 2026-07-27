@@ -1,0 +1,11 @@
+=== TRIAL MATCHING RAW RESPONSE ===
+Timestamp: 2025-12-12T17:40:13.723483
+Trial: 85/86
+NCT ID: NCT02842749
+Model: google/gemini-3-pro-preview
+==================================================
+
+{
+  "relevant": "NO",
+  "explanation": "The study does not meet the criteria for disease alignment or clinical applicability. The patient has a poorly differentiated pancreatic Neuroendocrine Carcinoma (NEC) with a Ki-67 of 95%, representing an aggressive, high-grade malignancy. In contrast, this study specifically enrolls patients with well-differentiated G1 or G2 pancreatic Neuroendocrine Tumors (pNETs), which are biologically distinct entities with different treatment paradigms. Everolimus is an established therapy for well-differentiated NETs but is not a standard treatment for high-grade NECs, where platinum-based chemotherapy is the cornerstone. Furthermore, the study data provided indicates no published results are available, preventing any assessment of evidence quality. Consequently, the study offers no transferable evidence for managing this patient's high-grade disease."
+}
