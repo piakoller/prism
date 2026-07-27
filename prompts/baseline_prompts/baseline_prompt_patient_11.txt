@@ -1,0 +1,75 @@
+You are a specialist in oncology, endocrinology, and nuclear medicine providing therapy recommendations for a tumor board. Your task is to create a concrete therapy recommendation based on the patient data provided below.
+
+Here is the patient data:
+<patient_information>
+- clinical_information: 73-year-old woman referred for evaluation and management of hepatic recurrence of pancreatic neuroendocrine carcinoma.
+
+Relevant Medical Conditions
+Former smoker (10 pack-years; quit 10 years ago).
+No alcohol use.
+Dyslipidemia on statins.
+Valvular heart disease: aortic, mitral, and tricuspid regurgitation with preserved LVEF; followed by a private cardiologist.
+Ventricular extrasystoles on bisoprolol; cardiology follow-up.
+Gastroesophageal reflux disease and hiatal hernia.
+Urinary incontinence on pharmacologic therapy.
+COVID-19 pneumonia (hospitalization 2020).
+
+Initial Presentation
+January 2020: Mild acute pancreatitis leading to outpatient abdominal CT showing a pancreatic body–tail mass.
+Diagnostic Workup
+-CT Abdomen (04/03/20): 24 × 27 mm mass in pancreatic body–tail.
+-EUS-FNA (30/04/20): Solid, well-defined 3.0 × 2.7 cm mass. No lymphadenopathy or ascites.
+-Pathology: Malignant, high-grade carcinoma with extensive necrosis (PSC VI).
+
+Primary Treatment
+Surgery (25/05/2020): Laparoscopic distal pancreatectomy + splenectomy.
+-Final pathology: Mixed pancreatic carcinoma: Ductal carcinoma: 30%, G2; Neuroendocrine carcinoma: 30%, G3, Ki-67 95%. Tumor size: 3.2 cm. Focal peripancreatic soft tissue invasión. IVL+ (vascular invasion), IPN+ (perineural invasion). Margins negative. pT2N0 (0/11 nodes)
+
+First Progression
+-PET/CT (28/09/2020): Liver progression: 6.7 cm lesion in segment VIII. Invasion of right portal venous tree. Local progression near pancreatic staple line. Liver core biopsy (07/10/20): Metastatic neuroendocrine carcinoma. 
+-Abdominal ultrasound (14/10/20): Large right hepatic lobe mass; progression of tumoral portal vein thrombosis involving bilateral portal branches, main portal vein, confluence, and proximal SMV.
+
+1st-Line Palliative Therapy
+Carboplatin–VP16 initiated October 2020.
+
+Response & Evolution
+-Apr 2021 CT: Hepatic partial response; improvement in adenopathy.
+-Jul 2021 CT: Ongoing hepatic partial response (22 × 14 → 20 × 12 mm, segment VII) Complete response at pancreatic bed/local recurrence. Stable portal vein thrombosis
+-FDG-PET/CT (09/08/21): Single hypodense hepatic lesion in segment VII. No locoregional recurrence. No extrahepatic disease
+
+
+•	Current Clinical Status
+The patient reports moderate asthenia. ECOG 1
+- question_for_tumorboard: What would be next step to consolidate the response?
+</patient_information>
+
+Based on the found trial evidence, create a focused therapy recommendation that:
+
+EVIDENCE EVALUATION RULES:
+- Prioritize evidence from prospective, randomized, multicenter trials
+- Do NOT use data from retrospective studies, registry studies, or observational studies for primary recommendations
+- Reference specific trial results (PFS, OS, response rates) when available
+- Provide direct links (https://) to the relevant clinical trials and guidelines
+- Consider safety data and contraindications based on patient's clinical condition
+- Be cautious with neoadjuvant systemic therapy when the patient has unstable, potentially life-threatening complications that may worsen before the therapy takes effect
+
+IMPORTANT RULES FOR YOUR RESPONSE:
+- Formulate your therapy recommendation in English.
+- Ensure that your answer is well-structured, clear, and precise.
+- Trust especially recommendations and trial results that have a high evidence level.
+- Name the primary literature, studies, and clinical trials that provided the evidence for the therapy recommendation (e.g., NCT number, study name, trial details).
+- If available, cite specific trial results (PFS, OS, response rates) to support your recommendation. Those can also come from the guidelines texts. 
+- Never invent facts, diagnoses, test results, or trial results.
+- Justify your recommendation with clear references to the trials, guidelines, and the patient's specific clinical needs.
+- Acknowledge that PRRT eligibility requires DOTATATE/DOTATOC PET uptake higher than liver background in all tumors and metastases; liver SUVmax is typically ~6–7 but can be higher in individual cases.
+
+RESPONSE FORMAT:
+Provide your recommendation in the following structure:
+
+<therapy_recommendation>
+[Insert your detailed therapy recommendation here, referencing specific trials by NCT number and citing their key findings that support your recommendations]
+</therapy_recommendation>
+
+<rationale>
+[Insert a rationale for your recommendation based on the patient assessment, matched clinical trials (with specific data when available), guidelines, and individual patient factors]
+</rationale>

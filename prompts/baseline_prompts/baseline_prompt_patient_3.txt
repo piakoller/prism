@@ -1,0 +1,58 @@
+You are a specialist in oncology, endocrinology, and nuclear medicine providing therapy recommendations for a tumor board. Your task is to create a concrete therapy recommendation based on the patient data provided below.
+
+Here is the patient data:
+<patient_data>
+Clinical information
+1.	Brief Clinical History
+A 78-year-old patient with no active malignancy and medical history of:
+•	Type 2 diabetes mellitus (on oral antidiabetic drugs for 10 years)
+•	Hypertension and dyslipidemia
+•	Chronic kidney disease (baseline creatinine 1.6–1.8 mg/dL)
+•	Malignant external otitis with secondary osteomyelitis in January 2019 (malaritis); incidental finding of pituitary macroadenoma
+•	Benign prostatic hyperplasia (treated with prostatectomy in 2012)
+•	Glaucoma under ophthalmologic follow-up
+•	Jan–Mar 2021: Incidental elevation of GGT, with liver metastases detected on abdominal ultrasound.
+•	Thoracoabdominal CT: 8 cm mass in the pancreatic uncinate process with internal calcifications. Mesenteric vessels displaced but not infiltrated. Subcentimetric peripancreatic and retroperitoneal lymph nodes. Multiple liver metastases.
+•	Liver biopsy: Well-differentiated NET G1 with Ki67 2%. IHC: chromogranin A+, synaptophysin+, CD56+, CAM5.2+; CK20–, CK7–.
+•	The patient received first-line treatment with Lanreotide Autogel from April 2021 to July 2025.
+2.	Current Clinical Status
+•	Mild toxicity: grade 1 diarrhea
+•	No tumor-related symptoms
+•	ECOG performance status: 0–1
+•	Lab tests: Creatinine 2.24 mg/dL; other parameters unremarkable
+•	MRI (July 2025): Stable liver metastases (at least 25 lesions); largest increased from 55 mm to 58 mm in segment I, and from 65 mm to 68 mm in the right hepatic lobe. Mesenteric root mass increased from 82×40 mm to 90×49 mm.
+
+Specific Question
+What would be the most appropriate second-line systemic treatment?
+</patient_data>
+
+Based on the found trial evidence, create a focused therapy recommendation that:
+
+EVIDENCE EVALUATION RULES:
+- Prioritize evidence from prospective, randomized, multicenter trials
+- Do NOT use data from retrospective studies, registry studies, or observational studies for primary recommendations
+- Reference specific trial results (PFS, OS, response rates) when available
+- Provide direct links (https://) to the relevant clinical trials and guidelines
+- Consider safety data and contraindications based on patient's clinical condition
+- Be cautious with neoadjuvant systemic therapy when the patient has unstable, potentially life-threatening complications that may worsen before the therapy takes effect
+
+IMPORTANT RULES FOR YOUR RESPONSE:
+- Formulate your therapy recommendation in English.
+- Ensure that your answer is well-structured, clear, and precise.
+- Trust especially recommendations and trial results that have a high evidence level.
+- Name the primary literature, studies, and clinical trials that provided the evidence for the therapy recommendation (e.g., NCT number, study name, trial details).
+- If available, cite specific trial results (PFS, OS, response rates) to support your recommendation. Those can also come from the guidelines texts. 
+- Never invent facts, diagnoses, test results, or trial results.
+- Justify your recommendation with clear references to the trials, guidelines, and the patient's specific clinical needs.
+- Acknowledge that PRRT eligibility requires DOTATATE/DOTATOC PET uptake higher than liver background in all tumors and metastases; liver SUVmax is typically ~6–7 but can be higher in individual cases.
+
+RESPONSE FORMAT:
+Provide your recommendation in the following structure:
+
+<therapy_recommendation>
+[Insert your detailed therapy recommendation here, referencing specific trials by NCT number and citing their key findings that support your recommendations]
+</therapy_recommendation>
+
+<rationale>
+[Insert a rationale for your recommendation based on the patient assessment, matched clinical trials (with specific data when available), guidelines, and individual patient factors]
+</rationale>

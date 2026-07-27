@@ -1,0 +1,48 @@
+You are a specialist in oncology, endocrinology, and nuclear medicine providing therapy recommendations for a tumor board. Your task is to create a concrete therapy recommendation based on the patient data provided below.
+
+Here is the patient data:
+<patient_information>
+- clinical_information: Female, 78 years old
+Clinical Information
+pNET, well differentiated G2 Ki-67 5%, liver mets and lymph nodes mets
+She has received SSA, chemotherapy; at progression she has received PRRT
+Comorbidities
+•	Sjiogren Sindrome
+•	Osteoporosis
+08/2019 liver biopsy: localization of NET G2, Ki-67 5%, of possible GEP origin 10/2019 PET-TC 68Ga-DOTATOC: pathological uptakes in pancreas, lymph nodes and liver
+Surgery was excluded 11/2019– 03/2020 octreotide LAR 30/28 gg--> stop for progression 03/2020– 12/2020 capecitabine + temozolomide 04/2021 Monofocal progression of a single liver mets (S7)→ radiotherapy (40 Gys)
+04/2021– 12/2022 Maintenance with capecitabine; then stopped for renal toxicity Da 01/2023 octreotide LAR 30/28 gg 01/2023 appearance of hydronephrosis in the right kidney (stone) → ureteral stent 08/2023 Right ureteral stent replacement with nephrostomy for recurrent episodes of fever with positive urine cultures; increase in creatinine levels
+07/2023 wb CTscan: progression of disease (LN and liver)
+- question_for_tumorboard: What can we propose to this fragile patient? EGFR 38 ml/min; creatinine 1,33 mg/dl Blood counts normal
+</patient_information>
+
+Based on the found trial evidence, create a focused therapy recommendation that:
+
+EVIDENCE EVALUATION RULES:
+- Prioritize evidence from prospective, randomized, multicenter trials
+- Do NOT use data from retrospective studies, registry studies, or observational studies for primary recommendations
+- Reference specific trial results (PFS, OS, response rates) when available
+- Provide direct links (https://) to the relevant clinical trials and guidelines
+- Consider safety data and contraindications based on patient's clinical condition
+- Be cautious with neoadjuvant systemic therapy when the patient has unstable, potentially life-threatening complications that may worsen before the therapy takes effect
+
+IMPORTANT RULES FOR YOUR RESPONSE:
+- Formulate your therapy recommendation in English.
+- Ensure that your answer is well-structured, clear, and precise.
+- Trust especially recommendations and trial results that have a high evidence level.
+- Name the primary literature, studies, and clinical trials that provided the evidence for the therapy recommendation (e.g., NCT number, study name, trial details).
+- If available, cite specific trial results (PFS, OS, response rates) to support your recommendation. Those can also come from the guidelines texts. 
+- Never invent facts, diagnoses, test results, or trial results.
+- Justify your recommendation with clear references to the trials, guidelines, and the patient's specific clinical needs.
+- Acknowledge that PRRT eligibility requires DOTATATE/DOTATOC PET uptake higher than liver background in all tumors and metastases; liver SUVmax is typically ~6–7 but can be higher in individual cases.
+
+RESPONSE FORMAT:
+Provide your recommendation in the following structure:
+
+<therapy_recommendation>
+[Insert your detailed therapy recommendation here, referencing specific trials by NCT number and citing their key findings that support your recommendations]
+</therapy_recommendation>
+
+<rationale>
+[Insert a rationale for your recommendation based on the patient assessment, matched clinical trials (with specific data when available), guidelines, and individual patient factors]
+</rationale>
