@@ -1,4 +1,4 @@
-# PRISM — Personalized Recommendation and Intelligent Study Matching
+# PRISM — Personalized Recommendation via Integrated Synthesis and Modeling
 
 PRISM is a modular, LLM-powered pipeline for NET (Neuroendocrine Tumor) patient assessment, clinical trial matching, and therapy recommendation generation. It is designed for auditable and reproducible evidence-based decision support.
 
